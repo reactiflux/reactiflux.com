@@ -97,3 +97,42 @@
 .hljs-strong {
   font-weight: bold;
 }
+
+.markdown {
+  color: #3a1437;
+  h1 {
+    color: #02d8ff;
+    font-size: 160px;
+    letter-spacing: -13px;
+    line-height: 200px;
+    font-family: 'Space Mono', monospace;
+  }
+  h2 {
+    margin-bottom: 20px;
+    color: #52244f;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+  h3 {
+    margin-bottom: 12px;
+    color: #3a1437;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  ul {
+    margin-left: 0;
+    list-style: none;
+  }
+  li {
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #dd1d64;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

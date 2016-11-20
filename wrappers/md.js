@@ -1,5 +1,5 @@
 import React from 'react'
-import 'css/markdown-styles.css'
+import 'css/markdown-styles.scss'
 import Helmet from "react-helmet"
 import { config } from 'config'
 
@@ -17,7 +17,7 @@ module.exports = React.createClass({
           title={`${config.siteTitle} | ${post.title}`}
         />
         <h1>{post.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.body }} />
+        <div style={{margin: '0 auto', maxWidth: 800}} dangerouslySetInnerHTML={{ __html: post.body }} />
       </div>
     )
   },

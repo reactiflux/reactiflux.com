@@ -21,6 +21,7 @@
     "react-helmet": "^3.1.0",
     "react-responsive-grid": "^0.3.3",
     "react-typography": "^0.14.0",
+    "styled-components": "^1.0.11",
     "toml-js": "0.0.8",
     "typography": "^0.14.0",
     "typography-plugin-code": "^0.14.0"

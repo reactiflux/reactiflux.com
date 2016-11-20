@@ -7,25 +7,32 @@ import CodePlugin from 'typography-plugin-code'
 const options = {
   googleFonts: [
     {
-      name: 'Montserrat',
+      name: 'Work Sans',
       styles: [
+        '400',
+        '500',
+      ],
+    },
+    {
+      name: 'Space Mono',
+      styles: [
+        '400',
         '700',
       ],
     },
     {
-      name: 'Arvo',
+      name: 'Poppins',
       styles: [
         '400',
-        '400i',
-        '700',
+        '600',
       ],
-    },
+    }
   ],
-  headerFontFamily: ['Montserrat', 'sans-serif'],
-  bodyFontFamily: ['Arvo', 'sans-serif'],
-  baseFontSize: '18px',
-  baseLineHeight: 1.65,
-  scale: 2.25,
+  headerFontFamily: ['Work Sans', 'sans-serif'],
+  bodyFontFamily: ['Work Sans', 'sans-serif'],
+  baseFontSize: '19px',
+  baseLineHeight: 1.5,
+  scale: 1,
   plugins: [
     new CodePlugin(),
   ],

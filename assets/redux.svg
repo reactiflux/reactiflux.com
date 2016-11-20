@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="42px" height="39px" viewBox="0 0 42 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>63A6E0EC-A394-4DC3-B15B-3CB3F2713C09</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page-Final" transform="translate(-244.000000, -391.000000)">
+            <g id="Group-9" transform="translate(241.000000, 392.000000)">
+                <path d="M33.7795716,10.8112388 C32.697155,4.61565215 28.5294176,0 23.5531477,0 C17.7541579,0 13.0531477,6.2680135 13.0531477,14 C13.0531477,19.0551475 15.0625953,23.4845195 18.0745676,25.9455523" id="Oval-8" stroke="#52244F" stroke-width="2"></path>
+                <path d="M41.7795716,22.8112388 C40.697155,16.6156522 36.5294176,12 31.5531477,12 C25.7541579,12 21.0531477,18.2680135 21.0531477,26 C21.0531477,31.0551475 23.0625953,35.4845195 26.0745676,37.9455523" id="Oval-8" stroke="#52244F" stroke-width="2" transform="translate(31.416360, 24.972776) rotate(-240.000000) translate(-31.416360, -24.972776) "></path>
+                <path d="M26.7795716,22.8112388 C25.697155,16.6156522 21.5294176,12 16.5531477,12 C10.7541579,12 6.05314774,18.2680135 6.05314774,26 C6.05314774,31.0551475 8.06259528,35.4845195 11.0745676,37.9455523" id="Oval-8" stroke="#52244F" stroke-width="2" transform="translate(16.416360, 24.972776) rotate(-120.000000) translate(-16.416360, -24.972776) "></path>
+                <circle id="Oval-9" fill="#02D8FF" cx="22.0531477" cy="14" r="4"></circle>
+                <circle id="Oval-9" fill="#02D8FF" cx="30.0531477" cy="23" r="4"></circle>
+                <circle id="Oval-9" fill="#02D8FF" cx="18.0531477" cy="26" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

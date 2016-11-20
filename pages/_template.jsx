@@ -6,6 +6,9 @@ import Headroom from 'react-headroom'
 import '../css/markdown-styles'
 
 import { rhythm } from '../utils/typography'
+import { Header, Navigation, Logo, StyledLink, Footer, Copyright, Credits, IconLink, SocialLinks } from '../utils/components';
+import Discord from '../assets/discord.svg';
+import Twitter from '../assets/twitter.svg';
 
 module.exports = React.createClass({
   propTypes () {
@@ -21,33 +24,63 @@ module.exports = React.createClass({
             marginBottom: rhythm(1),
           }}
         >
-          <Container
-            style={{
-              maxWidth: 960,
-              paddingTop: 0,
-              padding: `${rhythm(1)} ${rhythm(3/4)}`,
-            }}
-          >
-            <Link
+          <Header>
+            <Logo
               to={prefixLink('/')}
-              style={{
-                color: 'black',
-                textDecoration: 'none',
-              }}
             >
               Reactiflux
-            </Link>
-          </Container>
+            </Logo>
+            <Navigation role="navigation">
+              <StyledLink
+                to={prefixLink('/q-and-a/')}
+                title="Question and answers"
+              >
+                Q&A
+              </StyledLink>
+              <StyledLink
+                to={prefixLink('/stats/')}
+                title="Stats"
+              >
+                Stats
+              </StyledLink>
+              <StyledLink
+                to={prefixLink('/links/')}
+                title="Links"
+              >
+                Links
+              </StyledLink>
+            </Navigation>
+          </Header>
         </Headroom>
         <Container
           style={{
-            maxWidth: 960,
+            maxWidth: 1192,
             padding: `${rhythm(1)} ${rhythm(3/4)}`,
-            paddingTop: 0,
+            marginBottom: 40,
           }}
         >
           {this.props.children}
         </Container>
+        <Footer>
+          <div>
+            <Copyright>© 2016 Reactiflux</Copyright>
+            <Credits>Designed in Sketch. Coded in Atom. Built using Gatsby.js. Hosted on Netlify.</Credits>
+          </div>
+          <SocialLinks>
+            <IconLink
+              to="https://discordapp.com/invite/0ZcbPKXt5bYZVCkR"
+              tittle="Reactiflux Discord"
+              src={Discord}
+              alt="Discord"
+            />
+            <IconLink
+              to="https://twitter.com/reactiflux"
+              title="Reactiflux Twitter"
+              src={Twitter}
+              alt="Twitter"
+            />
+          </SocialLinks>
+        </Footer>
       </div>
     )
   },
