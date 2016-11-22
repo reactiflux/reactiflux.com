@@ -51,11 +51,11 @@ export default class Index extends React.Component {
           Reactiflux
         </Title>
         <Text>
-          We're a chat community of <Counter isFetching={fetching} count={count} /> React JS <IconLink to="https://github.com/facebook/react" title="React JS" src={ReactLogo} alt="React Logo"/>,
+          We&rsquo;re a chat community of <Counter isFetching={fetching} count={count} /> React JS <IconLink to="https://github.com/facebook/react" title="React JS" src={ReactLogo} alt="React Logo"/>,
           React Native <IconLink to="https://github.com/facebook/react-native" title="React Native" src={NativeLogo} alt="React Native Logo"/>, Redux <IconLink to="https://github.com/reactjs/redux" title="Redux" src={ReduxLogo} alt="Redux Logo"/>,
           Relay <IconLink to="https://github.com/facebook/relay" title="Relay" src={RelayLogo} alt="Relay Logo"/> and
           GraphQL <IconLink to="https://github.com/facebook/graphql" title="GraphQL" src={GraphLogo} alt="GraphQL Logo"/> developers.
-          We hold Q&A's with Facebook Engineers <IconLink to="https://github.com/facebook" title="Facebook Organization" src={FacebookLogo} alt="Facebook Logo"/> and
+          We hold Q&A&rsquo;s with Facebook Engineers <IconLink to="https://github.com/facebook" title="Facebook Organization" src={FacebookLogo} alt="Facebook Logo"/> and
           other developers <IconLink to="https://github.com/reactiflux" title="Reactiflux Developers" src={ConsoleLogo} alt="Developers Logo"/> in
           the community <IconLink to="https://discordapp.com/invite/0ZcbPKXt5bYZVCkR" title="Reactiflux Discord" src={CommunityLogo} alt="Community Logo"/>. Come chat about tech
           related to React & JavaScript or ask for help!
