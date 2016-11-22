@@ -9,6 +9,7 @@ export const Header = styled.header`
   max-width: 1440px;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 `;
 
 export const Navigation = styled.nav`
