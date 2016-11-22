@@ -59,6 +59,7 @@ export const Subtitle = styled.span`
 
 export const Text = styled.p`
   font-size: 32px;
+  font-weight: 500;
   line-height: 1.5;
   color: #52244f;
   letter-spacing: -1px;
