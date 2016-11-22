@@ -55,8 +55,8 @@ module.exports = React.createClass({
         <Container
           style={{
             maxWidth: 1192,
-            padding: `${rhythm(1)} ${rhythm(3/4)}`,
-            marginBottom: 40,
+            padding: `0 ${rhythm(3/4)} ${rhythm(1)} ${rhythm(3/4)}`,
+            marginBottom: 144,
           }}
         >
           {this.props.children}
