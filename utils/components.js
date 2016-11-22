@@ -79,6 +79,7 @@ export const Button = styled(Link)`
   line-height: 66px;
   color: ${props => props.primary ? '#ffffff' : '#dd1d64'};
   background-color: ${props => props.primary ? '#dd1d64' : '#ffffff'};
+  transition: all 175ms ease;
   &:hover {
     color: ${props => props.primary ? '#ffffff' : '#ffffff'};
     background-color: ${props => props.primary ? '#ba1853' : '#dd1d64'};
