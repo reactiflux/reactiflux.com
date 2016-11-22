@@ -50,6 +50,7 @@ export const Subtitle = styled.span`
   color: #dd1d64;
   font-size: 36px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   right: 100px;
   top: -45px;
   letter-spacing: 0px;
