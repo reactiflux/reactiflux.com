@@ -1,17 +1,7 @@
 ---
 title: Q&A Schedule
 ---
-
-## December 2016
-### Jordan Walke
-
-* https://twitter.com/jordwalke
-* React.js Creator
-* Thursday December [Day TBD 8, 15, 22, 29th]
-* 11:30am - 1pm PST  
-* Q&A on reactiflux [#q-and-a](http://q-and-a.reactiflux.com) channel
-
-
+We host Q&A's with Facebook Engineers and other interesting developers in the community. We host 1 or 2 per month on Thursdays @ 10:30am - 1pm PT. If you want to hear from someone specific in the community, let us know by contacting us via [Twitter](https://twitter.com/reactiflux) or ping us in the #reactiflux-dev channel on discord.
 
 ## January 2017
 ### Cheng Lou
@@ -20,7 +10,15 @@ title: Q&A Schedule
 * Facebook Engineer focused on Reason & Messenger.com
 * Thursday January 12th
 * 11:30am - 1pm PST  
-* * Q&A on reactiflux [#q-and-a](http://q-and-a.reactiflux.com) channel
+* Q&A on reactiflux [#q-and-a](http://q-and-a.reactiflux.com) channel
+
+### Jordan Walke
+
+* https://twitter.com/jordwalke
+* React.js Creator
+* Thursday Jan 26th
+* 11:30am - 1pm PST  
+* Q&A on reactiflux [#q-and-a](http://q-and-a.reactiflux.com) channel
 
 ## February 2017
 ### TBD
@@ -117,7 +115,7 @@ title: Q&A Schedule
 * Facebook React.js Core Team
 * Thursday April 21st
 * 11:30am - 1pm PST (730-9pm London time)
-* Transcript: [Dan Abramov](dan abramov/)
+* Transcript: [Dan Abramov](dan-abramov/)
 
 ## ~~February 2016~~
 ### Eric Vicenti
