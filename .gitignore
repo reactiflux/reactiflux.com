@@ -30,5 +30,4 @@ node_modules
 
 #Yarn & DS_store
 .DS_Store
-yarn.lock
 public/
