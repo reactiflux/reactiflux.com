@@ -24,6 +24,7 @@ export const Logo = styled(Link)`
 `;
 
 export const StyledLink = styled(Link)`
+  color: #dd1d64;
   text-decoration: none;
   padding-bottom: 6px;
   margin-right: 40px;
@@ -31,7 +32,7 @@ export const StyledLink = styled(Link)`
   transition: all 175ms cubic-bezier(0.65, 0.05, 0.36, 1);
   &:hover {
     padding-bottom: 4px;
-    border-bottom: 4px solid #dd1d64;
+    border-bottom: 6px solid #02d8ff;
   }
   &:last-child {
     margin-right: 0px;
