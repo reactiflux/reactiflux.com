@@ -3,38 +3,17 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Helmet from "react-helmet"
 import { config } from 'config'
-import axios from 'axios';
-import { Title, Subtitle, Text, Button, IconLink } from '../utils/components';
-import ReactLogo from '../assets/react.svg';
-import NativeLogo from '../assets/native.svg';
-import ReduxLogo from '../assets/redux.svg';
-import RelayLogo from '../assets/relay.svg';
+import { Title, Subtitle, Text, Button, IconLink } from '../utils/components'
+import ReactLogo from '../assets/react.svg'
+import NativeLogo from '../assets/native.svg'
+import ReduxLogo from '../assets/redux.svg'
+import RelayLogo from '../assets/relay.svg'
 import GraphLogo from '../assets/graphql.svg';
 import FacebookLogo from '../assets/facebook.svg';
 import ConsoleLogo from '../assets/console.svg';
 import CommunityLogo from '../assets/community.svg'
 
 export default class Index extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      fetching: true,
-      count: 0
-    }
-  }
-
-  componentWillMount() {
-    axios.get('http://rf.pipend.com/apis/branches/prKzXdM/execute/false/transformation?from=&to=&ago=1%20year&bucketSize=604800000&sampleSize=5&refreshCount=0')
-      .then((response) => {
-        return response.data
-      }).then((json) => {
-        this.setState({
-          fetching: false,
-          count: json[json.length-1][1],
-        });
-      })
-  }
-
   render () {
     const { fetching, count } = this.state;
     return (
@@ -51,7 +30,7 @@ export default class Index extends React.Component {
           Reactiflux
         </Title>
         <Text>
-          We&rsquo;re a chat community of <Counter isFetching={fetching} count={count} /> React JS <IconLink to="https://github.com/facebook/react" title="React JS" src={ReactLogo} alt="React Logo"/>,
+          We&rsquo;re a chat community of 26,435 React JS <IconLink to="https://github.com/facebook/react" title="React JS" src={ReactLogo} alt="React Logo"/>,
           React Native <IconLink to="https://github.com/facebook/react-native" title="React Native" src={NativeLogo} alt="React Native Logo"/>, Redux <IconLink to="https://github.com/reactjs/redux" title="Redux" src={ReduxLogo} alt="Redux Logo"/>,
           Relay <IconLink to="https://github.com/facebook/relay" title="Relay" src={RelayLogo} alt="Relay Logo"/> and
           GraphQL <IconLink to="https://github.com/facebook/graphql" title="GraphQL" src={GraphLogo} alt="GraphQL Logo"/> developers.
@@ -66,8 +45,3 @@ export default class Index extends React.Component {
     )
   }
 }
-
-const Counter = ({ isFetching, count }) =>
-  <span>
-    { isFetching ? 'Still counting' : count }
-  </span>
