@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
 import '../css/markdown-styles'
+import '../css/styles'
 
 import { rhythm } from '../utils/typography'
 import { Header, Navigation, Logo, StyledLink, Footer, Copyright, Credits, IconLink, SocialLinks } from '../utils/components';
@@ -23,6 +24,7 @@ module.exports = React.createClass({
           wrapperStyle={{
             marginBottom: rhythm(1),
           }}
+          disableInlineStyles
         >
           <Header>
             <Logo
@@ -72,12 +74,14 @@ module.exports = React.createClass({
               tittle="Reactiflux Discord"
               src={Discord}
               alt="Discord"
+              target="_blank"
             />
             <IconLink
               to="https://twitter.com/reactiflux"
               title="Reactiflux Twitter"
               src={Twitter}
               alt="Twitter"
+              target="_blank"
             />
           </SocialLinks>
         </Footer>
