@@ -4,6 +4,9 @@ import Helmet from "react-helmet"
 import { prefixLink } from 'gatsby-helpers'
 import { TypographyStyle, GoogleFont } from 'react-typography'
 import typography from './utils/typography'
+import styleSheet from 'styled-components/lib/models/StyleSheet'
+
+
 
 const BUILD_TIME = new Date().getTime()
 
@@ -17,8 +20,10 @@ module.exports = React.createClass({
     const head = Helmet.rewind()
 
     let css
+    let styles
     if (process.env.NODE_ENV === 'production') {
       css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
+      styles = styleSheet.rules().map(rule => rule.cssText).join('\n')
     }
 
     return (
@@ -35,6 +40,9 @@ module.exports = React.createClass({
           <TypographyStyle typography={typography} />
           <GoogleFont typography={typography} />
           {css}
+          <style>
+            {styles}
+          </style>
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
