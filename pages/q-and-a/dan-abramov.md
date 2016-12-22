@@ -1,5 +1,7 @@
-## Dan Abramov
-### React Core Team
+---
+title: Dan Abramov
+---
+## React Core Team
 
 | username | question |
 | ---: | --- |

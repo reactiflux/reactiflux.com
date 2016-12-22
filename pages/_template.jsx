@@ -7,9 +7,9 @@ import '../css/markdown-styles'
 import '../css/styles'
 
 import { rhythm } from '../utils/typography'
-import { Header, Navigation, Logo, StyledLink, Footer, Copyright, Credits, IconLink, SocialLinks } from '../utils/components';
-import Discord from '../assets/discord.svg';
-import Twitter from '../assets/twitter.svg';
+import { Header, Navigation, Logo, StyledLink, NavigationLink, Footer, Copyright, Credits, IconLink, SocialLinks } from '../utils/components'
+import Discord from '../assets/discord.svg'
+import Twitter from '../assets/twitter.svg'
 
 module.exports = React.createClass({
   propTypes () {
@@ -20,12 +20,7 @@ module.exports = React.createClass({
   render () {
     return (
       <div>
-        <Headroom
-          wrapperStyle={{
-            marginBottom: rhythm(1),
-          }}
-          disableInlineStyles
-        >
+        <Headroom disableInlineStyles>
           <Header>
             <Logo
               to={prefixLink('/')}
@@ -33,24 +28,18 @@ module.exports = React.createClass({
               Reactiflux
             </Logo>
             <Navigation role="navigation">
-              <StyledLink
+              <NavigationLink
                 to={prefixLink('/q-and-a/')}
                 title="Question and answers"
               >
                 Q&A
-              </StyledLink>
-              <StyledLink
-                to={prefixLink('/stats/')}
-                title="Stats"
-              >
-                Stats
-              </StyledLink>
-              <StyledLink
+              </NavigationLink>
+              <NavigationLink
                 to={prefixLink('/links/')}
                 title="Links"
               >
                 Links
-              </StyledLink>
+              </NavigationLink>
             </Navigation>
           </Header>
         </Headroom>
@@ -66,7 +55,7 @@ module.exports = React.createClass({
         <Footer>
           <div>
             <Copyright>© 2016 Reactiflux</Copyright>
-            <Credits>Designed in Sketch. Coded in Atom. Built using Gatsby.js. Hosted on Netlify.</Credits>
+            <Credits>Designed in <StyledLink href="https://www.sketchapp.com/" title="Sketc">Sketch</StyledLink>. Coded in <StyledLink href="https://atom.io/" title="Atom">Atom</StyledLink>. Built using <StyledLink href="https://github.com/gatsbyjs/gatsby" title="Gatsby">Gatsby.js</StyledLink>. Hosted on <StyledLink href="https://www.netlify.com/" title="Netlify">Netlify</StyledLink>.</Credits>
           </div>
           <SocialLinks>
             <IconLink

@@ -1,5 +1,7 @@
-## Devin Abbott
-### Deco Software
+---
+title: Devin Abbott
+---
+## Deco Software
 
 | username | question |
 | ---: | --- |

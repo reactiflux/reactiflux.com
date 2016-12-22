@@ -1,6 +1,7 @@
-## Realy Team
-### `en_js`, `yuzhi`, `kassen`, and `wincent` are members of the Relay team.
-
+---
+title: Relay team
+---
+## `en_js`, `yuzhi`, `kassen`, and `wincent` are members of the Relay team.
 
 | username | question |
 | ---: | --- |

@@ -1,5 +1,7 @@
-## Jonathan Carter & Geoffrey Goh
-### CodePush
+---
+title: Jonathan Carter & Geoffrey Goh
+---
+## CodePush
 
 LeBLaaanc: Oh hey i'm the guys who keeps complaining about CodePush making new releases when I'm building 50 apps simultaneously 😉  
 **lostintangent**: Hey! We hope to have that issue fixed as of React Native 0.29.0, now that we can reliably determine equivalence between different JS bundles 😃  

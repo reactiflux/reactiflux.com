@@ -1,5 +1,7 @@
-## Mike Grabowski
-### React Native Core
+---
+title: Mike Grabowski
+---
+## React Native Core
 
 *brianboyko*: [Q&A] What effect would a Brexit "Leave" vote have on the U.K.'s tech industry?  
 **grabbou**: Regarding Brexit, pretty good question. Haven't thought about it that much, but I wouldn't be surprised if some of my friends from Poland decide to come back, like @knowbody 😄

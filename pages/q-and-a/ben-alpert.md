@@ -1,5 +1,7 @@
-## Ben Alpert
-### React Core Team
+---
+title: Ben Alpert
+---
+## React Core Team
 
 **Q:** Are there plans to support a web worker based rendered in React Core ? Angular2 has support for it in core *- axemclion*  
 **A:** right now we're not considering web workers in depth because it's difficult to carve off pieces that can be parallelized independently -- simply moving React to a separate thread while executing DOM operations on the main thread would free up the main thread but likely wouldn't improve responsiveness overall. so instead we're looking more at how we can do concurrent work on the main thread and cancel in-progress updates if new high-priority input arrives  

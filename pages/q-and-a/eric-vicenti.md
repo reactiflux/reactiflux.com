@@ -1,5 +1,7 @@
-## Eric Vicenti
-### React Native
+---
+title: Eric Vicenti
+---
+## React Native
 
 | username | question |
 | ---: | --- |

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router';
-import ReactifluxLogo from '../assets/logo.svg';
+import { Reactiflux } from '../assets/logos';
 
 export const Header = styled.header`
   display: flex;
@@ -19,18 +19,26 @@ export const Logo = styled(Link)`
   display: inline-block;
   width: 59px;
   height: 52px;
-  background: url(${ReactifluxLogo});
+  background: url(${Reactiflux});
   text-indent: -9999px;
 `;
+
 
 export const StyledLink = styled(Link)`
   color: #dd1d64;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const NavigationLink = styled(StyledLink)`
   padding-bottom: 6px;
   margin-right: 40px;
   border-bottom: solid 4px rgba(255, 255, 255, 0);
   transition: all 175ms cubic-bezier(0.65, 0.05, 0.36, 1);
   &:hover {
+    text-decoration: none;
     padding-bottom: 4px;
     border-bottom: 6px solid #02d8ff;
   }
@@ -39,14 +47,18 @@ export const StyledLink = styled(Link)`
   }
 `;
 
+export const LinkList = styled.ul`
+  flex-basis: 30%;
+`;
+
 export const Title = styled.h1`
   color: #02d8ff;
-  height: 200px;
   font-size: 200px;
   letter-spacing: -13px;
   line-height: 200px;
   font-family: 'Space Mono', monospace;
   position: relative;
+  kering-paris: if 16px
 `;
 
 export const Subtitle = styled.span`
@@ -101,9 +113,6 @@ const MovedLink = styled.a`
   img {
     margin-bottom: 0;
   }
-  &:first-child {
-    margin-right: 32px;
-  }
 `;
 
 export const IconLink = ({ to, title, src, alt }) =>
@@ -137,4 +146,10 @@ export const Credits = styled.p`
 export const SocialLinks = styled.div`
   display: inline-flex;
   align-items: center;
+  justify-content: space-between;
+  width: 80px;
+`;
+
+export const Container = styled.div`
+  display: flex;
 `;
