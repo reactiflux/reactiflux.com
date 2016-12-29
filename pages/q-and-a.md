@@ -34,7 +34,7 @@ We host Q&A's with Facebook Engineers and other interesting developers in the co
 * React Router Co-Author | https://reactjs-training.com
 * Thursday September 29th
 * 11:30am - 1pm PST  
-* Q&A on reactiflux [#q-and-a](http://q-and-a.reactiflux.com) channel
+* Transcript: [Ryan Florence](../transcripts/ryan-florence/)
 
 ### Christopher Chedeau
 
@@ -42,7 +42,7 @@ We host Q&A's with Facebook Engineers and other interesting developers in the co
 * Facebook React Core Team
 * Thursday September 8th
 * 11:30am - 1pm PST
-* Transcript: [Christopher Chedeau](christopher-chedeau/)
+* Transcript: [Christopher Chedeau](../transcripts/christopher-chedeau/)
 
 ## ~~August 2016~~
 ### Joseph Savona
@@ -61,7 +61,7 @@ We host Q&A's with Facebook Engineers and other interesting developers in the co
 * Thursday July 7th
 * 11:30am - 1pm PST
 * Topic is React Native continuous delivery with VSTS (Visual Studio Team Services), CodePush and HockeyApp.
-* Transcript: [Jonathan Carter & Geoffrey Goh](jonathan-carter_geoffrey-goh/)
+* Transcript: [Jonathan Carter & Geoffrey Goh](../transcripts/jonathan-carter_geoffrey-goh/)
 
 ### Lee Byron
 
@@ -69,7 +69,7 @@ We host Q&A's with Facebook Engineers and other interesting developers in the co
 * Facebook Engineer - GraphQL Co-Creator
 * Thursday July 28th
 * 11:30am - 1pm PST
-* Transcript: [Lee Byron](lee-byron/)
+* Transcript: [Lee Byron](../transcripts/lee-byron/)
 
 
 ## ~~June 2016~~
@@ -79,7 +79,7 @@ We host Q&A's with Facebook Engineers and other interesting developers in the co
 * Facebook React.js Core Team
 * Thursday June 9th
 * 11:30am - 1pm PST
-* Transcript: [Ben Alpert](ben-alpert/)
+* Transcript: [Ben Alpert](../transcripts/ben-alpert/)
 
 ### Mike Grabowski
 
@@ -88,7 +88,7 @@ We host Q&A's with Facebook Engineers and other interesting developers in the co
 * Thursday June 23rd
 * 11:30am - 1pm PST (730-9pm London time)
 * Topic is native modules, installing dependencies, tooling & native shipping
-* Transcript: [Mike Grabowski](mike-grabowski/)
+* Transcript: [Mike Grabowski](../transcripts/mike-grabowski/)
 
 ## ~~May 2016~~
 ### Tadeu Zagallo
@@ -106,7 +106,7 @@ We host Q&A's with Facebook Engineers and other interesting developers in the co
 * Thursday May 19th
 * 1PM - 2:30PM PST
 * Topic is Deco their awesome React Native IDE
-* Transcript: [Devin Abbott](devin-abbott/)
+* Transcript: [Devin Abbott](../transcripts/devin-abbott/)
 
 ## ~~April 2016~~
 ### Dan Abramov
@@ -115,7 +115,7 @@ We host Q&A's with Facebook Engineers and other interesting developers in the co
 * Facebook React.js Core Team
 * Thursday April 21st
 * 11:30am - 1pm PST (730-9pm London time)
-* Transcript: [Dan Abramov](dan-abramov/)
+* Transcript: [Dan Abramov](../transcripts/dan-abramov/)
 
 ## ~~February 2016~~
 ### Eric Vicenti
@@ -124,4 +124,4 @@ We host Q&A's with Facebook Engineers and other interesting developers in the co
 * Facebook Engineer
 * Thursday March 10th
 * 1pm - 2:30pm PST
-* Transcript: [Eric Vicenti](eric-vicenti/)
+* Transcript: [Eric Vicenti](../transcripts/eric-vicenti/)

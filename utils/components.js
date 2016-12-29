@@ -49,16 +49,18 @@ export const NavigationLink = styled(StyledLink)`
 
 export const LinkList = styled.ul`
   flex-basis: 30%;
+  margin-left: 0;
 `;
 
 export const Title = styled.h1`
   color: #02d8ff;
   font-size: 200px;
-  letter-spacing: -13px;
-  line-height: 200px;
-  font-family: 'Space Mono', monospace;
   position: relative;
-  kering-paris: if 16px
+  font-size: ${props => props.secondary ? '8.4rem' : '10.5rem'};
+  line-height: ${props => props.secondary ? '8.4rem' : '10.5rem'};
+  letter-spacing: -13px;
+  font-family: 'Space Mono', monospace;
+  flex-basis: 100%;
 `;
 
 export const Subtitle = styled.span`
@@ -74,7 +76,7 @@ export const Subtitle = styled.span`
 `;
 
 export const Text = styled.p`
-  font-size: 32px;
+  font-size: ${32/19}rem;
   font-weight: 500;
   line-height: 1.5;
   color: #52244f;
@@ -83,18 +85,18 @@ export const Text = styled.p`
 
 export const Button = styled(Link)`
   display: inline-block;
-  height: 72px;
-  width: 320px;
+  height: ${72/19}rem;
+  width: ${320/19}rem;
   margin-right: 32px;
   border: 3px solid;
   border-radius: 100px;
   border-color: #dd1d64;
   text-align: center;
   text-decoration: none;
-  font-size: 24px;
+  font-size: ${24/19}rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  line-height: 66px;
+  line-height: ${66/19}rem;
   color: ${props => props.primary ? '#ffffff' : '#dd1d64'};
   background-color: ${props => props.primary ? '#dd1d64' : '#ffffff'};
   transition: all 175ms ease;
@@ -152,4 +154,11 @@ export const SocialLinks = styled.div`
 
 export const Container = styled.div`
   display: flex;
+  flex-flow: row wrap;
+`;
+
+export const MarkdownContainer = styled.div`
+  display: inline-flex;
+  flex-flow: column;
+  max-width: 100%;
 `;

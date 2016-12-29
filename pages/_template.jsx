@@ -30,9 +30,15 @@ module.exports = React.createClass({
             <Navigation role="navigation">
               <NavigationLink
                 to={prefixLink('/q-and-a/')}
-                title="Question and answers"
+                title="Question and answers schedule"
               >
-                Q&A
+                Q&A Schedule
+              </NavigationLink>
+              <NavigationLink
+                to={prefixLink('/transcripts/')}
+                title="Transcripts"
+              >
+                Transcripts
               </NavigationLink>
               <NavigationLink
                 to={prefixLink('/links/')}
@@ -47,7 +53,7 @@ module.exports = React.createClass({
           style={{
             maxWidth: 1192,
             padding: `0 ${rhythm(3/4)} ${rhythm(1)} ${rhythm(3/4)}`,
-            marginBottom: 144,
+            marginBottom: 90,
           }}
         >
           {this.props.children}
