@@ -1,5 +1,6 @@
 ---
 title: Relay team
+date: August 26 2016
 ---
 ## `en_js`, `yuzhi`, `kassen`, and `wincent` are members of the Relay team.
 
@@ -50,7 +51,7 @@ title: Relay team
 | kamek | **[Q&A] Are there any future plans to address this type of performance issues on mobile, and what solution would you recommend today? |
 | **en_js** | Two things: First, you can improve this today by integrating Relay and RN's InteractionManager. Use Relay.injectTaskScheduler(InteractionManager.runAfterInteractions) and Relay will delay its work during animations to reduce choppiness. |
 | **en_js** | Second, Relay2 is simply much faster. As @wincent mentioned in his talk, certain units of work may go from taking multiple frames to less than frame, so this should be much better when Relay work is happening in parallel with animations. |
-| **wincent** | For some additional context on the Relay 2 talk last night, I just uploaded the source code of my slides. You can see the speaker notes inline as HTML comments (eg. https://github.com/wincent/relay-2-simpler-faster-more-predictable/blob/b777de59999d190a9379d0bfdad750d44c55af41/content/index.html#L323). I've also pushed it to the gh-pages branch so you can see it at https://wincent.github.io/relay-2-simpler-faster-more-predictable/#2 (at least in Chrome), and the presenter view at https://wincent.github.io/relay-2-simpler-faster-more-predictable/?presenter#2 |
+| **wincent** | For some additional context on the Relay 2 talk last night, I just uploaded the source code of my slides. You can see the speaker notes inline as HTML comments (eg. [Github link](https://github.com/wincent/relay-2-simpler-faster-more-predictable/blob/b777de59999d190a9379d0bfdad750d44c55af41/content/index.html#L323). I've also pushed it to the gh-pages branch so you can see it at https://wincent.github.io/relay-2-simpler-faster-more-predictable/#2 (at least in Chrome), and the presenter view at https://wincent.github.io/relay-2-simpler-faster-more-predictable/?presenter#2 |
 | antmdvs | Thanks, @wincent! |
 | taion | **[Q&A] what do you see the respective niches for relay 2 and apollo client being?** |
 | **en_js** | Great question. |

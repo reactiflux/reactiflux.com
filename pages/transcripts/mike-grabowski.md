@@ -1,5 +1,6 @@
 ---
 title: Mike Grabowski
+date: June 23 2016
 ---
 ## React Native Core
 

@@ -1,5 +1,6 @@
 ---
 title: Christopher Chedeau
+date: September 8 2016
 ---
 ### React
 

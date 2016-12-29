@@ -2,7 +2,7 @@ import React from 'react'
 import 'css/markdown-styles.scss'
 import Helmet from 'react-helmet'
 import { config } from 'config'
-import { Container, LinkList, StyledLink, Title } from '../utils/components'
+import { Container, MarkdownContainer, LinkList, StyledLink, Title } from '../utils/components'
 
 module.exports = React.createClass({
   propTypes () {
@@ -12,10 +12,11 @@ module.exports = React.createClass({
   },
   render () {
     const post = this.props.route.page.data
-    const isQaA = this.props.route.path.indexOf('/q-and-a/') != -1
+    const isTranscripts = this.props.route.path.indexOf('/transcripts/') != -1
+    const basis = isTranscripts ? '70%' : '100%';
 
     const articles = this.props.route.pages.filter((route) => {
-        if(route.path !== '/q-and-a/' && route.path.indexOf('/q-and-a/') != -1)
+        if(route.path !== '/transcripts/' && route.path.indexOf('/transcripts/') != -1)
           return route;
     });
 
@@ -24,16 +25,14 @@ module.exports = React.createClass({
     });
 
     return (
-      <div className="markdown">
+      <Container>
         <Helmet
           title={`${config.siteTitle} | ${post.title}`}
         />
-        <Title>{post.title}</Title>
-        <Container>
-          {isQaA && <LinkList>{items}</LinkList>}
-          <div style={{margin: '0 auto', flexBasis: '70%'}} dangerouslySetInnerHTML={{ __html: post.body }} />
-        </Container>
-      </div>
+        <Title secondary>{post.title}</Title>
+        {isTranscripts && <LinkList>{items}</LinkList>}
+        <MarkdownContainer className="markdown" style={{flexBasis: basis}} dangerouslySetInnerHTML={{ __html: post.body }} />
+      </Container>
     )
   },
 })

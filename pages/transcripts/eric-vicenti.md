@@ -1,5 +1,6 @@
 ---
 title: Eric Vicenti
+date: March 14 2016
 ---
 ## React Native
 

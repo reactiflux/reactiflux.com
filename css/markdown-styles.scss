@@ -2,32 +2,40 @@
   color: #3a1437;
   h1 {
     color: #02d8ff;
-    font-size: 120px;
+    font-size: 160px;
     letter-spacing: -13px;
-    line-height: 100px;
+    line-height: 160px;
     font-family: 'Space Mono', monospace;
 
   }
+  h2,h3,h4 {
+    color: #52244f;
+  }
   h2 {
     margin-bottom: 20px;
-    color: #52244f;
     font-size: 34px;
     line-height: 40px;
     font-weight: 600;
   }
   h3 {
-    margin-bottom: 12px;
-    color: #3a1437;
     font-size: 22px;
     line-height: 25px;
-    font-weight: 400;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  h4 {
+    margin-bottom: 0;
   }
   ul {
     margin-left: 0;
-    list-style: none;
   }
   li {
     margin-bottom: 0;
+    margin-left: 1em;
+    a::after {
+      content:"";
+      display:block;
+    }
   }
   a {
     text-decoration: none;
