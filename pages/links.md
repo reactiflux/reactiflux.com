@@ -22,7 +22,6 @@ title: Links
 
 
 ## Learning Core Javascript (ES5)
-
 - ### General Resources
   - [Mozilla Developer Network: Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
@@ -56,8 +55,9 @@ title: Links
     Many articles covering each feature in greater detail
   - [Exploring ES6](http://exploringjs.com/es6/index.html)
     A full online book covering every aspect of ES6 in fine detail
-## React Walkthrough
 
+
+## React Walkthrough
 "If you want to learn React, start by reading articles A and B, then move on to C and D", etc
 
 - ### Getting Started
@@ -129,6 +129,8 @@ title: Links
     An introduction to using React's built-in inline styling abilities
   - [How To Style React](http://andrewhfarmer.com/how-to-style-react/)
     An excellent overview of the four major ways to deal with styles in React, and what the various tools are. Includes a decision tree to help you decide what to use.
+
+
 ## Redux
 - ### Getting Started
   - [Redux Docs](http://redux.js.org/index.html)
