@@ -14,6 +14,7 @@ module.exports = React.createClass({
     const post = this.props.route.page.data
     const isTranscripts = this.props.route.path.indexOf('/transcripts/') != -1
     const basis = isTranscripts ? '70%' : '100%';
+    const maxWidth = isTranscripts ? '1192px' : '800px';
 
     const articles = this.props.route.pages.filter((route) => {
         if(route.path !== '/transcripts/' && route.path.indexOf('/transcripts/') != -1)
@@ -31,7 +32,7 @@ module.exports = React.createClass({
         />
         <Title secondary>{post.title}</Title>
         {isTranscripts && <LinkList>{items}</LinkList>}
-        <MarkdownContainer className="markdown" style={{flexBasis: basis}} dangerouslySetInnerHTML={{ __html: post.body }} />
+        <MarkdownContainer className="markdown" style={{maxWidth: maxWidth, flexBasis: basis}} dangerouslySetInnerHTML={{ __html: post.body }} />
       </Container>
     )
   },

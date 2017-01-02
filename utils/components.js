@@ -56,8 +56,8 @@ export const Title = styled.h1`
   color: #02d8ff;
   font-size: 200px;
   position: relative;
-  font-size: ${props => props.secondary ? '8.4rem' : '10.5rem'};
-  line-height: ${props => props.secondary ? '8.4rem' : '10.5rem'};
+  font-size: ${props => props.secondary ? '6rem' : '10.5rem'};
+  line-height: ${props => props.secondary ? '6rem' : '10.5rem'};
   letter-spacing: -13px;
   font-family: 'Space Mono', monospace;
   flex-basis: 100%;
@@ -155,6 +155,7 @@ export const SocialLinks = styled.div`
 export const Container = styled.div`
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 `;
 
 export const MarkdownContainer = styled.div`
