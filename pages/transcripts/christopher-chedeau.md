@@ -2,7 +2,7 @@
 title: Christopher Chedeau
 date: September 8 2016
 ---
-### React
+## Facebook React Core Team Member
 
 | username | question |
 | ---: | --- |

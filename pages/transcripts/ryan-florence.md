@@ -2,7 +2,7 @@
 title: Ryan Florence
 date: November 23 2016
 ---
-## React training
+## React Router Co-Author | [https://reactjs-training.com](https://reactjs-training.com)
 
 | username | question |
 | ---: | --- |

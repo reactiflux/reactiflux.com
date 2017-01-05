@@ -2,7 +2,7 @@
 title: Eric Vicenti
 date: March 14 2016
 ---
-## React Native
+## Engineer @ Facebook | Creator of Navigator Experimental
 
 | username | question |
 | ---: | --- |

@@ -2,7 +2,7 @@
 title: Devin Abbott
 date: May 25 2016
 ---
-## Deco Software
+## Engineer @ Deco Software
 
 | username | question |
 | ---: | --- |

@@ -1,5 +1,5 @@
 ---
-title: Relay team
+title: Relay Team
 date: August 26 2016
 ---
 ## `en_js`, `yuzhi`, `kassen`, and `wincent` are members of the Relay team.

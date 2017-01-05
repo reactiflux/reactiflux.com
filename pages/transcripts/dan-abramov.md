@@ -2,7 +2,7 @@
 title: Dan Abramov
 date: April 21 2016
 ---
-## React Core Team
+## Facebook React Core Team Member
 
 | username | question |
 | ---: | --- |
