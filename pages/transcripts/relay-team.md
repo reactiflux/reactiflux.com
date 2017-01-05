@@ -2,7 +2,7 @@
 title: Relay Team
 date: August 26 2016
 ---
-## `en_js`, `yuzhi`, `kassen`, and `wincent` are members of the Relay team.
+## Facebook Engineers Working on Relay
 
 | username | question |
 | ---: | --- |
