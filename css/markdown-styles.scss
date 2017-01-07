@@ -2,9 +2,9 @@
   color: #3a1437;
   h1 {
     color: #02d8ff;
-    font-size: 160px;
+    font-size: 8.421052632rem;
     letter-spacing: -13px;
-    line-height: 160px;
+    line-height: 8.421052632rem;
     font-family: 'Space Mono', monospace;
 
   }
@@ -12,14 +12,14 @@
     color: #52244f;
   }
   h2 {
-    margin-bottom: 20px;
-    font-size: 34px;
-    line-height: 40px;
+    margin-bottom: 1.052631579rem;
+    font-size: 1.789473684rem;
+    line-height: 2.105263158rem;
     font-weight: 600;
   }
   h3 {
-    font-size: 22px;
-    line-height: 25px;
+    font-size: 1.157894737rem;
+    line-height: 1.315789474rem;
     font-weight: 600;
     margin-bottom: 0;
   }
@@ -31,7 +31,7 @@
   }
   li {
     margin-bottom: 0;
-    margin-left: 1em;
+    margin-left: 1rem;
     a::after {
       content:"";
       display:block;
@@ -43,5 +43,10 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+  a, code, strong {
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
   }
 }

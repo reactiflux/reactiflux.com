@@ -9,3 +9,4 @@ export Reactiflux from './reactiflux.svg';
 export Redux from './redux.svg';
 export Relay from './relay.svg';
 export Twitter from './twitter.svg';
+export MenuIcon from './menu.svg';

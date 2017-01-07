@@ -7,42 +7,63 @@ import '../css/markdown-styles'
 import '../css/styles'
 
 import { rhythm } from '../utils/typography'
-import { Header, Navigation, Logo, StyledLink, NavigationLink, Footer, Copyright, Credits, IconLink, SocialLinks } from '../utils/components'
-import Discord from '../assets/discord.svg'
-import Twitter from '../assets/twitter.svg'
+import { Header, Navigation, MenuToggle, Logo, StyledLink, NavigationLink, Footer, Copyright, Credits, IconLink, SocialLinks } from '../utils/components'
+import { Discord, Twitter } from '../assets/logos.js'
 
-module.exports = React.createClass({
-  propTypes () {
-    return {
-      children: React.PropTypes.any,
-    }
-  },
+export default class Template extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { menuActive: false }
+    this.toggleMenu = this.toggleMenu.bind(this)
+    this.closeMenu = this.closeMenu.bind(this)
+
+  }
+
+  toggleMenu () {
+    this.setState((prevState) => ({
+      menuActive: !prevState.menuActive
+    }))
+  }
+
+  closeMenu () {
+    this.setState({
+      menuActive: false
+    })
+  }
+
   render () {
+    const menuActive = this.state.menuActive;
+
     return (
-      <div>
+      <div style={{position: menuActive ? 'fixed' : 'inherit'}}>
         <Headroom disableInlineStyles>
           <Header>
             <Logo
               to={prefixLink('/')}
+              onClick={this.closeMenu}
             >
               Reactiflux
             </Logo>
-            <Navigation role="navigation">
+            <MenuToggle onClick={this.toggleMenu} style={{transform: menuActive ? 'rotate(180deg)': 'rotate(0deg)' }}/>
+            <Navigation role="navigation" style={{top: menuActive ? 0 : '-100vh'}}>
               <NavigationLink
                 to={prefixLink('/q-and-a/')}
                 title="Question and answers schedule"
+                onClick={this.closeMenu}
               >
                 Q&A Schedule
               </NavigationLink>
               <NavigationLink
                 to={prefixLink('/transcripts/')}
                 title="Transcripts"
+                onClick={this.closeMenu}
               >
                 Transcripts
               </NavigationLink>
               <NavigationLink
                 to={prefixLink('/links/')}
                 title="Links"
+                onClick={this.closeMenu}
               >
                 Links
               </NavigationLink>
@@ -53,7 +74,7 @@ module.exports = React.createClass({
           style={{
             maxWidth: 1192,
             padding: `0 ${rhythm(3/4)} ${rhythm(1)} ${rhythm(3/4)}`,
-            marginBottom: 90,
+            marginBottom: 70,
           }}
         >
           {this.props.children}
@@ -82,5 +103,5 @@ module.exports = React.createClass({
         </Footer>
       </div>
     )
-  },
-})
+  }
+}
