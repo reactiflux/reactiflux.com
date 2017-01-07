@@ -107,6 +107,7 @@ export const Title = styled.h1`
   font-family: 'Space Mono', monospace;
   align-self: flex-start;
   flex-basis: 100%;
+  min-height: 60px;
   @media (max-width: 1200px) {
     font-size: 180px;
     line-height: 180px;
@@ -172,7 +173,7 @@ export const Subtitle = styled.span`
     font-size: 12px;
     line-height: 12px;
     top: 10px;
-    right: -25px;
+    right: -20px;
   }
 `;
 
@@ -189,6 +190,7 @@ export const Text = styled.p`
 
 export const Buttons = styled.div`
   display: inline-flex;
+  min-height: 72px;
   @media (max-width: 425px) {
     flex-flow: column;
   }
