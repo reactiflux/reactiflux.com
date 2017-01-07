@@ -96,6 +96,7 @@ export const FrontPage = styled.main`
 export const TitleBox = styled.div`
   position: relative;
   flex-basis: 100%;
+  align-self: flex-start;
 `;
 
 export const Title = styled.h1`
@@ -130,7 +131,7 @@ export const SmallTitle = styled.h1`
   font-size: 6rem;
   line-height: 6rem;
   color: #02d8ff;
-  letter-spacing: -13px;
+  letter-spacing: -10px;
   font-family: 'Space Mono', monospace;
   align-self: flex-start;
   flex-basis: 100%;
@@ -142,22 +143,24 @@ export const Subtitle = styled.span`
   font-size: 36px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  right: 100px;
-  top: 38px;
+  right: -40px;
+  top: 37px;
   letter-spacing: 0px;
   text-transform: uppercase;
   @media (max-width: 1200px) {
-    right: 100px;
+    right: -60px;
+    top: 34px;
   }
   @media (max-width: 1020px) {
     font-size: 26px;
     line-height: 26px;
-    top: 24px;
-    right: 20px;
+    top: 23px;
+    right: -40px;
   }
   @media (max-width: 760px) {
     font-size: 20px;
     line-height: 20px;
+    right: 0px;
   }
   @media (max-width: 700px) {
     font-size: 15px;
