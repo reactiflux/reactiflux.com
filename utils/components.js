@@ -95,16 +95,17 @@ export const FrontPage = styled.main`
 
 export const TitleBox = styled.div`
   position: relative;
-  align-self: flex-start;
+  flex-basis: 100%;
 `;
 
 export const Title = styled.h1`
   color: #02d8ff;
-  font-size: 200px;
-  line-height: 200px;
+  font-size: ${props => props.secondary ? '6rem' : '10.526315789rem'};
+  line-height: ${props => props.secondary ? '6rem' : '10.526315789rem'};
   letter-spacing: -13px;
   font-family: 'Space Mono', monospace;
   align-self: flex-start;
+  flex-basis: 100%;
   @media (max-width: 1200px) {
     font-size: 180px;
     line-height: 180px;
@@ -265,10 +266,10 @@ export const Container = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  @media (max-width: 765px) {
+  ${''/* @media (max-width: 765px) {
     flex-flow: column;
     align-items: center;
-  }
+  }*/}
 `;
 
 export const MarkdownContainer = styled.div`
