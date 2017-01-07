@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from "react-helmet"
-import { Container, Title, MarkdownContainer, LinkList, StyledLink } from '../../utils/components'
+import { Container, SmallTitle, MarkdownContainer, LinkList, StyledLink } from '../../utils/components'
 
 export default class Transcripts extends React.Component {
   render () {
@@ -26,7 +26,7 @@ export default class Transcripts extends React.Component {
         <Helmet
           title={'Reactiflux transcripts'}
         />
-        <Title secondary>{newestArticle.title}</Title>
+        <SmallTitle>{newestArticle.title}</SmallTitle>
         <LinkList>{items}</LinkList>
         <MarkdownContainer className="markdown" style={{flexBasis: '70%'}}  dangerouslySetInnerHTML={{ __html: newestArticle.body }}/>
       </Container>

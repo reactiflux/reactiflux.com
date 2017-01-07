@@ -2,7 +2,7 @@ import React from 'react'
 import 'css/markdown-styles.scss'
 import Helmet from 'react-helmet'
 import { config } from 'config'
-import { Container, MarkdownContainer, LinkList, StyledLink, Title } from '../utils/components'
+import { Container, MarkdownContainer, LinkList, StyledLink, SmallTitle } from '../utils/components'
 
 module.exports = React.createClass({
   propTypes () {
@@ -30,7 +30,7 @@ module.exports = React.createClass({
         <Helmet
           title={`${config.siteTitle} | ${post.title}`}
         />
-        <Title secondary>{post.title}</Title>
+        <SmallTitle>{post.title}</SmallTitle>
         {isTranscripts && <LinkList>{items}</LinkList>}
         <MarkdownContainer className="markdown" style={{maxWidth: maxWidth, flexBasis: basis}} dangerouslySetInnerHTML={{ __html: post.body }} />
       </Container>

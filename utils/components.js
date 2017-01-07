@@ -100,8 +100,8 @@ export const TitleBox = styled.div`
 
 export const Title = styled.h1`
   color: #02d8ff;
-  font-size: ${props => props.secondary ? '6rem' : '10.526315789rem'};
-  line-height: ${props => props.secondary ? '6rem' : '10.526315789rem'};
+  font-size: 200px;
+  line-height: 200px;
   letter-spacing: -13px;
   font-family: 'Space Mono', monospace;
   align-self: flex-start;
@@ -124,6 +124,16 @@ export const Title = styled.h1`
     line-height: 60px;
     letter-spacing: -6px;
   }
+`;
+
+export const SmallTitle = styled.h1`
+  font-size: 6rem;
+  line-height: 6rem;
+  color: #02d8ff;
+  letter-spacing: -13px;
+  font-family: 'Space Mono', monospace;
+  align-self: flex-start;
+  flex-basis: 100%;
 `;
 
 export const Subtitle = styled.span`
