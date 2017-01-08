@@ -13,8 +13,12 @@ import { Discord, Twitter } from '../assets/logos.js'
 export default class Template extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { menuActive: false }
+    this.state = {
+      menuActive: false,
+      transcriptActive: window.innerWidth < 768 ? false : true
+    }
     this.toggleMenu = this.toggleMenu.bind(this)
+    this.toggleTranscript = this.toggleTranscript.bind(this)
     this.closeMenu = this.closeMenu.bind(this)
 
   }
@@ -25,6 +29,12 @@ export default class Template extends React.Component {
     }))
   }
 
+  toggleTranscript () {
+    this.setState((prevState) => ({
+      transcriptActive: !prevState.transcriptActive
+    }))
+  }
+
   closeMenu () {
     this.setState({
       menuActive: false
@@ -32,7 +42,9 @@ export default class Template extends React.Component {
   }
 
   render () {
-    const menuActive = this.state.menuActive;
+    const { menuActive, transcriptActive } = this.state
+
+    const children = React.Children.map(this.props.children, (child) => React.cloneElement(child, { transcriptActive, toggleTranscript: this.toggleTranscript }))
 
     return (
       <div style={{position: menuActive ? 'fixed' : 'inherit'}}>
@@ -44,7 +56,7 @@ export default class Template extends React.Component {
             >
               Reactiflux
             </Logo>
-            <MenuToggle onClick={this.toggleMenu} style={{transform: menuActive ? 'rotate(180deg)': 'rotate(0deg)' }}/>
+            <MenuToggle onClick={this.toggleMenu} menuActive={menuActive} />
             <Navigation role="navigation" style={{top: menuActive ? 0 : '-100vh'}}>
               <NavigationLink
                 to={prefixLink('/schedule/')}
@@ -77,7 +89,7 @@ export default class Template extends React.Component {
             marginBottom: 70,
           }}
         >
-          {this.props.children}
+          { children }
         </Container>
         <Footer>
           <div>

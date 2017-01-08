@@ -14,7 +14,7 @@ export const Header = styled.header`
 `;
 
 export const Navigation = styled.nav`
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     position: absolute;
     top: -100vh;
     left: 0;
@@ -39,18 +39,21 @@ export const Logo = styled(Link)`
   z-index: 3;
 `;
 
-export const MenuToggle = styled.span`
+export const Arrow = styled.div`
   display: none;
   width: 28px;
   height: 20px;
   color: #dd1d64;
-  z-index: 3;
+  z-index: 1;
   background: url(${MenuIcon});
   background-repeat: no-repeat;
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     display: inline;
   }
 `;
+
+export const MenuToggle = ({ onClick, menuActive }) =>
+  <Arrow onClick={ onClick } style={{ transform: menuActive ? 'rotate(180deg)': 'rotate(0deg)' }} />
 
 export const StyledLink = styled(Link)`
   color: #dd1d64;
@@ -59,6 +62,7 @@ export const StyledLink = styled(Link)`
     text-decoration: underline;
   }
 `;
+
 
 export const NavigationLink = styled(StyledLink)`
   padding-bottom: 6px;
@@ -73,15 +77,41 @@ export const NavigationLink = styled(StyledLink)`
   &:last-child {
     margin-right: 0px;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     margin-right: 0px;
     font-size: 30px;
     line-height: 30px;
   }
 `;
 
-export const LinkList = styled.ul`
+export const SideBarInner = styled.div`
+  display: inline-flex;
+  flex-flow: column;
   flex-basis: 30%;
+  width: 100%;
+  padding-left: 0;
+  @media (min-width: 768px) {
+    padding-left: 30px;
+  }
+  @media (max-width: 768px) {
+    max-width: 300px;
+    align-items: center;
+    align-self: flex-start;
+  }
+`;
+
+export const ReadMore = styled.div`
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #dd1d64;
+  justify-content: space-between;
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const LinkList = styled.ul`
   margin-left: 0;
 `;
 
@@ -129,13 +159,14 @@ export const Title = styled.h1`
 `;
 
 export const SmallTitle = styled.h1`
-  font-size: 6rem;
-  line-height: 6rem;
+  font-size: 4rem;
+  line-height: 4rem;
   color: #02d8ff;
-  letter-spacing: -10px;
+  letter-spacing: -4px;
   font-family: 'Space Mono', monospace;
   align-self: flex-start;
   flex-basis: 100%;
+  max-width: 100%;
 `;
 
 export const Subtitle = styled.span`
@@ -281,10 +312,10 @@ export const Container = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  ${''/* @media (max-width: 765px) {
+  @media (max-width: 765px) {
     flex-flow: column;
     align-items: center;
-  }*/}
+  }
 `;
 
 export const MarkdownContainer = styled.div`
@@ -292,3 +323,13 @@ export const MarkdownContainer = styled.div`
   flex-flow: column;
   width: 100%;
 `;
+
+export const SideBar = ({ children, transcriptActive, toggleTranscript }) =>
+  <SideBarInner>
+    <ReadMore onClick={toggleTranscript}>
+      Read { transcriptActive ? 'less' : 'more' } transcripts <MenuToggle menuActive={transcriptActive} />
+    </ReadMore>
+    <LinkList style={{ display: transcriptActive ? 'list-item' : 'none' }}>
+      { children }
+    </LinkList>
+  </SideBarInner>

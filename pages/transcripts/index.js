@@ -1,8 +1,10 @@
 import React from 'react'
 import Helmet from "react-helmet"
-import { Container, SmallTitle, MarkdownContainer, LinkList, StyledLink } from '../../utils/components'
+import { Container, SmallTitle, SideBar, MarkdownContainer, StyledLink } from '../../utils/components'
+
 
 export default class Transcripts extends React.Component {
+
   render () {
     const articles = this.props.route.pages.filter((route) => {
         if(route.path !== '/transcripts/' && route.path.indexOf('/transcripts/') != -1)
@@ -10,7 +12,7 @@ export default class Transcripts extends React.Component {
     });
 
     const items = articles.map((article) => {
-      return <li><StyledLink to={article.path} title={article.data.title}>{article.data.title}</StyledLink></li>
+      return <li key={article.data.title}><StyledLink to={article.path} title={article.data.title}>{article.data.title}</StyledLink></li>
     });
 
     articles.sort((a, b) => {
@@ -18,8 +20,7 @@ export default class Transcripts extends React.Component {
     })
 
     const newestArticle = articles[0].data
-
-
+    const { transcriptActive, toggleTranscript } = this.props
 
     return (
       <Container>
@@ -27,7 +28,7 @@ export default class Transcripts extends React.Component {
           title={'Reactiflux transcripts'}
         />
         <SmallTitle>{newestArticle.title}</SmallTitle>
-        <LinkList>{items}</LinkList>
+        <SideBar children={items} transcriptActive={transcriptActive} toggleTranscript={toggleTranscript} />
         <MarkdownContainer className="markdown" style={{flexBasis: '70%'}}  dangerouslySetInnerHTML={{ __html: newestArticle.body }}/>
       </Container>
     )
