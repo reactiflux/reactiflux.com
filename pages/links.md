@@ -58,7 +58,7 @@ title: Links
 
 
 ## React Walkthrough
-If you are new to React, read these articles in order. Brought to you by Mark Erikson (aka @acemarke). For additional articles, see [React/Redux Links](https://github.com/markerikson/react-redux-links).
+If you are new to React, read these articles in order. Brought to you by [Mark Erikson](https://twitter.com/acemarke) (aka @acemarke). For additional articles, see [React/Redux Links](https://github.com/markerikson/react-redux-links).
 
 - ### Getting Started
   - [React Documentation](https://facebook.github.io/react/docs/hello-world.html)
