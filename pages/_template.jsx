@@ -47,8 +47,8 @@ export default class Template extends React.Component {
             <MenuToggle onClick={this.toggleMenu} style={{transform: menuActive ? 'rotate(180deg)': 'rotate(0deg)' }}/>
             <Navigation role="navigation" style={{top: menuActive ? 0 : '-100vh'}}>
               <NavigationLink
-                to={prefixLink('/q-and-a/')}
-                title="Question and answers schedule"
+                to={prefixLink('/schedule/')}
+                title="Q&A Schedule"
                 onClick={this.closeMenu}
               >
                 Q&A Schedule
