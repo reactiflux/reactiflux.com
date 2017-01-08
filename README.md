@@ -1,5 +1,5 @@
 # Reactiflux webpage
-Webpage for reactiflux community
+Finally Reactiflux has a new web page! The admins/mods and would like to thank [@zachgibson](http://zachgibsondesign.com/) for the amazing design and unique iconography and [@huvik](https://github.com/Huvik) for the countless hours spent developing this site in between his exams at school. Also, a shout out to [@kyleamathews](https://github.com/kyleamathews) and all the contributors to Gatsby.js; the wonderful React.js static site generator we used for this site. Thank you to [@acemarke](https://github.com/markerikson) for taking the time to start a well thought out learning section with his link mastery and [@vcarl](https://github.com/vcarl) for transcribing almost all of the Q&A's to date.
 
 ## Getting started
 ### Installation 
