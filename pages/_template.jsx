@@ -15,7 +15,7 @@ export default class Template extends React.Component {
     super(props)
     this.state = {
       menuActive: false,
-      transcriptActive: window.innerWidth < 768 ? false : true
+      transcriptActive: typeof window !== 'undefined' ? window.innerWidth < 768 ? false : true : false
     }
     this.toggleMenu = this.toggleMenu.bind(this)
     this.toggleTranscript = this.toggleTranscript.bind(this)
