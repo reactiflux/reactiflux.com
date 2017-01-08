@@ -1,5 +1,5 @@
 ---
-title: Links
+title: Learning
 ---
 ## Basic Concepts and Learning Approaches
 - ### Overviews of Javascript Tools and Concepts
