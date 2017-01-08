@@ -173,7 +173,7 @@ export const Subtitle = styled.span`
     font-size: 12px;
     line-height: 12px;
     top: 10px;
-    right: -20px;
+    right: -24px;
   }
 `;
 
