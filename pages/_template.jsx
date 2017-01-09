@@ -15,12 +15,13 @@ export default class Template extends React.Component {
     super(props)
     this.state = {
       menuActive: false,
-      transcriptActive: typeof window !== 'undefined' ? window.innerWidth < 768 ? false : true : false
+      transcriptActive: typeof window !== 'undefined' ? window.innerWidth < 768 ? false : true : false,
+      width: typeof window !== 'undefined' ? window.innerWidth : null
     }
     this.toggleMenu = this.toggleMenu.bind(this)
     this.toggleTranscript = this.toggleTranscript.bind(this)
     this.closeMenu = this.closeMenu.bind(this)
-
+    this.closeTranscript = this.closeTranscript.bind(this)
   }
 
   toggleMenu () {
@@ -41,10 +42,18 @@ export default class Template extends React.Component {
     })
   }
 
+  closeTranscript() {
+    if (this.state.width < 768) {
+      this.setState({
+        transcriptActive: false
+      })
+    }
+  }
+
   render () {
     const { menuActive, transcriptActive } = this.state
 
-    const children = React.Children.map(this.props.children, (child) => React.cloneElement(child, { transcriptActive, toggleTranscript: this.toggleTranscript }))
+    const children = React.Children.map(this.props.children, (child) => React.cloneElement(child, { transcriptActive, toggleTranscript: this.toggleTranscript, closeTranscript: this.closeTranscript }))
 
     return (
       <div style={{position: menuActive ? 'fixed' : 'inherit'}}>

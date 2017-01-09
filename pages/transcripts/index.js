@@ -11,8 +11,10 @@ export default class Transcripts extends React.Component {
           return route;
     });
 
+    const { transcriptActive, closeTranscript, toggleTranscript } = this.props
+
     const items = articles.map((article) => {
-      return <li key={article.data.title}><StyledLink to={article.path} title={article.data.title}>{article.data.title}</StyledLink></li>
+      return <li key={article.data.title}><StyledLink onClick={closeTranscript} to={article.path} title={article.data.title}>{article.data.title}</StyledLink></li>
     });
 
     articles.sort((a, b) => {
@@ -20,7 +22,6 @@ export default class Transcripts extends React.Component {
     })
 
     const newestArticle = articles[0].data
-    const { transcriptActive, toggleTranscript } = this.props
 
     return (
       <Container>
@@ -29,7 +30,7 @@ export default class Transcripts extends React.Component {
         />
         <SmallTitle>{newestArticle.title}</SmallTitle>
         <SideBar children={items} transcriptActive={transcriptActive} toggleTranscript={toggleTranscript} />
-        <MarkdownContainer className="markdown" style={{flexBasis: '70%'}}  dangerouslySetInnerHTML={{ __html: newestArticle.body }}/>
+        <MarkdownContainer transcript className="markdown"  dangerouslySetInnerHTML={{ __html: newestArticle.body }}/>
       </Container>
     )
   }

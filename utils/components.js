@@ -94,6 +94,7 @@ export const SideBarInner = styled.div`
     padding-left: 30px;
   }
   @media (max-width: 768px) {
+    flex-basis: auto;
     max-width: 300px;
     align-items: center;
     align-self: flex-start;
@@ -165,8 +166,8 @@ export const SmallTitle = styled.h1`
   letter-spacing: -4px;
   font-family: 'Space Mono', monospace;
   align-self: flex-start;
-  flex-basis: 100%;
-  max-width: 100%;
+  width: 100%;
+  min-height: 4rem;
 `;
 
 export const Subtitle = styled.span`
@@ -313,7 +314,7 @@ export const Container = styled.div`
   flex-flow: row wrap;
   justify-content: center;
   @media (max-width: 765px) {
-    flex-flow: column;
+    flex-flow: column wrap;
     align-items: center;
   }
 `;
@@ -321,7 +322,11 @@ export const Container = styled.div`
 export const MarkdownContainer = styled.div`
   display: inline-flex;
   flex-flow: column;
-  width: 100%;
+  flex-basis: ${props => props.transcript ? '70%' : '70%'};
+  max-width:  ${props => props.transcript ? '1192px' : '800px'};
+  @media (max-width: 768px) {
+    flex-basis: auto;
+  }
 `;
 
 export const SideBar = ({ children, transcriptActive, toggleTranscript }) =>
