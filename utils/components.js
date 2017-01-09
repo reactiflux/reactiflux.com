@@ -153,8 +153,8 @@ export const Title = styled.h1`
     letter-spacing: -8px;
   }
   @media (max-width: 420px) {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 55px;
+    line-height: 55px;
     letter-spacing: -6px;
   }
 `;
