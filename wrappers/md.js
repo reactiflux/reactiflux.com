@@ -34,8 +34,8 @@ module.exports = React.createClass({
           title={`${config.siteTitle} | ${post.title}`}
         />
         <SmallTitle>{post.title}</SmallTitle>
-        {isTranscripts && <SideBar children={items} transcriptActive={transcriptActive} toggleTranscript={toggleTranscript} />}
-        {isLearning && <SideBar toc={post.toc} isToc={isLearning} transcriptActive={transcriptActive} />}
+        {isTranscripts && <SideBar children={items} sidebarActive={transcriptActive} toggle={toggleTranscript} />}
+        {isLearning && <SideBar toc={post.toc} isToc={isLearning} sidebarActive={transcriptActive} toggle={toggleTranscript} />}
         { Markdown }
       </Container>
     )

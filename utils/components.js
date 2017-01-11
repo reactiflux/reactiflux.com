@@ -329,13 +329,13 @@ export const MarkdownContainer = styled.div`
   }
 `;
 
-export const SideBar = ({ children, transcriptActive, toggleTranscript, isToc, toc }) =>
+export const SideBar = ({ children, sidebarActive, toggle, isToc, toc }) =>
   <SideBarInner>
-    <ReadMore onClick={toggleTranscript}>
-      Read { transcriptActive ? 'less' : 'more' } transcripts <MenuToggle menuActive={transcriptActive} />
+    <ReadMore onClick={toggle}>
+      Read { sidebarActive ? 'less' : 'more' } <MenuToggle menuActive={sidebarActive} />
     </ReadMore>
     { isToc ?
-      <div dangerouslySetInnerHTML={{ __html: toc }} /> :
-      <LinkList style={{ display: transcriptActive ? 'list-item' : 'none' }}>{children}</LinkList>
+      <div style={{ display: sidebarActive ? 'block' : 'none' }} dangerouslySetInnerHTML={{ __html: toc }} /> :
+      <LinkList style={{ display: sidebarActive ? 'list-item' : 'none' }}>{children}</LinkList>
     }
   </SideBarInner>

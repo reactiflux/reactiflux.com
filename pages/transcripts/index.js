@@ -29,7 +29,7 @@ export default class Transcripts extends React.Component {
           title={'Reactiflux transcripts'}
         />
         <SmallTitle>{newestArticle.title}</SmallTitle>
-        <SideBar children={items} transcriptActive={transcriptActive} toggleTranscript={toggleTranscript} />
+        <SideBar children={items} sidebarActive={transcriptActive} toggle={toggleTranscript} />
         <MarkdownContainer transcript className="markdown"  dangerouslySetInnerHTML={{ __html: newestArticle.body }}/>
       </Container>
     )
