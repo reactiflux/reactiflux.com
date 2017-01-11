@@ -33,6 +33,7 @@ var md = markdownIt({
   .use(require('markdown-it-abbr'))
   .use(require('markdown-it-attrs'))
   .use(markdownItTocAndAnchor, {
+    tocLastLevel: 2,
     anchorLinkSymbol: ''
   })
 

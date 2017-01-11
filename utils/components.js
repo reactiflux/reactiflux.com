@@ -90,6 +90,7 @@ export const SideBarInner = styled.div`
   flex-basis: 30%;
   width: 100%;
   padding-left: 0;
+  padding-right: 20px;
   @media (min-width: 768px) {
     padding-left: 30px;
   }
