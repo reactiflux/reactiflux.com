@@ -32,10 +32,6 @@
   li {
     margin-bottom: 0;
     margin-left: 1rem;
-    a::after {
-      content:"";
-      display:block;
-    }
   }
   a {
     text-decoration: none;

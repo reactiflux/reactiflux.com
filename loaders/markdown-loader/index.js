@@ -23,6 +23,7 @@ var md = markdownIt({
   html: true,
   linkify: true,
   typographer: true,
+  breaks: true,
   highlight,
 })
   .use(require('markdown-it-sub'))

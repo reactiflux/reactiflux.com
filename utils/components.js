@@ -137,6 +137,7 @@ export const Title = styled.h1`
   letter-spacing: -13px;
   font-family: 'Space Mono', monospace;
   align-self: flex-start;
+  flex-basis: 100%;
   min-height: 60px;
   @media (max-width: 1200px) {
     font-size: 180px;
