@@ -46,3 +46,24 @@
     word-wrap: break-word;
   }
 }
+
+.markdownIt-TOC {
+  list-style: none;
+  a {
+    color: #dd1d64;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  ul {
+    list-style: disc;
+    font-size: 15px;
+    line-height: 15px;
+     ul{
+       list-style: circle;
+       font-size: 12px;
+       line-height: 12px;
+     }
+  }
+}

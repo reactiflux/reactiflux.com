@@ -21,8 +21,6 @@ module.exports = React.createClass({
           return route;
     });
 
-    console.log(post)
-
     const items = articles.map((article) => {
       return <li key={article.data.title}><StyledLink onClick={closeTranscript} to={article.path} title={article.data.title}>{article.data.title}</StyledLink></li>
     });
@@ -37,7 +35,7 @@ module.exports = React.createClass({
         />
         <SmallTitle>{post.title}</SmallTitle>
         {isTranscripts && <SideBar children={items} transcriptActive={transcriptActive} toggleTranscript={toggleTranscript} />}
-        {isLearning && <div dangerouslySetInnerHTML={{ __html: post.toc }} ></div>}
+        {isLearning && <SideBar toc={post.toc} isToc={isLearning} transcriptActive={transcriptActive} />}
         { Markdown }
       </Container>
     )
