@@ -5,7 +5,7 @@ title: Learning
 - ### Overviews of Javascript Tools and Concepts
   - [State of the Javascript Landscape in 2016](http://www.infoq.com/articles/state-of-javascript-2016)
     A very high-level summary of the important terms and technologies that are used in modern Javascript development.
-  - [The (R)Evolution of Web Development](http://blog.isquaredsoftware.com/presentations/2016-10-revolution-of-web-dev/)
+  - [The \(R\)Evolution of Web Development](http://blog.isquaredsoftware.com/presentations/2016-10-revolution-of-web-dev/)
     A slideshow giving an overview of web dev history and modern web dev tools, technologies, and trends.
   - [Javascript Package Managers 101](https://medium.com/@shubheksha/javascript-package-managers-101-9afd926add0a)
     An overview of what packages and package managers are, some related terms, and how these tools work.
