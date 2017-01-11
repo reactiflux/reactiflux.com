@@ -1,5 +1,6 @@
 var frontMatter = require('front-matter')
 var markdownIt = require('markdown-it')
+var markdownItTocAndAnchor = require('markdown-it-toc-and-anchor').default;
 var hljs = require('highlight.js')
 var objectAssign = require('object-assign')
 
@@ -31,13 +32,22 @@ var md = markdownIt({
   .use(require('markdown-it-deflist'))
   .use(require('markdown-it-abbr'))
   .use(require('markdown-it-attrs'))
+  .use(markdownItTocAndAnchor, {
+    anchorLinkSymbol: ''
+  })
 
 module.exports = function (content) {
   this.cacheable()
+  var toc
   const meta = frontMatter(content)
-  const body = md.render(meta.body)
+  const body = md.render(meta.body, {
+    tocCallback: function(tocMarkdown, tocArray, tocHtml) {
+      toc = tocHtml
+    }
+  })
   const result = objectAssign({}, meta.attributes, {
     body,
+    toc
   })
   this.value = result
   return `module.exports = ${JSON.stringify(result)}`

@@ -13,12 +13,15 @@ module.exports = React.createClass({
   render () {
     const post = this.props.route.page.data
     const isTranscripts = this.props.route.path.indexOf('/transcripts/') != -1
+    const isLearning = this.props.route.path.indexOf('/learning/') != -1
     const { transcriptActive, closeTranscript, toggleTranscript } = this.props
 
     const articles = this.props.route.pages.filter((route) => {
         if(route.path !== '/transcripts/' && route.path.indexOf('/transcripts/') != -1)
           return route;
     });
+
+    console.log(post)
 
     const items = articles.map((article) => {
       return <li key={article.data.title}><StyledLink onClick={closeTranscript} to={article.path} title={article.data.title}>{article.data.title}</StyledLink></li>
@@ -34,6 +37,7 @@ module.exports = React.createClass({
         />
         <SmallTitle>{post.title}</SmallTitle>
         {isTranscripts && <SideBar children={items} transcriptActive={transcriptActive} toggleTranscript={toggleTranscript} />}
+        {isLearning && <div dangerouslySetInnerHTML={{ __html: post.toc }} ></div>}
         { Markdown }
       </Container>
     )
