@@ -30,9 +30,6 @@ module.exports = React.createClass({
     const Markdown = isTranscripts ?
       <MarkdownContainer transcript className="markdown" dangerouslySetInnerHTML={{ __html: post.body }} /> :
       <MarkdownContainer className="markdown" dangerouslySetInnerHTML={{ __html: post.body }} />
-
-    console.log(isStats)
-    console.log(this.props.route)
     return (
       <Container>
         <Helmet

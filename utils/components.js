@@ -375,7 +375,6 @@ export const StatsMonthTitle = styled.h2`
 
 export const TopContributorsList = styled.div`
   width: 100%;
-  padding-bottom: 5%;
   padding-top: 50px;
 
   @media (max-width: 375px) {
