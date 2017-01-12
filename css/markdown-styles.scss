@@ -6,9 +6,10 @@
     letter-spacing: -13px;
     line-height: 8.421052632rem;
     font-family: 'Space Mono', monospace;
-
   }
-  h2,h3,h4 {
+  h2,
+  h3,
+  h4 {
     color: #52244f;
   }
   h2 {
@@ -40,176 +41,115 @@
       text-decoration: underline;
     }
   }
-  a, code, strong {
+  a,
+  code,
+  strong {
     white-space: pre-wrap;
     word-break: break-all;
     word-wrap: break-word;
   }
-
-  &.stats {
-    width: 100%;
-
-    .topContributors {
-      position: relative;
-      h1 {
-        font-size: 10.421052632rem;
-
-        @media (max-width: 768px) {
-          font-size: 8.421052632rem;
-        }
-
-        @media (max-width: 667px) {
-            font-size: 6.421052632rem;
-            letter-spacing: -5px;
-        }
-
-        @media (max-width: 375px) {
-            font-size: 4.421052632rem;
-            letter-spacing: 0;
-        }
-      }
-    
-      .contributors {
-        position:absolute;
-        top: 10px;
-        right: 140px;
-        color: #dd1d64;
-
-        @media (max-width: 1024px) {
-          right: 0;
-          font-size: 1.5em;
-        }
-
-        @media (max-width: 768px) {
-          right: 0;
-          top: -10px;
-          font-size: 1.5em;
-        }
-
-
-      }
+  .contributors {
+    position: absolute;
+    top: 10px;
+    right: 140px;
+    color: #dd1d64;
+    @media (max-width: 1024px) {
+      right: 0;
+      font-size: 1.5em;
     }
-
-    .topContributorsList {
-      width: 100%;
-      padding-bottom: 5%;
-      padding-top: 50px;
-
-      @media (max-width: 375px) {
-        padding-top: 0;
-      }
-
-      .contributor {
-        width: 20%;
-        float: left;
-        text-align: center;
-        padding-bottom: 5%;
-
-        @media (max-width: 768px) {
-          width: 33%;
-
-          &.wider {
-            width: 50%;
-          }
-        }
-
-        .position {
-          background-color: #02d8ff;
-          color: #fff;
-          border-radius: 50%;
-          max-width: 40px;
-          max-height: 40px;
-          width: 15%;
-          font-size: 1em;
-          font-weight: bold;
-          margin: 0 auto;
-          margin-bottom: 10px;
-
-          @media (max-width: 667px) {
-            width: 20px;
-            height: 20px;
-          }
-        }
-
-        .name {
-          color: #dd1d64;
-          font-size: 1.5em;
-          font-weight: bold;
-          margin: 0 auto;
-          margin-bottom: 10px;
-
-          @media (max-width: 375px) {
-            font-size: 1.2em;
-          }
-
-        }
-
-        .numberOfMessages {
-          color: #52244f;
-          font-size: 0.8em;
-          font-weight: bold;
-          margin: 0 auto;
-          margin-bottom: 10px;
-        }
-      }
-    }
-
-
-    .liveStats {
-      margin-top: 24%;
-      .title {
-        color: #dd1d64;
-        font-size: 1.8em;
-        text-transform: uppercase;
-        font-style: italic;
-        font-weight:  100;
-        margin-bottom: 10%;
-
-        @media (max-width: 768px) {
-          font-size: 1.3em;
-        }
-      }
-
-      .members, .messagesSent, .messagesSentToday {
-        position:relative;
-        width: 60%;
-        margin-bottom: 10%;
-
-        @media (max-width: 1024px) {
-          width: 65%;
-        }
-
-        @media (max-width: 768px) {
-          width: 85%;
-        }
-
-        @media (max-width: 667px) {
-          width: 100%;
-        }
-
-        @media (max-width: 375px) {
-          h1 {
-            font-size: 5.5em;
-            letter-spacing: -5px;
-          }
-        }
-
-        h2 {
-          position:absolute;
-          top: -10px;
-          right: 0px;
-          color: #dd1d64;
-          text-transform: uppercase;
-
-          @media (max-width: 375px) {
-            font-size: 1.5em;
-          }
-        }
-      }
+    @media (max-width: 768px) {
+      right: 0;
+      top: -10px;
+      font-size: 1.5em;
     }
   }
+}
 
-  
+.contributor {
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding-bottom: 5%;
+  @media (max-width: 768px) {
+    width: 33%;
+    &.wider {
+      width: 50%;
+    }
+  }
+  .position {
+    background-color: #02d8ff;
+    color: #fff;
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+    width: 15%;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    @media (max-width: 667px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .name {
+    color: #dd1d64;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    @media (max-width: 375px) {
+      font-size: 1.2em;
+    }
+  }
+  .numberOfMessages {
+    color: #52244f;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+.members,
+.messagesSent,
+.messagesSentToday {
+  position: relative;
+  width: 60%;
+  margin-bottom: 10%;
+
+  h1 {
+    color: #02d8ff;
+    font-size: 8.421052632rem;
+    letter-spacing: -13px;
+    line-height: 8.421052632rem;
+    font-family: 'Space Mono', monospace;
+  } 
+  @media (max-width: 1024px) {
+    width: 65%;
+  }
+  @media (max-width: 768px) {
+    width: 85%;
+  }
+  @media (max-width: 667px) {
+    width: 100%;
+  }
+  @media (max-width: 375px) {
+    h1 {
+      font-size: 5.5em;
+      letter-spacing: -5px;
+    }
+  }
+  h2 {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    color: #dd1d64;
+    text-transform: uppercase;
+    @media (max-width: 375px) {
+      font-size: 1.5em;
+    }
+  }
 }
 
 .markdownIt-TOC {
@@ -225,10 +165,10 @@
     list-style: disc;
     font-size: 15px;
     line-height: 15px;
-     ul{
-       list-style: circle;
-       font-size: 12px;
-       line-height: 12px;
-     }
+    ul {
+      list-style: circle;
+      font-size: 12px;
+      line-height: 12px;
+    }
   }
 }

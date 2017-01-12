@@ -330,6 +330,76 @@ export const MarkdownContainer = styled.div`
   }
 `;
 
+export const MarkdownStats = styled.div`
+  width: 100%;
+`;
+
+export const TopContributors = styled.div`
+  position: relative;
+`;
+
+export const StatsMonth = styled.h1`
+  font-size: 10.421052632rem;
+  color: #02d8ff;
+  letter-spacing: -13px;
+  line-height: 8.421052632rem;
+  font-family: 'Space Mono', monospace;
+  @media (max-width: 768px) {
+    font-size: 8.421052632rem;
+  }
+  @media (max-width: 667px) {
+      font-size: 6.421052632rem;
+      letter-spacing: -5px;
+  }
+  @media (max-width: 375px) {
+      font-size: 4.421052632rem;
+      letter-spacing: 0;
+  }
+`;
+
+export const StatsMonthTitle = styled.h2`
+  position:absolute;
+  top: 10px;
+  right: 140px;
+  color: #dd1d64;
+  @media (max-width: 1024px) {
+    right: 0;
+    font-size: 1.5em;
+  }
+  @media (max-width: 768px) {
+    right: 0;
+    top: -10px;
+    font-size: 1.5em;
+  }
+`;
+
+export const TopContributorsList = styled.div`
+  width: 100%;
+  padding-bottom: 5%;
+  padding-top: 50px;
+
+  @media (max-width: 375px) {
+    padding-top: 0;
+  }
+`;
+
+export const LiveStats = styled.div`
+  margin-top: 24%;
+`;
+
+export const LiveStatsTitle = styled.h3`
+  color: #dd1d64;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight:  100;
+  margin-bottom: 10%;
+
+  @media (max-width: 768px) {
+    font-size: 1.3em;
+  }
+`;
+
 export const SideBar = ({ children, sidebarActive, toggle, isToc, toc }) =>
   <SideBarInner>
     <ReadMore onClick={toggle}>
@@ -343,20 +413,20 @@ export const SideBar = ({ children, sidebarActive, toggle, isToc, toc }) =>
 
 
 export const Stats = ({ children, post}) => 
-  <div className="markdown stats">
-    <div className="topContributors">
-      <h2 className="contributors">TOP CONTRIBUTORS FOR</h2>
-      <h1>{post.month}</h1>
-    </div>
-    <div className="topContributorsList">
+  <MarkdownStats>
+    <TopContributors>
+      <StatsMonthTitle>TOP CONTRIBUTORS FOR</StatsMonthTitle>
+      <StatsMonth>{post.month}</StatsMonth>
+    </TopContributors>
+    <TopContributorsList>
       <Contributor index={1} name={post.contributors[0]} numberOfMessages={post.messagesPerContributors[0]} />
       <Contributor index={2} name={post.contributors[1]} numberOfMessages={post.messagesPerContributors[1]} />
       <Contributor index={3} name={post.contributors[2]} numberOfMessages={post.messagesPerContributors[2]} />
       <Contributor index={4} name={post.contributors[3]} numberOfMessages={post.messagesPerContributors[3]} />
       <Contributor index={5} name={post.contributors[4]} numberOfMessages={post.messagesPerContributors[4]} />
-    </div>
-    <div className="liveStats">
-      <h3 className="title">Live stats from pipend</h3>
+    </TopContributorsList>
+    <LiveStats>
+      <LiveStatsTitle>Live stats from pipend</LiveStatsTitle>
       <div className="members">
         <h2>Members</h2>
         <h1>21,290</h1>
@@ -369,8 +439,8 @@ export const Stats = ({ children, post}) =>
         <h2>Messages Sent Today</h2>
         <h1>1,221</h1>
       </div>
-    </div>
-  </div>
+    </LiveStats>
+  </MarkdownStats>
 
 
 
