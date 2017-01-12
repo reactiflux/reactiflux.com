@@ -82,6 +82,13 @@ export default class Template extends React.Component {
                 Transcripts
               </NavigationLink>
               <NavigationLink
+                to={prefixLink('/stats/')}
+                title="Stats"
+                onClick={this.closeMenu}
+              >
+                Stats
+              </NavigationLink>
+              <NavigationLink
                 to={prefixLink('/learning/')}
                 title="Learning"
                 onClick={this.closeMenu}

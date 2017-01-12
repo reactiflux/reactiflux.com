@@ -340,3 +340,44 @@ export const SideBar = ({ children, sidebarActive, toggle, isToc, toc }) =>
       <LinkList style={{ display: sidebarActive ? 'list-item' : 'none' }}>{children}</LinkList>
     }
   </SideBarInner>
+
+
+export const Stats = ({ children, post}) => 
+  <div className="markdown stats">
+    <div className="topContributors">
+      <h2 className="contributors">TOP CONTRIBUTORS FOR</h2>
+      <h1>{post.month}</h1>
+    </div>
+    <div className="topContributorsList">
+      <Contributor index={1} name={post.contributors[0]} numberOfMessages={post.messagesPerContributors[0]} />
+      <Contributor index={2} name={post.contributors[1]} numberOfMessages={post.messagesPerContributors[1]} />
+      <Contributor index={3} name={post.contributors[2]} numberOfMessages={post.messagesPerContributors[2]} />
+      <Contributor index={4} name={post.contributors[3]} numberOfMessages={post.messagesPerContributors[3]} />
+      <Contributor index={5} name={post.contributors[4]} numberOfMessages={post.messagesPerContributors[4]} />
+    </div>
+    <div className="liveStats">
+      <h3 className="title">Live stats from pipend</h3>
+      <div className="members">
+        <h2>Members</h2>
+        <h1>21,290</h1>
+      </div>
+      <div className="messagesSent">
+        <h2>Messages Sent</h2>
+        <h1>200,562</h1>
+      </div>
+      <div className="messagesSentToday">
+        <h2>Messages Sent Today</h2>
+        <h1>1,221</h1>
+      </div>
+    </div>
+  </div>
+
+
+
+
+export const Contributor = ({index, name, numberOfMessages}) => 
+  <span className={(index > 3) ? "contributor wider" : "contributor"}>
+    <div className="position">{index}</div>
+    <div className="name">{name}</div>
+    <div className="numberOfMessages">{numberOfMessages} messages</div>
+  </span>
