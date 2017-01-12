@@ -48,6 +48,7 @@
 }
 
 .markdownIt-TOC {
+  margin-left: 0;
   list-style: none;
   a {
     color: #dd1d64;
@@ -57,13 +58,13 @@
     }
   }
   ul {
+    margin-top: 0;
     list-style: disc;
-    font-size: 15px;
-    line-height: 15px;
-     ul{
-       list-style: circle;
-       font-size: 12px;
-       line-height: 12px;
-     }
+    font-size: 19px;
+    line-height: 19px;
+  }
+  li {
+    line-height: 1.5em;
+    margin-bottom: calc(1.5rem / 2);
   }
 }

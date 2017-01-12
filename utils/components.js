@@ -91,9 +91,6 @@ export const SideBarInner = styled.div`
   width: 100%;
   padding-left: 0;
   padding-right: 20px;
-  @media (min-width: 768px) {
-    padding-left: 30px;
-  }
   @media (max-width: 768px) {
     flex-basis: auto;
     max-width: 300px;
@@ -115,6 +112,7 @@ export const ReadMore = styled.div`
 
 export const LinkList = styled.ul`
   margin-left: 0;
+  padding-left: 30px;
 `;
 
 export const FrontPage = styled.main`
@@ -337,6 +335,6 @@ export const SideBar = ({ children, sidebarActive, toggle, isToc, toc }) =>
     </ReadMore>
     { isToc ?
       <div style={{ display: sidebarActive ? 'block' : 'none' }} dangerouslySetInnerHTML={{ __html: toc }} /> :
-      <LinkList style={{ display: sidebarActive ? 'list-item' : 'none' }}>{children}</LinkList>
+      <LinkList style={{ display: sidebarActive ? 'block' : 'none' }}>{children}</LinkList>
     }
   </SideBarInner>
