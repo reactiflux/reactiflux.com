@@ -18,10 +18,11 @@ export default class Transcripts extends React.Component {
     });
 
     articles.sort((a, b) => {
-      return new Date(a.data.date) < new Date(b.data.date)
+      return new Date(b.data.date).getTime() - new Date(a.data.date).getTime() 
     })
 
     const newestArticle = articles[0].data
+    console.log(articles)
 
     return (
       <Container>
