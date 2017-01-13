@@ -113,7 +113,7 @@ export const ReadMore = styled.div`
 
 export const LinkList = styled.ul`
   margin-left: 0;
-  padding-left: 30px;
+  list-style: none;
 `;
 
 export const FrontPage = styled.main`
