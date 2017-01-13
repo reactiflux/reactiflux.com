@@ -7,6 +7,7 @@ export const Header = styled.header`
   display: flex;
   padding: 24px 32px;
   max-width: 1440px;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   background-color: white;
