@@ -4,12 +4,6 @@ date: January 12, 2017
 ---
 ## Facebook Engineer | [Reason](https://facebook.github.io/reason/) & [Messenger.com](https://www.messenger.com/)
 
-**Q:** When will it be ready? - SanderSpies
-
-**A:** In around two more weeks, depending on Jordan's speed. Feel free to join https://discord.gg/reasonml but keep it a secret, thanks 😃
-
----
-
 **Q:** What is "Reason"? (I don't have Facebook) - CPT
 
 **A:** Reason is a layer of syntax & tooling on top of OCaml, a language Facebook uses actively. Jordan started the concept of Reason before React, in fact. We're taking it and using it as an actual front-end language (among other uses) because we think that after three and half years, the React experiment has succeeded and people are now ready for Reason, so we unshelved that project and are now actively iterating on it. https://github.com/facebook/reason
