@@ -7,84 +7,90 @@ import '../css/markdown-styles'
 import '../css/styles'
 
 import { rhythm } from '../utils/typography'
-import { Header, Navigation, MenuToggle, Logo, StyledLink, NavigationLink, Footer, Copyright, Credits, IconLink, SocialLinks } from '../utils/components'
+import { Header, Navigation, Toggle, Logo, StyledLink, NavigationLink, Footer, Copyright, Credits, IconLink, SocialLinks } from '../utils/components'
 import { Discord, Twitter } from '../assets/logos.js'
 
 export default class Template extends React.Component {
   constructor(props) {
     super(props)
+    const undef = typeof window !== 'undefined'
     this.state = {
-      menuActive: false,
-      transcriptActive: typeof window !== 'undefined' ? window.innerWidth < 768 ? false : true : false,
-      width: typeof window !== 'undefined' ? window.innerWidth : null
+      menu: false,
+      transcript: undef ? window.innerWidth < 768 ? false : true : false,
+      toc: true,
+      width: undef ? window.innerWidth : null
     }
-    this.toggleMenu = this.toggleMenu.bind(this)
-    this.toggleTranscript = this.toggleTranscript.bind(this)
-    this.closeMenu = this.closeMenu.bind(this)
-    this.closeTranscript = this.closeTranscript.bind(this)
   }
 
-  toggleMenu () {
+  componentDidMount() {
+      window.addEventListener("resize", this.checkSize);
+  }
+
+  componentWillUnmount() {
+      window.removeEventListener("resize", this.checkSize);
+  }
+
+  checkSize = () => {
+    if(window.innerWidth > 768) {
+      const { transcript, toc } = this.state
+      if(!transcript || !toc) {
+        this.setState({
+          transcript: true,
+          toc: true
+        })
+      }
+    }
+  }
+
+
+  toggle = (item) => () => {
     this.setState((prevState) => ({
-      menuActive: !prevState.menuActive
+      [item]: !prevState[item]
     }))
   }
 
-  toggleTranscript () {
-    this.setState((prevState) => ({
-      transcriptActive: !prevState.transcriptActive
-    }))
-  }
-
-  closeMenu () {
+  close = (item) => () => {
     this.setState({
-      menuActive: false
+      [item]: false
     })
   }
 
-  closeTranscript() {
-    if (this.state.width < 768) {
-      this.setState({
-        transcriptActive: false
-      })
-    }
-  }
-
   render () {
-    const { menuActive, transcriptActive } = this.state
+    const { menu, transcript, toc } = this.state
+    const closeMenu = this.close('menu')
 
-    const children = React.Children.map(this.props.children, (child) => React.cloneElement(child, { transcriptActive, toggleTranscript: this.toggleTranscript, closeTranscript: this.closeTranscript }))
+    const children = React.Children.map(this.props.children, (child) => React.cloneElement(child, { transcript, toc, toggle: this.toggle, close: this.close }))
 
     return (
-      <div style={{position: menuActive ? 'fixed' : 'inherit'}}>
+      <div style={{position: menu ? 'fixed' : 'inherit'}}>
         <Headroom disableInlineStyles>
           <Header>
             <Logo
               to={prefixLink('/')}
-              onClick={this.closeMenu}
+              onClick={closeMenu}
             >
               Reactiflux
             </Logo>
-            <MenuToggle onClick={this.toggleMenu} menuActive={menuActive} />
-            <Navigation role="navigation" style={{top: menuActive ? 0 : '-100vh'}}>
+            <Toggle onClick={this.toggle('menu')} active={menu} />
+            <Navigation role="navigation" style={{top: menu ? 0 : '-100vh'}}>
               <NavigationLink
                 to={prefixLink('/schedule/')}
                 title="Q&A Schedule"
-                onClick={this.closeMenu}
+                onClick={closeMenu}
               >
                 Q&A Schedule
               </NavigationLink>
               <NavigationLink
                 to={prefixLink('/transcripts/')}
                 title="Transcripts"
-                onClick={this.closeMenu}
+                onClick={closeMenu}
               >
                 Transcripts
               </NavigationLink>
               <NavigationLink
                 to={prefixLink('/learning/')}
                 title="Learning"
-                onClick={this.closeMenu}
+                onClick={closeMenu}
               >
                 Learning
               </NavigationLink>

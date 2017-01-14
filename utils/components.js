@@ -53,8 +53,8 @@ export const Arrow = styled.div`
   }
 `;
 
-export const MenuToggle = ({ onClick, menuActive }) =>
-  <Arrow onClick={ onClick } style={{ transform: menuActive ? 'rotate(180deg)': 'rotate(0deg)' }} />
+export const Toggle = ({ onClick, active }) =>
+  <Arrow onClick={ onClick } style={{ transform: active ? 'rotate(180deg)': 'rotate(0deg)' }} />
 
 export const StyledLink = styled(Link)`
   color: #dd1d64;
@@ -101,19 +101,20 @@ export const SideBarInner = styled.div`
 `;
 
 export const ReadMore = styled.div`
-  display: inline-flex;
+  display: none;
   width: 100%;
   margin-bottom: 20px;
   color: #dd1d64;
   justify-content: space-between;
-  @media (min-width: 768px) {
-    display: none;
+  @media (max-width: 768px) {
+    display: inline-flex;
   }
 `;
 
 export const LinkList = styled.ul`
   margin-left: 0;
   list-style: none;
+  align-self: flex-start;
 `;
 
 export const FrontPage = styled.main`
@@ -284,7 +285,7 @@ export const Footer = styled.footer`
   max-width: 1240px;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 765px) {
+  @media (max-width: 768px) {
     flex-flow: column;
   }
 `;
@@ -313,7 +314,7 @@ export const Container = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  @media (max-width: 765px) {
+  @media (max-width: 768px) {
     flex-flow: column wrap;
     align-items: center;
   }
@@ -329,13 +330,13 @@ export const MarkdownContainer = styled.div`
   }
 `;
 
-export const SideBar = ({ children, sidebarActive, toggle, isToc, toc }) =>
+export const SideBar = ({ children, active, toggle, isToc, toc }) =>
   <SideBarInner>
     <ReadMore onClick={toggle}>
-      Read { sidebarActive ? 'less' : 'more' } <MenuToggle menuActive={sidebarActive} />
+      Read { active ? 'less' : 'more' } <Toggle active={active} />
     </ReadMore>
     { isToc ?
-      <div style={{ display: sidebarActive ? 'block' : 'none' }} dangerouslySetInnerHTML={{ __html: toc }} /> :
-      <LinkList style={{ display: sidebarActive ? 'block' : 'none' }}>{children}</LinkList>
+      <div style={{ display: active ? 'block' : 'none', alignSelf: 'flex-start' }} dangerouslySetInnerHTML={{ __html: toc }} /> :
+      <LinkList style={{ display: active ? 'block' : 'none' }}>{children}</LinkList>
     }
   </SideBarInner>

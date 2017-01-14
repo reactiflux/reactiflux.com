@@ -4,17 +4,12 @@ import Helmet from 'react-helmet'
 import { config } from 'config'
 import { Container, MarkdownContainer, SideBar, StyledLink, SmallTitle } from '../utils/components'
 
-module.exports = React.createClass({
-  propTypes () {
-    return {
-      router: React.PropTypes.object,
-    }
-  },
+export default class Markdown extends React.Component {
   render () {
     const post = this.props.route.page.data
     const isTranscripts = this.props.route.path.indexOf('/transcripts/') != -1
     const isLearning = this.props.route.path.indexOf('/learning/') != -1
-    const { transcriptActive, closeTranscript, toggleTranscript } = this.props
+    const { toc, transcript, close, toggle } = this.props
 
     const articles = this.props.route.pages.filter((route) => {
         if(route.path !== '/transcripts/' && route.path.indexOf('/transcripts/') != -1)
@@ -22,7 +17,7 @@ module.exports = React.createClass({
     });
 
     const items = articles.map((article) => {
-      return <li key={article.data.title}><StyledLink onClick={closeTranscript} to={article.path} title={article.data.title}>{article.data.title}</StyledLink></li>
+      return <li key={article.data.title}><StyledLink onClick={close('transcript')} to={article.path} title={article.data.title}>{article.data.title}</StyledLink></li>
     });
     const Markdown = isTranscripts ?
       <MarkdownContainer transcript className="markdown" dangerouslySetInnerHTML={{ __html: post.body }} /> :
@@ -34,10 +29,10 @@ module.exports = React.createClass({
           title={`${config.siteTitle} | ${post.title}`}
         />
         <SmallTitle>{post.title}</SmallTitle>
-        {isTranscripts && <SideBar children={items} sidebarActive={transcriptActive} toggle={toggleTranscript} />}
-        {isLearning && <SideBar toc={post.toc} isToc={isLearning} sidebarActive={transcriptActive} toggle={toggleTranscript} />}
+        {isTranscripts && <SideBar children={items} active={transcript} toggle={toggle('transcript')} />}
+        {isLearning && <SideBar toc={post.toc} isToc={isLearning} active={toc} toggle={toggle('toc')} />}
         { Markdown }
       </Container>
     )
-  },
-})
+  }
+}
