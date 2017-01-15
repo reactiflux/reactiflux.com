@@ -22,6 +22,8 @@ A selected list of tutorials, articles, and resources on Javascript, React, Redu
     Another high-level suggested timeline for how to approach learning React and related technologies.
   - [React Roadmap](https://github.com/ericdouglas/react-roadmap)  
     A curated list of free resources to master React Development, in suggested learning order
+  - [Tips to learn React + Redux](https://www.robinwieruch.de/tips-to-learn-react-redux/)  
+    An extensive and excellent list of suggestions to follow when learning and using React and Redux.  Tips include when to use different component patterns, when to bring in a state management library, Redux state structuring, unit testing, and much more.
 
 
 ## Learning Core Javascript (ES5)
