@@ -8,7 +8,7 @@ import '../css/styles'
 
 import { rhythm } from '../utils/typography'
 import { Header, Navigation, Toggle, Logo, StyledLink, NavigationLink, Footer, Copyright, Credits, IconLink, SocialLinks } from '../utils/components'
-import { Discord, Twitter } from '../assets/logos.js'
+import { Discord, Twitter, Github } from '../assets/logos.js'
 
 export default class Template extends React.Component {
   constructor(props) {
@@ -112,6 +112,13 @@ export default class Template extends React.Component {
             <Credits>Designed in <StyledLink href="https://www.sketchapp.com/" title="Sketc">Sketch</StyledLink>. Coded in <StyledLink href="https://atom.io/" title="Atom">Atom</StyledLink>. Built using <StyledLink href="https://github.com/gatsbyjs/gatsby" title="Gatsby">Gatsby.js</StyledLink>. Hosted on <StyledLink href="https://www.netlify.com/" title="Netlify">Netlify</StyledLink>.</Credits>
           </div>
           <SocialLinks>
+            <IconLink
+              to="https://github.com/reactiflux/reactiflux.com"
+              tittle="Reactiflux web repository"
+              src={Github}
+              alt="Github"
+              target="_blank"
+            />
             <IconLink
               to="https://discordapp.com/invite/0ZcbPKXt5bYZVCkR"
               tittle="Reactiflux Discord"

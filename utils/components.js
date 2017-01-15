@@ -271,8 +271,8 @@ const MovedLink = styled.a`
   }
 `;
 
-export const IconLink = ({ to, title, src, alt }) =>
-  <MovedLink href={to} title={title}>
+export const IconLink = ({ to, title, src, alt, target }) =>
+  <MovedLink href={to} title={title} target={target}>
     <img src={src} alt={alt}/>
   </MovedLink>
 
@@ -307,7 +307,7 @@ export const SocialLinks = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  width: 80px;
+  width: 120px;
 `;
 
 export const Container = styled.div`
