@@ -7,7 +7,19 @@ import '../css/markdown-styles'
 import '../css/styles'
 
 import { rhythm } from '../utils/typography'
-import { Header, Navigation, Toggle, Logo, StyledLink, NavigationLink, Footer, Copyright, Credits, IconLink, SocialLinks } from '../utils/components'
+import {
+  Header,
+  Navigation,
+  Toggle,
+  Logo,
+  StyledLink,
+  NavigationLink,
+  Footer,
+  Copyright,
+  Credits,
+  IconLink,
+  SocialLinks
+} from '../utils/components'
 import { Discord, Twitter, Github } from '../assets/logos.js'
 
 export default class Template extends React.Component {
@@ -23,17 +35,17 @@ export default class Template extends React.Component {
   }
 
   componentDidMount() {
-      window.addEventListener("resize", this.checkSize);
+      window.addEventListener("resize", this.handleResize);
   }
 
   componentWillUnmount() {
-      window.removeEventListener("resize", this.checkSize);
+      window.removeEventListener("resize", this.handleResize);
   }
 
-  checkSize = () => {
-    if(window.innerWidth > 768) {
+  handleResize = () => {
+    if (this.onMobile()) {
       const { transcript, toc } = this.state
-      if(!transcript || !toc) {
+      if (!transcript || !toc) {
         this.setState({
           transcript: true,
           toc: true
@@ -41,6 +53,8 @@ export default class Template extends React.Component {
       }
     }
   }
+
+  onMobile = () => window.innerWidth <= 768
 
 
   toggle = (item) => () => {
@@ -50,16 +64,25 @@ export default class Template extends React.Component {
   }
 
   close = (item) => () => {
-    this.setState({
-      [item]: false
-    })
+    if (this.onMobile()) {
+      this.setState({
+        [item]: false
+      })
+    }
   }
 
   render () {
     const { menu, transcript, toc } = this.state
     const closeMenu = this.close('menu')
 
-    const children = React.Children.map(this.props.children, (child) => React.cloneElement(child, { transcript, toc, toggle: this.toggle, close: this.close }))
+    const children = React.Children.map(
+      this.props.children,
+      (child) =>
+        React.cloneElement(
+          child,
+          { transcript, toc, toggle: this.toggle, close: this.close }
+        )
+    )
 
     return (
       <div style={{position: menu ? 'fixed' : 'inherit'}}>
@@ -109,7 +132,25 @@ export default class Template extends React.Component {
         <Footer>
           <div>
             <Copyright>© 2016 Reactiflux</Copyright>
-            <Credits>Designed in <StyledLink href="https://www.sketchapp.com/" title="Sketc">Sketch</StyledLink>. Coded in <StyledLink href="https://atom.io/" title="Atom">Atom</StyledLink>. Built using <StyledLink href="https://github.com/gatsbyjs/gatsby" title="Gatsby">Gatsby.js</StyledLink>. Hosted on <StyledLink href="https://www.netlify.com/" title="Netlify">Netlify</StyledLink>.</Credits>
+            <Credits>
+              {'Designed in '}
+              <StyledLink href="https://www.sketchapp.com/" title="Sketch">
+                Sketch
+              </StyledLink>
+              {'. Coded in '}
+              <StyledLink href="https://atom.io/" title="Atom">
+                Atom
+              </StyledLink>
+              {'. Built using '}
+              <StyledLink href="https://github.com/gatsbyjs/gatsby" title="Gatsby">
+                Gatsby.js
+              </StyledLink>
+              {'. Hosted on '}
+              <StyledLink href="https://www.netlify.com/" title="Netlify">
+                Netlify
+              </StyledLink>
+              .
+            </Credits>
           </div>
           <SocialLinks>
             <IconLink
