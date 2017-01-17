@@ -23,15 +23,15 @@ export default class Template extends React.Component {
   }
 
   componentDidMount() {
-      window.addEventListener("resize", this.checkSize);
+      window.addEventListener("resize", this.handleResize);
   }
 
   componentWillUnmount() {
-      window.removeEventListener("resize", this.checkSize);
+      window.removeEventListener("resize", this.handleResize);
   }
 
-  checkSize = () => {
-    if(window.innerWidth > 768) {
+  handleResize = () => {
+    if (this.onMobile()) {
       const { transcript, toc } = this.state
       if(!transcript || !toc) {
         this.setState({
@@ -42,6 +42,8 @@ export default class Template extends React.Component {
     }
   }
 
+  onMobile = () => window.innerWidth <= 768
+
 
   toggle = (item) => () => {
     this.setState((prevState) => ({
@@ -50,9 +52,11 @@ export default class Template extends React.Component {
   }
 
   close = (item) => () => {
-    this.setState({
-      [item]: false
-    })
+    if (this.onMobile()) {
+      this.setState({
+        [item]: false
+      })
+    }
   }
 
   render () {
