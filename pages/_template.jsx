@@ -7,7 +7,19 @@ import '../css/markdown-styles'
 import '../css/styles'
 
 import { rhythm } from '../utils/typography'
-import { Header, Navigation, Toggle, Logo, StyledLink, NavigationLink, Footer, Copyright, Credits, IconLink, SocialLinks } from '../utils/components'
+import {
+  Header,
+  Navigation,
+  Toggle,
+  Logo,
+  StyledLink,
+  NavigationLink,
+  Footer,
+  Copyright,
+  Credits,
+  IconLink,
+  SocialLinks
+} from '../utils/components'
 import { Discord, Twitter, Github } from '../assets/logos.js'
 
 export default class Template extends React.Component {
@@ -33,7 +45,7 @@ export default class Template extends React.Component {
   handleResize = () => {
     if (this.onMobile()) {
       const { transcript, toc } = this.state
-      if(!transcript || !toc) {
+      if (!transcript || !toc) {
         this.setState({
           transcript: true,
           toc: true
@@ -63,7 +75,14 @@ export default class Template extends React.Component {
     const { menu, transcript, toc } = this.state
     const closeMenu = this.close('menu')
 
-    const children = React.Children.map(this.props.children, (child) => React.cloneElement(child, { transcript, toc, toggle: this.toggle, close: this.close }))
+    const children = React.Children.map(
+      this.props.children,
+      (child) =>
+        React.cloneElement(
+          child,
+          { transcript, toc, toggle: this.toggle, close: this.close }
+        )
+    )
 
     return (
       <div style={{position: menu ? 'fixed' : 'inherit'}}>

@@ -12,7 +12,7 @@ export default class Markdown extends React.Component {
     const { toc, transcript, close, toggle } = this.props
 
     const articles = this.props.route.pages.filter((route) => {
-        if(route.path !== '/transcripts/' && route.path.indexOf('/transcripts/') != -1)
+        if (route.path !== '/transcripts/' && route.path.indexOf('/transcripts/') != -1)
           return route;
     });
 
