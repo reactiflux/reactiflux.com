@@ -17,6 +17,8 @@
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-toc-and-anchor": "^4.1.1",
+    "node-schedule": "^1.2.0",
+    "nuka-carousel": "^2.0.4",
     "object-assign": "^4.1.0",
     "react-headroom": "^2.1.2",
     "react-helmet": "^3.1.0",

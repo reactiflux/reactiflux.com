@@ -3,11 +3,31 @@ import 'css/markdown-styles.scss'
 import Helmet from 'react-helmet'
 import { config } from 'config'
 import { Container, MarkdownContainer, SideBar, StyledLink, Stats, SmallTitle } from '../utils/components'
+import {retrieveMonthlyHoF} from '../utils/fetchData'
 
 module.exports = React.createClass({
   propTypes () {
     return {
       router: React.PropTypes.object,
+    }
+  },
+  getInitialState() {
+    return {
+      contributors:  [],
+      months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+      isFetchingData: true
+    }
+  },
+  componentWillMount() {
+    if(this.state.contributors.length === 0) { 
+    let data = retrieveMonthlyHoF()
+    setTimeout(() => {
+      this.setState({
+        contributors: data,
+        isFetchingData: false
+      })
+    },3000)
+     return data
     }
   },
   render () {
@@ -38,7 +58,7 @@ module.exports = React.createClass({
         <SmallTitle>{post.title}</SmallTitle>
         {isTranscripts && <SideBar children={items} sidebarActive={transcriptActive} toggle={toggleTranscript} />}
         {isLearning && <SideBar toc={post.toc} isToc={isLearning} sidebarActive={transcriptActive} toggle={toggleTranscript} />}
-        {isStats && <Stats children={items} post={post} />}
+        {isStats && <Stats children={items} post={post} months={this.state.months} contributors={this.state.contributors} isFetchingData={this.state.isFetchingData} />}
         { Markdown }
       </Container>
     )

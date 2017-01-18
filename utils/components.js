@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router';
 import { MenuIcon, Reactiflux } from '../assets/logos';
+import Carousel from 'nuka-carousel';
 
 export const Header = styled.header`
   display: flex;
@@ -383,7 +384,7 @@ export const TopContributorsList = styled.div`
 `;
 
 export const LiveStats = styled.div`
-  margin-top: 24%;
+  margin-top: 16%;
 `;
 
 export const LiveStatsTitle = styled.h3`
@@ -410,35 +411,112 @@ export const SideBar = ({ children, sidebarActive, toggle, isToc, toc }) =>
     }
   </SideBarInner>
 
+const slideDots = {
+  component: React.createClass({
+    displayName: 'component',
 
-export const Stats = ({ children, post}) => 
+    render: function render() {
+      var self = this;
+      var indexes = this.getIndexes(self.props.slideCount, self.props.slidesToScroll);
+      return React.createElement(
+        'ul',
+        { style: self.getListStyles() },
+        indexes.map(function (index) {
+          return React.createElement(
+            'li',
+            { style: self.getListItemStyles(), key: index },
+            React.createElement(
+              'button',
+              {
+                style: self.getButtonStyles(self.props.currentSlide === index),
+                onClick: self.props.goToSlide.bind(null, index) },
+              '•'
+            )
+          );
+        })
+      );
+    },
+    getIndexes: function getIndexes(count, inc) {
+      var arr = [];
+      for (var i = 0; i < count; i += inc) {
+        arr.push(i);
+      }
+      return arr;
+    },
+    getListStyles: function getListStyles() {
+      return {
+        position: 'relative',
+        margin: 0,
+        padding: 0
+      };
+    },
+    getListItemStyles: function getListItemStyles() {
+      return {
+        listStyleType: 'none',
+        display: 'inline-block'
+      };
+    },
+    getButtonStyles: function getButtonStyles(active) {
+      return {
+        background: 'transparent',
+        color: active ? '#dd1d64'  : '#02d8ff',
+        cursor: 'pointer',
+        padding: 10,
+        outline: 0,
+        fontSize: 48,
+        border: 'none',
+        borderRadius: '50%'
+      };
+    }
+  }),
+  position: 'BottomCenter'
+}
+
+export const Stats = ({ children, post, months, contributors, isFetchingData}) => 
   <MarkdownStats>
-    <TopContributors>
-      <StatsMonthTitle>TOP CONTRIBUTORS FOR</StatsMonthTitle>
-      <StatsMonth>{post.month}</StatsMonth>
-    </TopContributors>
-    <TopContributorsList>
-      <Contributor index={1} name={post.contributors[0]} numberOfMessages={post.messagesPerContributors[0]} />
-      <Contributor index={2} name={post.contributors[1]} numberOfMessages={post.messagesPerContributors[1]} />
-      <Contributor index={3} name={post.contributors[2]} numberOfMessages={post.messagesPerContributors[2]} />
-      <Contributor index={4} name={post.contributors[3]} numberOfMessages={post.messagesPerContributors[3]} />
-      <Contributor index={5} name={post.contributors[4]} numberOfMessages={post.messagesPerContributors[4]} />
-    </TopContributorsList>
+  {isFetchingData ? <div>{'Data are loading ....'}</div> :
+    <div>
+    <Carousel autoplay={false} decorators={[slideDots]} wrapAround={true} initialSlideHeight={350}>
+      {months.map((month,index) => {
+        let monthlyContributor = contributors[month]
+        return (
+          <div key={index}>
+            <TopContributors>
+            <StatsMonthTitle>TOP CONTRIBUTORS FOR</StatsMonthTitle>
+            <StatsMonth>{month}</StatsMonth>
+          </TopContributors>
+          <TopContributorsList>
+            <Contributor index={1} name={monthlyContributor[0]._id} numberOfMessages={monthlyContributor[0].count} />
+            <Contributor index={2} name={monthlyContributor[1]._id} numberOfMessages={monthlyContributor[1].count} />
+            <Contributor index={3} name={monthlyContributor[2]._id} numberOfMessages={monthlyContributor[2].count} />
+            <Contributor index={4} name={monthlyContributor[3]._id} numberOfMessages={monthlyContributor[3].count} />
+            <Contributor index={5} name={monthlyContributor[4]._id} numberOfMessages={monthlyContributor[4].count} />
+          </TopContributorsList>
+        </div>
+        )
+      })}
+    </Carousel>
     <LiveStats>
       <LiveStatsTitle>Live stats from pipend</LiveStatsTitle>
       <div className="members">
         <h2>Members</h2>
-        <h1>21,290</h1>
+        <h1>19,499</h1>
       </div>
       <div className="messagesSent">
         <h2>Messages Sent</h2>
-        <h1>200,562</h1>
+        <h1>263,993</h1>
       </div>
       <div className="messagesSentToday">
         <h2>Messages Sent Today</h2>
-        <h1>1,221</h1>
+        <h1>1,102</h1>
+      </div>
+      <div className="messagesSentToday">
+        <h2>User Online Today</h2>
+        <h1>3,389</h1>
       </div>
     </LiveStats>
+    </div>
+  }
   </MarkdownStats>
 
 
