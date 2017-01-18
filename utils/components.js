@@ -8,6 +8,7 @@ export const Header = styled.header`
   display: flex;
   padding: 24px 32px;
   max-width: 1440px;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   background-color: white;
@@ -53,8 +54,8 @@ export const Arrow = styled.div`
   }
 `;
 
-export const MenuToggle = ({ onClick, menuActive }) =>
-  <Arrow onClick={ onClick } style={{ transform: menuActive ? 'rotate(180deg)': 'rotate(0deg)' }} />
+export const Toggle = ({ onClick, active }) =>
+  <Arrow onClick={ onClick } style={{ transform: active ? 'rotate(180deg)': 'rotate(0deg)' }} />
 
 export const StyledLink = styled(Link)`
   color: #dd1d64;
@@ -92,9 +93,6 @@ export const SideBarInner = styled.div`
   width: 100%;
   padding-left: 0;
   padding-right: 20px;
-  @media (min-width: 768px) {
-    padding-left: 30px;
-  }
   @media (max-width: 768px) {
     flex-basis: auto;
     max-width: 300px;
@@ -104,18 +102,20 @@ export const SideBarInner = styled.div`
 `;
 
 export const ReadMore = styled.div`
-  display: inline-flex;
+  display: none;
   width: 100%;
   margin-bottom: 20px;
   color: #dd1d64;
   justify-content: space-between;
-  @media (min-width: 768px) {
-    display: none;
+  @media (max-width: 768px) {
+    display: inline-flex;
   }
 `;
 
 export const LinkList = styled.ul`
   margin-left: 0;
+  list-style: none;
+  align-self: flex-start;
 `;
 
 export const FrontPage = styled.main`
@@ -272,8 +272,8 @@ const MovedLink = styled.a`
   }
 `;
 
-export const IconLink = ({ to, title, src, alt }) =>
-  <MovedLink href={to} title={title}>
+export const IconLink = ({ to, title, src, alt, target }) =>
+  <MovedLink href={to} title={title} target={target}>
     <img src={src} alt={alt}/>
   </MovedLink>
 
@@ -286,7 +286,7 @@ export const Footer = styled.footer`
   max-width: 1240px;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 765px) {
+  @media (max-width: 768px) {
     flex-flow: column;
   }
 `;
@@ -308,14 +308,14 @@ export const SocialLinks = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  width: 80px;
+  width: 120px;
 `;
 
 export const Container = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  @media (max-width: 765px) {
+  @media (max-width: 768px) {
     flex-flow: column wrap;
     align-items: center;
   }
@@ -400,14 +400,14 @@ export const LiveStatsTitle = styled.h3`
   }
 `;
 
-export const SideBar = ({ children, sidebarActive, toggle, isToc, toc }) =>
+export const SideBar = ({ children, active, toggle, isToc, toc }) =>
   <SideBarInner>
     <ReadMore onClick={toggle}>
-      Read { sidebarActive ? 'less' : 'more' } <MenuToggle menuActive={sidebarActive} />
+      Read { active ? 'less' : 'more' } <Toggle active={active} />
     </ReadMore>
     { isToc ?
-      <div style={{ display: sidebarActive ? 'block' : 'none' }} dangerouslySetInnerHTML={{ __html: toc }} /> :
-      <LinkList style={{ display: sidebarActive ? 'list-item' : 'none' }}>{children}</LinkList>
+      <div style={{ display: active ? 'block' : 'none', alignSelf: 'flex-start' }} dangerouslySetInnerHTML={{ __html: toc }} /> :
+      <LinkList style={{ display: active ? 'block' : 'none' }}>{children}</LinkList>
     }
   </SideBarInner>
 
