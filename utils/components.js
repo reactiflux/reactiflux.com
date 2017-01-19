@@ -476,7 +476,8 @@ export const Stats = ({ children, post, months, contributors, isFetchingData}) =
   <MarkdownStats>
   {isFetchingData ? <div>{'Data are loading ....'}</div> :
     <div>
-    <Carousel autoplay={false} decorators={[slideDots]} wrapAround={true} initialSlideHeight={350}>
+    {contributors[months[0]] === undefined ? 'Data can\'t be loaded at the moment' :
+      <Carousel autoplay={false} decorators={[slideDots]} wrapAround={true} initialSlideHeight={350}>
       {months.map((month,index) => {
         let monthlyContributor = contributors[month]
         return (
@@ -495,7 +496,7 @@ export const Stats = ({ children, post, months, contributors, isFetchingData}) =
         </div>
         )
       })}
-    </Carousel>
+    </Carousel>}
     <LiveStats>
       <LiveStatsTitle>Live stats from pipend</LiveStatsTitle>
       <div className="members">

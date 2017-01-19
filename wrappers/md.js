@@ -14,23 +14,27 @@ export default class Markdown extends React.Component {
   constructor() {
     super()
     this.state = {
-      contributors:  [],
+      contributors:  {},
       months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
       isFetchingData: true
     }
   }
 
-  componentWillMount() {
-    if(this.state.contributors.length === 0) { 
-    let data = retrieveMonthlyHoF()
-    setTimeout(() => {
-      this.setState({
-        contributors: data,
-        isFetchingData: false
-      })
-    },3000)
-     return data
+  componentDidMount() {
+    if(this.isStatsPage(this.props)) { 
+      let data = retrieveMonthlyHoF()
+      setTimeout(() => {
+        this.setState({
+          contributors: data,
+          isFetchingData: false
+        })
+      },3000)
+      return data
     }
+  }
+
+  isStatsPage(props) {
+    return props.route.path.indexOf('/stats/') != -1
   }
 
   render () {
@@ -38,7 +42,7 @@ export default class Markdown extends React.Component {
     const isTranscripts = this.props.route.path.indexOf('/transcripts/') != -1
     const isLearning = this.props.route.path.indexOf('/learning/') != -1
     const { transcriptActive, closeTranscript, toggleTranscript } = this.props
-    const isStats = this.props.route.path.indexOf('/stats/') != -1
+    const isStats = this.isStatsPage(this.props)
     const { toc, transcript, close, toggle } = this.props
 
     const articles = this.props.route.pages.filter((route) => {
@@ -52,6 +56,7 @@ export default class Markdown extends React.Component {
     const Markdown = isTranscripts ?
       <MarkdownContainer transcript className="markdown" dangerouslySetInnerHTML={{ __html: post.body }} /> :
       <MarkdownContainer className="markdown" dangerouslySetInnerHTML={{ __html: post.body }} />
+
     return (
       <Container>
         <Helmet
