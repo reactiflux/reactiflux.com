@@ -13,6 +13,12 @@ const options = {
   plugins: [
     new CodePlugin(),
   ],
+  overrideStyles: () => ({
+    table: {
+      tableLayout: 'fixed',
+      wordWrap: 'break-word',
+    },
+  }),
 }
 
 const typography = new Typography(options)
