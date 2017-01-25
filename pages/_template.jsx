@@ -6,6 +6,11 @@ import Headroom from 'react-headroom'
 import '../css/markdown-styles'
 import '../css/styles'
 
+// Add our typefaces.
+import 'typeface-poppins'
+import 'typeface-work-sans'
+import 'typeface-space-mono'
+
 import { rhythm } from '../utils/typography'
 import {
   Header,
