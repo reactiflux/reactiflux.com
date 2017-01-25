@@ -5,29 +5,6 @@ import { GoogleFont } from 'react-typography'
 import CodePlugin from 'typography-plugin-code'
 
 const options = {
-  googleFonts: [
-    {
-      name: 'Work Sans',
-      styles: [
-        '400',
-        '500',
-      ],
-    },
-    {
-      name: 'Space Mono',
-      styles: [
-        '400',
-        '700',
-      ],
-    },
-    {
-      name: 'Poppins',
-      styles: [
-        '400',
-        '600',
-      ],
-    }
-  ],
   headerFontFamily: ['Work Sans', 'sans-serif'],
   bodyFontFamily: ['Work Sans', 'sans-serif'],
   baseFontSize: '19px',
