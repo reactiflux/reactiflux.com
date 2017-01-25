@@ -12,6 +12,13 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Thursday Jan 26th
 * Noon - 1pm PST  
 * Q&A on reactiflux [#q-and-a](http://q-and-a.reactiflux.com) channel
+* Instructions to ask Jordan a question:
+
+We are opening up the [#q-and-a](http://q-and-a.reactiflux.com) channel from 9am PT until 2pm PT (maximum, it could be closed earlier if we are overwhelmed) for you to post questions that Jordan will answer tomorrow. You may vote for your favorite questions with a :thumbsup: emoji, but the admins/mods will have the final say on which questions get selected. To have have a better chance of your question being selected please:
+
+* Tag all questions with [Q&A] or they will be ignored
+* Please keep questions on topic (React.js Ecosystem or Reason)
+* Keep chatter to a minimum
 
 ## February 2017
 
