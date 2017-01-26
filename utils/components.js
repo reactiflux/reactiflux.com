@@ -73,7 +73,7 @@ export const NavigationLink = styled(StyledLink)`
   &:hover {
     text-decoration: none;
     padding-bottom: 4px;
-    border-bottom: 6px solid #02d8ff;
+    border-bottom: 4px solid #02d8ff;
   }
   &:last-child {
     margin-right: 0px;
