@@ -1,20 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="62px" height="33px" viewBox="0 0 62 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
-    <title>8A777675-9B95-4BF8-AAE1-40EF87445120</title>
-    <desc>Created with sketchtool.</desc>
-    <defs></defs>
-    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Landing-Page-Final" transform="translate(-1152.000000, -437.000000)">
-            <g id="Group-7" transform="translate(1153.000000, 438.000000)">
-                <circle id="Oval-5" stroke="#52244F" stroke-width="2" cx="11" cy="14" r="6"></circle>
-                <path d="M0,32 L0,29.5 C0,27.0147186 2.01067476,25 4.50511602,25 L15.494884,25" id="Rectangle-9" stroke="#52244F" stroke-width="2"></path>
-                <circle id="Oval-5" stroke="#52244F" stroke-width="2" cx="49" cy="12" r="6"></circle>
-                <path d="M44.505116,23 L55.494884,23 C57.9829909,23 60,25.0197757 60,27.5 L60,30" id="Rectangle-9" stroke="#52244F" stroke-width="2"></path>
-                <circle id="Oval-6" stroke="#52244F" stroke-width="2" cx="30" cy="8" r="8"></circle>
-                <circle id="Oval-6" fill="#02D8FF" cx="30" cy="8" r="5"></circle>
-                <path d="M15,32 L15,26.5 C15,23.4624339 17.4584298,21 20.5064575,21 L40.4935425,21 C43.534675,21 46,23.4686147 46,26.5 L46,32" id="Rectangle-10" stroke="#52244F" stroke-width="2"></path>
-            </g>
-        </g>
-    </g>
+<svg width="65" height="42" viewBox="0 0 65 42" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    community icon
+  </title>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M12 22c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0-2c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zM2 33v-2.5C2 28.565 3.565 27 5.505 27h10.99v-2H5.505C2.46 25 0 27.46 0 30.5V33h2zM50 20c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0-2c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zM45.505 25h10.99C58.43 25 60 26.57 60 28.5V31h2v-2.5c0-3.034-2.467-5.5-5.505-5.5h-10.99v2zM31 18c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9zm0-2c-3.866 0-7-3.134-7-7s3.134-7 7-7 7 3.134 7 7-3.134 7-7 7z" fill="#52244F"/>
+    <circle fill="#02D8FF" cx="31" cy="9" r="5"/>
+    <path d="M17 33v-5.5c0-2.488 2.013-4.5 4.506-4.5h19.988C43.98 23 46 25.02 46 27.5V33h2v-5.5c0-3.586-2.915-6.5-6.506-6.5H21.506C17.91 21 15 23.908 15 27.5V33h2z" fill="#52244F"/>
+  </g>
 </svg>
