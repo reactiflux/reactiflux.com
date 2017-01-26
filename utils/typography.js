@@ -19,6 +19,11 @@ const options = {
       tableLayout: 'fixed',
       wordWrap: 'break-word',
     },
+    '@media (min-width:980px)': {
+      table: {
+        width: 'calc(100vw - 4.5rem)',
+      },
+    },
     'th:first-child, td:first-child': {
       width: '30%',
     },
