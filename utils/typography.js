@@ -15,12 +15,12 @@ const options = {
   ],
   overrideStyles: () => ({
     table: {
-      width: 'calc(100vw - 3.8rem)',
+      width: 'calc(100vw - 2.25rem)',
       tableLayout: 'fixed',
       wordWrap: 'break-word',
     },
     'th:first-child, td:first-child': {
-      width: '25%',
+      width: '30%',
     },
   }),
 }
