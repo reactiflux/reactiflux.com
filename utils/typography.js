@@ -15,6 +15,7 @@ const options = {
   ],
   overrideStyles: () => ({
     table: {
+      width: 'calc(100vw - 3rem)',
       tableLayout: 'fixed',
       wordWrap: 'break-word',
     },
