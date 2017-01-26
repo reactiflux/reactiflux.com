@@ -1,3 +1,9 @@
+---
+title: Jordan Walke
+date: January 26, 2017
+---
+## Facebook Engineer | Creator of [React.js](https://facebook.github.io/react/) & [Reason](https://facebook.github.io/reason/)
+
 **Q:** What are your thoughts on Elm? - granmoe
 
 **A:** I like what I've seen about Elm, and I often recommend it to people looking for a really great developer experience that opens their minds to functional programming. I don't have any experience with Elm's abstractions for building UIs/apps though. I hope that projects like ReactNative can greatly shorten the amount of time that is required for other languages like Elm to support mobile application development.
