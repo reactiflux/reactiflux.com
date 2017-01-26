@@ -19,9 +19,9 @@ const options = {
       tableLayout: 'fixed',
       wordWrap: 'break-word',
     },
-    '@media (min-width:980px)': {
+    '@media (min-width:768px)': {
       table: {
-        width: 'calc(100vw - 4.5rem)',
+        width: '100%',
       },
     },
     'th:first-child, td:first-child': {
