@@ -6288,9 +6288,9 @@ typography-plugin-code@^0.14.0:
     gray-percentage "^2.0.0"
     lodash "^4.13.1"
 
-typography@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/typography/-/typography-0.14.0.tgz#852883f5405eeb2a2fe0ba95723b379b49c2fb87"
+typography@0.15.8:
+  version "0.15.8"
+  resolved "https://registry.yarnpkg.com/typography/-/typography-0.15.8.tgz#5b8ba60243a7b4f11f86098070f6924c569c04cf"
   dependencies:
     compass-vertical-rhythm "^1.3.0"
     decamelize "^1.2.0"

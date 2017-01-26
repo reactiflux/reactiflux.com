@@ -13,6 +13,21 @@ const options = {
   plugins: [
     new CodePlugin(),
   ],
+  overrideStyles: () => ({
+    table: {
+      width: 'calc(100vw - 2.25rem)',
+      tableLayout: 'fixed',
+      wordWrap: 'break-word',
+    },
+    '@media (min-width:768px)': {
+      table: {
+        width: '100%',
+      },
+    },
+    'th:first-child, td:first-child': {
+      width: '30%',
+    },
+  }),
 }
 
 const typography = new Typography(options)
