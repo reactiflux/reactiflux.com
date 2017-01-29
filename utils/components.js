@@ -330,6 +330,11 @@ export const MarkdownContainer = styled.div`
   }
 `;
 
+export const PublishDate = styled.time`
+  font-size: 0.8rem;
+  font-style: italic;
+`
+
 export const SideBar = ({ children, active, toggle, isToc, toc }) =>
   <SideBarInner>
     <ReadMore onClick={toggle}>
