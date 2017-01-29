@@ -19,6 +19,10 @@ export default class Transcripts extends React.Component {
 
     const { transcript, close, toggle } = this.props
 
+    articles.sort((a, b) => {
+      return new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+    })
+
     const items = articles.map((article) =>
       <li key={ article.data.title }>
         <StyledLink
@@ -30,10 +34,6 @@ export default class Transcripts extends React.Component {
         </StyledLink>
       </li>
     );
-
-    articles.sort((a, b) => {
-      return new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
-    })
 
     const newestArticle = articles[0].data
 

@@ -16,6 +16,10 @@ export default class Markdown extends React.Component {
           return route;
     });
 
+    articles.sort((a, b) => {
+      return new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+    })
+
     const items = articles.map((article) => {
       return <li key={article.data.title}><StyledLink onClick={close('transcript')} to={article.path} title={article.data.title}>{article.data.title}</StyledLink></li>
     });
