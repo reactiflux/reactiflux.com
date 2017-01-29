@@ -18,6 +18,7 @@
     "markdown-it-sub": "^1.0.0",
     "markdown-it-toc-and-anchor": "^4.1.1",
     "object-assign": "^4.1.0",
+    "react-ga": "^2.1.2",
     "react-headroom": "^2.1.2",
     "react-helmet": "^3.1.0",
     "react-responsive-grid": "^0.3.3",
