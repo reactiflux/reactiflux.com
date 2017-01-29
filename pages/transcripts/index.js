@@ -4,7 +4,7 @@ import {
   Container,
   SmallTitle,
   SideBar,
-  MarkdownContainer,
+  Transcript,
   StyledLink
 } from '../../utils/components'
 
@@ -48,11 +48,7 @@ export default class Transcripts extends React.Component {
           active={transcript}
           toggle={toggle('transcript')}
         />
-        <MarkdownContainer
-          transcript={true}
-          className="markdown"
-          dangerouslySetInnerHTML={{ __html: newestArticle.body }}
-        />
+        <Transcript article={newestArticle} />
       </Container>
     )
   }

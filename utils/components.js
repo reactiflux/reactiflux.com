@@ -335,6 +335,13 @@ export const PublishDate = styled.time`
   font-style: italic;
 `
 
+export const Transcript = ({ article }) => (
+  <MarkdownContainer transcript className="markdown">
+    <PublishDate>Transcript from {article.date}</PublishDate>
+    <div dangerouslySetInnerHTML={{ __html: article.body }} /> 
+  </MarkdownContainer>
+)
+
 export const SideBar = ({ children, active, toggle, isToc, toc }) =>
   <SideBarInner>
     <ReadMore onClick={toggle}>
