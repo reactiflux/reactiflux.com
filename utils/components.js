@@ -92,9 +92,10 @@ export const SideBarInner = styled.div`
   width: 100%;
   padding-left: 0;
   padding-right: 20px;
+  max-width: 300px;
   @media (max-width: 768px) {
     flex-basis: auto;
-    max-width: 300px;
+    min-width: 100%;
     align-items: center;
     align-self: flex-start;
   }
