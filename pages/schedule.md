@@ -3,24 +3,7 @@ title: Q&A Schedule
 ---
 We host one or two Q&A's per month with Facebook Engineers and other interesting developers in the React community. These Q&A's usually take place on Thursdays from 11:30am - 1pm PT. If you want to hear from someone specific in the community, let us know by contacting us via [Twitter](https://twitter.com/reactiflux) or ping an admin or moderator in the [#reactiflux-dev](https://discord.gg/BkSU7Ju) channel on discord.
 
-## January 2017
-
-### Jordan Walke
-
-* https://twitter.com/jordwalke
-* React.js Creator
-* Thursday Jan 26th
-* Noon - 1pm PST  
-* Q&A on reactiflux [#q-and-a](http://q-and-a.reactiflux.com) channel
-* Instructions to ask Jordan a question:
-
-We are opening up the [#q-and-a](http://q-and-a.reactiflux.com) channel today (Jan 25th) from 9am PT until 2pm PT (maximum, it could be closed earlier if we are overwhelmed) for you to post questions that Jordan will answer tomorrow. You may vote for your favorite questions with a :thumbsup: emoji, but the admins/mods will have the final say on which questions get selected. To have have a better chance of your question being selected please:
-
-* Tag all questions with [Q&A] or they will be ignored
-* Please keep questions on topic (React.js Ecosystem or Reason)
-* Keep chatter to a minimum
-
-## February 2017
+## March 2017
 
 ### TBD
 
@@ -28,6 +11,14 @@ We are opening up the [#q-and-a](http://q-and-a.reactiflux.com) channel today (J
 ## Past Q&A’s
 
 ## ~~January 2017~~
+### Jordan Walke
+
+* https://twitter.com/jordwalke
+* React.js Creator
+* Thursday Jan 26th
+* Noon - 1pm PST  
+* Transcript: [Jordan Walke](../transcripts/jordan-walke/)
+
 ### Cheng Lou
 
 * https://twitter.com/_chenglou
