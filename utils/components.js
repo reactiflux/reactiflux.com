@@ -12,6 +12,9 @@ export const Header = styled.header`
   align-items: center;
   background-color: white;
   z-index: 2;
+  @media (max-width: 1020px) {
+    padding: 14.625px;
+  }
 `;
 
 export const Navigation = styled.nav`
@@ -206,7 +209,7 @@ export const Subtitle = styled.span`
     font-size: 12px;
     line-height: 12px;
     top: 10px;
-    right: -24px;
+    ${''/* right: -24px; */}
   }
 `;
 

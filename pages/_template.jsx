@@ -99,7 +99,6 @@ export default class Template extends React.Component {
             >
               Reactiflux
             </Logo>
-            <Toggle onClick={this.toggle('menu')} active={menu} />
             <Navigation role="navigation" style={{top: menu ? 0 : '-100vh'}}>
               <NavigationLink
                 to={prefixLink('/schedule/')}
@@ -123,6 +122,7 @@ export default class Template extends React.Component {
                 Learning
               </NavigationLink>
             </Navigation>
+            <Toggle onClick={this.toggle('menu')} active={menu} />
           </Header>
         </Headroom>
         <Container
