@@ -2,7 +2,7 @@ import React from 'react'
 import 'css/markdown-styles.scss'
 import Helmet from 'react-helmet'
 import { config } from 'config'
-import { Container, MarkdownContainer, SideBar, StyledLink, SmallTitle } from '../utils/components'
+import { Container, MarkdownContainer, SideBar, StyledLink, SmallTitle, Transcript } from '../utils/components'
 
 export default class Markdown extends React.Component {
   render () {
@@ -23,9 +23,9 @@ export default class Markdown extends React.Component {
     const items = articles.map((article) => {
       return <li key={article.data.title}><StyledLink onClick={close('transcript')} to={article.path} title={article.data.title}>{article.data.title}</StyledLink></li>
     });
-    const Markdown = isTranscripts ?
-      <MarkdownContainer transcript className="markdown" dangerouslySetInnerHTML={{ __html: post.body }} /> :
-      <MarkdownContainer className="markdown" dangerouslySetInnerHTML={{ __html: post.body }} />
+    const Markdown = isTranscripts ? 
+      <Transcript article={post} />
+      : (<MarkdownContainer className="markdown" dangerouslySetInnerHTML={{ __html: post.body }} />)
 
     return (
       <Container>
