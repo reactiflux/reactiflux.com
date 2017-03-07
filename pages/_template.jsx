@@ -24,7 +24,7 @@ import {
   Credits,
   IconLink,
   SocialLinks
-} from '../utils/components'
+} from '../utils/components/'
 import { Discord, Twitter, Github } from '../assets/logos.js'
 
 export default class Template extends React.Component {
