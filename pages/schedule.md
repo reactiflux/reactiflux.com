@@ -5,7 +5,9 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## March 2017
 
-### On Break for [React Conf 2017](http://conf.reactjs.org/)
+### On Break for React Conf
+
+* Watch [React Conf 2017](http://conf.reactjs.org/) livestreamed on March 13-14.
 
 ## April 2017
 
