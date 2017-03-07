@@ -136,7 +136,7 @@ export default class Template extends React.Component {
         </Container>
         <Footer>
           <div>
-            <Copyright>© 2016 Reactiflux</Copyright>
+            <Copyright>© {new Date().getFullYear()} Reactiflux</Copyright>
             <Credits>
               {'Designed in '}
               <StyledLink href="https://www.sketchapp.com/" title="Sketch">
