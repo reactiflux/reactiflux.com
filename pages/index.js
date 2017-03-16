@@ -13,7 +13,7 @@ export default class Index extends React.Component {
         <Helmet
           title={config.siteTitle}
           meta={[
-            {"name": "description", "content": "Reactiflux webpage"}
+            {"name": "description", "content": "We’re a chat community of 20,000+ React JS, React Native, Redux, Relay and GraphQL developers."}
           ]}
         />
         <TitleBox>
