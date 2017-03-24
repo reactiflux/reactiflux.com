@@ -1,0 +1,755 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Container /> 1`] = `
+.gNkieM {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .gNkieM {
+    flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+  }
+}
+
+<div
+  className="gNkieM"
+/>
+`;
+
+exports[`<Footer /> 1`] = `
+.kXlJMB {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0 24px;
+  max-width: 1240px;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+
+@media (max-width: 768px) {
+  .kXlJMB {
+    flex-flow: column;
+    -ms-flex-flow: column;
+    -webkit-flex-flow: column;
+  }
+}
+
+<footer
+  className="kXlJMB"
+/>
+`;
+
+exports[`<FrontPage /> 1`] = `
+.dFsMve {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+}
+
+@media (max-width: 425px) {
+  .dFsMve {
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+  }
+}
+
+<main
+  className="dFsMve"
+/>
+`;
+
+exports[`<Header /> 1`] = `
+.etHelf {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 24px 32px;
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  background-color: white;
+  z-index: 2;
+}
+
+@media (max-width: 1020px) {
+  .etHelf {
+    padding: 14.625px;
+  }
+}
+
+<header
+  className="etHelf"
+/>
+`;
+
+exports[`<MarkdownContainer /> 1`] = `
+.hpJKCU {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  flex-flow: column;
+  -ms-flex-flow: column;
+  -webkit-flex-flow: column;
+  flex-basis: 70%;
+  -ms-preferred-size: 70%;
+  -webkit-flex-basis: 70%;
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .hpJKCU {
+    flex-basis: auto;
+    -ms-preferred-size: auto;
+    -webkit-flex-basis: auto;
+  }
+}
+
+<div
+  className="hpJKCU"
+/>
+`;
+
+exports[`<MarkdownContainer transcript /> 1`] = `
+.iwDvKU {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  flex-flow: column;
+  -ms-flex-flow: column;
+  -webkit-flex-flow: column;
+  flex-basis: 70%;
+  -ms-preferred-size: 70%;
+  -webkit-flex-basis: 70%;
+  max-width: 1192px;
+}
+
+@media (max-width: 768px) {
+  .iwDvKU {
+    flex-basis: auto;
+    -ms-preferred-size: auto;
+    -webkit-flex-basis: auto;
+  }
+}
+
+<div
+  className="iwDvKU"
+/>
+`;
+
+exports[`<Navigation /> 1`] = `
+@media (max-width: 768px) {
+  .keLUSX {
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    overflow-y: hidden;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column;
+    -ms-flex-flow: column;
+    -webkit-flex-flow: column;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+  }
+}
+
+<nav
+  className="keLUSX"
+/>
+`;
+
+exports[`<SideBar /> 1`] = `
+.UPetn {
+  display: none;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #dd1d64;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.fqXOWw {
+  margin-left: 0;
+  list-style: none;
+  align-self: flex-start;
+  -ms-flex-item-align: start;
+  -webkit-align-self: flex-start;
+}
+
+.eVOiOO {
+  display: none;
+  width: 28px;
+  height: 20px;
+  color: #dd1d64;
+  z-index: 1;
+  background: url();
+  background-repeat: no-repeat;
+}
+
+.jugYiF {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  flex-flow: column;
+  -ms-flex-flow: column;
+  -webkit-flex-flow: column;
+  flex-basis: 30%;
+  -ms-preferred-size: 30%;
+  -webkit-flex-basis: 30%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .UPetn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .eVOiOO {
+    display: inline;
+  }
+}
+
+@media (max-width: 768px) {
+  .jugYiF {
+    flex-basis: auto;
+    -ms-preferred-size: auto;
+    -webkit-flex-basis: auto;
+    max-width: 300px;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-self: flex-start;
+    -ms-flex-item-align: start;
+    -webkit-align-self: flex-start;
+  }
+}
+
+<div
+  className="jugYiF"
+>
+  <div
+    className="UPetn"
+    onClick={[Function]}
+  >
+    Read 
+    more
+     
+    <div
+      className="eVOiOO"
+      onClick={undefined}
+      style={
+        Object {
+          "transform": "rotate(0deg)",
+        }
+      }
+    />
+  </div>
+  <ul
+    className="fqXOWw"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`<SideBar active /> 1`] = `
+.UPetn {
+  display: none;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #dd1d64;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.fqXOWw {
+  margin-left: 0;
+  list-style: none;
+  align-self: flex-start;
+  -ms-flex-item-align: start;
+  -webkit-align-self: flex-start;
+}
+
+.eVOiOO {
+  display: none;
+  width: 28px;
+  height: 20px;
+  color: #dd1d64;
+  z-index: 1;
+  background: url();
+  background-repeat: no-repeat;
+}
+
+.jugYiF {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  flex-flow: column;
+  -ms-flex-flow: column;
+  -webkit-flex-flow: column;
+  flex-basis: 30%;
+  -ms-preferred-size: 30%;
+  -webkit-flex-basis: 30%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .UPetn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .eVOiOO {
+    display: inline;
+  }
+}
+
+@media (max-width: 768px) {
+  .jugYiF {
+    flex-basis: auto;
+    -ms-preferred-size: auto;
+    -webkit-flex-basis: auto;
+    max-width: 300px;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-self: flex-start;
+    -ms-flex-item-align: start;
+    -webkit-align-self: flex-start;
+  }
+}
+
+<div
+  className="jugYiF"
+>
+  <div
+    className="UPetn"
+    onClick={[Function]}
+  >
+    Read 
+    less
+     
+    <div
+      className="eVOiOO"
+      onClick={undefined}
+      style={
+        Object {
+          "transform": "rotate(180deg)",
+        }
+      }
+    />
+  </div>
+  <ul
+    className="fqXOWw"
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`<SideBar active isToc /> 1`] = `
+.UPetn {
+  display: none;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #dd1d64;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.eVOiOO {
+  display: none;
+  width: 28px;
+  height: 20px;
+  color: #dd1d64;
+  z-index: 1;
+  background: url();
+  background-repeat: no-repeat;
+}
+
+.jugYiF {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  flex-flow: column;
+  -ms-flex-flow: column;
+  -webkit-flex-flow: column;
+  flex-basis: 30%;
+  -ms-preferred-size: 30%;
+  -webkit-flex-basis: 30%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .UPetn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .eVOiOO {
+    display: inline;
+  }
+}
+
+@media (max-width: 768px) {
+  .jugYiF {
+    flex-basis: auto;
+    -ms-preferred-size: auto;
+    -webkit-flex-basis: auto;
+    max-width: 300px;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-self: flex-start;
+    -ms-flex-item-align: start;
+    -webkit-align-self: flex-start;
+  }
+}
+
+<div
+  className="jugYiF"
+>
+  <div
+    className="UPetn"
+    onClick={[Function]}
+  >
+    Read 
+    less
+     
+    <div
+      className="eVOiOO"
+      onClick={undefined}
+      style={
+        Object {
+          "transform": "rotate(180deg)",
+        }
+      }
+    />
+  </div>
+  <div
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "toc",
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "flex-start",
+        "display": "block",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`<SideBarInner /> 1`] = `
+.jugYiF {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  flex-flow: column;
+  -ms-flex-flow: column;
+  -webkit-flex-flow: column;
+  flex-basis: 30%;
+  -ms-preferred-size: 30%;
+  -webkit-flex-basis: 30%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .jugYiF {
+    flex-basis: auto;
+    -ms-preferred-size: auto;
+    -webkit-flex-basis: auto;
+    max-width: 300px;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-self: flex-start;
+    -ms-flex-item-align: start;
+    -webkit-align-self: flex-start;
+  }
+}
+
+<div
+  className="jugYiF"
+/>
+`;
+
+exports[`<SmallTitle /> 1`] = `
+.kVsczx {
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #02d8ff;
+  letter-spacing: -4px;
+  font-family: 'Space Mono', monospace;
+  align-self: flex-start;
+  -ms-flex-item-align: start;
+  -webkit-align-self: flex-start;
+  width: 100%;
+  min-height: 4rem;
+}
+
+<h1
+  className="kVsczx"
+/>
+`;
+
+exports[`<Subtitle /> 1`] = `
+.qSvAC {
+  position: absolute;
+  color: #dd1d64;
+  font-size: 36px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  right: -40px;
+  top: 37px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .qSvAC {
+    right: -60px;
+    top: 34px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .qSvAC {
+    font-size: 26px;
+    line-height: 26px;
+    top: 23px;
+    right: -40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .qSvAC {
+    font-size: 20px;
+    line-height: 20px;
+    right: 0px;
+  }
+}
+
+@media (max-width: 700px) {
+  .qSvAC {
+    font-size: 15px;
+    line-height: 15px;
+    top: 12px;
+    right: -30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .qSvAC {
+    font-size: 12px;
+    line-height: 12px;
+    top: 10px;
+  }
+}
+
+<span
+  className="qSvAC"
+/>
+`;
+
+exports[`<Text /> 1`] = `
+.lmypCI {
+  font-size: 1.6842105263157894rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #52244f;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 425px) {
+  .lmypCI {
+    font-size: 19px;
+  }
+}
+
+<p
+  className="lmypCI"
+/>
+`;
+
+exports[`<Title /> 1`] = `
+.fRMswM {
+  color: #02d8ff;
+  font-size: 200px;
+  line-height: 200px;
+  letter-spacing: -13px;
+  font-family: 'Space Mono', monospace;
+  align-self: flex-start;
+  -ms-flex-item-align: start;
+  -webkit-align-self: flex-start;
+  flex-basis: 100%;
+  -ms-preferred-size: 100%;
+  -webkit-flex-basis: 100%;
+  min-height: 60px;
+}
+
+@media (max-width: 1200px) {
+  .fRMswM {
+    font-size: 180px;
+    line-height: 180px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .fRMswM {
+    font-size: 140px;
+    line-height: 140px;
+  }
+}
+
+@media (max-width: 700px) {
+  .fRMswM {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .fRMswM {
+    font-size: 55px;
+    line-height: 55px;
+    letter-spacing: -6px;
+  }
+}
+
+<h1
+  className="fRMswM"
+/>
+`;
+
+exports[`<TitleBox /> 1`] = `
+.eiBNpo {
+  position: relative;
+  flex-basis: 100%;
+  -ms-preferred-size: 100%;
+  -webkit-flex-basis: 100%;
+  align-self: flex-start;
+  -ms-flex-item-align: start;
+  -webkit-align-self: flex-start;
+}
+
+<div
+  className="eiBNpo"
+/>
+`;

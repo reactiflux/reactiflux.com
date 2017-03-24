@@ -1,0 +1,288 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Arrow /> 1`] = `
+.eVOiOO {
+  display: none;
+  width: 28px;
+  height: 20px;
+  color: #dd1d64;
+  z-index: 1;
+  background: url();
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .eVOiOO {
+    display: inline;
+  }
+}
+
+<div
+  className="eVOiOO"
+/>
+`;
+
+exports[`<Button /> 1`] = `
+.bDUxET {
+  display: inline-block;
+  height: 3.789473684210526rem;
+  width: 16.842105263157894rem;
+  border: 3px solid;
+  margin-bottom: 20px;
+  border-radius: 100px;
+  border-color: #dd1d64;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.263157894736842rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 3.473684210526316rem;
+  color: #dd1d64;
+  background-color: #ffffff;
+  transition: all 175ms ease;
+  -webkit-transition: all 175ms ease;
+}
+
+.bDUxET:hover {
+  color: #ffffff;
+  background-color: #dd1d64;
+}
+
+.bDUxET:first-child {
+  margin-right: 32px;
+}
+
+@media (max-width: 425px) {
+  .bDUxET:first-child {
+    margin-right: 0;
+  }
+}
+
+<a
+  className="bDUxET"
+  onClick={[Function]}
+  style={Object {}}
+/>
+`;
+
+exports[`<Button primary /> 1`] = `
+.cLEtwG {
+  display: inline-block;
+  height: 3.789473684210526rem;
+  width: 16.842105263157894rem;
+  border: 3px solid;
+  margin-bottom: 20px;
+  border-radius: 100px;
+  border-color: #dd1d64;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.263157894736842rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 3.473684210526316rem;
+  color: #ffffff;
+  background-color: #dd1d64;
+  transition: all 175ms ease;
+  -webkit-transition: all 175ms ease;
+}
+
+.cLEtwG:hover {
+  color: #ffffff;
+  background-color: #ba1853;
+}
+
+.cLEtwG:first-child {
+  margin-right: 32px;
+}
+
+@media (max-width: 425px) {
+  .cLEtwG:first-child {
+    margin-right: 0;
+  }
+}
+
+<a
+  className="cLEtwG"
+  onClick={[Function]}
+  primary={true}
+  style={Object {}}
+/>
+`;
+
+exports[`<Buttons /> 1`] = `
+.fpVkaj {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  min-height: 72px;
+}
+
+@media (max-width: 425px) {
+  .fpVkaj {
+    flex-flow: column;
+    -ms-flex-flow: column;
+    -webkit-flex-flow: column;
+  }
+}
+
+<div
+  className="fpVkaj"
+/>
+`;
+
+exports[`<IconLink /> 1`] = `
+.cobIpN {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+<a
+  className="cobIpN"
+  href="to"
+  target="target"
+  title="title"
+>
+  <img
+    alt="alt"
+    src="src"
+  />
+</a>
+`;
+
+exports[`<LinkList /> 1`] = `
+.fqXOWw {
+  margin-left: 0;
+  list-style: none;
+  align-self: flex-start;
+  -ms-flex-item-align: start;
+  -webkit-align-self: flex-start;
+}
+
+<ul
+  className="fqXOWw"
+/>
+`;
+
+exports[`<NavigationLink /> 1`] = `
+.fMRCas {
+  color: #dd1d64;
+  text-decoration: none;
+  padding-bottom: 6px;
+  margin-right: 40px;
+  border-bottom: solid 4px rgba(255, 255, 255, 0);
+  transition: all 175ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-transition: all 175ms cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.fMRCas:hover {
+  text-decoration: underline;
+}
+
+.fMRCas:hover {
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 4px solid #02d8ff;
+}
+
+.fMRCas:last-child {
+  margin-right: 0px;
+}
+
+@media (max-width: 768px) {
+  .fMRCas {
+    margin-right: 0px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+<a
+  className="fMRCas"
+  onClick={[Function]}
+  style={Object {}}
+/>
+`;
+
+exports[`<SocialLinks /> 1`] = `
+.bSCzei {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  width: 120px;
+}
+
+<div
+  className="bSCzei"
+/>
+`;
+
+exports[`<Toggle /> 1`] = `
+.eVOiOO {
+  display: none;
+  width: 28px;
+  height: 20px;
+  color: #dd1d64;
+  z-index: 1;
+  background: url();
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .eVOiOO {
+    display: inline;
+  }
+}
+
+<div
+  className="eVOiOO"
+  onClick={[Function]}
+  style={
+    Object {
+      "transform": "rotate(0deg)",
+    }
+  }
+/>
+`;
+
+exports[`<Toggle active /> 1`] = `
+.eVOiOO {
+  display: none;
+  width: 28px;
+  height: 20px;
+  color: #dd1d64;
+  z-index: 1;
+  background: url();
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .eVOiOO {
+    display: inline;
+  }
+}
+
+<div
+  className="eVOiOO"
+  onClick={[Function]}
+  style={
+    Object {
+      "transform": "rotate(180deg)",
+    }
+  }
+/>
+`;

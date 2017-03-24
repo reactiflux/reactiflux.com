@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Copyright /> 1`] = `
+.fvZRKP {
+  color: #52244f;
+  line-height: 19px;
+  margin-bottom: 6px;
+}
+
+<p
+  className="fvZRKP"
+/>
+`;
+
+exports[`<Credits /> 1`] = `
+.dPQdYb {
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 6px;
+  color: #52244f;
+  font-family: 'Space Mono', monospace;
+}
+
+<p
+  className="dPQdYb"
+/>
+`;
+
+exports[`<Logo /> 1`] = `
+.gmVDZZ {
+  display: inline-block;
+  width: 59px;
+  height: 52px;
+  background: url();
+  text-indent: -9999px;
+  z-index: 3;
+}
+
+<a
+  className="gmVDZZ"
+  onClick={[Function]}
+  style={Object {}}
+/>
+`;
+
+exports[`<PublishDate /> 1`] = `
+.gKgEHh {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+<time
+  className="gKgEHh"
+/>
+`;
+
+exports[`<ReadMore /> 1`] = `
+.UPetn {
+  display: none;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #dd1d64;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .UPetn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+  }
+}
+
+<div
+  className="UPetn"
+/>
+`;
+
+exports[`<Transcript /> 1`] = `
+.iwDvKU {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  flex-flow: column;
+  -ms-flex-flow: column;
+  -webkit-flex-flow: column;
+  flex-basis: 70%;
+  -ms-preferred-size: 70%;
+  -webkit-flex-basis: 70%;
+  max-width: 1192px;
+}
+
+.gKgEHh {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .iwDvKU {
+    flex-basis: auto;
+    -ms-preferred-size: auto;
+    -webkit-flex-basis: auto;
+  }
+}
+
+<div
+  className="markdown iwDvKU"
+>
+  <time
+    className="gKgEHh"
+  >
+    Transcript from 
+    date
+  </time>
+  <div
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "body",
+      }
+    }
+  />
+</div>
+`;
