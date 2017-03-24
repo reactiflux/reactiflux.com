@@ -14,7 +14,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ### Andrew Clarke
 
 * https://twitter.com/acdlite
-* React.js Core Team at Facebook. Co-creator of Redux. Creator of Recompose
+* React.js Core Team at Facebook. Co-creator of [Redux](http://redux.js.org/). Creator of [Recompose](https://github.com/acdlite/recompose)
 * Wednesday April 12th
 * 12:30pm - 2pm PST  
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
@@ -29,7 +29,13 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## May 2017
 
-### TBD
+### Brian Vaughn
+
+* https://twitter.com/brian_d_vaughn
+* React.js Core Team at Facebook. Creator of [react-virtualized](https://github.com/bvaughn/react-virtualized)
+* Thursday May 11th
+* 1pm - 2:30pm PST  
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
 ----------
 ## Past Q&A’s
