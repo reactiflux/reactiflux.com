@@ -11,6 +11,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## April 2017
 
+### Andrew Clarke
+
+* https://twitter.com/acdlite
+* React.js Core Team at Facebook. Co-creator of Redux. Creator of Recompose
+* Wednesday April 12th
+* 12:30pm - 2pm PST  
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+
 ### Vincent Ning & Michael Paris
 
 * https://twitter.com/ScapholdDotIO
