@@ -24,7 +24,7 @@ import {
   Credits,
   IconLink,
   SocialLinks
-} from '../utils/components'
+} from '../utils/components/'
 import { Discord, Twitter, Github } from '../assets/logos.js'
 
 export default class Template extends React.Component {
@@ -99,7 +99,6 @@ export default class Template extends React.Component {
             >
               Reactiflux
             </Logo>
-            <Toggle onClick={this.toggle('menu')} active={menu} />
             <Navigation role="navigation" style={{top: menu ? 0 : '-100vh'}}>
               <NavigationLink
                 to={prefixLink('/schedule/')}
@@ -123,6 +122,7 @@ export default class Template extends React.Component {
                 Learning
               </NavigationLink>
             </Navigation>
+            <Toggle onClick={this.toggle('menu')} active={menu} />
           </Header>
         </Headroom>
         <Container
@@ -136,7 +136,7 @@ export default class Template extends React.Component {
         </Container>
         <Footer>
           <div>
-            <Copyright>© 2016 Reactiflux</Copyright>
+            <Copyright>© {new Date().getFullYear()} Reactiflux</Copyright>
             <Credits>
               {'Designed in '}
               <StyledLink href="https://www.sketchapp.com/" title="Sketch">
