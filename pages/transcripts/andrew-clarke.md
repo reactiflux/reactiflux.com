@@ -8,7 +8,7 @@ date: April 12 2017
 
 **A:** So first of all, a bit of a confession: I haven't worked much on Recompose in the last few months since I joined the React team. The primary reason is that some parts of the API will need to change in light of the changes we're making in React Fiber. So I'd like to wait until the Fiber stuff, particularly around async scheduling, is more fleshed out. To answer your actual question: I would love to get TypeScript working with Recompose. (Although I don't have experience with TypeScript so I'd appreciate some help from the community.) I'm also very interested in Flow types, which I've attempted a few times. Turns out it's a bit tricky to type higher-order components in a way that works with both class components and functional components. But once I turn my attention back to Recompose (hopefully this summer) this is near the top of my todo list.
 
---
+---
 
 **Q:** Why was proptypes moved out of react in the latest release of react?
 
@@ -24,7 +24,7 @@ Finally, splitting PropTypes into a separate repo helps keep the React issue tra
 
 We realize this decision has caused some consternation and confusion since we released last Friday. In retrospect, we should have done a release candidate cycle and communicated these changes to library authors much further in advance. We'll take this as a learning experience and do better next time :)
 
---
+---
 
 **Q:** I've had multiple people express their concerns about "what will happen when React removes context" - I know there are some plans to change the API, what do you think should / will happen to context?
 
@@ -34,7 +34,7 @@ What will happen though is the specific context API and implementation that exis
 
 In the meantime, the recommendation is to use an abstraction around context so that when the API changes, you can change the abstraction without changing all your components. E.g. React Redux's connect() HOC.
 
---
+---
 
 **Q:** Since the purpose of fiber is essentially being able to achieve 60fps on the web, will react ever have some helpers built-in for animation (other than and perhaps better than ReactCSSTransitionGroup)? Or should such helpers exist in user-land libraries?
 
@@ -42,7 +42,7 @@ In the meantime, the recommendation is to use an abstraction around context so t
 
 To answer your actual question, the React team feels we're not in the business of providing built-in solutions for animation or state management or other areas that can be solved in userland by our awesome community. ReactCSSTransitionGroup was created at an earlier time when the community was young and it made more sense to bundle ready-made solutions. What we will continue to do instead is investigate how people are using React and how we can improve React's suitability for those use cases. Fiber will have some really cool scheduling capabilities that will enable animation library authors to do exciting things that aren't currently possible. I can't wait to see what y'all build!
 
---
+---
 
 **Q:** What’s the most difficult or challenging work left to officially ship v16?
 
@@ -52,9 +52,9 @@ Also, it's important to note that React 16 is our first Fiber release, but it wi
 
 But React 16 *will* have improved error boundaries and you'll be able to return arrays and strings from render! So still exciting!
 
---
+---
 
-**Q:** Do you think the React team at Facebook could be doing anything better re: communicating short-term and long-term goals and changes to the community--specifically those outside Facebook involved with core community projects and React itself?
+**Q:** Do you think the React team at Facebook could be doing anything better re: communicating short-term and long-term goals and changes to the community---specifically those outside Facebook involved with core community projects and React itself?
 
 **A:** Yes, this is absolutely something we need to work on.
 
@@ -62,7 +62,7 @@ Everyone on the React team came from the open source world. It's something we're
 
 But we recognize the problem and we're actively looking into ways make this better. And we'll work on our overall communication with the community, too. I think we do a pretty good job overall, but incidents like the 15.5 release show that there's always more we can do.
 
---
+---
 
 **Q:** You mentioned context earlier. the docs still state that context is an experimental api and it's likely to break in future releases. any plans on making context stable in the medium or long term or will it just remain in an experimental state like ... forever?
 
@@ -72,44 +72,44 @@ But we recognize the problem and we're actively looking into ways make this bett
 
 It's "stable" in the sense that we'll always have some version of context, but it probably won't be the current API.
 
---
+---
 
 **Q:** How has your experience been moving to rollup internally and away from webpack?
 
 **A:** I'm really excited about our new build setup. Aside from the perf and code size benefits of using flat bundles, it's going to make our release process so much smoother. Right now, releasing React is a lengthy, error-prone, largely manual series of steps that makes it difficult to release new versions. We want to get to the place where we can make frequent patch and minor releases with confidence, so we can iterate more quickly and ship bugfixes much faster.
 Also, we never used Webpack to bundle React AFAIK. So it's not quite accurate to say we're moving away from Webpack. Rollup is great for libraries like React, but Webpack is perhaps more suited to applications. It will still work great for your React apps.
 
---
+---
 
 **Q:** Hi Andrew! Is `renderToString` / server rendering going to change much with Fiber? I know Sebastian mentioned adding / replacing with streaming support but I'm curious what the the plan for that is before v16. (we are heavily dependent on recursive, async `renderToString` calls in https://github.com/ericclemmons/react-resolver, so curious how fiber will affect).
 
 **A:**  I can't comment much on this because we haven't really decided. Streaming rendering is definitely an area of interest. But once we make more progress, we'll likely post an issue or PR to GitHub :)
 
---
+---
 
 **Q:** Are function components still slower than class components and if so, will that change?
 
 **A:** I wouldn't say functional components are slower, but one disadvantage is that they don't have shouldComponentUpdate. It's likely we'll add something like this for Fiber (it's currently implemented in master; not sure if it will make it to the final release) because shouldComponentUpdate will be crucial for dealing with starvation in async Fiber. But if you're just comparing a non-SCU class component to a non-SCU functional component, the functional component is actually slightly more lightweight because there are fewer checks to perform. And there will be additional optimizations we can make in the future.
 
---
+---
 
 **Q:** Fiber has a reputation for being very complex (rightfully), what do you think are the primary sources of complexity in Fiber?
 
 **A:** Much of the complexity of Fiber comes from the fact that we don't use the JavaScript stack. We re-implement it using our own data structures (called, tada, fibers). And there's lots of mutation and code that doesn't resemble the type of code you might be used to seeing in JavaScript. I think once you get used to it, the relatively low number of abstractions makes it easy to dive into a specific slice of the code and make changes. But there's definitely a learning curve. It also takes a while to figure out the best way to debug Fiber; infinite loop when are common. I want to update my React Fiber Architecture doc some time soon to make it easier to onboard new contributors. I've given in-person codebase overviews a few times and it reinforced for me just how much stuff there is to take in when you're first getting started.
 
---
+---
 
 **Q:** What are the plans for mixins with class components?
 
 **A:** We have no plans to add mixins to class components. Dan wrote a great post about the various problems with mixins that I'll refer you to: https://facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html
 
---
+---
 
 **Q:** Any chance for an expanded howto (or a cookbook even) for recompose? It's a pretty powerful stuff but hard to use just by reading API.
 
 **A:** Yes, proper documentation for Recompose has been on my todo list for over a year, haha. I'm slightly ashamed I haven't gotten around to it yet. But as I said in my answer above, I intend devote more time to Recompose once Fiber is a bit more settled. Until then I'm grateful to Ivan Starkov and CT Wu (don't know their handles on here) for keeping the ship afloat while I'm off doing React stuff.
 
---
+---
 
 **Q:** If fiber saves a callstack for an unprioritized function, can fiber then skip that continuation if a new version of that same function with new updated data comes through the scheduler?
 
@@ -117,7 +117,7 @@ Also, we never used Webpack to bundle React AFAIK. So it's not quite accurate to
 
 In that case, the low priority update will be aborted (but still in the queue). The high priority update will be processed and flushed to the screen. Then we'll go back to the low priority update, but it will be rebased on top of the high pri one. This is why the functional form of setState((state, props) => newState) is important, and why you shouldn't put side-effects in there (because it may be called more than once)
 
---
+---
 
 **Q:** For those of us who are new, how does one contribute to React project(s)
 
@@ -125,25 +125,25 @@ In that case, the low priority update will be aborted (but still in the queue). 
 
 And of course staying involved here on Reactiflux is a great way to contribute the React community :)
 
---
+---
 
 **Q:** How do you think we're going to style our react components two years from now? sass? (post)css? js objects?
 
 **A:** Personally, I hope it's not with stylesheets. I think one of the CSS-in-JS techniques will eventually win out, but seems like we're still in the early stages. If we are writing stylesheets in a few years, at the very least I would hope that it's with something like CSS Modules. The ability to isolate styles to a specific component is such a huge win. Facebook has been doing that for years and I just don't know how we ever survived without it :)
 
---
+---
 
 **Q:** What kind of browser APIs would you like to see in the future? requestIdleCallback is a clear win for Fiber since it works well with the scheduler. Are there any specific or general API(s) that you would like to see to make it easier for React to be fast/efficient/smart?
 
 **A:** Web Assembly
 
---
+---
 
 **Q:** Do you think facebook can help with adding more integrated UWP support for react-native, so that more third parties support all 3 platforms on their libs?
 
 **A:** I don't know if I'm the right person to answer that. But the way open source usually works at Facebook is that we only open source projects that we're actively using. So it's not that we hate Windows users, we just don't build Windows apps.
 
---
+---
 
 **Q:** In regards to styling react components I noticed react appears to have a 1v1 mapping of styles to css, while React Native takes a couple of liberties since it doesn't interact with a browser. Does react fiber take any such liberties or have built in styling methods e.g. TouchableOpacity. Also speaking from my frustrations with flex (justified flex child when overflowed getting cut off)
 
