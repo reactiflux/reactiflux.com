@@ -1,5 +1,5 @@
 ---
-title: Andrew Clarke
+title: Andrew Clark
 date: April 12 2017
 ---
 ## Co-creator of Redux, Facebook React Core Team Member
