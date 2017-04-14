@@ -3,21 +3,7 @@ title: Q&A Schedule
 ---
 We host one or two Q&A's per month with Facebook Engineers and other interesting developers in the React community. These Q&A's usually take place on Thursdays from 1pm - 2pm PT. If you want to hear from someone specific in the community, let us know by contacting us via [Twitter](https://twitter.com/reactiflux) or ping an admin or moderator in the [#reactiflux-dev](https://discord.gg/BkSU7Ju) channel on discord.
 
-## March 2017
-
-### On Break for React Conf
-
-* Watch [React Conf 2017](http://conf.reactjs.org/) livestreamed on March 13-14.
-
 ## April 2017
-
-### Andrew Clarke
-
-* https://twitter.com/acdlite
-* React.js Core Team at Facebook. Co-creator of [Redux](http://redux.js.org/). Creator of [Recompose](https://github.com/acdlite/recompose)
-* Wednesday April 12th
-* 12:30pm - 2pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
 ### Vincent Ning & Michael Paris
 
@@ -39,6 +25,18 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ----------
 ## Past Q&A’s
+
+## ~~April 2017~~
+* https://twitter.com/acdlite
+* React.js Core Team at Facebook. Co-creator of [Redux](http://redux.js.org/). Creator of [Recompose](https://github.com/acdlite/recompose)
+* Wednesday April 12th
+* 12:30pm - 2pm PST  
+* Transcript: [Andrew Clark](../transcripts/andrew-clark/)
+
+## ~~March 2017~~
+### On Break for React Conf
+
+* Watch [React Conf 2017](http://conf.reactjs.org/) livestreamed on March 13-14.
 
 ## ~~January 2017~~
 ### Jordan Walke
