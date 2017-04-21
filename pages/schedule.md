@@ -27,6 +27,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ## Past Q&A’s
 
 ## ~~April 2017~~
+### Andrew Clark ###
 * https://twitter.com/acdlite
 * React.js Core Team at Facebook. Co-creator of [Redux](http://redux.js.org/). Creator of [Recompose](https://github.com/acdlite/recompose)
 * Wednesday April 12th
