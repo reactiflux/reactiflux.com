@@ -18,7 +18,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ### Johannes Schickling & Soren Bramer Schmidt
 
 * https://twitter.com/sorenbs & https://twitter.com/_schickling
-* Co-Founders of Graphcool. A Serverless GraphQL backend for frontend developers. Graphcool also created Learn Relay/Learn Apollo and organizes the GraphQL-Europe conference.
+* Co-Founders of [Graphcool](https://www.graph.cool/). A Serverless GraphQL backend for frontend developers. Graphcool also created Learn Relay/Learn Apollo and organizes the [GraphQL-Europe](https://graphql-europe.org/) conference.
 * Thursday June 8th
 * 1pm - 2pm PST  
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
