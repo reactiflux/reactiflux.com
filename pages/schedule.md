@@ -3,16 +3,6 @@ title: Q&A Schedule
 ---
 We host one or two Q&A's per month with Facebook Engineers and other interesting developers in the React community. These Q&A's usually take place on Thursdays from 1pm - 2pm PT. If you want to hear from someone specific in the community, let us know by contacting us via [Twitter](https://twitter.com/reactiflux) or ping an admin or moderator in the [#reactiflux-dev](https://discord.gg/BkSU7Ju) channel on discord.
 
-## April 2017
-
-### Vincent Ning & Michael Paris
-
-* https://twitter.com/ScapholdDotIO
-* Co-Founders of GraphQL BaaS, [Scaphold.io](http://scaphold.io)
-* Thursday April 27th
-* 1pm - 2pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
-
 ## May 2017
 
 ### Brian Vaughn
@@ -23,11 +13,30 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1pm - 2:30pm PST  
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
+## June 2017
+
+### Johannes Schickling & Soren Bramer Schmidt
+
+* https://twitter.com/sorenbs & https://twitter.com/_schickling
+* Co-Founders of Graphcool. A Serverless GraphQL backend for frontend developers. Graphcool also created Learn Relay/Learn Apollo and organizes the GraphQL-Europe conference.
+* Thursday June 8th
+* 1pm - 2pm PST  
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+
 ----------
 ## Past Q&A’s
 
 ## ~~April 2017~~
+
+### Vincent Ning & Michael Paris
+
+* https://twitter.com/ScapholdDotIO
+* Co-Founders of GraphQL BaaS, [Scaphold.io](http://scaphold.io)
+* Thursday April 27th
+* 1pm - 2pm PST  
+
 ### Andrew Clark ###
+
 * https://twitter.com/acdlite
 * React.js Core Team at Facebook. Co-creator of [Redux](http://redux.js.org/). Creator of [Recompose](https://github.com/acdlite/recompose)
 * Wednesday April 12th
