@@ -3,15 +3,6 @@ title: Q&A Schedule
 ---
 We host one or two Q&A's per month with Facebook Engineers and other interesting developers in the React community. These Q&A's usually take place on Thursdays from 1pm - 2pm PT. If you want to hear from someone specific in the community, let us know by contacting us via [Twitter](https://twitter.com/reactiflux) or ping an admin or moderator in the [#reactiflux-dev](https://discord.gg/BkSU7Ju) channel on discord.
 
-## May 2017
-
-### Brian Vaughn
-
-* https://twitter.com/brian_d_vaughn
-* React.js Core Team at Facebook. Creator of [react-virtualized](https://github.com/bvaughn/react-virtualized)
-* Thursday May 11th
-* 1pm - 2:30pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
 ## June 2017
 
@@ -25,6 +16,16 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ----------
 ## Past Q&A’s
+
+## ~~May 2017~~
+
+### Brian Vaughn
+
+* https://twitter.com/brian_d_vaughn
+* React.js Core Team at Facebook. Creator of [react-virtualized](https://github.com/bvaughn/react-virtualized)
+* Thursday May 11th
+* 1pm - 2:30pm PST  
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
 ## ~~April 2017~~
 
