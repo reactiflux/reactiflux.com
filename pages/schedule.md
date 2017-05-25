@@ -14,6 +14,17 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1pm - 2pm PST  
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
+## July 2017
+
+### Christoph Pojer
+
+* https://twitter.com/cpojer
+* Engineer at Facebook London · Jest · Yarn · RNP
+* Thursday July 13th
+* TBD 
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+
+
 ----------
 ## Past Q&A’s
 
