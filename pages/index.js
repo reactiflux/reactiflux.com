@@ -4,7 +4,7 @@ import { prefixLink } from 'gatsby-helpers'
 import Helmet from "react-helmet"
 import { config } from 'config'
 import { FrontPage, TitleBox, Title, Subtitle, Text, Buttons, Button, IconLink } from '../utils/components'
-import { Community, Console, Facebook, GraphQL, ReactNative, ReactLogo, Redux, Relay } from '../assets/logos'
+import { Community, Console, Facebook, GraphQL, Jest, ReactNative, ReactLogo, Redux, Relay } from '../assets/logos'
 
 export default class Index extends React.Component {
   render () {
@@ -22,7 +22,7 @@ export default class Index extends React.Component {
         </TitleBox>
         <Text>
           We&rsquo;re a chat community of 20,000+ React&nbsp;JS&nbsp;<IconLink to="https://github.com/facebook/react" target="_blank" title="React JS" src={ReactLogo} alt="React Logo"/>, React&nbsp;Native&nbsp;<IconLink to="https://github.com/facebook/react-native" target="_blank" title="React Native" src={ReactNative} alt="React Native Logo"/>, Redux&nbsp;<IconLink to="https://github.com/reactjs/redux" target="_blank" title="Redux" src={Redux} alt="Redux Logo"/>,
-          Relay&nbsp;<IconLink to="https://github.com/facebook/relay" target="_blank" title="Relay" src={Relay} alt="Relay Logo"/> and
+          Jest&nbsp;<IconLink to="https://github.com/facebook/jest" target="_blank" title="Jest" src={Jest} alt="Jest Logo"/>, Relay&nbsp;<IconLink to="https://github.com/facebook/relay" target="_blank" title="Relay" src={Relay} alt="Relay Logo"/> and
           GraphQL&nbsp;<IconLink to="https://github.com/facebook/graphql" target="_blank" title="GraphQL" src={GraphQL} alt="GraphQL Logo"/> developers.
           We hold Q&amp;A&rsquo;s with Facebook Engineers&nbsp;<IconLink to="https://github.com/facebook" target="_blank" title="Facebook Organization" src={Facebook} alt="Facebook Logo"/> and
           other developers&nbsp;<IconLink to="https://github.com/reactiflux" target="_blank" title="Reactiflux Developers" src={Console} alt="Developers Logo"/> in
