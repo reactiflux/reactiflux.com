@@ -14,6 +14,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1pm - 2pm PST  
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
+### Leland Richardson
+
+* https://twitter.com/intelligibabble
+* Engineer at Airbnb heavily involved in React Native (Enzyme, React-Native Maps, Lottie, Animated etc.)
+* Thursday June 15th
+* 1pm - 2:30pm PST  
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+
 ## July 2017
 
 ### Christoph Pojer
@@ -21,7 +29,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * https://twitter.com/cpojer
 * Engineer at Facebook London · Jest · Yarn · RNP
 * Thursday July 13th
-* TBD 
+* 10am - 11:30am PST
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
 
