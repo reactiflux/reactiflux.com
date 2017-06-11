@@ -30,7 +30,7 @@ export default class Index extends React.Component {
           related to React & JavaScript or ask for help!
         </Text>
         <Buttons>
-          <Button primary href="https://discordapp.com/invite/0ZcbPKXt5bYZVCkR" target="_blank" title="Reactiflux Discord">Join Reactiflux</Button>
+          <Button primary href="https://discord.gg/reactiflux" target="_blank" title="Reactiflux Discord">Join Reactiflux</Button>
           <Button to={prefixLink('/schedule/')} title="Q&A Schedule">Q&A Schedule</Button>
         </Buttons>
       </FrontPage>
