@@ -6,14 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## June 2017
 
-### Johannes Schickling & Soren Bramer Schmidt
-
-* https://twitter.com/sorenbs & https://twitter.com/_schickling
-* Co-Founders of [Graphcool](https://www.graph.cool/). A Serverless GraphQL backend for frontend developers. Graphcool also created Learn Relay/Learn Apollo and organizes the [GraphQL-Europe](https://graphql-europe.org/) conference.
-* Thursday June 8th
-* 1pm - 2pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
-
 ### Leland Richardson
 
 * https://twitter.com/intelligibabble
@@ -36,6 +28,15 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Past Q&A’s
 
+## ~~June 2017~~
+
+### Johannes Schickling & Soren Bramer Schmidt
+
+* https://twitter.com/sorenbs & https://twitter.com/_schickling
+* Co-Founders of [Graphcool](https://www.graph.cool/). A Serverless GraphQL backend for frontend developers. Graphcool also created Learn Relay/Learn Apollo and organizes the [GraphQL-Europe](https://graphql-europe.org/) conference.
+* Thursday June 8th
+* 1pm - 2pm PST  
+
 ## ~~May 2017~~
 
 ### Brian Vaughn
@@ -44,7 +45,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * React.js Core Team at Facebook. Creator of [react-virtualized](https://github.com/bvaughn/react-virtualized)
 * Thursday May 11th
 * 1pm - 2:30pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+* Transcript: [Brian Vaughn](../transcripts/brian-vaughn/)
 
 ## ~~April 2017~~
 
