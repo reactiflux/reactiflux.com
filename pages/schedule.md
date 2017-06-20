@@ -4,16 +4,6 @@ title: Q&A Schedule
 We host one or two Q&A's per month with Facebook Engineers and other interesting developers in the React community. These Q&A's usually take place on Thursdays from 1pm - 2pm PT. If you want to hear from someone specific in the community, let us know by contacting us via [Twitter](https://twitter.com/reactiflux) or ping an admin or moderator in the [#reactiflux-dev](https://discord.gg/BkSU7Ju) channel on discord.
 
 
-## June 2017
-
-### Leland Richardson
-
-* https://twitter.com/intelligibabble
-* Engineer at Airbnb heavily involved in React Native (Enzyme, React-Native Maps, Lottie, Animated etc.)
-* Thursday June 15th
-* 1pm - 2:30pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
-
 ## July 2017
 
 ### Christoph Pojer
@@ -30,12 +20,21 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## ~~June 2017~~
 
+### Leland Richardson
+
+* https://twitter.com/intelligibabble
+* Engineer at Airbnb heavily involved in React Native (Enzyme, React-Native Maps, Lottie, Animated etc.)
+* Thursday June 15th
+* 1pm - 2:30pm PST  
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+
 ### Johannes Schickling & Soren Bramer Schmidt
 
 * https://twitter.com/sorenbs & https://twitter.com/_schickling
 * Co-Founders of [Graphcool](https://www.graph.cool/). A Serverless GraphQL backend for frontend developers. Graphcool also created Learn Relay/Learn Apollo and organizes the [GraphQL-Europe](https://graphql-europe.org/) conference.
 * Thursday June 8th
 * 1pm - 2pm PST  
+* Transcript: [Graphcool](../transcripts/graphcool/)
 
 ## ~~May 2017~~
 
