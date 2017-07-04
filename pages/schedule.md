@@ -14,6 +14,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 10am - 11:30am PST
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
+### Henry Zhu
+
+* https://twitter.com/left_pad
+* Engineer at Adobe (Behance Team) · Babel Maintainer
+* Thursday July 20th
+* 1pm - 2:30pm PST 
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+
 
 ----------
 ## Past Q&A’s
