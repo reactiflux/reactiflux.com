@@ -11,7 +11,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * https://twitter.com/cpojer
 * Engineer at Facebook London · Jest · Yarn · RNP
 * Thursday July 13th
-* 10am - 11:30am PST
+* 10am - 11:30am PDT
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
 ### Henry Zhu
@@ -19,7 +19,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * https://twitter.com/left_pad
 * Engineer at Adobe (Behance Team) · Babel Maintainer
 * Thursday July 20th
-* 1pm - 2:30pm PST 
+* 1pm - 2:30pm PDT 
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
 
