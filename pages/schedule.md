@@ -6,14 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## July 2017
 
-### Christoph Pojer
-
-* https://twitter.com/cpojer
-* Engineer at Facebook London · Jest · Yarn · RNP
-* Thursday July 13th
-* 10am - 11:30am PDT
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
-
 ### Henry Zhu
 
 * https://twitter.com/left_pad
@@ -26,6 +18,16 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Past Q&A’s
 
+## ~~July 2017~~
+
+### Christoph Nakazawa
+
+* https://twitter.com/cpojer
+* Engineer at Facebook London · Jest · Yarn · RNP
+* Thursday July 13th
+* 10am - 11:30am PDT
+* Transcript: [Christoph Nakazawa](../transcripts/christoph-nakazawa/)
+
 ## ~~June 2017~~
 
 ### Leland Richardson
@@ -34,7 +36,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Engineer at Airbnb heavily involved in React Native (Enzyme, React-Native Maps, Lottie, Animated etc.)
 * Thursday June 15th
 * 1pm - 2:30pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
 ### Johannes Schickling & Soren Bramer Schmidt
 
