@@ -20,13 +20,13 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## ~~July 2017~~
 
-### Christoph Pojer
+### Christoph Nakazawa
 
 * https://twitter.com/cpojer
 * Engineer at Facebook London · Jest · Yarn · RNP
 * Thursday July 13th
 * 10am - 11:30am PDT
-* Transcript: [Christoph Pojer](../transcripts/christoph-pojer/)
+* Transcript: [Christoph Nakazawa](../transcripts/christoph-nakazawa/)
 
 ## ~~June 2017~~
 
