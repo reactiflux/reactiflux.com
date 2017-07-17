@@ -4,7 +4,7 @@ date: Thursday July 13th
 ---
 ## Engineer at Facebook London · Jest · Yarn · RNP
 
-**Christoph Nakazwa:**  Just to introduce myself, I'm Christoph and I manage the JavaScript Tools team at Facebook London. Currently we work on Yarn, Jest and Metro Bundler (https://github.com/facebook/metro-bundler) which powers React Native.
+**Christoph Nakazwa:**  Just to introduce myself, I'm Christoph and I manage the JavaScript Tools team at Facebook London. Currently we work on Yarn, Jest and Metro Bundler which provides the development server and bundling infrastructure for React Native.
 
 Also, @gaearon sits across from me. We stare at each other a lot and joke about React and Jest and how Jest is eventually going to have more downloads one day.
 
