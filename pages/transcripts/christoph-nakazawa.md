@@ -4,6 +4,14 @@ date: Thursday July 13th
 ---
 ## Engineer at Facebook London · Jest · Yarn · RNP
 
+**Christoph Nakazwa:**  Just to introduce myself, I'm Christoph and I manage the JavaScript Tools team at Facebook London. Currently we work on Yarn, Jest and Metro Bundler (https://github.com/facebook/metro-bundler) which powers React Native.
+
+Also, @gaearon sits across from me. We stare at each other a lot and joke about React and Jest and how Jest is eventually going to have more downloads one day.
+
+!["Photo of gaeron (Dan Abramov) sitting at his desk opposite Christoph"](http://i.imgur.com/u1FBL2z.jpg)
+
+---
+
 **Q:** Any chance that React Web and React Native will be merged to  one project?
 
 **A:** Whether React Native and React will eventually be merged, I don't think that makes sense. There is react and react-dom and react-native. The latter depend on the former. It might make more sense for people to consider react something like react-component or react-core. It allows you to define components and render them to a pluggable target (dom, native, vr, your programmable toilet seat, …).
@@ -26,7 +34,7 @@ Finally, to explain why we use Yarn at Facebook: it works incredibly well for ou
 
 **Q:** What are the biggest improvements in JS tooling you think the ecosystem still needs? What tools do you dream about existing?
 
-**A:** I think one thing the ecosystem really needs is empathy. There is so much negativity and people believe there is tons of competition going on, when in reality we are just building tools to serve our own use-cases. The philosophy around open source at Facebook, at least on the team I work with, is to build awesome things that work well for Facebook engineers. If they happen to work well for the open source community, then that's great, and we'll open source as much as we can, but we don't necessarily go out of our way to support external use-cases. 
+**A:** I think one thing the ecosystem really needs is empathy. There is so much negativity and people believe there is tons of competition going on, when in reality we are just building tools to serve our own use-cases. The philosophy around open source at Facebook, at least on the team I work with, is to build awesome things that work well for Facebook engineers. If they happen to work well for the open source community, then that's great, and we'll open source as much as we can, but we don't necessarily go out of our way to support external use-cases.
 
 This is why I think it's so important to build healthy communities around our open source projects: not only can the community extend the tools we build and make them work for their own use-cases, but also we at Facebook benefit from it. It's very symbiotic and I'm really happy to see how this is going: look at Yarn ( https://github.com/yarnpkg/yarn/pulse ) and Jest ( https://github.com/facebook/jest/graphs/contributors ) and how many contributions they are receiving every month. It's really amazing to see contributions, especially on Yarn, which are described in-depth, well tested and actually help a large amount of users.
 
@@ -78,7 +86,7 @@ Regarding it's future, we are currently rolling out a new integration with Buck 
 
 ----
 
-**Q:** Can we build a complex feed with FlatList like Instagram? Any recommendations or example? I need to build a feed that have many GIFs and images and videos later... 
+**Q:** Can we build a complex feed with FlatList like Instagram? Any recommendations or example? I need to build a feed that have many GIFs and images and videos later...
 
 **A:** I know FlatList is pretty new still and I haven't gotten a chance to use them, but I do believe it is going to replace ListView. I encourage you to try building a feed, see how it goes, and report back to the react-native team with your success story or the blockers on why you couldn't make it work :)
 
