@@ -8,7 +8,7 @@ date: Thursday July 13th
 
 Also, @gaearon sits across from me. We stare at each other a lot and joke about React and Jest and how Jest is eventually going to have more downloads one day.
 
-!["Photo of gaeron (Dan Abramov) sitting at his desk opposite Christoph"](http://i.imgur.com/u1FBL2z.jpg)
+!["Photo of gaeron (Dan Abramov) sitting at his desk opposite Christoph"](https://i.imgur.com/u1FBL2z.jpg)
 
 ---
 
