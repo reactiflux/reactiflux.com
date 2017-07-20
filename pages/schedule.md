@@ -10,7 +10,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 * https://twitter.com/left_pad
 * Engineer at Adobe (Behance Team) · Babel Maintainer
-* Thursday July 20th
+* Thursday July 27th
 * 1pm - 2:30pm PDT 
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
