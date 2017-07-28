@@ -3,8 +3,12 @@ title: Q&A Schedule
 ---
 We host one or two Q&A's per month with Facebook Engineers and other interesting developers in the React community. These Q&A's usually take place on Thursdays from 1pm - 2pm PT. If you want to hear from someone specific in the community, let us know by contacting us via [Twitter](https://twitter.com/reactiflux) or ping an admin or moderator in the [#reactiflux-dev](https://discord.gg/BkSU7Ju) channel on discord.
 
+No more scheduled! We have a few more in the works, but no dates just yet.
 
-## July 2017
+----------
+## Past Q&A’s
+
+## ~~July 2017~~
 
 ### Henry Zhu
 
@@ -13,12 +17,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Thursday July 27th
 * 1pm - 2:30pm PDT 
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
-
-
-----------
-## Past Q&A’s
-
-## ~~July 2017~~
 
 ### Christoph Nakazawa
 
