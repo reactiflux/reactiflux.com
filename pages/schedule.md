@@ -8,7 +8,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ### Nader Dabit
 
-* https://twitter.com/Eli_White
+* https://twitter.com/dabit3
 * React Native Core Contributor | [React Native Training](http://reactnative.training/)
 * Friday September 29th
 * 1pm - 2pm PST  
