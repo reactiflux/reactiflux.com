@@ -6,11 +6,23 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s
 
+## September 2017
+
 ### Nader Dabit
 
 * https://twitter.com/dabit3
 * React Native Core Contributor | [React Native Training](http://reactnative.training/)
 * Friday September 29th
+* 1pm - 2pm PST  
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+
+## October 2017
+
+### Kurtis Kemple
+
+* https://twitter.com/kurtiskemple
+* Tech lead on the UI team [@Major League Soccer](https://twitter.com/MLS). Organizer of [@NYCGraphQL](https://twitter.com/NYCGraphQL).
+* Thursday October 12th
 * 1pm - 2pm PST  
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
