@@ -19,7 +19,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ### Nader Dabit
 
 * https://twitter.com/dabit3
-* Co-founder @ [React Native Training](http://reactnative.training/)
+* Founder @ [React Native Training](http://reactnative.training/) | Host of [React Native Radio](https://devchat.tv/react-native-radio) | Author of [React Native in Action](https://www.manning.com/books/react-native-in-action)
 * Friday September 29th
 * 1pm - 2pm PST  
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
