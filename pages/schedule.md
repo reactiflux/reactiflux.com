@@ -8,14 +8,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## September 2017
 
-### Charlie Cheever
-
-* https://twitter.com/ccheever
-* Founder @ [Expo.io](https://expo.io) | Co-Founder Quora.com | More About [Charlie](https://betweenthewires.org/2017/05/31/charlie-cheever/)
-* Thursday September 14th
-* 1pm - 2pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
-
 ### Nader Dabit
 
 * https://twitter.com/dabit3
@@ -47,6 +39,16 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ----------
 ## Past Q&A’s
+
+## ~~September 2017~~
+
+### Charlie Cheever
+
+* https://twitter.com/ccheever
+* Founder @ [Expo.io](https://expo.io) | Co-Founder Quora.com | More About [Charlie](https://betweenthewires.org/2017/05/31/charlie-cheever/)
+* Thursday September 14th
+* 1pm - 2pm PST  
+* Transcript: [Charlie Cheever](../transcripts/charlie-cheever/)
 
 ## ~~July 2017~~
 
