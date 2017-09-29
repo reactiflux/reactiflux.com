@@ -6,16 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s
 
-## September 2017
-
-### Nader Dabit
-
-* https://twitter.com/dabit3
-* Founder @ [React Native Training](http://reactnative.training/) | Host of [React Native Radio](https://devchat.tv/react-native-radio) | Author of [React Native in Action](https://www.manning.com/books/react-native-in-action)
-* Friday September 29th
-* 1pm - 2pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
-
 ## October 2017
 
 ### Kurtis Kemple
@@ -41,6 +31,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ## Past Q&A’s
 
 ## ~~September 2017~~
+
+### Nader Dabit
+
+* https://twitter.com/dabit3
+* Founder @ [React Native Training](http://reactnative.training/) | Host of [React Native Radio](https://devchat.tv/react-native-radio) | Author of [React Native in Action](https://www.manning.com/books/react-native-in-action)
+* Friday September 29th
+* 1pm - 2pm PST  
+* Transcript: Coming Soon
 
 ### Charlie Cheever
 
