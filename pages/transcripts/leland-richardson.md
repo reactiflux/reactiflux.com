@@ -1,5 +1,5 @@
 ---
-title: Lelald Richardson
+title: Leland Richardson
 date: Thursday June 15th
 ---
 ## Engineer at Airbnb · React Native Maps · Enzyme · Lottie · Animated
