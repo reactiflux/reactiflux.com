@@ -75,7 +75,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * https://twitter.com/intelligibabble
 * Engineer at Airbnb heavily involved in React Native (Enzyme, React-Native Maps, Lottie, Animated etc.)
 * Thursday June 15th
-* 1pm - 2:30pm PST  
+* Transcript: [Leland Richardson](../transcripts/leland-richardson/)
 
 ### Johannes Schickling & Soren Bramer Schmidt
 
