@@ -6,17 +6,17 @@ date: Thursday June 15th
 
 **Q:** What are you (and should we be) most excited about in React Native?
 
-**A:** That's a good question. RN has a lot of value in different ways. CodePush, sharing code across platform, fast iteration cycles etc. I'm really excited about the value that it's already bringing even without those things. Long term i'm pretty interested in sharing code across platforms (see my [react europe talk](https://www.youtube.com/watch?v=tWitQoPgs8w) for more on this) and how that could really change front-end development.
+**A:** That's a good question. RN has a lot of value in different ways. CodePush, sharing code across platform, fast iteration cycles etc. I'm really excited about the value that it's already bringing even without those things. Long term I'm pretty interested in sharing code across platforms (see my [react europe talk](https://www.youtube.com/watch?v=tWitQoPgs8w) for more on this) and how that could really change front-end development.
 
 ---
 
 **Q:** Where do you begin development from?
 
-**A:** I begun writing code in middle school / high school. I got into it mainly because of gaming, but my 2nd job was also at a machine shop, and I was able to use it back then too and started writing different line-of-business apps for them as well, which was the first time I was able to make money programming. I viewed it mostly as a useful hobby until around college. I didn't get into web development until after college though
+**A:** I began writing code in middle school / high school. I got into it mainly because of gaming, but my 2nd job was also at a machine shop, and I was able to use it back then too and started writing different line-of-business apps for them as well, which was the first time I was able to make money programming. I viewed it mostly as a useful hobby until around college. I didn't get into web development until after college though.
 
 ---
 
-**Q:** I would like to know about the acceptance level of react-native at airbnb among native developers and how is react-native codebase growing in airbnb app :)
+**Q:** I would like to know about the acceptance level of react-native at airbnb among native developers and how the react-native is codebase growing in airbnb app :)
 
 **A:** I would kind of categorize acceptance at airbnb as "lukewarm". I think this is sometimes for very valid reasons, and other times less valid "FUD" type reasons. Some native engineers are super excited about it, and others not at all. Overall I think we still have a lot of work ahead of us to prove that RN can make high quality experiences, but I'm pretty confident that we will get there.
 
@@ -24,7 +24,7 @@ date: Thursday June 15th
 
 **Q:** For someone that has to go through a similar RN evaluation process that you went through, in a company with strong native teams with different repos. Which would be the best advice that you could give?
 
-**A:** My advice would be to empathize. Most native engineers just want what is best for the company, and have valid concerns about what RN could mean for app quality and even dev experience quality (lack of types, etc.). Do your best to understand their concerns and show them the value of RN in light of those concerns. Also make sure people are operating on facts and not feelings. Educate. Measure. I think i've done a decent job of this at Airbnb, but could always be doing better.
+**A:** My advice would be to empathize. Most native engineers just want what is best for the company, and have valid concerns about what RN could mean for app quality and even dev experience quality (lack of types, etc.). Do your best to understand their concerns and show them the value of RN in light of those concerns. Also make sure people are operating on facts and not feelings. Educate. Measure. I think I've done a decent job of this at Airbnb, but could always be doing better.
 
 ---
 
@@ -52,9 +52,9 @@ date: Thursday June 15th
 
 ---
 
-**Q:** Why does Airbnb use a lot of !important in their style
+**Q:** Why does Airbnb use a lot of !important in their styles?
 
-**A:** Good question. the use of !important is from our usage of aphrodite (a css-in-js library) which we are using in a mode that deopts into !important CSS flags due to our need to be able to use it on a page that also has legacy CSS files that aphrodite doesn't know about, and minimizes the conflicts between the two. Hopefully soon we will be able to remove the CSS files so that we can turn off this mode.
+**A:** Good question. The use of !important is from our usage of aphrodite (a css-in-js library) which we are using in a mode that deopts into !important CSS flags due to our need to be able to use it on a page that also has legacy CSS files that aphrodite doesn't know about, and minimizes the conflicts between the two. Hopefully soon we will be able to remove the CSS files so that we can turn off this mode.
 
 
 ---
@@ -75,7 +75,7 @@ For resources, I am not sure I will be able to spit out a great list in this Q&A
 
 **Q:** RN + graphql (apollo) with or without redux?
 
-**A:** I don't think there's any one-size-fits-all recommendation here. Use what you feel comfortable with. I'm hoping that in the medium to long term all of our "remote" state management is done entirely through apollo. Long term i'm interested in building APIs (maybe on top of redux, maybe not) that are built for local state management with a graphql-based interface, so that all state management is thought of in terms of graphql queries & mutations. I haven't gotten very far with that though, so it's still conceptual at this point.
+**A:** I don't think there's any one-size-fits-all recommendation here. Use what you feel comfortable with. I'm hoping that in the medium to long term all of our "remote" state management is done entirely through apollo. Long term I'm interested in building APIs (maybe on top of redux, maybe not) that are built for local state management with a graphql-based interface, so that all state management is thought of in terms of graphql queries & mutations. I haven't gotten very far with that though, so it's still conceptual at this point.
 
 ---
 
@@ -101,45 +101,45 @@ For resources, I am not sure I will be able to spit out a great list in this Q&A
  a) I often find myself curious as to why Airbnb has a specific rule. There is mild documentation in the readme/docs; however, it's usually very "This is good ... this is bad". Any thoughts on adding more expanding rational for why certain defaults were chosen. 
  b) Thoughts on Prettier?
 
-**A:** For a), i'm not the best person to ask. Jordan Harband is usually pretty responsive about this kind of stuff, and if something isn't well explained in the docs, we should add it. It's important to understand also that sometimes decisions are arbitrary, and the point is to have consistency, not that one is better than the other. 
+**A:** For a), I'm not the best person to ask. Jordan Harband is usually pretty responsive about this kind of stuff, and if something isn't well explained in the docs, we should add it. It's important to understand also that sometimes decisions are arbitrary, and the point is to have consistency, not that one is better than the other. 
 
-For b), I love prettier, although I haven't been able to convince the rest of Airbnb to adopt it. perhaps some day. I long for the day of not having to think about code style.
+For b), I love prettier, although I haven't been able to convince the rest of Airbnb to adopt it. Perhaps some day. I long for the day of not having to think about code style.
 
 ---
 
 **Q:** What is Airbnb going to do with Deco IDE, is it going to be the de facto IDE for RN like other Airbnb offerings (RN maps, native navigation)
 
-**A:** We don't currently have any plans to do anything with the Deco IDE. The deco team here is working on really interesting stuff to improve our design and engineering processes. some of that might be open source at some point (like react-sketch) but too early to tell.
+**A:** We don't currently have any plans to do anything with the Deco IDE. The deco team here is working on really interesting stuff to improve our design and engineering processes. Some of that might be open source at some point (like react-sketch) but too early to tell.
 
 ---
 
 **Q:** How do you maintain high UI standards in react native? For example, it is very easy to implement a simple photo viewer app, but things like shared element transition makes mobile experience much better. It feels that the RN UI is moving towards web-based standards, and less attention is spent on mobile UI specifics.
 
-**A:** Great question. this is the kind of stuff that keeps me up at night TBH. I think a lot of times RN is used by web developers for hacky prototypy sort of things, which I think builds a negative selection bias against the kind of experiences that RN can produce. I really wish more of the examples out there paid a bit more attention to aesthetics to limit this perception. At Airbnb, it's a lot of work to make sure everything meets a minimum quality bar. There are also places where I don't think we are doing as well as we could be doing. Ultimately, it's just a lot of work, but having a comprehensive design system makes it a lot easier, and I think is a huge part of why we've been able to do as well as we have.
+**A:** Great question. This is the kind of stuff that keeps me up at night TBH. I think a lot of times RN is used by web developers for hacky prototypy sort of things, which I think builds a negative selection bias against the kind of experiences that RN can produce. I really wish more of the examples out there paid a bit more attention to aesthetics to limit this perception. At Airbnb, it's a lot of work to make sure everything meets a minimum quality bar. There are also places where I don't think we are doing as well as we could be doing. Ultimately, it's just a lot of work, but having a comprehensive design system makes it a lot easier, and I think is a huge part of why we've been able to do as well as we have.
 
 ---
 
 **Q:** Which part/parts of the RN is being focused most by the core RN team to improve or seen as a challenge to take RN to next level?
 
-**A:** hmm. Let's see. I know that FB is very very focused on improving RN initialization times, which I think is pretty crucial (and important in many ways for web as well). In addition, two fundamental problems I think RN has is 1) view recycling and 2) gesture recognition systems. I think both areas fall short compared to both iOS and Android, and for some apps can be super important. In addition to that, I know that FB is going to be working on making RN core more modular and have a smaller footprint (by breaking non core things out of it) which I also think is very important long term for RN, as it will make core more stable and easier to maintain.
+**A:** Hmm. Let's see. I know that FB is very very focused on improving RN initialization times, which I think is pretty crucial (and important in many ways for web as well). In addition, two fundamental problems I think RN has is 1) view recycling and 2) gesture recognition systems. I think both areas fall short compared to both iOS and Android, and for some apps can be super important. In addition to that, I know that FB is going to be working on making RN core more modular and have a smaller footprint (by breaking non core things out of it) which I also think is very important long term for RN, as it will make core more stable and easier to maintain.
 
 ---
 
 **Q:** You earlier said that RN navigation is a mess. I think native-navigation is very promising start to solve this mess, but not lately pushed forward. What's the future of native-navigation? And if it needs much help from community, what would be the concrete next implementation items we should start doing?
 
-**A:** I do think that long term native-navigation has the potential to become "the" navigation option. (i'm biassed, obviously). I've done a really poor job pushing it forward, which is probably an indication that we released it prematurely. In hindsight, getting the OSS version integrated into the airbnb app first would have been better, but it was a tough call. We have plans to work on this in the 2nd half of this year, which i'm really excited about. Ultimately, I have to prioritize the time that we work on RN infra to maximize impact for RN, and there have been a hand full of "fires" so to speak lately, that put integrating native navigation into the airbnb app lower on the list. I'm working on a better list of next steps for NN so that the community can help out. I really appreciate how patient everyone has been on this topic so far :)
+**A:** I do think that long term native-navigation has the potential to become "the" navigation option. (I'm biased, obviously). I've done a really poor job pushing it forward, which is probably an indication that we released it prematurely. In hindsight, getting the OSS version integrated into the airbnb app first would have been better, but it was a tough call. We have plans to work on this in the 2nd half of this year, which I'm really excited about. Ultimately, I have to prioritize the time that we work on RN infra to maximize impact for RN, and there have been a hand full of "fires" so to speak lately, that put integrating native navigation into the airbnb app lower on the list. I'm working on a better list of next steps for NN so that the community can help out. I really appreciate how patient everyone has been on this topic so far :)
 
 ---
 
 **Q:** Just a lifestyle question. I like programming a lot, I like being a part of these communities but I don't like to work for more than 8 hours. I don't like to make it homework. After work... I wanna workout, I wanna learn how other things and I wanna go and drive Mustangs... But man, ever since I got a job, I haven't been as active in the programming community as much and not as yearning to learn new tools.  Have you felt this way before? Or am I just a lazy fart and need to grind more?
 
-**A:** I think to each their own. enjoy life - you only get one of them as far as I can tell. Don't work more than you want to and keep yourself grounded. A lot of the work I do because I enjoy it. Many say i'm a workaholic (which I am I guess), but I would do a lot of the things I do w.r.t. the open source / programming even if I wasn't paid to do them because I enjoy doing it. If you don't, don't do it!
+**A:** I think to each their own. enjoy life - you only get one of them as far as I can tell. Don't work more than you want to and keep yourself grounded. A lot of the work I do because I enjoy it. Many say I'm a workaholic (which I am I guess), but I would do a lot of the things I do w.r.t. the open source / programming even if I wasn't paid to do them because I enjoy doing it. If you don't, don't do it!
 
 ---
 
 **Q:** How does one elevate oneself from a software sage to a React Native legend?
 
-**A:** lol. I don't really want to touch this question. I think we have a tendency to put people "on a pedestal" so to speak. One of the things i've noticed professionally is just that the people that do these amazing things are just normal people, and often it's just because they were fearless enough to try. Next time there is a problem that seems really hard or ridiculous, consider just saying "but yeah, why not try?". I think few things in this world are complex up close, but only seem so from afar.
+**A:** lol. I don't really want to touch this question. I think we have a tendency to put people "on a pedestal" so to speak. One of the things I've noticed professionally is just that the people that do these amazing things are just normal people, and often it's just because they were fearless enough to try. Next time there is a problem that seems really hard or ridiculous, consider just saying "but yeah, why not try?". I think few things in this world are complex up close, but only seem so from afar.
 
 ---
 
@@ -147,25 +147,25 @@ For b), I love prettier, although I haven't been able to convince the rest of Ai
 
 **A:** I don't think there is a ton of custom stuff that we use that I can think of. I mean there's a number of native modules and stuff that helps us integrate into the app infra we already had set up, but in addition to that, there's not that much. I've built a couple of things based on static analysis that provide some really helpful infra for us (for instance we use static analysis for deep links, some prefetching / performance optimizations, and some bundle optimizations), and in general I think static analysis is a powerful tool. We are also building some custom stuff that will work on top of graphql.  I've built some "devtool" type scripts that do some view hierarchy analysis and try to make some perf related recommendations / warnings to engineers. If you have more specific questions about the stack I might be able to answer better :)
 
-Also, we just spent some time refining import-js (a library for editor plugins) that I think is really exciting and improves some DX
+Also, we just spent some time refining import-js (a library for editor plugins) that I think is really exciting and improves some DX.
 
 ---
 
-**Q:** What message solution do you use ? Pusher or something ?
+**Q:** What message solution do you use? Pusher or something?
 
 **A:** We have an internally built messaging framework that has gone under a lot of different changes and ownership. There is now a separate dedicated messaging team at airbnb, so I think we will start to see some big improvements there on the airbnb platform.
 
 ---
 
-**Q:** Could you suggest any message solution to use ?
+**Q:** Could you suggest any message solution to use?
 
-**A:** I don't know how much insight I have here. I know that Layer is a very popular choice for iOS. For RN, check out "gifted chat". Not sure if it's production ready or not, but might be a good starting point. I started a JS-based messaging framework here internally that i'm not super involved with anymore, but some day we might open source that. I dunno, sorry! :)
+**A:** I don't know how much insight I have here. I know that Layer is a very popular choice for iOS. For RN, check out "gifted chat". Not sure if it's production ready or not, but might be a good starting point. I started a JS-based messaging framework here internally that I'm not super involved with anymore, but some day we might open source that. I dunno, sorry! :)
 
 ---
 
 **Q:** How viable do you think react native will be in the future, do you think it's just a little hype thing that will die in a few years, as apps get more complex will it stand the test of time?
 
-**A:** I think RN will only continue to get more viable, not less. but that doesn't mean that something new won't come that matches or beats all of the value props of RN, rendering it obsolete. only time will tell. I think RN will be popular in ~2 years, but ~5 years out I think it could be anything.
+**A:** I think RN will only continue to get more viable, not less. But that doesn't mean that something new won't come that matches or beats all of the value props of RN, rendering it obsolete. Only time will tell. I think RN will be popular in ~2 years, but ~5 years out I think it could be anything.
 
 ---
 
@@ -175,6 +175,6 @@ Also, we just spent some time refining import-js (a library for editor plugins) 
 
 ---
 
-**Q:** What are your best habits (/tools)  to be such an productive programmer?!
+**Q:** What are your best habits (/tools) to be such an productive programmer?!
 
-**A:** Hmm. I constantly feel like a complete n00b in productivity compared to other people. For instance I know lots of people that do amazing things with vim and tmux etc and I feel like I missed this train completely and it's too late for me to go learn :P For productivity personally, I think my advice would be to never be afraid of jumping into the source code and learning more and more. there's so many great resources out there to learn how things work. investigate and dive deep into the things that confuse you. optimizing your keypresses can only get you so far :)
+**A:** Hmm. I constantly feel like a complete n00b in productivity compared to other people. For instance I know lots of people that do amazing things with vim and tmux etc and I feel like I missed this train completely and it's too late for me to go learn :P For productivity personally, I think my advice would be to never be afraid of jumping into the source code and learning more and more. There's so many great resources out there to learn how things work. Investigate and dive deep into the things that confuse you. Optimizing your keypresses can only get you so far :)
