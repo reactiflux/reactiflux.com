@@ -38,7 +38,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Founder @ [React Native Training](http://reactnative.training/) | Host of [React Native Radio](https://devchat.tv/react-native-radio) | Author of [React Native in Action](https://www.manning.com/books/react-native-in-action)
 * Friday September 29th
 * 1pm - 2pm PST  
-* Transcript: Coming Soon
+* Transcript: [Nader Dabit](../transcripts/nader-dabit/)
 
 ### Charlie Cheever
 
