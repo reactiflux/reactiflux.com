@@ -6,16 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s
 
-## October 2017
-
-### Kurtis Kemple
-
-* https://twitter.com/kurtiskemple
-* Tech lead on the UI team [@Major League Soccer](https://twitter.com/MLS). Organizer of [@NYCGraphQL](https://twitter.com/NYCGraphQL).
-* Thursday October 12th
-* 1pm - 2pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
-
 ## November 2017
 
 ### Eli White
@@ -29,6 +19,16 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ----------
 ## Past Q&A’s
+
+## ~~October 2017~~
+
+### Kurtis Kemple
+
+* https://twitter.com/kurtiskemple
+* Tech lead on the UI team [@Major League Soccer](https://twitter.com/MLS). Organizer of [@NYCGraphQL](https://twitter.com/NYCGraphQL).
+* Thursday October 12th
+* 1pm - 2pm PST  
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
 ## ~~September 2017~~
 
