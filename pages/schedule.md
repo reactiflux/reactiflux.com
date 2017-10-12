@@ -28,7 +28,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Tech lead on the UI team [@Major League Soccer](https://twitter.com/MLS). Organizer of [@NYCGraphQL](https://twitter.com/NYCGraphQL).
 * Thursday October 12th
 * 1pm - 2pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+* Transcript: Coming Soon
 
 ## ~~September 2017~~
 
