@@ -16,6 +16,15 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1pm - 2pm PST  
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
+## December 2017
+
+### Nicolas Gallagher
+
+* https://twitter.com/necolas
+* Creator of react-native-web | Engineer @ Twitter
+* Thursday December 7th
+* 1pm - 2pm PST
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
 ----------
 ## Past Q&A’s
