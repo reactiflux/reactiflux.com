@@ -21,7 +21,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ### Nicolas Gallagher
 
 * https://twitter.com/necolas
-* Creator of react-native-web | Engineer @ Twitter
+* Engineer @ Twitter | Creator of [react-native-web](https://github.com/necolas/react-native-web) 
 * Thursday December 7th
 * 1pm - 2pm PST
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
