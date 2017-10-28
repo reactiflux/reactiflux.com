@@ -1,5 +1,5 @@
 ---
-title: Ben Alpert
+title: Sophie Alpert
 date: June 9 2016
 ---
 ## Facebook React Core Team Member
