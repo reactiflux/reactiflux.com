@@ -6,16 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s
 
-## November 2017
-
-### Eli White
-
-* https://twitter.com/Eli_White
-* React Native Core Team @ Facebook 
-* Thursday November 9th
-* 1pm - 2pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
-
 ## December 2017
 
 ### Nicolas Gallagher
@@ -26,8 +16,27 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1pm - 2pm PST
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
+## January 2018
+
+### Brent Erickson & David de Regt
+
+* Engineers @ Microsoft/Skype developing ReactXP (https://github.com/Microsoft/reactxp)
+* Thursday January 11th
+* 1pm - 2pm PST
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+
 ----------
 ## Past Q&A’s
+
+## ~~November 2017~~
+
+### Eli White
+
+* https://twitter.com/Eli_White
+* React Native Core Team @ Facebook 
+* Thursday November 9th
+* 1pm - 2pm PST  
+* Transcript: Coming Soon
 
 ## ~~October 2017~~
 
