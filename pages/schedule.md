@@ -36,7 +36,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * React Native Core Team @ Facebook 
 * Thursday November 9th
 * 1pm - 2pm PST  
-* Transcript: Coming Soon
+* Transcript: [Eli White](../transcripts/eli-white/)
 
 ## ~~October 2017~~
 
@@ -46,7 +46,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Tech lead on the UI team [@Major League Soccer](https://twitter.com/MLS). Organizer of [@NYCGraphQL](https://twitter.com/NYCGraphQL).
 * Thursday October 12th
 * 1pm - 2pm PST  
-* Transcript: Coming Soon
+* Transcript: [Kurtis Kemple](../transcripts/kurtis-kemple/)
 
 ## ~~September 2017~~
 
