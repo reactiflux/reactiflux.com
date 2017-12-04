@@ -1,6 +1,6 @@
 ---
 title: Kurtis Kemple
-date: April 12 2017
+date: October 12 2017
 ---
 
 ## Tech lead on the UI team @Major League Soccer. Organizer of @NYCGraphQL.
