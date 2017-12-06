@@ -13,7 +13,7 @@ export default class Index extends React.Component {
         <Helmet
           title={config.siteTitle}
           meta={[
-            {"name": "description", "content": "We’re a chat community of 20,000+ React JS, React Native, Redux, Relay and GraphQL developers."}
+            {"name": "description", "content": "We’re a chat community of 25,000+ React JS, React Native, Redux, Relay and GraphQL developers."}
           ]}
         />
         <TitleBox>
@@ -21,7 +21,7 @@ export default class Index extends React.Component {
           <Subtitle>Welcome to</Subtitle>
         </TitleBox>
         <Text>
-          We&rsquo;re a chat community of 20,000+ React&nbsp;JS&nbsp;<IconLink to="https://github.com/facebook/react" target="_blank" title="React JS" src={ReactLogo} alt="React Logo"/>, React&nbsp;Native&nbsp;<IconLink to="https://github.com/facebook/react-native" target="_blank" title="React Native" src={ReactNative} alt="React Native Logo"/>, Redux&nbsp;<IconLink to="https://github.com/reactjs/redux" target="_blank" title="Redux" src={Redux} alt="Redux Logo"/>,
+          We&rsquo;re a chat community of 25,000+ React&nbsp;JS&nbsp;<IconLink to="https://github.com/facebook/react" target="_blank" title="React JS" src={ReactLogo} alt="React Logo"/>, React&nbsp;Native&nbsp;<IconLink to="https://github.com/facebook/react-native" target="_blank" title="React Native" src={ReactNative} alt="React Native Logo"/>, Redux&nbsp;<IconLink to="https://github.com/reactjs/redux" target="_blank" title="Redux" src={Redux} alt="Redux Logo"/>,
           Jest&nbsp;<IconLink to="https://github.com/facebook/jest" target="_blank" title="Jest" src={Jest} alt="Jest Logo"/>, Relay&nbsp;<IconLink to="https://github.com/facebook/relay" target="_blank" title="Relay" src={Relay} alt="Relay Logo"/> and
           GraphQL&nbsp;<IconLink to="https://github.com/facebook/graphql" target="_blank" title="GraphQL" src={GraphQL} alt="GraphQL Logo"/> developers.
           We hold Q&amp;A&rsquo;s with Facebook Engineers&nbsp;<IconLink to="https://github.com/facebook" target="_blank" title="Facebook Organization" src={Facebook} alt="Facebook Logo"/> and
