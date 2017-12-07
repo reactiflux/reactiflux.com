@@ -6,16 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s
 
-## December 2017
-
-### Nicolas Gallagher
-
-* https://twitter.com/necolas
-* Engineer @ Twitter | Creator of [react-native-web](https://github.com/necolas/react-native-web) 
-* Thursday December 7th
-* 1pm - 2pm PST
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
-
 ## January 2018
 
 ### Brent Erickson & David de Regt
@@ -25,8 +15,26 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1pm - 2pm PST
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
+### Johannes Schickling & Soren Bramer Schmidt
+
+* https://twitter.com/sorenbs & https://twitter.com/_schickling
+* Co-Founders of [Graphcool](https://www.graph.cool/). A Serverless GraphQL backend for frontend developers. Graphcool also created Learn Relay/Learn Apollo and organizes the [GraphQL-Europe](https://graphql-europe.org/) conference.
+* Thursday January 25th
+* 1pm - 2pm PST  
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+
 ----------
 ## Past Q&A’s
+
+## ~~December 2017~~
+
+### Nicolas Gallagher
+
+* https://twitter.com/necolas
+* Engineer @ Twitter | Creator of [react-native-web](https://github.com/necolas/react-native-web) 
+* Thursday December 7th
+* 1pm - 2pm PST
+* Transcript: Coming Soon
 
 ## ~~November 2017~~
 
