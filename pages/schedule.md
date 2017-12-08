@@ -34,7 +34,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Engineer @ Twitter | Creator of [react-native-web](https://github.com/necolas/react-native-web) 
 * Thursday December 7th
 * 1pm - 2pm PST
-* Transcript: [Eli White](../transcripts/nicolas-gallagher/) 
+* Transcript: [Nicolas Gallagher](../transcripts/nicolas-gallagher/) 
 
 ## ~~November 2017~~
 
