@@ -8,13 +8,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## January 2018
 
-### Brent Erickson & David de Regt
-
-* Engineers @ Microsoft/Skype developing ReactXP (https://github.com/Microsoft/reactxp)
-* Thursday January 11th
-* 1pm - 2pm PST
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
-
 ### Johannes Schickling & Soren Bramer Schmidt
 
 * https://twitter.com/sorenbs & https://twitter.com/_schickling
@@ -25,6 +18,15 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ----------
 ## Past Q&A’s
+
+## ~~January 2018~~
+
+### Brent Erickson & David de Regt
+
+* Engineers @ Microsoft/Skype developing ReactXP (https://github.com/Microsoft/reactxp)
+* Thursday January 11th
+* 1pm - 2pm PST
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
 ## ~~December 2017~~
 
