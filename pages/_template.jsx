@@ -122,6 +122,14 @@ export default class Template extends React.Component {
                 Transcripts
               </NavigationLink>
               <NavigationLink
+                to="http://jobs.reactiflux.com"
+                title="Jobs"
+                target="_blank"
+                onClick={closeMenu}
+              >
+                Jobs
+              </NavigationLink>
+              <NavigationLink
                 to={prefixLink('/learning/')}
                 title="Learning"
                 onClick={closeMenu}
