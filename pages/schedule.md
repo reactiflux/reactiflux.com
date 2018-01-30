@@ -18,7 +18,7 @@ No more Q&A's scheduled! Keep an eye on #announcements for the next one.
 * Engineers @ Microsoft/Skype developing ReactXP (https://github.com/Microsoft/reactxp)
 * Thursday January 11th
 * 1pm - 2pm PST
-* Transcript: [Nicolas Gallagher](../transcripts/brent-erickson_david-de-regt/) 
+* Transcript: [Brent & David](../transcripts/brent-erickson_david-de-regt/) 
 
 ### Johannes Schickling & Soren Bramer Schmidt
 
