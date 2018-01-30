@@ -1,5 +1,5 @@
 ---
-title: Johannes Schickling & Soren Bramer Schmidt #2
+title: Johannes Schickling & Soren Bramer Schmidt
 date: January 25, 2018
 ---
 
