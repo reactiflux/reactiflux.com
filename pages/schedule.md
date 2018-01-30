@@ -6,15 +6,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s
 
-## January 2018
-
-### Johannes Schickling & Soren Bramer Schmidt
-
-* https://twitter.com/sorenbs & https://twitter.com/_schickling
-* Co-Founders of [Graphcool](https://www.graph.cool/). A Serverless GraphQL backend for frontend developers. Graphcool also created Learn Relay/Learn Apollo and organizes the [GraphQL-Europe](https://graphql-europe.org/) conference.
-* Thursday January 25th
-* 1pm - 2pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+No more Q&A's scheduled! Keep an eye on #announcements for the next one.
 
 ----------
 ## Past Q&A’s
@@ -26,6 +18,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Engineers @ Microsoft/Skype developing ReactXP (https://github.com/Microsoft/reactxp)
 * Thursday January 11th
 * 1pm - 2pm PST
+* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+
+### Johannes Schickling & Soren Bramer Schmidt
+
+* https://twitter.com/sorenbs & https://twitter.com/_schickling
+* Co-Founders of [Graphcool](https://www.graph.cool/). A Serverless GraphQL backend for frontend developers. Graphcool also created Learn Relay/Learn Apollo and organizes the [GraphQL-Europe](https://graphql-europe.org/) conference.
+* Thursday January 25th
+* 1pm - 2pm PST  
 * [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
 
 ## ~~December 2017~~
