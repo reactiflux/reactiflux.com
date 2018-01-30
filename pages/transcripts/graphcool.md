@@ -1,5 +1,5 @@
 ---
-title: Johannes Schickling & Soren Bramer Schmidt #1
+title: Graphcool
 date: June 8th 2017
 ---
 
