@@ -2,6 +2,7 @@
 title: Brent Erickson & David de Regt
 date: January 11 2018
 ---
+## Engineers @ Microsoft/Skype developing ReactXP 
 
 **Q:** Having the best of react inside a wrapper like ReactXP, what are the real benefits? - kikoseijo
 
