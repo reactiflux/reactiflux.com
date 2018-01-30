@@ -18,7 +18,7 @@ No more Q&A's scheduled! Keep an eye on #announcements for the next one.
 * Engineers @ Microsoft/Skype developing ReactXP (https://github.com/Microsoft/reactxp)
 * Thursday January 11th
 * 1pm - 2pm PST
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+* Transcript: [Nicolas Gallagher](../transcripts/brent-erickson_david-de-regt/) 
 
 ### Johannes Schickling & Soren Bramer Schmidt
 
@@ -26,7 +26,7 @@ No more Q&A's scheduled! Keep an eye on #announcements for the next one.
 * Co-Founders of [Graphcool](https://www.graph.cool/). A Serverless GraphQL backend for frontend developers. Graphcool also created Learn Relay/Learn Apollo and organizes the [GraphQL-Europe](https://graphql-europe.org/) conference.
 * Thursday January 25th
 * 1pm - 2pm PST  
-* [Q&A Channel](http://q-and-a.reactiflux.com) on Reactiflux
+* Transcript: [Johannes & Soren](../transcripts/johannes-shickling_soren-bramer-schmidt/) 
 
 ## ~~December 2017~~
 
