@@ -1,9 +1,9 @@
 ---
-title: Johannes Schickling & Soren Bramer Schmidt
+title: Johannes Schickling & Soren Bramer Schmidt #2
 date: January 25, 2018
 ---
 
-# Co-founders of Graphcool
+## Co-founders of Graphcool
 
 
 **Q:** Big fan of Prisma – what's your business model, and how do you plan to grow the business? – hoodsy
