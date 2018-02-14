@@ -6,7 +6,9 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s
 
-No more Q&A's scheduled! Keep an eye on #announcements for the next one.
+We are planning a Reactiflux Meetup in SF in March! More details coming soon.
+
+Q&A's will resume in April!
 
 ----------
 ## Past Q&A’s
