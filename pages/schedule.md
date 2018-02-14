@@ -4,11 +4,34 @@ title: Q&A Schedule
 We host one or two Q&A's per month with Facebook Engineers and other interesting developers in the React community. These Q&A's usually take place on Thursdays from 1pm - 2pm PT. If you want to hear from someone specific in the community, let us know by contacting us via [Twitter](https://twitter.com/reactiflux) or ping an admin or moderator in the [#reactiflux-dev](https://discord.gg/BkSU7Ju) channel on discord.
 
 ----------
-## Upcoming Q&A’s
+## Upcoming Q&A’s & Meetups
 
-We are planning a Reactiflux Meetup in SF in March! More details coming soon.
+## March 2018
 
-Q&A's will resume in April!
+We are planning a Reactiflux Meetup in SF! More details coming soon.
+
+## April 2018
+
+### Zack Argyle
+
+* https://twitter.com/ZackArgyle
+* Tech Lead @ Pinterest
+* Thursday April 5th
+* 1 - 2pm PT
+* Q&A Channel on Reactiflux
+* [Pinterest PWA built w/ React - Performance Case Study](https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154)
+
+### Jordan Eldredge
+
+* https://twitter.com/captbaritone
+* Engineer @ Facebook working on [Nuclide](https://nuclide.io/) | Author of [Winamp2-js](https://github.com/captbaritone/winamp2-js)
+* Thursday April 12th
+* 1 - 2pm PT
+* Q&A Channel on Reactiflux
+
+## May 2018
+
+TBD
 
 ----------
 ## Past Q&A’s
