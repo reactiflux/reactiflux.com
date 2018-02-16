@@ -8,7 +8,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## March 2018
 
-We are planning a Reactiflux Meetup in SF! More details coming soon.
+### Official Reactiflux.com Meetup @ Docker HQ
+
+* https://www.meetup.com/Reactiflux-Meetup-San-Francisco/events/247752537/
+* We have space for 200 people! This will be a networking/hangout event, no speakers.
+* Monday March 19th
+* 5 - 8:30pm PT
+* 144 Townsend St · San Francisco, CA
+* Ring the doorbell at our front entrance and we'll come let you in.
 
 ## April 2018
 
