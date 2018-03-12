@@ -8,17 +8,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## March 2018
 
-### Sacha Greif
-
-* https://twitter.com/SachaGreif
-* Sacha Greif is a designer/developer living in Japan. Author of [VulcanJS](https://github.com/vulcanjs/vulcan), the React + GraphQL framework.
-* Thursday March 8th
-* 4 - 5pm PT
-* Q&A Channel on Reactiflux
-* [Vulcan Docs](http://docs.vulcanjs.org/)
-* [What is Vulcan?](https://www.youtube.com/watch?v=uU-cwLKcmnY)
-* [An app in 15 days with VulcanJS](https://hackernoon.com/the-vulcan-js-challenge-15-days-for-an-app-e3735d1e3d4c)
-
 ### Official Reactiflux.com Meetup @ Docker HQ
 
 * https://www.meetup.com/Reactiflux-Meetup-San-Francisco/events/247752537/
@@ -61,6 +50,16 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ----------
 ## Past Q&A’s
+
+## ~~March 2018~~
+
+### Sacha Greif
+
+* https://twitter.com/SachaGreif
+* Designer/developer living in Japan. Author of [VulcanJS](https://github.com/vulcanjs/vulcan), the React + GraphQL framework.
+* Thursday March 8th
+* 4 - 5pm PT
+* Transcript: [Sacha Greif](../transcripts/sacha-greif/) 
 
 ## ~~January 2018~~
 
