@@ -6,27 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## March 2018
-
-### Sacha Greif
-
-* https://twitter.com/SachaGreif
-* Sacha Greif is a designer/developer living in Japan. Author of [VulcanJS](https://github.com/vulcanjs/vulcan), the React + GraphQL framework.
-* Thursday March 8th
-* 4 - 5pm PT
-* Q&A Channel on Reactiflux
-* [Vulcan Docs](http://docs.vulcanjs.org/)
-* [What is Vulcan?](https://www.youtube.com/watch?v=uU-cwLKcmnY)
-* [An app in 15 days with VulcanJS](https://hackernoon.com/the-vulcan-js-challenge-15-days-for-an-app-e3735d1e3d4c)
-
-### Official Reactiflux.com Meetup @ Docker HQ
-
-* https://www.meetup.com/Reactiflux-Meetup-San-Francisco/events/247752537/
-* We have space for 200 people! This will be a networking/hangout event, no speakers.
-* Monday March 19th
-* 5 - 8:30pm PT
-* 144 Townsend St · San Francisco, CA
-* Ring the doorbell at our front entrance and we'll come let you in.
 
 ## April 2018
 
@@ -57,10 +36,39 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1 - 2pm PT
 * Q&A Channel on Reactiflux
 
+### Peggy Rayzis & James Baxley
+
+* https://twitter.com/jbaxleyiii & https://twitter.com/peggyrayzis
+* Open Source Engineers @ [Apollo](https://twitter.com/apollographql) | Building Apollo Client, Engine, Server, and other tools to help you incrementally adopt GraphQL.
+* Thursday May 10th
+* 1 - 2pm PT
+* Q&A Channel on Reactiflux
 
 
 ----------
 ## Past Q&A’s
+
+## ~~March 2018~~
+
+### Sacha Greif
+
+* https://twitter.com/SachaGreif
+* Sacha Greif is a designer/developer living in Japan. Author of [VulcanJS](https://github.com/vulcanjs/vulcan), the React + GraphQL framework.
+* Thursday March 8th
+* 4 - 5pm PT
+* Q&A Channel on Reactiflux
+* [Vulcan Docs](http://docs.vulcanjs.org/)
+* [What is Vulcan?](https://www.youtube.com/watch?v=uU-cwLKcmnY)
+* [An app in 15 days with VulcanJS](https://hackernoon.com/the-vulcan-js-challenge-15-days-for-an-app-e3735d1e3d4c)
+
+### Official Reactiflux.com Meetup @ Docker HQ
+
+* https://www.meetup.com/Reactiflux-Meetup-San-Francisco/events/247752537/
+* We have space for 200 people! This will be a networking/hangout event, no speakers.
+* Monday March 19th
+* 5 - 8:30pm PT
+* 144 Townsend St · San Francisco, CA
+* Ring the doorbell at our front entrance and we'll come let you in.
 
 ## ~~January 2018~~
 
