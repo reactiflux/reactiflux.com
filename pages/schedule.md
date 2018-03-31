@@ -6,7 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-
 ## April 2018
 
 ### Zack Argyle
