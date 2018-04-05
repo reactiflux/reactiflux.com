@@ -25,6 +25,15 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1 - 2pm PT
 * Q&A Channel on Reactiflux
 
+### Tanmai Gopal & Vamshi Surabhi Rao
+
+* https://twitter.com/tanmaigo
+* Founder & Tech Lead @ [hasura.io](https://hasura.io/) - Postgres-backed GraphQL backend as a service
+* Thursday, April 19
+* 1 - 2pm PT
+* Q&A channel on Reactiflux
+* Topic: Building a high-performance GraphQL engine for Postgres
+
 ## May 2018
 
 ### Jared Palmer
