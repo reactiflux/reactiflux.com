@@ -48,7 +48,7 @@ The other people in Reactiflux deserve your respect, so be polite. Not "retail e
 
 ## Be a model channel citizen
 
-Be the change you want to see in the world! If a conversation is getting heated, try to defuse it. If a hard question is unanswered, dig in and work through it with them. If a channel is full of unanswered questions, mention in **#reactiflux-dev** that you'd like to take ownership of it.
+Be the change you want to see in the world! If a conversation is getting heated, try to defuse it. If a hard question is unanswered, dig in and work through it with them. If a channel is full of unanswered questions, mention in **#reactiflux-admin** that you'd like to take ownership of it.
 
 ---
 
