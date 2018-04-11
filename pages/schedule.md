@@ -8,15 +8,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## April 2018
 
-### Zack Argyle
-
-* https://twitter.com/ZackArgyle
-* Tech Lead @ Pinterest
-* Thursday April 5th
-* 1 - 2pm PT
-* Q&A Channel on Reactiflux
-* [Pinterest PWA built w/ React - Performance Case Study](https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154)
-
 ### Jordan Eldredge
 
 * https://twitter.com/captbaritone
@@ -55,6 +46,17 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ----------
 ## Past Q&A’s
+
+## ~~April 2018~~
+
+### Zack Argyle
+
+* https://twitter.com/ZackArgyle
+* Tech Lead @ Pinterest
+* Thursday April 5th
+* 1 - 2pm PT
+* Q&A Channel on Reactiflux
+* [Pinterest PWA built w/ React - Performance Case Study](https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154)
 
 ## ~~March 2018~~
 
