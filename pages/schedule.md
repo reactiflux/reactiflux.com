@@ -8,14 +8,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## April 2018
 
-### Jordan Eldredge
-
-* https://twitter.com/captbaritone
-* Engineer @ Facebook working on [Nuclide](https://nuclide.io/) | Author of [Winamp2-js](https://github.com/captbaritone/winamp2-js)
-* Thursday April 12th
-* 1 - 2pm PT
-* Q&A Channel on Reactiflux
-
 ### Tanmai Gopal & Vamshi Surabhi Rao
 
 * https://twitter.com/tanmaigo
@@ -57,6 +49,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1 - 2pm PT
 * Q&A Channel on Reactiflux
 * [Pinterest PWA built w/ React - Performance Case Study](https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154)
+
+### Jordan Eldredge
+
+* https://twitter.com/captbaritone
+* Engineer @ Facebook working on [Nuclide](https://nuclide.io/) | Author of [Winamp2-js](https://github.com/captbaritone/winamp2-js)
+* Thursday April 12th
+* 1 - 2pm PT
+* Q&A Channel on Reactiflux
 
 ## ~~March 2018~~
 
