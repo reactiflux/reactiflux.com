@@ -6,17 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## April 2018
-
-### Tanmai Gopal & Vamshi Surabhi Rao
-
-* https://twitter.com/tanmaigo
-* Founder & Tech Lead @ [hasura.io](https://hasura.io/) - Postgres-backed GraphQL backend as a service
-* Thursday, April 19
-* 1 - 2pm PT
-* Q&A channel on Reactiflux
-* Topic: Building a high-performance GraphQL engine for Postgres
-
 ## May 2018
 
 ### Jared Palmer
@@ -35,11 +24,19 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1 - 2pm PT
 * Q&A Channel on Reactiflux
 
-
 ----------
 ## Past Q&A’s
 
 ## ~~April 2018~~
+
+### Tanmai Gopal & Vamshi Surabhi Rao
+
+* https://twitter.com/tanmaigo
+* Founder & Tech Lead @ [hasura.io](https://hasura.io/) - Postgres-backed GraphQL backend as a service
+* Thursday, April 19
+* 1 - 2pm PT
+* Q&A channel on Reactiflux
+* Topic: Building a high-performance GraphQL engine for Postgres
 
 ### Zack Argyle
 
@@ -47,7 +44,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Tech Lead @ Pinterest
 * Thursday April 5th
 * 1 - 2pm PT
-* Q&A Channel on Reactiflux
+* Transcript: [Zack Argyle](../transcripts/zack-argyle/) 
 * [Pinterest PWA built w/ React - Performance Case Study](https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154)
 
 ### Jordan Eldredge
@@ -56,7 +53,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Engineer @ Facebook working on [Nuclide](https://nuclide.io/) | Author of [Winamp2-js](https://github.com/captbaritone/winamp2-js)
 * Thursday April 12th
 * 1 - 2pm PT
-* Q&A Channel on Reactiflux
+* Transcript: [Jordan Eldredge](../transcripts/jordan-eldredge/) 
 
 ## ~~March 2018~~
 
@@ -66,7 +63,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Sacha Greif is a designer/developer living in Japan. Author of [VulcanJS](https://github.com/vulcanjs/vulcan), the React + GraphQL framework.
 * Thursday March 8th
 * 4 - 5pm PT
-* Q&A Channel on Reactiflux
+* Transcript: [Sacha Greif](../transcripts/sacha-greif/) 
 * [Vulcan Docs](http://docs.vulcanjs.org/)
 * [What is Vulcan?](https://www.youtube.com/watch?v=uU-cwLKcmnY)
 * [An app in 15 days with VulcanJS](https://hackernoon.com/the-vulcan-js-challenge-15-days-for-an-app-e3735d1e3d4c)
