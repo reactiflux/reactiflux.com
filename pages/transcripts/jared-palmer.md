@@ -16,7 +16,7 @@ date: May 3 2018
 
 **A:** I had taught myself Framer.js and that's how I learned javascript. I got started with development after I got rejected from a Product Design job at FB in summer of 2015. The recruiter told me to get more experience and follow up in around 6 months
 
-<image of contribution graph>
+![Chart of all Jared's GitHub contributions](https://cdn.discordapp.com/attachments/193117606629081089/441691709357948938/contributions.png)
 
 I got hooked on React pretty quickly after and you can see where things kinda "clicked" in my contribution graph. Since then I'd say I just kept at it for 6-10 hrs every day for 2 years.
 
