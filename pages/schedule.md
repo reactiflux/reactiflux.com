@@ -6,6 +6,15 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
+## June 2018
+
+Tanner Linsley
+https://twitter.com/tannerlinsley
+VP of UI/UX @ Nozzle.io | Author of React-Static, React-Table, React-Charts, Chart.js, React-Form, Swimmer
+Thursday June 21st
+1 - 2pm PT
+Q&A Channel on Reactiflux
+
 ## May 2018
 
 ### Jared Palmer
