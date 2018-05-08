@@ -6,24 +6,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## June 2018
-
-Tanner Linsley
-https://twitter.com/tannerlinsley
-VP of UI/UX @ Nozzle.io | Author of React-Static, React-Table, React-Charts, Chart.js, React-Form, Swimmer
-Thursday June 21st
-1 - 2pm PT
-Q&A Channel on Reactiflux
-
 ## May 2018
-
-### Jared Palmer
-
-* https://twitter.com/jaredpalmer
-* Engineering Lead @ [The Palmer Group](https://twitter.com/PalmerGroupHQ) | Author of [Formik](https://github.com/jaredpalmer/formik), [Razzle](https://github.com/jaredpalmer/razzle), [Backpack](https://github.com/jaredpalmer/backpack), [react-fns](https://github.com/jaredpalmer/react-fns), [After.js](https://github.com/jaredpalmer/after.js), etc.
-* Thursday May 3rd
-* 1 - 2pm PT
-* Q&A Channel on Reactiflux
 
 ### Peggy Rayzis & James Baxley
 
@@ -33,8 +16,27 @@ Q&A Channel on Reactiflux
 * 1 - 2pm PT
 * Q&A Channel on Reactiflux
 
+## June 2018
+
+* Tanner Linsley
+* https://twitter.com/tannerlinsley
+* VP of UI/UX @ Nozzle.io | Author of React-Static, React-Table, React-Charts, Chart.js, React-Form, Swimmer
+* Thursday June 21st
+* 1 - 2pm PT
+* Q&A Channel on Reactiflux
+
 ----------
 ## Past Q&A’s
+
+## ~~May 2018~~
+
+### Jared Palmer
+
+* https://twitter.com/jaredpalmer
+* Engineering Lead @ [The Palmer Group](https://twitter.com/PalmerGroupHQ) | Author of [Formik](https://github.com/jaredpalmer/formik), [Razzle](https://github.com/jaredpalmer/razzle), [Backpack](https://github.com/jaredpalmer/backpack), [react-fns](https://github.com/jaredpalmer/react-fns), [After.js](https://github.com/jaredpalmer/after.js), etc.
+* Thursday May 3rd
+* 1 - 2pm PT
+* Transcript: [Jared Palmer](../transcripts/jared-palmer/) 
 
 ## ~~April 2018~~
 
