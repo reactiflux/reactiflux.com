@@ -6,19 +6,19 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## May 2018
-
-### Peggy Rayzis & James Baxley
-
-* https://twitter.com/jbaxleyiii & https://twitter.com/peggyrayzis
-* Open Source Engineers @ [Apollo](https://twitter.com/apollographql) | Building Apollo Client, Engine, Server, and other tools to help you incrementally adopt GraphQL.
-* Thursday May 10th
-* 1 - 2pm PT
-* Q&A Channel on Reactiflux
-
 ## June 2018
 
-* Tanner Linsley
+### Richard Threlkeld
+
+* https://twitter.com/undef_obj
+* Senior Technical Product Manager @ Amazon Web Services (AWS) | Focusing on developer experience in AWS Mobile (JavaScript, React, React Native, Ionic, GraphQL, Offline and Realtime development). Working on [AWS AppSync](https://aws.amazon.com/appsync/), a GraphQL BaaS. 
+* Thursday June 14th
+* 1 - 2pm PT
+* Q&A Channel on Reactiflux & Live Webinar
+
+
+### Tanner Linsley
+
 * https://twitter.com/tannerlinsley
 * VP of UI/UX @ Nozzle.io | Author of React-Static, React-Table, React-Charts, Chart.js, React-Form, Swimmer
 * Thursday June 21st
@@ -37,6 +37,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Thursday May 3rd
 * 1 - 2pm PT
 * Transcript: [Jared Palmer](../transcripts/jared-palmer/) 
+
+### Peggy Rayzis & James Baxley
+
+* https://twitter.com/jbaxleyiii & https://twitter.com/peggyrayzis
+* Open Source Engineers @ [Apollo](https://twitter.com/apollographql) | Building Apollo Client, Engine, Server, and other tools to help you incrementally adopt GraphQL.
+* Thursday May 10th
+* 1 - 2pm PT
+* Transcript: [Coming Soon](../#)
 
 ## ~~April 2018~~
 
