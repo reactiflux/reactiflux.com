@@ -15,6 +15,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Thursday June 14th
 * 1 - 2pm PT
 * Q&A Channel on Reactiflux & Live Webinar
+* [GraphQL at scale with AWS @ React Amsterdam](https://www.youtube.com/watch?v=P_mGa91wZ4o&feature=youtu.be)
 
 
 ### Tanner Linsley
