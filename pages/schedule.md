@@ -26,6 +26,16 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1 - 2pm PT
 * Q&A Channel on Reactiflux
 
+## July 2018
+
+### Norbert de Langen
+
+* https://twitter.com/norbertdelangen
+* Senior Frontend Consultant @ Xebia | Maintainer of Storybook
+* Thursday July 5th
+* 1-2pm PT
+* Q&A Channel Reactiflux
+
 ----------
 ## Past Q&A’s
 
