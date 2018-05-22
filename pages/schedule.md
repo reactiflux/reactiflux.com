@@ -17,7 +17,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Q&A Channel on Reactiflux & Live Webinar
 * [GraphQL at scale with AWS @ React Amsterdam](https://www.youtube.com/watch?v=P_mGa91wZ4o&feature=youtu.be)
 
-
 ### Tanner Linsley
 
 * https://twitter.com/tannerlinsley
@@ -33,6 +32,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * https://twitter.com/norbertdelangen
 * Senior Frontend Consultant @ Xebia | Maintainer of Storybook
 * Thursday July 5th
+* 1-2pm PT
+* Q&A Channel Reactiflux
+
+### Vincent Riemer
+
+* https://twitter.com/vincentriemer
+* Software Engineer @ Symantec | Author of [React Native DOM](https://github.com/vincentriemer/react-native-dom), iO-808, and Amateur Music Producer
+* Thursday July 19th
 * 1-2pm PT
 * Q&A Channel Reactiflux
 
