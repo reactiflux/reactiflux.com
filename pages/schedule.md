@@ -43,6 +43,16 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1-2pm PT
 * Q&A Channel Reactiflux
 
+## August 2018
+
+### Benjie Gillam
+
+* https://twitter.com/benjie
+* Maintainer of [PostGraphile](https://github.com/graphile/postgraphile) - fast and secure GraphQL API for your PostgreSQL database (formerly known as PostGraphQL)
+* Thursday August 9th
+* 1-2pm PT
+* Q&A Channel Reactiflux
+
 ----------
 ## Past Q&A’s
 
