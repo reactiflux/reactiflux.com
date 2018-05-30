@@ -53,13 +53,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1-2pm PT
 * Q&A Channel Reactiflux
 
-### Sophie Albert
+### Sophie Alpert
 
 * https://twitter.com/sophiebits
 * Engineering Manager for React.js Team @ Facebook
 * Thursday August 16th
 * 1-2pm PT
 * Q&A Channel Reactiflux
+* The React Podcast – Episode #11 - [Inside React with Sophie Alpert](https://changelog.com/reactpodcast/11)
 
 ----------
 ## Past Q&A’s
