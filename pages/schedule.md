@@ -53,6 +53,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1-2pm PT
 * Q&A Channel Reactiflux
 
+### Sophie Albert
+
+* https://twitter.com/sophiebits
+* Engineering Manager for React.js Team @ Facebook
+* Thursday August 16th
+* 1-2pm PT
+* Q&A Channel Reactiflux
+
 ----------
 ## Past Q&A’s
 
