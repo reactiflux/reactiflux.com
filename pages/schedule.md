@@ -62,6 +62,17 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Q&A Channel Reactiflux
 * The React Podcast – Episode #11 - [Inside React with Sophie Alpert](https://changelog.com/reactpodcast/11)
 
+## September 2018
+
+### Orta Therox
+
+* https://twitter.com/orta 
+* Engineering Janitor at Artsy | Created Danger: which helps codify PR culture, co-runs an iOS dependency manager, Re-designer
+* Thursday September 9th
+* 1-2pm PT
+* Q&A Channel Reactiflux
+* [Two Years of React Native](http://artsy.github.io/blog/2018/03/17/two-years-of-react-native/) by Orta Therox
+
 ----------
 ## Past Q&A’s
 
