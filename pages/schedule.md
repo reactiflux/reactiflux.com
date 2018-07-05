@@ -6,25 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## June 2018
-
-### Richard Threlkeld
-
-* https://twitter.com/undef_obj
-* Senior Technical Product Manager @ Amazon Web Services (AWS) | Focusing on developer experience in AWS Mobile (JavaScript, React, React Native, Ionic, GraphQL, Offline and Realtime development). Working on [AWS AppSync](https://aws.amazon.com/appsync/), a GraphQL BaaS. 
-* Thursday June 14th
-* 1 - 2pm PT
-* Q&A Channel on Reactiflux & [Live Webinar](https://chime.aws/9952948931)
-* [GraphQL at scale with AWS @ React Amsterdam](https://www.youtube.com/watch?v=P_mGa91wZ4o&feature=youtu.be)
-
-### Tanner Linsley
-
-* https://twitter.com/tannerlinsley
-* VP of UI/UX @ Nozzle.io | Author of React-Static, React-Table, React-Charts, Chart.js, React-Form, Swimmer
-* Thursday June 21st
-* 1 - 2pm PT
-* Q&A Channel on Reactiflux
-
 ## July 2018
 
 ### Norbert de Langen
@@ -75,6 +56,25 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ----------
 ## Past Q&A’s
+
+## ~~June 2018~~
+
+### Richard Threlkeld
+
+* https://twitter.com/undef_obj
+* Senior Technical Product Manager @ Amazon Web Services (AWS) | Focusing on developer experience in AWS Mobile (JavaScript, React, React Native, Ionic, GraphQL, Offline and Realtime development). Working on [AWS AppSync](https://aws.amazon.com/appsync/), a GraphQL BaaS. 
+* Thursday June 14th
+* 1 - 2pm PT
+* Transcript: 
+* [GraphQL at scale with AWS @ React Amsterdam](https://www.youtube.com/watch?v=P_mGa91wZ4o&feature=youtu.be)
+
+### Tanner Linsley
+
+* https://twitter.com/tannerlinsley
+* VP of UI/UX @ Nozzle.io | Author of React-Static, React-Table, React-Charts, Chart.js, React-Form, Swimmer
+* Thursday June 21st
+* 1 - 2pm PT
+* Transcript: 
 
 ## ~~May 2018~~
 
