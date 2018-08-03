@@ -6,24 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## July 2018
-
-### Norbert de Langen
-
-* https://twitter.com/norbertdelangen
-* Senior Frontend Consultant @ Xebia | Maintainer of Storybook
-* Thursday July 5th
-* 1-2pm PT
-* Q&A Channel Reactiflux
-
-### Vincent Riemer
-
-* https://twitter.com/vincentriemer
-* Software Engineer @ Symantec | Author of [React Native DOM](https://github.com/vincentriemer/react-native-dom), iO-808, and Amateur Music Producer
-* Thursday July 19th
-* 1-2pm PT
-* Q&A Channel Reactiflux
-
 ## August 2018
 
 ### Benjie Gillam
@@ -54,8 +36,37 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Q&A Channel Reactiflux
 * [Two Years of React Native](http://artsy.github.io/blog/2018/03/17/two-years-of-react-native/) by Orta Therox
 
+## October 2018
+
+No Q&A's this month. Instead we have React Conf 2018!!
+
+### React Conf 2018
+
+* https://conf.reactjs.org/
+* October 25th-26th
+* Henderson, Nevada
+* [Enter Ticket Lottery](https://ti.to/zeroslopeevents/react-conf-2018/with/p4wkk6ntbsw)
+
 ----------
 ## Past Q&A’s
+
+## ~~July 2018~~
+
+### Norbert de Langen
+
+* https://twitter.com/norbertdelangen
+* Senior Frontend Consultant @ Xebia | Maintainer of Storybook
+* Thursday July 5th
+* 1-2pm PT
+* Q&A Channel Reactiflux
+
+### Vincent Riemer
+
+* https://twitter.com/vincentriemer
+* Software Engineer @ Symantec | Author of [React Native DOM](https://github.com/vincentriemer/react-native-dom), iO-808, and Amateur Music Producer
+* Thursday July 19th
+* 1-2pm PT
+* Q&A Channel Reactiflux
 
 ## ~~June 2018~~
 
@@ -92,7 +103,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Open Source Engineers @ [Apollo](https://twitter.com/apollographql) | Building Apollo Client, Engine, Server, and other tools to help you incrementally adopt GraphQL.
 * Thursday May 10th
 * 1 - 2pm PT
-* Transcript: [Coming Soon](../#)
+* Transcript: [Peggy & James](../transcripts/peggy-rayzis_james-baxley/)
 
 ## ~~April 2018~~
 
