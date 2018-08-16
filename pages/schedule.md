@@ -6,25 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## August 2018
-
-### Benjie Gillam
-
-* https://twitter.com/benjie
-* Maintainer of [PostGraphile](https://github.com/graphile/postgraphile) - fast and secure GraphQL API for your PostgreSQL database (formerly known as PostGraphQL)
-* Thursday August 9th
-* 1-2pm PT
-* Q&A Channel Reactiflux
-
-### Sophie Alpert
-
-* https://twitter.com/sophiebits
-* Engineering Manager for React.js Team @ Facebook
-* Thursday August 16th
-* 1-2pm PT
-* Q&A Channel Reactiflux
-* The React Podcast – Episode #11 - [Inside React with Sophie Alpert](https://changelog.com/reactpodcast/11)
-
 ## September 2018
 
 ### Orta Therox
@@ -49,6 +30,25 @@ No Q&A's this month. Instead we have React Conf 2018!!
 
 ----------
 ## Past Q&A’s
+
+## ~~August 2018~~
+
+### Benjie Gillam
+
+* https://twitter.com/benjie
+* Maintainer of [PostGraphile](https://github.com/graphile/postgraphile) - fast and secure GraphQL API for your PostgreSQL database (formerly known as PostGraphQL)
+* Thursday August 9th
+* 1-2pm PT
+* Q&A Channel Reactiflux
+
+### Sophie Alpert
+
+* https://twitter.com/sophiebits
+* Engineering Manager for React.js Team @ Facebook
+* Thursday August 16th
+* 1-2pm PT
+* Q&A Channel Reactiflux
+* The React Podcast – Episode #11 - [Inside React with Sophie Alpert](https://changelog.com/reactpodcast/11)
 
 ## ~~July 2018~~
 
