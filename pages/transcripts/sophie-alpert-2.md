@@ -1,6 +1,6 @@
 ---
 title: Sophie Alpert
-date: August 16th 2018
+date: August 16 2018
 ---
 
 ## Engineering manager for the React.js Team @ Facebook
