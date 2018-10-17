@@ -157,6 +157,10 @@ If you are new to React, try reading these articles in order.
     An introduction to using React's built-in inline styling abilities
   - [How To Style React](http://andrewhfarmer.com/how-to-style-react/)  
     An excellent overview of the four major ways to deal with styles in React, and what the various tools are. Includes a decision tree to help you decide what to use.
+    
+### Animation
+  - [Getting Started with React and GSAP](https://greensock.com/react)       
+    An article focused on beginner and intermediate levels React developers, on creating animations using the GreenSock Animation Platform (GSAP), including live editable samples. Also includes links to other GSAP learning resources as well.
 
 
 ## Redux
