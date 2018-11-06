@@ -6,18 +6,21 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## September 2018
+## November 2018
 
-### Orta Therox
+### Jeroen Ransijn
 
-* https://twitter.com/orta 
-* Engineering Janitor at Artsy | Created Danger: which helps codify PR culture, co-runs an iOS dependency manager, Re-designer
-* Thursday September 6th
+* https://twitter.com/Jeroen_Ransijn
+* Design Systems Lead @ Segment, spearheading the design, development and adoption of Segment's open-source design system, [Evergreen](https://evergreen.segment.com/)
+* Thursday November 15th
 * 1-2pm PT
 * Q&A Channel Reactiflux
-* [Two Years of React Native](http://artsy.github.io/blog/2018/03/17/two-years-of-react-native/) by Orta Therox
+* [Evergreen Design System](https://evergreen.segment.com/)
 
-## October 2018
+----------
+## Past Q&A’s
+
+## ~~October 2018~~
 
 No Q&A's this month. Instead we have React Conf 2018!!
 
@@ -28,8 +31,16 @@ No Q&A's this month. Instead we have React Conf 2018!!
 * Henderson, Nevada
 * [Enter Ticket Lottery](https://ti.to/zeroslopeevents/react-conf-2018/with/p4wkk6ntbsw)
 
-----------
-## Past Q&A’s
+## ~~September 2018~~
+
+### Orta Therox
+
+* https://twitter.com/orta 
+* Engineering Janitor at Artsy | Created Danger: which helps codify PR culture, co-runs an iOS dependency manager, Re-designer
+* Thursday September 6th
+* 1-2pm PT
+* Q&A Channel Reactiflux
+* [Two Years of React Native](http://artsy.github.io/blog/2018/03/17/two-years-of-react-native/) by Orta Therox
 
 ## ~~August 2018~~
 
