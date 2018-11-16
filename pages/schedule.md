@@ -6,7 +6,30 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## November 2018
+## January 2019
+
+### React Native Core Team @ Facebook
+
+* https://twitter.com/reactnative
+* React Native Core Team
+* Thursday January 24
+* 12:30 - 1:30pm PT
+* Q&A Channel Reactiflux
+
+## December 2018
+
+### Kyle Matthews & Gatsby Team
+
+* https://twitter.com/kylemathews
+* Founder of Gatsby.js
+* Thursday December 13th
+* 1-2pm PT
+* Q&A Channel Reactiflux
+
+----------
+## Past Q&A’s
+
+## ~~November 2018~~
 
 ### Jeroen Ransijn
 
@@ -14,11 +37,8 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Design Systems Lead @ Segment, spearheading the design, development and adoption of Segment's open-source design system, [Evergreen](https://evergreen.segment.com/)
 * Thursday November 15th
 * 1-2pm PT
-* Q&A Channel Reactiflux
+* Transcript: [Jeroen Ransijn](../transcripts/jeroen-ransijn/)
 * [Evergreen Design System](https://evergreen.segment.com/)
-
-----------
-## Past Q&A’s
 
 ## ~~October 2018~~
 
