@@ -6,16 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## January 2019
-
-### React Native Core Team @ Facebook
-
-* https://twitter.com/reactnative
-* React Native Core Team
-* Thursday January 24
-* 12:30 - 1:30pm PT
-* Q&A Channel Reactiflux
-
 ## December 2018
 
 ### Kyle Matthews & Gatsby Team
@@ -24,6 +14,16 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Founder of Gatsby.js
 * Thursday December 13th
 * 1-2pm PT
+* Q&A Channel Reactiflux
+
+## January 2019
+
+### React Native Core Team @ Facebook
+
+* https://twitter.com/reactnative
+* React Native Core Team
+* Thursday January 24
+* 12:30 - 1:30pm PT
 * Q&A Channel Reactiflux
 
 ----------
