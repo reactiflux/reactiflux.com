@@ -45,7 +45,7 @@ The second part of that question might also be how can we continue to prioritize
 
 **A:** I have answered a similar question before [on Spectrum](https://spectrum.chat/thread/6f15ef43-5156-418f-9948-af2a3e583b86) and will post pretty much the same answer here.
 
-I build Evergreen to solve my own problems for prototyping products quickly. Most components are build with ui-box, a React primitive that allows you to pass CSS properties as React prope straight on your component. This solves a lot of layout and spacing questions, and in most cases the height prop governs the size of a element. For example, <Button height={40} /> will work.
+I build Evergreen to solve my own problems for prototyping products quickly. Most components are build with ui-box, a React primitive that allows you to pass CSS properties as React prope straight on your component. This solves a lot of layout and spacing questions, and in most cases the height prop governs the size of a element. For example, `<Button height={40} />` will work.
 
 Evergreen is still relatively young and there are still many things to work on. There are more mature systems out there. I have heard multiple people mention they might switch from Ant Design to Evergreen.
 
