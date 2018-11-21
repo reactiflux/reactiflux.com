@@ -101,18 +101,18 @@ export default class Template extends React.Component {
             </Logo>
             <Navigation role="navigation" style={{top: menu ? 0 : '-100vh'}}>
               <NavigationLink
-                to={prefixLink('/expectations/')}
-                title="Behavior Expectations"
-                onClick={closeMenu}
-              >
-                Behavior Expectations
-              </NavigationLink>
-              <NavigationLink
                 to={prefixLink('/tips/')}
                 title="Tips"
                 onClick={closeMenu}
               >
                 Tips
+              </NavigationLink>
+              <NavigationLink
+                to={prefixLink('/expectations/')}
+                title="Behavior Expectations"
+                onClick={closeMenu}
+              >
+                Behavior Expectations
               </NavigationLink>
               <NavigationLink
                 to={prefixLink('/schedule/')}
