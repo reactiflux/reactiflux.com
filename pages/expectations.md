@@ -2,7 +2,7 @@
 title: Behavior expectations
 ---
 
-Reactiflux is the largest chat community of React developers. We make a deliberate effort to be light-touch when it comes to moderating, but we have some expectations of how our members will behave in the server. 
+Reactiflux is the largest chat community of React developers. We make a deliberate effort to have a light touch when it comes to moderating, but we do have some expectations of how our members will behave in the server. 
 
 ## Everybody
 
