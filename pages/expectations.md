@@ -10,10 +10,11 @@ Reactiflux is the largest chat community of React developers. We make a delibera
   * This isn’t a “no-fun” rule; you won’t be banned for lightheartedly trolling or joking with people in the server who know you. We do expect that the majority of your contributions (outside of off topic channels) will be on topic for the server—requesting or providing React-related help, discussing web development, and attempting to better yourself and advance your career.
 * Read and follow the advice given in [the tips page](https://www.reactiflux.com/tips)
 * Don’t derail conversations or snipe people who ask questions.
+* Be friendly and professional. Don't make people feel stupid for asking a question or belittle their choices or opinions.
 
 ### Above and beyond 
 
-* Be welcoming to new joiners. Don't make people feel stupid for asking a question or belittle their choices or opinions.
+* Be welcoming to new joiners.
 * Tell the moderators when somebody has been going above and beyond—help us identify MVPs.
 * Report spammers and unwelcoming behavior to moderators and admins.
 * Answer more questions than you ask.
