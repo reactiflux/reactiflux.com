@@ -13,7 +13,7 @@ Reactiflux is the largest chat community of React developers. We make a delibera
 
 ### Above and beyond 
 
-* Be welcoming to new joiners.
+* Be welcoming to new joiners. Don't make people feel stupid for asking a question or belittle their choices or opinions.
 * Tell the moderators when somebody has been going above and beyond—help us identify MVPs.
 * Report spammers and unwelcoming behavior to moderators and admins.
 * Answer more questions than you ask.
@@ -22,7 +22,7 @@ Reactiflux is the largest chat community of React developers. We make a delibera
 
 * All of the above, and:
 * Be consistently among the most helpful members of the server for an extended period of time.
-* We don’t collect metrics on this, but it should be obvious to any active member who deserves this recognition.
+ * We don’t collect metrics on this, but it should be obvious to any active member who deserves this recognition.
 * Be humble. 
 
 ### Above and beyond 
