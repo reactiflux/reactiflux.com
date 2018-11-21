@@ -23,7 +23,7 @@ Reactiflux is the largest chat community of React developers. We make a delibera
 
 All of the above, and:
 * a) Be consistently among the most helpful members of the server for an extended period of time.
- * We don’t collect metrics on this, but it should be obvious to any active member who deserves this recognition.
+  * We don’t collect metrics on this, but it should be obvious to any active member who deserves this recognition.
 * b) Be humble. 
 
 ### Above and beyond 
