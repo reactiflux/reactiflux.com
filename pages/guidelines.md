@@ -1,14 +1,14 @@
 ---
-title: Behavior expectations
+title: Community Guidelines
 ---
 
-Reactiflux is the largest chat community of React developers. We make a deliberate effort to have a light touch when it comes to moderating, but we do have some expectations of how our members will behave in the server. 
+Reactiflux is the largest chat community of React developers. We make a deliberate effort to have a light touch when it comes to moderating, but we do have some expectations of how our members will behave in the server. We rarely ban people (except spammers and extreme bad behavior), those who behave contrary to these guidelines will be told and corrected. Repeated rude behavior might result in being kicked from the server, and re-joining and continuing to behave badly could potentially result in a ban. 
 
 ## 1. Everybody
 
 * a) Participate in good faith. This means asking questions that are meant to be answered, providing advice that is meant to be followed, and otherwise not being disingenuous. 
   * This isn’t a “no-fun” rule; you won’t be banned for lightheartedly trolling or joking with people in the server who know you. We do expect that the majority of your contributions (outside of off topic channels) will be on topic for the server—requesting or providing React-related help, discussing web development, and attempting to better yourself and advance your career.
-* b) Read and follow the advice given in [the tips page](https://www.reactiflux.com/tips)
+* b) Read and follow the advice given in [the tips page](https://www.reactiflux.com/tips).
 * c) Don’t derail conversations or snipe people who ask questions.
 * d) Be friendly and professional. Don't make people feel stupid for asking a question or belittle their choices or opinions.
 
