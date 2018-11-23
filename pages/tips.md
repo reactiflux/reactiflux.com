@@ -52,7 +52,7 @@ Be the change you want to see in the world! If a conversation is getting heated,
 
 ## More info
 
-We also have [a list of expectations](/expectations/) that we hold our members to. We don't kick users lightly, but repeatedly violating these expectations after being warned and corrected could result in you getting the boot. We reserve bans for spammers and abusive behavior.
+We also have [a list of guidelines](/guidelines/) that we hold our members to. We don't kick users lightly, but repeatedly behaving contrary to these guidelines after being warned and corrected could result in you getting the boot. We reserve bans for spammers and abusive behavior.
 
 ---
 
