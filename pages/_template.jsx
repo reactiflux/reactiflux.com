@@ -112,7 +112,7 @@ export default class Template extends React.Component {
                 title="Community Guidelines"
                 onClick={closeMenu}
               >
-                Behavior Expectations
+                Community Guidelines
               </NavigationLink>
               <NavigationLink
                 to={prefixLink('/schedule/')}
