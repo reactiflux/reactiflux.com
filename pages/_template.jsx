@@ -108,6 +108,13 @@ export default class Template extends React.Component {
                 Tips
               </NavigationLink>
               <NavigationLink
+                to={prefixLink('/guidelines/')}
+                title="Community Guidelines"
+                onClick={closeMenu}
+              >
+                Community Guidelines
+              </NavigationLink>
+              <NavigationLink
                 to={prefixLink('/schedule/')}
                 title="Q&A Schedule"
                 onClick={closeMenu}

@@ -50,6 +50,10 @@ The other people in Reactiflux deserve your respect, so be polite. Not "retail e
 
 Be the change you want to see in the world! If a conversation is getting heated, try to defuse it. If a hard question is unanswered, dig in and work through it with them. If a channel is full of unanswered questions, mention in **#reactiflux-admin** that you'd like to take ownership of it.
 
+## More info
+
+We also have [a list of guidelines](/guidelines/) that we hold our members to. We don't kick users lightly, but repeatedly behaving contrary to these guidelines after being warned and corrected could result in you getting the boot. We reserve bans for spammers and abusive behavior.
+
 ---
 
 These are some general pointers; they're not comprehensive, and they're not a guarantee that you'll get answers to all your questions. We also have an _MVP_ designation for a small number of contributors. There aren't set conditions you need to meet to be considered for it, the people we privately consider for it have embodied these qualities for significant amount of time. Their presence in the channel makes it a better place for everyone.
