@@ -4,6 +4,8 @@ title: Community Guidelines
 
 Reactiflux is the largest chat community of React developers. We make a deliberate effort to have a light touch when it comes to moderating, but we do have some expectations of how our members will behave in the server. We rarely ban people (except spammers and extreme bad behavior), those who behave contrary to these guidelines will be told and corrected. Repeated rude behavior might result in being kicked from the server, and re-joining and continuing to behave badly could potentially result in a ban. 
 
+This is not a legal document, members should follow the spirit of these guidelines. 
+
 ## 1. Everybody
 
 * a) Participate in good faith. This means asking questions that are meant to be answered, providing advice that is meant to be followed, and otherwise not being disingenuous. 
@@ -11,13 +13,14 @@ Reactiflux is the largest chat community of React developers. We make a delibera
 * b) Read and follow the advice given in [the tips page](https://www.reactiflux.com/tips).
 * c) Don’t derail conversations or snipe people who ask questions.
 * d) Be friendly and professional. Don't make people feel stupid for asking a question or belittle their choices or opinions.
+* e) Don’t direct users to pirated materials.
 
-### Above and beyond 
+### 1.1 Above and beyond 
 
-* e) Be welcoming to new joiners.
-* f) Tell the moderators when somebody has been going above and beyond—help us identify MVPs.
-* g) Report spammers and unwelcoming behavior to moderators and admins.
-* h) Answer more questions than you ask.
+* a) Be welcoming to new joiners.
+* b) Tell the moderators when somebody has been going above and beyond—help us identify MVPs.
+* c) Report spammers and unwelcoming behavior to moderators and admins.
+* d) Answer more questions than you ask.
 
 ## 2. MVPs
 
@@ -26,12 +29,12 @@ All of the above, and:
   * We don’t collect metrics on this, but it should be obvious to any active member who deserves this recognition.
 * b) Be humble. 
 
-### Above and beyond 
+### 2.1 Above and beyond 
 
-* c) Help the mods direct traffic through the server.
-* d) If a question is better suited for a different channel (or server!), direct them where to take it.
-* e) If a question has gone unacknowledged, ask for more information.
-* f) Refocus conversations when they get off track.
+* a) Help the mods direct traffic through the server.
+* b) If a question is better suited for a different channel (or server!), direct them where to take it.
+* c) If a question has gone unacknowledged, ask for more information.
+* d) Refocus conversations when they get off track.
 
 ## 3. Moderators
 
@@ -39,10 +42,10 @@ All of the above, and:
 * a) Handle spammers.
 * b) Take an active role in fostering a welcoming and positive environment.
 
-### Above and beyond
+### 3.1 Above and beyond
 
-* c) Contribute to meta conversations around running the community. 
-* d) Build and maintain a new part of the community.
+* a) Contribute to meta conversations around running the community. 
+* b) Build and maintain a new part of the community.
 
 ## 4. Admins
 
