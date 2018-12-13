@@ -45,9 +45,9 @@ We're also working on adding [Gatsby Theme support](https://www.gatsbyjs.org/blo
 
 ---
 
-**Q:** Is Gatsby ready to be used with dynamic Apps and an equivalent alternative to CRA by now? For example, a couple **A:** of months ago it was not possible yet to use Apollo Client (as in post-build to make dynamic requests to a GQL server from the client-side). Is this available now and are there any other limitations? In general, it has been confusing for me to understand why to use Gatsby for dynamic apps in the first place. It has been clearly advertised as a static site generator after all. Could you shed some light on that? Thanks! — tiny
+**Q:** Is Gatsby ready to be used with dynamic Apps and an equivalent alternative to CRA by now? For example, a couple of months ago it was not possible yet to use Apollo Client (as in post-build to make dynamic requests to a GQL server from the client-side). Is this available now and are there any other limitations? In general, it has been confusing for me to understand why to use Gatsby for dynamic apps in the first place. It has been clearly advertised as a static site generator after all. Could you shed some light on that? Thanks! — tiny
 
-Yes. You can see how to approach using apollo-client in examples like [the gatsby store repo](https://github.com/gatsbyjs/store.gatsbyjs.org). "Static site generator" is a bit of a misnomer, since Gatsby melds pre-rendering with a fully bootstrapable performant application like you'd get with something like CRA.
+**A:** Yes. You can see how to approach using apollo-client in examples like [the gatsby store repo](https://github.com/gatsbyjs/store.gatsbyjs.org). "Static site generator" is a bit of a misnomer, since Gatsby melds pre-rendering with a fully bootstrapable performant application like you'd get with something like CRA.
 
 — biscarch
 
@@ -61,9 +61,9 @@ Yes. You can see how to approach using apollo-client in examples like [the gatsb
 
 ---
 
-**Q:** Is there any specific place for documented or known issues with the react component lifecycle/prerend**A:** ering in v2? I have a website that renders images correctly using gastby build and serve, but when deployed to a CDN it seems my component never starts its animation and images are stuck with 0 opacity. (no asset optimization or configured prerendering selected on the CDN) — Tyler Churchill
+**Q:** Is there any specific place for documented or known issues with the react component lifecycle/prerendering in v2? I have a website that renders images correctly using gastby build and serve, but when deployed to a CDN it seems my component never starts its animation and images are stuck with 0 opacity. (no asset optimization or configured prerendering selected on the CDN) — Tyler Churchill
 
-Yes, (this is github issues)[https://github.com/gatsbyjs/gatsby/issues] which you should definitely file an issue for so we can investigate your issue in depth.
+**A:** Yes, (this is github issues)[https://github.com/gatsbyjs/gatsby/issues] which you should definitely file an issue for so we can investigate your issue in depth.
 
 — biscarch
 
@@ -77,9 +77,9 @@ Yes, (this is github issues)[https://github.com/gatsbyjs/gatsby/issues] which yo
 
 ---
 
-**Q:** Do you hope or believe that gatsby (and JAM-stack in general), headless CMS's and microservices will overcom**A:** e rigid and outrdated wordpress sites and architechture? — max
+**Q:** Do you hope or believe that gatsby (and JAM-stack in general), headless CMS's and microservices will overcome rigid and outrdated wordpress sites and architechture? — max
 
-Yup! That's why I started [the Gatsby OSS project and company](https://www.gatsbyjs.org/blog/2018-05-24-launching-new-gatsby-company/)!  CMSs we're designed in the late 1990s and are very outdated for today's cloud/serverless computing environment. We want Gatsby to be able to replace CMSs.
+**A:** Yup! That's why I started [the Gatsby OSS project and company](https://www.gatsbyjs.org/blog/2018-05-24-launching-new-gatsby-company/)!  CMSs we're designed in the late 1990s and are very outdated for today's cloud/serverless computing environment. We want Gatsby to be able to replace CMSs.
 
 — kylemathews
 
@@ -109,9 +109,9 @@ Yup! That's why I started [the Gatsby OSS project and company](https://www.gatsb
 
 ---
 
-**Q:** As a jaded javascripter who is getting tired of the whole 'new framework of the week', why should I care about G**A:** atsby over other projects? Why would it be worth my time to help build the Gatsby community and contribute my time to creating plugins and troubleshooting the inevitable bugs that it will bring? What makes you special? — PenguinMan98
+**Q:** As a jaded javascripter who is getting tired of the whole 'new framework of the week', why should I care about Gatsby over other projects? Why would it be worth my time to help build the Gatsby community and contribute my time to creating plugins and troubleshooting the inevitable bugs that it will bring? What makes you special? — PenguinMan98
 
-From a technical perspective, Gatsby has a powerful approach to managing data and a performance sensitive mindset. This means that you get to spend less time "making sure the site is performant" and more time building your product.
+**A:** From a technical perspective, Gatsby has a powerful approach to managing data and a performance sensitive mindset. This means that you get to spend less time "making sure the site is performant" and more time building your product.
 
 While it's inevitable that bugs come with any platform you choose to build on, Gatsby has been around for a few years now and hopefully during that time (which you can go check us on) we've proven that your contributions will be accepted and appreciated.
 
@@ -119,17 +119,17 @@ While it's inevitable that bugs come with any platform you choose to build on, G
 
 ---
 
-**Q:** Is there some sort of change list or changelog? I have had problems finding one in the past, for gatsby and it'**A:** s packages. — Everspace
+**Q:** Is there some sort of change list or changelog? I have had problems finding one in the past, for gatsby and it's packages. — Everspace
 
-There are per-package changelogs maintained in each package, for example [Gatsby's](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/CHANGELOG.md).
+**A:** There are per-package changelogs maintained in each package, for example [Gatsby's](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/CHANGELOG.md).
 
 — biscarch
 
 ---
 
-**Q:** Is there any plan to make Gatsby GraphQL-schema first, so is more "robust", instead of Gatsby building a schema **A:** out of the data-source.  The main problem I'm facing is that data can change dynamically, GraphQL schema changes accordingly..  and this breaks GraphQL queries. I see others with the same problem. No easy solution. — monotono
+**Q:** Is there any plan to make Gatsby GraphQL-schema first, so is more "robust", instead of Gatsby building a schema out of the data-source.  The main problem I'm facing is that data can change dynamically, GraphQL schema changes accordingly..  and this breaks GraphQL queries. I see others with the same problem. No easy solution. — monotono
 
-Yeah — this is a top priority — we've been a bit overwhelmed post v2 launch handling issues/PRs but our we've thought a lot about this problem and next steps are a) [make it possible to export your schema and directly control it](https://github.com/gatsbyjs/gatsby/issues/4261).
+**A:** Yeah — this is a top priority — we've been a bit overwhelmed post v2 launch handling issues/PRs but our we've thought a lot about this problem and next steps are a) [make it possible to export your schema and directly control it](https://github.com/gatsbyjs/gatsby/issues/4261).
 
 We're also very excited that more and more services are offering native GraphQL APIs which gets us out of having to dynamically create the schema. We added [support for stitching in graphql schemas](https://www.gatsbyjs.org/blog/2018-09-25-announcing-graphql-stitching-support/) earlier this year and have a lot more plans to make schema stitching more powerful e.g. [add support for transforming data from 3rd party schemas](https://github.com/gatsbyjs/rfcs/pull/11).
 
@@ -137,9 +137,9 @@ We're also very excited that more and more services are offering native GraphQL 
 
 ---
 
-**Q:** Any info on contributing to the codebase or documentation greatly appreciated. Any tips that might not be in the **A:** official How To, or a contact if applicable/available. Thank you for your time — seanmoore1976
+**Q:** Any info on contributing to the codebase or documentation greatly appreciated. Any tips that might not be in the official How To, or a contact if applicable/available. Thank you for your time — seanmoore1976
 
-Definitely! So I'd recommend starting with the [How to Contribute guide](https://www.gatsbyjs.org/docs/how-to-contribute/).
+**A:** Definitely! So I'd recommend starting with the [How to Contribute guide](https://www.gatsbyjs.org/docs/how-to-contribute/).
 
 It's a great place to get started. That said, I'd also encourage to check out [a Pairing session](https://www.gatsbyjs.org/docs/pair-programming/), where a Gatsby employee and you will pair 1:1 for about an hour or so to work on a problem or challenge you've run into. We've had some really good stuff come out of pairing sessions, and I think people really like them as a way to get started contributing!
 
@@ -179,17 +179,17 @@ A Gatsby email *application*. Contribute to DSchau/gatsby-mail development by cr
 
 ---
 
-**Q:** I have found developing plugins that create nodes or interact with the gatsby-api to be a big hassle in compari**A:** son to how pages and other content is developed. Is there any plans on making something like "hot-reload" nodes or generation during development without having to stop and start gatsby? — Everspace
+**Q:** I have found developing plugins that create nodes or interact with the gatsby-api to be a big hassle in comparison to how pages and other content is developed. Is there any plans on making something like "hot-reload" nodes or generation during development without having to stop and start gatsby? — Everspace
 
-Source and transformer plugins can "hot reload" data during development. Support for this is baked into Gatsby's data layer. It's a bit complicated to explain in a Q&A but basically a source plugin can watch for data to change and re-emit nodes. Gatsby will then notice this and automatically re-run graphql queries for pages affected by the changing data. gatsby-source-filesystem is the most prominent example of this. It watches for file changes and re-emits  File nodes as the data changes. [This is what drives Ludicrous Mode™️](https://twitter.com/gatsbyjs/status/974507205121617920?lang=en) You can see the code for this [here](https://github.com/gatsbyjs/gatsby/blob/d4d33467bcff60ad3c740244d7585227d7e117ee/packages/gatsby-source-filesystem/src/gatsby-node.js#L129-L136).
+**A:** Source and transformer plugins can "hot reload" data during development. Support for this is baked into Gatsby's data layer. It's a bit complicated to explain in a Q&A but basically a source plugin can watch for data to change and re-emit nodes. Gatsby will then notice this and automatically re-run graphql queries for pages affected by the changing data. gatsby-source-filesystem is the most prominent example of this. It watches for file changes and re-emits  File nodes as the data changes. [This is what drives Ludicrous Mode™️](https://twitter.com/gatsbyjs/status/974507205121617920?lang=en) You can see the code for this [here](https://github.com/gatsbyjs/gatsby/blob/d4d33467bcff60ad3c740244d7585227d7e117ee/packages/gatsby-source-filesystem/src/gatsby-node.js#L129-L136).
 
 — kylemathews
 
 ---
 
-**Q:** Would be interested in the Gatsby team's take on this: What are currently the best and/or most up-and-**A:** coming tech locations in the world besides Silicon Valley? — tiny
+**Q:** Would be interested in the Gatsby team's take on this: What are currently the best and/or most up-and-coming tech locations in the world besides Silicon Valley? — tiny
 
-The best up-and-coming tech locations are wherever you currently are. Distributed teams (like gatsby) are the future, especially when Open Source is already built largely by people who may have never even met in person
+**A:** The best up-and-coming tech locations are wherever you currently are. Distributed teams (like gatsby) are the future, especially when Open Source is already built largely by people who may have never even met in person
 
 P.S. Gatsby is hiring worldwide for OSS Maintainers
 
