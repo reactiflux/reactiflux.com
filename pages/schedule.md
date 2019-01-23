@@ -6,16 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## December 2018
-
-### Kyle Matthews & Gatsby Team
-
-* https://twitter.com/kylemathews
-* Founder of Gatsby.js
-* Thursday December 13th
-* 1-2pm PT
-* Q&A Channel Reactiflux
-
 ## January 2019
 
 ### React Native Core Team @ Facebook
@@ -26,8 +16,34 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 12:30 - 1:30pm PT
 * Q&A Channel Reactiflux
 
+## February 2019
+
+### TBD
+
+* Currently scheduling
+
+## March 2019
+
+### Kent C. Dodds
+
+* https://twitter.com/kentcdodds
+* Engineer @ Paypal, Teaching via Egghead & Frontendmasters, and Author of react-testing-library, downshift, glamorous, & an all around good dude.
+* Thursday March 28
+* 1-2pm PT 
+* Q&A Channel Reactiflux
+
 ----------
 ## Past Q&A’s
+
+## ~~December 2018~~
+
+### Kyle Matthews & Gatsby Team
+
+* https://twitter.com/kylemathews
+* Founder of Gatsby.js
+* Thursday December 13th
+* 1-2pm PT 
+* Transcript: [Gatsby Team](../transcripts/gatsby-team/)
 
 ## ~~November 2018~~
 
