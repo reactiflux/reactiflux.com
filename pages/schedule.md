@@ -18,9 +18,13 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## February 2019
 
-### TBD
+### Jamon Holmgren
 
-* Currently scheduling
+* https://twitter.com/jamonholmgren
+* Co-Founder & CTO @ Infinite Red, React Native Core, Chain React: The React Native Conference Organizer
+* Thursday February 7
+* 1-2pm PT 
+* Q&A Channel Reactiflux
 
 ## March 2019
 
