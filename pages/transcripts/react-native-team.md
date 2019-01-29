@@ -2,6 +2,146 @@
 title: React Native core team
 date: January 24 2019
 ---
+[3:30 PM] Gabe: Hey all welcome to the Reactiflux Q&A! This week we have the entire React Native Core Team @ Facebook on with us!! Thanks so much for being here :raised_hands:
+[3:30 PM] EliWhite: Hi Everyone! We are the React Native team at Facebook and are super excited to be here and answer questions. 
+
+We've been hard at work rearchitecting some of the fundamentals of React Native (https://facebook.github.io/react-native/blog/2018/06/14/state-of-react-native-2018) as well as trying to learn and improve some of the biggest pain points we hear from people in the community (https://github.com/react-native-community/discussions-and-proposals/issues/64). 
+
+One other link I want to plug is our discussions and proposals repo (https://github.com/react-native-community/discussions-and-proposals). I recommend watching this repo, we’ve been using it to discuss bigger changes to React Native and getting feedback from the community.
+
+Let’s jump in! Excited to answer your questions. :smiley:
+[3:31 PM] Gabe: The Q&A is now open... please ask your questions!!
+[3:31 PM] fr3fou: [Q&A] What are some upcoming faetures that you are exicted about?
+[3:31 PM] brentvatne: [Q&A] jest and yarn are going to typescript. can we do react-native next?
+[3:31 PM] Valay: [Q&A] React Native or Flutter ?
+[3:32 PM] vcarl: guys cmon
+[3:32 PM] dani: Madness
+[3:32 PM] dani: :)))
+[3:32 PM] raviloop: Hi everyone
+[3:33 PM] Lautarø: Thanks RN team to be here.
+[3:33 PM] mehdi: someone asked about where we’re all based: most of the team is in Menlo Park, 1 (me) is in New York, and 2 are in the London office
+[3:33 PM] Checkmatez: @brentvatne and Expo :sweat_smile:
+[3:34 PM] Gabe: it's all text
+[3:34 PM] David Vacca: We are excited about concurrent react
+[3:34 PM] pushpendra: [Q&A] Whens the next release and what's the big buzz about new engine. Brief.
+[3:34 PM] EliWhite: @brentvatne, we don't have plans right now to move to TypeScript but recognize that it is super popular in the community. Right now we are working on improving the typing of our core components. I think this will also help the community improve the bindings for TypeScript.
+[3:34 PM] Foyarash: [Q&A] Can we expect a release of Fabric during the first trimester ?
+[3:35 PM] fkgozali: @Valay RN vs Flutter, I guess it depends on your use case. Obviously since we're working on React Native we would recommend RN, and we're actively working on the architecture projects to address concerns about async nature of RN. But your company/app may have a different use case in mind :smiley:
+[3:35 PM] mehdi: @edo :heart: Expo
+[3:36 PM] Rick: @brentvatne and to add to @EliWhite, flow is important to FB and works well for us, so as long as React Native is tied to FB internals it's not on the roadmap to switch
+[3:36 PM] vcarl: locked while we clean up
+[3:36 PM] Gabe: yeah lets lock down the channel @vcarl until questions are avail up :thumbsup:
+[3:37 PM] Gabe: @Valentin Shergin
+[3:37 PM] Gabe: @yungsters
+[3:38 PM] Valentin Shergin: I think it can be interesting to add Flutter as a target platform for RN. :smiley:
+[3:38 PM] David Vacca: @Foyarash we are planning to fully release Fabric later this year
+[3:39 PM] Nine: [Q&A] How Different is React Native from React and how difficult would the transition be from React to React Native?
+[3:39 PM] fr3fou: [Q&A] What's the future of expo? I want to develop iOS apps but don't wanna shill $$$ on a Mac. I'm running on Linux.
+[3:39 PM] Slipped: [Q&A] Hi guys! I'm a budding web developer and was wondering what things I can do to start to familiarize myself with the ReactJS Stack. Thanks!
+[3:39 PM] Origin: [Q&A] Will you fix react-native to have friendlier error message outputs?
+[3:40 PM] roberto tomás: [Q&A] - any chance react-navigation is going to work with react-native-web (including stackNavigator, etc) soon?
+[3:40 PM] vcarl: wulp
+[3:40 PM] mehdi: exciting upcoming features: Fabric. I mainly work on iOS but excited to see how many new coding practices it’ll enable
+[3:40 PM] hector: @pushpendra : the latest React Native release, 0.58, is being propagated at the moment!  You can follow the status for any upcoming release by joining the releases repository at https://github.com/react-native-community/react-native-releases/issues.   After this release, we plan on going back to a more frequent release schedule, so 0.59 should not be long after that.
+[3:40 PM] yungsters: @Valay I think React Native and Flutter have slightly different goals, so which one you use depends on what you are trying to accomplish. React Native skews toward leveraging each of the platform's native capabilities.
+[3:40 PM] brentvatne: Expo questions: if you have questions about Expo, feel free to dm me.
+[3:41 PM] mehdi: @fr3fou we don’t work on Expo :sweat_smile: maybe @brentvatne can answer
+[3:41 PM] Rick: @Slipped i think the best way to learn is to build!
+[3:41 PM] yungsters: @Origin If you ever encounter any bad error messages, please let us know by filing issues on the repository. Even better, send pull requests to improve the error messages.
+[3:42 PM] luna: @Slipped There is a lot of great content regarding the React ecosystem but I  found the best is to try and build something and then when you get stuck finding a tutorial or example to work off from. I guess not react specific but generally good approach. For react specifically, I've found the docs really helpful and clear when I get confused about behaviour
+[3:42 PM] hector: @Origin: related to this, today's release, 0.58, includes a redesigned RedBox screen which was entirely driven by the community
+[3:43 PM] vcarl: (that count is probably not correct, we have clearly vastly underestimated demand for this Q&A!!)
+[3:44 PM] tobi92: [Q&A] I know there has been a discussion on GitHub already, but when can we expect Hooks in React Native? (:
+[3:44 PM] inland: [Q&A] what are the specific reasons facebook is leaving react native after spending so much time invested into it
+[3:44 PM] LytraX: [Q&A] RN has currently 646 open issues. Should RN core team focus more on resolving these issue rather than implementing new features, or RN will be mostly redesigned?
+[3:44 PM] effeKtSVK: [Q&A] Do you plan increase support for github repository, there are some critical PR on hold, and at least some kind of messages would appreciated like what’s missing, or is rejected due different approach, etc. Thanks.
+[3:45 PM] vcarl: sorry for the chaos folks, we're just gonna have to do some extreme metering on unlocking the channel
+[3:45 PM] fkgozali: @roberto tomás -- I think @brentvatne maintains react-navigation roadmap, probably a question for him
+[3:45 PM] vcarl: i know it's not ideal! we're going to change the format for future large Q&As
+[3:45 PM] yungsters: @tobi92 We'll enable Hooks on React Native as soon as there is a public release of React with theme nabled.
+[3:45 PM] PeteTheHeat: @Slipped to build on other's answers, don't feel like you need to learn the entire stack at once. Choose small pieces and gradually build up context.
+[3:46 PM] sahrens: @inland Facebook is not leaving React Native - we are investing more in it every half and have big plans for the future, like Fabric!
+[3:46 PM] yungsters: @tobi We are being intentional about React Native not depending on an alpha version of React so that we do not make it hard for people using React Native who are uncomfortable deploying alpha versions of dependencies.
+[3:46 PM] Rick: @effeKtSVK yeah we hear you - community support is a key focus for us the first half of this year, @hector  and @cpojer are all over it
+[3:46 PM] EliWhite: @Nine [re: difference between React and React Native] React is pretty amazing in that it can be used on so many platforms. It has been really awesome to see the communities around React Native come up. Things like VR, Windows, TV. Super awesome that people are finding so much value in the Platform that React Native provides and the pattern of building components from React. I think we are starting to see that people find the patterns in RN to be a great way to build web apps too. Twitter's website (desktop and mobile-web) is built using React Native Web without using React Native on mobile at all. This multi platform approach is part of the reason React was invented in the first place so we are of course very excited about exploring this area more.
+[3:46 PM] hector: @tobi92  Hooks landed on React stable yesterday, so based on the RN release schedule, you can probably expect Hooks to land on React Native somewhere around the 0.60 release.
+[3:47 PM] mehdi: @inland Facebook is not leaving RN. We’ve been heads down working on it for.. years now. Check out Sophie’s post on the open source blog
+[3:47 PM] BTM: !qa:count
+[3:47 PM] BOTReactiflux: :robot: Please stop your questions for now. Our guest has :three: questions queued.
+[3:48 PM] BTM: !qa:set
+[3:48 PM] sahrens: @inland : Sophie's post about the future of RN is here: https://facebook.github.io/react-native/blog/2018/06/14/state-of-react-native-2018
+State of React Native 2018 · React Native
+It's been a while since we last published a status update about React Native.
+[3:48 PM] EliWhite: Can we get a summary of the unanswered questions? haha
+[3:48 PM] vcarl: trying fo figure that out :sweat_smile:
+[3:48 PM] BTM: We can reset it and open the gates.
+[3:48 PM] BTM: !qa:reset
+[3:48 PM] BTM: I've upped the limit to 6. It's 0 now.
+[3:48 PM] David Vacca: Here's the RN team
+[3:49 PM] vcarl: alright i'm gonna unlock it for a few seconds!
+[3:49 PM] mehdi: everyone at the table is in Menlo Park, I’m on the left TV from NY and @Rick is on the right calling in from London
+[3:49 PM] prodigynelson: [Q&A] I remember a plan for rearchitecting animated - specifically, the native driver. What are the plans for that?
+[3:49 PM] Trisox: [Q&A] how do you keep track of what goes where in the git repo i mean how do you organize a repro/project like this its huge i would get lost many folders everywere in the root for example.. any tips or tricks?
+[3:49 PM] JCM: [Q&A] How is the support for 64 bit apps on Android?
+[3:49 PM] axemclion: [Q & A] What are some of the things the React Native likes about Flutter. What good features of Flutter can be brought into RN ?
+[3:49 PM] Rayd: [Q&A] If you could start over with RN. What would you do differently?
+[3:49 PM] Lautarø: [Q&A]  What’s the best feature of Fabric ?
+[3:49 PM] kawallis: when can we see fiber???
+[3:49 PM] jai: [Q&A] when is systrace support landing?
+[3:50 PM] vcarl: @kawallis fiber is released, async mode is in current releases in a limited capacity. this isn't react core team, it's the react native team
+[3:50 PM] mehdi: @prodigynelson there was a while back but we’re waiting for Fabric before working on Animated. Our overall plan is that Fabric’s API will allow better gesture handling along with better animations
+[3:51 PM] yungsters: @axemclion Flutter has done an amazing job with developer tooling and community engagement. That is something that we really want to improve for React Native.
+[3:51 PM] hector: @LytraX some amount of open issues is to be expected, but we'd certainly like for the number to be much lower than ~600. I am currently preparing a proposal for handling issues and PRs in a more timely manner, which I'll be posting to the community proposals repository at https://github.com/react-native-community/discussions-and-proposals - hopefully we'll get some good feedback from that, and get more people from the community involved in triaging issues and PRs. We'll probably focus on getting the number of open PRs down, first.
+GitHub
+react-native-community/discussions-and-proposals
+Discussions and proposal related to the main React Native project - react-native-community/discussions-and-proposals
+[3:51 PM] David Vacca: @JCM 64Bits for RN Android is supported in the latest version of RN (it is included in the upgraded JSC)
+[3:51 PM] mehdi: @Trisox yeah it’s overwhelming for all of us. I mainly just use code search to find what I’m looking for. Github’s is pretty good.
+[3:52 PM] fkgozali: @Rayd We'd build what we're building for fabric :smiley:
+[3:52 PM] sahrens: @prodigynelson re: Animated - @kmagiera  has a couple awesome projects we are excited about and might pull into the core (https://github.com/kmagiera/react-native-gesture-handler, https://github.com/kmagiera/react-native-reanimated). We also need to get Animated working with Fabric which might require additional changes. Other than that, I'm not aware of any significant refactors planned for Animated.
+[3:52 PM] vcarl: (we're skipping the question/answer count! too many to deal with, just gonna lock/unlock and wait for posted questions to get answered)
+[3:52 PM] mehdi: @Trisox we’re hoping with the lean core effort (i.e. moving stuff out of the repo) we’ll be able to make it more organized
+[3:53 PM] yungsters: @Lautarø The best feature of Fabric is the ability for your application to be multi-threaded without application developers knowing about mutex, etc. Also, Fabric makes React Native more like React for the DOM in terms of interoperability.
+[3:53 PM] PeteTheHeat: @jai systrace is supported and working for Android right now, iOS has some issues in open source. Right now I'd recommend  using Xcode  instruments for profiling iOS. The docs have a systrace guide https://facebook.github.io/react-native/docs/performance#profiling
+Performance · React Native
+A compelling reason for using React Native instead of WebView-based tools is to achieve 60 frames per second and a native look and feel to your apps. Where possible, we would like for React Native to do the right thing and help you to focus on your app instead of performance ...
+[3:53 PM] Valentin Shergin: @prodigynelson With Fabric we are thinking about some completely new animation API, but it's unlikely that this work will be finished soon. For now Fabric will support the exiting animation APIs.
+[3:53 PM] EliWhite: @Trisox, React Native was open sourced in 2015 and our repo structure really hasn't changed much since then. Honestly, it is a mess. It has been pretty difficult for people on our team to onboard into the codebase so I imagine it is even harder for everyone externally. Fortunately, @cpojer and @Rick are planning on trying to clean it up and reorganize things to be easier to understand and contribute to.
+[3:53 PM] hector: @JCM: support for 64-bit architectures landed in master recently - it is not quite in the latest release of RN yet, due to the way releases are cut, but I think it's scheduled to go out in 0.59
+[3:53 PM] Rick: @Trisox I manage all  github notifications through email with a complex system of filters for different types of events(e.g. new issues, mentions, closed issues, etc) that i can snooze, ack, investigate, or otherwise organize
+[3:54 PM] EliWhite: Ready for more questions! :smiley:
+[3:54 PM] vcarl: :thumbsup: opening the floodgates for a few seconds
+[3:54 PM] PeteTheHeat: @jai  there's also a great blog post detailing how to use systrace step by step here http://blog.nparashuram.com/2018/11/react-native-performance-playbook-part-i.html
+React Native Performance Playbook - Part I
+Getting Ready - Setting Up Instrumentation Over the last six months, I have been working on improving the performance of React Native. I...
+[3:54 PM] Checkmatez: [Q&A] Are the any plans to improve lists like FlatList and SectionList? There are still some rough edges and perf problems, especially on Android.
+[3:54 PM] Lautarø: [Q&A] Will be there a public API in the RN core, that allows the developer to choose between Async or Un-Async updates ?
+[3:54 PM] Origin: [Q&A] What would you suggest for the server side (backend) of react-native; (database and rest api), for example react,django,nodejs? And for dbs: neo4j, etc...
+[3:54 PM] sidx64: [Q&A] if I've built a react web app with state management by redux, how hard will it be to create a react native mobile app for it? is there any way to use the web app code when working on the RN app? thank you!
+[3:54 PM] axemclion: [Q & A] How are React native products tested - internally in FB and externally ?
+[3:56 PM] vcarl: (how it feels to moderate this Q&A https://imgur.com/GZKXEUc)
+[3:56 PM] Gabe: :joy:
+[3:56 PM] sahrens: @Checkmatez With Fabric it will be easier to do deeper integrations with native APIs, and we'll also have more oportunities to build deeper recycling, hittesting, and clipping optimizations built into the core. Once Fabric is out, we'll probably revisit lists.
+[3:57 PM] vcarl: opening for more questions!!
+[3:57 PM] axemclion: [Q&A] The Twitch video about CodeGen was awesome. Is React Native team planning to do more such sessions ?
+[3:57 PM] ChrisSeverns: [Q&A] What is your current feeling for community support of the Lean Core effort? Do you think you have enough people to oversee all of the various modules you want to remove from the RN core?
+[3:57 PM] dayhaysoos: Is the  RN core team going to be expanding within the year? How many pull request I need merged to join y'all? :eyes:
+[3:57 PM] Joe: [Q&A] Do you think it makes sense to periodically (every few RN releases) reconstruct our mobile app in a fresh new project rather than continually upgrading in place?
+[3:57 PM] Andrei_Calazans: [Q & A]: Will Fabric also enable a way to reduce App load up time if not any plans to improve this?
+[3:57 PM] shaneReactiflux: [Q&A] Why not have Redux with persist build into RN and have one standard across the developers?
+[3:57 PM] yungsters: @Lautaro Yes, there will be asynchronous variants of most synchronous methods. But I think that synchronous by default will make the most sense in the long term, especially when people start making use of Suspense to provide instantaneous user feedback.
+[3:57 PM] agmcleod: [Q&A] Navigation is a pain point a lot of people tend to speak to. Are the fb team looking at integrating native navigation?
+[3:57 PM] mehdi: @ChrisSeverns yeah I think so. We moved WebView out from the repo and it got tons of improvements almost immediately
+[3:57 PM] Trisox: q&a any tips maintaining bit projects and stuff like keeping dependencies up to date?.
+[3:58 PM] mehdi: @dayhaysoos we’re always hiring!
+[3:58 PM] vcarl: @Trisox better questions for #need-help
+[3:58 PM] fkgozali: @agmcleod The Facebook app integrates into native navigation system that was built for the FB app as a whole, so yeah we do have internal native navigation abstraction for RN. It is quite specific to FB though.
+[3:59 PM] Rick: @Origin for small projects, you can spin up a node api connected to firebase (can be rest or graphql) in a few hours complete with auth and basic collections which is great for hacking on prototypes (there was a talk at ReactConf on this that's really good)
+
+For larger projects I would recommend graphql + sql with a caching layer
+[3:59 PM] luna: @sidx64 My previous team encountered a similar problem when attempting to build a RN app. We ended up using react-native-web and slowly introduced new base components using View, Text. It still felt quite disjointed due to tooling and deploy but it was a great first step to build components that both web and mobile could share.
+[3:59 PM] yungsters: @Lautaro To clarify, my last response was referring to initial mount. I think that we'll probably recommend applications use most asynchronous versions of most events (e.g. scroll, touches, etc.).
+[3:59 PM] vcarl: (we're going to reenable reactions! please don't abuse it)
 [4:00 PM] hector: @dayhaysoos there's no minimum number of PRs you'd need to get merged in order to join the team, but I'd happily take any PRs you want to send our way! In any case, FB is always hiring :smile:
 [4:00 PM] EliWhite: @axemclion, we've tried a bunch of new ways to engage with the community over the last few months, from getting a bunch of contributions to flow type our components (https://github.com/facebook/react-native/issues/22990) to deep dives like the twitch stream. I think we've fundamentally underestimated the interest people have in contributing and learning about the internals of React Native. This is super awesome to us and encourages us to do more of these things for sure.
 GitHub
