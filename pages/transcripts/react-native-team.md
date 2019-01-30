@@ -431,7 +431,7 @@ About how we prioritize issues... it's a delicate balance between issues raised 
 
 ---
 
-**Q:** What are some of your favorite OSS tools used while working on/debugging RN? *- Iggytoad*
+**Q:** What's your favorite part about working on a huge, actively changing project? *- Iggytoad*
 
 **A:** there’s always interested problems. Honestly, working on an unchanging project gets boring very fast, it’s much easier to get motivated when there’s real problems to solve rather than just doing refactors for the hell of it
 
@@ -464,7 +464,7 @@ pieces of turbomodules are already in master, check them out! Not all of them ar
 
 ---
 
-**Q:** What's your favorite part about working on a huge, actively changing project? *- Iggytoad*
+**Q:** What are some of your favorite OSS tools used while working on/debugging RN? *- Iggytoad*
 
 **A:** I use Expo + Atom but I want to out VS Code soon. I know it’s pretty boring answer. what other tooling were you thinking about?
 
