@@ -430,6 +430,10 @@ About how we prioritize issues… it’s a delicate balance between issues raise
 
 *— David Vacca*
 
+**A:** At Facebook a significant amount of our users use Android and that is where we’ve actually spent almost all of our time over the last 6 months. On Android one of the things that matters a lot more than on iOS is disk access. Reading from the disk is way slower on Android and you pay a penalty for every single java class you load. We’ve spent a bunch of time investigating and optimizing the React Native startup path specifically on 2014 android devices in order to make Marketplace fast for those users. This investigation is actually what led to the design of the TurboModules project and some of the features of Fabric. While these features were designed with Android in mind, they will be implemented in shared c++ so that iOS will have the same behavior and improved performance as well. (Note: This was a follow up answer after Q&A ended) 
+
+*— Eli White*
+
 ---
 
 **Q:** What’s your favorite part about working on a huge, actively changing project? *— Iggytoad*
