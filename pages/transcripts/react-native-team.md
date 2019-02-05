@@ -17,6 +17,9 @@ date: January 24 2019
 [@ramanpreetnara](https://twitter.com/ramanpreetnara)
 [@sahrens2012](https://twitter.com/sahrens2012)
 [@rickhanlonii](https://twitter.com/rickhanlonii)
+[@lunaleaps](https://twitter.com/lunaleaps)
+[@joshuaisgross](https://twitter.com/joshuaisgross)
+Mehdi Mulani (not on twitter)
 
 ![The entire React Native Core Team in one room answering questions](https://user-images.githubusercontent.com/11687622/51948653-59ae4c00-23f7-11e9-866b-4e381380b82e.jpg)
 *The entire React Native Core Team in one room answering questions!*
