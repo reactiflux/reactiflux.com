@@ -1,6 +1,6 @@
 ---
 title: Jamon Holmgren
-date: Feb 7 2019s
+date: Feb 7 2019
 ---
 
 **Q:** How do you balance community needs and Infinte Red’s needs? — orta
