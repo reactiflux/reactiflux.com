@@ -38,7 +38,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ### Janic Duplessis
 
-* https://twitter.com/reactnative
+* https://twitter.com/janicduplessis
 * React Native core contributor. Co-founder @ [th3rdwave](https://www.th3rdwave.coffee/).
 * Thursday May 16th
 * 1-2pm PT 
