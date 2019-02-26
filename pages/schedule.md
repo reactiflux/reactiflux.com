@@ -6,17 +6,48 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## January 2019
+## March 2019
+
+### Kent C. Dodds
+
+* https://twitter.com/kentcdodds
+* Engineer @ Paypal, Teaching via Egghead & Frontendmasters, and Author of react-testing-library, downshift, glamorous, & an all around good dude.
+* Thursday March 28th
+* 1-2pm PT 
+* Q&A Channel Reactiflux
+
+## April 2019
+
+### Kitze
+
+* https://twitter.com/thekitze
+* Founder of [React Academy](http://reactacademy.io). Working on @twizzyapp, @sizzyapp, @jsui_app, and [http://ok-google.io](http://ok-google.io).
+* Thursday April 18th
+* 1-2pm PT 
+* Q&A Channel Reactiflux
+
+## May 2019
 
 ### React Native Core Team @ Facebook
 
 * https://twitter.com/reactnative
 * React Native Core Team
-* Thursday January 24
+* Thursday May 9th
 * 12:30 - 1:30pm PT
 * Q&A Channel Reactiflux
 
-## February 2019
+### Janic Duplessis
+
+* https://twitter.com/reactnative
+* React Native core contributor. Co-founder @ [th3rdwave](https://www.th3rdwave.coffee/).
+* Thursday May 16th
+* 1-2pm PT 
+* Q&A Channel Reactiflux
+
+----------
+## Past Q&A’s
+
+## ~~February 2019~~
 
 ### Jamon Holmgren
 
@@ -26,18 +57,15 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1-2pm PT 
 * Q&A Channel Reactiflux
 
-## March 2019
+## ~~January 2019~~
 
-### Kent C. Dodds
+### React Native Core Team @ Facebook
 
-* https://twitter.com/kentcdodds
-* Engineer @ Paypal, Teaching via Egghead & Frontendmasters, and Author of react-testing-library, downshift, glamorous, & an all around good dude.
-* Thursday March 28
-* 1-2pm PT 
+* https://twitter.com/reactnative
+* React Native Core Team
+* Thursday January 24
+* 12:30 - 1:30pm PT
 * Q&A Channel Reactiflux
-
-----------
-## Past Q&A’s
 
 ## ~~December 2018~~
 
