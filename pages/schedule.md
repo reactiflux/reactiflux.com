@@ -44,6 +44,17 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * 1-2pm PT 
 * Q&A Channel Reactiflux
 
+## June 2019
+
+### Vladimir Novick
+
+* https://twitter.com/VladimirNovick
+* Developer Relations @ [Hasura.io](http://hasura.io)
+* Thursday June 27th
+* 1-2pm PT
+* Q&A Channel Reactiflux
+
+
 ----------
 ## Past Q&A’s
 
