@@ -29,7 +29,7 @@ Also, [my website is open source](https://github.com/kentcdodds/kentcdodds.com) 
 
 And [all my teaching material is open source as well](https://github.com/topics/kcd-edu) so I work on that a lot. I’m really excited about [the remote workshops](https://kentcdodds.com/workshops) I have lined up!!
 
-Most of my ~150 npm packages are either "finished," deprecated, or I’ve handed them off to other people who are actually using them. Pretty happy with how things are going in the OSS stuff I’ve been doing :smiley: Thanks for the question!
+Most of my ~150 npm packages are either "finished," deprecated, or I’ve handed them off to other people who are actually using them. Pretty happy with how things are going in the OSS stuff I’ve been doing 😀 Thanks for the question!
 
 ---
 
@@ -57,7 +57,7 @@ Good luck!
 
 **Q:** What part of the toolchain do you feel like is most lacking? — Іggytoad
 
-That’s a good question. Hmmm… I’d have to give that one more thought, I honestly don’t know. There are definitely things that I’m not happy about with the toolchains and I’m excited to hear about "Rome" which Sebastian McKenzie is working on. The biggest limitation of tools of today I think is that they all operate separately so there are lots of optimizations we just can’t make. Seb’s tool comes with everything out of the box and because of that he can optimize it to make it crazy fast and give a great experience. We’ll see though. All I’ve seen are a few screen recordings :smiley:
+That’s a good question. Hmmm… I’d have to give that one more thought, I honestly don’t know. There are definitely things that I’m not happy about with the toolchains and I’m excited to hear about "Rome" which Sebastian McKenzie is working on. The biggest limitation of tools of today I think is that they all operate separately so there are lots of optimizations we just can’t make. Seb’s tool comes with everything out of the box and because of that he can optimize it to make it crazy fast and give a great experience. We’ll see though. All I’ve seen are a few screen recordings 😀
 
 ---
 
@@ -79,9 +79,9 @@ I believe that the React team is super great at what they do and they always see
 
 **Q:** Where do you get motivation to create some project? — mishaor
 
-Motivation for me is typically driven by pain. I have a pain and want to solve that problem. You have to be a little self-aware to know when what you’re experiencing is pain that you can reasonably solve. If the deploy takes too long, don’t just accept that as a given, but recognize it for what it is: pain. And it’s probably pain that you can solve. But be reasonable about it too. For example, I have tons of pain points with twitter as a platform. I could solve those by building my own social media platform, but that’s just not reasonable with my constraints :shrug:‍
+Motivation for me is typically driven by pain. I have a pain and want to solve that problem. You have to be a little self-aware to know when what you’re experiencing is pain that you can reasonably solve. If the deploy takes too long, don’t just accept that as a given, but recognize it for what it is: pain. And it’s probably pain that you can solve. But be reasonable about it too. For example, I have tons of pain points with twitter as a platform. I could solve those by building my own social media platform, but that’s just not reasonable with my constraints 🤷‍♂️
 
-Whatever it is, the pain gives me the motivation to work on something. Also the fun of coding :smiley:
+Whatever it is, the pain gives me the motivation to work on something. Also the fun of coding 😀
 
 ---
 
@@ -89,7 +89,7 @@ Whatever it is, the pain gives me the motivation to work on something. Also the 
 
 Thanks for the question! I’m actually working on a fantasy novel. You can read [the whole manuscript](https://kcd.im/shurlan).
 
-Writing software has helped me develop a problem-solving mind where I can recognize problems with my book and think methodically about how I can solve those problems. I’ve also been able to train my brain to listen to podcasts at 3x speed thanks to years of listening to dev podcasts, so when I decided to start writing, I was able to consume vast amounts of podcasts and videos about it really quickly :smiley:
+Writing software has helped me develop a problem-solving mind where I can recognize problems with my book and think methodically about how I can solve those problems. I’ve also been able to train my brain to listen to podcasts at 3x speed thanks to years of listening to dev podcasts, so when I decided to start writing, I was able to consume vast amounts of podcasts and videos about it really quickly 😀
 
 ---
 
@@ -97,9 +97,9 @@ Writing software has helped me develop a problem-solving mind where I can recogn
 
 Interesting question. When I was working full-time as an employee doing "regular" development, I always spent ~40 hours a week working and then did the teaching stuff after hours.
 
-Now that I’m a full-time teacher, I spend ~40 hours a week on the teaching stuff and enjoy my life and family after hours :shrug:‍
+Now that I’m a full-time teacher, I spend ~40 hours a week on the teaching stuff and enjoy my life and family after hours 🤷‍♂️
 
-So it’s hard to compare them, but you’d probably be surprised how much time and effort goes into getting material prepared for teaching (in any format) :smiley:
+So it’s hard to compare them, but you’d probably be surprised how much time and effort goes into getting material prepared for teaching (in any format) 😀
 
 ---
 
@@ -129,7 +129,7 @@ Hooks allow you to do (almost) everything you could do with the Component API. I
 
 - https://kentcdodds.com/workshops/hooks
 
-:smiley:
+😀
 
 ---
 
@@ -147,7 +147,7 @@ I hope that’s helpful!
 
 I’m probably not a great person to ask that question to I’m afraid because I have pretty much no experience with that. I have been asked this a lot and I responded [on my GitHub AMA](https://github.com/kentcdodds/ama/issues/533).
 
-Maybe that’ll help, but I honestly don’t have too much feedback there because I’ve never even interviewed someone in that situation :grimacing:  Sorry.
+Maybe that’ll help, but I honestly don’t have too much feedback there because I’ve never even interviewed someone in that situation 😬 Sorry.
 
 ---
 
@@ -157,7 +157,7 @@ I’ve spoken and blogged about this extensively. The best summary that I can gi
 
 [I’ve also given a talk about this](https://egghead.io/lessons/react-confidently-ship-production-react-apps).
 
-Basically it comes down to the fact that enzyme exposes APIs that allow you to test implementation details which makes your tests provide little-to-no value and a lot of friction. react-testing-library is founded on the philosophy that ["The more your tests resemble the way your software is used, the more confidence they can give you."](https://twitter.com/kentcdodds/status/977018512689455106) It works out really nicely that this also means that it doesn’t matter how you build your app, your tests with react-testing-library will still work! Many people have told me that they’ve refactored their apps to hooks and their tests continued to pass thanks to react-testing-library :smiley: [React is an implementation detail](https://kentcdodds.com/blog/react-is-an-implementation-detail).
+Basically it comes down to the fact that enzyme exposes APIs that allow you to test implementation details which makes your tests provide little-to-no value and a lot of friction. react-testing-library is founded on the philosophy that ["The more your tests resemble the way your software is used, the more confidence they can give you."](https://twitter.com/kentcdodds/status/977018512689455106) It works out really nicely that this also means that it doesn’t matter how you build your app, your tests with react-testing-library will still work! Many people have told me that they’ve refactored their apps to hooks and their tests continued to pass thanks to react-testing-library 😀 [React is an implementation detail](https://kentcdodds.com/blog/react-is-an-implementation-detail).
 
 I hope that’s insightful/helpful!
 
@@ -220,7 +220,7 @@ This needs to be updated a bit with a hooks world, but [I mostly still feel this
 
 **Q:**  Hey Kent, what do you think about TS in 2019? Is it must-know technology? Or can it be neglected? — czechue
 
-I wouldn’t say that TS is a must-know technology, but there’s a reason that Static Typing is [included in the testing trophy](testingjavascript.com)! :trophy:
+I wouldn’t say that TS is a must-know technology, but there’s a reason that Static Typing is [included in the testing trophy](testingjavascript.com)! 🏆
 
 [Read more](https://kentcdodds.com/blog/eliminate-an-entire-category-of-bugs-with-a-few-simple-tools)
 
