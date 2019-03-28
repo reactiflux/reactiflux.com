@@ -46,6 +46,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## June 2019
 
+### Conrad Irwin & the [Superhuman](http://superhuman.com) Team
+
+- [https://twitter.com/conradirwin](https://twitter.com/conradirwin) / [https://twitter.com/superhuman](https://twitter.com/superhuman)
+- Conrad is the co-founder & CTO @ Superhuman. Superhuman is an amazing email client built with React/Electron. It's basically VIM for email.
+- Thursday June 6th
+- 1-2pm PT
+- Q&A Channel Reactiflux
+
 ### Vladimir Novick
 
 * https://twitter.com/VladimirNovick
@@ -53,6 +61,42 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Thursday June 27th
 * 1-2pm PT
 * Q&A Channel Reactiflux
+
+## July 2019
+
+### Mobile Team (React Native) @ Clubhouse.io
+
+- [https://twitter.com/clubhouse](https://twitter.com/clubhouse)
+- [Eli Perkins](https://twitter.com/_eliperkins), [Jenel Myers](https://twitter.com/jenelmyers), [Nicolas Charpentier](https://twitter.com/charpeni_) from the mobile team @ Clubhouse.io. Clubhouse is a project management platform for software development that brings everyone together to build better products. Clubhouse is built using tools like React Native, React, Relay, GraphQL, Gatsby and more.
+- Thursday July 25th
+- 1-2pm PT
+- Q&A Channel Reactiflux
+
+## August 2019
+
+### Bob Scarano & the engineering team @ Squarespace
+
+- [https://twitter.com/scarano](https://twitter.com/scarano)
+- Engineer @ Squarespace
+- Thursday August 15th
+- 1-2pm PT
+- Q&A Channel Reactiflux
+
+## React Rally
+
+- [reactrally.com](http://reactrally.com/)
+- August 22-23 2019 in Salt Lake City, UT
+- React Rally is a two day single track conference for developers of all backgrounds using Facebook's React.js, React Native, and related tools. Speakers will cover topics such as React Native, Flux, ES6, isomorphic universal JavaScript, and so much more. Whether you're a seasoned developer who has been using React since before it was cool, or a newcomer to the scene, React Rally has something for everyone!
+
+## September 2019
+
+### Frank von Hoven & Gant Laborde
+
+- [https://twitter.com/infinite_frank](https://twitter.com/infinite_frank) & [https://twitter.com/GantLaborde](https://twitter.com/GantLaborde)
+- Frank is a Senior Software Engineer at Infinite Red, Organizer at Chain React Conference, and Editor-in-Chief of The React Native Newsletter. Gant is CTS of Infinite Red, Organizer @ChainReactConf, Open Sourcerer ([Ignite](https://github.com/infinitered/ignite), Reactotron, etc).
+- Thursday September 5th
+- 1-2pm PT
+- Q&A Channel Reactiflux
 
 
 ----------
