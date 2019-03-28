@@ -82,8 +82,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 - 1-2pm PT
 - Q&A Channel Reactiflux
 
-## React Rally
-
+### React Rally
 - [reactrally.com](http://reactrally.com/)
 - August 22-23 2019 in Salt Lake City, UT
 - React Rally is a two day single track conference for developers of all backgrounds using Facebook's React.js, React Native, and related tools. Speakers will cover topics such as React Native, Flux, ES6, isomorphic universal JavaScript, and so much more. Whether you're a seasoned developer who has been using React since before it was cool, or a newcomer to the scene, React Rally has something for everyone!
