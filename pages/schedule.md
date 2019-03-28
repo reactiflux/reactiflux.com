@@ -64,14 +64,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## August 2019
 
-### Bob Scarano & the engineering team @ Squarespace
-
-- [https://twitter.com/scarano](https://twitter.com/scarano)
-- Engineer @ Squarespace
-- Thursday August 15th
-- 1-2pm PT
-- Q&A Channel Reactiflux
-
 ### React Rally
 - [reactrally.com](http://reactrally.com/)
 - August 22-23 2019 in Salt Lake City, UT
