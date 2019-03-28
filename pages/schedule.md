@@ -6,16 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## March 2019
-
-### Kent C. Dodds
-
-* https://twitter.com/kentcdodds
-* Engineer @ Paypal, Teaching via Egghead & Frontendmasters, and Author of react-testing-library, downshift, glamorous, & an all around good dude.
-* Thursday March 28th
-* 1-2pm PT 
-* Q&A Channel Reactiflux
-
 ## April 2019
 
 ### Kitze
@@ -100,6 +90,16 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ----------
 ## Past Q&A’s
+
+## ~~March 2019~~
+
+### Kent C. Dodds
+
+* https://twitter.com/kentcdodds
+* Engineer @ Paypal, Teaching via Egghead & Frontendmasters, and Author of react-testing-library, downshift, glamorous, & an all around good dude.
+* Thursday March 28th
+* 1-2pm PT 
+* Q&A Channel Reactiflux
 
 ## ~~February 2019~~
 
