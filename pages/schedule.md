@@ -64,6 +64,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## August 2019
 
+### React Native Core Team @ Facebook
+
+- [https://twitter.com/reactnative](https://twitter.com/reactnative)
+- React Native Core Team
+- Thursday August 8th
+- 12:30 - 1:30pm PT
+- Q&A Channel Reactiflux
+
 ### React Rally
 - [reactrally.com](http://reactrally.com/)
 - August 22-23 2019 in Salt Lake City, UT
