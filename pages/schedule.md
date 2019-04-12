@@ -11,7 +11,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ### Ryan Florence
 
 * https://twitter.com/ryanflorence
-* React Router Co-Author | https://reactjs-training.com
+* React Router Co-Author | https://reacttraining.com/
 * Monday April 15th
 * 1-2pm PT 
 * Q&A Channel Reactiflux
