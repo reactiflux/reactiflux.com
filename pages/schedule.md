@@ -6,24 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## April 2019
-
-### Ryan Florence
-
-* https://twitter.com/ryanflorence
-* React Router Co-Author | https://reacttraining.com/
-* Monday April 15th
-* 1-2pm PT 
-* Q&A Channel Reactiflux
-
-### Kitze
-
-* https://twitter.com/thekitze
-* Founder of [React Academy](http://reactacademy.io). Working on @twizzyapp, @sizzyapp, @jsui_app, and [http://ok-google.io](http://ok-google.io).
-* Thursday April 18th
-* 1-2pm PT 
-* Q&A Channel Reactiflux
-
 ## May 2019
 
 ### React Native Core Team @ Facebook
@@ -80,6 +62,16 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 - 12:30 - 1:30pm PT
 - Q&A Channel Reactiflux
 
+### Bob Scarano & Craig Blagg @ Squarespace
+
+- [https://twitter.com/scarano](https://twitter.com/scarano) & [https://twitter.com/iwillreply](https://twitter.com/iwillreply)
+- Bob is the team lead of the Mobile Content-Editing team at Squarespace. Craig is the team lead of the Design Platform team.
+- Thursday August 15th
+- 1-2pm PT
+- Q&A Channel Reactiflux
+- The Mobile Content-Editing team is focused on mobile but [their app](https://twitter.com/scarano/status/1072963970242412550) is a hybrid mobile-webapp (React) + native kotlin/Swift + react-native. Also, the react-native that they write is cross-platform mobile & desktop-web with an opinionated architecture about business-logic/rendering separation. Bob gave a talk about it at Chain React last year: [https://www.youtube.com/watch?v=kZGaWefWVBs](https://www.youtube.com/watch?v=kZGaWefWVBs)
+- The Design Platform team works on both web and mobile using React and React Native. This fundamental cross-platform architecture used by their react and react-native code was spearheaded by the efforts of this team. Also, Squarespace does use use GraphQL in some of its software but they don't it our mobile apps (yet).
+
 ### React Rally
 - [reactrally.com](http://reactrally.com/)
 - August 22-23 2019 in Salt Lake City, UT
@@ -98,6 +90,24 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ----------
 ## Past Q&A’s
+
+## ~~April 2019~~
+
+### Ryan Florence
+
+* https://twitter.com/ryanflorence
+* React Router Co-Author | https://reacttraining.com/
+* Monday April 15th
+* 1-2pm PT 
+* Transcript: 
+
+### Kitze
+
+* https://twitter.com/thekitze
+* Founder of [React Academy](http://reactacademy.io). Working on @twizzyapp, @sizzyapp, @jsui_app, and [http://ok-google.io](http://ok-google.io).
+* Thursday April 18th
+* 1-2pm PT 
+* Transcript: 
 
 ## ~~March 2019~~
 
