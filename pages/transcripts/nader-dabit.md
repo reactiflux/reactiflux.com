@@ -5,7 +5,8 @@ date: September 29 2017
 
 ## Founder of React Native Training and host of React Native Radio
 
-**Q:** What's the best way to learn React Native? In your opinion. For me the best way was finding tutorials that actually built something and then following them along step by step.  — pxY.
+<a name="whats-best-way-learn-react" href="#whats-best-way-learn-react">#</a> **Q:** What's the best way to learn React Native? In your opinion. For me the best way was finding tutorials that actually built something and then following them along step by step.  — pxY.
+
 
 **A:** I know one of the first ones I did was by [Ray Wenderlich](https://www.google.com/search?q=ray+wenderlich&rlz=1C5CHFA_enUS722US722&oq=ray+wenderlich&aqs=chrome..69i57j69i65j0l4.3383j0j4&sourceid=chrome&ie=UTF-8), it was good.
 
@@ -17,7 +18,8 @@ Finally, I think also finding completed apps on github, downloading them and run
 
 ---
 
-**Q:** Assuming I'm a med-weight JS Dev, and I'd like to switch to mobile development, should I go with React Native over Swift and why? — KGB
+<a name="assuming-im-medweight-js-dev" href="#assuming-im-medweight-js-dev">#</a> **Q:** Assuming I'm a med-weight JS Dev, and I'd like to switch to mobile development, should I go with React Native over Swift and why? — KGB
+
 
 **A:** I work almost exclusively with developers who are coming from native when I do consulting for a lot of companies, so I get a variant this questions a lot.
 
@@ -33,13 +35,15 @@ Again, it kind of comes down to what I'm seeing in the industry as far as what c
 
 ---
 
-**Q:** What's the best way to implement an ember-concurrency clone without redux? — vFp.LindyHop
+<a name="whats-best-way-implement-emberconcurrency" href="#whats-best-way-implement-emberconcurrency">#</a> **Q:** What's the best way to implement an ember-concurrency clone without redux? — vFp.LindyHop
+
 
 **A:** I'm sorry I do not have the answer to your question. If you can dm me more details though, I will do my best to figure out an answer for you after this is finished!
 
 ---
 
-**Q:** I love RN, but I must ask this question because it's almost always an interesting answer for any technology: What are the worst use cases for RN? (speaking within the mobile app domain, of course) — granmoe
+<a name="love-rn-must-ask-question" href="#love-rn-must-ask-question">#</a> **Q:** I love RN, but I must ask this question because it's almost always an interesting answer for any technology: What are the worst use cases for RN? (speaking within the mobile app domain, of course) — granmoe
+
 
 **A:** Definitely I think the worst use cases are anything that pushes the current boundaries of React Native.
 
@@ -54,13 +58,15 @@ Also, if you have a native iOS team and you only need to ship iOS, it may not ma
 
 ---
 
-**Q:** What do you mean by a lot of animations? I'm new so it's interesting to know what kind of animations limit React Native — † Van †
+<a name="mean-lot-animations-im-new" href="#mean-lot-animations-im-new">#</a> **Q:** What do you mean by a lot of animations? I'm new so it's interesting to know what kind of animations limit React Native — † Van †
+
 
 **A:** I'm referring really to either a game or something of the like.
 
 ---
 
-**Q:** What do you find to be the best approach to handling deep linking to nested navigation views where query strings are necessary for the view to render properly (displaying important content immediately instead of waiting for some network request)? — pat
+<a name="find-best-approach-handling-deep" href="#find-best-approach-handling-deep">#</a> **Q:** What do you find to be the best approach to handling deep linking to nested navigation views where query strings are necessary for the view to render properly (displaying important content immediately instead of waiting for some network request)? — pat
+
 
 **A:** First of all definitely choosing the right navigation library will get you a long way, and I've found that even with all of the quirks / bugs that React Navigation handles deep linking well for most of my use cases. 
 
@@ -74,7 +80,8 @@ If I missed something on that question though dm me.
 
 ---
 
-**Q:** At the end of [the last Q&A](https://www.reactiflux.com/transcripts/charlie-cheever/), in response to @blackxored
+<a name="end-last-qahttpswwwreactifluxcomtranscriptscharliecheever-response-blackxored" href="#end-last-qahttpswwwreactifluxcomtranscriptscharliecheever-response-blackxored">#</a> **Q:** At the end of [the last Q&A](https://www.reactiflux.com/transcripts/charlie-cheever/), in response to @blackxored
+
 
 > This has been an interesting year for "React as a platform" […] react-primitives, haul and also styling libraries supporting the concept but we're not quite there yet. […] what do you think needs to happen as a community to be able to truly develop universal apps regardless of platform?
 
@@ -96,7 +103,8 @@ This ends up being a circumstance where projects are better off just sharing som
 
 ---
 
-**Q:** What's the best way to handle click on push notification when app is killed? I need to open specific scene when user clicks on a notification. — v.blokhin
+<a name="whats-best-way-handle-click" href="#whats-best-way-handle-click">#</a> **Q:** What's the best way to handle click on push notification when app is killed? I need to open specific scene when user clicks on a notification. — v.blokhin
+
 
 **A:**.blokhin have you looked into deep linking? I think we've handled this situation before with deep linking, which basically listens for an event that would be passed down by the push notification.
 
@@ -104,7 +112,8 @@ Basically, it would open the app, parse the url / link / data or whatever passed
 
 ---
 
-**Q:** How do you build your apps? Have you used fastlane? — v.blokhin
+<a name="build-apps-used-fastlane-vblokhin" href="#build-apps-used-fastlane-vblokhin">#</a> **Q:** How do you build your apps? Have you used fastlane? — v.blokhin
+
 
 **A:**.blokhin Yeah lately I've been working with companies that have been using fastlane for deployment to TestFlight, but as far as general building, it really depends if I'm working alone or on a team.
 
@@ -113,7 +122,8 @@ Most of the time on a team we usually have a devops person who handles deploymen
 A general idea of what I recommend though is to have fastlane integrated as early as possible to ship to TestFlight, then iterate on a version1 until it's ready to ship, then after v1 is shipeed use CodePush to update builds until a native change is needed, then push new version and rinse and repeat.
 
 CodePush has become a huge part of my process and saves a lot of time and headache.
-**Q:**why don’t we have native ListView in RN? I found FlatList still not good enough for a large and complex list like Facebook or Instagram feed — bduyng
+<a name="dont-native-listview-rn-found" href="#dont-native-listview-rn-found">#</a> **Q:**why don’t we have native ListView in RN? I found FlatList still not good enough for a large and complex list like Facebook or Instagram feed — bduyng
+
 
 **A:** This is a really important question and one of the two main things I'm seeing as problemns for some of the enterprise customers I work with, the other being a stable / preferred Navigation solution.
 
@@ -123,7 +133,8 @@ Regarding "why don't we have native ListView", I don't know the answer, but if y
 
 ---
 
-**Q:** What is your opinion on having to use React for web and react-native for mobile? Why not unite the 2 into one ? Essentially doing something something like Cordova or React-native-web are doing? — Rayd
+<a name="opinion-use-react-web-reactnative" href="#opinion-use-react-web-reactnative">#</a> **Q:** What is your opinion on having to use React for web and react-native for mobile? Why not unite the 2 into one ? Essentially doing something something like Cordova or React-native-web are doing? — Rayd
+
 
 **A:** not too long ago @brentvatne and Adam Perry were on Software Engineering daily talking about the future of React Native, and they had some interesting insight into this.
 
@@ -137,7 +148,8 @@ This is the link to the podcast episode I mentioned :point_up_2:
 
 ---
 
-**Q:** What is advantage of React 16 in React Native? — bduyng
+<a name="advantage-react-16-react-native" href="#advantage-react-16-react-native">#</a> **Q:** What is advantage of React 16 in React Native? — bduyng
+
 
 **A:** The advantage I guess would be the same as using React16 on the web, those advantages being things like error boundaries, array rendering without wrapping, rendering text only components, and there are probably a few more (maybe setState can be called with null now)?
 
@@ -145,7 +157,8 @@ Regarding ListView, I agree using something deprecated is not ideal but when Lis
 
 ---
 
-**Q:** Thanks Nader, enjoyed your [RN EU talk](https://www.youtube.com/watch?v=pFtvv0rJgPw), people who have not yet seen it should — ricky
+<a name="thanks-nader-enjoyed-rn-eu" href="#thanks-nader-enjoyed-rn-eu">#</a> **Q:** Thanks Nader, enjoyed your [RN EU talk](https://www.youtube.com/watch?v=pFtvv0rJgPw), people who have not yet seen it should — ricky
+
 
 Is Skype only ReactXP example in the wild? support.md on GH says “ReactXP was initially developed by the Skype team at Microsoft. It has since been adopted by other teams at Microsoft.” Have they said anything more about other teams or usage outside Microsoft or have you heard of anyone else adopting?
 
@@ -155,7 +168,8 @@ I will look into it though as I think I am super interested in the answer as wel
 
 ---
 
-**Q:** What are your thoughts on making a decision when it comes to a new cross-platform project? Seems there are good options, React Native, NativscriptJS, Xamarin, etc. part of the decision would be based on current dev skills, but beyond that, how do you go about making that kind of decision? — DrCJones
+<a name="thoughts-making-decision-comes-new" href="#thoughts-making-decision-comes-new">#</a> **Q:** What are your thoughts on making a decision when it comes to a new cross-platform project? Seems there are good options, React Native, NativscriptJS, Xamarin, etc. part of the decision would be based on current dev skills, but beyond that, how do you go about making that kind of decision? — DrCJones
+
 
 **A:** This is a great question and something I could talk about ( and have ) for hours, also it's basiclly what I'm most passionate about and love discussing!
 

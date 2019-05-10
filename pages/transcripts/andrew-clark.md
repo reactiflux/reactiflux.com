@@ -4,13 +4,15 @@ date: April 12 2017
 ---
 ## Co-creator of Redux, Facebook React Core Team Member
 
-**Q:** Do you have any plans to port recompose to typescript? - *FlayaN*
+<a name="plans-port-recompose-typescript-flayan" href="#plans-port-recompose-typescript-flayan">#</a> **Q:** Do you have any plans to port recompose to typescript? - *FlayaN*
+
 
 **A:** So first of all, a bit of a confession: I haven't worked much on Recompose in the last few months since I joined the React team. The primary reason is that some parts of the API will need to change in light of the changes we're making in React Fiber. So I'd like to wait until the Fiber stuff, particularly around async scheduling, is more fleshed out. To answer your actual question: I would love to get TypeScript working with Recompose. (Although I don't have experience with TypeScript so I'd appreciate some help from the community.) I'm also very interested in Flow types, which I've attempted a few times. Turns out it's a bit tricky to type higher-order components in a way that works with both class components and functional components. But once I turn my attention back to Recompose (hopefully this summer) this is near the top of my todo list.
 
 ----
 
-**Q:** Why was proptypes moved out of react in the latest release of react? - *akki1234*
+<a name="proptypes-moved-react-latest-release" href="#proptypes-moved-react-latest-release">#</a> **Q:** Why was proptypes moved out of react in the latest release of react? - *akki1234*
+
 
 **A:** First, to be absolutely clear, what's being deprecated is accessing PropTypes from the main React object: React.PropTypes. Not the PropTypes themselves. They simply live in a separate package now.
 
@@ -26,7 +28,8 @@ We realize this decision has caused some consternation and confusion since we re
 
 ----
 
-**Q:** I've had multiple people express their concerns about "what will happen when React removes context" - I know there are some plans to change the API, what do you think should / will happen to context? - *BTM*
+<a name="ive-multiple-people-express-concerns" href="#ive-multiple-people-express-concerns">#</a> **Q:** I've had multiple people express their concerns about "what will happen when React removes context" - I know there are some plans to change the API, what do you think should / will happen to context? - *BTM*
+
 
 **A:** We have no plans to remove context; or rather, we will always have some API for addressing the use case that context fulfills, which is to pass data to deep children without explicit passthrough of props.
 
@@ -36,7 +39,8 @@ In the meantime, the recommendation is to use an abstraction around context so t
 
 ----
 
-**Q:** Since the purpose of fiber is essentially being able to achieve 60fps on the web, will react ever have some helpers built-in for animation (other than and perhaps better than ReactCSSTransitionGroup)? Or should such helpers exist in user-land libraries? - *everdimension*
+<a name="since-purpose-fiber-essentially-able" href="#since-purpose-fiber-essentially-able">#</a> **Q:** Since the purpose of fiber is essentially being able to achieve 60fps on the web, will react ever have some helpers built-in for animation (other than and perhaps better than ReactCSSTransitionGroup)? Or should such helpers exist in user-land libraries? - *everdimension*
+
 
 **A:** The purpose of Fiber is a bit more nuanced than that (I may be to blame for pushing that line... I wrote that in my React Fiber Architecture doc last summer before I worked for FB and joined the React Team. That doc was my attempt to understand something from the outside with little context by just reading the code. So some of it is outdated. I intend to update it sometime in the next few weeks, now that Fiber is closer to being fully implemented.)
 
@@ -44,7 +48,8 @@ To answer your actual question, the React team feels we're not in the business o
 
 ----
 
-**Q:** Hey Andrew! What’s the most difficult or challenging work left to officially ship v16? - *iamdustan*
+<a name="hey-andrew-whats-difficult-challenging" href="#hey-andrew-whats-difficult-challenging">#</a> **Q:** Hey Andrew! What’s the most difficult or challenging work left to officially ship v16? - *iamdustan*
+
 
 **A:** React 16 is running for 100% of users on facebook and messenger. So it's basically done. The biggest remaining step I believe is to figure out our sever-side renderering story. We don't really use SSR at Facebook, which is why this has come last. And then of course we need to get Fiber rolled on for React Native, too. Hopefully we'll get 16 out sometime this summer!
 
@@ -54,7 +59,8 @@ But React 16 will have improved error boundaries and you'll be able to return ar
 
 ----
 
-**Q:** Do you think the React team at Facebook could be doing anything better re: communicating short-term and long-term goals and changes to the community--specifically those outside Facebook involved with core community projects and React itself? - *Aweary*
+<a name="think-react-team-facebook-could" href="#think-react-team-facebook-could">#</a> **Q:** Do you think the React team at Facebook could be doing anything better re: communicating short-term and long-term goals and changes to the community--specifically those outside Facebook involved with core community projects and React itself? - *Aweary*
+
 
 **A:** Hi Brandon! Yes, this is absolutely something we need to work on.
 
@@ -64,7 +70,8 @@ But we recognize the problem and we're actively looking into ways make this bett
 
 ----
 
-**Q:** I know there are 2 question queued already but since I will forget it if I wait longer, I'll just ask, sorry for that: you mentioned context earlier. the docs still state that context is an experimental api and it's likely to break in future releases. any plans on making context stable in the medium or long term or will it just remain in an experimental state like ... forever? - *manuelbieh*
+<a name="know-2-question-queued-already" href="#know-2-question-queued-already">#</a> **Q:** I know there are 2 question queued already but since I will forget it if I wait longer, I'll just ask, sorry for that: you mentioned context earlier. the docs still state that context is an experimental api and it's likely to break in future releases. any plans on making context stable in the medium or long term or will it just remain in an experimental state like ... forever? - *manuelbieh*
+
 
 **A:** I'll just quote my previous response from above
 
@@ -76,7 +83,8 @@ Hope that answers your question!
 
 ----
 
-**Q:** How has your experience been moving to rollup internally and away from webpack? - *dmarr*
+<a name="experience-moving-rollup-internally-away" href="#experience-moving-rollup-internally-away">#</a> **Q:** How has your experience been moving to rollup internally and away from webpack? - *dmarr*
+
 
 **A:** I'm really excited about our new build setup. Aside from the perf and code size benefits of using flat bundles, it's going to make our release process so much smoother. Right now, releasing React is a lengthy, error-prone, largely manual series of steps that makes it difficult to release new versions. We want to get to the place where we can make frequent patch and minor releases with confidence, so we can iterate more quickly and ship bugfixes much faster.
 
@@ -84,31 +92,36 @@ Also, we never used Webpack to bundle React AFAIK. So it's not quite accurate to
 
 ----
 
-**Q:** Hi Andrew! Is renderToString / server rendering going to change much with Fiber? I know Sebastian mentioned adding / replacing with streaming support but I'm curious what the the plan for that is before v16. (we are heavily dependent on recursive, async renderToString calls in https://github.com/ericclemmons/react-resolver, so curious how fiber will affect). - *nathanael*
+<a name="hi-andrew-rendertostring-server-rendering" href="#hi-andrew-rendertostring-server-rendering">#</a> **Q:** Hi Andrew! Is renderToString / server rendering going to change much with Fiber? I know Sebastian mentioned adding / replacing with streaming support but I'm curious what the the plan for that is before v16. (we are heavily dependent on recursive, async renderToString calls in https://github.com/ericclemmons/react-resolver, so curious how fiber will affect). - *nathanael*
+
 
 **A:** I can't comment much on this because we haven't really decided. Streaming rendering is definitely an area of interest. But once we make more progress, we'll likely post an issue or PR to GitHub :smiley:
 
 ----
 
-**Q:** What do you think about reactXP? Is facebook planning to comeup with something similar to reactxp? - *shubham*
+<a name="think-reactxp-facebook-planning-comeup" href="#think-reactxp-facebook-planning-comeup">#</a> **Q:** What do you think about reactXP? Is facebook planning to comeup with something similar to reactxp? - *shubham*
+
 
 **A:** I don't know much about React XP other than what I got from skimming through the docs a few days ago, but I think it's awesome that a company like Microsoft is investing so many resources into the React ecosystem. Projects like that (and stuff like React VR) make it clear that the scope of React goes way beyond building web apps. Exciting times!
 
 ----
 
-**Q:** Are function components still slower than class components and if so, will that change? - *pluma*
+<a name="function-components-still-slower-class" href="#function-components-still-slower-class">#</a> **Q:** Are function components still slower than class components and if so, will that change? - *pluma*
+
 
 **A:** I wouldn't say functional components are slower, but one disadvantage is that they don't have shouldComponentUpdate. It's likely we'll add something like this for Fiber (it's currently implemented in master; not sure if it will make it to the final release) because shouldComponentUpdate will be crucial for dealing with starvation in async Fiber. But if you're just comparing a non-SCU class component to a non-SCU functional component, the functional component is actually slightly more lightweight because there are fewer checks to perform. And there will be additional optimizations we can make in the future.
 
 ----
 
-**Q:** Fiber has a reputation for being very complex (rightfully), what do you think are the primary sources of complexity in Fiber? - *Aweary*
+<a name="fiber-reputation-complex-rightfully-think" href="#fiber-reputation-complex-rightfully-think">#</a> **Q:** Fiber has a reputation for being very complex (rightfully), what do you think are the primary sources of complexity in Fiber? - *Aweary*
+
 
 **A:** Much of the complexity of Fiber comes from the fact that we don't use the JavaScript stack. We re-implement it using our own data structures (called, tada, fibers). And there's lots of mutation and code that doesn't resemble the type of code you might be used to seeing in JavaScript. I think once you get used to it, the relatively low number of abstractions makes it easy to dive into a specific slice of the code and make changes. But there's definitely a learning curve. It also takes a while to figure out the best way to debug Fiber; infinite loop when are common. I want to update my React Fiber Architecture doc some time soon to make it easier to onboard new contributors. I've given in-person codebase overviews a few times and it reinforced for me just how much stuff there is to take in when you're first getting started.
 
 ----
 
-**Q:** What are the plans for mixins with class components? - *thesbros*
+<a name="plans-mixins-class-components-thesbros" href="#plans-mixins-class-components-thesbros">#</a> **Q:** What are the plans for mixins with class components? - *thesbros*
+
 
 **A:** We have no plans to add mixins to class components. Dan wrote a great post about the various problems with mixins that I'll refer you to: https://facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html
 
@@ -116,19 +129,22 @@ Higher-order components are one recommended alternative
 
 ----
 
-**Q:** Any chance for an expanded howto (or a cookbook even) for recompose? It's a pretty powerful stuff but hard to use just by reading API. - *rag*
+<a name="chance-expanded-howto-cookbook-even" href="#chance-expanded-howto-cookbook-even">#</a> **Q:** Any chance for an expanded howto (or a cookbook even) for recompose? It's a pretty powerful stuff but hard to use just by reading API. - *rag*
+
 
 **A:** Yes, proper documentation for Recompose has been on my todo list for over a year, haha. I'm slightly ashamed I haven't gotten around to it yet. But as I said in my answer above, I intend devote more time to Recompose once Fiber is a bit more settled. Until then I'm grateful to Ivan Starkov and CT Wu (don't know their handles on here) for keeping the ship afloat while I'm off doing React stuff
 
 ----
 
-**Q:** What happens if we start working on a low priority update, but are interuptted by a high priority update to the same component? - *FlayaN*
+<a name="happens-start-working-low-priority" href="#happens-start-working-low-priority">#</a> **Q:** What happens if we start working on a low priority update, but are interuptted by a high priority update to the same component? - *FlayaN*
+
 
 **A:** In that case, the low priority update will be aborted (but still in the queue). The high priority update will be processed and flushed to the screen. Then we'll go back to the low priority update, but it will be rebased on top of the high pri one. This is why the functional form of setState((state, props) => newState) is important, and why you shouldn't put side-effects in there (because it may be called more than once)
 
 ----
 
-**Q:** For those of us who are new, how does one contribute to React project(s)? - *Testiinnplayin*
+<a name="us-new-one-contribute-react" href="#us-new-one-contribute-react">#</a> **Q:** For those of us who are new, how does one contribute to React project(s)? - *Testiinnplayin*
+
 
 **A:** I would suggest subscribing to the GitHub issues tracker and keeping your eye out for oppotunities to contribute. We try to label issues that we think are good for beginners. Then submit a PR! Depending on the scope of the issue, it might be wise to reach out to someone on the team before starting on something new. Non-code contributions are also extremely helpful. We always love getting PRs to improve the documentation.
 
@@ -136,28 +152,33 @@ And of course staying involved here on Reactiflux is a great way to contribute t
 
 ----
 
-**Q:** how do you think we're going to style our react components two years from now? sass? (post)css? js objects? :stuck_out_tongue: - *Tobi*
+<a name="think-going-style-react-components" href="#think-going-style-react-components">#</a> **Q:** how do you think we're going to style our react components two years from now? sass? (post)css? js objects? :stuck_out_tongue: - *Tobi*
+
 
 **A:** Personally, I hope it's not with stylesheets. I think one of the CSS-in-JS techniques will eventually win out, but seems like we're still in the early stages. If we are writing stylesheets in a few years, at the very least I would hope that it's with something like CSS Modules. The ability to isolate styles to a specific component is such a huge win. Facebook has been doing that for years and I just don't know how we ever survived without it :smile:
 
 ----
 
-**Q:** what kind of browser APIs would you like to see in the future? requestIdleCallback is a clear win for Fiber since it works well with the scheduler. Are there any specific or general API(s) that you would like to see to make it easier for React to be fast/efficient/smart? - *Aweary*
+<a name="kind-browser-apis-would-like" href="#kind-browser-apis-would-like">#</a> **Q:** what kind of browser APIs would you like to see in the future? requestIdleCallback is a clear win for Fiber since it works well with the scheduler. Are there any specific or general API(s) that you would like to see to make it easier for React to be fast/efficient/smart? - *Aweary*
+
 
 **A:** Web Assembly
 
 ----
 
-**Q:** Do you think facebook can help with adding more integrated UWP support for react-native, so that more third parties support all 3 platforms on their libs? - *FlayaN*
+<a name="think-facebook-help-adding-integrated" href="#think-facebook-help-adding-integrated">#</a> **Q:** Do you think facebook can help with adding more integrated UWP support for react-native, so that more third parties support all 3 platforms on their libs? - *FlayaN*
+
 
 **A:** Forgive my naivete, but what is UWP? Is that Windows Phone?
 
-**Q:** Universal Windows Platform, for now poor microsoft is hosting their own version on a separate repo: https://github.com/Microsoft/react-native-*windows*
+<a name="universal-windows-platform-poor-microsoft" href="#universal-windows-platform-poor-microsoft">#</a> **Q:** Universal Windows Platform, for now poor microsoft is hosting their own version on a separate repo: https://github.com/Microsoft/react-native-*windows*
+
 
 **A:** I don't know if I'm the right person to answer that. But the way open source usually works at Facebook is that we only open source projects that we're actively using. So it's not that we hate Windows users, we just don't build Windows apps.
 
 ----
 
-**Q:** In regards to styling react components I noticed react appears to have a 1v1 mapping of styles to css, while React Native takes a couple of liberties since it doesn't interact with a browser. Does react fiber take any such liberties or have built in styling methods e.g. TouchableOpacity. Also speaking from my frustrations with flex (justified flex child when overflowed getting cut off) - *JOE*
+<a name="regards-styling-react-components-noticed" href="#regards-styling-react-components-noticed">#</a> **Q:** In regards to styling react components I noticed react appears to have a 1v1 mapping of styles to css, while React Native takes a couple of liberties since it doesn't interact with a browser. Does react fiber take any such liberties or have built in styling methods e.g. TouchableOpacity. Also speaking from my frustrations with flex (justified flex child when overflowed getting cut off) - *JOE*
+
 
 **A:** Styling in React 16's DOM renderer will be exactly the same as it is now. One thing we're interested in for the future is integrated layout. So instead of writing flexbox using CSS, you'd use a set of React components. But this is still in the "research" phase :smile:

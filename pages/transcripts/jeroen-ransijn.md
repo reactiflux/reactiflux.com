@@ -5,7 +5,8 @@ date: November 14 2018
 ## Design Systems Lead @ Segment, leading development of [Evergreen](https://evergreen.segment.com/).
 
 
-**Q:** Hi Jay, do you have any plans to roll out typescript support for evergreen, secondly is there any kind of timeline in place for theming? – Owenage
+<a name="hi-jay-plans-roll-typescript" href="#hi-jay-plans-roll-typescript">#</a> **Q:** Hi Jay, do you have any plans to roll out typescript support for evergreen, secondly is there any kind of timeline in place for theming? – Owenage
+
 
 **A:** Let's start with the TypeScript part since this will be a more recurring question I imagine. When we started building Evergreen I and the team had no TypeScript experience, and it was not something we were using anywhere in our app. Over time TypeScript/Flow, and lately TypeScript has really taken the lead within the community. 
 
@@ -25,7 +26,8 @@ Segment is dedicated making Evergreen an ongoing success in the community, and I
 
 ---
 
-**Q:** How does the component library/design system fits with legacy projects and priorities from the business perspective? – wilder
+<a name="component-librarydesign-system-fits-legacy" href="#component-librarydesign-system-fits-legacy">#</a> **Q:** How does the component library/design system fits with legacy projects and priorities from the business perspective? – wilder
+
 
 **A:** I am interpreting this as how well Evergreen works inside of  legacy projects from the community as well as possibly our own internal legacy projects. 
 
@@ -41,7 +43,8 @@ The second part of that question might also be how can we continue to prioritize
 
 ---
 
-**Q:** Hi Jay! There are many UI frameworks out there—Material, Ant, Bootstrap—why create a new one, and what sets Evergreen apart? – statico
+<a name="hi-jay-many-ui-frameworks" href="#hi-jay-many-ui-frameworks">#</a> **Q:** Hi Jay! There are many UI frameworks out there—Material, Ant, Bootstrap—why create a new one, and what sets Evergreen apart? – statico
+
 
 **A:** I have answered a similar question before [on Spectrum](https://spectrum.chat/thread/6f15ef43-5156-418f-9948-af2a3e583b86) and will post pretty much the same answer here.
 
@@ -57,7 +60,8 @@ Finally, Evergreen is very much a remix of all the great work out there of Ant D
 
 ---
 
-**Q:** Hello Jeroen, I am designing a very busy form and have a few readonly fields (Created by, date, Modified by, date) Does Evergreen provide any components that will work well for readonly portions of a form? – cpope117
+<a name="hello-jeroen-designing-busy-form" href="#hello-jeroen-designing-busy-form">#</a> **Q:** Hello Jeroen, I am designing a very busy form and have a few readonly fields (Created by, date, Modified by, date) Does Evergreen provide any components that will work well for readonly portions of a form? – cpope117
+
 
 **A:** I think you are asking if Evergreen contains form controls such as text inputs and possible some date controls that? In this context I am not sure what you mean with "readonly", but all our controls pass through native props such as the [readonly attribute](https://www.w3schools.com/tags/att_input_readonly.asp).
 
@@ -65,7 +69,8 @@ We export plenty of components for [form controls](https://evergreen.segment.com
 
 ---
 
-**Q:** What would you say to a young person like me trying to make it in the sea of programming  as a software engineer? – Rough_Sapphire
+<a name="would-say-young-person-like" href="#would-say-young-person-like">#</a> **Q:** What would you say to a young person like me trying to make it in the sea of programming  as a software engineer? – Rough_Sapphire
+
 
 **A:** Hey Rough, I don't know how young you are, or you experience, but I can give you some context on my own experience and maybe some insights.
 
@@ -81,7 +86,8 @@ I worked at an agency for about 3–4 years—2 years full-time
 
 ---
 
-**Q:** I am curious, how long did it take you to build the first version of Evergreen? It looks amazing. – MihailZverev
+<a name="curious-long-take-build-first" href="#curious-long-take-build-first">#</a> **Q:** I am curious, how long did it take you to build the first version of Evergreen? It looks amazing. – MihailZverev
+
 
 **A:** Thanks for the kind words Mihail! Evergreen started when I was the product design lead on our Personas product about 1–1.5 years back. You can read a more in-depth overview of that process [here](https://www.designsystems.com/stories/convince-your-company-its-ready-for-a-design-system/) and [here](https://jssr.design/personas).
 
@@ -91,7 +97,8 @@ That being said, internally I authored a library called `@segment/react-ui-libra
 
 ---
 
-**Q:** Do you think that "hijacking a project" can work on a non-opensource friendly company? – wilder
+<a name="think-hijacking-project-work-nonopensource" href="#think-hijacking-project-work-nonopensource">#</a> **Q:** Do you think that "hijacking a project" can work on a non-opensource friendly company? – wilder
+
 
 **A:** Wilder is referring to my blog post ["Hijack a project to convince your company it's ready for a design system"](https://www.designsystems.com/stories/convince-your-company-its-ready-for-a-design-system/).
 
@@ -101,7 +108,8 @@ And can this "hijacking" work for non open-source friendly companies? Yes, absol
 
 ---
 
-**Q:** Our team is currently trying to build a component library and we are using Storybook as means of prototyping and using it as a static website to sell the idea of a living documentation/reference. Which tools or strategies did you use to get people onboard besides "hijacking a project"? – wilder
+<a name="team-currently-trying-build-component" href="#team-currently-trying-build-component">#</a> **Q:** Our team is currently trying to build a component library and we are using Storybook as means of prototyping and using it as a static website to sell the idea of a living documentation/reference. Which tools or strategies did you use to get people onboard besides "hijacking a project"? – wilder
+
 
 **A:** Honestly, I can't say it any better than [Matt Bond who build design systems](https://medium.com/asana-design/the-key-lessons-i-learned-creating-a-popular-design-system-d078c817b4dd) at Atlassian and Dropbox.
 
@@ -127,13 +135,15 @@ As a more direct answer to your question: do whatever works. Use tools that get 
 
 ---
 
-**Q:**  Which React or Javascript patterns  were critical and important in building Evergreen and how did you learn them—resources you used etc? – MihailZverev
+<a name="react-javascript-patterns-critical-important" href="#react-javascript-patterns-critical-important">#</a> **Q:**  Which React or Javascript patterns  were critical and important in building Evergreen and how did you learn them—resources you used etc? – MihailZverev
+
 
 **A:** This is a great question, and I am coming back to a previous answer. The most important patterns and conventions come straight out of other design systems. That is by far the best way to do something, learn and remix other similar products or tools. They are literally facing the same problems as you are. A tutorial or course is only going to take you so far, and often is very surface level.
 
 ---
 
-**Q:** What do you think about Storybook, can you tell us how you use it, and how we could make it better for you and your team? – Norbert
+<a name="think-storybook-tell-us-use" href="#think-storybook-tell-us-use">#</a> **Q:** What do you think about Storybook, can you tell us how you use it, and how we could make it better for you and your team? – Norbert
+
 
 **A:** I have quite some opinions on this at this point! But first of all, Storybook is amazing, and is a great tool to start building design systems or UI tools. It really started a new way of thinking about building tools in isolation.
 
