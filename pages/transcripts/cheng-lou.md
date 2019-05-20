@@ -4,61 +4,71 @@ date: January 12, 2017
 ---
 ## Facebook Engineer | [Reason](https://facebook.github.io/reason/) & [Messenger.com](https://www.messenger.com/)
 
-**Q:** What is "Reason"? (I don't have Facebook) - CPT
+<a name="reason-dont-facebook-cpt" href="#reason-dont-facebook-cpt">#</a> **Q:** What is "Reason"? (I don't have Facebook) - CPT
+
 
 **A:** Reason is a layer of syntax & tooling on top of OCaml, a language Facebook uses actively. Jordan started the concept of Reason before React, in fact. We're taking it and using it as an actual front-end language (among other uses) because we think that after three and half years, the React experiment has succeeded and people are now ready for Reason, so we unshelved that project and are now actively iterating on it. https://github.com/facebook/reason
 
 ---
 
-**Q:** Is it okay to modify DOM directly without the changing state in React sometimes? - AbsoluteZero
+<a name="okay-modify-dom-directly-without" href="#okay-modify-dom-directly-without">#</a> **Q:** Is it okay to modify DOM directly without the changing state in React sometimes? - AbsoluteZero
+
 
 **A:** Yes, but only as an escape hatch. In the early days of React, when there wasn't such an ecosystem, we'd render once, get a hold of the root (through ref), and in componentDidMount, use some jQuery plugins. I think lifecycles and refs are the escape hatches that are hard to implement but ultimately rewarding enough; For React to interop with existing systems is a hard constraint at facebook, and these hooks allowed React to take off.
 
 ---
 
-**Q:** What do Facebook use OCaml/Reason for, and why use them over JS/haskell etc? - Limes
+<a name="facebook-use-ocamlreason-use-jshaskell" href="#facebook-use-ocamlreason-use-jshaskell">#</a> **Q:** What do Facebook use OCaml/Reason for, and why use them over JS/haskell etc? - Limes
+
 
 **A:** Facebook uses Reason for messenger.com and [censored]. Yes, that means what you think it means with all its implications. If you'd like to see more, come to the Discord reasonml channel =) Same answer, as to why over JS/haskell. You'd have to see it to believe it. I have a talk or two coming up this year that'll go into this topic in depth. It's hard to convey all the nuances over q&a answers for now, sorry! But we're keeping our mouth relatively shut to iterate and polish Reason more. Until then, have faith in the person who delivered you React (Jordan)
 
 ---
 
-**Q:** Maybe unrelated, are there thoughts about making messenger.com a desktop app? - leblaaanc
+<a name="maybe-unrelated-thoughts-making-messengercom" href="#maybe-unrelated-thoughts-making-messengercom">#</a> **Q:** Maybe unrelated, are there thoughts about making messenger.com a desktop app? - leblaaanc
+
 
 **A:** There are currently web page wrappers for messenger.com, but they might or might not have some broken layout. We don't have plans to officially maintain a wrapper ourselves, for now. I personally ping the messenger.com tab.
 
 ---
 
-**Q:** Would you still use react-tween-state, or is it outdated because of the use of mixins? - ChiefORZ
+<a name="would-still-use-reacttweenstate-outdated" href="#would-still-use-reacttweenstate-outdated">#</a> **Q:** Would you still use react-tween-state, or is it outdated because of the use of mixins? - ChiefORZ
+
 
 **A:** I don't personally use react-tween-state. Although apparently some others still do. JavaScript mixins (especially infused with React-specific logic) are a bit troublesome to deal with indeed, so I'd suggest you to avoid them as much as you can.
 
 ---
 
-**Q:** When do you think mixins will be deprecated in the React ecosystem? - ChiefORZ
+<a name="think-mixins-deprecated-react-ecosystem" href="#think-mixins-deprecated-react-ecosystem">#</a> **Q:** When do you think mixins will be deprecated in the React ecosystem? - ChiefORZ
+
 
 **A:** I don't know the time line but I don't think they will ever be "killed", as in, "your code will now error". Once/if createClass is pulled out, mixins will likely stay in that as well. We care about existing code. While I'm on topic: I've installed a random React example Jordan made three years ago, and it still works today.
 
 ---
 
-**Q:** Should dumb components have methods? Doesn't it recreate a method each time rendering occurs? - stunaz
+<a name="dumb-components-methods-doesnt-recreate" href="#dumb-components-methods-doesnt-recreate">#</a> **Q:** Should dumb components have methods? Doesn't it recreate a method each time rendering occurs? - stunaz
+
 
 **A:** I think dumb & smart components are a tiny bit overhyped. I've personally lost more time helping people understanding this than letting people just write the components and move on to the next one ¯\_(ツ)_/¯. So my vague answer is: they're not your bottleneck; fire up the inspector and check where your perf costs are!
 
 ---
 
-**Q:** Are there plans/ideas for React/Reason integration beyond BuckleScript? - Kjg531
+<a name="plansideas-reactreason-integration-beyond-bucklescript" href="#plansideas-reactreason-integration-beyond-bucklescript">#</a> **Q:** Are there plans/ideas for React/Reason integration beyond BuckleScript? - Kjg531
+
 
 **A:** Come into the reasonml channel. https://discord.gg/reasonml
 
 ---
 
-**Q:** When Reason comes out is it safe to say Reason Native will as well? - Alon
+<a name="reason-comes-safe-say-reason" href="#reason-comes-safe-say-reason">#</a> **Q:** When Reason comes out is it safe to say Reason Native will as well? - Alon
+
 
 **A:** lol... come into the reasonml channel. https://discord.gg/reasonml
 
 ---
 
-**Q:** What Redux middlewares are preferred for which use cases at facebook internally? (caveat: I have no idea to what extent Redux is used at fb) - granmoe
+<a name="redux-middlewares-preferred-use-cases" href="#redux-middlewares-preferred-use-cases">#</a> **Q:** What Redux middlewares are preferred for which use cases at facebook internally? (caveat: I have no idea to what extent Redux is used at fb) - granmoe
+
 
 **A:** we don't use Redux on messenger.com
 
@@ -66,7 +76,8 @@ date: January 12, 2017
 
 ---
 
-**Q:** Do you recommend ES6 classes or React.createClass or stateless functions? Many seem to be against ES6 classes. What do you think about it? - AbsoluteZero
+<a name="recommend-es6-classes-reactcreateclass-stateless" href="#recommend-es6-classes-reactcreateclass-stateless">#</a> **Q:** Do you recommend ES6 classes or React.createClass or stateless functions? Many seem to be against ES6 classes. What do you think about it? - AbsoluteZero
+
 
 **A:** In the spirit of helping React split createClass into a standalone module (aka "deprecating"), try using es6 classes. I'm personally ambivalent. As for stateless functions: I feel the conversion to a stateful component from a stateless function is slightly much. They do look elegant though, so it's up to you 😃
 
@@ -74,7 +85,8 @@ My next two talks (React-London and React-Europe) will tackle these in some way.
 
 ---
 
-**Q:** Say you're a large tech company (hundreds of 'products'), but you're not Facebook and don't have a monorepo. How do you go about sharing your React components effectively, independent of state management/frameworks? - Limes
+<a name="say-youre-large-tech-company" href="#say-youre-large-tech-company">#</a> **Q:** Say you're a large tech company (hundreds of 'products'), but you're not Facebook and don't have a monorepo. How do you go about sharing your React components effectively, independent of state management/frameworks? - Limes
+
 
 **A:** I think you should start with your end goal, at the end-end of "sharing your components effectively". Realistically (and history has proven so), your component, if they're valuable enough to be reshared for years, will always have at least a tiny bit of library-specific logic, in such way that you can't just drop it into a brand new library/framework when the time comes. So I'd advise you, in the typical fashion of my last talk on abstractions, to go to the most concrete level and optimize for what you're currently writing. If you wanna move out of React, copy paste and add/remove the bits. You'd spend half an hour porting your component over rather than spending days wondering if there's an abstraction over all front-end frameworks.
 
@@ -82,19 +94,22 @@ Give yourself such thought experiment: can you execute as well as bootstrap & fo
 
 ---
 
-**Q:** Do you use anything in particular for managing state instead of Redux? Relay? - Trappar
+<a name="use-anything-particular-managing-state" href="#use-anything-particular-managing-state">#</a> **Q:** Do you use anything in particular for managing state instead of Redux? Relay? - Trappar
+
 
 **A:** messenger has a bit of Relay but not much. Currently in Reason we haven't had the need for extra state management tricks (we have some secret recipes... again, more on that in March since I don't want to sell you some under-polished solutions that ends up churning you more than you'd gain from just using straight props, or redux, or whatever).
 
 ---
 
-**Q:** What are you most looking forward to in Front End / JS in t he next few years? - CPT
+<a name="looking-forward-front-end-js" href="#looking-forward-front-end-js">#</a> **Q:** What are you most looking forward to in Front End / JS in t he next few years? - CPT
+
 
 **A:** I'm biased, but I'm looking forward to Reason and there are a bajillion things to talk about for another time. Though I work on Reason because I thought it's gonna be the next thing. But I'd also like to look at current things! A stable ecosystem, stable tooling, and people building more great end-products using React rather than more development tools using React.
 
 ---
 
-**Q:** What's the next big thing in Facebook related to front-end development? - antonsekatski
+<a name="whats-next-big-thing-facebook" href="#whats-next-big-thing-facebook">#</a> **Q:** What's the next big thing in Facebook related to front-end development? - antonsekatski
+
 
 **A:** See my above answer. I hope it's Reason! And by all means, if you check [censored] you'd see why. The first time I installed [censored] I was pretty much blown away 😛
 
@@ -120,13 +135,15 @@ CPT: For more intensive state needs I've fallen head over heels for Relay
 
 ---
 
-**Q:** Any time estimate for relay 2? - proprobe
+<a name="time-estimate-relay-2-proprobe" href="#time-estimate-relay-2-proprobe">#</a> **Q:** Any time estimate for relay 2? - proprobe
+
 
 **A:** No idea; you'd have to ask the Relay team. They're still working on it.
 
 ---
 
-**Q:** how would you suggest someone get involved in open source if they're not quite confident enough to contribute code? As a self taught developer as way of former poker pro, are there ways to help without getting in the way? - Kjg531
+<a name="would-suggest-someone-get-involved" href="#would-suggest-someone-get-involved">#</a> **Q:** how would you suggest someone get involved in open source if they're not quite confident enough to contribute code? As a self taught developer as way of former poker pro, are there ways to help without getting in the way? - Kjg531
+
 
 **A:** For once, I do feel qualified to answer this! I'll give you another piece of the puzzle in my next talk (or the next next, depending on what I order I prefer). But first, start with the documentations. A project's docs is one of the few places where you have more potentially more expertise than the project maintainers; they're writing the docs for you, yet you know best what your pain points are. Docs are also low-hanging fruits the maintainers sometimes don't clear out.
 
@@ -136,19 +153,22 @@ Find a project you need (it might not be React), fix its docs, fix its fringe fe
 
 ---
 
-**Q:** What do you think about functional programming, its state now and in future? - AbsoluteZero
+<a name="think-functional-programming-state-future" href="#think-functional-programming-state-future">#</a> **Q:** What do you think about functional programming, its state now and in future? - AbsoluteZero
+
 
 **A:** I think it's great, but I also think the current atmosphere is a bit like e.g. in math where a student insists that his/her way of calculating the area of a circle is the correct one. I personally am afraid of overhyping things and under-delivering. On that point: I've once told someone I was betting my front-end career on React (got me laughed at lol). Right now I'm betting it on Reason and it's still getting me laughed at. Btw, the "O" in "OCaml" stands for "Object".
 
 ---
 
-**Q:** Is writing React components in Reason a thing? - aitherios
+<a name="writing-react-components-reason-thing" href="#writing-react-components-reason-thing">#</a> **Q:** Is writing React components in Reason a thing? - aitherios
+
 
 **A:** Come to the reasonml channel (I see I'm getting pinged there already! I'll get to it).
 
 ---
 
-**Q:** Could you tell us what [censored] is by typing it a different way? - CPT
+<a name="could-tell-us-censored-typing" href="#could-tell-us-censored-typing">#</a> **Q:** Could you tell us what [censored] is by typing it a different way? - CPT
+
 
 **A:** Like this? `<censored>`
 
@@ -156,25 +176,29 @@ Go to reasonml to see the uncensored version.
 
 ---
 
-**Q:** Functional React component with lifecycle methods? - aakashsigdel
+<a name="functional-react-component-lifecycle-methods" href="#functional-react-component-lifecycle-methods">#</a> **Q:** Functional React component with lifecycle methods? - aakashsigdel
+
 
 **A:** For ReactJS or `<censored>`? I don't know for the former one; You'd have to ask the React team, which I'm no longer officially part of. But hey, your app will look the same even with functional React components with lifecycles right? So I woudn't be too worried and you shouldn't either 😃
 
 ---
 
-**Q:** Are stateless functions currently slower than classes and if so, will it ever be optimized to be as fast as classes? - AbsoluteZero
+<a name="stateless-functions-currently-slower-classes" href="#stateless-functions-currently-slower-classes">#</a> **Q:** Are stateless functions currently slower than classes and if so, will it ever be optimized to be as fast as classes? - AbsoluteZero
+
 
 **A:** I don't know, sorry. Vague answer: depends on the context. I don't know how fast native JS classes are compared to babel-transformed JS, and I no longer know the optimizations of stateless functions. Seems like they shouldn't be slower though.
 
 ---
 
-**Q:** Piña Coladas  OR  Getting caught in the rain? - CPT
+<a name="pia-coladas-getting-caught-rain" href="#pia-coladas-getting-caught-rain">#</a> **Q:** Piña Coladas  OR  Getting caught in the rain? - CPT
+
 
 **A:** I've lived in Canada for half of my life. Rain is nothing, snow is nothing. Also I don't drink much; I don't have a balmer peak when I drink and code.
 
 ---
 
-**Q:** What made you chose React over Angular or other popular frameworks? What's the thing that made you say "this, this is what I love about React" - BTM
+<a name="made-chose-react-angular-popular" href="#made-chose-react-angular-popular">#</a> **Q:** What made you chose React over Angular or other popular frameworks? What's the thing that made you say "this, this is what I love about React" - BTM
+
 
 **A:** Aaaaah... It's weird but I've actually never had the "EWWWW HTML in my JS?!?! Lemme show you exactly why this is wrong through my extended programming knowledge". I've only noticed people didn't like it in retrospect. JSX was actually forcefully made by jordan after he got the internal feedback that people didn't like looking at trees of regular function calls too much (go figure). The open-source Reaction was a real surprise.
 
@@ -184,7 +208,8 @@ Web front-end is hard. Some people's goal is to "defeat native". If such is your
 
 ---
 
-**Q:** Is there an IDE for Reason? - stunaz
+<a name="ide-reason-stunaz" href="#ide-reason-stunaz">#</a> **Q:** Is there an IDE for Reason? - stunaz
+
 
 **A:** Reason comes with Atom's Nuclide. We have integration for VSCode (reaaaally legit, check it out), Vim, Emacs, and Sublime Text.
 
@@ -192,7 +217,8 @@ Your question makes me wanna go into a philosophical discussion however. But I'l
 
 ---
 
-**Q:** Why did you bet your frontend career on React before? Why on ocaml/reasonml now? (disclaimer: I left my previous team after being put on a non-React project for 4 weeks. I left after one week. I understand) 🙂 - iamdustan
+<a name="bet-frontend-career-react-ocamlreasonml" href="#bet-frontend-career-react-ocamlreasonml">#</a> **Q:** Why did you bet your frontend career on React before? Why on ocaml/reasonml now? (disclaimer: I left my previous team after being put on a non-React project for 4 weeks. I left after one week. I understand) 🙂 - iamdustan
+
 
 **A:** I think I was a bit hardcore and went overboard lol. I was also a bit salty that after promoting React to some famous companies they tell me "nah, the ship has sailed". Not important though.
 

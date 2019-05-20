@@ -12,7 +12,8 @@ Also, @gaearon sits across from me. We stare at each other a lot and joke about 
 
 ---
 
-**Q:** Any chance that React Web and React Native will be merged to  one project?
+<a name="chance-react-web-react-native" href="#chance-react-web-react-native">#</a> **Q:** Any chance that React Web and React Native will be merged to  one project?
+
 
 **A:** Whether React Native and React will eventually be merged, I don't think that makes sense. There is react and react-dom and react-native. The latter depend on the former. It might make more sense for people to consider react something like react-component or react-core. It allows you to define components and render them to a pluggable target (dom, native, vr, your programmable toilet seat, …).
 
@@ -20,7 +21,8 @@ However, if you think about react-primitives by @lelandrichardson or react-nativ
 
 ---
 
-**Q:** With NPM 5 bringing improved download speeds and a better lockfile, what would you say is the main reason for choosing one over the other?
+<a name="npm-5-bringing-improved-download" href="#npm-5-bringing-improved-download">#</a> **Q:** With NPM 5 bringing improved download speeds and a better lockfile, what would you say is the main reason for choosing one over the other?
+
 
 **A:** I think it's awesome to see so many improvements in the npm package manager. I don't want to be prescriptive about why people should use one tool over the other. Generally, I think it's way more successful when people make these decisions themselves by weighting the trade-offs for their own (business) use-case themselves.
 
@@ -32,7 +34,8 @@ Finally, to explain why we use Yarn at Facebook: it works incredibly well for ou
 
 ----
 
-**Q:** What are the biggest improvements in JS tooling you think the ecosystem still needs? What tools do you dream about existing?
+<a name="biggest-improvements-js-tooling-think" href="#biggest-improvements-js-tooling-think">#</a> **Q:** What are the biggest improvements in JS tooling you think the ecosystem still needs? What tools do you dream about existing?
+
 
 **A:** I think one thing the ecosystem really needs is empathy. There is so much negativity and people believe there is tons of competition going on, when in reality we are just building tools to serve our own use-cases. The philosophy around open source at Facebook, at least on the team I work with, is to build awesome things that work well for Facebook engineers. If they happen to work well for the open source community, then that's great, and we'll open source as much as we can, but we don't necessarily go out of our way to support external use-cases.
 
@@ -42,19 +45,22 @@ So this was more of a meta-answer of what's bad and what is necessary for succes
 
 ----
 
-**Q:** Why are we mocking almost everything in Jest, is there any way or pattern to follow, In react-native I often see this problem?
+<a name="mocking-almost-everything-jest-way" href="#mocking-almost-everything-jest-way">#</a> **Q:** Why are we mocking almost everything in Jest, is there any way or pattern to follow, In react-native I often see this problem?
+
 
 **A:** I'm sorry, I don't fully understand the question there. With Jest, mocking is entirely up to you: at what layer and what module boundaries you want to mock things, I recommend you to decide on your own based on your intuition. If you spend enough time writing tests and mocking modules, you'll eventually get really good at it and realize what kind of tests are effective for you and your organization.
 
 ----
 
-**Q:** In environment of react-native, many modules (npm) should be mocking so that it can work, is there any pattern to follow with the subject of mock modules?
+<a name="environment-reactnative-many-modules-npm" href="#environment-reactnative-many-modules-npm">#</a> **Q:** In environment of react-native, many modules (npm) should be mocking so that it can work, is there any pattern to follow with the subject of mock modules?
+
 
 **A:** I believe I answered that question. As said, it's mostly up to you and highly dependent on the project you work on and what modules you pull in. There is no generic answer on how much mocking you should or shouldn't do :)
 
 ----
 
-**Q:** I am trying to follow microservices approach for individuals modules: Suppose I have basic skeleton of app which includes header, footer & content area. And in content area multiple different modules could take place irrespective on what tech stack it is built upon.
+<a name="trying-follow-microservices-approach-individuals" href="#trying-follow-microservices-approach-individuals">#</a> **Q:** I am trying to follow microservices approach for individuals modules: Suppose I have basic skeleton of app which includes header, footer & content area. And in content area multiple different modules could take place irrespective on what tech stack it is built upon.
+
 
 Is there any way to achieve the same?
 
@@ -62,7 +68,8 @@ Is there any way to achieve the same?
 
 ----
 
-**Q:** We started using Haul instead of Metro in my team.  We're using Typescript, and Metro doesn't appear to support pluggable loaders. Can we expect that kind of support in the future?  What timeframe?
+<a name="started-using-haul-instead-metro" href="#started-using-haul-instead-metro">#</a> **Q:** We started using Haul instead of Metro in my team.  We're using Typescript, and Metro doesn't appear to support pluggable loaders. Can we expect that kind of support in the future?  What timeframe?
+
 
 **A:** Metro Bundler should absolutely support your use-case. In fact, my friend Orta contributed this change to Metro Bundler. He is somehow hiding from this Q&A for some reason but I recommend you to ping him here: https://twitter.com/orta
 
@@ -70,7 +77,8 @@ Metro Bundler actually supports customization, although in a non-obvious way: yo
 
 ----
 
-**Q:** One of the sore points I’ve had with React Native is managing nested navigation structures and deep linking across different navigation stacks. I’ve been using https://reactnavigation.org/docs but will run into scenarios where I need to think about the structure in order to pass my props around appropriately. Is this something you’ve experimented with and does it even relate to JS bundling? Do you have any tips or insight into how nested navigation plays into performance?
+<a name="one-sore-points-ive-react" href="#one-sore-points-ive-react">#</a> **Q:** One of the sore points I’ve had with React Native is managing nested navigation structures and deep linking across different navigation stacks. I’ve been using https://reactnavigation.org/docs but will run into scenarios where I need to think about the structure in order to pass my props around appropriately. Is this something you’ve experimented with and does it even relate to JS bundling? Do you have any tips or insight into how nested navigation plays into performance?
+
 
 **A:** Navigation is certainly an interesting problem that I didn't have enough time to investigate. My day to day job now is more about people than code, so I'm a little bit behind. However, I do know that it's something that's on top of people's mind and that there is generally no accepted way to do it, which just leads me to believe that it's very very hard and the right solution still has to be found – I encourage you to keep investigating ;)
 
@@ -78,7 +86,8 @@ From a bundling perspective, this is obviously interesting. On the web, we ship 
 
 ----
 
-**Q:** A month after open-sourcing Metro bundler, what are the benefits, pitfalls and plans for future?
+<a name="month-opensourcing-metro-bundler-benefits" href="#month-opensourcing-metro-bundler-benefits">#</a> **Q:** A month after open-sourcing Metro bundler, what are the benefits, pitfalls and plans for future?
+
 
 **A:** That's certainly interesting, thanks for asking. I really love this project and splitting it out of react-native was more about giving the project an identify besides react-native than about anything else. It was hard for our team to talk about what we do: "I work on react-native.. packager" is long and confusing to people. We also couldn't keep up with pull requests or issues on the react-native repo: it's just such a gigantic repo and only a small part owned by the JS Tools team in London that we simply couldn't keep up with community feedback. We'd really like to support the React Native community better and now we have a dedicated place to do so. If you think Metro Bundler could be better, please send us a PR and we'll review it.
 
@@ -86,25 +95,29 @@ Regarding it's future, we are currently rolling out a new integration with Buck 
 
 ----
 
-**Q:** Can we build a complex feed with FlatList like Instagram? Any recommendations or example? I need to build a feed that have many GIFs and images and videos later...
+<a name="build-complex-feed-flatlist-like" href="#build-complex-feed-flatlist-like">#</a> **Q:** Can we build a complex feed with FlatList like Instagram? Any recommendations or example? I need to build a feed that have many GIFs and images and videos later...
+
 
 **A:** I know FlatList is pretty new still and I haven't gotten a chance to use them, but I do believe it is going to replace ListView. I encourage you to try building a feed, see how it goes, and report back to the react-native team with your success story or the blockers on why you couldn't make it work :)
 
 ----
 
-**Q:** React-VR's - just to know when it will be more updated. It seems like its been forgotten
+<a name="reactvrs-know-updated-seems-like" href="#reactvrs-know-updated-seems-like">#</a> **Q:** React-VR's - just to know when it will be more updated. It seems like its been forgotten
+
 
 **A:** I haven't been up-to-date on the project, but last I heard the team is working on it and adopting it within Oculus. It's a super exciting project!
 
 ----
 
-**Q:** How much freedom to chose projects to work on do you guys have at FB? Are you guys tied to specific project or is jumping to another one an option?
+<a name="much-freedom-chose-projects-work" href="#much-freedom-chose-projects-work">#</a> **Q:** How much freedom to chose projects to work on do you guys have at FB? Are you guys tied to specific project or is jumping to another one an option?
+
 
 **A:** Great question! We actually have a lot of freedom at Facebook. Engineers can essentially work on whatever they want, granted that it has potential to impact the business. If an engineer comes up with a sound idea, chances are they'll be able to work on it for a while until it fails or succeeds. The upside is that people are much more motivated to deliver if they pursue their own ideas, which usually means better results. Now, of course there are some limits: if you repeatedly go after things that fail, that's probably not great. And teams always have a mission, so doing work on certain projects should probably stay within that team mission. That being said, if you are successful at Facebook, it's pretty easy to switch teams. We don't do interviews when you switch from one team to another and we have a program called "hackamonths" that engineers are actively encouraged to participate in: basically you can join another team for a month, work on a project that excites you and then at the end you can make a decision whether you want to join the new team or stick with your old team. This is a great way to make a career change or get some valuable experience on what it's like to work on another team :)
 
 ----
 
-**Q:** I'm curious, for using React Native within an existing native mobile project, what approaches do you use to let the native and JS teams continue to work in parallel and still easily integrate their code / build / test / etc.  Are there tools you like to use to do that? Are there patterns you follow that you have found useful?
+<a name="im-curious-using-react-native" href="#im-curious-using-react-native">#</a> **Q:** I'm curious, for using React Native within an existing native mobile project, what approaches do you use to let the native and JS teams continue to work in parallel and still easily integrate their code / build / test / etc.  Are there tools you like to use to do that? Are there patterns you follow that you have found useful?
+
 
 **A:** That question is hard for me to answer, because I don't know what the teams work on. Quip recently published a blog post about how they don't have platform specific teams, which I think works really well with adopting react-native, and incidentally is also the model for teams we have at Facebook: https://quip.com/blog/quip-engineering-team-structure
 
@@ -114,17 +127,20 @@ The idea is that you have teams structured around products like news feed, group
 
 **A:** I would like to ask, earlier this year there was a question on the github repository for Jest about allowing customized names for the mocks folder. You then responded saying that for a purely subjective reason you were not going to work on that. Have your opinions changed since then?
 
-**Q:** Hah, very pointed question. I do recall that conversation and I haven't changed my mind on it. If the community can send a fully tested PR that just works, I'm happy to merge it, but personally there is no reason for me to invest time into making this customizable. I know people feel really strongly about their folder structure, and I'm trying to be empathetic, but at the end of the day it's not the reason why your business fails or succeeds. I'm generally not interested in bikeshedding over this stuff. I also believe in the value in adopting the same standards across projects. For example with Jest's Multi Project Runner ( http://facebook.github.io/jest/blog/2017/05/06/jest-20-delightful-testing-multi-project-runner.html ) you can run one instance of Jest across multiple projects. If you merge them all into a single repo and they have wildly different configurations, that will work, but it will be much more confusing in the end. Similarly, when you know Jest and you join a company and they use a completely different set of configuration, it'll take time to get used to it. That's all time spent doing basically nothing.
+<a name="hah-pointed-question-recall-conversation" href="#hah-pointed-question-recall-conversation">#</a> **Q:** Hah, very pointed question. I do recall that conversation and I haven't changed my mind on it. If the community can send a fully tested PR that just works, I'm happy to merge it, but personally there is no reason for me to invest time into making this customizable. I know people feel really strongly about their folder structure, and I'm trying to be empathetic, but at the end of the day it's not the reason why your business fails or succeeds. I'm generally not interested in bikeshedding over this stuff. I also believe in the value in adopting the same standards across projects. For example with Jest's Multi Project Runner ( http://facebook.github.io/jest/blog/2017/05/06/jest-20-delightful-testing-multi-project-runner.html ) you can run one instance of Jest across multiple projects. If you merge them all into a single repo and they have wildly different configurations, that will work, but it will be much more confusing in the end. Similarly, when you know Jest and you join a company and they use a completely different set of configuration, it'll take time to get used to it. That's all time spent doing basically nothing.
+
 
 ----
 
-**Q:** Is it an eventual goal for react-test-renderer to provide functionality similiar to enzyme?
+<a name="eventual-goal-reacttestrenderer-provide-functionality" href="#eventual-goal-reacttestrenderer-provide-functionality">#</a> **Q:** Is it an eventual goal for react-test-renderer to provide functionality similiar to enzyme?
+
 
 **A:** react-test-render should absolutely have more features and we have an experimental version of it that we use at Facebook, but I cannot comment on the plans of the React team and don't want to make assumptions about their roadmap. However, we do need a way to control React Native components in tests, whether it is for snapshot tests or not. I recommend reaching out to Alex ( https://twitter.com/alex_frantic?lang=en ) and update you on the state of the react-test-renderer. He's been playing around with an extended version for a while.
 
 ----
 
-**Q:** Earlier you had said that the tools you've built were to serve your own use cases, but a ton of these tools have been adopted by the community.  So, now you have bugs, feature requests, etc. flowing in from the outside and you have to spend time on these.  Do you feel like this is going to reach critical mass as the number of FB's open source tools grows?  Do you have a strategy for managing this?  A good example is Relay, as Relay is a beast and hasn't gotten big traction yet.
+<a name="earlier-said-tools-youve-built" href="#earlier-said-tools-youve-built">#</a> **Q:** Earlier you had said that the tools you've built were to serve your own use cases, but a ton of these tools have been adopted by the community.  So, now you have bugs, feature requests, etc. flowing in from the outside and you have to spend time on these.  Do you feel like this is going to reach critical mass as the number of FB's open source tools grows?  Do you have a strategy for managing this?  A good example is Relay, as Relay is a beast and hasn't gotten big traction yet.
+
 
 **A:** Oh yeah, man, that's absolutely a problem. Especially with people that feel entitled that the open source project you are giving away for free has to be maintained day and night and that you are responsible for fixing issues they run into, not them.
 
@@ -134,7 +150,8 @@ Generally though, even if there is a large number of issues, there is nothing th
 
 ----
 
-**Q:** How fun is working at Facebook? Is it work-hard-play-hard or is it more laid back?
+<a name="fun-working-facebook-workhardplayhard-laid" href="#fun-working-facebook-workhardplayhard-laid">#</a> **Q:** How fun is working at Facebook? Is it work-hard-play-hard or is it more laid back?
+
 
 **A:** Oh man, Facebook is a ton of fun. I started an internship here more than six years ago and never left. It's pretty crazy sometimes to think about how long that's been – back then Facebook didn't really have an open source program and our JavaScript stack was very different in the times before React. I remember back then, in my first week, I realized that the unit test framework wasn't great so as an intern I ended up rewriting it. It seems quite logical that through Relay and codemods I eventually landed back on JavaScript testing and now to work on JavaScript tools.
 
@@ -142,13 +159,15 @@ In terms of whether it's tough or laid back: that's entirely up to you. There ar
 
 ----
 
-**Q:** Fiber is almost ready (http://isfiberreadyyet.com/), only 4 warnings left to fix. Seems, it's almost ready. When it will be fully finished?
+<a name="fiber-almost-ready-httpisfiberreadyyetcom-4" href="#fiber-almost-ready-httpisfiberreadyyetcom-4">#</a> **Q:** Fiber is almost ready (http://isfiberreadyyet.com/), only 4 warnings left to fix. Seems, it's almost ready. When it will be fully finished?
+
 
 **A:** To answer when Fiber is released, and to tie it back into an answer I gave earlier, it's probably sometime between March 13 2019 and September 18 2037. I don't know anything more than that.
 
 ----
 
-**Q:** How you are building libraries in FB to be common between different projects?
+<a name="building-libraries-fb-common-different" href="#building-libraries-fb-common-different">#</a> **Q:** How you are building libraries in FB to be common between different projects?
+
 
 **A:** At Facebook we have a giganatic monorepo with all the code in it. Everything is always on master. We also don't have strict ownership of components/frameworks/library: anybody can make any change to any code, required the code is reviewed by another employee at Facebook. This leads to code sharing happening naturally!
 
@@ -156,13 +175,15 @@ We also use our own custom module resolution system in JavaScript: instead of re
 
 ----
 
-**Q:** You take a mono repo approach for the facebook app. given the choice, would you design it like that again? do you think it has an effect on how effectively you can onboard new developers?
+<a name="take-mono-repo-approach-facebook" href="#take-mono-repo-approach-facebook">#</a> **Q:** You take a mono repo approach for the facebook app. given the choice, would you design it like that again? do you think it has an effect on how effectively you can onboard new developers?
+
 
 **A:** Oh, great question! I think if I were to leave Facebook and start over, it's probably the approach I would take. I even chose this for Jest: it now consists of about 30 packages (see https://github.com/facebook/jest ). As far as onboarding is concerned, if you have effective tools to navigate the codebase (like.. a fast version of grep), it's generally much easier to find what you are looking for in a monorepo rather than cloning 30 distinct repos with different tech stacks. Also, with monorepos you end up setting everything up only once rather than for every project. For example, Jest used to be really hard to set up. It sucked and we had no idea about it because at Facebook nobody ever has to go in and set up a tool from scratch. Thankfully we realized this and made Jest a zero-configuration platform. This was a totally shameless plug for Jest and I don't feel bad about it. Next question!
 
 ----
 
-**Q:** I am working at a local startup and they are doing okay now! Although they are doing okay, I don't think they can afford to have a Senior developer. The problem is that our code right is not being TDD'd BDD'd, reviewed, it's inconsistent and I don't know how this is going to effect me. I mean, I am only 20, with under a year of experience, but sometimes it's like the blind leading the blind. How important is it to have a senior mentor/developer on a team?
+<a name="working-local-startup-okay-although" href="#working-local-startup-okay-although">#</a> **Q:** I am working at a local startup and they are doing okay now! Although they are doing okay, I don't think they can afford to have a Senior developer. The problem is that our code right is not being TDD'd BDD'd, reviewed, it's inconsistent and I don't know how this is going to effect me. I mean, I am only 20, with under a year of experience, but sometimes it's like the blind leading the blind. How important is it to have a senior mentor/developer on a team?
+
 
 What would you do in my case? Keep programming to the best of my abilities get Stackover/Reactiflux to help until they can afford a senior OR...?
 
@@ -170,7 +191,8 @@ What would you do in my case? Keep programming to the best of my abilities get S
 
 ----
 
-**Q:** How do you stay on top of your game? What resources or learning techniquest work for you best, and you'd recommend?
+<a name="stay-top-game-resources-learning" href="#stay-top-game-resources-learning">#</a> **Q:** How do you stay on top of your game? What resources or learning techniquest work for you best, and you'd recommend?
+
 
 **A:** Oh, wow, it's certainly hard to stay up to date. For one, I do a lot of interviewing for Facebook, which actually gives me quite a broad overview of the world and companies out there, so that works well. Technically, there are a number of things: I try to be active in code reviews (probably a bit too active if you ask the team I work with ;) ) so I have enough technical context when I discuss things with the team and other teams. Personally, I've experienced nothing worse than a manager that cannot discuss things on a technical level, so I'm worried I'll end up like that one day, which pushes me even more to stay up to date.
 
@@ -180,7 +202,8 @@ Related to coding, I try to write code when I get free time. For example, Jest's
 
 ----
 
-**Q:** What are some things you wished someone told you when you came on as an Engineering Manager?
+<a name="things-wished-someone-told-came" href="#things-wished-someone-told-came">#</a> **Q:** What are some things you wished someone told you when you came on as an Engineering Manager?
+
 
 **A:** What do I wish somebody told me when switching to engineering manager? Oh man, so much! I was quite naive to be honest, and thought this job is super easy, probably because some of my previous managers made it look so easy. However, it turned out to be harder than I ever imagined. There is so much shit to deal with every day that sometimes it feels like you are drowning.
 
@@ -190,6 +213,7 @@ Finally, I think one thing that took me a long time to realize is that engineeri
 
 ----
 
-**Q:** Pick a css-in-js solution - GO!
+<a name="pick-cssinjs-solution-go" href="#pick-cssinjs-solution-go">#</a> **Q:** Pick a css-in-js solution - GO!
+
 
 **A:** As much as css-in-js is concerned, I recommend to just listen to Sunil Pai. I think he's seen the truth.

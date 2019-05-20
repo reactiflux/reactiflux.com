@@ -4,13 +4,15 @@ date: January 26, 2017
 ---
 ## Facebook Engineer | Creator of [React.js](https://facebook.github.io/react/) & [Reason](https://facebook.github.io/reason/)
 
-**Q:** What are your thoughts on Elm? - granmoe
+<a name="thoughts-elm-granmoe" href="#thoughts-elm-granmoe">#</a> **Q:** What are your thoughts on Elm? - granmoe
+
 
 **A:** I like what I've seen about Elm, and I often recommend it to people looking for a really great developer experience that opens their minds to functional programming. I don't have any experience with Elm's abstractions for building UIs/apps though. I hope that projects like ReactNative can greatly shorten the amount of time that is required for other languages like Elm to support mobile application development.
 
 ---
 
-**Q:** Are there plans for bringing React.js and React Native closer to each other? (i.e. for sharing components between mobile and web) - juhasuni
+<a name="plans-bringing-reactjs-react-native" href="#plans-bringing-reactjs-react-native">#</a> **Q:** Are there plans for bringing React.js and React Native closer to each other? (i.e. for sharing components between mobile and web) - juhasuni
+
 
 **A:** Thanks for the question, and this is going to be a long answer.
 
@@ -34,13 +36,15 @@ The web doesn't need a new canned native carousel widget. The web needs the abil
 
 ---
 
-**Q:** Do you use React day-to-day? - vcarl
+<a name="use-react-daytoday-vcarl" href="#use-react-daytoday-vcarl">#</a> **Q:** Do you use React day-to-day? - vcarl
+
 
 **A:** Not much in the last year, since I started diving deeper into language tooling. I am now working my way back up the stack and have resumed using React through that new language tooling. I expect to use it more in the next six months.
 
 ---
 
-**Q:** How did you come up with the idea on React? Was it directly inspired by other technologies? Did you try other approaches first which never went public? - Panen
+<a name="come-idea-react-directly-inspired" href="#come-idea-react-directly-inspired">#</a> **Q:** How did you come up with the idea on React? Was it directly inspired by other technologies? Did you try other approaches first which never went public? - Panen
+
 
 **A:** Even as I was first learning how to program, the old MVC style of programming with data binding and mutation just never felt right to me, even when I didn't have the technical terminology to describe things like "mutation", or "functional programming". I would find myself structuring my code as much as possible in the (now) React pattern, even in my very first UI programs.
 
@@ -56,7 +60,8 @@ Creating and pushing for the first version of something like React definitely ta
 
 ---
 
-**Q:** Why is ReasonML the future of web development in general and React specifically?(edited) - kylemathews
+<a name="reasonml-future-web-development-general" href="#reasonml-future-web-development-general">#</a> **Q:** Why is ReasonML the future of web development in general and React specifically?(edited) - kylemathews
+
 
 **A:** Some context for others who aren't caught up to speed: ReasonML is a new language toolchain that we are working on within a small group of open source community members - many of then being members of the React community. Reason provides a friendlier, more familiar interface to the OCaml compiler, which is a great, statically typed, high-performance compiler. We enjoy compiling to JavaScript via BuckleScript (and sometimes jsoo) and also target native binaries.
 
@@ -64,13 +69,15 @@ It's very difficult to predict the future, and so the best we can do is just ide
 
 ---
 
-**Q:** What do you use for state management in your own projects Redux, mobX or something else? - urbanvikingr
+<a name="use-state-management-projects-redux" href="#use-state-management-projects-redux">#</a> **Q:** What do you use for state management in your own projects Redux, mobX or something else? - urbanvikingr
+
 
 **A:** It depends on the project, but I have a high tolerance for passing props down the hierarchy explicitly, so it takes me a while before I reach for something more involved. I've worked on React apps at Facebook that use Relay to query the server, and I've also built UIs that use immutable data structures as the primary abstraction for storing and sharing data. I understand that these approaches don't work for all applications, and one of things I like most about the React community is that there's always new ideas/proposals for how to structure your app.
 
 ---
 
-**Q:** How closely have you been involved in React over the past 2 or so years? What do you think of React now vs how you originally envisioned it? - vcarl
+<a name="closely-involved-react-past-2" href="#closely-involved-react-past-2">#</a> **Q:** How closely have you been involved in React over the past 2 or so years? What do you think of React now vs how you originally envisioned it? - vcarl
+
 
 **A:** The last React application that I collaborated on was the mobile ads manager, and then after that I began to build a prototype for a frame rationing reconciler (providing framework level concurrency) and incremental renderer, where lists of components can be returned from render.  I'm happy to see some of those ideas get reimplemented in the upcoming Fiber core of React, in addition to many other features which I had not prototyped such as portals. To answer your second question, Fiber makes me happy.
 
@@ -78,13 +85,15 @@ I still think that there's so many unanswered questions about how we build UI, a
 
 ---
 
-**Q:** When you designed react what were your thoughts on server side rendering for web apps and do you feel they (server side rendered web apps) have a place in industry today. - Macdja38
+<a name="designed-react-thoughts-server-side" href="#designed-react-thoughts-server-side">#</a> **Q:** When you designed react what were your thoughts on server side rendering for web apps and do you feel they (server side rendered web apps) have a place in industry today. - Macdja38
+
 
 **A:** This is a really great question. At the time, JavaScript was not an accepted way to build web applications. The majority of developers were still stuck rendering UI on the server, and JavaScript was actively discouraged as a means of building apps. I felt like I had to build in the ability for React to render server side at the very least, to pacify concerns about client side JavaScript performance. Knowing that we had the ability to render on the server if we ever needed it, was really helpful in selling the idea of React. Some people still use server side rendering and appreciate the performance wins of initial page load on cold caches. I'm sure that some people use server side rendering and don't benefit from it, and I'm sure there's some people that don't use server side rendering, but would benefit from it. It is becoming less important as browsers improve parse time, resource caching, and JS execution speed (we really need a JIT-less path for initial load and Chrome is adding such a thing), but it still might be a while before we should completely throw out the idea of server rendering. It seems to be useful today for many people.
 
 ---
 
-**Q:** Could you talk about your thoughts on how you see Javascript in the next 1, 5 and 10 years? - quicksnap
+<a name="could-talk-thoughts-see-javascript" href="#could-talk-thoughts-see-javascript">#</a> **Q:** Could you talk about your thoughts on how you see Javascript in the next 1, 5 and 10 years? - quicksnap
+
 
 **A:** This one is difficult to answer. I'll give a highly speculative reply - which seems better than giving a hedgy non-answer.
 
@@ -108,19 +117,22 @@ If anyone disagrees that JavaScript is becoming a loosely typed OCaml, you are n
 
 ---
 
-**Q:** How does React design relate to previous work on Component and Event based systems, like VisualBasic, which Timers and DataSources were also treated as components? Were they a source of inspiration for concepts? - derekstavis
+<a name="react-design-relate-previous-work" href="#react-design-relate-previous-work">#</a> **Q:** How does React design relate to previous work on Component and Event based systems, like VisualBasic, which Timers and DataSources were also treated as components? Were they a source of inspiration for concepts? - derekstavis
+
 
 **A:** Sorry, but I don't have enough context to answer this. I don't know anything about those technologies. Components as timers sounds cool.
 
 ---
 
-**Q:** What's the better way to learn and write a React Renderer not targeted for the DOM? - derekstavis
+<a name="whats-better-way-learn-write" href="#whats-better-way-learn-write">#</a> **Q:** What's the better way to learn and write a React Renderer not targeted for the DOM? - derekstavis
+
 
 **A:** I wish I could answer that question better, but Sebastian M is the right person to ask right now, and the answer is likely changing with the introduction of Fiber!
 
 ---
 
-**Q:** How do you expect to continue improving performance in the future? Do you feel you've capped out on what is possible within the browser / Javascript? (Or that trueadm has with Inferno, since you guys seem to have hired him)(edited)- Ron Jeremy
+<a name="expect-continue-improving-performance-future" href="#expect-continue-improving-performance-future">#</a> **Q:** How do you expect to continue improving performance in the future? Do you feel you've capped out on what is possible within the browser / Javascript? (Or that trueadm has with Inferno, since you guys seem to have hired him)(edited)- Ron Jeremy
+
 
 **A:** It's a great question. React is only (half?) of the CPU time. Even if we make React faster, application code is still going to have to execute, and the best way to greatly improve load time or execution time, is at the language level - across the board, for React and the apps build on top of React, which is why I'm working on Reason. The same kind of deep, aggressive inlining that we want to do at the component level, could be done across the entire app - using ahead of time compilation.
 
@@ -128,6 +140,7 @@ That being said, there are still some things we can do in React to improve React
 
 ---
 
-**Q:** If React were to be a framework, not just a library how would it look like? - abdellah
+<a name="react-framework-library-would-look" href="#react-framework-library-would-look">#</a> **Q:** If React were to be a framework, not just a library how would it look like? - abdellah
+
 
 **A:** If I had to guess: React would not be nearly as popular and the community would not be as energetic . In a sense, the community fulfills the role of the framework.

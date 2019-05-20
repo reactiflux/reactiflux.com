@@ -8,7 +8,8 @@ To introduce myself a bit, I went to EPITA, a French school specialized on compu
 
 ---
 
-**Q:** What upcoming React feature are you most excited about?
+<a name="upcoming-react-feature-excited" href="#upcoming-react-feature-excited">#</a> **Q:** What upcoming React feature are you most excited about?
+
 
 **A:** Definitely the Fiber work that Sebastian Markbage is working on. One of the big theme we're seeing is that in order to get better performance overall, micro-optimizations can only get you so far. The bigger trend we're seeing is that we need to enable primitives to be able to do scheduling.
 
@@ -18,7 +19,8 @@ The typical example is if you have a listview, when you scroll quickly, what you
 
 ---
 
-**Q:** Any thoughts on inline-styles / Radium / Jss / Aphrodite / css-modules conundrum? There will be an efford to drive the community? (like on core notes: 2016-04/april-28.md and 2016-07/july-21.md)
+<a name="thoughts-inlinestyles-radium-jss-aphrodite" href="#thoughts-inlinestyles-radium-jss-aphrodite">#</a> **Q:** Any thoughts on inline-styles / Radium / Jss / Aphrodite / css-modules conundrum? There will be an efford to drive the community? (like on core notes: 2016-04/april-28.md and 2016-07/july-21.md)
+
 
 **A:** Yeah, so the story behind css in js is that at the beginning of React Native, I was way too lazy to reimplement a CSS parser and selector engine so I decided to start using styles written in js. At the time I had no doubts that I would need to implement CSS because, let's be serious, if we used CSS on the web there must be a reason. Fast forward a year, it turned out that not only did we not need to implement CSS but it also solved a bunch of issues we had with CSS.
 
@@ -26,19 +28,22 @@ As we were going to announce React Native, I was dead scared that the announceme
 
 ---
 
-**Q:** Why are you always wearing a hood when you are at work? Who are you hiding from?
+<a name="always-wearing-hood-work-hiding" href="#always-wearing-hood-work-hiding">#</a> **Q:** Why are you always wearing a hood when you are at work? Who are you hiding from?
+
 
 **A:** I like looking like a gangster :p
 
 ---
 
-**Q:** Do you think RN Android will ever be good enough? 😃
+<a name="think-rn-android-ever-good" href="#think-rn-android-ever-good">#</a> **Q:** Do you think RN Android will ever be good enough? 😃
+
 
 **A:** Android has been for a while the primary focus of the React Native team, so it's improved a lot since the last time you tried it. There's one interesting project to take the Virtual DOM and send the draw calls directly to Android framework instead of creating a bunch of nested views. It's still in testing but I hope that we can ship it to the open source version
 
 ---
 
-**Q:** Do you think React will remove the requirement of wrapper div tags. In other words will there be a future where we can return a list of keyed components from the render method?
+<a name="think-react-remove-requirement-wrapper" href="#think-react-remove-requirement-wrapper">#</a> **Q:** Do you think React will remove the requirement of wrapper div tags. In other words will there be a future where we can return a list of keyed components from the render method?
+
 
 **A:** Yes! We do want to. The current status of this is that Fiber lifts this requirement. So we're waiting to see if Fiber is going to work out (it's still very much R&D) and if it does, then we will get support for free
 
@@ -46,7 +51,8 @@ If it doesn't work out, we will implement it on-top of the current implementatio
 
 ---
 
-**Q:** Is your team in facebook planning to release a "well-crafted ui widget" library build on top of react?
+<a name="team-facebook-planning-release-wellcrafted" href="#team-facebook-planning-release-wellcrafted">#</a> **Q:** Is your team in facebook planning to release a "well-crafted ui widget" library build on top of react?
+
 
 **A:** I wish. There are interesting trade-offs in regard to a UI component library. A big reason why our open source libraries are getting traction is because we spend a lot of time and efforts making sure that the API is great and relatively stable and don't break it all the time. Stability is a big concern.
 
@@ -58,13 +64,15 @@ The short answer though is, no anytime soon unfortunately
 
 ---
 
-**Q:** React Native: when JS is shipped with Native code, there is a weak coupling. nothing guarantees they are on the same version (it might break, at runtime). Is there something we could add in RN to make inconsistent JS<>Native fail by design (w/ Red Screen)? (like a version system? how can it be implicit)
+<a name="react-native-js-shipped-native" href="#react-native-js-shipped-native">#</a> **Q:** React Native: when JS is shipped with Native code, there is a weak coupling. nothing guarantees they are on the same version (it might break, at runtime). Is there something we could add in RN to make inconsistent JS<>Native fail by design (w/ Red Screen)? (like a version system? how can it be implicit)
+
 
 **A:** I would love this to happen. In the past we've thought about where the source of truth should live for the API and went back and forth between js and native. But the truth is, we need both. I hope that we can leverage flow to be able to do that
 
 ---
 
-**Q:** RN repo now has over 1000 issues open (even though many are just questions). How does the team decide what is being worked on?
+<a name="rn-repo-1000-issues-open" href="#rn-repo-1000-issues-open">#</a> **Q:** RN repo now has over 1000 issues open (even though many are just questions). How does the team decide what is being worked on?
+
 
 **A:** This is a really really tough issue. The react native project is blowing up way past what we expected and we're overwhelmed by all the activity. Our approach has been to create a title "Core Contributors" and give it to a handful of people in the open source community to help us with the load and we have a public but invite-only group in order to surface high priority issues: https://www.facebook.com/groups/reactnativeoss/
 
@@ -72,19 +80,22 @@ Having core contributors definitely helped but it's hard to get external people 
 
 ----
 
-**Q:** Do you have a plans to work on the product (like some facebook.com feature) for a while?
+<a name="plans-work-product-like-facebookcom" href="#plans-work-product-like-facebookcom">#</a> **Q:** Do you have a plans to work on the product (like some facebook.com feature) for a while?
+
 
 **A:** No concrete plans right now. My current focus is learning how to be a manager of the React team. I've been on the job for a month so it's very recent and I hope i'm going to be useful at this
 
 ---
 
-**Q:** Any news on React Conf? Venue? Dates?
+<a name="news-react-conf-venue-dates" href="#news-react-conf-venue-dates">#</a> **Q:** Any news on React Conf? Venue? Dates?
+
 
 **A:** We're doing the conf preparation right now, we need to figure out who is going to organize it at Facebook, where do we do it, what size, when, what do we talk about there, budget... Lots of unanswered questions at this time unfortunately
 
 ---
 
-**Q:** What are your thoughts about Relay with React Native? Would it be your to-go framework of choice?
+<a name="thoughts-relay-react-native-would" href="#thoughts-relay-react-native-would">#</a> **Q:** What are your thoughts about Relay with React Native? Would it be your to-go framework of choice?
+
 
 **A:** When everything has been setup for you, working with Relay is the best thing in the world. You can say I want this, this and this and magically it's there! Now, the setup part is pretty steep, you need to have your data available through graphql, Relay doesn't yet support local data ('Relay 2' will though!), the babel transforms are not trivial to setup...
 
@@ -92,25 +103,29 @@ Good thing is that right now, a big focus of all the teams working on open sourc
 
 ---
 
-**Q:** Is it true that the react team uses a klingon promotion policy?
+<a name="true-react-team-uses-klingon" href="#true-react-team-uses-klingon">#</a> **Q:** Is it true that the react team uses a klingon promotion policy?
+
 
 **A:** I didn't know what it was (not a Star Trek fan) "On the other hand you can get a Klingon Promotion, which means that if you kill a superior (or they die by some other means), you gain their rank". Tom Occhino is still alive as far as I know :p
 
 ---
 
-**Q:** As a manager what percentage of your time is spent on programming?
+<a name="manager-percentage-time-spent-programming" href="#manager-percentage-time-spent-programming">#</a> **Q:** As a manager what percentage of your time is spent on programming?
+
 
 **A:** When you transition to manager at Facebook, there's a lot of training and I need to figure out how to setup a roadmap for the team, get to know individual people... So I haven't coded much but I'm starting to get more coding time. I've been adding flow to the codebase ( https://github.com/facebook/react/pulls?q=is%3Apr+author%3Avjeux ). 77 files out of 222 (around 1/3) are now using flow The fact that you can mouse over variables in nuclide and see what type they are and can do variable. and autocomplete with everything is so great. Especially inside of the React codebase where we updated the naming convention several times so if a variable has the type ReactInstance, it can be called element, instance, component, you know what it really is
 
 ---
 
-**Q:** What percentage of your time is spent explaining the Facebook Patent Grant to people on the internet?
+<a name="percentage-time-spent-explaining-facebook" href="#percentage-time-spent-explaining-facebook">#</a> **Q:** What percentage of your time is spent explaining the Facebook Patent Grant to people on the internet?
+
 
 **A:** Haha, I've learned way too much things around patents than I would have wanted :p I wish I would live in a world where this wouldn't be a thing but unfortunately this is very very very real for Facebook and we're talking about huge amount of money. So this is a cost of doing business. The great thing is that we have lawyers inside of the open source team that are working on our side and we've been able to open source a bunch of stuff mostly pain free
 
 ---
 
-**Q:** Is React Native today lead by a product design or engineering design approach?
+<a name="react-native-today-lead-product" href="#react-native-today-lead-product">#</a> **Q:** Is React Native today lead by a product design or engineering design approach?
+
 
 **A:** It's an interesting question. I would say both, but let me explain. React Native is driven by an engineering team inside of the infrastructure org. As such, people in the team have a lot of background around what are the patterns that product engineers struggle with when writing apps (both in React Native, web, iOS, Android...) and the solutions found are engineering solutions.
 
@@ -122,7 +137,8 @@ So you really need to have both sides to work together
 
 ---
 
-**Q:** Have you seen any projects with complex web forms built with React web? I know libs like #redux-form are popular for Redux devs, but the I find the choices a bit paralyzing in the scope of the whole ecosystem: https://github.com/markerikson/redux-ecosystem-links/blob/master/forms.md
+<a name="seen-projects-complex-web-forms" href="#seen-projects-complex-web-forms">#</a> **Q:** Have you seen any projects with complex web forms built with React web? I know libs like #redux-form are popular for Redux devs, but the I find the choices a bit paralyzing in the scope of the whole ecosystem: https://github.com/markerikson/redux-ecosystem-links/blob/master/forms.md
+
 
 **A:** The form situation is interesting. At Facebook we don't have a lot of forms in the traditional sense. The things that function as forms are usually heavily customized like the composer (the box at the top of newsfeed) and React works really well for those.
 
@@ -132,13 +148,15 @@ I'm actually surprised that React took off the way it has given that other libs 
 
 ---
 
-**Q:** Is there planned support for react native dev-tools?
+<a name="planned-support-react-native-devtools" href="#planned-support-react-native-devtools">#</a> **Q:** Is there planned support for react native dev-tools?
+
 
 **A:** React dev tools do work inside of nuclide. We plan to have a lot of developer tools around react native inside of Nuclide to have a great experience. I haven't followed closely what those are so can't really give more information about it right now sorry :X
 
 ---
 
-**Q:** How do you feel about functional programming? Has it influenced React?
+<a name="feel-functional-programming-influenced-react" href="#feel-functional-programming-influenced-react">#</a> **Q:** How do you feel about functional programming? Has it influenced React?
+
 
 **A:** At school, I was in the R&D lab and my supervisor, Didier Verna, is a big name in the Lisp community and I learned a lot about functional programming from him. I really enjoyed that he had a very down to earth philosophy around it which is: use it when it makes sense but you don't have to do every single thing using pure functional paradigms.
 
@@ -150,7 +168,8 @@ Jordan Walke who "invented" React is currently working on Reason https://faceboo
 
 ---
 
-**Q:** Any plans on changing the current release workflow where FB engineers build/iterate for days/weeks/months, then release it via the public GitHub repo. You lose interesting information and communication for people who want to contribute. I think this discourages contributions to the codebase, but that could also be your goal 😉 I also understand that you don't want to show something too early, but would it possible to expose a "canary" type branch to the community so it can prepare for upcoming changes?
+<a name="plans-changing-current-release-workflow" href="#plans-changing-current-release-workflow">#</a> **Q:** Any plans on changing the current release workflow where FB engineers build/iterate for days/weeks/months, then release it via the public GitHub repo. You lose interesting information and communication for people who want to contribute. I think this discourages contributions to the codebase, but that could also be your goal 😉 I also understand that you don't want to show something too early, but would it possible to expose a "canary" type branch to the community so it can prepare for upcoming changes?
+
 
 **A:** For React, all development happens on Github and we import master to fb every week-ish.
 
@@ -162,7 +181,8 @@ The current system with react native where commits are synced all the time and t
 
 ---
 
-**Q:** A follow up to @hkjorgensen's (above) question, do you have any insight into why Relay's release process for Relay 2 diverges from React and React Native, in that there is no public tracker for the release?
+<a name="follow-hkjorgensens-question-insight-relays" href="#follow-hkjorgensens-question-insight-relays">#</a> **Q:** A follow up to @hkjorgensen's (above) question, do you have any insight into why Relay's release process for Relay 2 diverges from React and React Native, in that there is no public tracker for the release?
+
 
 Facebook's approach to Open Source has been touched on already. But one thing i've found difficult to get use to (probably moreso on the GraphQL and Relay side of things) is the tendency to deliver big announcements at conferences/meetups, rather than on the web itself (blog posts, github issues etc). Is this a deliberate approach, or something that's just ended up happening? I think it creates the perception of a lot of things happening behind the scenes (Relay 2's changes are huge) without much community input.
 
@@ -178,7 +198,8 @@ Also, at Facebook we're usually really bad at setting hard deadlines to do somet
 
 ---
 
-**Q:** What happens if developers actually use the DONT_USE_THIS_OR_YOU_WILL_BE_FIRED constants?
+<a name="happens-developers-actually-use-dont_use_this_or_you_will_be_fired" href="#happens-developers-actually-use-dont_use_this_or_you_will_be_fired">#</a> **Q:** What happens if developers actually use the DONT_USE_THIS_OR_YOU_WILL_BE_FIRED constants?
+
 
 **A:** Their code will likely not be accepted during diff review 😃 We have many layers of deterrent for apis we don't want used such as normal code reviews, lint rules, making the variable name scary, build errors... We use a combination of them based on how bad it is to have that code exist.
 
@@ -188,7 +209,8 @@ It basically says that once you have a line of code written, it's going to be du
 
 ---
 
-**Q:** How do the React, Relay and GraphQL teams communicate? How do you all ensure parity with what each other is doing?
+<a name="react-relay-graphql-teams-communicate" href="#react-relay-graphql-teams-communicate">#</a> **Q:** How do the React, Relay and GraphQL teams communicate? How do you all ensure parity with what each other is doing?
+
 
 **A:** We literally sit next to each others, go to lunch together... We also have shared Facebook groups where we communicate extensively
 
@@ -196,7 +218,8 @@ The managers also all report to the same manager so when doing roadmapping it's 
 
 ---
 
-**Q:** Why does graphql sit with react and relay? it seems quite different
+<a name="graphql-sit-react-relay-seems" href="#graphql-sit-react-relay-seems">#</a> **Q:** Why does graphql sit with react and relay? it seems quite different
+
 
 **A:** We are part of an organization called "Product Infrastructure" which contains React, Relay, Flow, all our core components on all platforms, GraphQL, Reason, React Native and I'm probably missing others. Our goal is to make sure that product engineers at Facebook can be productive and it turns out that the data layer and ui layers are very tied together
 
@@ -204,7 +227,8 @@ The managers also all report to the same manager so when doing roadmapping it's 
 
 ---
 
-**Q:** What would be your recommendation if I wanted to leverage sass within JS/React?   Best way to provide dynamic styles? Without having to revert to inline styles
+<a name="would-recommendation-wanted-leverage-sass" href="#would-recommendation-wanted-leverage-sass">#</a> **Q:** What would be your recommendation if I wanted to leverage sass within JS/React?   Best way to provide dynamic styles? Without having to revert to inline styles
+
 
 **A:** I've never actually used Sass myself so I'm not familiar with the best practices. What I found worked well with React, and which we encourage with create-react-app, is for each component to have its own css file and have a unique name for each class.
 
@@ -216,7 +240,8 @@ If you need something dynamic, I would recommend using inline styles for those �
 
 ---
 
-**Q:** React Naitve:  Is there something plan to improve RN upgrade (when having assets, configs...)? Right now I still have to init a new project and apply manually but it's painful... Other non technical question: why Vjeux as nickname since something like "vieux jeux"?
+<a name="react-naitve-something-plan-improve" href="#react-naitve-something-plan-improve">#</a> **Q:** React Naitve:  Is there something plan to improve RN upgrade (when having assets, configs...)? Right now I still have to init a new project and apply manually but it's painful... Other non technical question: why Vjeux as nickname since something like "vieux jeux"?
+
 
 **A:** I'm super excited about this project: https://twitter.com/ncuillery/status/773522806034366464 I hope it'll spread and we can merge the ideas in the main repo. No current plans right now but we know it's a pain point.
 
