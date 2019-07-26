@@ -54,6 +54,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 - Thursday July 25th
 - 1-2pm PT / 8-9pm GMT
 - Transcript:
+
 ## ~~June 2019~~
 
 ### Conrad Irwin & the [Superhuman](http://superhuman.com) Team
@@ -118,7 +119,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Engineer @ Paypal, Teaching via Egghead & Frontendmasters, and Author of react-testing-library, downshift, glamorous, & an all around good dude.
 * Thursday March 28th
 * 1-2pm PT 
-* Transcript:
+* Transcript:[Kent C. Dodds](../transcripts/kent-dodds/)
 
 ## ~~February 2019~~
 
