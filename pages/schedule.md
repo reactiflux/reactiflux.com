@@ -6,44 +6,6 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## May 2019
-
-### Janic Duplessis
-
-* https://twitter.com/janicduplessis
-* React Native core contributor. Co-founder @ [th3rdwave](https://www.th3rdwave.coffee/).
-* Thursday May 16th
-* 1-2pm PT / 8-9pm GMT
-* Q&A Channel Reactiflux
-
-## June 2019
-
-### Conrad Irwin & the [Superhuman](http://superhuman.com) Team
-
-- [https://twitter.com/conradirwin](https://twitter.com/conradirwin) / [https://twitter.com/superhuman](https://twitter.com/superhuman)
-- Conrad is the co-founder & CTO @ Superhuman. Superhuman is an amazing email client built with React/Electron. It's basically VIM for email.
-- Thursday June 6th
-- 1-2pm PT / 8-9pm GMT
-- Q&A Channel Reactiflux
-
-### Vladimir Novick
-
-* https://twitter.com/VladimirNovick
-* Developer Relations @ [Hasura.io](http://hasura.io)
-* Thursday June 27th
-* 1-2pm PT / 8-9pm GMT
-* Q&A Channel Reactiflux
-
-## July 2019
-
-### Mobile Team (React Native) @ Clubhouse.io
-
-- [https://twitter.com/clubhouse](https://twitter.com/clubhouse)
-- [Eli Perkins](https://twitter.com/_eliperkins), [Jenel Myers](https://twitter.com/jenelmyers), [Nicolas Charpentier](https://twitter.com/charpeni_) from the mobile team @ Clubhouse.io. Clubhouse is a project management platform for software development that brings everyone together to build better products. Clubhouse is built using tools like React Native, React, Relay, GraphQL, Gatsby and more.
-- Thursday July 25th
-- 1-2pm PT / 8-9pm GMT
-- Q&A Channel Reactiflux
-
 ## August 2019
 
 ### React Native Core Team @ Facebook
@@ -83,6 +45,33 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Past Q&A’s
 
+## ~~July 2019~~
+
+### Mobile Team (React Native) @ Clubhouse.io
+
+- [https://twitter.com/clubhouse](https://twitter.com/clubhouse)
+- [Eli Perkins](https://twitter.com/_eliperkins), [Jenel Myers](https://twitter.com/jenelmyers), [Nicolas Charpentier](https://twitter.com/charpeni_) from the mobile team @ Clubhouse.io. Clubhouse is a project management platform for software development that brings everyone together to build better products. Clubhouse is built using tools like React Native, React, Relay, GraphQL, Gatsby and more.
+- Thursday July 25th
+- 1-2pm PT / 8-9pm GMT
+- Transcript:
+## ~~June 2019~~
+
+### Conrad Irwin & the [Superhuman](http://superhuman.com) Team
+
+- [https://twitter.com/conradirwin](https://twitter.com/conradirwin) / [https://twitter.com/superhuman](https://twitter.com/superhuman)
+- Conrad is the co-founder & CTO @ Superhuman. Superhuman is an amazing email client built with React/Electron. It's basically VIM for email.
+- Thursday June 6th
+- 1-2pm PT / 8-9pm GMT
+- Transcript:
+
+### Vladimir Novick
+
+* https://twitter.com/VladimirNovick
+* Developer Relations @ [Hasura.io](http://hasura.io)
+* Thursday June 27th
+* 1-2pm PT / 8-9pm GMT
+* Transcript:
+
 ## ~~May 2019~~
 
 ### React Native Core Team @ Facebook
@@ -92,6 +81,16 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Thursday May 9th
 * 12:30 - 1:30pm PT
 * Transcript:
+
+
+### Janic Duplessis
+
+* https://twitter.com/janicduplessis
+* React Native core contributor. Co-founder @ [th3rdwave](https://www.th3rdwave.coffee/).
+* Thursday May 16th
+* 1-2pm PT / 8-9pm GMT
+* Transcript:
+
 
 ## ~~April 2019~~
 
