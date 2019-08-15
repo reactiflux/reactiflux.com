@@ -1,6 +1,6 @@
 ---
-title: Andrew Clark
-date: April 12 2017
+title: Bob Scarano & Craig Blagg
+date: August 15 2019
 ---
 
 # Bob Scarano & Craig Blagg, team leads at Squarespace
