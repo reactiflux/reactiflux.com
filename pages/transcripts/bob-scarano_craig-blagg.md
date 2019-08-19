@@ -3,7 +3,7 @@ title: Bob Scarano & Craig Blagg
 date: August 15 2019
 ---
 
-# Bob Scarano & Craig Blagg, team leads at Squarespace
+## Bob Scarano & Craig Blagg, team leads at Squarespace
 
 <a name="hey-if-you-have-a" href="#hey-if-you-have-a">#</a> **Q:** Hey, if you have a deeply nested object in state which represents a folder hierarchy, and you need to create a file explorer GUI. How would you approach this and how would you manage state in that case? – HopesFlyHigh
 
