@@ -6,32 +6,21 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 ----------
 ## Upcoming Q&A’s & Meetups
 
-## August 2019
+## October 2019
 
-### React Native Core Team @ Facebook
+### Eric Rozell, Harini Kannan, & Paul Gusmorino
 
-- [https://twitter.com/reactnative](https://twitter.com/reactnative)
-- React Native Core Team
-- Thursday August 8th
-- 12:30 - 1:30pm PT / 7:30 - 8:30pm GMT
-- Q&A Channel Reactiflux
-
-### Bob Scarano & Craig Blagg @ Squarespace
-
-- [https://twitter.com/scarano](https://twitter.com/scarano) & [https://twitter.com/iwillreply](https://twitter.com/iwillreply)
-- Bob is the team lead of the Mobile Content-Editing team at Squarespace. Craig is the team lead of the Design Platform team.
-- Thursday August 15th
+- [https://twitter.com/EricRozell](https://twitter.com/EricRozell) & [https://twitter.com/Harini_Kannan](https://twitter.com/Harini_Kannan) & [https://twitter.com/pag3rd](https://twitter.com/pag3rd)
+- Eric, Harini, and Paul are engineers @ Microsoft. They will be on to discuss their work on [React Native for Windows](https://github.com/microsoft/react-native-windows).
+- Thursday October 17th
 - 1-2pm PT / 8-9pm GMT
 - Q&A Channel Reactiflux
-- The Mobile Content-Editing team is focused on mobile but [their app](https://twitter.com/scarano/status/1072963970242412550) is a hybrid mobile-webapp (React) + native kotlin/Swift + react-native. Also, the react-native that they write is cross-platform mobile & desktop-web with an opinionated architecture about business-logic/rendering separation. Bob gave a talk about it at Chain React last year: [https://www.youtube.com/watch?v=kZGaWefWVBs](https://www.youtube.com/watch?v=kZGaWefWVBs)
-- The Design Platform team works on both web and mobile using React and React Native. This fundamental cross-platform architecture used by their react and react-native code was spearheaded by the efforts of this team. Also, Squarespace does use use GraphQL in some of its software but they don't it our mobile apps (yet).
 
-### React Rally
-- [reactrally.com](http://reactrally.com/)
-- August 22-23 2019 in Salt Lake City, UT
-- React Rally is a two day single track conference for developers of all backgrounds using Facebook's React.js, React Native, and related tools. Speakers will cover topics such as React Native, Flux, ES6, isomorphic universal JavaScript, and so much more. Whether you're a seasoned developer who has been using React since before it was cool, or a newcomer to the scene, React Rally has something for everyone!
 
-## September 2019
+----------
+## Past Q&A’s
+
+## ~~September 2019~~
 
 ### Frank von Hoven & Gant Laborde
 
@@ -39,11 +28,32 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 - Frank is a Senior Software Engineer at Infinite Red, Organizer at Chain React Conference, and Editor-in-Chief of The React Native Newsletter. Gant is CTS of Infinite Red, Organizer @ChainReactConf, Open Sourcerer ([Ignite](https://github.com/infinitered/ignite), Reactotron, etc).
 - Thursday September 5th
 - 1-2pm PT / 8-9pm GMT
-- Q&A Channel Reactiflux
+- Transcript:
 
+## ~~August 2019~~
 
-----------
-## Past Q&A’s
+### React Native Core Team @ Facebook
+
+- [https://twitter.com/reactnative](https://twitter.com/reactnative)
+- React Native Core Team
+- Thursday August 8th
+- 12:30 - 1:30pm PT / 7:30 - 8:30pm GMT
+- Transcript:
+
+### Bob Scarano & Craig Blagg @ Squarespace
+
+- [https://twitter.com/scarano](https://twitter.com/scarano) & [https://twitter.com/iwillreply](https://twitter.com/iwillreply)
+- Bob is the team lead of the Mobile Content-Editing team at Squarespace. Craig is the team lead of the Design Platform team.
+- Thursday August 15th
+- 1-2pm PT / 8-9pm GMT
+- Transcript:
+- The Mobile Content-Editing team is focused on mobile but [their app](https://twitter.com/scarano/status/1072963970242412550) is a hybrid mobile-webapp (React) + native kotlin/Swift + react-native. Also, the react-native that they write is cross-platform mobile & desktop-web with an opinionated architecture about business-logic/rendering separation. Bob gave a talk about it at Chain React last year: [https://www.youtube.com/watch?v=kZGaWefWVBs](https://www.youtube.com/watch?v=kZGaWefWVBs)
+- The Design Platform team works on both web and mobile using React and React Native. This fundamental cross-platform architecture used by their react and react-native code was spearheaded by the efforts of this team. Also, Squarespace does use use GraphQL in some of its software but they don't it our mobile apps (yet).
+
+### React Rally
+- [reactrally.com](http://reactrally.com/)
+- August 22-23 2019 in Salt Lake City, UT
+- React Rally is a two day single track conference for developers of all backgrounds using Facebook's React.js, React Native, and related tools. Speakers will cover topics such as React Native, Flux, ES6, isomorphic universal JavaScript, and so much more. Whether you're a seasoned developer who has been using React since before it was cool, or a newcomer to the scene, React Rally has something for everyone!
 
 ## ~~July 2019~~
 
