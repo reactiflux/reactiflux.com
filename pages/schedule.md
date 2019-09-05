@@ -46,9 +46,8 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 - Bob is the team lead of the Mobile Content-Editing team at Squarespace. Craig is the team lead of the Design Platform team.
 - Thursday August 15th
 - 1-2pm PT / 8-9pm GMT
-- Transcript:
-- The Mobile Content-Editing team is focused on mobile but [their app](https://twitter.com/scarano/status/1072963970242412550) is a hybrid mobile-webapp (React) + native kotlin/Swift + react-native. Also, the react-native that they write is cross-platform mobile & desktop-web with an opinionated architecture about business-logic/rendering separation. Bob gave a talk about it at Chain React last year: [https://www.youtube.com/watch?v=kZGaWefWVBs](https://www.youtube.com/watch?v=kZGaWefWVBs)
-- The Design Platform team works on both web and mobile using React and React Native. This fundamental cross-platform architecture used by their react and react-native code was spearheaded by the efforts of this team. Also, Squarespace does use use GraphQL in some of its software but they don't it our mobile apps (yet).
+- Transcript: [Bob Scarano & Craig Blagg](../bob-scarano_craig-blagg/)
+
 
 ### React Rally
 - [reactrally.com](http://reactrally.com/)
@@ -129,7 +128,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 * Engineer @ Paypal, Teaching via Egghead & Frontendmasters, and Author of react-testing-library, downshift, glamorous, & an all around good dude.
 * Thursday March 28th
 * 1-2pm PT 
-* Transcript:[Kent C. Dodds](../transcripts/kent-dodds/)
+* Transcript: [Kent C. Dodds](../transcripts/kent-dodds/)
 
 ## ~~February 2019~~
 
