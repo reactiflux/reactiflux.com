@@ -188,7 +188,7 @@ export default class Template extends React.Component {
               target="_blank"
             />
             <IconLink
-              to="https://discordapp.com/invite/0ZcbPKXt5bYZVCkR"
+              to="https://discord.gg/reactiflux"
               tittle="Reactiflux Discord"
               src={Discord}
               alt="Discord"

@@ -26,11 +26,11 @@ export default class Index extends React.Component {
           GraphQL&nbsp;<IconLink to="https://github.com/facebook/graphql" target="_blank" title="GraphQL" src={GraphQL} alt="GraphQL Logo"/> developers.
           We hold Q&amp;A&rsquo;s with Facebook Engineers&nbsp;<IconLink to="https://github.com/facebook" target="_blank" title="Facebook Organization" src={Facebook} alt="Facebook Logo"/> and
           other developers&nbsp;<IconLink to="https://github.com/reactiflux" target="_blank" title="Reactiflux Developers" src={Console} alt="Developers Logo"/> in
-          the community&nbsp;<IconLink to="https://discordapp.com/invite/0ZcbPKXt5bYZVCkR" target="_blank" title="Reactiflux Discord" src={Community} alt="Community Logo"/>. Come chat about tech
+          the community&nbsp;<IconLink to="https://discord.gg/reactiflux" target="_blank" title="Reactiflux Discord" src={Community} alt="Community Logo"/>. Come chat about tech
           related to React & JavaScript or ask for help!
         </Text>
         <Buttons>
-          <Button primary href="https://discordapp.com/invite/reactiflux" target="_blank" title="Reactiflux Discord">Join Reactiflux</Button>
+          <Button primary href="https://discord.gg/reactiflux" target="_blank" title="Reactiflux Discord">Join Reactiflux</Button>
           <Button to={prefixLink('/schedule/')} title="Q&A Schedule">Q&A Schedule</Button>
         </Buttons>
       </FrontPage>
