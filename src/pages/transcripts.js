@@ -8,8 +8,7 @@ import {
   Transcript,
   StyledLink
 } from "../utils/components";
-import NavBar from "../utils/components/NavBar";
-import Footer from "../utils/components/Footer";
+import Layout from "../utils/components/Layout";
 
 export default function Transcripts({ data }) {
   const articles = data.transcripts.nodes.map(node => {
@@ -23,25 +22,25 @@ export default function Transcripts({ data }) {
   const newestArticle = articles[0];
 
   return (
-    <Container>
-      <NavBar />
-      <Helmet title={"Reactiflux transcripts"} />
-      <SmallTitle>{newestArticle.title}</SmallTitle>
-      <SideBar>
-        {articles.map(article => (
-          <li key={article.title}>
-            <StyledLink
-              to={"/transcripts/" + article.path}
-              title={article.title}
-            >
-              {article.title}
-            </StyledLink>
-          </li>
-        ))}
-      </SideBar>
-      <Transcript article={newestArticle} />
-      <Footer />
-    </Container>
+    <Layout>
+      <Container>
+        <Helmet title={"Reactiflux transcripts"} />
+        <SmallTitle>{newestArticle.title}</SmallTitle>
+        <SideBar>
+          {articles.map(article => (
+            <li key={article.title}>
+              <StyledLink
+                to={"/transcripts/" + article.path}
+                title={article.title}
+              >
+                {article.title}
+              </StyledLink>
+            </li>
+          ))}
+        </SideBar>
+        <Transcript article={newestArticle} />
+      </Container>
+    </Layout>
   );
 }
 
