@@ -3,10 +3,12 @@ import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import {
   Container,
+  MarkdownContainer,
   SmallTitle,
   SideBar,
   StyledLink
 } from "../utils/components";
+import MarkdownStyles from "../css/markdown-styles";
 
 // Add our typefaces.
 import "typeface-poppins";
@@ -16,7 +18,6 @@ import "typeface-space-mono";
 import Layout from "../utils/components/Layout";
 
 export default function Transcript({ data }) {
-  console.log(data);
   const { html, frontmatter } = data.markdownRemark;
   const articles = data.transcripts.nodes.map(node => {
     return {
@@ -29,6 +30,7 @@ export default function Transcript({ data }) {
   return (
     <Layout>
       <Container>
+        <MarkdownStyles />
         <Helmet title={"Reactiflux transcripts"} />
         <SmallTitle>{frontmatter.title}</SmallTitle>
         <SideBar>
@@ -43,7 +45,10 @@ export default function Transcript({ data }) {
             </li>
           ))}
         </SideBar>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <MarkdownContainer
+          className="markdown"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </Container>
     </Layout>
   );
@@ -57,7 +62,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allFile(
+    transcripts: allFile(
       filter: { sourceInstanceName: { eq: "transcripts" } }
       sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
     ) {

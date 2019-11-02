@@ -8,6 +8,7 @@ import {
   Transcript,
   StyledLink
 } from "../utils/components";
+import MarkdownStyles from "../css/markdown-styles";
 import Layout from "../utils/components/Layout";
 
 export default function Transcripts({ data }) {
@@ -24,6 +25,7 @@ export default function Transcripts({ data }) {
   return (
     <Layout>
       <Container>
+        <MarkdownStyles />
         <Helmet title={"Reactiflux transcripts"} />
         <SmallTitle>{newestArticle.title}</SmallTitle>
         <SideBar>
