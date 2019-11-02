@@ -2,21 +2,27 @@ const path = require("path");
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-  const transcriptTemplate = path.resolve("src", "templates", "Transcript.js");
   const result = await graphql(`
     {
-      allFile(
+      transcripts: allFile(
         filter: { sourceInstanceName: { eq: "transcripts" } }
         sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
       ) {
         nodes {
           name
-          relativeDirectory
           childMarkdownRemark {
             id
             frontmatter {
               date
             }
+          }
+        }
+      }
+      mdPages: allFile(filter: { sourceInstanceName: { eq: "mdPages" } }) {
+        nodes {
+          name
+          childMarkdownRemark {
+            id
           }
         }
       }
@@ -28,14 +34,25 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  result.data.allFile.nodes.forEach(node => {
+  // Transcripts
+  result.data.transcripts.nodes.forEach(node => {
     const { id, frontmatter } = node.childMarkdownRemark;
-    const { name, relativeDirectory } = node;
-    // console.log(path.join(relativeDirectory, name));
+    const { name } = node;
     createPage({
-      path: path.join(relativeDirectory, name),
-      component: transcriptTemplate,
+      path: path.join("transcripts", name),
+      component: path.resolve("src", "templates", "Transcript.js"),
       context: { id, date: frontmatter.date }
+    });
+  });
+
+  // Markdown pages
+  result.data.mdPages.nodes.forEach(node => {
+    const { id } = node.childMarkdownRemark;
+    const { name } = node;
+    createPage({
+      path: name,
+      component: path.resolve("src", "templates", "CopyPage.js"),
+      context: { id }
     });
   });
 };
