@@ -10,6 +10,8 @@ import {
   Button,
   IconLink
 } from "../utils/components";
+import NavBar from "../utils/components/NavBar";
+import Footer from "../utils/components/Footer";
 import {
   Community,
   Console,
@@ -35,6 +37,7 @@ const Index = () => {
           }
         ]}
       />
+      <NavBar />
       <TitleBox>
         <Title>Reactiflux</Title>
         <Subtitle>Welcome to</Subtitle>
@@ -127,6 +130,7 @@ const Index = () => {
           Q&A Schedule
         </Button>
       </Buttons>
+      <Footer />
     </FrontPage>
   );
 };

@@ -9,6 +9,7 @@ import {
   StyledLink
 } from "../utils/components";
 import NavBar from "../utils/components/NavBar";
+import Footer from "../utils/components/Footer";
 
 export default function Transcripts({ data }) {
   const articles = data.transcripts.nodes.map(node => {
@@ -39,6 +40,7 @@ export default function Transcripts({ data }) {
         ))}
       </SideBar>
       <Transcript article={newestArticle} />
+      <Footer />
     </Container>
   );
 }

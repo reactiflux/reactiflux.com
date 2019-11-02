@@ -126,6 +126,8 @@ export const Subtitle = styled.span`
 `;
 
 export const Footer = styled.footer`
+  flex-basis: 100%;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
