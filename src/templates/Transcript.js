@@ -26,7 +26,6 @@ export default function Transcript({ data }) {
     };
   });
 
-  const newestArticle = articles[0];
   return (
     <Layout>
       <Container>
