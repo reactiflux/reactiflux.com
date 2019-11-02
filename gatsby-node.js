@@ -2,7 +2,7 @@ const path = require("path");
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-  const blogPostTemplate = path.resolve("src", "templates", "Transcript.js");
+  const transcriptTemplate = path.resolve("src", "templates", "Transcript.js");
   const result = await graphql(`
     {
       allFile(
@@ -34,7 +34,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     // console.log(path.join(relativeDirectory, name));
     createPage({
       path: path.join(relativeDirectory, name),
-      component: blogPostTemplate,
+      component: transcriptTemplate,
       context: { id, date: frontmatter.date }
     });
   });
