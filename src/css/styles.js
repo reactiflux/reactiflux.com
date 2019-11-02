@@ -7,6 +7,9 @@ export default createGlobalStyle`
   }
 }
 
+.headroom-wrapper {
+  width: 100%
+}
 .headroom {
   top: 0;
   left: 0;
@@ -14,7 +17,7 @@ export default createGlobalStyle`
   z-index: 2;
 }
 .headroom--unfixed {
-  position: fixed;
+  // position: fixed;
   transform: translateY(0);
 }
 .headroom--scrolled {

@@ -43,7 +43,7 @@ export default class NavBar extends React.Component {
     const closeMenu = this.close("menu");
 
     return (
-      <Headroom style={{ position: "fixed" }} disableInlineStyles>
+      <Headroom disableInlineStyles>
         <Styles />
         <HeaderEl>
           <Logo to="/" onClick={closeMenu}>
