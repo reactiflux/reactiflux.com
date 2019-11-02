@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+export default createGlobalStyle`
 @media (max-width: 767px) {
   html {
     font-size: 13px
@@ -11,7 +14,7 @@
   z-index: 2;
 }
 .headroom--unfixed {
-  position: relative;
+  position: fixed;
   transform: translateY(0);
 }
 .headroom--scrolled {
@@ -26,3 +29,4 @@
   transform: translateY(0%);
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
 }
+`;

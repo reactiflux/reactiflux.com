@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router';
-import { Reactiflux } from '../../assets/logos';
-import { MarkdownContainer } from './structure/'
+import React from "react";
+import styled from "styled-components";
+import { Link } from "@reach/router";
+import { Reactiflux } from "../../assets/logos";
+import { MarkdownContainer } from "./structure/";
 
 export const ReadMore = styled.div`
   display: none;
@@ -25,22 +25,20 @@ export const Credits = styled.p`
   line-height: 12px;
   margin-bottom: 6px;
   color: #52244f;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 `;
-
 
 export const PublishDate = styled.time`
   font-size: 0.8rem;
   font-style: italic;
-`
+`;
 
 export const Transcript = ({ article }) => (
   <MarkdownContainer transcript className="markdown">
     <PublishDate>Transcript from {article.date}</PublishDate>
-    <div dangerouslySetInnerHTML={{ __html: article.body }} /> 
+    <div dangerouslySetInnerHTML={{ __html: article.html }} />
   </MarkdownContainer>
-)
-
+);
 
 export const Logo = styled(Link)`
   display: inline-block;

@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router';
-import { MenuIcon } from '../../../assets/logos';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+import { MenuIcon } from "../../../assets/logos";
 
 export const StyledLink = styled(Link)`
   color: #dd1d64;
@@ -31,7 +31,6 @@ export const NavigationLink = styled(StyledLink)`
   }
 `;
 
-
 export const LinkList = styled.ul`
   margin-left: 0;
   list-style: none;
@@ -48,24 +47,24 @@ export const Buttons = styled.div`
 
 export const Button = styled(Link)`
   display: inline-block;
-  height: ${72/19}rem;
-  width: ${320/19}rem;
+  height: ${72 / 19}rem;
+  width: ${320 / 19}rem;
   border: 3px solid;
   margin-bottom: 20px;
   border-radius: 100px;
   border-color: #dd1d64;
   text-align: center;
   text-decoration: none;
-  font-size: ${24/19}rem;
-  font-family: 'Poppins', sans-serif;
+  font-size: ${24 / 19}rem;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  line-height: ${66/19}rem;
-  color: ${props => props.primary ? '#ffffff' : '#dd1d64'};
-  background-color: ${props => props.primary ? '#dd1d64' : '#ffffff'};
+  line-height: ${66 / 19}rem;
+  color: ${props => (props.primary ? "#ffffff" : "#dd1d64")};
+  background-color: ${props => (props.primary ? "#dd1d64" : "#ffffff")};
   transition: all 175ms ease;
   &:hover {
-    color: ${props => props.primary ? '#ffffff' : '#ffffff'};
-    background-color: ${props => props.primary ? '#ba1853' : '#dd1d64'};
+    color: ${props => (props.primary ? "#ffffff" : "#ffffff")};
+    background-color: ${props => (props.primary ? "#ba1853" : "#dd1d64")};
   }
   &:first-child {
     margin-right: 32px;
@@ -77,7 +76,7 @@ export const Button = styled(Link)`
   }
 `;
 
-const MovedLink = styled.a`
+export const MovedLink = styled.a`
   display: inline-block;
   vertical-align: middle;
   line-height: 0;
@@ -88,14 +87,18 @@ const MovedLink = styled.a`
   }
 `;
 
-export const IconLink = ({ to, title, src, alt, target }) =>
+export const IconLink = ({ to, title, src, alt, target }) => (
   <MovedLink href={to} title={title} target={target}>
-    <img src={src} alt={alt}/>
+    <img src={src} alt={alt} />
   </MovedLink>
+);
 
-export const Toggle = ({ onClick, active }) =>
-  <Arrow onClick={ onClick } style={{ transform: active ? 'rotate(180deg)': 'rotate(0deg)' }} />
-
+export const Toggle = ({ onClick, active }) => (
+  <Arrow
+    onClick={onClick}
+    style={{ transform: active ? "rotate(180deg)" : "rotate(0deg)" }}
+  />
+);
 
 export const SocialLinks = styled.div`
   display: inline-flex;

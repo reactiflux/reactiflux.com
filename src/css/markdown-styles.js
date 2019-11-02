@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+export default createGlobalStyle`
 .markdown {
   color: #3a1437;
   h1 {
@@ -69,3 +72,4 @@
     margin-bottom: calc(1.5rem / 2);
   }
 }
+`;

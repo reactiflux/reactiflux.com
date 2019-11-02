@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import {ReadMore} from '../misc'
-import {Toggle, LinkList} from '../links/'
+import React from "react";
+import styled from "styled-components";
+import { ReadMore } from "../misc";
+import { Toggle, LinkList } from "../links/";
 
 export const Header = styled.header`
   display: flex;
@@ -34,7 +34,6 @@ export const Navigation = styled.nav`
   }
 `;
 
-
 export const SideBarInner = styled.div`
   display: inline-flex;
   flex-flow: column;
@@ -50,7 +49,6 @@ export const SideBarInner = styled.div`
   }
 `;
 
-
 export const FrontPage = styled.main`
   display: flex;
   flex-flow: column nowrap;
@@ -64,7 +62,7 @@ export const Title = styled.h1`
   font-size: 200px;
   line-height: 200px;
   letter-spacing: -13px;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   align-self: flex-start;
   flex-basis: 100%;
   min-height: 60px;
@@ -86,13 +84,13 @@ export const Title = styled.h1`
     line-height: 55px;
     letter-spacing: -6px;
   }
-`
+`;
 
 export const Subtitle = styled.span`
   position: absolute;
   color: #dd1d64;
   font-size: 36px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   right: -40px;
   top: 37px;
@@ -123,7 +121,7 @@ export const Subtitle = styled.span`
     font-size: 12px;
     line-height: 12px;
     top: 10px;
-    ${''/* right: -24px; */}
+    ${"" /* right: -24px; */}
   }
 `;
 
@@ -154,24 +152,28 @@ export const Container = styled.div`
 export const MarkdownContainer = styled.div`
   display: inline-flex;
   flex-flow: column;
-  flex-basis: ${props => props.transcript ? '70%' : '70%'};
-  max-width:  ${props => props.transcript ? '1192px' : '800px'};
+  flex-basis: ${props => (props.transcript ? "70%" : "70%")};
+  max-width: ${props => (props.transcript ? "1192px" : "800px")};
   @media (max-width: 768px) {
     flex-basis: auto;
   }
 `;
 
-export const SideBar = ({ children, active, toggle, isToc, toc }) =>
+export const SideBar = ({ children, active, toggle, isToc, toc }) => (
   <SideBarInner>
     <ReadMore onClick={toggle}>
-      Read { active ? 'less' : 'more' } <Toggle active={active} />
+      Read {active ? "less" : "more"} <Toggle active={active} />
     </ReadMore>
-    { isToc ?
-      <div style={{ display: active ? 'block' : 'none', alignSelf: 'flex-start' }} dangerouslySetInnerHTML={{ __html: toc }} /> :
-      <LinkList style={{ display: active ? 'block' : 'none' }}>{children}</LinkList>
-    }
+    {isToc ? (
+      <div
+        style={{ display: active ? "block" : "none", alignSelf: "flex-start" }}
+        dangerouslySetInnerHTML={{ __html: toc }}
+      />
+    ) : (
+      <LinkList>{children}</LinkList>
+    )}
   </SideBarInner>
-
+);
 
 export const TitleBox = styled.div`
   position: relative;
@@ -184,14 +186,14 @@ export const SmallTitle = styled.h1`
   line-height: 4rem;
   color: #02d8ff;
   letter-spacing: -4px;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   align-self: flex-start;
   width: 100%;
   min-height: 4rem;
 `;
 
 export const Text = styled.p`
-  font-size: ${32/19}rem;
+  font-size: ${32 / 19}rem;
   font-weight: 500;
   line-height: 1.5;
   color: #52244f;
