@@ -91,6 +91,7 @@ export const Subtitle = styled.span`
   color: #dd1d64;
   font-size: 36px;
   font-family: "Poppins", sans-serif;
+  line-height: 0.8;
   font-weight: 600;
   right: -40px;
   top: 37px;
@@ -179,7 +180,6 @@ export const SideBar = ({ children, active, toggle, isToc, toc }) => (
 
 export const TitleBox = styled.div`
   position: relative;
-  flex-basis: 100%;
   align-self: flex-start;
 `;
 
