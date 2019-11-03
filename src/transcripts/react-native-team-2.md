@@ -1,25 +1,25 @@
 ---
 title: React Native core team (May 2019)
-date: May 9 2019
+date: 2019-05-09
 ---
 
 ## Follow the team
 
-[@Eli_White](https://twitter.com/Eli_White) (EliWhite)
-[@fkgozali](https://twitter.com/fkgozali) (fkgozali) (Kevin Gozali)
-[@emilyjanzer](https://twitter.com/emilyjanzer) (janzer)
-[@joshuaisgross](https://twitter.com/joshuaisgross)
-[@rickhanlonii](https://twitter.com/rickhanlonii) (Rick)
-[@ZackArgyle](https://twitter.com/ZackArgyle) (Zack Argyle)
-[@hectorramos](https://twitter.com/hectorramo) (hector)
-[@lunaleaps](https://twitter.com/lunaleaps) (luna)
-[@cpojer](https://twitter.com/cpojer) (christoph)
-[@sahrens2012](https://twitter.com/sahrens2012) (sahrens)
-[@yungsters](https://twitter.com/yungsters) (yungsters)
-[@ramanpreetnara](https://twitter.com/ramanpreetnara) (Ramanpreet)
-[@shergin](https://twitter.com/shergin) (Valentin Shergin)
-[@mdvacca](https://twitter.com/mdvacca) (David Vacca)
-Mehdi Mulani (not on twitter) (mehdi)
+- [@Eli_White](https://twitter.com/Eli_White) (EliWhite)
+- [@fkgozali](https://twitter.com/fkgozali) (fkgozali) (Kevin Gozali)
+- [@emilyjanzer](https://twitter.com/emilyjanzer) (janzer)
+- [@joshuaisgross](https://twitter.com/joshuaisgross)
+- [@rickhanlonii](https://twitter.com/rickhanlonii) (Rick)
+- [@ZackArgyle](https://twitter.com/ZackArgyle) (Zack Argyle)
+- [@hectorramos](https://twitter.com/hectorramo) (hector)
+- [@lunaleaps](https://twitter.com/lunaleaps) (luna)
+- [@cpojer](https://twitter.com/cpojer) (christoph)
+- [@sahrens2012](https://twitter.com/sahrens2012) (sahrens)
+- [@yungsters](https://twitter.com/yungsters) (yungsters)
+- [@ramanpreetnara](https://twitter.com/ramanpreetnara) (Ramanpreet)
+- [@shergin](https://twitter.com/shergin) (Valentin Shergin)
+- [@mdvacca](https://twitter.com/mdvacca) (David Vacca)
+- Mehdi Mulani (not on twitter) (mehdi)
 
 ![The team hard at work answering questions!](https://media.discordapp.net/attachments/193117606629081089/576135096860672025/image0.jpg?width=1239&height=931)
 _The team hard at work answering questions!!_

@@ -1,6 +1,6 @@
 ---
 title: Janic Duplessis
-date: May 16 2019
+date: 2019-05-16
 ---
 
 ## [Janic Duplessis](https://twitter.com/janicduplessis), React Native core contributor & Co-founder of [th3rdwave](https://www.th3rdwave.coffee/)

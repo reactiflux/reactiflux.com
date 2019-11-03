@@ -1,6 +1,6 @@
 ---
 title: Vladimir Novick
-date: June 27 2019
+date: 2019-06-27
 ---
 
 ## [Vladimir Novick](https://twitter.com/vladimirnovick), Developer Relations @ [Hasura.io][hasura]

@@ -1,15 +1,15 @@
 ---
 title: Clubhouse Team
-date: July 25 2019
+date: 2019-07-25
 ---
 
 ## [Clubhouse][clubhouse]
 
 ## Follow the team
 
-[@\_eliperkins](https://twitter.com/_eliperkins) (eliperkins)
-[@charpeni\_](https://twitter.com/charpeni_) (charpeni)
-[@jenelmyers](https://twitter.com/jenelmyers) (Jenel)
+- [@\_eliperkins](https://twitter.com/_eliperkins) (eliperkins)
+- [@charpeni\_](https://twitter.com/charpeni_) (charpeni)
+- [@jenelmyers](https://twitter.com/jenelmyers) (Jenel)
 
 <a name="how-important-is-product-documentationt" href="#how-important-is-product-documentationt">#</a> **Q:** How important is product documentation to your team? Do you have an example of documentation you think is amazing? – mostlymat
 

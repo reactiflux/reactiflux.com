@@ -1,6 +1,6 @@
 ---
 title: Frank von Hoven & Gant Laborde
-date: September 5 2019
+date: 2019-09-05
 ---
 
 ## Frank von Hoven & Gant Laborde, Senior Software Engineer & CIO at Infinite Red, respectively

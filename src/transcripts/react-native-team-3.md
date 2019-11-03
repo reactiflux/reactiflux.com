@@ -1,17 +1,17 @@
 ---
 title: React Native core team (August 2019)
-date: August 8 2019
+date: 2019-08-08
 ---
 
 ## Follow the team
 
-[@Eli_White](https://twitter.com/Eli_White) (EliWhite)
-[@fkgozali](https://twitter.com/fkgozali) (fkgozali) (Kevin Gozali)
-[@emilyjanzer](https://twitter.com/emilyjanzer) (janzer)
-[@rickhanlonii](https://twitter.com/rickhanlonii) (Rick)
-[@ZackArgyle](https://twitter.com/ZackArgyle) (Zack Argyle)
-[@hectorramos](https://twitter.com/hectorramo) (hector)
-[@cpojer](https://twitter.com/cpojer) (christoph)
+- [@Eli_White](https://twitter.com/Eli_White) (EliWhite)
+- [@fkgozali](https://twitter.com/fkgozali) (fkgozali) (Kevin Gozali)
+- [@emilyjanzer](https://twitter.com/emilyjanzer) (janzer)
+- [@rickhanlonii](https://twitter.com/rickhanlonii) (Rick)
+- [@ZackArgyle](https://twitter.com/ZackArgyle) (Zack Argyle)
+- [@hectorramos](https://twitter.com/hectorramo) (hector)
+- [@cpojer](https://twitter.com/cpojer) (christoph)
 
 ## Introduction
 

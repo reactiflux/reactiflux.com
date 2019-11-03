@@ -1,14 +1,14 @@
 ---
 title: Microsoft React Native Windows Team
-date: October 17 2019
+date: 2019-10-17
 ---
 
 ## Follow the team
 
-[@Harini_Kannan](https://twitter.com/Harini_Kannan) (harinik)
-[@EricRozell](https://twitter.com/EricRozell) (rozele)
-[@pag3rd](https://twitter.com/pag3rd) (pag3)
-Andrew Coates (not on twitter) (acoates)
+- [@Harini_Kannan](https://twitter.com/Harini_Kannan) (harinik)
+- [@EricRozell](https://twitter.com/EricRozell) (rozele)
+- [@pag3rd](https://twitter.com/pag3rd) (pag3)
+- Andrew Coates (not on twitter) (acoates)
 
 <a name="how-do-you-plan-to-pitch" href="#how-do-you-plan-to-pitch">#</a> **Q:** How do you plan to pitch the idea of React Native to existing Windows developers? – orta
 

@@ -1,6 +1,6 @@
 ---
 title: Kristijan Ristovki
-date: April 18 2019
+date: 2019-04-18
 ---
 
 ## [Kristijan Ristovki][kitze] ([@kitze](https://twitter.com/thekitze)), founder of [React Academy][react-academy], working on [@twizzyapp][twizzy-app], [@sizzyapp][sizzy-app], [@jsui_app][js-ui], and [ok-google.io][ok-google-io]

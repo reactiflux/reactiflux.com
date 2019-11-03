@@ -1,6 +1,6 @@
 ---
-title: Ryan Florence
-date: April 15 2019
+title: Ryan Florence (April 2019)
+date: 2019-04-15
 ---
 
 ## Ryan Florence, [React Router](https://reacttraining.com/react-router/) Co-Author | [https://reacttraining.com/][react-training]

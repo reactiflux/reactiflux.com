@@ -1,6 +1,6 @@
 ---
 title: Bob Scarano & Craig Blagg
-date: August 15 2019
+date: 2019-08-15
 ---
 
 ## Bob Scarano & Craig Blagg, team leads at Squarespace
@@ -268,4 +268,3 @@ I would add to craig’s answer by saying it’s best to "learn how to learn and
 **A:** In our internal libraries and applications we use a number of mechanisms for measuring overall library sizes, typically similar to webpack-bundle-analyzer and reporting bundle sizes on each build to our internal graphing service, to measure trends. Some of our libraries also maintain the output of this in the repo, so it’s visible in PRs as to how the specific change effects payload sizes.
 
 – cblagg
-

@@ -1,6 +1,6 @@
 ---
 title: Conrad Irwin
-date: June 6 2019
+date: 2019-06-06
 ---
 
 ## Conrad Irwin, Co-founder & CTO of [Superhuman][superhuman], an Email Client Built with React/Electron
