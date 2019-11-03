@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "./index";
+import { TypographyStyle } from "react-typography";
 
 // Add our typefaces.
 import "typeface-poppins";
@@ -73,6 +74,7 @@ export default class Layout extends React.Component {
 
     return (
       <div>
+        <TypographyStyle typography={typography} />
         <NavBar />
         <Container
           style={{
