@@ -6,7 +6,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
       transcripts: allFile(
         filter: { sourceInstanceName: { eq: "transcripts" } }
-        sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
+        sort: { fields: [childMarkdownRemark___frontmatter___date], order: DESC }
       ) {
         nodes {
           name
