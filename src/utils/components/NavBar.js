@@ -75,7 +75,8 @@ export default class NavBar extends React.Component {
               Transcripts
             </NavigationLink>
             <NavigationLink
-              to="http://jobs.reactiflux.com"
+              as="a"
+              href="http://jobs.reactiflux.com"
               title="Jobs"
               target="_blank"
               onClick={closeMenu}

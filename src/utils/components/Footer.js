@@ -22,19 +22,23 @@ export default function Footer() {
         <Copyright>© {new Date().getFullYear()} Reactiflux</Copyright>
         <Credits>
           {"Designed in "}
-          <StyledLink href="https://www.sketchapp.com/" title="Sketch">
+          <StyledLink as="a" href="https://www.sketchapp.com/" title="Sketch">
             Sketch
           </StyledLink>
           {". Coded in "}
-          <StyledLink href="https://atom.io/" title="Atom">
+          <StyledLink as="a" href="https://atom.io/" title="Atom">
             Atom
           </StyledLink>
           {". Built using "}
-          <StyledLink href="https://github.com/gatsbyjs/gatsby" title="Gatsby">
+          <StyledLink
+            as="a"
+            href="https://github.com/gatsbyjs/gatsby"
+            title="Gatsby"
+          >
             Gatsby.js
           </StyledLink>
           {". Hosted on "}
-          <StyledLink href="https://www.netlify.com/" title="Netlify">
+          <StyledLink as="a" href="https://www.netlify.com/" title="Netlify">
             Netlify
           </StyledLink>
           .

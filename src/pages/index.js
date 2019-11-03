@@ -118,6 +118,7 @@ const Index = () => {
         </Text>
         <Buttons>
           <Button
+            as="a"
             primary
             href="https://discord.gg/reactiflux"
             target="_blank"
