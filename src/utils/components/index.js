@@ -8,7 +8,8 @@ export {
   Toggle,
   StyledLink,
   SocialLinks,
-  Arrow
+  Arrow,
+  HeadingLink
 } from "./links";
 export {
   Header,

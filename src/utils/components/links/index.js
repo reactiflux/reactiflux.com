@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 import { MenuIcon } from "../../../assets/logos";
+import { getAnchor } from '../../anchor';
 
 export const StyledLink = styled(Link)`
   color: #dd1d64;
@@ -10,6 +11,8 @@ export const StyledLink = styled(Link)`
     text-decoration: underline;
   }
 `;
+
+const StyledAnchor = StyledLink.withComponent('a');
 
 export const NavigationLink = styled(StyledLink)`
   padding-bottom: 6px;
@@ -119,3 +122,7 @@ export const Arrow = styled.div`
     display: inline;
   }
 `;
+
+export const HeadingLink = ({ value }) => (
+  <StyledAnchor href={getAnchor(value)}>{value}</StyledAnchor>
+);

@@ -30,15 +30,7 @@ module.exports = {
     {
       resolve: "gatsby-transformer-remark",
       options: {
-        plugins: [
-          // {
-          //   resolve: "gatsby-remark-prismjs",
-          //   options: {
-          //     showLineNumbers: true,
-          //     noInlineHighlight: true,
-          //   },
-          // },
-        ]
+        plugins: [`gatsby-remark-autolink-headers`]
       }
     },
     "gatsby-plugin-styled-components"

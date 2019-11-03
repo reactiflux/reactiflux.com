@@ -1,5 +1,6 @@
 ---
 title: Learning
+sidebar: true
 ---
 
 A selected list of tutorials, articles, and resources on Javascript, React, Redux, and related topics.  Brought to you by [Mark Erikson](https://twitter.com/acemarke) (aka @acemarke). For additional articles on these and other topics, see [React/Redux Links](https://github.com/markerikson/react-redux-links).
