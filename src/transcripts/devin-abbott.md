@@ -1,6 +1,6 @@
 ---
 title: Devin Abbott
-date: 2016-05-25
+date: 2016-05-19
 ---
 
 ## Engineer @ Deco Software

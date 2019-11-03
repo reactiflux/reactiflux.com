@@ -1,6 +1,6 @@
 ---
 title: Bob Scarano & Craig Blagg
-date: 2019-08-15
+date: 2019-08-08
 ---
 
 ## Bob Scarano & Craig Blagg, team leads at Squarespace

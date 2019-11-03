@@ -1,6 +1,6 @@
 ---
 title: Relay Team
-date: 2016-08-26
+date: 2016-08-18
 ---
 
 ## Facebook Engineers Working on Relay

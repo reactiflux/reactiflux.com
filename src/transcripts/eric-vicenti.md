@@ -1,6 +1,6 @@
 ---
 title: Eric Vicenti
-date: 2016-03-14
+date: 2016-03-10
 ---
 
 ## Engineer @ Facebook | Creator of Navigator Experimental

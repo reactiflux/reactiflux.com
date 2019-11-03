@@ -1,6 +1,6 @@
 ---
 title: Ryan Florence
-date: 2016-11-23
+date: 2016-09-29
 ---
 
 ## React Router Co-Author | [https://reactjs-training.com](https://reactjs-training.com)
