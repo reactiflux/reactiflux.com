@@ -19,13 +19,13 @@ import Layout from "../utils/components/Layout";
 
 export default function Transcript({ data }) {
   const { html, frontmatter } = data.markdownRemark;
-  const articles = data.transcripts.nodes.map(node => {
-    return {
+  const articles = data.transcripts.nodes
+    .filter(node => node.childMarkdownRemark.html.trim().length)
+    .map(node => ({
       title: node.childMarkdownRemark.frontmatter.title,
       path: `/${node.relativeDirectory}/${node.name}`,
       html: node.childMarkdownRemark.html
-    };
-  });
+    }));
 
   return (
     <Layout>

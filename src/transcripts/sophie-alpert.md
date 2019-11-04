@@ -1,6 +1,9 @@
 ---
 title: Sophie Alpert (June 2016)
 date: 2016-06-09
+location: Q&A Channel Reactiflux
+description: 'Facebook React.js Core Team'
+people: '[@sophiebits](https://twitter.com/sophiebits)'
 ---
 
 ## Facebook React Core Team Member

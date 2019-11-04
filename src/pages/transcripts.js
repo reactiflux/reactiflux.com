@@ -12,13 +12,13 @@ import MarkdownStyles from "../css/markdown-styles";
 import Layout from "../utils/components/Layout";
 
 export default function Transcripts({ data }) {
-  const articles = data.transcripts.nodes.map(node => {
-    return {
+  const articles = data.transcripts.nodes
+    .filter(node => node.childMarkdownRemark.html.trim().length)
+    .map(node => ({
       title: node.childMarkdownRemark.frontmatter.title,
       path: `/${node.relativeDirectory}/${node.name}`,
       html: node.childMarkdownRemark.html
-    };
-  });
+    }));
 
   const newestArticle = articles[0];
 

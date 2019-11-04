@@ -1,6 +1,7 @@
 ---
 title: Relay Team
 date: 2016-08-18
+location: Q&A Channel Reactiflux
 ---
 
 ## Facebook Engineers Working on Relay

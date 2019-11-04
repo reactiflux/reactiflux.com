@@ -1,4 +1,37 @@
 const path = require("path");
+const remark = require('remark');
+const remarkHTML = require('remark-html');
+
+const frontmatterFieldSettings = [
+  { field: 'description', defaultValue: null, supportMarkdown: true },
+  { field: 'location', defaultValue: null },
+  { field: 'people', defaultValue: null, supportMarkdown: true },
+  { field: 'recording', defaultValue: null, supportMarkdown: true },
+  { field: 'time', defaultValue: null },
+]
+
+exports.onCreateNode = ({ node }) => {
+  if (node.frontmatter) {
+    frontmatterFieldSettings.forEach(
+      ({ field, defaultValue, supportMarkdown }) => {
+        const value = node.frontmatter[field]
+
+        if (supportMarkdown && value) {
+          node.frontmatter[field] = remark()
+            .use(remarkHTML)
+            .processSync(value)
+            .toString()
+            .replace(/<\/?p>/g, '')
+        }
+
+        if (defaultValue !== undefined && !value) {
+          node.frontmatter[field] = defaultValue
+        }
+      },
+    )
+  }
+  return node
+}
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
@@ -12,6 +45,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           name
           childMarkdownRemark {
             id
+            html
             frontmatter {
               date
             }
@@ -36,13 +70,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   // Transcripts
   result.data.transcripts.nodes.forEach(node => {
-    const { id, frontmatter } = node.childMarkdownRemark;
+    const { id, html = '', frontmatter } = node.childMarkdownRemark || {};
     const { name } = node;
-    createPage({
-      path: path.join("transcripts", name),
-      component: path.resolve("src", "templates", "Transcript.js"),
-      context: { id, date: frontmatter.date }
-    });
+    if (html.trim().length) {
+      createPage({
+        path: path.join("transcripts", name),
+        component: path.resolve("src", "templates", "Transcript.js"),
+        context: { id, date: frontmatter.date }
+      });
+    }
   });
 
   // Markdown pages

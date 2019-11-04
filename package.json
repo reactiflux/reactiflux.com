@@ -20,6 +20,8 @@
     "react-helmet": "^5.2.1",
     "react-responsive-grid": "./mjaakko-react-responsive-grid-v0.3.7.tgz",
     "react-typography": "^0.16.19",
+    "remark": "^11.0.1",
+    "remark-html": "^10.0.0",
     "styled-components": "4",
     "typeface-poppins": "^0.0.8",
     "typeface-space-mono": "^0.0.6",

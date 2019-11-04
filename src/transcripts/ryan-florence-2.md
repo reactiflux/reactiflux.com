@@ -1,6 +1,10 @@
 ---
 title: Ryan Florence (April 2019)
 date: 2019-04-15
+time: 1-2pm PT / 8-9PM GMT
+location: Q&A Channel Reactiflux
+description: 'React Router Co-Author | [reacttraining.com](https://reacttraining.com/)'
+people: '[@ryanflorence](https://twitter.com/ryanflorence)'
 ---
 
 ## Ryan Florence, [React Router](https://reacttraining.com/react-router/) Co-Author | [https://reacttraining.com/][react-training]
