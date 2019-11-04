@@ -33,20 +33,20 @@ export default function Schedule({ data }) {
 
 			if (isUpcoming && !acc.upcoming) {
 				acc.children.push(
-					<>
+					<React.Fragment key="upcoming">
 						<hr />
-						<h2 key="upcoming">Upcoming Q&A's & Meetups</h2>
-					</>,
+						<h2>Upcoming Q&A's & Meetups</h2>
+					</React.Fragment>,
 				)
 				acc.upcoming = true
 			}
 
 			if (!isUpcoming && !acc.past) {
 				acc.children.push(
-					<>
+					<React.Fragment key="past">
 						<hr />
 						<h2 key="past">Past Q&A's & Meetups</h2>
-					</>,
+					</React.Fragment>,
 				)
 				acc.past = true
 			}
@@ -110,12 +110,11 @@ export default function Schedule({ data }) {
 						community. These Q&A’s usually take place on Thursdays
 						from 1pm - 2pm PT. If you want to hear from someone
 						specific in the community, let us know by contacting us
-						via{' '}
-						<Link to="https://twitter.com/reactiflux">Twitter</Link>{' '}
+						via <a href="https://twitter.com/reactiflux">Twitter</a>{' '}
 						or ping an admin or moderator in the{' '}
-						<Link to="https://discord.gg/BkSU7Ju">
+						<a href="https://discord.gg/BkSU7Ju">
 							#reactiflux-admin
-						</Link>{' '}
+						</a>{' '}
 						channel on discord.
 					</p>
 					{children}
