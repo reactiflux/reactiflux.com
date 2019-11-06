@@ -17,8 +17,10 @@ export default function Transcripts({ data }) {
 	return (
 		<Layout title="Transcripts">
 			<h1>{newestArticle.title}</h1>
-			<time>Transcript from {newestArticle.date}</time>
-			<div dangerouslySetInnerHTML={{ __html: newestArticle.html }} />
+			<div>
+				<time>Transcript from {newestArticle.date}</time>
+				<div dangerouslySetInnerHTML={{ __html: newestArticle.html }} />
+			</div>
 			<nav>
 				<ol>
 					{articles.map(article => (

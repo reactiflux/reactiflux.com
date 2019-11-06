@@ -16,7 +16,7 @@ import { Layout } from '@components'
 
 const Index = () => {
 	return (
-		<Layout title="Welcome">
+		<Layout title="Welcome" homepage>
 			<h1>Welcome to Reactiflux</h1>
 			<p>
 				We&rsquo;re a chat community of 80,000+ React&nbsp;JS&nbsp;

@@ -4,7 +4,8 @@ export const MainStyles = createGlobalStyle`
 html {
     /* set 1rem to 10px at 1000px wide */
     font-size: 62.5%;
-    font-size: calc(62.5% - 5px + 0.5vw);
+    font-size: calc(62.5% - 3px + 0.3vw);
+    min-width: 320px;
     overflow-x: hidden;
     overflow-y: scroll;
 }
