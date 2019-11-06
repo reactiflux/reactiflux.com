@@ -14,28 +14,6 @@ export const MarkdownStyles = createGlobalStyle`
   h2,h3,h4 {
     color: #52244f;
   }
-  h2 {
-    margin-bottom: 1.052631579rem;
-    font-size: 1.789473684rem;
-    line-height: 2.105263158rem;
-    font-weight: 600;
-  }
-  h3 {
-    font-size: 1.157894737rem;
-    line-height: 1.315789474rem;
-    font-weight: 600;
-    margin-bottom: 0;
-  }
-  h4 {
-    margin-bottom: 0;
-  }
-  ul {
-    margin-left: 0;
-  }
-  li {
-    margin-bottom: 0;
-    margin-left: 1rem;
-  }
   a {
     text-decoration: none;
     color: #dd1d64;
