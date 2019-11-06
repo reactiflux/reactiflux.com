@@ -1,6 +1,7 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
+
+import { Layout } from '@components'
 
 const currentDate = new Date()
 
@@ -95,8 +96,7 @@ export default function Schedule({ data }) {
 	)
 
 	return (
-		<main>
-			<Helmet title={'Q&A Schedule'} />
+		<Layout title="Q&A Schedule">
 			<h1>Q&A Schedule</h1>
 			<div>
 				<p>
@@ -112,7 +112,7 @@ export default function Schedule({ data }) {
 				</p>
 				{children}
 			</div>
-		</main>
+		</Layout>
 	)
 }
 

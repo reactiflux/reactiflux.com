@@ -1,19 +1,13 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+
+import { Layout } from '@components'
 
 const Index = () => {
 	return (
-		<main>
-			<Helmet
-				title="Reactiflux"
-				meta={[
-					{
-						name: 'description',
-						content:
-							'Anonymously contact a Reactiflux administrator',
-					},
-				]}
-			/>
+		<Layout
+			title="Contact Us"
+			description="Anonymously contact a Reactiflux administrator"
+		>
 			<h1>Message the staff</h1>
 			<form
 				onSubmit={e => {
@@ -28,7 +22,7 @@ const Index = () => {
 
 				<button primary>Send message</button>
 			</form>
-		</main>
+		</Layout>
 	)
 }
 

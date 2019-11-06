@@ -1,6 +1,7 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
+
+import { Layout } from '@components'
 
 export default function Transcripts({ data }) {
 	const articles = data.transcripts.nodes
@@ -14,8 +15,7 @@ export default function Transcripts({ data }) {
 	const newestArticle = articles[0]
 
 	return (
-		<main>
-			<Helmet title={'Reactiflux transcripts'} />
+		<Layout title="Transcripts">
 			<h1>{newestArticle.title}</h1>
 			<time>Transcript from {newestArticle.date}</time>
 			<div dangerouslySetInnerHTML={{ __html: newestArticle.html }} />
@@ -33,7 +33,7 @@ export default function Transcripts({ data }) {
 					))}
 				</ol>
 			</nav>
-		</main>
+		</Layout>
 	)
 }
 

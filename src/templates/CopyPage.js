@@ -1,14 +1,14 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import { getAnchor } from '../utils/anchor'
+
+import { Layout } from '@components'
+import { getAnchor } from '@utils/anchor'
 
 export default function Transcript({ data }) {
 	const { html, frontmatter, headings } = data.markdownRemark
 
 	return (
-		<main>
-			<Helmet title={'Reactiflux transcripts'} />
+		<Layout title={frontmatter.title}>
 			<h1>{frontmatter.title}</h1>
 			<div
 				className="markdown"
@@ -27,7 +27,7 @@ export default function Transcript({ data }) {
 					</ol>
 				</nav>
 			) : null}
-		</main>
+		</Layout>
 	)
 }
 

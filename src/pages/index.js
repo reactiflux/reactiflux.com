@@ -1,6 +1,6 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
+
 import {
 	Community,
 	Console,
@@ -11,21 +11,12 @@ import {
 	ReactLogo,
 	Redux,
 	Relay,
-} from '../assets/logos'
+} from '@assets/logos'
+import { Layout } from '@components'
 
 const Index = () => {
 	return (
-		<main>
-			<Helmet
-				title="Reactiflux"
-				meta={[
-					{
-						name: 'description',
-						content:
-							'We’re a chat community of 80,000+ React JS, React Native, Redux, Relay and GraphQL developers.',
-					},
-				]}
-			/>
+		<Layout title="Welcome">
 			<h1>Welcome to Reactiflux</h1>
 			<p>
 				We&rsquo;re a chat community of 80,000+ React&nbsp;JS&nbsp;
@@ -126,7 +117,7 @@ const Index = () => {
 					Q&A Schedule
 				</Link>
 			</p>
-		</main>
+		</Layout>
 	)
 }
 

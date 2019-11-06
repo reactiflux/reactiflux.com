@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+export const MarkdownStyles = createGlobalStyle`
 .markdown {
   color: #3a1437;
   h1 {
@@ -72,4 +72,4 @@ export default createGlobalStyle`
     margin-bottom: calc(1.5rem / 2);
   }
 }
-`;
+`
