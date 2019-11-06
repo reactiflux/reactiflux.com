@@ -1,9 +1,6 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
 import Helmet from 'react-helmet'
-import MarkdownStyles from '../css/markdown-styles'
-import { Container, SmallTitle, MarkdownContainer } from '../utils/components'
-import Layout from '../utils/components/Layout'
+import { graphql, Link } from 'gatsby'
 
 const currentDate = new Date()
 
@@ -98,29 +95,24 @@ export default function Schedule({ data }) {
 	)
 
 	return (
-		<Layout>
-			<Container>
-				<MarkdownStyles />
-				<Helmet title={'Q&A Schedule'} />
-				<SmallTitle>Q&A Schedule</SmallTitle>
-				<MarkdownContainer className="markdown">
-					<p>
-						We host one or two Q&A’s per month with Facebook
-						Engineers and other interesting developers in the React
-						community. These Q&A’s usually take place on Thursdays
-						from 1pm - 2pm PT. If you want to hear from someone
-						specific in the community, let us know by contacting us
-						via <a href="https://twitter.com/reactiflux">Twitter</a>{' '}
-						or ping an admin or moderator in the{' '}
-						<a href="https://discord.gg/BkSU7Ju">
-							#reactiflux-admin
-						</a>{' '}
-						channel on discord.
-					</p>
-					{children}
-				</MarkdownContainer>
-			</Container>
-		</Layout>
+		<main>
+			<Helmet title={'Q&A Schedule'} />
+			<h1>Q&A Schedule</h1>
+			<div>
+				<p>
+					We host one or two Q&A’s per month with Facebook Engineers
+					and other interesting developers in the React community.
+					These Q&A’s usually take place on Thursdays from 1pm - 2pm
+					PT. If you want to hear from someone specific in the
+					community, let us know by contacting us via{' '}
+					<a href="https://twitter.com/reactiflux">Twitter</a> or ping
+					an admin or moderator in the{' '}
+					<a href="https://discord.gg/BkSU7Ju">#reactiflux-admin</a>{' '}
+					channel on discord.
+				</p>
+				{children}
+			</div>
+		</main>
 	)
 }
 

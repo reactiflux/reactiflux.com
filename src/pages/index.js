@@ -1,138 +1,133 @@
-import React from "react";
-import Helmet from "react-helmet";
+import React from 'react'
+import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
 import {
-  FrontPage,
-  TitleBox,
-  Title,
-  Subtitle,
-  Text,
-  Buttons,
-  Button,
-  IconLink
-} from "../utils/components";
-import Layout from "../utils/components/Layout";
-import {
-  Community,
-  Console,
-  Facebook,
-  GraphQL,
-  Jest,
-  ReactNative,
-  ReactLogo,
-  Redux,
-  Relay
-} from "../assets/logos";
+	Community,
+	Console,
+	Facebook,
+	GraphQL,
+	Jest,
+	ReactNative,
+	ReactLogo,
+	Redux,
+	Relay,
+} from '../assets/logos'
 
 const Index = () => {
-  return (
-    <Layout>
-      <FrontPage>
-        <Helmet
-          title="Reactiflux"
-          meta={[
-            {
-              name: "description",
-              content:
-                "We’re a chat community of 80,000+ React JS, React Native, Redux, Relay and GraphQL developers."
-            }
-          ]}
-        />
-        <TitleBox>
-          <Title>Reactiflux</Title>
-          <Subtitle>Welcome to</Subtitle>
-        </TitleBox>
-        <Text>
-          We&rsquo;re a chat community of 80,000+ React&nbsp;JS&nbsp;
-          <IconLink
-            to="https://github.com/facebook/react"
-            target="_blank"
-            title="React JS"
-            src={ReactLogo}
-            alt="React Logo"
-          />
-          , React&nbsp;Native&nbsp;
-          <IconLink
-            to="https://github.com/facebook/react-native"
-            target="_blank"
-            title="React Native"
-            src={ReactNative}
-            alt="React Native Logo"
-          />
-          , Redux&nbsp;
-          <IconLink
-            to="https://github.com/reactjs/redux"
-            target="_blank"
-            title="Redux"
-            src={Redux}
-            alt="Redux Logo"
-          />
-          , Jest&nbsp;
-          <IconLink
-            to="https://github.com/facebook/jest"
-            target="_blank"
-            title="Jest"
-            src={Jest}
-            alt="Jest Logo"
-          />
-          , Relay&nbsp;
-          <IconLink
-            to="https://github.com/facebook/relay"
-            target="_blank"
-            title="Relay"
-            src={Relay}
-            alt="Relay Logo"
-          />{" "}
-          and GraphQL&nbsp;
-          <IconLink
-            to="https://github.com/facebook/graphql"
-            target="_blank"
-            title="GraphQL"
-            src={GraphQL}
-            alt="GraphQL Logo"
-          />{" "}
-          developers. We hold Q&amp;A&rsquo;s with Facebook Engineers&nbsp;
-          <IconLink
-            to="https://github.com/facebook"
-            target="_blank"
-            title="Facebook Organization"
-            src={Facebook}
-            alt="Facebook Logo"
-          />{" "}
-          and other developers&nbsp;
-          <IconLink
-            to="https://github.com/reactiflux"
-            target="_blank"
-            title="Reactiflux Developers"
-            src={Console}
-            alt="Developers Logo"
-          />{" "}
-          in the community&nbsp;
-          <IconLink
-            to="https://discord.gg/reactiflux"
-            target="_blank"
-            title="Reactiflux Discord"
-            src={Community}
-            alt="Community Logo"
-          />
-          . Come chat about tech related to React & JavaScript or ask for help!
-        </Text>
-        <Buttons>
-          <Button
-            as="a"
-            primary
-            href="https://discord.gg/reactiflux"
-            target="_blank"
-            title="Reactiflux Discord"
-          >
-            Join Reactiflux
-          </Button>
-          <Button to="/schedule/" title="Q&A Schedule">
-            Q&A Schedule
-          </Button>
-        </Buttons>
-      </FrontPage>
-    </Layout>
-  );
-};
+	return (
+		<main>
+			<Helmet
+				title="Reactiflux"
+				meta={[
+					{
+						name: 'description',
+						content:
+							'We’re a chat community of 80,000+ React JS, React Native, Redux, Relay and GraphQL developers.',
+					},
+				]}
+			/>
+			<h1>Welcome to Reactiflux</h1>
+			<p>
+				We&rsquo;re a chat community of 80,000+ React&nbsp;JS&nbsp;
+				<a
+					href="https://github.com/facebook/react"
+					rel="noopener noreferrer"
+					target="_blank"
+					title="React JS"
+				>
+					<img src={ReactLogo} alt="React JS" />
+				</a>
+				, React&nbsp;Native&nbsp;
+				<a
+					href="https://github.com/facebook/react-native"
+					rel="noopener noreferrer"
+					target="_blank"
+					title="React Native"
+				>
+					<img src={ReactNative} alt="React Native" />
+				</a>
+				, Redux&nbsp;
+				<a
+					href="https://github.com/reactjs/redux"
+					rel="noopener noreferrer"
+					target="_blank"
+					title="Redux"
+				>
+					<img src={Redux} alt="Redux" />
+				</a>
+				, Jest&nbsp;
+				<a
+					href="https://github.com/facebook/jest"
+					rel="noopener noreferrer"
+					target="_blank"
+					title="Jest"
+				>
+					<img src={Jest} alt="Jest" />
+				</a>
+				, Relay&nbsp;
+				<a
+					href="https://github.com/facebook/relay"
+					rel="noopener noreferrer"
+					target="_blank"
+					title="Relay"
+				>
+					<img src={Relay} alt="Relay" />
+				</a>{' '}
+				and GraphQL&nbsp;
+				<a
+					href="https://github.com/facebook/graphql"
+					rel="noopener noreferrer"
+					target="_blank"
+					title="GraphQL"
+				>
+					<img src={GraphQL} alt="GraphQL" />
+				</a>{' '}
+				developers. We hold Q&amp;A&rsquo;s with Facebook
+				Engineers&nbsp;
+				<a
+					href="https://github.com/facebook"
+					rel="noopener noreferrer"
+					target="_blank"
+					title="Facebook Organization"
+				>
+					<img src={Facebook} alt="Facebook Organization" />
+				</a>{' '}
+				and other developers&nbsp;
+				<a
+					href="https://github.com/reactiflux"
+					rel="noopener noreferrer"
+					target="_blank"
+					title="Reactiflux Developers"
+				>
+					<img src={Console} alt="Reactiflux Developers" />
+				</a>{' '}
+				in the community&nbsp;
+				<a
+					href="https://discord.gg/reactiflux"
+					rel="noopener noreferrer"
+					target="_blank"
+					title="Reactiflux Discord"
+				>
+					<img src={Community} alt="Reactiflux Discord" />
+				</a>
+				. Come chat about tech related to React & JavaScript or ask for
+				help!
+			</p>
+			<p>
+				<a
+					href="https://discord.gg/reactiflux"
+					rel="noopener noreferrer"
+					target="_blank"
+					title="Reactiflux Discord"
+				>
+					Join Reactiflux
+				</a>
+				<Link to="/schedule/" title="Q&A Schedule">
+					Q&A Schedule
+				</Link>
+			</p>
+		</main>
+	)
+}
 
-export default Index;
+export default Index
