@@ -1,30 +1,32 @@
 import React from 'react'
+import Headroom from 'react-headroom'
 import { Link } from 'gatsby'
 
 import { Reactiflux } from '@assets/logos'
+import { useIsMobile } from '@hooks'
+
+import { Logo, MobileNav, Space, Wrapper } from './MenuStyles'
+
+const RenderChildren = ({ children }) => children
 
 export function Menu() {
+	const isMobile = useIsMobile()
+
+	const HeadroomIfDesktop = isMobile ? RenderChildren : Headroom
+	const MobileNavIfMobile = isMobile ? MobileNav : RenderChildren
+
 	return (
-		<menu>
-			<ul>
-				<li>
-					<Link to="/">
-						<img src={Reactiflux} alt="Reactiflux" />
-					</Link>
-				</li>
-				<li>
+		<HeadroomIfDesktop>
+			<Wrapper>
+				<Link to="/">
+					<Logo src={Reactiflux} alt="Reactiflux" />
+				</Link>
+				<Space />
+				<MobileNavIfMobile>
 					<Link to="/tips/">Tips</Link>
-				</li>
-				<li>
 					<Link to="/guidelines/">Guidelines</Link>
-				</li>
-				<li>
 					<Link to="/schedule/">Q&A Schedule</Link>
-				</li>
-				<li>
 					<Link to="/transcripts/">Transcripts</Link>
-				</li>
-				<li>
 					<a
 						href="http://jobs.reactiflux.com/"
 						target="_blank"
@@ -32,11 +34,9 @@ export function Menu() {
 					>
 						Jobs
 					</a>
-				</li>
-				<li>
 					<Link to="/learning/">Learning</Link>
-				</li>
-			</ul>
-		</menu>
+				</MobileNavIfMobile>
+			</Wrapper>
+		</HeadroomIfDesktop>
 	)
 }
