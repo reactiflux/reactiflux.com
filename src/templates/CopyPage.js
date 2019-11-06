@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import { Layout } from '@components'
+import { Layout, Link } from '@components'
 import { getAnchor } from '@utils/anchor'
 
 export default function Transcript({ data }) {
@@ -21,7 +21,7 @@ export default function Transcript({ data }) {
 							.filter(heading => heading.depth < 3)
 							.map(({ value }) => (
 								<li key={value}>
-									<a href={getAnchor(value)}>{value}</a>
+									<Link to={getAnchor(value)}>{value}</Link>
 								</li>
 							))}
 					</ol>

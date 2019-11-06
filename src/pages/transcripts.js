@@ -1,7 +1,7 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
-import { Layout } from '@components'
+import { Layout, Link } from '@components'
 
 export default function Transcripts({ data }) {
 	const articles = data.transcripts.nodes

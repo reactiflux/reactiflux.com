@@ -1,7 +1,7 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
-import { Layout } from '@components'
+import { Layout, Link } from '@components'
 
 const currentDate = new Date()
 
@@ -105,9 +105,11 @@ export default function Schedule({ data }) {
 					These Q&A’s usually take place on Thursdays from 1pm - 2pm
 					PT. If you want to hear from someone specific in the
 					community, let us know by contacting us via{' '}
-					<a href="https://twitter.com/reactiflux">Twitter</a> or ping
-					an admin or moderator in the{' '}
-					<a href="https://discord.gg/BkSU7Ju">#reactiflux-admin</a>{' '}
+					<Link to="https://twitter.com/reactiflux">Twitter</Link> or
+					ping an admin or moderator in the{' '}
+					<Link to="https://discord.gg/BkSU7Ju">
+						#reactiflux-admin
+					</Link>{' '}
 					channel on discord.
 				</p>
 				{children}
