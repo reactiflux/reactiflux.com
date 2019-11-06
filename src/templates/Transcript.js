@@ -16,10 +16,15 @@ export default function Transcript({ data }) {
 	return (
 		<Layout as="article" title={frontmatter.title}>
 			<h1>{frontmatter.title}</h1>
-			<div
-				className="markdown"
-				dangerouslySetInnerHTML={{ __html: html }}
-			/>
+			<div>
+				<p>
+					<em>Transcript from {frontmatter.date}</em>
+				</p>
+				<div
+					className="markdown"
+					dangerouslySetInnerHTML={{ __html: html }}
+				/>
+			</div>
 			<nav>
 				<ol>
 					{articles.map(article => (
@@ -44,6 +49,7 @@ export const pageQuery = graphql`
 			html
 			frontmatter {
 				title
+				date(formatString: "dddd MMMM Do, YYYY")
 			}
 		}
 		transcripts: allFile(

@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
+import { background, blue, foreground, pink } from '@utils/theme'
+
 export const MainStyles = createGlobalStyle`
 html {
     /* set 1rem to 10px at 1000px wide */
@@ -10,9 +12,15 @@ html {
     overflow-y: scroll;
 }
 
-body {
+html body {
+    background: ${background};
+    color: ${foreground};
     font-family: Work Sans, sans-serif;
     font-size: 1.9rem;
+
+    ${props =>
+		props.theme.mobilePadding &&
+		`margin-bottom: ${props.theme.mobilePadding};`}
 
     img {
         vertical-align: bottom;
@@ -20,8 +28,13 @@ body {
 
     menu, nav {
         &, ul, ol {
+            list-style: none;
             margin: 0;
             padding: 0;
+
+            li {
+                margin-bottom: 2rem;
+            }
         }
     }
 
@@ -54,7 +67,7 @@ body {
     }
 
     h1 {
-        color: #02d8ff;
+        color: ${blue};
         font-family: 'Space Mono', monospace;
         font-size: 7.6rem;
         letter-spacing: -4px;
@@ -78,8 +91,19 @@ body {
 
     hr {
         background: hsla(0, 0%, 0%, 0.2);
+        border: none;
         height: 1px;
         margin: 2rem 0;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: ${pink};
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 `

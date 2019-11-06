@@ -4,6 +4,7 @@ import { Link as InternalLink } from 'gatsby'
 
 export function Link({ children, newTab, to, ...props }) {
 	const isInternal = to.startsWith('/')
+	const toNewTab = newTab && !to.startsWith('#')
 
 	return isInternal ? (
 		<InternalLink to={to} {...props}>
@@ -12,8 +13,8 @@ export function Link({ children, newTab, to, ...props }) {
 	) : (
 		<a
 			href={to}
-			target={newTab ? '_blank' : null}
-			rel={newTab ? 'noopener noreferrer' : null}
+			target={toNewTab ? '_blank' : null}
+			rel={toNewTab ? 'noopener noreferrer' : null}
 			{...props}
 		>
 			{children}

@@ -3,9 +3,13 @@ import React from 'react'
 import { Discord, Github, Twitter } from '@assets/logos'
 import { Link } from '@components'
 
+import { Footer as FooterElement } from './FooterStyles'
+
+const year = new Date().getFullYear()
+
 export function Footer() {
 	return (
-		<footer>
+		<FooterElement>
 			<p>
 				<Link to="https://github.com/reactiflux/reactiflux.com">
 					<img src={Github} alt="Github" />
@@ -17,14 +21,7 @@ export function Footer() {
 					<img src={Twitter} alt="Twitter" />
 				</Link>
 			</p>
-			<p>© 2019 Reactiflux</p>
-			<p>
-				Designed in <Link to="https://www.sketchapp.com/">Sketch</Link>.
-				Coded in <Link to="https://code.visualstudio.com/">VSCode</Link>
-				. Built using{' '}
-				<Link to="https://github.com/gatsbyjs/gatsby">Gatsby.js</Link>.
-				Hosted on <Link to="https://www.netlify.com/">Netlify</Link>.
-			</p>
-		</footer>
+			<p>© {year} Reactiflux</p>
+		</FooterElement>
 	)
 }

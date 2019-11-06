@@ -1,10 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
 
+import { foreground, pink } from '@utils/theme'
+
 export const MarkdownStyles = createGlobalStyle`
 .markdown {
-  color: #3a1437;
   h1 {
-    color: #02d8ff;
+    color: ${foreground};
     font-size: 8.421052632rem;
     letter-spacing: -13px;
     line-height: 8.421052632rem;
@@ -12,11 +13,11 @@ export const MarkdownStyles = createGlobalStyle`
 
   }
   h2,h3,h4 {
-    color: #52244f;
+    color: ${foreground};
   }
   a {
     text-decoration: none;
-    color: #dd1d64;
+    color: ${pink};
     &:hover {
       text-decoration: underline;
     }
@@ -32,7 +33,7 @@ export const MarkdownStyles = createGlobalStyle`
   margin-left: 0;
   list-style: none;
   a {
-    color: #dd1d64;
+    color: ${pink};
     text-decoration: none;
     &:hover {
       text-decoration: underline;

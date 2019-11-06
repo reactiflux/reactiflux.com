@@ -1,13 +1,15 @@
 import styled from 'styled-components'
 
+import { background, blue, pink } from '@utils/theme'
+
 export const Logo = styled.img`
 	padding: 6px;
 `
 
 export const MobileNav = styled.div`
-	background: white;
+	background: ${background};
 	bottom: 0;
-    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
 	display: flex;
 	flex-wrap: nowrap;
 	font-size: 12px;
@@ -32,7 +34,7 @@ export const Space = styled.span`
 `
 
 export const Wrapper = styled.menu`
-	background: white;
+	background: ${background};
 	display: flex;
 	height: 64px;
 	padding: 0 calc((100vw - 1440px) / 2);
@@ -43,10 +45,10 @@ export const Wrapper = styled.menu`
 
 	a {
 		align-items: center;
-		color: #dd1d64;
+		color: ${pink};
 		display: flex;
 		position: relative;
-		text-decoration: none;
+		text-decoration: none !important;
 		white-space: nowrap;
 	}
 
@@ -56,7 +58,7 @@ export const Wrapper = styled.menu`
 
 	a {
 		&:after {
-			background: #05d7ff;
+			background: ${blue};
 			content: '';
 			display: block;
 			height: 0;
@@ -70,7 +72,7 @@ export const Wrapper = styled.menu`
 		}
 
 		&[aria-current='page']:after {
-			background: #dd1d64;
+			background: ${pink};
 		}
 	}
 
