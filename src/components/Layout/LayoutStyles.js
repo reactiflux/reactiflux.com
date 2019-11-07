@@ -10,8 +10,10 @@ export const mainPadding = css`
 	}
 `
 
-const homeTitleSize = size => `calc(${size}vw * 0.9)`
-const homeTitleSizeMax = size => `calc(${size}px * 11.75)`
+const title = {
+	responsive: size => `calc(${size}vw * 0.9)`,
+	static: size => `calc(${size}px * 11.75)`,
+}
 
 const homeLayout = css`
 	display: block;
@@ -29,33 +31,33 @@ const homeLayout = css`
 
 	h1 {
 		font-family: 'Space Mono', monospace;
-		font-size: ${homeTitleSize(18)};
-		letter-spacing: ${homeTitleSize(-1.3)};
+		font-size: ${title.responsive(18)};
+		letter-spacing: ${title.responsive(-1.3)};
 		line-height: 1;
 		position: relative;
 
 		span {
 			color: ${pink};
 			font-family: 'Poppins', sans-serif;
-			font-size: ${homeTitleSize(3.6)};
+			font-size: ${title.responsive(3.6)};
 			font-weight: 600;
-			left: ${homeTitleSize(69)};
+			left: ${title.responsive(69)};
 			letter-spacing: 0;
 			position: absolute;
 			text-transform: uppercase;
-			top: ${homeTitleSize(3)};
+			top: ${title.responsive(3)};
 		}
 	}
 
 	@media (min-width: 1300px) {
 		h1 {
-			font-size: ${homeTitleSizeMax(18)};
-			letter-spacing: ${homeTitleSizeMax(-1.3)};
+			font-size: ${title.static(18)};
+			letter-spacing: ${title.static(-1.3)};
 
 			span {
-				font-size: ${homeTitleSizeMax(3.6)};
-				left: ${homeTitleSizeMax(69)};
-				top: ${homeTitleSizeMax(3)};
+				font-size: ${title.static(3.6)};
+				left: ${title.static(69)};
+				top: ${title.static(3)};
 			}
 		}
 	}
