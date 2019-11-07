@@ -7,13 +7,11 @@ import { useIsMobile } from '@hooks'
 
 import { Logo, MobileNav, Space, Wrapper } from './MenuStyles'
 
-const RenderChildren = ({ children }) => children
-
 export function Menu() {
 	const isMobile = useIsMobile()
 
-	const HeadroomIfDesktop = isMobile ? RenderChildren : Headroom
-	const MobileNavIfMobile = isMobile ? MobileNav : RenderChildren
+	const HeadroomIfDesktop = isMobile ? React.Fragment : Headroom
+	const MobileNavIfMobile = isMobile ? MobileNav : React.Fragment
 
 	return (
 		<HeadroomIfDesktop>
