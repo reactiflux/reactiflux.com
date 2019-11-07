@@ -4,6 +4,7 @@ const selectColours = props => props.theme.colours
 
 export const background = props => selectColours(props).background
 export const blue = props => selectColours(props).blue
+export const darkPink = props => selectColours(props).darkPink
 export const foreground = props => selectColours(props).foreground
 export const green = props => selectColours(props).green
 export const pink = props => selectColours(props).pink
@@ -19,6 +20,8 @@ export function getTheme({ isMobile }) {
 			green: '#44b892',
 			pink: '#dc1d64',
 			yellow: '#e6a735',
+
+			darkPink: '#b3124d',
 
 			background: 'white',
 			foreground: '#51234f',

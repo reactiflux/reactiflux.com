@@ -1,4 +1,5 @@
 import React from 'react'
+import styled, { css } from 'styled-components'
 
 import {
 	Community,
@@ -11,7 +12,23 @@ import {
 	Redux,
 	Relay,
 } from '@assets/logos'
-import { Layout, Link } from '@components'
+import { Button, Layout, Link } from '@components'
+import { isMobile } from '@utils/theme'
+
+const P = styled.p`
+	${props =>
+		isMobile(props)
+			? css`
+					align-items: center;
+					display: flex;
+					flex-direction: column;
+
+					${Button} {
+						margin-right: 0;
+					}
+			  `
+			: ''}
+`
 
 const Index = () => {
 	return (
@@ -73,17 +90,17 @@ const Index = () => {
 				. Come chat about tech related to React & JavaScript or ask for
 				help!
 			</p>
-			<p>
-				<Link
+			<P>
+				<Button
 					to="https://discord.gg/reactiflux"
 					title="Reactiflux Discord"
 				>
 					Join Reactiflux
-				</Link>
-				<Link to="/schedule/" title="Q&A Schedule">
+				</Button>
+				<Button to="/schedule/" title="Q&A Schedule" secondary>
 					Q&A Schedule
-				</Link>
-			</p>
+				</Button>
+			</P>
 		</Layout>
 	)
 }
