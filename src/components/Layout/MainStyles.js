@@ -16,6 +16,7 @@ html body {
     background: ${background};
     color: ${foreground};
     font-family: Work Sans, sans-serif;
+    font-feature-settings: "kern", "liga", "clig", "calt";
     font-size: 1.9rem;
 
     ${props =>

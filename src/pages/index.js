@@ -16,7 +16,10 @@ import { Layout, Link } from '@components'
 const Index = () => {
 	return (
 		<Layout title="Welcome" homepage>
-			<h1>Welcome to Reactiflux</h1>
+			<h1>
+				<span>Welcome to</span>
+				Reactiflux
+			</h1>
 			<p>
 				We&rsquo;re a chat community of 80,000+ React&nbsp;JS&nbsp;
 				<Link to="https://github.com/facebook/react" title="React JS">
