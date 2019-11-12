@@ -6,9 +6,10 @@
     letter-spacing: -13px;
     line-height: 8.421052632rem;
     font-family: 'Space Mono', monospace;
-
   }
-  h2,h3,h4 {
+  h2,
+  h3,
+  h4 {
     color: #52244f;
   }
   h2 {
@@ -40,7 +41,9 @@
       text-decoration: underline;
     }
   }
-  a, code, strong {
+  a,
+  code,
+  strong {
     white-space: pre-wrap;
     word-break: break-word;
     word-wrap: break-word;

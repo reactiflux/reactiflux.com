@@ -1,17 +1,17 @@
-import React from 'react'
-import { Container } from 'react-responsive-grid'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
-import Headroom from 'react-headroom'
-import '../css/markdown-styles'
-import '../css/styles'
+import React from 'react';
+import { Container } from 'react-responsive-grid';
+import { Link } from 'react-router';
+import { prefixLink } from 'gatsby-helpers';
+import Headroom from 'react-headroom';
+import '../css/markdown-styles';
+import '../css/styles';
 
 // Add our typefaces.
-import 'typeface-poppins'
-import 'typeface-work-sans'
-import 'typeface-space-mono'
+import 'typeface-poppins';
+import 'typeface-work-sans';
+import 'typeface-space-mono';
 
-import { rhythm } from '../utils/typography'
+import { rhythm } from '../utils/typography';
 import {
   Header,
   Navigation,
@@ -23,83 +23,79 @@ import {
   Copyright,
   Credits,
   IconLink,
-  SocialLinks
-} from '../utils/components/'
-import { Discord, Twitter, Github } from '../assets/logos.js'
+  SocialLinks,
+} from '../utils/components/';
+import { Discord, Twitter, Github } from '../assets/logos.js';
 
 export default class Template extends React.Component {
   constructor(props) {
-    super(props)
-    const undef = typeof window !== 'undefined'
+    super(props);
+    const undef = typeof window !== 'undefined';
     this.state = {
       menu: false,
-      transcript: undef ? window.innerWidth < 768 ? false : true : false,
+      transcript: undef ? (window.innerWidth < 768 ? false : true) : false,
       toc: true,
-      width: undef ? window.innerWidth : null
-    }
+      width: undef ? window.innerWidth : null,
+    };
   }
 
   componentDidMount() {
-      window.addEventListener("resize", this.handleResize);
+    window.addEventListener('resize', this.handleResize);
   }
 
   componentWillUnmount() {
-      window.removeEventListener("resize", this.handleResize);
+    window.removeEventListener('resize', this.handleResize);
   }
 
   handleResize = () => {
     if (this.onMobile()) {
-      const { transcript, toc } = this.state
+      const { transcript, toc } = this.state;
       if (!transcript || !toc) {
         this.setState({
           transcript: true,
-          toc: true
-        })
+          toc: true,
+        });
       }
     }
-  }
+  };
 
-  onMobile = () => window.innerWidth <= 768
-
+  onMobile = () => window.innerWidth <= 768;
 
   toggle = (item) => () => {
     this.setState((prevState) => ({
-      [item]: !prevState[item]
-    }))
-  }
+      [item]: !prevState[item],
+    }));
+  };
 
   close = (item) => () => {
     if (this.onMobile()) {
       this.setState({
-        [item]: false
-      })
+        [item]: false,
+      });
     }
-  }
+  };
 
-  render () {
-    const { menu, transcript, toc } = this.state
-    const closeMenu = this.close('menu')
+  render() {
+    const { menu, transcript, toc } = this.state;
+    const closeMenu = this.close('menu');
 
-    const children = React.Children.map(
-      this.props.children,
-      (child) =>
-        React.cloneElement(
-          child,
-          { transcript, toc, toggle: this.toggle, close: this.close }
-        )
-    )
+    const children = React.Children.map(this.props.children, (child) =>
+      React.cloneElement(child, {
+        transcript,
+        toc,
+        toggle: this.toggle,
+        close: this.close,
+      }),
+    );
 
     return (
-      <div style={{position: menu ? 'fixed' : 'inherit'}}>
+      <div style={{ position: menu ? 'fixed' : 'inherit' }}>
         <Headroom disableInlineStyles>
           <Header>
-            <Logo
-              to={prefixLink('/')}
-              onClick={closeMenu}
-            >
+            <Logo to={prefixLink('/')} onClick={closeMenu}>
               Reactiflux
             </Logo>
-            <Navigation role="navigation" style={{top: menu ? 0 : '-100vh'}}>
+            <Navigation role="navigation" style={{ top: menu ? 0 : '-100vh' }}>
               <NavigationLink
                 to={prefixLink('/tips/')}
                 title="Tips"
@@ -150,11 +146,11 @@ export default class Template extends React.Component {
         <Container
           style={{
             maxWidth: 1192,
-            padding: `0 ${rhythm(3/4)} ${rhythm(1)} ${rhythm(3/4)}`,
+            padding: `0 ${rhythm(3 / 4)} ${rhythm(1)} ${rhythm(3 / 4)}`,
             marginBottom: 70,
           }}
         >
-          { children }
+          {children}
         </Container>
         <Footer>
           <div>
@@ -169,7 +165,10 @@ export default class Template extends React.Component {
                 Atom
               </StyledLink>
               {'. Built using '}
-              <StyledLink href="https://github.com/gatsbyjs/gatsby" title="Gatsby">
+              <StyledLink
+                href="https://github.com/gatsbyjs/gatsby"
+                title="Gatsby"
+              >
                 Gatsby.js
               </StyledLink>
               {'. Hosted on '}
@@ -204,6 +203,6 @@ export default class Template extends React.Component {
           </SocialLinks>
         </Footer>
       </div>
-    )
+    );
   }
 }

@@ -68,7 +68,7 @@ As for specific bootcamps, I dunno, I don't know much about them, I really just 
 **A:**
 
 ```jsx
-import React, { createContext, useReducer, useContext } from "react";
+import React, { createContext, useReducer, useContext } from 'react';
 
 const Context = createContext();
 
@@ -98,7 +98,7 @@ and then middle where is just useEffect
 
 ```js
 useEffect(() => {
-  localforage.setItem("state", state);
+  localforage.setItem('state', state);
 });
 ```
 
@@ -157,7 +157,7 @@ I miss that callback too for "transactional interactions" managing focus is usua
 But trying to access the the "new state" after setstate isn't ever necessary.
 
 ```js
-let newStuff = "blah";
+let newStuff = 'blah';
 setStuff(newStuff);
 doWhateverWithStuff(newStuff);
 ```

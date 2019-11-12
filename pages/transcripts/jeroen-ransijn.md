@@ -2,13 +2,12 @@
 title: Jeroen Ransijn
 date: November 14 2018
 ---
-## Design Systems Lead @ Segment, leading development of [Evergreen](https://evergreen.segment.com/).
 
+## Design Systems Lead @ Segment, leading development of [Evergreen](https://evergreen.segment.com/).
 
 <a name="hi-jay-plans-roll-typescript" href="#hi-jay-plans-roll-typescript">#</a> **Q:** Hi Jay, do you have any plans to roll out typescript support for evergreen, secondly is there any kind of timeline in place for theming? – Owenage
 
-
-**A:** Let's start with the TypeScript part since this will be a more recurring question I imagine. When we started building Evergreen I and the team had no TypeScript experience, and it was not something we were using anywhere in our app. Over time TypeScript/Flow, and lately TypeScript has really taken the lead within the community. 
+**A:** Let's start with the TypeScript part since this will be a more recurring question I imagine. When we started building Evergreen I and the team had no TypeScript experience, and it was not something we were using anywhere in our app. Over time TypeScript/Flow, and lately TypeScript has really taken the lead within the community.
 
 I think somewhere within 12 months the team might add TypeScript bindings to Evergreen, since some new greenfield projects are being build with TypeScript—so it is an internal pain as well, gaining prioritization on the roadmap.
 
@@ -16,7 +15,7 @@ I am still unsure if it makes sense to completely rewrite Evergreen in TypeScrip
 
 Our team has to do more research on this, and figure out where it fits in our roadmap. In the short term I think there are some more important things to work on that more directly align with business value.
 
-During a hack week project I actually partly build a theme builder inside of the [Evergreen docs](http://evergreen-next.surge.sh/theme-builder/). While doing that I had to work on many internals as well. We tabled theming in the v4 (Kauri) release, but it's something to consider down the road for sure. 
+During a hack week project I actually partly build a theme builder inside of the [Evergreen docs](http://evergreen-next.surge.sh/theme-builder/). While doing that I had to work on many internals as well. We tabled theming in the v4 (Kauri) release, but it's something to consider down the road for sure.
 
 Currently we have a [good branch](https://github.com/segmentio/evergreen/tree/v5-create-theme) that have more powerful concepts for theming build in—building on top of the really low level APIs from v4.
 
@@ -28,8 +27,7 @@ Segment is dedicated making Evergreen an ongoing success in the community, and I
 
 <a name="component-librarydesign-system-fits-legacy" href="#component-librarydesign-system-fits-legacy">#</a> **Q:** How does the component library/design system fits with legacy projects and priorities from the business perspective? – wilder
 
-
-**A:** I am interpreting this as how well Evergreen works inside of  legacy projects from the community as well as possibly our own internal legacy projects. 
+**A:** I am interpreting this as how well Evergreen works inside of legacy projects from the community as well as possibly our own internal legacy projects.
 
 Evergreen works well within a lot of different environments, and is easy to adopt because we fully embrace CSS-in-JS, simply import a component and it works without any other setup.
 
@@ -37,14 +35,13 @@ Also, because of this same approach there is no bleeding global styles that you 
 
 The only thing that might give you some issues is current global styles within your app. For the most part we unset/reset CSS properties as much as possible within components, but there might be some cases where this becomes a problem. We will continue to make tweaks here where reasonable, but we can't fully know what global styles are being used within your environment—this is true for every framework however.
 
-Finally, the business perspective. Evergreen is Segment's Design System and is meant to solve our growing set of problems. The Segment web application faces many interaction design and UI challenges. We have audience segmentation tools, plenty of virtualized tables and even a editable spreadsheet like interface! If you are doing somewhat similar things to us in terms of UI, I bet we have some component for it. 
+Finally, the business perspective. Evergreen is Segment's Design System and is meant to solve our growing set of problems. The Segment web application faces many interaction design and UI challenges. We have audience segmentation tools, plenty of virtualized tables and even a editable spreadsheet like interface! If you are doing somewhat similar things to us in terms of UI, I bet we have some component for it.
 
 The second part of that question might also be how can we continue to prioritize Evergreen as part of our larger business goals. Segment exists because of a open-source library that turned into Segment (analytics.js), we continue to believe in the importance of open-source for our business and try to maintain a leadership position in this space—to improve our software and attract world-class software engineers and designers. I see Evergreen as a tribute to that on the design and design systems side that already gave back to Segment in big ways.
 
 ---
 
 <a name="hi-jay-many-ui-frameworks" href="#hi-jay-many-ui-frameworks">#</a> **Q:** Hi Jay! There are many UI frameworks out there—Material, Ant, Bootstrap—why create a new one, and what sets Evergreen apart? – statico
-
 
 **A:** I have answered a similar question before [on Spectrum](https://spectrum.chat/thread/6f15ef43-5156-418f-9948-af2a3e583b86) and will post pretty much the same answer here.
 
@@ -54,7 +51,7 @@ Evergreen is still relatively young and there are still many things to work on. 
 
 I see Evergreen currently as unapologetically accepting non-responsive desktop UI, CSS-in-JS and finally component abstractions all the way through, at no point are you dealing with class names. Some of those things might change in the future.
 
-On a more high-level note, Evergreen takes developer experience really seriously. If it's easier for a developer to build something better, the customer experience will become better as well. 
+On a more high-level note, Evergreen takes developer experience really seriously. If it's easier for a developer to build something better, the customer experience will become better as well.
 
 Finally, Evergreen is very much a remix of all the great work out there of Ant Design, AtlasKit, BlueprintJS and many others. I have dug around the source code of many of these libraries to find well designed abstractions—and learned a ton!
 
@@ -62,15 +59,13 @@ Finally, Evergreen is very much a remix of all the great work out there of Ant D
 
 <a name="hello-jeroen-designing-busy-form" href="#hello-jeroen-designing-busy-form">#</a> **Q:** Hello Jeroen, I am designing a very busy form and have a few readonly fields (Created by, date, Modified by, date) Does Evergreen provide any components that will work well for readonly portions of a form? – cpope117
 
-
 **A:** I think you are asking if Evergreen contains form controls such as text inputs and possible some date controls that? In this context I am not sure what you mean with "readonly", but all our controls pass through native props such as the [readonly attribute](https://www.w3schools.com/tags/att_input_readonly.asp).
 
 We export plenty of components for [form controls](https://evergreen.segment.com/components/) but are still missing a dedicated date widget/control. Internally we have some version of this, so I imagine we will try to figure out how to get this in Evergreen at one point. Not sure when that will be.
 
 ---
 
-<a name="would-say-young-person-like" href="#would-say-young-person-like">#</a> **Q:** What would you say to a young person like me trying to make it in the sea of programming  as a software engineer? – Rough_Sapphire
-
+<a name="would-say-young-person-like" href="#would-say-young-person-like">#</a> **Q:** What would you say to a young person like me trying to make it in the sea of programming as a software engineer? – Rough_Sapphire
 
 **A:** Hey Rough, I don't know how young you are, or you experience, but I can give you some context on my own experience and maybe some insights.
 
@@ -88,17 +83,15 @@ I worked at an agency for about 3–4 years—2 years full-time
 
 <a name="curious-long-take-build-first" href="#curious-long-take-build-first">#</a> **Q:** I am curious, how long did it take you to build the first version of Evergreen? It looks amazing. – MihailZverev
 
-
 **A:** Thanks for the kind words Mihail! Evergreen started when I was the product design lead on our Personas product about 1–1.5 years back. You can read a more in-depth overview of that process [here](https://www.designsystems.com/stories/convince-your-company-its-ready-for-a-design-system/) and [here](https://jssr.design/personas).
 
-In short, I started building the foundation about ±1.5 years ago, and everything started within the current repo. You can actually go back in time, and see the first commit with maybe 1 package at that time (typography I think). 
+In short, I started building the foundation about ±1.5 years ago, and everything started within the current repo. You can actually go back in time, and see the first commit with maybe 1 package at that time (typography I think).
 
 That being said, internally I authored a library called `@segment/react-ui-library` and after we build 1 more internal library called `@segment/elements`. After all those learnings, I wanted to create a single library to rule them all and that was open-source.
 
 ---
 
 <a name="think-hijacking-project-work-nonopensource" href="#think-hijacking-project-work-nonopensource">#</a> **Q:** Do you think that "hijacking a project" can work on a non-opensource friendly company? – wilder
-
 
 **A:** Wilder is referring to my blog post ["Hijack a project to convince your company it's ready for a design system"](https://www.designsystems.com/stories/convince-your-company-its-ready-for-a-design-system/).
 
@@ -109,7 +102,6 @@ And can this "hijacking" work for non open-source friendly companies? Yes, absol
 ---
 
 <a name="team-currently-trying-build-component" href="#team-currently-trying-build-component">#</a> **Q:** Our team is currently trying to build a component library and we are using Storybook as means of prototyping and using it as a static website to sell the idea of a living documentation/reference. Which tools or strategies did you use to get people onboard besides "hijacking a project"? – wilder
-
 
 **A:** Honestly, I can't say it any better than [Matt Bond who build design systems](https://medium.com/asana-design/the-key-lessons-i-learned-creating-a-popular-design-system-d078c817b4dd) at Atlassian and Dropbox.
 
@@ -135,15 +127,13 @@ As a more direct answer to your question: do whatever works. Use tools that get 
 
 ---
 
-<a name="react-javascript-patterns-critical-important" href="#react-javascript-patterns-critical-important">#</a> **Q:**  Which React or Javascript patterns  were critical and important in building Evergreen and how did you learn them—resources you used etc? – MihailZverev
-
+<a name="react-javascript-patterns-critical-important" href="#react-javascript-patterns-critical-important">#</a> **Q:** Which React or Javascript patterns were critical and important in building Evergreen and how did you learn them—resources you used etc? – MihailZverev
 
 **A:** This is a great question, and I am coming back to a previous answer. The most important patterns and conventions come straight out of other design systems. That is by far the best way to do something, learn and remix other similar products or tools. They are literally facing the same problems as you are. A tutorial or course is only going to take you so far, and often is very surface level.
 
 ---
 
 <a name="think-storybook-tell-us-use" href="#think-storybook-tell-us-use">#</a> **Q:** What do you think about Storybook, can you tell us how you use it, and how we could make it better for you and your team? – Norbert
-
 
 **A:** I have quite some opinions on this at this point! But first of all, Storybook is amazing, and is a great tool to start building design systems or UI tools. It really started a new way of thinking about building tools in isolation.
 

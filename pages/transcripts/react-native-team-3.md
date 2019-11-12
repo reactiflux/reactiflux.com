@@ -143,7 +143,7 @@ Here you go: https://github.com/facebook/react-native/blob/5ec382d1be781ff941316
 – fkgozali
 
 ```typescript jsx
-import { useWindowDimensions } from "react-native";
+import { useWindowDimensions } from 'react-native';
 ```
 
 was added in this commit: https://github.com/facebook/react-native/commit/5ec382d1be781ff941316168a0657f163c1d2dac

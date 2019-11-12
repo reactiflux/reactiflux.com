@@ -116,12 +116,12 @@ in your Reactotron-Config.js
 ```javascript
 ReactotronConfig = {
   clearOnLoad: true,
-  host: "localhost",
+  host: 'localhost',
   useAsyncStorage: true,
   state: {
     initial: true,
-    snapshots: false
-  }
+    snapshots: false,
+  },
 };
 ```
 
