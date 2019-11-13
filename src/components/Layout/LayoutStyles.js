@@ -11,15 +11,15 @@ export const mainPadding = css`
 `;
 
 const title = {
-  responsive: (size) => `calc(${size}vw * 0.9)`,
-  static: (size) => `calc(${size}px * 11.75)`,
+  responsive: (size) => `${size  * 0.9}vw`,
+  static: (size) => `${size  * 11.75}px`,
 };
 
 const homeLayout = css`
   display: block;
 
   p {
-    font-size: calc(17px + 1vw);
+    font-size: calc(1.7rem + 1vw);
     font-weight: 500;
     line-height: 1.5;
   }

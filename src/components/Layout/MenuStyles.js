@@ -78,7 +78,7 @@ export const Wrapper = styled.menu`
 
   /* direct children means desktop menu only */
   > a:not(:first-child) {
-    font-size: 16px;
+    font-size: 1.6rem;
     padding: 0 8px;
 
     &[aria-current='page']:after,
@@ -91,7 +91,7 @@ export const Wrapper = styled.menu`
 
   @media (min-width: 820px) {
     & > a:not(:first-child) {
-      font-size: 19px;
+      font-size: 1.9rem;
       margin-left: 16px;
       padding: 0 12px;
 

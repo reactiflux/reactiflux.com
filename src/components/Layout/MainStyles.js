@@ -70,7 +70,7 @@ html body {
     color: ${blue};
     font-family: 'Space Mono', monospace;
     font-size: 7.6rem;
-    letter-spacing: -4px;
+    letter-spacing: -0.4rem;
   }
 
   h2 {

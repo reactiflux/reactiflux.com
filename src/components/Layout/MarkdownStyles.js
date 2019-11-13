@@ -6,11 +6,10 @@ export const MarkdownStyles = createGlobalStyle`
 .markdown {
   h1 {
     color: ${foreground};
-    font-size: 8.421052632rem;
-    letter-spacing: -13px;
-    line-height: 8.421052632rem;
     font-family: 'Space Mono', monospace;
-
+    font-size: 5rem;
+    letter-spacing: -0.3rem;
+    line-height: 1.1;
   }
   h2,h3,h4 {
     color: ${foreground};
