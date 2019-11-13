@@ -27,27 +27,4 @@ export const MarkdownStyles = createGlobalStyle`
     word-wrap: break-word;
   }
 }
-
-.markdownIt-TOC {
-  margin-left: 0;
-  list-style: none;
-  a {
-    color: ${pink};
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  ul {
-    margin-top: 0;
-    margin-left: 0;
-    list-style: none;
-    font-size: 1rem;
-    line-height: 1rem;
-  }
-  li {
-    line-height: 1.5em;
-    margin-bottom: calc(1.5rem / 2);
-  }
-}
 `;
