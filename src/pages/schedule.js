@@ -36,9 +36,9 @@ export default function Schedule({ data }) {
           interesting developers in the React community. These Q&A’s usually
           take place on Thursdays from 1pm - 2pm PT. If you want to hear from
           someone specific in the community, let us know by contacting us via{' '}
-          <a href="https://twitter.com/reactiflux">Twitter</a> or ping an
+          <Link to="https://twitter.com/reactiflux">Twitter</Link> or ping an
           admin or moderator in the{' '}
-          <a href="https://discord.gg/BkSU7Ju">#reactiflux-admin</a> channel
+          <Link to="https://discord.gg/BkSU7Ju">#reactiflux-admin</Link> channel
           on discord.
         </p>
         {Object.keys(upcomingEvents).length > 0 && (

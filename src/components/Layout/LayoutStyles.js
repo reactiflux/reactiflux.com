@@ -11,8 +11,8 @@ export const mainPadding = css`
 `;
 
 const title = {
-  responsive: (size) => `${size  * 0.9}vw`,
-  static: (size) => `${size  * 11.75}px`,
+  responsive: (size) => `${size * 0.9}vw`,
+  static: (size) => `${size * 11.75}px`,
 };
 
 const homeLayout = css`
