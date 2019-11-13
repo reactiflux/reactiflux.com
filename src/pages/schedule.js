@@ -2,90 +2,29 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import { Layout, Link } from '@components';
-
-const currentDate = new Date();
+import { groupBy } from '@utils/groupBy';
 
 export default function Schedule({ data }) {
-  const { children } = data.transcripts.nodes.reduce(
-    (acc, node) => {
-      const {
-        childMarkdownRemark: {
-          html,
-          frontmatter: {
-            date,
-            dateGroup,
-            dateString,
-            description,
-            location,
-            people,
-            recording,
-            time,
-            title,
-          },
-        },
-        name,
-        relativeDirectory,
-      } = node;
+  const currentDate = new Date();
+  const { nodes } = data.transcripts;
 
-      const isUpcoming = currentDate < new Date(date);
-
-      if (isUpcoming && !acc.upcoming) {
-        acc.children.push(
-          <React.Fragment key="upcoming">
-            <hr />
-            <h2>Upcoming Q&A's & Meetups</h2>
-          </React.Fragment>,
-        );
-        acc.upcoming = true;
-      }
-
-      if (!isUpcoming && !acc.past) {
-        acc.children.push(
-          <React.Fragment key="past">
-            <hr />
-            <h2 key="past">Past Q&A's & Meetups</h2>
-          </React.Fragment>,
-        );
-        acc.past = true;
-      }
-
-      if (acc.current !== dateGroup) {
-        acc.children.push(
-          <h2 key={dateGroup}>{acc.past ? <s>{dateGroup}</s> : dateGroup}</h2>,
-        );
-        acc.current = dateGroup;
-      }
-
-      acc.children.push(
-        <article key={name}>
-          <h3>{title}</h3>
-          <ul>
-            {[
-              people,
-              description,
-              dateString,
-              isUpcoming && time,
-              location,
-              recording,
-            ]
-              .filter(Boolean)
-              .map((field) => (
-                <li key={field} dangerouslySetInnerHTML={{ __html: field }} />
-              ))}
-            {html && !isUpcoming ? (
-              <li>
-                <Link to={`/transcripts/${relativeDirectory}/${name}`}>
-                  Transcript
-                </Link>
-              </li>
-            ) : null}
-          </ul>
-        </article>,
-      );
-
-      return acc;
-    },
-    { children: [] },
+  const upcomingEvents = groupBy(
+    'dateGroup',
+    nodes
+      .filter(
+        (node) =>
+          currentDate <= new Date(node.childMarkdownRemark.frontmatter.date),
+      )
+      .map(simplifyNode),
+  );
+  const pastEvents = groupBy(
+    'dateGroup',
+    nodes
+      .filter(
+        (node) =>
+          currentDate > new Date(node.childMarkdownRemark.frontmatter.date),
+      )
+      .map(simplifyNode),
   );
 
   return (
@@ -97,16 +36,96 @@ export default function Schedule({ data }) {
           interesting developers in the React community. These Q&A’s usually
           take place on Thursdays from 1pm - 2pm PT. If you want to hear from
           someone specific in the community, let us know by contacting us via{' '}
-          <Link to="https://twitter.com/reactiflux">Twitter</Link> or ping an
+          <a href="https://twitter.com/reactiflux">Twitter</a> or ping an
           admin or moderator in the{' '}
-          <Link to="https://discord.gg/BkSU7Ju">#reactiflux-admin</Link> channel
+          <a href="https://discord.gg/BkSU7Ju">#reactiflux-admin</a> channel
           on discord.
         </p>
-        {children}
+        {Object.keys(upcomingEvents).length > 0 && (
+          <>
+            <hr />
+            <h2>Upcoming Q&A's & Meetups</h2>
+            {Object.entries(upcomingEvents).map(([dateGroup, events]) => (
+              <React.Fragment key={dateGroup}>
+                <h2>{dateGroup}</h2>
+                {events.map((event) => (
+                  <Event key={event.name} {...event} />
+                ))}
+              </React.Fragment>
+            ))}
+          </>
+        )}
+        <hr />
+        <h2>Past Q&A's & Meetups</h2>
+        {Object.entries(pastEvents).map(([dateGroup, events]) => (
+          <React.Fragment key={dateGroup}>
+            <h2>
+              <s>{dateGroup}</s>
+            </h2>
+            {events.map((event) => (
+              <Event key={event.name} {...event} />
+            ))}
+          </React.Fragment>
+        ))}
       </div>
     </Layout>
   );
 }
+
+const simplifyNode = (node) => {
+  const {
+    childMarkdownRemark: { html, frontmatter },
+    name,
+    relativeDirectory,
+  } = node;
+  return {
+    ...frontmatter,
+    html,
+    name,
+    relativeDirectory,
+  };
+};
+
+const Event = ({
+  isUpcoming,
+  html,
+  dateString,
+  description,
+  location,
+  people,
+  recording,
+  time,
+  title,
+  name,
+  relativeDirectory,
+}) => {
+  return (
+    <article>
+      <h3>{title}</h3>
+      <ul>
+        {[
+          people,
+          description,
+          dateString,
+          isUpcoming && time,
+          location,
+          recording,
+        ]
+          .filter(Boolean)
+          .map((field) => (
+            <li key={field} dangerouslySetInnerHTML={{ __html: field }} />
+          ))}
+        {html && !isUpcoming ? (
+          <li>
+            <Link to={`/transcripts/${relativeDirectory}/${name}`}>
+              Transcript
+            </Link>
+          </li>
+        ) : null}
+      </ul>
+    </article>
+  );
+};
 
 export const pageQuery = graphql`
   query ScheduleTranscripts {
