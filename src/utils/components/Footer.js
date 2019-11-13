@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 // Add our typefaces.
-import "typeface-poppins";
-import "typeface-work-sans";
-import "typeface-space-mono";
+import 'typeface-poppins';
+import 'typeface-work-sans';
+import 'typeface-space-mono';
 
 import {
   StyledLink,
@@ -11,9 +11,9 @@ import {
   Copyright,
   Credits,
   IconLink,
-  SocialLinks
-} from "./index";
-import { Discord, Twitter, Github } from "../../assets/logos.js";
+  SocialLinks,
+} from './index';
+import { Discord, Twitter, Github } from '../../assets/logos.js';
 
 export default function Footer() {
   return (
@@ -21,15 +21,15 @@ export default function Footer() {
       <div>
         <Copyright>© {new Date().getFullYear()} Reactiflux</Copyright>
         <Credits>
-          {"Designed in "}
+          {'Designed in '}
           <StyledLink as="a" href="https://www.sketchapp.com/" title="Sketch">
             Sketch
           </StyledLink>
-          {". Coded in "}
+          {'. Coded in '}
           <StyledLink as="a" href="https://atom.io/" title="Atom">
             Atom
           </StyledLink>
-          {". Built using "}
+          {'. Built using '}
           <StyledLink
             as="a"
             href="https://github.com/gatsbyjs/gatsby"
@@ -37,7 +37,7 @@ export default function Footer() {
           >
             Gatsby.js
           </StyledLink>
-          {". Hosted on "}
+          {'. Hosted on '}
           <StyledLink as="a" href="https://www.netlify.com/" title="Netlify">
             Netlify
           </StyledLink>

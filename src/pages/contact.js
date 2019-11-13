@@ -1,6 +1,6 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { FrontPage, Text, Buttons, Button } from "../utils/components";
+import React from 'react';
+import Helmet from 'react-helmet';
+import { FrontPage, Text, Buttons, Button } from '../utils/components';
 
 const Index = () => {
   return (
@@ -9,16 +9,16 @@ const Index = () => {
         title="Reactiflux"
         meta={[
           {
-            name: "description",
-            content: "Anonymously contact a Reactiflux administrator"
-          }
+            name: 'description',
+            content: 'Anonymously contact a Reactiflux administrator',
+          },
         ]}
       />
       <Text>Message the staff</Text>
       <form
-        onSubmit={e => {
+        onSubmit={(e) => {
           e.preventDefault();
-          console.log("submit");
+          console.log('submit');
         }}
       >
         <label>

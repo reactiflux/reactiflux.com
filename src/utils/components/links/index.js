@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "gatsby";
-import { MenuIcon } from "../../../assets/logos";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import { MenuIcon } from '../../../assets/logos';
 import { getAnchor } from '../../anchor';
 
 export const StyledLink = styled(Link)`
@@ -59,15 +59,15 @@ export const Button = styled(Link)`
   text-align: center;
   text-decoration: none;
   font-size: ${24 / 19}rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   line-height: ${66 / 19}rem;
-  color: ${props => (props.primary ? "#ffffff" : "#dd1d64")};
-  background-color: ${props => (props.primary ? "#dd1d64" : "#ffffff")};
+  color: ${(props) => (props.primary ? '#ffffff' : '#dd1d64')};
+  background-color: ${(props) => (props.primary ? '#dd1d64' : '#ffffff')};
   transition: all 175ms ease;
   &:hover {
-    color: ${props => (props.primary ? "#ffffff" : "#ffffff")};
-    background-color: ${props => (props.primary ? "#ba1853" : "#dd1d64")};
+    color: ${(props) => (props.primary ? '#ffffff' : '#ffffff')};
+    background-color: ${(props) => (props.primary ? '#ba1853' : '#dd1d64')};
   }
   &:first-child {
     margin-right: 32px;
@@ -99,7 +99,7 @@ export const IconLink = ({ to, title, src, alt, target }) => (
 export const Toggle = ({ onClick, active }) => (
   <Arrow
     onClick={onClick}
-    style={{ transform: active ? "rotate(180deg)" : "rotate(0deg)" }}
+    style={{ transform: active ? 'rotate(180deg)' : 'rotate(0deg)' }}
   />
 );
 

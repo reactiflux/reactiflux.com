@@ -1,35 +1,35 @@
-import React from "react";
-import { Container } from "./index";
-import { TypographyStyle } from "react-typography";
+import React from 'react';
+import { Container } from './index';
+import { TypographyStyle } from 'react-typography';
 
 // Add our typefaces.
-import "typeface-poppins";
-import "typeface-work-sans";
-import "typeface-space-mono";
+import 'typeface-poppins';
+import 'typeface-work-sans';
+import 'typeface-space-mono';
 
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import NavBar from './NavBar';
+import Footer from './Footer';
 
-import typography from "../typography";
+import typography from '../typography';
 
 export default class Layout extends React.Component {
   constructor(props) {
     super(props);
-    const undef = typeof window !== "undefined";
+    const undef = typeof window !== 'undefined';
     this.state = {
       menu: false,
       transcript: undef ? (window.innerWidth < 768 ? false : true) : false,
       toc: true,
-      width: undef ? window.innerWidth : null
+      width: undef ? window.innerWidth : null,
     };
   }
 
   componentDidMount() {
-    window.addEventListener("resize", this.handleResize);
+    window.addEventListener('resize', this.handleResize);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize);
+    window.removeEventListener('resize', this.handleResize);
   }
 
   handleResize = () => {
@@ -38,7 +38,7 @@ export default class Layout extends React.Component {
       if (!transcript || !toc) {
         this.setState({
           transcript: true,
-          toc: true
+          toc: true,
         });
       }
     }
@@ -46,16 +46,16 @@ export default class Layout extends React.Component {
 
   onMobile = () => window.innerWidth <= 768;
 
-  toggle = item => () => {
-    this.setState(prevState => ({
-      [item]: !prevState[item]
+  toggle = (item) => () => {
+    this.setState((prevState) => ({
+      [item]: !prevState[item],
     }));
   };
 
-  close = item => () => {
+  close = (item) => () => {
     if (this.onMobile()) {
       this.setState({
-        [item]: false
+        [item]: false,
       });
     }
   };
@@ -63,13 +63,13 @@ export default class Layout extends React.Component {
   render() {
     const { transcript, toc } = this.state;
 
-    const children = React.Children.map(this.props.children, child =>
+    const children = React.Children.map(this.props.children, (child) =>
       React.cloneElement(child, {
         transcript,
         toc,
         toggle: this.toggle,
-        close: this.close
-      })
+        close: this.close,
+      }),
     );
 
     return (
@@ -80,10 +80,10 @@ export default class Layout extends React.Component {
           style={{
             maxWidth: 1192,
             padding: `0 ${typography.rhythm(3 / 4)} ${typography.rhythm(
-              1
+              1,
             )} ${typography.rhythm(3 / 4)}`,
-            margin: "0 auto",
-            marginBottom: 70
+            margin: '0 auto',
+            marginBottom: 70,
           }}
         >
           {children}

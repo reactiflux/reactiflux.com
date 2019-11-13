@@ -1,5 +1,5 @@
-import React from "react";
-import Helmet from "react-helmet";
+import React from 'react';
+import Helmet from 'react-helmet';
 import {
   FrontPage,
   TitleBox,
@@ -8,9 +8,9 @@ import {
   Text,
   Buttons,
   Button,
-  IconLink
-} from "../utils/components";
-import Layout from "../utils/components/Layout";
+  IconLink,
+} from '../utils/components';
+import Layout from '../utils/components/Layout';
 import {
   Community,
   Console,
@@ -20,8 +20,8 @@ import {
   ReactNative,
   ReactLogo,
   Redux,
-  Relay
-} from "../assets/logos";
+  Relay,
+} from '../assets/logos';
 
 const Index = () => {
   return (
@@ -31,10 +31,10 @@ const Index = () => {
           title="Reactiflux"
           meta={[
             {
-              name: "description",
+              name: 'description',
               content:
-                "We’re a chat community of 80,000+ React JS, React Native, Redux, Relay and GraphQL developers."
-            }
+                'We’re a chat community of 80,000+ React JS, React Native, Redux, Relay and GraphQL developers.',
+            },
           ]}
         />
         <TitleBox>
@@ -81,7 +81,7 @@ const Index = () => {
             title="Relay"
             src={Relay}
             alt="Relay Logo"
-          />{" "}
+          />{' '}
           and GraphQL&nbsp;
           <IconLink
             to="https://github.com/facebook/graphql"
@@ -89,7 +89,7 @@ const Index = () => {
             title="GraphQL"
             src={GraphQL}
             alt="GraphQL Logo"
-          />{" "}
+          />{' '}
           developers. We hold Q&amp;A&rsquo;s with Facebook Engineers&nbsp;
           <IconLink
             to="https://github.com/facebook"
@@ -97,7 +97,7 @@ const Index = () => {
             title="Facebook Organization"
             src={Facebook}
             alt="Facebook Logo"
-          />{" "}
+          />{' '}
           and other developers&nbsp;
           <IconLink
             to="https://github.com/reactiflux"
@@ -105,7 +105,7 @@ const Index = () => {
             title="Reactiflux Developers"
             src={Console}
             alt="Developers Logo"
-          />{" "}
+          />{' '}
           in the community&nbsp;
           <IconLink
             to="https://discord.gg/reactiflux"

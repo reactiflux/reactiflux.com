@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import Headroom from "react-headroom";
-import Styles from "../../css/styles";
+import React from 'react';
+import styled from 'styled-components';
+import Headroom from 'react-headroom';
+import Styles from '../../css/styles';
 
 // Add our typefaces.
-import "typeface-poppins";
-import "typeface-work-sans";
-import "typeface-space-mono";
+import 'typeface-poppins';
+import 'typeface-work-sans';
+import 'typeface-space-mono';
 
-import { Header, Navigation, Toggle, Logo, NavigationLink } from "./index";
+import { Header, Navigation, Toggle, Logo, NavigationLink } from './index';
 
 const HeaderEl = styled(Header)`
   width: 100%;
@@ -18,29 +18,29 @@ export default class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menu: false
+      menu: false,
     };
   }
 
   onMobile = () => window.innerWidth <= 768;
 
-  toggle = item => () => {
-    this.setState(prevState => ({
-      [item]: !prevState[item]
+  toggle = (item) => () => {
+    this.setState((prevState) => ({
+      [item]: !prevState[item],
     }));
   };
 
-  close = item => () => {
+  close = (item) => () => {
     if (this.onMobile()) {
       this.setState({
-        [item]: false
+        [item]: false,
       });
     }
   };
 
   render() {
     const { menu } = this.state;
-    const closeMenu = this.close("menu");
+    const closeMenu = this.close('menu');
 
     return (
       <Headroom disableInlineStyles>
@@ -49,7 +49,7 @@ export default class NavBar extends React.Component {
           <Logo to="/" onClick={closeMenu}>
             Reactiflux
           </Logo>
-          <Navigation role="navigation" style={{ top: menu ? 0 : "-100vh" }}>
+          <Navigation role="navigation" style={{ top: menu ? 0 : '-100vh' }}>
             <NavigationLink to="/tips/" title="Tips" onClick={closeMenu}>
               Tips
             </NavigationLink>
@@ -91,7 +91,7 @@ export default class NavBar extends React.Component {
               Learning
             </NavigationLink>
           </Navigation>
-          <Toggle onClick={this.toggle("menu")} active={menu} />
+          <Toggle onClick={this.toggle('menu')} active={menu} />
         </HeaderEl>
       </Headroom>
     );

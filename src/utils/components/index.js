@@ -9,8 +9,8 @@ export {
   StyledLink,
   SocialLinks,
   Arrow,
-  HeadingLink
-} from "./links";
+  HeadingLink,
+} from './links';
 export {
   Header,
   Navigation,
@@ -24,13 +24,13 @@ export {
   SideBar,
   TitleBox,
   SmallTitle,
-  Text
-} from "./structure";
+  Text,
+} from './structure';
 export {
   ReadMore,
   Copyright,
   Credits,
   PublishDate,
   Transcript,
-  Logo
-} from "./misc";
+  Logo,
+} from './misc';
