@@ -5,29 +5,19 @@ import MarkdownStyles from '../css/markdown-styles';
 import { Container, SmallTitle, MarkdownContainer } from '../utils/components';
 import Layout from '../utils/components/Layout';
 import { groupBy } from '../utils/groupBy';
+import { partition } from '../utils/partition';
 
 export default function Schedule({ data }) {
   const currentDate = new Date();
   const { nodes } = data.transcripts;
 
-  const upcomingEvents = groupBy(
-    'dateGroup',
-    nodes
-      .filter(
-        (node) =>
-          currentDate <= new Date(node.childMarkdownRemark.frontmatter.date),
-      )
-      .map(simplifyNode),
+  const [pastEventNodes, upcomingEventNodes] = partition(
+    nodes.map(simplifyNode),
+    (node) => currentDate <= new Date(node.date),
   );
-  const pastEvents = groupBy(
-    'dateGroup',
-    nodes
-      .filter(
-        (node) =>
-          currentDate > new Date(node.childMarkdownRemark.frontmatter.date),
-      )
-      .map(simplifyNode),
-  );
+
+  const upcomingEvents = groupBy('dateGroup', upcomingEventNodes);
+  const pastEvents = groupBy('dateGroup', pastEventNodes);
 
   return (
     <Layout>
