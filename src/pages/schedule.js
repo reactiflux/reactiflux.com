@@ -2,30 +2,19 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import { Layout, Link } from '@components';
-import { groupBy } from '@utils/groupBy';
+import { groupBy, partition } from '@utils/array';
 
 export default function Schedule({ data }) {
   const currentDate = new Date();
   const { nodes } = data.transcripts;
 
-  const upcomingEvents = groupBy(
-    'dateGroup',
-    nodes
-      .filter(
-        (node) =>
-          currentDate <= new Date(node.childMarkdownRemark.frontmatter.date),
-      )
-      .map(simplifyNode),
+  const [pastEventNodes, upcomingEventNodes] = partition(
+    nodes.map(simplifyNode),
+    (node) => currentDate <= new Date(node.date),
   );
-  const pastEvents = groupBy(
-    'dateGroup',
-    nodes
-      .filter(
-        (node) =>
-          currentDate > new Date(node.childMarkdownRemark.frontmatter.date),
-      )
-      .map(simplifyNode),
-  );
+
+  const upcomingEvents = groupBy('dateGroup', upcomingEventNodes);
+  const pastEvents = groupBy('dateGroup', pastEventNodes);
 
   return (
     <Layout title="Q&A Schedule">
