@@ -12,12 +12,14 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ### TypeScript Team @ Microsoft
 
-- Daniel Rosenwasser - [https://twitter.com/drosenwasser](https://twitter.com/drosenwasser) - Program Manager
-Ryan Cavanaugh - [https://twitter.com/SeaRyanC](https://twitter.com/SeaRyanC) - Engineering Lead
-Nathan Shively-Sanders - [https://twitter.com/sanders_n](https://twitter.com/sanders_n) - Compiler Engineer
-Andrew Branch - [https://twitter.com/atcb](https://twitter.com/atcb) - Compiler Engineer
-Orta Therox - [https://twitter.com/orta](https://twitter.com/orta) - Compiler Engineer
 - The team from Microsoft working on [TypeScript](https://www.typescriptlang.org/) will be on to answer all your TS related questions!
+
+- Daniel Rosenwasser - [https://twitter.com/drosenwasser](https://twitter.com/drosenwasser) - Program Manager
+- Ryan Cavanaugh - [https://twitter.com/SeaRyanC](https://twitter.com/SeaRyanC) - Engineering Lead
+- Nathan Shively-Sanders - [https://twitter.com/sanders_n](https://twitter.com/sanders_n) - Compiler Engineer
+- Andrew Branch - [https://twitter.com/atcb](https://twitter.com/atcb) - Compiler Engineer
+- Orta Therox - [https://twitter.com/orta](https://twitter.com/orta) - Compiler Engineer
+
 - Thursday December 5th
 - 1-2pm PT / 8-9pm GMT
 - Q&A Channel Reactiflux
