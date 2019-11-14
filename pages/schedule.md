@@ -8,7 +8,25 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 
 ## Upcoming Q&A’s & Meetups
 
-## October 2019
+## December 2019
+
+### TypeScript Team @ Microsoft
+
+- Daniel Rosenwasser - [https://twitter.com/drosenwasser](https://twitter.com/drosenwasser) - Program Manager
+Ryan Cavanaugh - [https://twitter.com/SeaRyanC](https://twitter.com/SeaRyanC) - Engineering Lead
+Nathan Shively-Sanders - [https://twitter.com/sanders_n](https://twitter.com/sanders_n) - Compiler Engineer
+Andrew Branch - [https://twitter.com/atcb](https://twitter.com/atcb) - Compiler Engineer
+Orta Therox - [https://twitter.com/orta](https://twitter.com/orta) - Compiler Engineer
+- The team from Microsoft working on [TypeScript](https://www.typescriptlang.org/) will be on to answer all your TS related questions!
+- Thursday December 5th
+- 1-2pm PT / 8-9pm GMT
+- Q&A Channel Reactiflux
+
+---
+
+## Past Q&A’s
+
+## ~~October 2019~~
 
 ### Eric Rozell, Harini Kannan, & Paul Gusmorino
 
@@ -16,11 +34,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 - Eric, Harini, and Paul are engineers @ Microsoft. They will be on to discuss their work on [React Native for Windows](https://github.com/microsoft/react-native-windows).
 - Thursday October 17th
 - 1-2pm PT / 8-9pm GMT
-- Q&A Channel Reactiflux
-
----
-
-## Past Q&A’s
+- Transcript: [Eric Rozell, Harini Kannan, and Paul Gusmorino](../microsoft-react-native-windows-team/)
 
 ## ~~September 2019~~
 
@@ -30,7 +44,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 - Frank is a Senior Software Engineer at Infinite Red, Organizer at Chain React Conference, and Editor-in-Chief of The React Native Newsletter. Gant is CTS of Infinite Red, Organizer @ChainReactConf, Open Sourcerer ([Ignite](https://github.com/infinitered/ignite), Reactotron, etc).
 - Thursday September 5th
 - 1-2pm PT / 8-9pm GMT
-- Transcript:
+- Transcript: [Frank von Hoven & Gant Laborde](../frank-von-hoven_gant-laborde/)
 
 ## ~~August 2019~~
 
@@ -40,7 +54,7 @@ We host one or two Q&A's per month with Facebook Engineers and other interesting
 - React Native Core Team
 - Thursday August 8th
 - 12:30 - 1:30pm PT / 7:30 - 8:30pm GMT
-- Transcript:
+- Transcript: [React Native Core Team](../react-native-team-3/)
 
 ### Bob Scarano & Craig Blagg @ Squarespace
 
