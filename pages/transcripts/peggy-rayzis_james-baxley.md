@@ -1,7 +1,9 @@
 ---
 title: Peggy Rayzis & James Baxley
 date: May 10 2018
----## Open Source Engineers @ Apollo building Apollo Client, Engine, Server, and other tools to incrementally adopt GraphQL.
+---
+
+## Open Source Engineers @ Apollo building Apollo Client, Engine, Server, and other tools to incrementally adopt GraphQL.
 
 <a name="last-week-ish-peggy-talked" href="#last-week-ish-peggy-talked">#</a> **Q:** Last week (ish) you and Peggy talked a little bit about the new improvements that have gone into the new apollo-server, especially with new features like the long-awaited defer directive. Is there any timetable or issues about this, and how can people help out with this? - NLincoln
 
