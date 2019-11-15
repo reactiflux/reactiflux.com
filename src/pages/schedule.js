@@ -12,8 +12,8 @@ export default function Schedule({ data }) {
   const { nodes } = data.transcripts;
 
   const [pastEventNodes, upcomingEventNodes] = partition(
-    nodes.map(simplifyNode),
     (node) => currentDate <= new Date(node.date),
+    nodes.map(simplifyNode),
   );
 
   const upcomingEvents = groupBy('dateGroup', upcomingEventNodes);
