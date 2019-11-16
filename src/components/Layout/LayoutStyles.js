@@ -136,7 +136,7 @@ const fixedSidebarButton = css`
   transform-origin: bottom left;
 
   &:focus {
-    border: 3px solid #dc1d64;
+    border: 3px solid ${pink};
     margin: -9px -3px;
   }
 `
@@ -144,7 +144,7 @@ const fixedSidebarButton = css`
 export const SidebarButton = styled.button`
   background: none;
   border: none;
-  color: #dc1d64;
+  color: ${pink};
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
