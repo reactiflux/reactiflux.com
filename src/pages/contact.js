@@ -1,24 +1,18 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { FrontPage, Text, Buttons, Button } from "../utils/components";
+import React from 'react';
+
+import { Layout } from '@components';
 
 const Index = () => {
   return (
-    <FrontPage>
-      <Helmet
-        title="Reactiflux"
-        meta={[
-          {
-            name: "description",
-            content: "Anonymously contact a Reactiflux administrator"
-          }
-        ]}
-      />
-      <Text>Message the staff</Text>
+    <Layout
+      title="Contact Us"
+      description="Anonymously contact a Reactiflux administrator"
+    >
+      <h1>Message the staff</h1>
       <form
-        onSubmit={e => {
+        onSubmit={(e) => {
           e.preventDefault();
-          console.log("submit");
+          console.log('submit');
         }}
       >
         <label>
@@ -28,12 +22,7 @@ const Index = () => {
 
         <button primary>Send message</button>
       </form>
-      <Buttons>
-        <Button to="/schedule/" title="Q&A Schedule">
-          Q&A Schedule
-        </Button>
-      </Buttons>
-    </FrontPage>
+    </Layout>
   );
 };
 

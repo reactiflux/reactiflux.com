@@ -1,6 +1,10 @@
 ---
 title: Henry Zhu
 date: 2017-07-27
+time: 1-2pm PT / 8-9PM GMT
+location: Q&A Channel Reactiflux
+description: 'Engineer at Adobe (Behance Team) · Babel Maintainer'
+people: '[@left_pad](https://twitter.com/left_pad)'
 ---
 
 ## Babel maintainer and Adobe engineer working on Behance

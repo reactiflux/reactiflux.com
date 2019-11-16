@@ -1,5 +1,5 @@
 ---
-title: Get better help
+title: Get Better Help
 ---
 
 Reactiflux is a large chatroom that's been around for a few years, and has some etiquette guidelines that have emerged. These aren't hard and fast rules, you won't get banned or kicked for not following them, but keeping them in mind will help you get the most out of our chatroom community.

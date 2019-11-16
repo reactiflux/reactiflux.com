@@ -1,6 +1,10 @@
 ---
 title: Andrew Clark
 date: 2017-04-12
+time: 12:30-2pm PT / 7:30-9PM GMT
+location: Q&A Channel Reactiflux
+description: 'React.js Core Team at Facebook. Co-creator of [Redux](http://redux.js.org/). Creator of [Recompose](https://github.com/acdlite/recompose)'
+people: '[@acdlite](https://twitter.com/acdlite)'
 ---
 
 ## Co-creator of Redux, Facebook React Core Team Member

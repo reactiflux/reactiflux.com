@@ -1,41 +1,29 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Helmet from "react-helmet";
-import { Container, SmallTitle, MarkdownContainer, SideBar, HeadingLink } from "../utils/components";
-import MarkdownStyles from "../css/markdown-styles";
+import React from 'react';
+import { graphql } from 'gatsby';
 
-// Add our typefaces.
-import "typeface-poppins";
-import "typeface-work-sans";
-import "typeface-space-mono";
-
-import Layout from "../utils/components/Layout";
+import { Layout, Link } from '@components';
+import { getAnchor } from '@utils/anchor';
 
 export default function Transcript({ data }) {
   const { html, frontmatter, headings } = data.markdownRemark;
 
   return (
-    <Layout>
-      <Container>
-        <MarkdownStyles />
-        <Helmet title={"Reactiflux transcripts"} />
-        <SmallTitle>{frontmatter.title}</SmallTitle>
-        {frontmatter.sidebar ? (
-          <SideBar>
+    <Layout title={frontmatter.title}>
+      <h1>{frontmatter.title}</h1>
+      <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
+      {frontmatter.sidebar ? (
+        <nav>
+          <ol>
             {headings
-              .filter(heading => heading.depth < 3)
-              .map(heading => (
-                <li key={heading.value}>
-                  <HeadingLink {...heading} />
+              .filter((heading) => heading.depth < 3)
+              .map(({ value }) => (
+                <li key={value}>
+                  <Link to={getAnchor(value)}>{value}</Link>
                 </li>
               ))}
-          </SideBar>
-        ) : null}
-        <MarkdownContainer
-          className="markdown"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </Container>
+          </ol>
+        </nav>
+      ) : null}
     </Layout>
   );
 }

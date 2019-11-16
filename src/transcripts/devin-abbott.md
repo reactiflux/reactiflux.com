@@ -1,6 +1,9 @@
 ---
 title: Devin Abbott
 date: 2016-05-19
+location: Q&A Channel Reactiflux
+description: 'Deco Software | Topic is Deco their awesome React Native IDE'
+people: '[@devinaabbott](https://twitter.com/devinaabbott)'
 ---
 
 ## Engineer @ Deco Software

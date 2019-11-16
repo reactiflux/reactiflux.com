@@ -1,6 +1,9 @@
 ---
 title: Lee Byron
 date: 2016-07-28
+location: Q&A Channel Reactiflux
+description: 'Facebook Engineer - GraphQL Co-Creator'
+people: '[@leeb](https://twitter.com/leeb) | Codementor AMA'
 ---
 
 ## Facebook Engineer - GraphQL Co-Creator

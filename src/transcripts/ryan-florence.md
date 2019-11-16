@@ -1,6 +1,9 @@
 ---
 title: Ryan Florence
 date: 2016-09-29
+location: Q&A Channel Reactiflux
+description: 'React Router Co-Author | [reactjs-training.com](https://reactjs-training.com)'
+people: '[@ryanflorence](https://twitter.com/ryanflorence)'
 ---
 
 ## React Router Co-Author | [https://reactjs-training.com](https://reactjs-training.com)
