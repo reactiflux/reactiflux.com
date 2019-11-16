@@ -84,12 +84,14 @@ const standardLayout = css`
     > nav {
       grid-column: 1;
       grid-row: 2;
-      padding-right: 1rem;
+      ${props => props.sidebar && css`padding-right: 1rem`}
     }
 
-    > div {
-      padding-left: 4rem;
-    }
+    ${props => props.sidebar && css`
+      > div {
+        padding-left: 4rem;
+      }
+    `}
   }
 
   @media (min-width: 820px) {
