@@ -1,21 +1,7 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import Helmet from 'react-helmet';
-import {
-  Container,
-  MarkdownContainer,
-  SmallTitle,
-  SideBar,
-  StyledLink,
-} from '../utils/components';
-import MarkdownStyles from '../css/markdown-styles';
+import { graphql, Link } from 'gatsby';
 
-// Add our typefaces.
-import 'typeface-poppins';
-import 'typeface-work-sans';
-import 'typeface-space-mono';
-
-import Layout from '../utils/components/Layout';
+import { Layout } from '@components';
 
 export default function Transcript({ data }) {
   const { html, frontmatter } = data.markdownRemark;
@@ -28,28 +14,25 @@ export default function Transcript({ data }) {
     }));
 
   return (
-    <Layout>
-      <Container>
-        <MarkdownStyles />
-        <Helmet title={'Reactiflux transcripts'} />
-        <SmallTitle>{frontmatter.title}</SmallTitle>
-        <SideBar>
+    <Layout as="article" title={frontmatter.title}>
+      <h1>{frontmatter.title}</h1>
+      <div>
+        <p>
+          <em>Transcript from {frontmatter.date}</em>
+        </p>
+        <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
+      <nav>
+        <ol>
           {articles.map((article) => (
             <li key={article.title}>
-              <StyledLink
-                to={'/transcripts/' + article.path}
-                title={article.title}
-              >
+              <Link to={'/transcripts/' + article.path} title={article.title}>
                 {article.title}
-              </StyledLink>
+              </Link>
             </li>
           ))}
-        </SideBar>
-        <MarkdownContainer
-          className="markdown"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </Container>
+        </ol>
+      </nav>
     </Layout>
   );
 }
@@ -60,6 +43,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        date(formatString: "dddd MMMM Do, YYYY")
       }
     }
     transcripts: allFile(

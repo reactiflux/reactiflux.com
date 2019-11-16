@@ -1,11 +1,8 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
-import Helmet from 'react-helmet';
-import MarkdownStyles from '../css/markdown-styles';
-import { Container, SmallTitle, MarkdownContainer } from '../utils/components';
-import Layout from '../utils/components/Layout';
-import { groupBy } from '../utils/groupBy';
-import { partition } from '../utils/partition';
+import { graphql } from 'gatsby';
+
+import { Layout, Link } from '@components';
+import { groupBy, partition } from '@utils/array';
 
 export default function Schedule({ data }) {
   const currentDate = new Date();
@@ -20,50 +17,46 @@ export default function Schedule({ data }) {
   const pastEvents = groupBy('dateGroup', pastEventNodes);
 
   return (
-    <Layout>
-      <Container>
-        <MarkdownStyles />
-        <Helmet title={'Q&A Schedule'} />
-        <SmallTitle>Q&A Schedule</SmallTitle>
-        <MarkdownContainer className="markdown">
-          <p>
-            We host one or two Q&A’s per month with Facebook Engineers and other
-            interesting developers in the React community. These Q&A’s usually
-            take place on Thursdays from 1pm - 2pm PT. If you want to hear from
-            someone specific in the community, let us know by contacting us via{' '}
-            <a href="https://twitter.com/reactiflux">Twitter</a> or ping an
-            admin or moderator in the{' '}
-            <a href="https://discord.gg/BkSU7Ju">#reactiflux-admin</a> channel
-            on discord.
-          </p>
-          {Object.keys(upcomingEvents).length > 0 && (
-            <>
-              <hr />
-              <h2>Upcoming Q&A's & Meetups</h2>
-              {Object.entries(upcomingEvents).map(([dateGroup, events]) => (
-                <React.Fragment key={dateGroup}>
-                  <h2>{dateGroup}</h2>
-                  {events.map((event) => (
-                    <Event key={event.name} {...event} />
-                  ))}
-                </React.Fragment>
-              ))}
-            </>
-          )}
-          <hr />
-          <h2>Past Q&A's & Meetups</h2>
-          {Object.entries(pastEvents).map(([dateGroup, events]) => (
-            <React.Fragment key={dateGroup}>
-              <h2>
-                <s>{dateGroup}</s>
-              </h2>
-              {events.map((event) => (
-                <Event key={event.name} {...event} />
-              ))}
-            </React.Fragment>
-          ))}
-        </MarkdownContainer>
-      </Container>
+    <Layout title="Q&A Schedule">
+      <h1>Q&A Schedule</h1>
+      <div>
+        <p>
+          We host one or two Q&A’s per month with Facebook Engineers and other
+          interesting developers in the React community. These Q&A’s usually
+          take place on Thursdays from 1pm - 2pm PT. If you want to hear from
+          someone specific in the community, let us know by contacting us via{' '}
+          <Link to="https://twitter.com/reactiflux">Twitter</Link> or ping an
+          admin or moderator in the{' '}
+          <Link to="https://discord.gg/BkSU7Ju">#reactiflux-admin</Link> channel
+          on discord.
+        </p>
+        {Object.keys(upcomingEvents).length > 0 && (
+          <>
+            <hr />
+            <h2>Upcoming Q&A's & Meetups</h2>
+            {Object.entries(upcomingEvents).map(([dateGroup, events]) => (
+              <React.Fragment key={dateGroup}>
+                <h2>{dateGroup}</h2>
+                {events.map((event) => (
+                  <Event key={event.name} {...event} />
+                ))}
+              </React.Fragment>
+            ))}
+          </>
+        )}
+        <hr />
+        <h2>Past Q&A's & Meetups</h2>
+        {Object.entries(pastEvents).map(([dateGroup, events]) => (
+          <React.Fragment key={dateGroup}>
+            <h2>
+              <s>{dateGroup}</s>
+            </h2>
+            {events.map((event) => (
+              <Event key={event.name} {...event} />
+            ))}
+          </React.Fragment>
+        ))}
+      </div>
     </Layout>
   );
 }

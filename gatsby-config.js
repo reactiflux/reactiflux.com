@@ -1,9 +1,25 @@
-// require("dotenv").config();
+const path = require('path');
 
 // Gatsby config
 module.exports = {
+  siteMetadata: {
+    title: `Reactiflux`,
+    description: `The world's largest React.js chat server`,
+    url: `https://www.reactiflux.com/`,
+  },
   pathPrefix: '/',
   plugins: [
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          '@assets': path.resolve(__dirname, 'src/assets'),
+          '@components': path.resolve(__dirname, 'src/components'),
+          '@hooks': path.resolve(__dirname, 'src/hooks'),
+          '@utils': path.resolve(__dirname, 'src/utils'),
+        },
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
