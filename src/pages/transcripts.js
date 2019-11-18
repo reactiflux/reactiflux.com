@@ -15,7 +15,7 @@ export default function Transcripts({ data }) {
   const newestArticle = articles[0];
 
   return (
-    <Layout title="Transcripts">
+    <Layout title="Transcripts" sidebar>
       <h1>{newestArticle.title}</h1>
       <div>
         <time>Transcript from {newestArticle.date}</time>

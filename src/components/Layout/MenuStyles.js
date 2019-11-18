@@ -17,6 +17,7 @@ export const MobileNav = styled.div`
   line-height: 42px;
   position: fixed;
   width: 100%;
+  z-index: 999;
 
   a {
     padding: 0 6px;

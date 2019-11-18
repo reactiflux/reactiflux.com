@@ -14,7 +14,7 @@ export default function Transcript({ data }) {
     }));
 
   return (
-    <Layout as="article" title={frontmatter.title}>
+    <Layout as="article" title={frontmatter.title} sidebar>
       <h1>{frontmatter.title}</h1>
       <div>
         <p>
