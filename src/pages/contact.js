@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Layout, Form } from '@components';
+import { Layout, Link, Form } from '@components';
 import { encode } from '@utils/encode';
 
 const fields = [
@@ -34,15 +34,26 @@ const Index = () => {
       <div>
         <p>
           When you have any questions or concerns which you would like to
-          discuss with Reactiflux staff, we encourage you to send a direct
-          message to a staff member in Discord. This will allow us to talk
-          things through with you, and make sure you're kept updated.
+          discuss with Reactiflux staff, you can reach out via:
+        </p>
+        <ul>
+          <li>direct message to any staff member in Discord</li>
+          <li>
+            mention or message{' '}
+            <Link to="https://twitter.com/reactiflux">@reactiflux</Link> on
+            Twitter
+          </li>
+          <li>our anonymous contact form below</li>
+        </ul>
+        <p>
+          If you message us directly, we can talk things through with you and
+          make sure you're kept updated.
         </p>
         <p>
-          However, if you would prefer for your message to be anonymous, please
-          fill in the form below. Depending on the situation we may not
-          reference your message publicly, but we will read, discuss, and act on
-          any message received through this form.
+          If you choose to reach out anonymously,
+          bear in mind that we may not reference your message publicly. However,
+          we will read, discuss, and act on any message received through this
+          form.
         </p>
         <hr />
         <Form fields={fields} name="contact" onSubmit={onSubmit} />
