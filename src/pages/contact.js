@@ -15,7 +15,7 @@ const fields = [
 const onSubmit = (fieldState) =>
   fetch('/', {
     method: 'POST',
-    heaaders: {
+    headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
     },
     body: encode({
