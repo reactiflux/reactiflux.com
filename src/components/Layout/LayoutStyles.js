@@ -68,8 +68,10 @@ const standardLayout = css`
   @media (max-width: 819px) {
     display: grid;
     grid-template-columns: 60% 100%;
-    transform: translateX(${props => props.isOpen ? '0' : 'calc(10px - 60%)'});
-    transition: .4s ease transform;
+    transform: translateX(
+      ${(props) => (props.isOpen ? '0' : 'calc(10px - 60%)')}
+    );
+    transition: 0.4s ease transform;
 
     > * {
       grid-column: 2;
@@ -84,14 +86,20 @@ const standardLayout = css`
     > nav {
       grid-column: 1;
       grid-row: 2;
-      ${props => props.sidebar && css`padding-right: 1rem`}
+      ${(props) =>
+        props.sidebar &&
+        css`
+          padding-right: 1rem;
+        `}
     }
 
-    ${props => props.sidebar && css`
-      > div {
-        padding-left: 4rem;
-      }
-    `}
+    ${(props) =>
+      props.sidebar &&
+      css`
+        > div {
+          padding-left: 4rem;
+        }
+      `}
   }
 
   @media (min-width: 820px) {
@@ -139,7 +147,7 @@ const fixedSidebarButton = css`
     border: 3px solid ${pink};
     margin: -9px -3px;
   }
-`
+`;
 
 export const SidebarButton = styled.button`
   background: none;
@@ -154,15 +162,15 @@ export const SidebarButton = styled.button`
   padding: 0 3px;
   white-space: nowrap;
 
-  ${props => props.fixed && fixedSidebarButton}
-`
+  ${(props) => props.fixed && fixedSidebarButton}
+`;
 
 export function SidebarToggleButton(props) {
   return (
     <SidebarButton {...props}>
       {props.isOpen ? 'Hide' : 'Show'} Menu
     </SidebarButton>
-  )
+  );
 }
 
 export const Wrapper = styled.div`

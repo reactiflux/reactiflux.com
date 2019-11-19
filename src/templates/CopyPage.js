@@ -9,10 +9,13 @@ export default function Transcript({ data }) {
 
   return (
     <Layout title={frontmatter.title} sidebar={frontmatter.sidebar}>
-      {toggleSidebar => (
+      {(toggleSidebar) => (
         <>
           <h1>{frontmatter.title}</h1>
-          <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
+          <div
+            className="markdown"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
           {frontmatter.sidebar ? (
             <nav>
               <ol>
@@ -20,7 +23,9 @@ export default function Transcript({ data }) {
                   .filter((heading) => heading.depth < 3)
                   .map(({ value }) => (
                     <li key={value}>
-                      <Link to={getAnchor(value)} onClick={toggleSidebar}>{value}</Link>
+                      <Link to={getAnchor(value)} onClick={toggleSidebar}>
+                        {value}
+                      </Link>
                     </li>
                   ))}
               </ol>

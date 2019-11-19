@@ -16,19 +16,26 @@ import 'typeface-poppins';
 import 'typeface-work-sans';
 import 'typeface-space-mono';
 
-export function Layout({ as, children, description, title, sidebar, ...props }) {
+export function Layout({
+  as,
+  children,
+  description,
+  title,
+  sidebar,
+  ...props
+}) {
   const isMobile = useIsMobile();
   const [isOpen, setIsOpen] = React.useState(false);
-  const toggleIsOpen = () => setIsOpen(prev => !prev)
+  const toggleIsOpen = () => setIsOpen((prev) => !prev);
   React.useEffect(() => {
     if (isOpen) {
       window.scrollTo({
         top: 0,
         left: 0,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
-  }, [isOpen])
+  }, [isOpen]);
 
   return (
     <ThemeProvider theme={getTheme({ isMobile })}>

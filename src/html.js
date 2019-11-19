@@ -1,15 +1,15 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import smoothScrollToAnchor from '!raw-loader!./scripts/smoothScrollToAnchor.js'
+import smoothScrollToAnchor from '!raw-loader!./scripts/smoothScrollToAnchor.js';
 
 const smoothScrollScript = (
   <script
-      dangerouslySetInnerHTML={{
-          __html: smoothScrollToAnchor
-      }}
+    dangerouslySetInnerHTML={{
+      __html: smoothScrollToAnchor,
+    }}
   />
-)
+);
 
 export default function HTML(props) {
   return (
@@ -37,7 +37,7 @@ export default function HTML(props) {
         {smoothScrollScript}
       </body>
     </html>
-  )
+  );
 }
 
 HTML.propTypes = {
@@ -47,4 +47,4 @@ HTML.propTypes = {
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-}
+};
