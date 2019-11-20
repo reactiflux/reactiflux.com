@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Layout, Link, Form } from '@components';
-import { encode } from '@utils/encode';
 
 const fields = [
   {
@@ -16,9 +15,9 @@ const onSubmit = (fieldState) =>
   fetch('/', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Type': 'application/json',
     },
-    body: encode({
+    body: JSON.stringify({
       'form-name': 'newsletter',
       ...Object.fromEntries(fieldState),
     }),
@@ -50,10 +49,9 @@ const Index = () => {
           make sure you're kept updated.
         </p>
         <p>
-          If you choose to reach out anonymously,
-          bear in mind that we may not reference your message publicly. However,
-          we will read, discuss, and act on any message received through this
-          form.
+          If you choose to reach out anonymously, bear in mind that we may not
+          reference your message publicly. However, we will read, discuss, and
+          act on any message received through this form.
         </p>
         <hr />
         <Form fields={fields} name="contact" onSubmit={onSubmit} />
