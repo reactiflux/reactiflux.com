@@ -18,7 +18,7 @@ const onSubmit = (fieldState) =>
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      'form-name': 'newsletter',
+      'form-name': 'contact',
       ...Object.fromEntries(fieldState),
     }),
   });
