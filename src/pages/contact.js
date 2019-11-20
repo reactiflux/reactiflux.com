@@ -51,7 +51,9 @@ const Index = () => {
         <p>
           If you choose to reach out anonymously, bear in mind that we may not
           reference your message publicly. However, we will read, discuss, and
-          act on any message received through this form.
+          act on any message received through this form. If you'd prefer to be
+          contacted on another platform, please include your information as part
+          of your message.
         </p>
         <hr />
         <Form fields={fields} name="contact" onSubmit={onSubmit} />
