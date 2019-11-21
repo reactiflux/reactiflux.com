@@ -5,7 +5,8 @@ import { Reactiflux } from '@assets/logos';
 import { Link } from '@components';
 import { useIsMobile } from '@hooks';
 
-import { Logo, MobileNav, Space, Wrapper } from './MenuStyles';
+import { Logo, Space, Wrapper } from './MenuStyles';
+import { MobileNav } from './MobileNav';
 
 export function Menu() {
   const isMobile = useIsMobile();
