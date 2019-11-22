@@ -163,10 +163,6 @@ const fixedSidebarButton = css`
     border: 3px solid ${pink};
     margin: -9px -3px;
   }
-
-  @media (min-width: 820px) {
-    display: none;
-  }
 `;
 
 export const SidebarButton = styled.button`
@@ -181,6 +177,10 @@ export const SidebarButton = styled.button`
   outline: none;
   padding: 0 3px;
   white-space: nowrap;
+
+  @media (min-width: 820px) {
+    display: none;
+  }
 
   ${(props) => props.fixed && fixedSidebarButton}
 `;
