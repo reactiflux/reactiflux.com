@@ -171,8 +171,8 @@ const Jobs = () => {
       />
       <Modal close={toggleModal} isOpen={showModal}>
         <p>
-          If the job posting does not contain a dedicated email, link or phone
-          number you can contact the person that added the post by joining{' '}
+          If the job posting does not contain a dedicated email, link, or phone
+          number, you can contact the person that added the post by joining{' '}
           <Link to="https://discord.gg/reactiflux">our community</Link> and
           sending a direct message to the person.
         </p>
