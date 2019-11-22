@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { blue, darkPink, pink } from '@utils/theme';
+import { blue, pink } from '@utils/theme';
 
 const P = styled.p`
   label {
@@ -13,7 +13,7 @@ const P = styled.p`
   textarea {
     background: transparent;
     border: none;
-    border-bottom: 2px solid ${pink};
+    box-shadow: inset 0 -2px 0 0 ${pink};
     color: ${pink};
     font-size: inherit;
     outline: none;
@@ -28,8 +28,7 @@ const P = styled.p`
 
     &:hover,
     &:focus {
-      border-color: ${darkPink};
-      color: ${darkPink};
+      box-shadow: inset 0 -4px 0 0 ${pink};
     }
   }
 `;

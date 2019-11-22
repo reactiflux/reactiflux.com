@@ -2,7 +2,9 @@ import React from 'react';
 
 import { Button } from '@components';
 
+import { Checkbox } from './Checkbox';
 import { Input, Textarea } from './Input';
+import { Select } from './Select';
 
 const NONE = 'NONE';
 const SUBMITTING = 'SUBMITTING';
@@ -10,26 +12,44 @@ const SUCCESS = 'SUCCESS';
 const ERROR = 'ERROR';
 
 export const Form = ({
+  allowSubmit,
   error,
   fields,
   form,
+  onChange,
   onSubmit,
   submitting,
   success,
   ...props
 }) => {
   const [status, setStatus] = React.useState(NONE);
-  const [fieldState, setFieldState] = React.useState([]);
+  const [fieldState, setFieldState] = React.useState(
+    fields.reduce((acc, { defaultValue, name }) => {
+      acc[name] = typeof defaultValue !== 'undefined' ? defaultValue : '';
+      return acc;
+    }, {}),
+  );
 
-  const fieldData = fields.map((field, index) => ({
+  const fieldData = fields.map((field) => ({
     ...field,
     onChange: (e) => {
       // have to pull the value from the synthetic event here, because react throws it away
       const value = e.target.value;
-      setFieldState((prev) => Object.assign([], prev, { [index]: value }));
+      if (value !== fieldState[field.name]) {
+        setFieldState((prev) => ({
+          ...prev,
+          [field.name]: value,
+        }));
+      }
     },
-    value: fieldState[index] || field.defaultValue || '',
+    value: fieldState[field.name],
   }));
+
+  React.useEffect(() => {
+    if (onChange) {
+      onChange(fieldState);
+    }
+  }, [fieldState, onChange]);
 
   const onSubmitCallback = () => {
     setStatus(SUBMITTING);
@@ -76,30 +96,43 @@ export const Form = ({
             label="If you're not a robot, leave this field blank!"
             name="bot-field"
           />
-          {form(fieldData, onSubmitCallback)}
+          {form(fieldData, onSubmitCallback, allowSubmit)}
         </form>
       );
   }
 };
 
-const renderForm = (fieldData, onSubmit) => (
+const renderForm = (fieldData, onSubmit, allowSubmit) => (
   <>
-    {fieldData.map((field) =>
-      field.type === 'textarea' ? (
-        <Textarea key={field.name} {...field} />
-      ) : (
-        <Input key={field.name} {...field} />
-      ),
-    )}
-    <p>
-      <Button onClick={onSubmit}>Submit</Button>
-    </p>
+    {fieldData.map((field) => {
+      switch (field.type) {
+        case 'checkbox':
+          return <Checkbox key={field.name} {...field} />;
+
+        case 'select':
+          return <Select key={field.name} {...field} />;
+
+        case 'textarea':
+          return <Textarea key={field.name} {...field} />;
+
+        default:
+          return <Input key={field.name} {...field} />;
+      }
+    })}
+    {allowSubmit ? (
+      <p>
+        <Button onClick={onSubmit}>Submit</Button>
+      </p>
+    ) : null}
   </>
 );
 
 Form.defaultProps = {
+  allowSubmit: true,
   form: renderForm,
 };
 
+Form.Checkbox = Checkbox;
 Form.Input = Input;
+Form.Select = Select;
 Form.Textarea = Textarea;
