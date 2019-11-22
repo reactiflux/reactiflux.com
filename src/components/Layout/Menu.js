@@ -27,7 +27,6 @@ export function Menu() {
           <Link to="/transcripts/">Transcripts</Link>
           <Link to="/jobs/">Jobs</Link>
           <Link to="/learning/">Learning</Link>
-          <Link to="/contact/">Contact</Link>
         </MobileNavIfMobile>
       </Wrapper>
     </HeadroomIfDesktop>
