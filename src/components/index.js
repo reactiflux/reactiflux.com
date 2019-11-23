@@ -1,4 +1,5 @@
 export { Button, ButtonLink } from './Button';
+export { FocusBoundary } from './FocusBoundary';
 export { Form } from './Form';
 export { Layout } from './Layout';
 export { Link } from './Link';

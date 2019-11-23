@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 
-import { Layout } from '@components';
+import { FocusBoundary, Layout } from '@components';
 
 export default function Transcript({ data }) {
   const { html, frontmatter } = data.markdownRemark;
@@ -15,24 +15,36 @@ export default function Transcript({ data }) {
 
   return (
     <Layout as="article" title={frontmatter.title} sidebar>
-      <h1>{frontmatter.title}</h1>
-      <div>
-        <p>
-          <em>Transcript from {frontmatter.date}</em>
-        </p>
-        <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
-      </div>
-      <nav>
-        <ol>
-          {articles.map((article) => (
-            <li key={article.title}>
-              <Link to={'/transcripts/' + article.path} title={article.title}>
-                {article.title}
-              </Link>
-            </li>
-          ))}
-        </ol>
-      </nav>
+      {(setSidebar) => (
+        <>
+          <h1>{frontmatter.title}</h1>
+          <FocusBoundary onChange={setSidebar}>
+            <nav>
+              <ol>
+                {articles.map((article) => (
+                  <li key={article.title}>
+                    <Link
+                      to={'/transcripts/' + article.path}
+                      title={article.title}
+                    >
+                      {article.title}
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          </FocusBoundary>
+          <div>
+            <p>
+              <em>Transcript from {frontmatter.date}</em>
+            </p>
+            <div
+              className="markdown"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          </div>
+        </>
+      )}
     </Layout>
   );
 }

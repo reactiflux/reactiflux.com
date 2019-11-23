@@ -11,96 +11,102 @@ const SUBMITTING = 'SUBMITTING';
 const SUCCESS = 'SUCCESS';
 const ERROR = 'ERROR';
 
-export const Form = ({
-  allowSubmit,
-  error,
-  fields,
-  form,
-  onChange,
-  onSubmit,
-  submitting,
-  success,
-  ...props
-}) => {
-  const [status, setStatus] = React.useState(NONE);
-  const [fieldState, setFieldState] = React.useState(
-    fields.reduce((acc, { defaultValue, name }) => {
-      acc[name] = typeof defaultValue !== 'undefined' ? defaultValue : '';
-      return acc;
-    }, {}),
-  );
-
-  const fieldData = fields.map((field) => ({
-    ...field,
-    onChange: (e) => {
-      // have to pull the value from the synthetic event here, because react throws it away
-      const value = e.target.value;
-      if (value !== fieldState[field.name]) {
-        setFieldState((prev) => ({
-          ...prev,
-          [field.name]: value,
-        }));
-      }
+export const Form = React.forwardRef(
+  (
+    {
+      allowSubmit,
+      error,
+      fields,
+      form,
+      onChange,
+      onSubmit,
+      submitting,
+      success,
+      ...props
     },
-    value: fieldState[field.name],
-  }));
+    ref,
+  ) => {
+    const [status, setStatus] = React.useState(NONE);
+    const [fieldState, setFieldState] = React.useState(
+      fields.reduce((acc, { defaultValue, name }) => {
+        acc[name] = typeof defaultValue !== 'undefined' ? defaultValue : '';
+        return acc;
+      }, {}),
+    );
 
-  React.useEffect(() => {
-    if (onChange) {
-      onChange(fieldState);
+    const fieldData = fields.map((field) => ({
+      ...field,
+      onChange: (e) => {
+        // have to pull the value from the synthetic event here, because react throws it away
+        const value = e.target.value;
+        if (value !== fieldState[field.name]) {
+          setFieldState((prev) => ({
+            ...prev,
+            [field.name]: value,
+          }));
+        }
+      },
+      value: fieldState[field.name],
+    }));
+
+    React.useEffect(() => {
+      if (onChange) {
+        onChange(fieldState);
+      }
+    }, [fieldState, onChange]);
+
+    const onSubmitCallback = () => {
+      setStatus(SUBMITTING);
+      onSubmit(fieldData.map((field) => [field.name, field.value]))
+        .then(() => setStatus(SUCCESS))
+        .catch(() => setStatus(ERROR));
+    };
+
+    switch (status) {
+      case SUBMITTING:
+        return submitting || <p>Submitting...</p>;
+
+      case SUCCESS:
+        return success || <p>Success!</p>;
+
+      case ERROR:
+        return (
+          <>
+            {error || (
+              <>
+                <h3>Something went wrong</h3>
+                <p>If this error keeps on happening, please let me know!</p>
+              </>
+            )}
+            <p>
+              <Button onClick={() => setStatus(NONE)}>
+                Click here to try again
+              </Button>
+            </p>
+          </>
+        );
+
+      default:
+        return (
+          <form
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={onSubmitCallback}
+            ref={ref}
+            {...props}
+          >
+            <Input
+              hidden
+              label="If you're not a robot, leave this field blank!"
+              name="bot-field"
+            />
+            {form(fieldData, onSubmitCallback, allowSubmit)}
+          </form>
+        );
     }
-  }, [fieldState, onChange]);
-
-  const onSubmitCallback = () => {
-    setStatus(SUBMITTING);
-    onSubmit(fieldData.map((field) => [field.name, field.value]))
-      .then(() => setStatus(SUCCESS))
-      .catch(() => setStatus(ERROR));
-  };
-
-  switch (status) {
-    case SUBMITTING:
-      return submitting || <p>Submitting...</p>;
-
-    case SUCCESS:
-      return success || <p>Success!</p>;
-
-    case ERROR:
-      return (
-        <>
-          {error || (
-            <>
-              <h3>Something went wrong</h3>
-              <p>If this error keeps on happening, please let me know!</p>
-            </>
-          )}
-          <p>
-            <Button onClick={() => setStatus(NONE)}>
-              Click here to try again
-            </Button>
-          </p>
-        </>
-      );
-
-    default:
-      return (
-        <form
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={onSubmitCallback}
-          {...props}
-        >
-          <Input
-            hidden
-            label="If you're not a robot, leave this field blank!"
-            name="bot-field"
-          />
-          {form(fieldData, onSubmitCallback, allowSubmit)}
-        </form>
-      );
-  }
-};
+  },
+);
 
 const renderForm = (fieldData, onSubmit, allowSubmit) => (
   <>
