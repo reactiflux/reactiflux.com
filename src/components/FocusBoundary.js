@@ -12,15 +12,15 @@ function isChildOf(target, child) {
 
 export const FocusBoundary = ({ children, onChange, onEnter, onExit }) => {
   const [ref, setRef] = React.useState();
-  const focusTarget = React.useRef();
+  const boundaryContainsFocus = React.useRef();
 
   React.useEffect(() => {
     if (ref) {
       const focusListener = (e) => {
-        if (!focusTarget.current) {
+        if (!boundaryContainsFocus.current) {
           onChange && onChange(true);
           onEnter && onEnter(e);
-          focusTarget.current = e.target;
+          boundaryContainsFocus.current = true;
         }
       };
       const blurListener = (e) => {
@@ -30,7 +30,7 @@ export const FocusBoundary = ({ children, onChange, onEnter, onExit }) => {
             onChange(false);
           }
           onExit && onExit(e);
-          focusTarget.current = null;
+          boundaryContainsFocus.current = null;
         }
       };
 
