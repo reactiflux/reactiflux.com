@@ -3,7 +3,7 @@ import moment from 'moment';
 import styled, { css } from 'styled-components';
 import { transparentize } from 'polished';
 
-import { Tag } from '@components';
+import { Link, Tag } from '@components';
 import { addLinks, extractTags } from '@utils/string';
 import { pink } from '@utils/theme';
 
@@ -29,7 +29,6 @@ const Pre = styled.pre`
   white-space: pre-wrap;
 `;
 
-
 const GetInTouch = styled.p`
   flex-grow: 1;
   margin-bottom: 0;
@@ -47,7 +46,17 @@ const GetInTouch = styled.p`
   }
 `;
 
-export const Offer = ({ author, date, last, message, onClickGetInTouch }) => {
+const getLink = (id) =>
+  `https://discordapp.com/channels/102860784329052160/103882387330457600/${id}`;
+
+export const Offer = ({
+  author,
+  date,
+  id,
+  last,
+  message,
+  onClickGetInTouch,
+}) => {
   const [tags, content] = extractTags(message);
   return (
     <Wrapper last={last}>
@@ -65,7 +74,7 @@ export const Offer = ({ author, date, last, message, onClickGetInTouch }) => {
       <div>
         <p>
           Posted by <strong>{author.name}</strong> on{' '}
-          {moment(date).format('MMMM Do YYYY')}
+          <Link to={getLink(id)}>{moment(date).format('MMMM Do YYYY')}</Link>
         </p>
         {onClickGetInTouch ? (
           <GetInTouch>

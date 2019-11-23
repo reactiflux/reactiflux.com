@@ -171,10 +171,11 @@ const Jobs = () => {
       />
       <Modal close={toggleModal} isOpen={showModal}>
         <p>
-          If the job posting does not contain a dedicated email, link, or phone
-          number, you can contact the person that added the post by joining{' '}
-          <Link to="https://discord.gg/reactiflux">our community</Link> and
-          sending a direct message to the person.
+          If the job post does not contain a dedicated email, link, or phone
+          number, you can click the offer date to open the original message in
+          our <Link to="https://discord.gg/reactiflux">Discord server</Link> (in
+          the <strong>#jobs</strong> channel). You can then contact the person
+          by sending them a direct message.
         </p>
         <p>
           If you don't already have one, you will need to create a (free!){' '}
