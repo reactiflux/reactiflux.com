@@ -9,8 +9,12 @@ const StyledForm = styled(Form)`
 `;
 
 const ResultsFooter = styled.div`
-  margin: 8rem;
+  margin: 8rem 2rem;
   text-align: center;
+
+  @media (min-width: 600px) {
+    margin: 8rem;
+  }
 
   > button {
     margin: 0;
@@ -161,6 +165,8 @@ const Jobs = () => {
               Something went wrong - please try again! If this problem persists,
               please <Link to="/contact/">let us know</Link>.
             </p>
+          ) : status === SUCCESS && results.length === 0 ? (
+            <p>We couldn't find any results for your query - try something different!</p>
           ) : null}
         </ResultsFooter>
       </div>
