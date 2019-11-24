@@ -42,7 +42,7 @@ export const FocusBoundary = ({ children, onChange, onEnter, onExit }) => {
         ref.removeEventListener('blur', blurListener);
       };
     }
-  }, [ref, onEnter, onExit]);
+  }, [boundaryContainsFocus, onChange, onEnter, onExit, ref]);
 
   return React.Children.map(children, (child, i) => {
     if (i > 0) {
