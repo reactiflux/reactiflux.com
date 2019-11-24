@@ -1,15 +1,5 @@
 import React from 'react';
 
-function isChildOf(target, child) {
-  if (!child) {
-    return false;
-  }
-
-  return target === child.parentElement
-    ? true
-    : isChildOf(target, child.parentElement);
-}
-
 export const FocusBoundary = ({ children, onChange, onEnter, onExit }) => {
   const [ref, setRef] = React.useState();
   const boundaryContainsFocus = React.useRef();
@@ -24,7 +14,7 @@ export const FocusBoundary = ({ children, onChange, onEnter, onExit }) => {
         }
       };
       const blurListener = (e) => {
-        if (!isChildOf(ref, e.relatedTarget)) {
+        if (!ref.contains(e.relatedTarget)) {
           if (onChange) {
             e.relatedTarget && e.relatedTarget.focus({ preventScroll: true });
             onChange(false);
