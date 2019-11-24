@@ -10,6 +10,8 @@ export const green = (props) => selectColours(props).green;
 export const pink = (props) => selectColours(props).pink;
 export const yellow = (props) => selectColours(props).yellow;
 
+export const boxShadow = '0 0 4px 2px rgba(0, 0, 0, 0.1)';
+
 export function getTheme({ isMobile }) {
   return {
     isMobile,
