@@ -12,7 +12,7 @@ const SUCCESS = 'SUCCESS';
 const ERROR = 'ERROR';
 
 export const Form = React.forwardRef(
-  (
+  function Form(
     {
       allowSubmit,
       error,
@@ -25,7 +25,7 @@ export const Form = React.forwardRef(
       ...props
     },
     ref,
-  ) => {
+  ) {
     const [status, setStatus] = React.useState(NONE);
     const [fieldState, setFieldState] = React.useState(
       fields.reduce((acc, { defaultValue, name }) => {
