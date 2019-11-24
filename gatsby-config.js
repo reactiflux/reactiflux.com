@@ -50,5 +50,17 @@ module.exports = {
       },
     },
     'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Reactiflux',
+        short_name: 'Reactiflux',
+        start_url: '/',
+        backgroud_color: '#ffffff',
+        theme_color: '#dc1d64',
+        display: 'standalone',
+        icon: 'src/assets/reactiflux.png'
+      }
+    }
   ],
 };
