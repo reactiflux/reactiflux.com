@@ -3,7 +3,13 @@
     if (e.target.matches('a[href^="#"]')) {
       e.preventDefault();
 
-      document.querySelector(e.target.getAttribute('href')).scrollIntoView({
+      const target = e.target.getAttribute('href').replace('#', '');
+
+      const element =
+        document.getElementById(target) ||
+        document.querySelector(`[name="${target}"]`);
+
+      element.scrollIntoView({
         behavior: 'smooth',
       });
     }
