@@ -103,6 +103,7 @@ const standardLayout = css`
       grid-column: 1;
       grid-row: 2;
       min-width: calc(100% / 3);
+      padding-right: 2rem;
     }
   }
 `;

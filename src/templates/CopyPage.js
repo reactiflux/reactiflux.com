@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import { Layout, Link } from '@components';
+import { FocusBoundary, Layout, Link } from '@components';
 import { getAnchor } from '@utils/anchor';
 
 export default function Transcript({ data }) {
@@ -9,28 +9,39 @@ export default function Transcript({ data }) {
 
   return (
     <Layout title={frontmatter.title} sidebar={frontmatter.sidebar}>
-      {(toggleSidebar) => (
+      {(setSidebar) => (
         <>
           <h1>{frontmatter.title}</h1>
+          {frontmatter.sidebar ? (
+            <FocusBoundary onChange={setSidebar}>
+              <nav>
+                <ol>
+                  {headings
+                    .filter((heading) => heading.depth < 3)
+                    .map(({ value }) => (
+                      <li key={value}>
+                        <Link
+                          to={getAnchor(value)}
+                          onClick={() => {
+                            setSidebar(false);
+                            document
+                              .getElementById(getAnchor(value).replace('#', ''))
+                              .querySelector('a')
+                              .focus();
+                          }}
+                        >
+                          {value}
+                        </Link>
+                      </li>
+                    ))}
+                </ol>
+              </nav>
+            </FocusBoundary>
+          ) : null}
           <div
             className="markdown"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          {frontmatter.sidebar ? (
-            <nav>
-              <ol>
-                {headings
-                  .filter((heading) => heading.depth < 3)
-                  .map(({ value }) => (
-                    <li key={value}>
-                      <Link to={getAnchor(value)} onClick={toggleSidebar}>
-                        {value}
-                      </Link>
-                    </li>
-                  ))}
-              </ol>
-            </nav>
-          ) : null}
         </>
       )}
     </Layout>

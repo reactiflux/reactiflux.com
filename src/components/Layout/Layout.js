@@ -45,7 +45,7 @@ export function Layout({
         <Menu />
         <Main as={as} {...props} isOpen={isOpen} sidebar={sidebar}>
           <SEO title={title} description={description} />
-          {typeof children === 'function' ? children(toggleIsOpen) : children}
+          {typeof children === 'function' ? children(setIsOpen) : children}
           {sidebar ? (
             <SidebarToggleButton isOpen={isOpen} onClick={toggleIsOpen} fixed />
           ) : null}
