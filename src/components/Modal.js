@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import styled from 'styled-components';
 import { transparentize } from 'polished';
 
-import { FocusBoundary } from '@components';
+import { FocusBoundary, Hidden } from '@components';
 import { background, foreground, pink } from '@utils/theme';
 
 const Backdrop = styled.div`
@@ -124,9 +124,9 @@ export const Modal = ({ children, close, isOpen }) => {
   // we want to trap the focus inside the window, so that we can re-focus
   // the previous element instead.
   const closeButton = (
-    <button className="visually-hidden" onClick={close}>
+    <Hidden as="button" onClick={close}>
       Close modal
-    </button>
+    </Hidden>
   );
 
   return createPortal(
