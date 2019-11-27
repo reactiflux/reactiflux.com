@@ -107,8 +107,8 @@ export const Modal = ({ children, close, isOpen }) => {
   //
   // if this wasn't there, the modal content would be the last tabbable
   // element. if it's the last element, when you tab out of the modal
-  // the browser focuses the url bar, and ignores the FocusBoundary's
-  // onExit function.
+  // the browser focuses the url bar, and ignores the ReturnFocusOnUnMount
+  // .focus() call.
   //
   // we want to trap the focus inside the window, so that we can re-focus
   // the previous element instead.
