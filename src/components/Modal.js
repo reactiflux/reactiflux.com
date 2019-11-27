@@ -58,6 +58,10 @@ const Overlay = styled.div`
   transform: translate(-50%, -50%);
   z-index: 1001;
 
+  &:focus {
+    outline: none;
+  }
+
   > :last-child {
     margin-bottom: 0;
   }
