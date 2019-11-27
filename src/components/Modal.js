@@ -77,6 +77,21 @@ const ReturnFocusOnUnMount = ({ children }) => {
 };
 
 export const Modal = ({ children, close, isOpen }) => {
+  React.useEffect(() => {
+    const shortcutListener = (event) => {
+      if (isOpen && event.key === 'Escape') {
+        event.preventDefault();
+        close();
+      }
+    };
+
+    document.addEventListener('keyup', shortcutListener);
+
+    return () => {
+      document.removeEventListener('keyup', shortcutListener);
+    };
+  }, [close, isOpen]);
+
   if (!isOpen) {
     return null;
   }
