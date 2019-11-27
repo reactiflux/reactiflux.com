@@ -73,7 +73,7 @@ const ReturnFocusOnUnMount = ({ children }) => {
     [],
   );
 
-  return children(previousFocus);
+  return children;
 };
 
 export const Modal = ({ children, close, isOpen }) => {
@@ -98,21 +98,14 @@ export const Modal = ({ children, close, isOpen }) => {
 
   const content = (
     <ReturnFocusOnUnMount>
-      {(previousFocus) => (
-        <FocusBoundary
-          onExit={(e) => {
-            close(e);
-            previousFocus.current.focus();
-          }}
-        >
-          <Overlay>
-            <CloseIcon onClick={close} autoFocus>
-              Close modal
-            </CloseIcon>
-            {children}
-          </Overlay>
-        </FocusBoundary>
-      )}
+      <FocusBoundary onExit={close}>
+        <Overlay>
+          <CloseIcon onClick={close} autoFocus>
+            Close modal
+          </CloseIcon>
+          {children}
+        </Overlay>
+      </FocusBoundary>
     </ReturnFocusOnUnMount>
   );
 
