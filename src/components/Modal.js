@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import styled from 'styled-components';
 import { transparentize } from 'polished';
 
+import { FocusBoundary } from '@components';
 import { background, foreground, pink } from '@utils/theme';
 
 const Backdrop = styled.div`
@@ -23,7 +24,7 @@ const CloseIcon = styled.button`
   color: inherit;
   cursor: pointer;
   display: flex;
-  font-size: 2rem;
+  font-size: 0;
   height: 3rem;
   justify-content: center;
   position: absolute;
@@ -33,6 +34,7 @@ const CloseIcon = styled.button`
 
   :after {
     content: '×';
+    font-size: 2rem;
   }
 
   :focus,
@@ -71,19 +73,56 @@ const ReturnFocusOnUnMount = ({ children }) => {
     [],
   );
 
-  return children;
+  return children(previousFocus);
 };
 
-export const Modal = ({ children, close, isOpen }) =>
-  isOpen
-    ? createPortal(
-        <ReturnFocusOnUnMount>
-          <Backdrop onClick={close} />
+export const Modal = ({ children, close, isOpen }) => {
+  if (!isOpen) {
+    return null;
+  }
+
+  const content = (
+    <ReturnFocusOnUnMount>
+      {(previousFocus) => (
+        <FocusBoundary
+          onExit={(e) => {
+            close(e);
+            previousFocus.current.focus();
+          }}
+        >
           <Overlay>
-            <CloseIcon onClick={close} autoFocus />
+            <CloseIcon onClick={close} autoFocus>
+              Close modal
+            </CloseIcon>
             {children}
           </Overlay>
-        </ReturnFocusOnUnMount>,
-        document.getElementById('modals'),
-      )
-    : null;
+        </FocusBoundary>
+      )}
+    </ReturnFocusOnUnMount>
+  );
+
+  // note: this close button exists to ensure that there's an available
+  // tabbable element _after_ the modal in the dom.
+  //
+  // if this wasn't there, the modal content would be the last tabbable
+  // element. if it's the last element, when you tab out of the modal
+  // the browser focuses the url bar, and ignores the FocusBoundary's
+  // onExit function.
+  //
+  // we want to trap the focus inside the window, so that we can re-focus
+  // the previous element instead.
+  const closeButton = (
+    <button className="visually-hidden" onClick={close}>
+      Close modal
+    </button>
+  );
+
+  return createPortal(
+    <>
+      <Backdrop onClick={close} />
+      {content}
+      {closeButton}
+    </>,
+    document.getElementById('modals'),
+  );
+};
