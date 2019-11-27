@@ -100,19 +100,6 @@ export const Modal = ({ children, close, isOpen }) => {
     return null;
   }
 
-  const content = (
-    <ReturnFocusOnUnMount>
-      <FocusBoundary onExit={close}>
-        <Overlay>
-          <CloseIcon onClick={close} autoFocus>
-            Close modal
-          </CloseIcon>
-          {children}
-        </Overlay>
-      </FocusBoundary>
-    </ReturnFocusOnUnMount>
-  );
-
   // note: this close button exists to ensure that there's an available
   // tabbable element _after_ the modal in the dom.
   //
@@ -129,12 +116,20 @@ export const Modal = ({ children, close, isOpen }) => {
     </Hidden>
   );
 
-  return createPortal(
-    <>
+  const content = (
+    <ReturnFocusOnUnMount>
+      <FocusBoundary onExit={close}>
+        <Overlay>
+          <CloseIcon onClick={close} autoFocus>
+            Close modal
+          </CloseIcon>
+          {children}
+        </Overlay>
+      </FocusBoundary>
       <Backdrop onClick={close} />
-      {content}
       {closeButton}
-    </>,
-    document.getElementById('modals'),
+    </ReturnFocusOnUnMount>
   );
+
+  return createPortal(content, document.getElementById('modals'));
 };
