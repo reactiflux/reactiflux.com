@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import styled from 'styled-components';
 import { transparentize } from 'polished';
 
-import { FocusBoundary, Hidden } from '@components';
+import { FocusBoundary } from '@components';
 import { background, foreground, pink } from '@utils/theme';
 
 const Backdrop = styled.div`
@@ -102,22 +102,6 @@ export const Modal = ({ children, close, isOpen }) => {
     return null;
   }
 
-  // note: this close button exists to ensure that there's an available
-  // tabbable element _after_ the modal in the dom.
-  //
-  // if this wasn't there, the modal content would be the last tabbable
-  // element. if it's the last element, when you tab out of the modal
-  // the browser focuses the url bar, and ignores the ReturnFocusOnUnMount
-  // .focus() call.
-  //
-  // we want to trap the focus inside the window, so that we can re-focus
-  // the previous element instead.
-  const closeButton = (
-    <Hidden as="button" onClick={close}>
-      Close modal
-    </Hidden>
-  );
-
   const content = (
     <ReturnFocusOnUnMount>
       <FocusBoundary onExit={close}>
@@ -128,8 +112,7 @@ export const Modal = ({ children, close, isOpen }) => {
           {children}
         </Overlay>
       </FocusBoundary>
-      <Backdrop onClick={close} />
-      {closeButton}
+      <Backdrop onClick={close} tabIndex={0} />
     </ReturnFocusOnUnMount>
   );
 

@@ -1,7 +1,6 @@
 export { Button, ButtonLink } from './Button';
 export { FocusBoundary } from './FocusBoundary';
 export { Form } from './Form';
-export { Hidden } from './Hidden';
 export { Layout } from './Layout';
 export { Link } from './Link';
 export { Modal } from './Modal';
