@@ -47,6 +47,6 @@ export const FocusBoundary = ({ children, onChange, onEnter, onExit }) => {
       );
     }
 
-    return React.cloneElement(child, { ref: setRef });
+    return React.cloneElement(child, { ref: setRef, tabIndex: -1 });
   });
 };

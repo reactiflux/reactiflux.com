@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import styled from 'styled-components';
 import { transparentize } from 'polished';
 
+import { FocusBoundary } from '@components';
 import { background, foreground, pink } from '@utils/theme';
 
 const Backdrop = styled.div`
@@ -23,7 +24,7 @@ const CloseIcon = styled.button`
   color: inherit;
   cursor: pointer;
   display: flex;
-  font-size: 2rem;
+  font-size: 0;
   height: 3rem;
   justify-content: center;
   position: absolute;
@@ -33,6 +34,7 @@ const CloseIcon = styled.button`
 
   :after {
     content: '×';
+    font-size: 2rem;
   }
 
   :focus,
@@ -56,6 +58,10 @@ const Overlay = styled.div`
   transform: translate(-50%, -50%);
   z-index: 1001;
 
+  &:focus {
+    outline: none;
+  }
+
   > :last-child {
     margin-bottom: 0;
   }
@@ -74,16 +80,41 @@ const ReturnFocusOnUnMount = ({ children }) => {
   return children;
 };
 
-export const Modal = ({ children, close, isOpen }) =>
-  isOpen
-    ? createPortal(
-        <ReturnFocusOnUnMount>
-          <Backdrop onClick={close} />
-          <Overlay>
-            <CloseIcon onClick={close} autoFocus />
-            {children}
-          </Overlay>
-        </ReturnFocusOnUnMount>,
-        document.getElementById('modals'),
-      )
-    : null;
+export const Modal = ({ children, close, isOpen }) => {
+  React.useEffect(() => {
+    if (isOpen) {
+      const shortcutListener = (event) => {
+        if (event.key === 'Escape') {
+          event.preventDefault();
+          close();
+        }
+      };
+
+      document.addEventListener('keyup', shortcutListener);
+
+      return () => {
+        document.removeEventListener('keyup', shortcutListener);
+      };
+    }
+  }, [close, isOpen]);
+
+  if (!isOpen) {
+    return null;
+  }
+
+  const content = (
+    <ReturnFocusOnUnMount>
+      <FocusBoundary onExit={close}>
+        <Overlay>
+          <CloseIcon onClick={close} autoFocus>
+            Close modal
+          </CloseIcon>
+          {children}
+        </Overlay>
+      </FocusBoundary>
+      <Backdrop onClick={close} tabIndex={0} />
+    </ReturnFocusOnUnMount>
+  );
+
+  return createPortal(content, document.getElementById('modals'));
+};

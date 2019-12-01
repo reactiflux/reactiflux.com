@@ -186,7 +186,7 @@ const Jobs = () => {
               ) : null}
             </ResultsFooter>
           </div>
-          <Modal close={toggleModal} isOpen={showModal}>
+          <Modal close={() => setModal(false)} isOpen={showModal}>
             <p>
               If the job post does not contain a dedicated email, link, or phone
               number, you can click the offer date to open the original message
