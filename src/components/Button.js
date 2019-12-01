@@ -14,9 +14,10 @@ const transparent = css`
   color: ${pink};
 `;
 
-export const Button = styled(Link)`
+export const Button = styled.button`
   border: 3px solid ${pink};
   border-radius: 50px;
+  cursor: pointer;
   font-size: 2rem;
   line-height: 5rem;
   margin-bottom: 2rem;
@@ -33,3 +34,5 @@ export const Button = styled(Link)`
     text-decoration: none;
   }
 `;
+
+export const ButtonLink = Button.withComponent(Link);

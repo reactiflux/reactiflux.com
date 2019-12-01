@@ -12,7 +12,7 @@ import {
   Redux,
   Relay,
 } from '@assets/logos';
-import { Button, Layout, Link } from '@components';
+import { ButtonLink, Layout, Link } from '@components';
 import { isMobile } from '@utils/theme';
 
 const P = styled.p`
@@ -23,7 +23,7 @@ const P = styled.p`
           display: flex;
           flex-direction: column;
 
-          ${Button} {
+          ${ButtonLink} {
             margin-right: 0;
           }
         `
@@ -80,12 +80,15 @@ const Index = () => {
         . Come chat about tech related to React & JavaScript or ask for help!
       </p>
       <P>
-        <Button to="https://discord.gg/reactiflux" title="Reactiflux Discord">
+        <ButtonLink
+          to="https://discord.gg/reactiflux"
+          title="Reactiflux Discord"
+        >
           Join Reactiflux
-        </Button>
-        <Button to="/schedule/" title="Q&A Schedule" secondary>
+        </ButtonLink>
+        <ButtonLink to="/schedule/" title="Q&A Schedule" secondary>
           Q&A Schedule
-        </Button>
+        </ButtonLink>
       </P>
     </Layout>
   );

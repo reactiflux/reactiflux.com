@@ -29,7 +29,86 @@ const homeLayout = css`
     display: inline-block;
     vertical-align: middle;
   }
+`;
 
+const standardLayout = css`
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  > h1 {
+    z-index: 1;
+  }
+
+  @media (max-width: 819px) {
+    display: grid;
+    grid-template-columns: 60% 100%;
+    transform: translateX(
+      ${(props) => (props.isOpen ? '0' : 'calc(10px - 60%)')}
+    );
+    transition: 0.4s ease transform;
+
+    > * {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    > h1:first-child {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    > nav,
+    > form {
+      grid-column: 1;
+      grid-row: 2;
+      ${(props) =>
+        props.sidebar &&
+        css`
+          padding-right: 1rem;
+        `}
+    }
+
+    ${(props) =>
+      props.sidebar &&
+      css`
+        > div {
+          padding-left: 4rem;
+        }
+      `}
+  }
+
+  @media (min-width: 820px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    > * {
+      grid-column: 2;
+      grid-row: 2;
+      min-width: calc(200% / 3);
+    }
+
+    > :not(nav):last-child {
+      transform: translateX(-25%);
+    }
+
+    > h1:first-of-type {
+      grid-column: 1 / span 2;
+      grid-row: 1;
+    }
+
+    > nav,
+    > form {
+      grid-column: 1;
+      grid-row: 2;
+      min-width: calc(100% / 3);
+      padding-right: 2rem;
+    }
+  }
+`;
+
+const largeTitle = css`
   h1 {
     font-family: 'Space Mono', monospace;
     font-size: ${title.responsive(18)};
@@ -64,66 +143,12 @@ const homeLayout = css`
   }
 `;
 
-const standardLayout = css`
-  @media (max-width: 819px) {
-    display: grid;
-    grid-template-columns: 60% 100%;
-    transform: translateX(${props => props.isOpen ? '0' : 'calc(10px - 60%)'});
-    transition: .4s ease transform;
-
-    > * {
-      grid-column: 2;
-      grid-row: 2;
-    }
-
-    > h1:first-child {
-      grid-column: 2;
-      grid-row: 1;
-    }
-
-    > nav {
-      grid-column: 1;
-      grid-row: 2;
-      ${props => props.sidebar && css`padding-right: 1rem`}
-    }
-
-    ${props => props.sidebar && css`
-      > div {
-        padding-left: 4rem;
-      }
-    `}
-  }
-
-  @media (min-width: 820px) {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-
-    > * {
-      grid-column: 2;
-      grid-row: 2;
-    }
-
-    > :not(nav):last-child {
-      transform: translateX(-25%);
-    }
-
-    > h1:first-child {
-      grid-column: 1 / span 2;
-      grid-row: 1;
-    }
-
-    > nav {
-      grid-column: 1;
-      grid-row: 2;
-    }
-  }
-`;
-
 export const Main = styled.main`
   flex-grow: 1;
 
   ${mainPadding}
 
+  ${(props) => (props.homepage || props.largeTitle ? largeTitle : '')}
   ${(props) => (props.homepage ? homeLayout : standardLayout)}
 `;
 
@@ -139,7 +164,7 @@ const fixedSidebarButton = css`
     border: 3px solid ${pink};
     margin: -9px -3px;
   }
-`
+`;
 
 export const SidebarButton = styled.button`
   background: none;
@@ -154,15 +179,19 @@ export const SidebarButton = styled.button`
   padding: 0 3px;
   white-space: nowrap;
 
-  ${props => props.fixed && fixedSidebarButton}
-`
+  @media (min-width: 820px) {
+    display: none;
+  }
+
+  ${(props) => props.fixed && fixedSidebarButton}
+`;
 
 export function SidebarToggleButton(props) {
   return (
     <SidebarButton {...props}>
       {props.isOpen ? 'Hide' : 'Show'} Menu
     </SidebarButton>
-  )
+  );
 }
 
 export const Wrapper = styled.div`
@@ -172,4 +201,9 @@ export const Wrapper = styled.div`
     props.theme.mobilePadding
       ? `calc(100vh - ${props.theme.mobilePadding})`
       : '100vh'};
+
+  .headroom-wrapper {
+    position: relative;
+    z-index: 4;
+  }
 `;

@@ -67,7 +67,7 @@ export const Wrapper = styled.menu`
     }
   }
 
-  @media (min-width: 820px) {
+  @media (min-width: 930px) {
     & > a:not(:first-child) {
       font-size: 1.9rem;
       margin-left: 16px;
