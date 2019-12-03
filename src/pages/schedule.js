@@ -38,7 +38,7 @@ export default function Schedule({ data }) {
               <React.Fragment key={dateGroup}>
                 <h2>{dateGroup}</h2>
                 {events.map((event) => (
-                  <Event key={event.name} {...event} />
+                  <Event key={event.name} {...event} isUpcoming />
                 ))}
               </React.Fragment>
             ))}
