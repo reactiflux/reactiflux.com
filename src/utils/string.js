@@ -25,9 +25,7 @@ export const addLinks = (content) => {
 export const extractTags = (message) => {
   const matches = message.match(/\[(.*?)\]/gi) || [];
 
-  const tags = matches
-    .map((tag) => tag.replace('[', '').replace(']', ''))
-    .filter((x) => x.length < 15);
+  const tags = matches.map((tag) => tag.replace('[', '').replace(']', ''));
 
   let content = message;
   // remove tags from content
