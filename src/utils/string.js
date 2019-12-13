@@ -36,8 +36,7 @@ export const extractTags = (message) => {
       new RegExp(matches.map((tag) => `\\${tag}`).join('|'), 'gi'),
       '',
     );
-  } catch(e) {
-  }
+  } catch (e) {}
   // remove leading whitespace and newlines
   content = content.replace(/^\s+\n+/gi, '');
 
