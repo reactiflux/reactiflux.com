@@ -25,18 +25,14 @@ export const addLinks = (content) => {
 export const extractTags = (message) => {
   const matches = message.match(/\[(.*?)\]/gi) || [];
 
-  const tags = matches
-    .map((tag) => tag.replace('[', '').replace(']', ''))
-    .filter((x) => x.length < 15);
+  const tags = matches.map((tag) => tag.slice(1, -1));
 
   let content = message;
   // remove tags from content
-  try {
-    content = content.replace(
-      new RegExp(matches.map((tag) => `\\${tag}`).join('|'), 'gi'),
-      '',
-    );
-  } catch (e) {}
+  content = matches.reduce(
+    (content, match) => content.replace(match, ''),
+    content,
+  );
   // remove leading whitespace and newlines
   content = content.replace(/^\s+\n+/gi, '');
 
