@@ -13,8 +13,11 @@ export const Space = styled.span`
 export const Wrapper = styled.menu`
   background: ${background};
   display: flex;
-  height: 64px;
-  padding: 0 calc((100vw - 1440px) / 2);
+  height: 100px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+  width: 100%;
 
   .headroom--scrolled & {
     box-shadow: ${boxShadow};
@@ -61,7 +64,7 @@ export const Wrapper = styled.menu`
 
     &[aria-current='page']:after,
     &:after {
-      bottom: 12px;
+      bottom: 32px;
       left: 8px;
       right: 8px;
     }
