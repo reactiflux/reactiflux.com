@@ -31,13 +31,10 @@ export const extractTags = (message) => {
 
   let content = message;
   // remove tags from content
-  try {
-    content = content.replace(
-      new RegExp(matches.map((tag) => `\\${tag}`).join('|'), 'gi'),
-      '',
-    );
-  } catch(e) {
-  }
+  content = content.replace(
+    new RegExp(matches.map((tag) => `\\${tag}`).join('|'), 'gi'),
+    '',
+  );
   // remove leading whitespace and newlines
   content = content.replace(/^\s+\n+/gi, '');
 
