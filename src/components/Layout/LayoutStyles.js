@@ -22,6 +22,7 @@ const homeLayout = css`
   p {
     font-size: calc(1.7rem + 1vw);
     font-weight: 500;
+    letter-spacing: -1px;
     line-height: 1.5;
   }
 
