@@ -11,7 +11,7 @@ export const Footer = styled.footer`
   font-size: 1.2rem;
   text-align: center;
 
-  p {
+  p.social {
     display: flex;
     justify-content: center;
     margin: 1rem;
@@ -22,5 +22,9 @@ export const Footer = styled.footer`
       padding: 6px;
       margin: 0 6px;
     }
+  }
+
+  span {
+    padding: 0 1.2rem;
   }
 `;

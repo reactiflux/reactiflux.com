@@ -59,8 +59,8 @@ module.exports = {
         backgroud_color: '#ffffff',
         theme_color: '#dc1d64',
         display: 'standalone',
-        icon: 'src/assets/reactiflux.png'
-      }
-    }
+        icon: 'src/assets/reactiflux.png',
+      },
+    },
   ],
 };
