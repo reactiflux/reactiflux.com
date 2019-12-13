@@ -10,7 +10,7 @@ const year = new Date().getFullYear();
 export function Footer() {
   return (
     <FooterElement>
-      <p>
+      <p className="social">
         <Link to="https://github.com/reactiflux/reactiflux.com">
           <img src={Github} alt="Github" />
         </Link>
@@ -21,7 +21,12 @@ export function Footer() {
           <img src={Twitter} alt="Twitter" />
         </Link>
       </p>
-      <p>© {year} Reactiflux</p>
+      <p>
+        <span>
+          Hosted on <Link to="https://www.netlify.com/">Netlify</Link>
+        </span>{' '}
+        • <span>© {year} Reactiflux</span>
+      </p>
     </FooterElement>
   );
 }
