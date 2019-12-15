@@ -9,6 +9,7 @@ module.exports = {
   },
   pathPrefix: '/',
   plugins: [
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
@@ -53,7 +54,15 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [`gatsby-remark-autolink-headers`],
+        plugins: [
+          `gatsby-remark-autolink-headers`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
       },
     },
     'gatsby-plugin-styled-components',
