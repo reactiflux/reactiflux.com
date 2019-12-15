@@ -67,9 +67,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
-      blog: allFile(filter: { sourceInstanceName: { eq: "blog" } }) {
+      blog: allFile(
+        filter: {
+          sourceInstanceName: { eq: "blog" }
+          extension: { in: ["md"] }
+        }
+      ) {
         nodes {
           name
+          relativeDirectory
           childMarkdownRemark {
             id
           }
@@ -130,9 +136,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // Blog posts
   posts.forEach((node) => {
     const { id } = node.childMarkdownRemark;
-    const { name } = node;
+    const { name, relativeDirectory } = node;
+    // Build blog post path from a combination of directory and name.
+    // If the filename is `index.md`, just use directory.
+    const url = path.posix.join(relativeDirectory, name.replace('index', ''));
     createPage({
-      path: `/blog/${name}`,
+      path: `/blog/${url}`,
       component: CopyPage,
       context: { id },
     });
