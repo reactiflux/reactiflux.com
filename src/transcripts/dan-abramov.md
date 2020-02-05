@@ -234,7 +234,7 @@ I think in general reading about functional programming is very beneficial. I re
 
 <a name="writing-large-app-scratch-using" href="#writing-large-app-scratch-using">#</a> **Q:** I am writing a large app from scratch using react + redux (converting an old legacy app). Any suggestions on things I should do early on or things I should look out for so that things are less painful as the code size grows?
 
-**A:** I’d say normalize the data early. In general, read through http://redux.js.org/docs/FAQ.html and have a good grasp of everything discussed there.
+**A:** I’d say normalize the data early. In general, read through https://redux.js.org/faq/ and have a good grasp of everything discussed there.
 
 ---
 
@@ -322,7 +322,7 @@ If React knew about what’s on the screen (hint: inline styles), it would be ab
 
 <a name="better-store-state-component-people" href="#better-store-state-component-people">#</a> **Q:** When is it better to just store state in a component? people sometimes seem to use Redux for everything and not store state in components at all.
 
-**A:** Write it both ways. If it’s more hassle to do in Redux, use local state. There’s no substitute to good judgement 😃 Also: http://redux.js.org/docs/FAQ.html#organizing-state-only-redux-state
+**A:** Write it both ways. If it’s more hassle to do in Redux, use local state. There’s no substitute to good judgement 😃 Also: https://redux.js.org/faq/organizing-state#do-i-have-to-put-all-my-state-into-redux-should-i-ever-use-reacts-setstate
 
 ---
 
