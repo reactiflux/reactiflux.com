@@ -99,12 +99,6 @@ Other ways to contribute-hang out in our discord too! https://discord.gg/typescr
 
 – orta
 
-<a name="hi-guys-whats-the-future-feature" href="#hi-guys-whats-the-future-feature">#</a> **Q:** Hi Guys! What's the future feature you're most excited about in TypeScript? – johnnyreilly
-
-**A:**
-
-–
-
 <a name="whats-the-plan-with-the-unknown" href="#whats-the-plan-with-the-unknown">#</a> **Q:** What's the plan with the `unknown` type? any timeline on when you might support the `in` operator with it? more specifically: https://github.com/microsoft/TypeScript/issues/21732 – lifeiscontent
 
 **A:** We haven't figured a way around a couple of key obstacles:
@@ -119,12 +113,6 @@ Other ways to contribute-hang out in our discord too! https://discord.gg/typescr
 **A:** TypeScript's design is largely motivated by existing JS paradigms, and of course JS is a multi-paradigm language. I think you're right that historically TS had more of an OOP slant, but over time we've introduced features that make typing FP patterns way more feasible—tuple types (and being able to represent function rest params as tuples) come immediately to mind. Several of us on the team have experience in and are very sympathetic to FP concepts, and the community in general has had a surge of interest in FP more recently, and I think TS has reflected that shift, and will continue to follow the community on it. (Also, if there are FP patterns you can't express in TS, I'm interested in seeing GH issues on it 😄)
 
 – Andrew
-
-<a name="what-do-you-think-about-the-current" href="#what-do-you-think-about-the-current">#</a> **Q:** What do you think about the current TypeScript support with react-native (stripping types instead of compiling and lack of support for platforms extension)? – Titozzz
-
-**A:**
-
-–
 
 <a name="will-there-be-any-feature-that" href="#will-there-be-any-feature-that">#</a> **Q:** Will there be any feature that differs from vanilla JS on Typescript, or is the plan always to be compatible as it is now? – mwss1996
 
@@ -232,30 +220,6 @@ Spread types never made it past 0 points:
 
 – orta
 
-<a name="a-followup-to-the-plugin-question" href="#a-followup-to-the-plugin-question">#</a> **Q:** A followup to the plugin question. I'm afraid that while you're preventing broken code due to not implementing a plugin inferface that you might have to break later, you're currently risking fracturing the developer community. For example, TS team understandingly doesn't plan to have features that break significantly on how JS does stuff, but the people who want to experiment have no direction where to go. Could TS team acknowledge that with "See this project/fork that implements this breaking change if you want it now"? Or do you think the plugins will allow all these adequately? – Pokute
-
-**A:**
-
-–
-
-<a name="arent-you-on-the-ts-team" href="#arent-you-on-the-ts-team">#</a> **Q:** Aren't you on the TS team? – mooman
-
-**A:**
-
-–
-
-<a name="is-there-any-plan-for-improving" href="#is-there-any-plan-for-improving">#</a> **Q:** Is there any plan for improving type inference to make scenarios like this possible:
-
-```typescript
-declare const foo: <A>(b: Bar<A>) => (a: A) => any;
-```
-
-It would be extremely useful for FP-centric libraries – RogerC
-
-**A:**
-
-–
-
 <a name="currently-if-you-have-multiple-dependencies" href="#currently-if-you-have-multiple-dependencies">#</a> **Q:** Currently, if you have multiple dependencies that define the same type it fails to compile. For instance both React native and react define the FormData type and if a dependency (like @types/styled-components) depends on both it breaks the whole project. Is there some plan to account for situations like this? – HelveticaScenario
 
 **A:** So that's tricky, there are a few ways to handle it today - but all of them are a bit sucky. Some of our recent design meetings, we've been discussing ways to make 'type environements' of some sort like 'these files are node' - 'these files are browser' and have different globals. We'll be thinking about it and do something cautiously.
@@ -267,12 +231,6 @@ It would be extremely useful for FP-centric libraries – RogerC
 **A:** We've tried to address there either in the massssssive FAQ https://github.com/microsoft/TypeScript/wiki/FAQ or by building playgrounds which show off these kind of cases.
 
 – orta
-
-<a name="which-advantages-does-typescript" href="#which-advantages-does-typescript">#</a> **Q:** Which advantages does TypeScript bring to Microsoft? – mwss1996
-
-**A:**
-
-–
 
 <a name="will-the-spec-ever-be-updated" href="#will-the-spec-ever-be-updated">#</a> **Q:** Will the spec ever be updated? The last time it was updated was 2016 for TypeScript version 1.8 – brain
 
@@ -354,12 +312,6 @@ I personally _hate_ classes.
 
 – NickServ
 
-<a name="what-are-your-feelings-on-higher" href="#what-are-your-feelings-on-higher">#</a> **Q:** What are your feelings on Higher Kinded Types? – pgrizzay
-
-**A:**
-
-–
-
 <a name="can-you-help-tc39-get-decorators" href="#can-you-help-tc39-get-decorators">#</a> **Q:** Can you help [TC39][tc39] get decorators to stage 3 faster so we can revisit them in TS? 😄 – spion
 
 **A:** Ron is working on this all the time.
@@ -375,8 +327,6 @@ I'm at TC39 and I've had at least 3 people ask me about decorators 😅. We all 
 **A:** We need `writeonly` to get rid of the bivariance hacks, since without it the event invocation is unsound.
 
 – SeaRyanC
-
-_**Follow up**_: Any plans around that? expected releases? etc.
 
 <a name="is-there-a-plan-to-add" href="#is-there-a-plan-to-add">#</a> **Q:** Is there a plan to add friend classes anytime soon? – elderapo
 
@@ -404,8 +354,6 @@ We don't do type-driven emit for reasons listed above. Check out our [design goa
 
 – DanielR
 
-_**Follow up**_: I had seen the thing about emit, but typeclasses seem like such a transformative thing in terms of opening up new approaches to programming, I really miss them when they’re not there!
-
 <a name="been-out-of-the-loop" href="#been-out-of-the-loop">#</a> **Q:** Been out of the loop for a awhile, but I remember a time when Babel announced support for TS. Any guidance on when to use [Babel](https://babeljs.io/) vs [tsc](https://www.typescriptlang.org/docs/handbook/compiler-options.html)? – antmdvs
 
 **A:** Babel has support for transpiling TS to JS, but doesn't do type checking. Babel may be useful if you're in a scenario where you need to transpile on a file-by-file basis (babel-loader with webpack is a good example, although ts-loader can also work in a transpile-only mode), or if you already have a build chain that uses Babel (particularly with other custom transforms). But if you need type checking, you'll need to use the TS compiler in some way.
@@ -429,12 +377,6 @@ _**Follow up**_: I had seen the thing about emit, but typeclasses seem like such
 **A:** Short answer is "not until we completely rewrite generic inference", which is as unlikely to happen as it sounds like. Without relying on parameter ordering, TS would have to do an unbounded number of inference rounds to produce a result (i.e. unification) and this is expensive in time, space, and complexity.
 
 – SeaRyanC
-
-<a name="why-did-the-patter-match-proposal" href="#why-did-the-patter-match-proposal">#</a> **Q:** Why did the Pattern Match proposal die out? Out of curiosity. – Chem
-
-**A:**
-
-–
 
 <a name="are-there-plans-for-linting-tools" href="#are-there-plans-for-linting-tools">#</a> **Q:** Are there plans for linting tools for disabling/favouring certain TS features over other ones? For example, I feel like interfaces vs. types distinction is weird since I can do almost everything with types. Would you dare endorse such tools or even lint rules some day to try to fix some _"mistakes"_? – Pokute
 
