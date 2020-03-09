@@ -30,6 +30,10 @@ const homeLayout = css`
     display: inline-block;
     vertical-align: middle;
   }
+
+  p a img {
+    vertical-align: middle;
+  }
 `;
 
 const standardLayout = css`
