@@ -34,6 +34,10 @@ const homeLayout = css`
   p a {
     display: inline-flex;
   }
+
+  p a img {
+    padding-bottom: 2px;
+  }
 `;
 
 const standardLayout = css`
