@@ -31,8 +31,8 @@ const homeLayout = css`
     vertical-align: middle;
   }
 
-  p a img {
-    vertical-align: middle;
+  p a {
+    display: inline-flex;
   }
 `;
 
