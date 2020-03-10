@@ -6,7 +6,6 @@ Finally Reactiflux has a proper website! The admins/mods and would like to thank
 
 ### Installation
 
-1. Install gatsby with yarn: `yarn global add gatsby`
-2. Clone github repo: `git clone https://github.com/reactiflux/reactiflux.com`
-3. Install dependecies with yarn: `yarn`
-4. Run gatsby develop mode: `gatsby develop`
+1. Clone github repo: `git clone https://github.com/reactiflux/reactiflux.com`
+2. Install dependecies with yarn: `yarn`
+3. Run gatsby develop mode: `yarn start`
