@@ -71,7 +71,6 @@ html body {
     font-family: 'Space Mono', monospace;
     font-size: 7.6rem;
     letter-spacing: -0.4rem;
-    overflow: hidden;
   }
 
   h2 {

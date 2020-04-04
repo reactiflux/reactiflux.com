@@ -19,6 +19,10 @@ const title = {
 const homeLayout = css`
   display: block;
 
+  h1 {
+    overflow: hidden;
+  }
+  
   p {
     font-size: calc(1.7rem + 1vw);
     font-weight: 500;
