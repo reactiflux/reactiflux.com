@@ -13,10 +13,9 @@ module.exports = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         content: `
-      \`\`\`
-      ${body.message.replace('```', '\\`\\`\\`')}
-      \`\`\`
-      `,
+\`\`\`
+${body.message.replace('```', '\\`\\`\\`')}
+\`\`\``,
       }),
     });
     cb(null, { statusCode: 200, body: 'ok' });
