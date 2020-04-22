@@ -36,6 +36,10 @@ const Index = () => {
           discuss with Reactiflux staff, you can reach out via:
         </p>
         <ul>
+          <li>
+            The public{' '}
+            <a href="https://discord.gg/YKcXEDa">#reactiflux-admin</a>channel
+          </li>
           <li>direct message to any staff member in Discord</li>
           <li>
             mention or message{' '}
