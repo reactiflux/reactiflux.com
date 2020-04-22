@@ -11,7 +11,13 @@ module.exports = {
     fetch(process.env.MOD_MESSAGE_WEBHOOK, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ content: body.message }),
+      body: JSON.stringify({
+        content: `
+      \`\`\`
+      ${body.message.replace('```', '\\`\\`\\`')}
+      \`\`\`
+      `,
+      }),
     });
     cb(null, { statusCode: 200, body: 'ok' });
   },
