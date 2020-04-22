@@ -12,7 +12,7 @@ const fields = [
 ];
 
 const onSubmit = (fieldState) =>
-  fetch('/', {
+  fetch('/.netlify/functions/mod-message', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
