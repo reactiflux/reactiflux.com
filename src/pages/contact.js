@@ -29,7 +29,7 @@ const Index = () => {
       title="Contact Us"
       description="Anonymously contact a Reactiflux administrator"
     >
-      <h1>Message the staff</h1>
+      <h1>Message the Staff</h1>
       <div>
         <p>
           When you have any questions or concerns which you would like to
