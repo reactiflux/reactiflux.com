@@ -12,7 +12,7 @@ const fields = [
 ];
 
 const onSubmit = (fieldState) =>
-  fetch('/', {
+  fetch('/.netlify/functions/mod-message', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -29,13 +29,17 @@ const Index = () => {
       title="Contact Us"
       description="Anonymously contact a Reactiflux administrator"
     >
-      <h1>Message the staff</h1>
+      <h1>Message the Staff</h1>
       <div>
         <p>
           When you have any questions or concerns which you would like to
           discuss with Reactiflux staff, you can reach out via:
         </p>
         <ul>
+          <li>
+            The public{' '}
+            <a href="https://discord.gg/YKcXEDa">#reactiflux-admin</a> channel
+          </li>
           <li>direct message to any staff member in Discord</li>
           <li>
             mention or message{' '}

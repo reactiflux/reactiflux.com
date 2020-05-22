@@ -22,6 +22,7 @@ export function Menu() {
         </Link>
         <Space />
         <MobileNavIfMobile>
+          <Link to="/contact/">Contact</Link>
           <Link to="/tips/">Tips</Link>
           <Link to="/guidelines/">Guidelines</Link>
           <Link to="/schedule/">Q&A Schedule</Link>
