@@ -6,11 +6,11 @@ Reactiflux's members do lots of cool stuff, and we'd love for you to share what 
 
 We have 2 channels where self-promotion is expected. We ask that you share it only once, unless there's a significant milestone or it's relevant to someone's question.
 
-## #i-made-this
+## [#i-made-this](https://discord.gg/GaCSDfm)
 
 New side projects, libraries, or other works you want to show off. This is predominantly meant as a showcase for individuals.
 
-## #news-and-links
+## [#news-and-links](https://discord.gg/TEYnXKw)
 
 If you want to share an announcement of a new blog post, product, feature, or other effort, then this is the most appropriate channel. Reactiflux does not generally allow advertising, however.
 
