@@ -107,8 +107,6 @@ If you are new to React, try reading these articles in order.
   An excellent list of common patterns for structuring React components, with examples
 - [The React Component Lifecycle](https://www.kirupa.com/react/component_lifecycle.htm)  
   A useful description of the order and purpose of React’s component lifecycle methods.
-- [8 no-Flux strategies for React component communication](http://andrewhfarmer.com/component-communication/)  
-  Very helpful list of ways to have React components communicate back and forth
 - [Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)  
   Dan Abramov's foundational article on classifying components based on intent and behavior. A must-read for anyone using React.
 - [Mixins Considered Harmful](https://facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html)  
@@ -120,7 +118,7 @@ If you are new to React, try reading these articles in order.
 
 ### Function Binding and `this`
 
-- [Gentle Explanation of `this` keyword in Javascript](http://rainsoft.io/gentle-explanation-of-this-in-javascript/)  
+- [Gentle Explanation of `this` keyword in Javascript](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)  
   A long and in-depth explanation of the various ways that the `this` keyword can be defined
 - [The Inner Workings of Javascript's `this` keyword](https://www.sitepoint.com/inner-workings-javascripts-this-keyword/)  
   [Mastering Javascript's `this` keyword](https://www.sitepoint.com/mastering-javascripts-this-keyword/)  
@@ -134,8 +132,6 @@ If you are new to React, try reading these articles in order.
 
 ### AJAX requests and Data Fetching
 
-- [React AJAX Best Practices](http://andrewhfarmer.com/react-ajax-best-practices/)  
-  Covers four ways to approach managing queries and data fetching.
 - [AJAX Requests in React: How and Where to Fetch Data](https://daveceddia.com/ajax-requests-in-react/)  
   An overview of where AJAX requests fit into React usage.
 
@@ -143,8 +139,6 @@ If you are new to React, try reading these articles in order.
 
 - [Pros and Cons of Using Immutability With React](http://reactkungfu.com/2015/08/pros-and-cons-of-using-immutability-with-react-js/)  
   Excellent description of what immutability is, how to use use these concepts with React, and pros and cons of managing data immutably. While the title refers to React, most of the writing just deals with plain Javascript concepts.
-- [Javascript and Immutability](http://t4d.io/javascript-and-immutability/)  
-  A description of how to properly immutably update objects and arrays using functions like assign and slice
 - [Redux Docs: Structuring Reducers - Immutable Update Patterns](https://redux.js.org/recipes/structuring-reducers/immutable-update-patterns/)  
   Useful examples for doing proper immutable updates, including common mistakes, proper updates of nested data, updates for arrays, and more. (Helpful for Redux, but not Redux-specific.)
 
@@ -168,8 +162,6 @@ If you are new to React, try reading these articles in order.
 
 - [Styling in React](https://www.kirupa.com/react/styling_in_react.htm)  
   An introduction to using React's built-in inline styling abilities
-- [How To Style React](http://andrewhfarmer.com/how-to-style-react/)  
-  An excellent overview of the four major ways to deal with styles in React, and what the various tools are. Includes a decision tree to help you decide what to use.
 
 ### Animation
 
@@ -244,7 +236,7 @@ If you are new to React, try reading these articles in order.
   Webpack's new documentation site, explaining concepts, configuration, and recipes
 - [Webpack from First Principles](https://youtu.be/WQue1AN93YU)  
   A screencast video explaining what Webpack is and why you would want to use it
-- [What is Webpack and what can it do for you?](http://x-team.com/2016/09/webpack-can-absolute-beginners/)  
+- [What is Webpack and what can it do for you?](https://x-team.com/blog/webpack-can-absolute-beginners/)  
   A plain-English explanation of what Webpack is and what problems it can help solve.
 - [SurviveJS - Webpack](http://survivejs.com/webpack/introduction)  
   A full book online book that covers setting up Webpack for both development and production. Also touches topics such as ESLint and npm.
@@ -267,10 +259,5 @@ If you are new to React, try reading these articles in order.
 
 ### Hot Module Reloading
 
-- [HMR Tutorial: Why Use HMR?](http://andrewhfarmer.com/why-use-hmr/)  
-  [HMR Tutorial: Understanding HMR](http://andrewhfarmer.com/understanding-hmr/)  
-  [HMR Tutorial: 3 Ways to use HMR with Webpack](http://andrewhfarmer.com/3-ways-webpack-hmr/)  
-  [HMR Tutorial: HMR Ideas and Setup](http://andrewhfarmer.com/webpack-hmr-tutorial/)  
-  A very readable and informative series of articles that explains what HMR is, what benefits it gives, and how to use it.
 - [Webpack Hot Reloading and React](https://ctheu.com/2015/12/29/webpack-hot-reloading-and-react-how/)  
   An explanation of how Hot Reloading works, and how the various pieces fit together.
