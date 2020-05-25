@@ -143,6 +143,8 @@ If you are new to React, try reading these articles in order.
 
 - [Pros and Cons of Using Immutability With React](http://reactkungfu.com/2015/08/pros-and-cons-of-using-immutability-with-react-js/)  
   Excellent description of what immutability is, how to use use these concepts with React, and pros and cons of managing data immutably. While the title refers to React, most of the writing just deals with plain Javascript concepts.
+- [Immutability in React and Redux: The Complete Guide](https://daveceddia.com/react-redux-immutability-guide/)  
+  Learn about side effects and how to avoid them, how to wield immutablity to update objects and arrays in Redux reducers, and the easy way to update state with Immer.
 - [Redux Docs: Structuring Reducers - Immutable Update Patterns](https://redux.js.org/recipes/structuring-reducers/immutable-update-patterns/)  
   Useful examples for doing proper immutable updates, including common mistakes, proper updates of nested data, updates for arrays, and more. (Helpful for Redux, but not Redux-specific.)
 
