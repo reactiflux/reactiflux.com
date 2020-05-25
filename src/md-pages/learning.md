@@ -107,6 +107,8 @@ If you are new to React, try reading these articles in order.
   An excellent list of common patterns for structuring React components, with examples
 - [The React Component Lifecycle](https://www.kirupa.com/react/component_lifecycle.htm)  
   A useful description of the order and purpose of React’s component lifecycle methods.
+- [8 no-Flux strategies for React component communication](https://www.javascriptstuff.com/component-communication/)  
+  Very helpful list of ways to have React components communicate back and forth
 - [Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)  
   Dan Abramov's foundational article on classifying components based on intent and behavior. A must-read for anyone using React.
 - [Mixins Considered Harmful](https://facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html)  
@@ -132,6 +134,8 @@ If you are new to React, try reading these articles in order.
 
 ### AJAX requests and Data Fetching
 
+- [React AJAX Best Practices](https://www.javascriptstuff.com/react-ajax-best-practices/)  
+  Covers four ways to approach managing queries and data fetching.
 - [AJAX Requests in React: How and Where to Fetch Data](https://daveceddia.com/ajax-requests-in-react/)  
   An overview of where AJAX requests fit into React usage.
 
@@ -162,6 +166,8 @@ If you are new to React, try reading these articles in order.
 
 - [Styling in React](https://www.kirupa.com/react/styling_in_react.htm)  
   An introduction to using React's built-in inline styling abilities
+- [What to use for React styling?](https://www.javascriptstuff.com/how-to-style-react/)  
+  An excellent overview of the four major ways to deal with styles in React, and what the various tools are. Includes a decision tree to help you decide what to use.
 
 ### Animation
 
@@ -259,5 +265,10 @@ If you are new to React, try reading these articles in order.
 
 ### Hot Module Reloading
 
+- [HMR Tutorial: Do more in less time with Webpack HMR](https://www.javascriptstuff.com/why-use-hmr/)  
+  [HMR Tutorial: Understanding Webpack HMR](https://www.javascriptstuff.com/understanding-hmr/)  
+  [HMR Tutorial: 3 Ways to Set Up Webpack with HMR](https://www.javascriptstuff.com/3-ways-webpack-hmr/)  
+  [HMR Tutorial: Webpack HMR Tutorial](https://www.javascriptstuff.com/webpack-hmr-tutorial/)  
+  A very readable and informative series of articles that explains what HMR is, what benefits it gives, and how to use it.
 - [Webpack Hot Reloading and React](https://ctheu.com/2015/12/29/webpack-hot-reloading-and-react-how/)  
   An explanation of how Hot Reloading works, and how the various pieces fit together.
