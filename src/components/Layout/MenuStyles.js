@@ -14,7 +14,6 @@ export const Wrapper = styled.menu`
   background: ${background};
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 1.2rem;
   width: 100%;
 
   .headroom--scrolled & {
@@ -25,6 +24,7 @@ export const Wrapper = styled.menu`
 export const Nav = styled.nav`
   display: flex;
   height: 100px;
+  padding: 0 1.2rem;
 
   a {
     align-items: center;
@@ -93,4 +93,9 @@ export const BlackLivesMatter = styled.header`
   color: white;
   padding: 20px;
   text-align: center;
+
+  a {
+    color: white;
+    text-decoration: underline;
+  }
 `;
