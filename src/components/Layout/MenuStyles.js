@@ -89,7 +89,8 @@ export const Nav = styled.nav`
 `;
 
 export const BlackLivesMatter = styled.header`
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
   padding: 20px;
-  padding-bottom: 0;
   text-align: center;
 `;
