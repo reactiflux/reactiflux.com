@@ -5,7 +5,7 @@ import { Reactiflux } from '@assets/logos';
 import { Link } from '@components';
 import { useIsMobile } from '@hooks';
 
-import { Logo, Space, Wrapper } from './MenuStyles';
+import { Logo, Space, Wrapper, Nav, BlackLivesMatter } from './MenuStyles';
 import { MobileNav } from './MobileNav';
 
 export function Menu() {
@@ -17,19 +17,31 @@ export function Menu() {
   return (
     <HeadroomIfDesktop>
       <Wrapper>
-        <Link to="/">
-          <Logo src={Reactiflux} alt="Reactiflux" />
-        </Link>
-        <Space />
-        <MobileNavIfMobile>
-          <Link to="/contact/">Contact</Link>
-          <Link to="/tips/">Tips</Link>
-          <Link to="/guidelines/">Guidelines</Link>
-          <Link to="/schedule/">Q&A Schedule</Link>
-          <Link to="/transcripts/">Transcripts</Link>
-          <Link to="/jobs/">Jobs</Link>
-          <Link to="/learning/">Learning</Link>
-        </MobileNavIfMobile>
+        <BlackLivesMatter>
+          Black Lives Matter.{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://support.eji.org/give/153413/#!/donation/checkout"
+          >
+            Support&nbsp;the&nbsp;Equal&nbsp;Justice&nbsp;Initiative.
+          </a>
+        </BlackLivesMatter>
+        <Nav>
+          <Link to="/">
+            <Logo src={Reactiflux} alt="Reactiflux" />
+          </Link>
+          <Space />
+          <MobileNavIfMobile>
+            <Link to="/contact/">Contact</Link>
+            <Link to="/tips/">Tips</Link>
+            <Link to="/guidelines/">Guidelines</Link>
+            <Link to="/schedule/">Q&A Schedule</Link>
+            <Link to="/transcripts/">Transcripts</Link>
+            <Link to="/jobs/">Jobs</Link>
+            <Link to="/learning/">Learning</Link>
+          </MobileNavIfMobile>
+        </Nav>
       </Wrapper>
     </HeadroomIfDesktop>
   );
