@@ -12,16 +12,19 @@ export const Space = styled.span`
 
 export const Wrapper = styled.menu`
   background: ${background};
-  display: flex;
-  height: 100px;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 1.2rem;
   width: 100%;
 
   .headroom--scrolled & {
     box-shadow: ${boxShadow};
   }
+`;
+
+export const Nav = styled.nav`
+  display: flex;
+  height: 100px;
+  padding: 0 1.2rem;
 
   a {
     align-items: center;
@@ -82,5 +85,17 @@ export const Wrapper = styled.menu`
         right: 12px;
       }
     }
+  }
+`;
+
+export const BlackLivesMatter = styled.header`
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  a {
+    color: white;
+    text-decoration: underline;
   }
 `;
