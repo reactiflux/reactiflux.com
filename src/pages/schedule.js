@@ -1,8 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import styled from 'styled-components';
 
 import { Layout, Link } from '@components';
 import { groupBy, partition } from '@utils/array';
+
+const EventsDivider = styled.hr`
+  margin: 6rem 0;
+`;
 
 export default function Schedule({ data }) {
   const currentDate = new Date();
@@ -34,17 +39,19 @@ export default function Schedule({ data }) {
           <>
             <hr />
             <h2>Upcoming Q&A's & Meetups</h2>
-            {Object.entries(upcomingEvents).map(([dateGroup, events]) => (
-              <React.Fragment key={dateGroup}>
-                <h2>{dateGroup}</h2>
-                {events.map((event) => (
-                  <Event key={event.name} {...event} isUpcoming />
-                ))}
-              </React.Fragment>
-            ))}
+            {Object.entries(upcomingEvents)
+              .reverse()
+              .map(([dateGroup, events]) => (
+                <React.Fragment key={dateGroup}>
+                  <h2>{dateGroup}</h2>
+                  {events.map((event) => (
+                    <Event key={event.name} {...event} isUpcoming />
+                  ))}
+                </React.Fragment>
+              ))}
           </>
         )}
-        <hr />
+        <EventsDivider />
         <h2>Past Q&A's & Meetups</h2>
         {Object.entries(pastEvents).map(([dateGroup, events]) => (
           <React.Fragment key={dateGroup}>
