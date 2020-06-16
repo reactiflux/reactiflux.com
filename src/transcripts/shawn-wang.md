@@ -75,7 +75,7 @@ Do you have advice on making the switch from dev to dev rel/advocate type roles?
 
 ---
 
-<a name="do-you-think-react-native" href="#do-you-think-react-native">#</a> **Q:** Do you think react native has a future on apple devices, or do you suspect apple will eventually mandate SwiftUI? – Pat
+<a name="do-you-think-react-native" href="#do-you-think-react-native">#</a> **Q:** Do you think React native has a future on apple devices, or do you suspect apple will eventually mandate SwiftUI? – Pat
 
 **A:** I want to caveat that I basically don't do any RN. Last time I touched RN was when I interviewed with g2i 🙂. Imo it has a future. The investment in RN is HUGE. Also, compiling to SwiftUI is not out of the question. But Idk.
 
@@ -111,9 +111,9 @@ Do you have advice on making the switch from dev to dev rel/advocate type roles?
 
 ---
 
-<a name="what-react-library-redux" href="#what-react-library-redux">#</a> **Q:** What react library (redux, redux saga, context api, etc) would you recommend to start building large scale apps? – iamaul
+<a name="what-react-library-redux" href="#what-react-library-redux">#</a> **Q:** What React library (redux, redux saga, context api, etc) would you recommend to start building large scale apps? – iamaul
 
-**A:** We used Redux to build [Netlify][netlify] and it works very well for us. I have never liked [redux saga](https://redux-saga.js.org/) but tbh I never gave it an honest shot. I would be interested in [MobX](https://mobx.js.org/README.html) and [Recoil](https://recoiljs.org/) for large scale apps too, but unfortunately have not had production exp with them.
+**A:** We used Redux to build [Netlify][netlify] and it works very well for us. I have never liked [redux saga](https://redux-saga.js.org/) but tbh I never gave it an honest shot. I would be interested in [MobX](https://mobx.js.org/README.html) and [Recoil][recoil] for large scale apps too, but unfortunately have not had production exp with them.
 
 ---
 
@@ -179,7 +179,7 @@ https://www.swyx.io/writing/react-distros/ double answer 🙂.
 
 ---
 
-<a name="is-it-a-good-idea-to-convert" href="#is-it-a-good-idea-to-convert">#</a> **Q:** Is it good idea to convert legacy react application into TypeScript? – Banu
+<a name="is-it-a-good-idea-to-convert" href="#is-it-a-good-idea-to-convert">#</a> **Q:** Is it good idea to convert legacy React application into TypeScript? – Banu
 
 **A:** If it isn't broken, don't fix it!!!!! However, if you intend to maintain it for the long run, then yes TypeScript is a very good tool for that. It is meant to help you refactor incrementally. Have a look at how millie at TinyMCE and Brie at airbnb did their migrations. HUGE codebases. A lot of benefit. https://react-typescript-cheatsheet.netlify.app/docs/migration/intro/#misc-migration-stories-by-notable-companies-and-open-source
 
@@ -197,7 +197,7 @@ https://www.swyx.io/writing/react-distros/ double answer 🙂.
 
 ---
 
-<a name="how-to-get-seo-to-work" href="#how-to-get-seo-to-work">#</a> **Q:** How to get SEO to work in react app built using CRA? – MelvinPhaser
+<a name="how-to-get-seo-to-work" href="#how-to-get-seo-to-work">#</a> **Q:** How to get SEO to work in React app built using CRA? – MelvinPhaser
 
 **A:** Prerender! https://create-react-app.dev/docs/pre-rendering-into-static-html-files/
 
@@ -223,7 +223,7 @@ https://www.swyx.io/writing/react-distros/ double answer 🙂.
 
 <a name="what-do-you-think-of-ssr" href="#what-do-you-think-of-ssr">#</a> **Q:** What do you think of ssr on [golang](https://golang.org/)? – Tee-Sean
 
-**A:** I don't think anything of it haha. I had to write some [golang](https://golang.org/) once, and it was a fine experience, but I didn't feel more productive than in JS. Interested in learning [rust](https://www.rust-lang.org/) someday.
+**A:** I don't think anything of it haha. I had to write some [golang](https://golang.org/) once, and it was a fine experience, but I didn't feel more productive than in JS. Interested in learning [rust][rust] someday.
 
 ---
 
@@ -245,92 +245,127 @@ https://www.swyx.io/writing/react-distros/ double answer 🙂.
 
 ---
 
-<a name="moo" href="#moo">#</a> **Q:** –
+<a name="how-to-get-started-with" href="#how-to-get-started-with">#</a> **Q:** How to get started with sponsorships for projects? – MelvinPhaser
+
+**A:** Sorry, I don't have any experience with that.
+
+---
+
+<a name="hey-shawn-do-you-have" href="#hey-shawn-do-you-have">#</a> **Q:** Hey Shawn! Do you have any advice on people graduating bootcamps in this economy? – D—
+
+**A:** It's bad timing. A lot of senior engineers are out in the market right now but realize that these are temporary displacements. The overall world demand for software has 2x'ed over this pandemic. We WILL want more software engineers than we have ever had before. You WILL have a job but maybe not right away. I recommend searching for 3-6 months, and if you have no luck, taking a tech-adjacent job like support, docs, technical sales. Once you are inside a company it is usually quite easy to switch to dev after 1-2 years. It's much better to do that than to stay unemployed for the same time period.
+
+---
+
+<a name="what-do-you-think-of-recoil" href="#what-do-you-think-of-recoil">#</a> **Q:** What do you think of [Recoil][recoil] for state management? Given there are so many state management options for React devs right now, do you think [Recoil][recoil] has something to offer? – react_guy
+
+**A:** Atomic updates is very interesting. However, it is probably not needed as a general purpose tool because we need a lot more out of our state management tools than just that. Still, it is a good one to know about. 🤷‍♂️
+
+---
+
+<a name="best-way-to-prepare" href="#best-way-to-prepare">#</a> **Q:** Best way to prepare for FAANG? – Tee-Sean
+
+**A:** For Google it really is a lot of technical/algorthm interviews. For Facebook see Aaron's post https://twitter.com/aarondjents/status/1266149438554169344. For AWS it is VERY team dependent. I can't comment on the other two.
+
+---
+
+<a name="do-you-think-that-learning-react" href="#do-you-think-that-learning-react">#</a> **Q:** Do you think that learning React hooks from now is good since it is still under development? – akram-001
+
+**A:** React hooks is production ready, learn it now!
+
+---
+
+<a name="do-you-see-a-future" href="#do-you-see-a-future">#</a> **Q:** Do you see a future where [Rust][rust]/[WASM][wasm] dominates client-side business logic, and JS/React are only used in presentation layer? Yes - what is holding it back? No - why will JS or TS hold on? – RossWilliams
+
+**A:** Not either or. Serializing across JS <-> [WASM][wasm] has a cost. Maintaining a polyglot codebase has a cost. Companies that can get by with JS/TS will do only that. You will only want to use [WASM][wasm] when you have an existing codebase in another language or have very heavy compute needs. I do think that build tools and libraries will increasingly have [Rust][rust]/[WASM][wasm] cores for hot code paths. But app developers will largely not have to mess with that.
+
+---
+
+<a name="how-to-get-started" href="#how-to-get-started">#</a> **Q:** How to get started with advanced concepts like microservices in JS? Any source. – MelvinPhaser
+
+**A:** What makes you say it is advanced? Anyway I believe this question is too broad to have a good answer. Please be more specific about why you want to know and what you want to know.
+
+---
+
+<a name="what-do-you-think-about-flutter" href="#what-do-you-think-about-flutter">#</a> **Q:** What do you think about [Flutter](https://flutter.dev/) vs React native? – xryn
+
+**A:** Tried [Flutter](https://flutter.dev/) ONCE two years ago. stdlib is very good, maybe better than RN but I have trust issues with anything from Google.
+
+---
+
+<a name="what-is-your-favorite-frontend" href="#what-is-your-favorite-frontend">#</a> **Q:** What is your favourite frontend library and why is it React? – Kosai106
+
+**A:** React pays the bills and has a great core team and community.
+
+---
+
+<a name="when-will-the-dom-go-away" href="#when-will-the-dom-go-away">#</a> **Q:** When will the DOM go away? My hypothesis is AR will be a good time to make the switch to a better foundation. – The Benevolent Dictator
+
+**A:** Good luck with that one... they use the DOM in SpaceX rockets 🙂.
+
+---
+
+<a name="what-do-you-think-which-blog" href="#what-do-you-think-which-blog">#</a> **Q:** What do you think which blog can helps me to learn mono-repo in the serverless? – Steven James
 
 **A:**
 
 ---
 
-<a name="moo" href="#moo">#</a> **Q:** –
+<a name="are-there-any-libraries-that-opt" href="#are-there-any-libraries-that-opt">#</a> **Q:** Are there any libraries that opt for widgeting React components for SSR? – I hate Internet Explorer
 
-**A:**
+**A:** Can you please define widgeting? I don't think I understand that.
 
----
+_**Follow-up**_: Adobe Experience manager runs React as independent widgets. I wanted to know if any React libraries are also like that.
 
-<a name="moo" href="#moo">#</a> **Q:** –
-
-**A:**
+**A:** I don't know about that, but you can look at this https://selleo.com/blog/how-to-create-embedded-react-widget. It won't automatically work with SSR though.
 
 ---
 
-<a name="moo" href="#moo">#</a> **Q:** –
+<a name="do-you-have-any-particular" href="#do-you-have-any-particular">#</a> **Q:** Do you have any particular system of productivity that helps you get so much done? - D—
 
-**A:**
-
----
-
-<a name="moo" href="#moo">#</a> **Q:** –
-
-**A:**
+**A:** I'm actually very lazy. Idk. I think I could be a lot more productive but as for writing, sure, here is my system https://www.swyx.io/writing/writing-mise-en-place/.
 
 ---
 
-<a name="moo" href="#moo">#</a> **Q:** –
+<a name="any-advice-for-people-hoping" href="#any-advice-for-people-hoping">#</a> **Q:** Any advice for people hoping to enter the frontend development world anew? Do they have to learn stuff like React/Angular/Vue to get along now? Is it feasible without something like college? – XxX_MLG Noob_XxX
 
-**A:**
-
----
-
-<a name="moo" href="#moo">#</a> **Q:** –
-
-**A:**
+**A:** Yes it is feasible without college, however many, many frontend jobs will use JS frameworks. You can learn on the job, but the reality of the job market is many people who will be interviewing alongside you will already know them.
 
 ---
 
-<a name="moo" href="#moo">#</a> **Q:** –
+<a name="ssr-or-prerendering" href="#ssr-or-prerendering">#</a> **Q:** SSR or prerendering? Which one is better? – masoud
 
-**A:**
-
----
-
-<a name="moo" href="#moo">#</a> **Q:** –
-
-**A:**
+**A:** Heh, complicated question. I'd say prerendering, but it is not clear cut, and I will use SSR in some situations.
 
 ---
 
-<a name="moo" href="#moo">#</a> **Q:** –
+<a name="is-digital-garden-different" href="#is-digital-garden-different">#</a> **Q:** Is digital garden different from blog? – sridhar02
 
-**A:**
-
----
-
-<a name="moo" href="#moo">#</a> **Q:** –
-
-**A:**
+**A:** Somewhat - basically you commit to publishing before you are finished, and updating even after you published. Blogs are relics of dead tree publishing paradigms.
 
 ---
 
-<a name="moo" href="#moo">#</a> **Q:** –
+<a name="how-much-do-you-work" href="#how-much-do-you-work">#</a> **Q:** How much do you work "after-hours"? I know that FAANG schedules can be all over the place anyway. (Are you flexible remote?) but do you feel like you're going to be putting in more than 40 a week and do you think that this is an expectation of a dev advocate position? It seems like the responsibilities can often blend with what #LearnInPublic'ers do in their free time anyway but how much freedom do you have to turn that off as needed when it becomes a job in addition to just a hobby haha. – Sonicrida
 
-**A:**
-
----
-
-<a name="moo" href="#moo">#</a> **Q:** –
-
-**A:**
+**A:** I am flexible remote, yes. I don't think we are expected to put in more than 40 a week, but I do definitely put in more than 40 myself because I am ambitious but also I love what I do. Feel free to ask a followup. I feel like I didn't give you a good answer.
 
 ---
 
-<a name="moo" href="#moo">#</a> **Q:** –
+<a name="what-do-you-think-about-node-on" href="#what-do-you-think-about-node-on">#</a> **Q:** What do you think about node on the server side? Do you think it's a good choice? – Dexti
 
-**A:**
+**A:** Yes its non-blocking! lol (there's a parody video that talks about that https://www.youtube.com/watch?v=bzkRVzciAZg&feature=emb_title).
 
 ---
+
+<a name="compared-to-vue-or-svelte" href="#compared-to-vue-or-svelte">#</a> **Q:** Compared to [Vue](https://vuejs.org/) or [Svelte][svelte], if there are any improvements you think React needs to have, what would it be? – rhesa
+
+**A:** Yes!!! Great question. We need better styling/animation support, and we also need to normalise using Preact by default before upgrading to React if we really need it. Our tools need to make it EASY to do so. However, I'm very excited by React Flight and Blocks and what that will do for the biggest React apps.
 
 [amplify]: https://aws.amazon.com/amplify/
 [deno]: https://deno.land/
 [netlify]: https://www.netlify.com/
 [r-reactjs]: https://www.reddit.com/r/reactjs/
+[recoil]: https://recoiljs.org/
+[rust]: https://www.rust-lang.org/
 [svelte]: https://svelte.dev/
+[wasm]: https://webassembly.org/
