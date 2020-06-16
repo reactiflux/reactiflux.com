@@ -43,7 +43,7 @@ people: '[@swyx](https://twitter.com/swyx)'
 
 ---
 
-<a name="do-you-think-adding-subtyping" href="#do-you-think-adding-subtyping">#</a> **Q:** Do you think adding subtyping to typescript was a mistake? – Yugiohxlight
+<a name="do-you-think-adding-subtyping" href="#do-you-think-adding-subtyping">#</a> **Q:** Do you think adding subtyping to TypeScript was a mistake? – Yugiohxlight
 
 **A:** No idea. I think we should be happy to admit when we don't know things 🙂. By the way I think it is a good pitch for [reasonml](https://reasonml.github.io/).
 
@@ -137,6 +137,156 @@ https://www.swyx.io/writing/react-distros/ double answer 🙂.
 
 ---
 
+<a name="why-do-algorithms-play" href="#why-do-algorithms-play">#</a> **Q:** Why do algorithms play such a big role in the job hiring process? Are there elements of every coding project that require data structure implementation? – dchavours
+
+**A:** Traditionally we hired engineers to write low level/systems code. Over time, the need for that decreased as we moved higher and higher up the stack. However, interview practices have been slow to evolve. https://www.swyx.io/writing/osi-layers-coding-careers/ However you might like knowing both my technical interviews at AWS and [Netlify][netlify] involved no algorithms.
+
+---
+
+<a name="didnt-realize-you-had-joined" href="#didnt-realize-you-had-joined">#</a> **Q:** Didn't realize you had joined AWS, how was your interview experience at AWS? Any blogs coming up about that? Interested especially you come from a non-CS background like me & I would love to join the FAANG gang someday. – \_binarynumber
+
+**A:** Thanks! yea it still feels weird to say that I'm part of FAANG now lol. It used to be so unattainable back when I was in bootcamp. Now I am actively saying no to fb 🤷‍♂️. I don't have plans to blog about it because I think my own journey is quite unique. However, I would advise to take the recruiter's tips very seriously. They REALLY care about the 14 leadership principles at Amazon. If you want to be hired into a senior role you have to have good stories that relate to most of them.
+
+---
+
+<a name="what-do-you-think-about-deno" href="#what-do-you-think-about-deno">#</a> **Q:** What do you think about [Deno][deno]? Do you think it'll go mainstream one day? – bellu, Junaid
+
+**A:** Yes. It will be a key part of the Third Age of JS https://www.swyx.io/writing/js-third-age/. However, most platforms will simply support both node and [Deno][deno] and I don't think node dies.
+
+---
+
+<a name="how-do-you-guys-use-react" href="#how-do-you-guys-use-react">#</a> **Q:** How do you guys use React at AWS? – rhesa
+
+**A:** React is used HEAVILY at AWS. There are so many engineers using it that we hold our own internal React Conf with a few hundred people. I'm afraid I don't know much more than that. I will be interested to find out more once COVID clears, and I can go visit Seattle.
+
+---
+
+<a name="thanks-for-the-reply" href="#thanks-for-the-reply">#</a> **Q:** Thanks for the reply! What is your day to day looking like now (or what will it look like as you settle in?) I'm really curious about how much you interact with the main devs on the team to learn more and become an expert with [Amplify][amplify] so you can teach the rest of us. What is that process like and how much time do you spend learning vs content creation/delivery. – Sonicrida
+
+**A:** Honestly right now im just 100% learning lol. I had my first meetings with PMs yesterday. I normally LOVE to work directly with the dev team, and did that at [Netlify][netlify], but at AWS my sense is that won't be as possible anymore (because of team structure and size). Sorry I don't have a set % of learning vs content creation, probably in your first year you are mostly learning and you only really get on your content game in your second year. But don't forget the other big part of the job is helping beta test new features, visiting customers and collating product feedback.
+
+---
+
+<a name="what-are-your-thoughts-on-typescript" href="#what-are-your-thoughts-on-typescript">#</a> **Q:** What are your thoughts on TypeScript? Is it still worth learning in 2020? – bellu
+
+**A:** Uh, YES!! LEARN IT. look at how many tools have switched https://twitter.com/swyx/status/1260888049958838272?s=20.
+
+---
+
+<a name="for-someone-who-wants-to-become" href="#for-someone-who-wants-to-become">#</a> **Q:** For someone who wants to become a better engineer (not just coding and leetcode stuff...) Does your book discuss topics like technical communication, engineering documents and other skills that are sometimes lacked? Can you give an example of one? – dilraj
+
+**A:** We have a whole chapter on writing, and the Senior Dev chapter discusses a lot of the other organizational/metalearning skills needed. Basically the whole book is written to help you discuss the non code part of coding careers 🙂. Table of contents here https://gumroad.com/products/bAZJq/.
+
+---
+
+<a name="is-it-a-good-idea-to-convert" href="#is-it-a-good-idea-to-convert">#</a> **Q:** Is it good idea to convert legacy react application into TypeScript? – Banu
+
+**A:** If it isn't broken, don't fix it!!!!! However, if you intend to maintain it for the long run, then yes TypeScript is a very good tool for that. It is meant to help you refactor incrementally. Have a look at how millie at TinyMCE and Brie at airbnb did their migrations. HUGE codebases. A lot of benefit. https://react-typescript-cheatsheet.netlify.app/docs/migration/intro/#misc-migration-stories-by-notable-companies-and-open-source
+
+---
+
+<a name="i-believe-you-were-doing" href="#i-believe-you-were-doing">#</a> **Q:** I believe you were doing Georgia Tech's OMS program, how is it going and what is your review of it? Would you recommend it for non Computer Science folks to take it? – Andrei_Calazans
+
+**A:** I dropped it after 3 classes. basically [Netlify][netlify] got super intense, and I had to choose between my class load and real work. I still want to pick it up again someday. I 100% recommend it for non CS folks because its cheap, and it helps fill the gaps you may have. Also, having a Msc in CS helps with hiring in some cases. A lot of people take it and focus on ML; do that if you must, But I was more keen on CS basics like compilers, databases, operating systems.
+
+---
+
+<a name="do-you-think-social-skills" href="#do-you-think-social-skills">#</a> **Q:** Do you think social skills play an important role in the success along with technical skills? – junaid
+
+**A:** Yes! Even though I'm not the best at social skills myself. But clearly I think it is important, that's why I wrote a 450 page book on all that stuff. 🙂
+
+---
+
+<a name="how-to-get-seo-to-work" href="#how-to-get-seo-to-work">#</a> **Q:** How to get SEO to work in react app built using CRA? – MelvinPhaser
+
+**A:** Prerender! https://create-react-app.dev/docs/pre-rendering-into-static-html-files/
+
+---
+
+<a name="how-are-you" href="#how-are-you">#</a> **Q:** How are you swyx? – thetruthseekah
+
+**A:** I'm ok! My fingers are a bit aching from typing so much. Also I'm stressing out about my [Svelte][svelte] Amsterdam talk later haha https://www.meetup.com/Amsterdam-SvelteJS/events/266919637/.
+
+---
+
+<a name="hey-swyx-what-editor" href="#hey-swyx-what-editor">#</a> **Q:** Hey Swyx! What editor theme(s) do you like? 😄 – kpollich
+
+**A:** Lol I default to Ahmad Awais [Shades of Purple](https://marketplace.visualstudio.com/items?itemName=ahmadawais.shades-of-purple#:~:text=Ahmad%20Awais%20%E2%9A%A1&text=%F0%9F%A6%84%20A%20professional%20theme%20suite,VSCode%20Themes%20on%20the%20marketplace.) recently.
+
+---
+
+<a name="classnames-vs-clsx" href="#classnames-vs-clsx">#</a> **Q:** Classnames vs clsx which is better? – fgrgec
+
+**A:** I have only used classnames.
+
+---
+
+<a name="what-do-you-think-of-ssr" href="#what-do-you-think-of-ssr">#</a> **Q:** What do you think of ssr on [golang](https://golang.org/)? – Tee-Sean
+
+**A:** I don't think anything of it haha. I had to write some [golang](https://golang.org/) once, and it was a fine experience, but I didn't feel more productive than in JS. Interested in learning [rust](https://www.rust-lang.org/) someday.
+
+---
+
+<a name="can-react-js-be-the-most" href="#can-react-js-be-the-most">#</a> **Q:** Can React JS be the most dominant ever JavaScript library? – Vradhi
+
+**A:** Isn't it?
+
+---
+
+<a name="is-it-better-to-keep-using" href="#is-it-better-to-keep-using">#</a> **Q:** Is it better to keep using GraphQL or Redux for all projects? OR use both of them? OR other better API like hooks maybe? – akram-001
+
+**A:** Use what you enjoy. I think GraphQL needs a lot more tooling to set up, and you only get the most benefits if you can flow the types down from server to frontend. Redux has less setup as it is mostly just frontend.
+
+---
+
+<a name="how-can-someone-learn-and" href="#how-can-someone-learn-and">#</a> **Q:** How can someone learn and contribute to React internal codebase? – einstein92
+
+**A:** I HAVE THE PERFECT TALK FOR YOU LOL https://www.swyx.io/speaking/contributing-to-react/.
+
+---
+
+<a name="moo" href="#moo">#</a> **Q:** –
+
+**A:**
+
+---
+
+<a name="moo" href="#moo">#</a> **Q:** –
+
+**A:**
+
+---
+
+<a name="moo" href="#moo">#</a> **Q:** –
+
+**A:**
+
+---
+
+<a name="moo" href="#moo">#</a> **Q:** –
+
+**A:**
+
+---
+
+<a name="moo" href="#moo">#</a> **Q:** –
+
+**A:**
+
+---
+
+<a name="moo" href="#moo">#</a> **Q:** –
+
+**A:**
+
+---
+
+<a name="moo" href="#moo">#</a> **Q:** –
+
+**A:**
+
+---
+
 <a name="moo" href="#moo">#</a> **Q:** –
 
 **A:**
@@ -180,6 +330,7 @@ https://www.swyx.io/writing/react-distros/ double answer 🙂.
 ---
 
 [amplify]: https://aws.amazon.com/amplify/
+[deno]: https://deno.land/
 [netlify]: https://www.netlify.com/
 [r-reactjs]: https://www.reddit.com/r/reactjs/
 [svelte]: https://svelte.dev/
