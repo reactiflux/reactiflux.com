@@ -62,5 +62,12 @@ module.exports = {
         icon: 'src/assets/reactiflux.png',
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-68559005-1',
+        allowAdFeatures: false,
+      },
+    },
   ],
 };
