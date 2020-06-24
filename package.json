@@ -49,7 +49,7 @@
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-links && gh-pages -d public",
     "start": "gatsby develop",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "prettier --check 'src/**/*.js'",
     "prettier": "prettier --write 'src/**/*.js'"
   }
 }
