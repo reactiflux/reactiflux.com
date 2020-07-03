@@ -9,12 +9,18 @@ const EventsDivider = styled.hr`
   margin: 6rem 0;
 `;
 
+const ONE_DAY = 24 * 60 * 60 * 1000
+
 export default function Schedule({ data }) {
-  const currentDate = new Date();
   const { nodes } = data.transcripts;
 
+  // transcripts are displayed as "upcoming" until the day *after* they
+  // happen, so we compare the node's date to yesterday's date
+  const today = new Date();
+  const yesterday = new Date(today.getTime() - ONE_DAY);
+
   const [pastEventNodes, upcomingEventNodes] = partition(
-    (node) => currentDate <= new Date(node.date),
+    (node) => yesterday <= new Date(node.date),
     nodes.map(simplifyNode),
   );
 
