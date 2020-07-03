@@ -48,12 +48,12 @@ export default function Schedule({ data }) {
             {Object.entries(upcomingEvents)
               .reverse()
               .map(([dateGroup, events]) => (
-                <React.Fragment key={dateGroup}>
+                <div key={dateGroup}>
                   <h2>{dateGroup}</h2>
                   {events.map((event) => (
                     <Event key={event.name} {...event} isUpcoming />
                   ))}
-                </React.Fragment>
+                </div>
               ))}
           </>
         )}
@@ -115,7 +115,7 @@ const Event = ({
         ]
           .filter(Boolean)
           .map((field) => (
-            <li key={field} dangerouslySetInnerHTML={{ __html: field }} />
+            <li key={`${name}-${field}`} dangerouslySetInnerHTML={{ __html: field }} />
           ))}
         {html && !isUpcoming ? (
           <li>
