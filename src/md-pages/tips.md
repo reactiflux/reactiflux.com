@@ -15,7 +15,7 @@ You may get help within 5 minutes if somebody who knows the answer is looking fo
 
 ## Moderators need your help
 
-If you see something you feel is out-of-line, please use our `@moderator` ping to alert us. You can send it in **#reactiflux-admin** if you don't feel comfortable doing it inline, or can submit anonymously from our [report page](/contact). There's a buried way to [copy a direct link to a specific message](https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-), which is very helpful when reporting. 
+If you see something you feel is out-of-line, please use our `@moderator` ping to alert us. You can send it in **#reactiflux-admin** if you don't feel comfortable doing it inline, or can submit anonymously from our [report page](/contact). There's a buried way to [copy a direct link to a specific message](https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-), which is very helpful when reporting.
 
 ## Ask your question
 
