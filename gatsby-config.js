@@ -23,6 +23,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'blog',
+        path: `${__dirname}/src/blog/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'transcripts',
         path: `${__dirname}/src/transcripts/`,
       },

@@ -2,6 +2,10 @@ const path = require('path');
 const remark = require('remark');
 const remarkHTML = require('remark-html');
 
+const BlogIndex = path.resolve('src', 'templates', 'BlogIndex.js');
+const CopyPage = path.resolve('src', 'templates', 'CopyPage.js');
+const Transcript = path.resolve('src', 'templates', 'Transcript.js');
+
 const frontmatterFieldSettings = [
   { field: 'description', defaultValue: null, supportMarkdown: true },
   { field: 'location', defaultValue: null },
@@ -63,6 +67,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
+      blog: allFile(filter: { sourceInstanceName: { eq: "blog" } }) {
+        nodes {
+          name
+          childMarkdownRemark {
+            id
+          }
+        }
+      }
     }
   `);
   // Handle errors
@@ -78,7 +90,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     if (html.trim().length) {
       createPage({
         path: path.join('transcripts', name),
-        component: path.resolve('src', 'templates', 'Transcript.js'),
+        component: Transcript,
         context: { id, date: frontmatter.date },
       });
     }
@@ -90,7 +102,38 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const { name } = node;
     createPage({
       path: name,
-      component: path.resolve('src', 'templates', 'CopyPage.js'),
+      component: CopyPage,
+      context: { id },
+    });
+  });
+
+  // Blog data
+  const posts = result.data.blog.nodes;
+  const postsPerPage = 10;
+  const pageCount = Math.ceil(posts.length / postsPerPage);
+
+  // Blog index pages
+  Array.from({ length: pageCount }).forEach((_, i) => {
+    const currentPage = i + 1;
+    createPage({
+      path: i === 0 ? '/blog/' : `/blog/${currentPage}`,
+      component: BlogIndex,
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        pageCount,
+        currentPage,
+      },
+    });
+  });
+
+  // Blog posts
+  posts.forEach((node) => {
+    const { id } = node.childMarkdownRemark;
+    const { name } = node;
+    createPage({
+      path: `/blog/${name}`,
+      component: CopyPage,
       context: { id },
     });
   });
