@@ -9,7 +9,7 @@ const EventsDivider = styled.hr`
   margin: 6rem 0;
 `;
 
-const ONE_DAY = 24 * 60 * 60 * 1000
+const ONE_DAY = 24 * 60 * 60 * 1000;
 
 export default function Schedule({ data }) {
   const { nodes } = data.transcripts;
@@ -115,7 +115,10 @@ const Event = ({
         ]
           .filter(Boolean)
           .map((field) => (
-            <li key={`${name}-${field}`} dangerouslySetInnerHTML={{ __html: field }} />
+            <li
+              key={`${name}-${field}`}
+              dangerouslySetInnerHTML={{ __html: field }}
+            />
           ))}
         {html && !isUpcoming ? (
           <li>
