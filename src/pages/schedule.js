@@ -9,12 +9,18 @@ const EventsDivider = styled.hr`
   margin: 6rem 0;
 `;
 
+const ONE_DAY = 24 * 60 * 60 * 1000;
+
 export default function Schedule({ data }) {
-  const currentDate = new Date();
   const { nodes } = data.transcripts;
 
+  // transcripts are displayed as "upcoming" until the day *after* they
+  // happen, so we compare the node's date to yesterday's date
+  const today = new Date();
+  const yesterday = new Date(today.getTime() - ONE_DAY);
+
   const [pastEventNodes, upcomingEventNodes] = partition(
-    (node) => currentDate <= new Date(node.date),
+    (node) => yesterday <= new Date(node.date),
     nodes.map(simplifyNode),
   );
 
@@ -42,12 +48,12 @@ export default function Schedule({ data }) {
             {Object.entries(upcomingEvents)
               .reverse()
               .map(([dateGroup, events]) => (
-                <React.Fragment key={dateGroup}>
+                <div key={dateGroup}>
                   <h2>{dateGroup}</h2>
                   {events.map((event) => (
                     <Event key={event.name} {...event} isUpcoming />
                   ))}
-                </React.Fragment>
+                </div>
               ))}
           </>
         )}
@@ -109,7 +115,10 @@ const Event = ({
         ]
           .filter(Boolean)
           .map((field) => (
-            <li key={field} dangerouslySetInnerHTML={{ __html: field }} />
+            <li
+              key={`${name}-${field}`}
+              dangerouslySetInnerHTML={{ __html: field }}
+            />
           ))}
         {html && !isUpcoming ? (
           <li>
