@@ -209,7 +209,7 @@ Then look for issues on the main repo and on the website/docs repo that are labe
 
 ---
 
-<a name="moo" href="#moo">#</a> **Q:** Let's say we have a fanfiction.net type website build upon Blitz and have lots of filters options, so will Blitz still be a good option to manage all the complex stuff needed? (I'm a noob sry)
+<a name="let-s-say-we-have-a" href="#let-s-say-we-have-a">#</a> **Q:** Let's say we have a fanfiction.net type website build upon Blitz and have lots of filters options, so will Blitz still be a good option to manage all the complex stuff needed? (I'm a noob sry)
 
 Like around 100k stories with lots of genre's and tags and everything filterable possible. – EvilSpark
 
