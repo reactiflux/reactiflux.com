@@ -12,7 +12,7 @@ New side projects, libraries, or other works you want to show off. This is predo
 
 ## [#news-and-links](https://discord.gg/TEYnXKw)
 
-If you want to share an announcement of a new blog post, product, feature, or other effort, then this is the most appropriate channel. Reactiflux does not generally allow advertising, however. 
+If you want to share an announcement of a new blog post, product, feature, or other effort, then this is the most appropriate channel. Reactiflux does not generally allow advertising, however.
 
 ## [#conferences](https://discord.gg/RYVBdtY)
 
