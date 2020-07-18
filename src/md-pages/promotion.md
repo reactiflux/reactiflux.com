@@ -24,7 +24,7 @@ Our job board is our most strictly moderated channel. Please only post at most o
 
 ### Self promotion vs advertising
 
-The line here can be thin. Reactiflux is a community, not a marketing channel. If you have a body of content you'd like to promote, our recommended way of doing so is to be an active and positive member of the server. If someone has a question that you've created an external answer to, we'd love if you share it! Otherwise, we ask that you limit what plug without prompting.
+The line here can be thin. Reactiflux is a community, not a marketing channel. If you have a body of content you'd like to promote, our recommended way of doing so is to be an active and positive member of the server. If someone has a question that you've created an external answer to, we'd love if you share it! Otherwise, we ask that you limit what you plug without prompting.
 
 To help determine if what you want to share is an advertisement, here are some questions to help you decide.
 
