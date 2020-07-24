@@ -59,6 +59,8 @@ const Index = () => {
           contacted on another platform, please include your information as part
           of your message.
         </p>
+        <hr />
+        <Form fields={fields} name="contact" onSubmit={onSubmit} />
         <p>
           Please note:{' '}
           <strong>
@@ -70,8 +72,6 @@ const Index = () => {
             If you submit a technical question, you will not get a response.
           </strong>
         </p>
-        <hr />
-        <Form fields={fields} name="contact" onSubmit={onSubmit} />
       </div>
     </Layout>
   );
