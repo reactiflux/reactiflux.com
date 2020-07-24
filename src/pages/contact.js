@@ -59,6 +59,17 @@ const Index = () => {
           contacted on another platform, please include your information as part
           of your message.
         </p>
+        <p>
+          Please note:{' '}
+          <strong>
+            we can not answer technical questions submitted via this form.
+          </strong>{' '}
+          It is anonymous, intended for submission of sensitive information like
+          harassment or other moderation problems.{' '}
+          <strong>
+            If you submit a technical question, you will not get a response.
+          </strong>
+        </p>
         <hr />
         <Form fields={fields} name="contact" onSubmit={onSubmit} />
       </div>
