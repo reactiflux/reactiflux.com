@@ -53,7 +53,7 @@ Be the change you want to see in the world! If a conversation is getting heated,
 
 ## Do your research
 
-There is a tremendous body of knowledge contained within the internet. Chat servers fill a great gap when you're struggling to find a resource or are unsure of how to procede, but your first step should be independent research. Come to us when you hit a wall or want a sanity check.
+There is a tremendous body of knowledge contained within the internet. Chat servers fill a great gap when you're struggling to find a resource or are unsure of how to proceed, but your first step should be independent research. Come to us when you hit a wall or want a sanity check.
 
 ## More info
 
