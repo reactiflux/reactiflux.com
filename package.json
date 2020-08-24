@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "axios": "^0.18.1",
     "gatsby": "2.13.29",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-google-analytics": "^2.3.5",
@@ -16,28 +15,21 @@
     "gatsby-remark-images": "^3.1.38",
     "gatsby-source-filesystem": "^2.1.35",
     "gatsby-transformer-remark": "^2.6.32",
-    "highlight.js": "^9.6.0",
     "minireset.css": "^0.0.6",
     "moment": "^2.24.0",
     "node-fetch": "^2.6.0",
-    "object-assign": "^4.1.0",
     "polished": "^3.4.2",
     "prettier": "^1.19.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-ga": "^2.7.0",
     "react-headroom": "^2.1.2",
     "react-helmet": "^5.2.1",
-    "react-responsive-grid": "./mjaakko-react-responsive-grid-v0.3.7.tgz",
-    "react-typography": "^0.16.19",
     "remark": "^11.0.1",
     "remark-html": "^10.0.0",
     "styled-components": "4",
     "typeface-poppins": "^0.0.8",
     "typeface-space-mono": "^0.0.6",
-    "typeface-work-sans": "^0.0.8",
-    "typography": "^0.16.19",
-    "typography-plugin-code": "^0.14.0"
+    "typeface-work-sans": "^0.0.8"
   },
   "devDependencies": {
     "gh-pages": "^0.11.0"
