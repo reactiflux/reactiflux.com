@@ -106,9 +106,7 @@ export const Modal = ({ children, close, isOpen }) => {
     <ReturnFocusOnUnMount>
       <FocusBoundary onExit={close}>
         <Overlay>
-          <CloseIcon onClick={close} autoFocus>
-            Close modal
-          </CloseIcon>
+          <CloseIcon onClick={close}>Close modal</CloseIcon>
           {children}
         </Overlay>
       </FocusBoundary>
