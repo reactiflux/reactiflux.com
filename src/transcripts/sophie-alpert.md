@@ -89,7 +89,7 @@ arguing about APIs is tiring but I think also important so we can try to make su
 <a name="say-want-load-stripe-fblogin" href="#say-want-load-stripe-fblogin">#</a> **Q:** say I want to load Stripe of FBLogin to my react component, theres 2 ways ive seen done, using react-script-loader mixin or
 
 ```js
-(function(d, s, id) {
+(function (d, s, id) {
   const element = d.getElementsByTagName(s)[0];
   const fjs = element;
   let js = element;
