@@ -1,5 +1,5 @@
-(function() {
-  document.addEventListener('click', function(e) {
+(function () {
+  document.addEventListener('click', function (e) {
     if (e.target.matches('a[href^="#"]')) {
       e.preventDefault();
 

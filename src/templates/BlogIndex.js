@@ -41,6 +41,7 @@ export const pageQuery = graphql`
     ) {
       nodes {
         name
+        relativeDirectory
         childMarkdownRemark {
           frontmatter {
             title

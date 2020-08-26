@@ -1,8 +1,23 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "reactiflux.com",
+  "version": "π",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "start": "gatsby develop",
+    "test": "prettier --check 'src/**/*.{js,md}'",
+    "prettier": "prettier --write 'src/**/*.{js,md}'",
+    "install-if-package-changed": "git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD | grep --quiet yarn.lock && yarn install || exit 0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "post-merge": "yarn install-if-package-changed",
+      "post-checkout": "yarn install-if-package-changed"
+    }
+  },
   "dependencies": {
     "gatsby": "2.24.50",
     "gatsby-plugin-alias-imports": "^1.0.5",
@@ -15,11 +30,13 @@
     "gatsby-remark-images": "^3.3.26",
     "gatsby-source-filesystem": "^2.3.25",
     "gatsby-transformer-remark": "^2.8.29",
+    "husky": "^4.2.5",
     "minireset.css": "^0.0.6",
     "moment": "^2.27.0",
     "node-fetch": "^2.6.0",
     "polished": "^3.6.5",
     "prettier": "^2.1.0",
+    "pretty-quick": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-headroom": "^2.1.2",
@@ -30,20 +47,5 @@
     "typeface-poppins": "^0.0.72",
     "typeface-space-mono": "^0.0.71",
     "typeface-work-sans": "^0.0.72"
-  },
-  "devDependencies": {
-    "gh-pages": "^0.11.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "scripts": {
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public",
-    "start": "gatsby develop",
-    "test": "prettier --check 'src/**/*.{js,md}'",
-    "prettier": "prettier --write 'src/**/*.{js,md}'"
   }
 }
