@@ -40,6 +40,7 @@ export function Menu() {
             <Link to="/transcripts/">Transcripts</Link>
             <Link to="/jobs/">Jobs</Link>
             <Link to="/learning/">Learning</Link>
+            <Link to="/promotion/">Promotion</Link>
           </MobileNavIfMobile>
         </Nav>
       </Wrapper>
