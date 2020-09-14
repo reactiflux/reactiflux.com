@@ -35,7 +35,7 @@ export function Menu() {
           <MobileNavIfMobile>
             <Link to="/contact/">Contact</Link>
             <Link to="/tips/">Tips</Link>
-            <Link to="/conduct/">Code of Conduct</Link>
+            <Link to="/guidelines/">Guidelines</Link>
             <Link to="/schedule/">Q&A Schedule</Link>
             <Link to="/transcripts/">Transcripts</Link>
             <Link to="/jobs/">Jobs</Link>
