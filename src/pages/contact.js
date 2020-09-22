@@ -61,6 +61,17 @@ const Index = () => {
         </p>
         <hr />
         <Form fields={fields} name="contact" onSubmit={onSubmit} />
+        <p>
+          Please note:{' '}
+          <strong>
+            we can not answer technical questions submitted via this form.
+          </strong>{' '}
+          It is anonymous, intended for submission of sensitive information like
+          harassment or other moderation problems.{' '}
+          <strong>
+            If you submit a technical question, you will not get a response.
+          </strong>
+        </p>
       </div>
     </Layout>
   );
