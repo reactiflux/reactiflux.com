@@ -16,7 +16,7 @@ We intend to more strongly demonstrate our support for those who are underrepres
 Today we're announcing 3 changes: a new Reactiflux code of conduct, an anonymous reporting tool on our website, and a mandatory opt-in acceptance of that code of conduct before members may participate in the chat. The intent is not to dramatically change how the server operates, but to clarify that we are an inclusive space and to provide a better avenue for reporting violations.
 
 - [Our Code of Conduct](/conduct)
-- [Our anonymous reporting tool](/report)
+- [Our anonymous reporting tool](/contact)
 
 Over the past 18 months, we’ve improved our moderation in a number of ways. We’ve made efforts, with mixed success, to recruit a more diverse staff, we’ve added 3 ways for members to quickly get the attention of staff, and we’ve codified internal processes so that less bad behavior slips through the cracks. We now have dozens of active members helping to keep the server friendly, lively, and helpful, and have 10 active staff members on hand to intervene if the situation calls for it. Reactiflux is one of the (if not _the_) largest chat communities for software developers, and we have a corresponding duty to ensure our members feel welcome and safe in the space we provide.
 
