@@ -7,7 +7,7 @@ description: "Today we're announcing 3 changes: a new Reactiflux code of conduct
 
 For a long time, Reactiflux was moderated by a very small number of people more or less acting at their own discretion. For nearly 2 years after we moved from Slack to Discord in 2015, we had no guidance on what was acceptable and unacceptable, and it worked okay. We had roughly 5 people who were actively guiding the server, in the form of answering questions, rebuking those who broke the social norms, and banning spammers and trolls. Most of those frequently answering questions had moved to Reactiflux from IRC, and from that perspective, it was an extremely friendly and welcoming community.
 
-Since then, as we've grown, we created some incremental guidance to fill gaps. For the past several years, the principles motivating that guidance have been facilitating those seeking answers to questions, helping people to improve themselves, and minimizing disruption in the server. This can be seen in the content of our [tips](/tips/) and [guidelines](/guidelines/).
+Since then, as we've grown, we created some incremental guidance to fill gaps. For the past several years, the principles motivating that guidance have been facilitating those seeking answers to questions, helping people to improve themselves, and minimizing disruption in the server. This can be seen in the content of our [tips](/tips/).
 
 Notably, we haven't had an explicit code of conduct, with the guidelines intended to serve the same purpose. We now believe that our previous guidelines aren’t sufficient for how large the community is now. It's no longer acceptable to merely be more welcoming than IRC.
 
