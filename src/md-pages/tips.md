@@ -57,7 +57,7 @@ There is a tremendous body of knowledge contained within the internet. Chat serv
 
 ## More info
 
-We also have [a list of guidelines](/guidelines/) that we hold our members to. We don't kick users lightly, but repeatedly behaving contrary to these guidelines after being warned and corrected could result in you getting the boot. We reserve bans for spammers and abusive behavior.
+We also have [a code of conduct](/conduct/) that we hold our members to. We don't ban users lightly, but repeatedly behaving contrary to these guidelines after being warned and corrected could result in you getting banned.
 
 ---
 
