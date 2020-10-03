@@ -9,7 +9,7 @@ export default function Transcript({ data }) {
     .filter((node) => node.childMarkdownRemark.html.trim().length)
     .map((node) => ({
       title: node.childMarkdownRemark.frontmatter.title,
-      path: `/${node.relativeDirectory}/${node.name}`,
+      path: `${node.name}`,
       html: node.childMarkdownRemark.html,
     }));
 
@@ -64,7 +64,6 @@ export const pageQuery = graphql`
     ) {
       nodes {
         name
-        relativeDirectory
         childMarkdownRemark {
           html
           frontmatter {
