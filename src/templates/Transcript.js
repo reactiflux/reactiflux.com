@@ -9,7 +9,7 @@ export default function Transcript({ data }) {
     .filter((node) => node.childMarkdownRemark.html.trim().length)
     .map((node) => ({
       title: node.childMarkdownRemark.frontmatter.title,
-      path: `${node.name}`,
+      path: node.name,
       html: node.childMarkdownRemark.html,
     }));
 
