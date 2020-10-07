@@ -105,7 +105,7 @@ Also working with CSS tricks on a comprehensive [Next.js][next-js] on AWS tutori
 
 ---
 
-<a name="moo" href="#moo">#</a> **Q:** Regarding the AWS CMS, I am thinking that [Amplify][amplify] is great but it is missing a lot of CMS features, and to turn [Amplify][amplify] into a headless CMS perhaps.
+<a name="regarding-the-aws-cms" href="#regarding-the-aws-cms">#</a> **Q:** Regarding the AWS CMS, I am thinking that [Amplify][amplify] is great but it is missing a lot of CMS features, and to turn [Amplify][amplify] into a headless CMS perhaps.
 
 It is one the reasons we are still using at me company and for personal projects other CMS or headless CMS such as Strapi, Contentful to manage content instead of using AWS entirely as I usually use AWS to manage content and database. 🙂 – juancarlosjr97
 
@@ -123,7 +123,7 @@ Add to that the future growth and demand of that tech + how much money I may be 
 
 ---
 
-<a name="moo" href="#moo">#</a> **Q:** What kind of changes do you think should be made to interview process when interviewing candidates for Frontend Engineering roles?
+<a name="what-kind-of-changes" href="#what-kind-of-changes">#</a> **Q:** What kind of changes do you think should be made to interview process when interviewing candidates for Frontend Engineering roles?
 
 The rounds mostly focus on Algorithms and trivia JS knowledge mostly.
 
@@ -134,6 +134,12 @@ So, should it be more live coding oriented stuff and if so, what are some of the
 The thing I've learned more regarding interviews / people over the past few years though is to focus on hiring for capability vs current knowledge. If you find someone who is capable of just getting shit done and learning what they need to, that's all that matters. If they can google their way around and find the answer, then who cares what was in their brain the minute before, at the end of the day they solved the problem. Technical interviews should be tailored to finding problem solvers and people who can get shit done vs things they have memorized to pass the interview.
 
 Unfortunately, we're not there yet as an industry but there are smart people trying to solve this.
+
+---
+
+<a name="ive-always-wondered-what" href="#ive-always-wondered-what">#</a> **Q:** I've always wondered what the key differences are between Azure, GCP, and AWS; Would you be willing to outline some of the quantifiable differences for a end user? – doge
+
+**A:** I would say that they are all similar in certain ways but they do indeed have tradeoffs that are worth considering. I unfortunately am biased since I work at AWS so I would probably recommend finding one solution (maybe a serverless API), and implementing the same service in all 3 clouds. Then go into the consoles and play around with the service. Do this 1 or two more times for other services. This will probably take you a day or 2, but after that you'll have a good idea about which you prefer and which you should focus you time on learning more about.
 
 [amplify]: https://aws.amazon.com/amplify/
 [next-js]: https://nextjs.org/
