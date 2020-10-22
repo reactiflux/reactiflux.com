@@ -13,6 +13,7 @@ This is not a legal document, members should follow the spirit of these guidelin
 1. Please be kind and courteous, friendly and professional. There’s no need to be mean or rude.
 1. Communicate in the open. Reactiflux is a public community, please do not direct message someone unless they’ve granted permission in the server or you need to discuss a moderation issue with staff.
 1. We are committed to providing a friendly, safe and welcoming environment for all, regardless of level of experience, gender identity and expression, sexual orientation, disability, neurodivergence, personal appearance, body, race, ethnicity, age, religion, nationality, or other similar characteristic.
+   - If you don't know someone's pronouns, please use gender neutral language (Discord display names also work great!), and if somebody requests you use a pronoun, please respect their wishes.
 1. Respect that people have differences of opinion and that every design or implementation choice carries a trade-off and numerous costs. There is seldom a single right answer.
 1. When providing help, answer their question before making stylistic or tool suggestions. Please keep unstructured critique to a minimum.
 1. Please avoid using an alias (i.e. display name) that might detract from a friendly, safe and welcoming environment for all.
