@@ -46,8 +46,9 @@ const GetInTouch = styled.p`
   }
 `;
 
-const getLink = (id) =>
+const getJobLink = (id) =>
   `https://discordapp.com/channels/102860784329052160/103882387330457600/${id}`;
+const getAuthorLink = (id) => `https://discordapp.com/users/${id}`;
 
 export const Offer = ({
   author,
@@ -73,8 +74,12 @@ export const Offer = ({
       ) : null}
       <div>
         <p>
-          Posted by <strong>{author.name}</strong> on{' '}
-          <Link to={getLink(id)}>{moment(date).format('MMMM Do YYYY')}</Link>
+          Posted by{' '}
+          <Link to={getAuthorLink(author.id)}>
+            <strong>{author.name}</strong>
+          </Link>{' '}
+          on{' '}
+          <Link to={getJobLink(id)}>{moment(date).format('MMMM Do YYYY')}</Link>
         </p>
         {onClickGetInTouch ? (
           <GetInTouch>
