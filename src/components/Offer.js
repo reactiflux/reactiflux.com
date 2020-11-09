@@ -47,8 +47,8 @@ const GetInTouch = styled.p`
 `;
 
 const getJobLink = (id) =>
-  `https://discordapp.com/channels/102860784329052160/103882387330457600/${id}`;
-const getAuthorLink = (id) => `https://discordapp.com/users/${id}`;
+  `https://discord.com/channels/102860784329052160/103882387330457600/${id}`;
+const getAuthorLink = (id) => `https://discord.com/users/${id}`;
 
 export const Offer = ({
   author,
