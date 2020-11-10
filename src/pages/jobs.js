@@ -191,7 +191,7 @@ const Jobs = () => {
               If the job post does not contain a dedicated email, link, or phone
               number, you can click either the offer date to open the original
               message in our{' '}
-              <Link to="https://discordapp.com/channels/102860784329052160">
+              <Link to="https://discord.com/channels/102860784329052160">
                 Discord server
               </Link>{' '}
               (in the <strong>#job-board</strong> channel), or the name of the
@@ -200,7 +200,7 @@ const Jobs = () => {
             </p>
             <p>
               If you don't already have one, you will need to create a (free!){' '}
-              <Link to="https://discordapp.com/">Discord</Link> account.
+              <Link to="https://discord.com/">Discord</Link> account.
             </p>
           </Modal>
         </>
