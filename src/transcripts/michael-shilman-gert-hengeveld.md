@@ -7,7 +7,7 @@ description: 'Maintainers of [Storybook](https://storybook.js.org/)'
 people: '[@mshilman](https://twitter.com/mshilman/) & [@ghengeveld](https://twitter.com/ghengeveld)'
 ---
 
-<a name="hey-been-a-huge" href="#hey-been-a-huge">#</a> **Q:** Hey! been a huge storybook fan for years and have seen it grow and change, especially in how easy it's become to write stories -- is there an idealized "final form" for storybook? in terms of ease to use, set-up, author, integrate, etc. – Mikr Bars
+<a name="hey-been-a-huge" href="#hey-been-a-huge">#</a> **Q:** Hey! I have been a huge storybook fan for years and have seen it grow and change, especially in how easy it's become to write stories -- is there an idealized "final form" for storybook? in terms of ease to use, set-up, author, integrate, etc. – Mike Bars
 
 **A:** We added args in 6.0 as a stylized way to edit stories with controls and manage story data. i think the current target is "edit your components with controls" and then snapshot the stories. that will be a pretty good DX that will also allow non-technical stakeholders to contribute.
 
