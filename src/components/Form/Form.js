@@ -91,6 +91,7 @@ export const Form = React.forwardRef(function Form(
     default:
       return (
         <form
+          name={name}
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
