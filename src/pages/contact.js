@@ -11,13 +11,21 @@ const fields = [
   },
 ];
 
+const encode = (data) =>
+  Object.entries(data)
+    .map(
+      ([key, value]) =>
+        `${encodeURIComponent(key)}=${encodeURIComponent(value)}`,
+    )
+    .join('&');
+
 const onSubmit = (fieldState) =>
-  fetch('/.netlify/functions/mod-message', {
+  fetch('/', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/x-www-form-urlencoded',
     },
-    body: JSON.stringify({
+    body: encode({
       'form-name': 'contact',
       ...Object.fromEntries(fieldState),
     }),

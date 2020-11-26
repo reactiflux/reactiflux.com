@@ -1,6 +1,3 @@
-[build]
-  functions = "src/functions"
-
 [[redirects]]
   from = "/guidelines"
   to = "/conduct"

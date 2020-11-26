@@ -17,6 +17,7 @@ export const Form = React.forwardRef(function Form(
     error,
     fields,
     form,
+    name,
     onChange,
     onSubmit,
     submitting,
@@ -88,6 +89,7 @@ export const Form = React.forwardRef(function Form(
     default:
       return (
         <form
+          name={name}
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
@@ -95,6 +97,7 @@ export const Form = React.forwardRef(function Form(
           ref={ref}
           {...props}
         >
+          <Input type="hidden" name="form-name" value={name} />
           <Input
             hidden
             label="If you're not a robot, leave this field blank!"
@@ -125,7 +128,7 @@ const renderForm = (fieldData, onSubmit, allowSubmit) => (
     })}
     {allowSubmit ? (
       <p>
-        <Button onClick={onSubmit}>Submit</Button>
+        <Button>Submit</Button>
       </p>
     ) : null}
   </>
