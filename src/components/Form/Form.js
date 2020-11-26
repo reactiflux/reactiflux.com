@@ -128,7 +128,7 @@ const renderForm = (fieldData, onSubmit, allowSubmit) => (
     })}
     {allowSubmit ? (
       <p>
-        <Button onClick={onSubmit}>Submit</Button>
+        <Button>Submit</Button>
       </p>
     ) : null}
   </>
