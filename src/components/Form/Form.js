@@ -17,6 +17,7 @@ export const Form = React.forwardRef(function Form(
     error,
     fields,
     form,
+    name,
     onChange,
     onSubmit,
     submitting,
@@ -97,6 +98,7 @@ export const Form = React.forwardRef(function Form(
           ref={ref}
           {...props}
         >
+          <Input type="hidden" name="form-name" value={name} />
           <Input
             hidden
             label="If you're not a robot, leave this field blank!"
