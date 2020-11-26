@@ -11,6 +11,25 @@ const fields = [
   },
 ];
 
+const encode = (data) =>
+  Object.entries(data)
+    .map(
+      (key, value) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`,
+    )
+    .join('&');
+
+const onSubmit = (fieldState) =>
+  fetch('/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: encode({
+      'form-name': 'contact',
+      ...Object.fromEntries(fieldState),
+    }),
+  });
+
 const Index = () => {
   return (
     <Layout
@@ -48,7 +67,7 @@ const Index = () => {
           of your message.
         </p>
         <hr />
-        <Form fields={fields} name="contact" />
+        <Form fields={fields} name="contact" onSubmit={onSubmit} />
         <p>
           Please note:{' '}
           <strong>
