@@ -57,7 +57,9 @@ export const Form = React.forwardRef(function Form(
 
   const onSubmitCallback = () => {
     setStatus(SUBMITTING);
-    onSubmit(fieldData.map((field) => [field.name, field.value]))
+    Promise.resolve(
+      onSubmit?.(fieldData.map((field) => [field.name, field.value])),
+    )
       .then(() => setStatus(SUCCESS))
       .catch(() => setStatus(ERROR));
   };
@@ -93,7 +95,7 @@ export const Form = React.forwardRef(function Form(
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          onSubmit={onSubmit && onSubmitCallback}
+          onSubmit={onSubmitCallback}
           ref={ref}
           {...props}
         >
@@ -103,13 +105,13 @@ export const Form = React.forwardRef(function Form(
             label="If you're not a robot, leave this field blank!"
             name="bot-field"
           />
-          {form(fieldData, allowSubmit)}
+          {form(fieldData, onSubmitCallback, allowSubmit)}
         </form>
       );
   }
 });
 
-const renderForm = (fieldData, allowSubmit) => (
+const renderForm = (fieldData, onSubmit, allowSubmit) => (
   <>
     {fieldData.map((field) => {
       switch (field.type) {
@@ -128,7 +130,7 @@ const renderForm = (fieldData, allowSubmit) => (
     })}
     {allowSubmit ? (
       <p>
-        <Button>Submit</Button>
+        <Button onClick={onSubmit}>Submit</Button>
       </p>
     ) : null}
   </>
