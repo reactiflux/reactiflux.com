@@ -11,18 +11,6 @@ const fields = [
   },
 ];
 
-const onSubmit = (fieldState) =>
-  fetch('/.netlify/functions/mod-message', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      'form-name': 'contact',
-      ...Object.fromEntries(fieldState),
-    }),
-  });
-
 const Index = () => {
   return (
     <Layout
@@ -60,7 +48,7 @@ const Index = () => {
           of your message.
         </p>
         <hr />
-        <Form fields={fields} name="contact" onSubmit={onSubmit} />
+        <Form fields={fields} name="contact" />
         <p>
           Please note:{' '}
           <strong>

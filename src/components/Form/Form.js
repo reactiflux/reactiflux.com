@@ -56,7 +56,9 @@ export const Form = React.forwardRef(function Form(
 
   const onSubmitCallback = () => {
     setStatus(SUBMITTING);
-    onSubmit(fieldData.map((field) => [field.name, field.value]))
+    Promise.resolve(
+      onSubmit?.(fieldData.map((field) => [field.name, field.value])),
+    )
       .then(() => setStatus(SUCCESS))
       .catch(() => setStatus(ERROR));
   };
