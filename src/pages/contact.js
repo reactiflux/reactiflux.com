@@ -12,10 +12,9 @@ const fields = [
 ];
 
 const encode = (data) =>
-  data
+  Object.entries(data)
     .map(
-      ([key, value]) =>
-        `${encodeURIComponent(key)}=${encodeURIComponent(value)}`,
+      (key, value) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`,
     )
     .join('&');
 
