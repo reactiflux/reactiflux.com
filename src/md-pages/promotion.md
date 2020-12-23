@@ -41,7 +41,7 @@ And "no" to:
 - Are you directly asking people to subscribe for updates?
 - Do people need to pay to benefit from what you're sharing?
 
-We grant more leeway to members who have been active participants in the community, as well. If you're unsure, please post in #reactiflux-admin or direct message any of the admins with your intended message, and we can help clarify.
+We grant more leeway to members who have been active participants in the community, as well. If you're unsure, please post in [#reactiflux-moderation](https://discord.gg/BkSU7Ju) or direct message any of the admins with your intended message, and we can help clarify.
 
 We want the majority of what's shared to be created by genuine members of Reactiflux. That could be asking questions, sharing knowledge, or simply following along with the chat (drop a note in #introductions!).
 

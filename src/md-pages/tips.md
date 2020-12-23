@@ -15,7 +15,7 @@ You may get help within 5 minutes if somebody who knows the answer is looking fo
 
 ## Moderators need your help
 
-If you see something you feel is out-of-line, please use our `@moderator` ping to alert us. You can send it in **#reactiflux-admin** if you don't feel comfortable doing it inline, or can submit anonymously from our [report page](/contact). There's a buried way to [copy a direct link to a specific message](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-), which is very helpful when reporting.
+If you see something you feel is out-of-line, please use our `@moderator` ping to alert us. You can send it in **[#reactiflux-moderation](https://discord.gg/BkSU7Ju)** if you don't feel comfortable doing it inline, or can submit anonymously from our [report page](/contact). There's a buried way to [copy a direct link to a specific message](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-), which is very helpful when reporting.
 
 ## Ask your question
 
@@ -49,7 +49,7 @@ The other people in Reactiflux deserve your respect, so be polite. Not "retail e
 
 ## Be a model channel citizen
 
-Be the change you want to see in the world! If a conversation is getting heated, try to defuse it. If a hard question is unanswered, dig in and work through it with them. If a channel is full of unanswered questions, mention in **#reactiflux-admin** that you'd like to take ownership of it.
+Be the change you want to see in the world! If a conversation is getting heated, try to defuse it. If a hard question is unanswered, dig in and work through it with them. If a channel is full of unanswered questions, mention in **[#reactiflux-moderation](https://discord.gg/BkSU7Ju)** that you'd like to take ownership of it.
 
 ## Do your research
 

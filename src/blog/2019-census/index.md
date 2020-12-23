@@ -26,7 +26,7 @@ All questions were optional, with the intent that if a question made a responden
 - Have you felt marginalized or harassed while in the Reactiflux Community?
 - Is there anything you'd like to suggest or tell the Reactiflux staff anonymously? (free answer)
 
-We carefully crafted these questions with the aim of being inclusive, and attempted to follow similar patterns set by other demographic-type surveys. If there's a question here that feels inappropriately phrased, or that you think could be improved, we would love to hear from you however you feel comfortable. You can give us feedback in [the #reactiflux-admin channel](https://discord.gg/reactiflux), DM one of the admins or mods in Discord, or DM [@reactiflux](https://twitter.com/reactiflux) on Twitter, or via our [anonymous contact form](/contact).
+We carefully crafted these questions with the aim of being inclusive, and attempted to follow similar patterns set by other demographic-type surveys. If there's a question here that feels inappropriately phrased, or that you think could be improved, we would love to hear from you however you feel comfortable. You can give us feedback in [the #reactiflux-moderation channel](https://discord.gg/BkSU7Ju), DM one of the admins or mods in Discord, or DM [@reactiflux](https://twitter.com/reactiflux) on Twitter, or via our [anonymous contact form](/contact).
 
 ## The results
 
@@ -90,4 +90,4 @@ We're disappointed, but not surprised, to see how male-skewed the population is.
 
 Government data from 2014 ([census.gov, page 10. PDF](https://www.census.gov/content/dam/Census/library/publications/2016/acs/acs-35.pdf)), however, shows web developers as 65% male, 35% female. This is a significant gap—there are substantially more women in our industry than participate in its communities. The conclusion we at Reactiflux draw from this is, **there is a persistent force that excludes women these communities.**
 
-Reactiflux finds itself in a unique position: we might be the largest realtime chat community for developers, and as such may be able to have a large impact on the broader industry through the norms we set. We're going to take some cues from other large chat communities (Rust, Python, and others), and would love to see any examples of welcoming communities you know of. Drop us a link to them in [#suggestions](https://discord.gg/reactiflux), and together we can make the internet a little bit better.
+Reactiflux finds itself in a unique position: we might be the largest realtime chat community for developers, and as such may be able to have a large impact on the broader industry through the norms we set. We're going to take some cues from other large chat communities (Rust, Python, and others), and would love to see any examples of welcoming communities you know of. Drop us a link to them in [#reactiflux-suggestions](https://discord.gg/XyRQxtM), and together we can make the internet a little bit better.
