@@ -46,7 +46,8 @@ const Index = () => {
         <ul>
           <li>
             The public{' '}
-            <a href="https://discord.gg/YKcXEDa">#reactiflux-admin</a> channel
+            <a href="https://discord.gg/BkSU7Ju">#reactiflux-moderation</a>{' '}
+            channel
           </li>
           <li>direct message to any staff member in Discord</li>
           <li>

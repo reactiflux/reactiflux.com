@@ -27,7 +27,7 @@ This is not a legal document, members should follow the spirit of these guidelin
 These are the policies for upholding our community’s standards of conduct. If you feel that there is a situation that needs moderation, please contact the Reactiflux staff:
 
 - In-channel: 👎 react a message or ping @moderator
-- Public: [#reactiflux-admin](https://discord.gg/YKcXEDa)
+- Public: [#reactiflux-moderation](https://discord.gg/BkSU7Ju)
 - Private: private message any staff member
 - Anonymous: [anonymous contact form](/contact/)
 

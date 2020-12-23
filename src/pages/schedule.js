@@ -38,8 +38,8 @@ export default function Schedule({ data }) {
           someone specific in the community, let us know by contacting us via{' '}
           <Link to="https://twitter.com/reactiflux">Twitter</Link> or ping an
           admin or moderator in the{' '}
-          <Link to="https://discord.gg/BkSU7Ju">#reactiflux-admin</Link> channel
-          on discord.
+          <Link to="https://discord.gg/BkSU7Ju">#reactiflux-moderation</Link>{' '}
+          channel on discord.
         </p>
         {Object.keys(upcomingEvents).length > 0 && (
           <>
