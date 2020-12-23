@@ -26,7 +26,7 @@ All questions were optional, with the intent that if a question made a responden
 - Have you felt marginalized or harassed while in the Reactiflux Community?
 - Is there anything you'd like to suggest or tell the Reactiflux staff anonymously? (free answer)
 
-We carefully crafted these questions with the aim of being inclusive, and attempted to follow similar patterns set by other demographic-type surveys. If there's a question here that feels inappropriately phrased, or that you think could be improved, we would love to hear from you however you feel comfortable. You can give us feedback in [the #reactiflux-admin channel](https://discord.gg/reactiflux), DM one of the admins or mods in Discord, or DM [@reactiflux](https://twitter.com/reactiflux) on Twitter, or via our [anonymous contact form](/contact).
+We carefully crafted these questions with the aim of being inclusive, and attempted to follow similar patterns set by other demographic-type surveys. If there's a question here that feels inappropriately phrased, or that you think could be improved, we would love to [hear from you however you feel comfortable](/conduct#moderation).
 
 ## The results
 

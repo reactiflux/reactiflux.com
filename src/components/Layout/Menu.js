@@ -39,7 +39,6 @@ export function Menu() {
             <Link to="/transcripts/">Transcripts</Link>
             <Link to="/conduct/">Code of Conduct</Link>
             <Link to="/jobs/">Jobs</Link>
-            <Link to="/contact/">Contact</Link>
           </MobileNavIfMobile>
         </Nav>
       </Wrapper>

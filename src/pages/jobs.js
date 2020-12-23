@@ -176,7 +176,8 @@ const Jobs = () => {
               {status === ERROR ? (
                 <p>
                   Something went wrong - please try again! If this problem
-                  persists, please <Link to="/contact/">let us know</Link>.
+                  persists, please{' '}
+                  <Link to="/conduct#moderation">let us know</Link>.
                 </p>
               ) : status === SUCCESS && results.length === 0 ? (
                 <p>
