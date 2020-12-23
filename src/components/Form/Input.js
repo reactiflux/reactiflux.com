@@ -41,12 +41,3 @@ export const Input = ({ hidden, label, ...props }) => (
     </label>
   </P>
 );
-
-export const Textarea = ({ hidden, label, ...props }) => (
-  <P hidden={hidden}>
-    <label>
-      {label}
-      <textarea {...props} />
-    </label>
-  </P>
-);

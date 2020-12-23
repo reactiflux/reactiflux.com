@@ -152,11 +152,7 @@ const Jobs = () => {
             Reactiflux <span>Jobs</span>
           </h1>
           <FocusBoundary onChange={setSidebar}>
-            <Form
-              allowSubmit={false}
-              fields={fields}
-              onChange={onChangeQuery}
-            />
+            <Form fields={fields} onChange={onChangeQuery} />
           </FocusBoundary>
           <div>
             {results.map((result, i) => (
