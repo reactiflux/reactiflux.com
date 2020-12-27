@@ -188,12 +188,11 @@ const Jobs = () => {
               If the job post does not contain a dedicated email, link, or phone
               number, you can click either the offer date to open the original
               message in our{' '}
-              <Link to="https://discord.com/channels/102860784329052160">
-                Discord server
-              </Link>{' '}
-              (in the <strong>#job-board</strong> channel), or the name of the
-              user that posted the job. You can then contact the person by
-              sending them a direct message.
+              <Link to="https://discord.gg/R942bNb">
+                <strong>#job-board</strong> channel
+              </Link>
+              , or the name of the user that posted the job. You can then
+              contact the person by sending them a direct message.
             </p>
             <p>
               If you don't already have one, you will need to create a (free!){' '}

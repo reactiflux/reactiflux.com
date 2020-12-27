@@ -27,7 +27,7 @@ The answer is probably "yes," but nobody can help you until you state what your 
 
 > "Is it okay if I ask about [X tool or library] here?"
 
-Instead of asking, scan through the list of channels for any that seem like obvious fits for your question. If you don't see any, don't hesitate to post it in **#general** or **#need-help**. If there's a better place for it, one of the moderators or other helpful users will suggest it.
+Instead of asking, scan through the list of channels for any that seem like obvious fits for your question. If you don't see any, don't hesitate to post it in [#help-react](https://discord.gg/Wd9efFvBrk). If there's a better place for it, one of the moderators or other helpful users will suggest it.
 
 ## Ping people only when needed
 
@@ -49,7 +49,7 @@ The other people in Reactiflux deserve your respect, so be polite. Not "retail e
 
 ## Be a model channel citizen
 
-Be the change you want to see in the world! If a conversation is getting heated, try to defuse it. If a hard question is unanswered, dig in and work through it with them. If a channel is full of unanswered questions, mention in **#reactiflux-admin** that you'd like to take ownership of it.
+Be the change you want to see in the world! If a conversation is getting heated, try to defuse it. If a hard question is unanswered, dig in and work through it with them. If a channel is full of unanswered questions, mention in [#reactiflux-moderation](https://discord.gg/BkSU7Ju) that you'd like to take ownership of it.
 
 ## Do your research
 
