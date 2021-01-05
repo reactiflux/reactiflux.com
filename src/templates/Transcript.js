@@ -22,8 +22,8 @@ export default function Transcript({ data }) {
           <FocusBoundary onChange={setSidebar}>
             <nav
               role="presentation"
-              onClick={(e) => scrollToTop(e)}
-              onKeyDown={(e) => scrollToTop(e)}
+              onClick={scrollToTop}
+              onKeyDown={scrollToTop}
             >
               <ol>
                 {articles.map((article) => (
