@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 
 import { FocusBoundary, Layout, Link } from '@components';
 import { getAnchor } from '@utils/anchor';
+import scrollToTop from '@utils/scrollToTop';
 
 export default function Transcript({ data }) {
   const { html, frontmatter, headings } = data.markdownRemark;
@@ -14,7 +15,11 @@ export default function Transcript({ data }) {
           <h1>{frontmatter.title}</h1>
           {frontmatter.sidebar ? (
             <FocusBoundary onChange={setSidebar}>
-              <nav>
+              <nav
+                role="presentation"
+                onClick={(e) => scrollToTop(e)}
+                onKeyDown={(e) => scrollToTop(e)}
+              >
                 <ol>
                   {headings
                     .filter((heading) => heading.depth < 3)

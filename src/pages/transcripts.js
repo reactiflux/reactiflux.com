@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import { FocusBoundary, Layout, Link } from '@components';
+import scrollToTop from '@utils/scrollToTop';
 
 export default function Transcripts({ data }) {
   const articles = data.transcripts.nodes
@@ -20,7 +21,11 @@ export default function Transcripts({ data }) {
         <>
           <h1>{newestArticle.title}</h1>
           <FocusBoundary onChange={setSidebar}>
-            <nav>
+            <nav
+              role="presentation"
+              onClick={(e) => scrollToTop(e)}
+              onKeyDown={(e) => scrollToTop(e)}
+            >
               <ol>
                 {articles.map((article) => (
                   <li key={article.title}>

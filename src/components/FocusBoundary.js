@@ -1,5 +1,4 @@
 import React from 'react';
-import backToTop from '../utils/backToTop';
 
 export const FocusBoundary = ({ children, onChange, onEnter, onExit }) => {
   const [ref, setRef] = React.useState();
@@ -12,9 +11,6 @@ export const FocusBoundary = ({ children, onChange, onEnter, onExit }) => {
           onChange && onChange(true);
           onEnter && onEnter(e);
           boundaryContainsFocus.current = true;
-        }
-        if (Object.values(e.path[0])[0].elementType === 'nav') {
-          backToTop();
         }
       };
       const blurListener = (e) => {
