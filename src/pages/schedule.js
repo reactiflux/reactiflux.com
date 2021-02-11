@@ -122,7 +122,11 @@ const Event = ({
           ))}
         {html && !isUpcoming ? (
           <li>
-            <Link to={`/transcripts/${relativeDirectory}/${name}`}>
+            <Link
+              to={`/transcripts${
+                relativeDirectory ? `/${relativeDirectory}` : ''
+              }/${name}`}
+            >
               Transcript
             </Link>
           </li>
