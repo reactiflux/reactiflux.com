@@ -230,7 +230,7 @@ Hahaha, okay.
 
 ---
 
-<a name="what-does-the-roadmap-for" href="#moo">#</a> **Q:** What does the roadmap for [Reach UI][reach-ui] look like? Do you know how many components it will eventually have? – harryhedger
+<a name="what-does-the-roadmap-for" href="#what-does-the-roadmap-for">#</a> **Q:** What does the roadmap for [Reach UI][reach-ui] look like? Do you know how many components it will eventually have? – harryhedger
 
 **A:** If there is an aria role, there will be a reach component.
 
@@ -238,7 +238,7 @@ So pretty much all of these: https://www.w3.org/TR/wai-aria-practices-1.1/.
 
 ---
 
-<a name="whats-the-future-of-reach-router" href="#moo">#</a> **Q:** What's the future of [Reach Router][reach-router]? – TreTuna
+<a name="whats-the-future-of-reach-router" href="#whats-the-future-of-reach-router">#</a> **Q:** What's the future of [Reach Router][reach-router]? – TreTuna
 
 **A:** Been to busy prepping our workshop tour (PLUG! https://reacttraining.com/workshops) but the plan is to merge with React Router because hooks are the perfect excuse to introduce new, and simpler APIS.
 
