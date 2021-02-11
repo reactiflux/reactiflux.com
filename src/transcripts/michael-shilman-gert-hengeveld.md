@@ -121,7 +121,7 @@ Yeah. Check out https://www.chromatic.com/ which is a tool for shared storybook 
 
 ---
 
-<a name="moo" href="#moo">#</a> **Q:** Suppose you've been working on some community OSS service for a while and you find out that there's another vetted engineer (that's also apart of the same community and is well respected) that actually did your entire work in about about 2 days . My question is, where is the best place to cry?
+<a name="suppose-youve-been-working" href="#suppose-youve-been-working">#</a> **Q:** Suppose you've been working on some community OSS service for a while and you find out that there's another vetted engineer (that's also apart of the same community and is well respected) that actually did your entire work in about about 2 days . My question is, where is the best place to cry?
 
 [Seriously though] How can these 2 parties collaborate? We hold very similar **values** but have a different vision (of what this product could be). I need their support, but I don't know what to do next..., idk why I am stressed lol, but this project is really dear to me. – dilraj
 
