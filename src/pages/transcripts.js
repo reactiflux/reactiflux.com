@@ -23,7 +23,7 @@ export default function Transcripts({ data }) {
             <nav>
               <ol>
                 {articles.map((article) => (
-                  <li key={article.title}>
+                  <li key={article.path}>
                     <Link to={'/transcripts/' + article.path}>
                       {article.title}
                     </Link>
