@@ -1,5 +1,5 @@
 ---
-title: [Sentry.io](https://sentry.io/) Team
+title: Sentry.io Team
 date: 2021-04-22
 time: 1pm PT / 8PM GMT
 location: Q&A Channel on Reactiflux
