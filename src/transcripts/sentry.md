@@ -9,7 +9,7 @@ people: '[Evan Purkhiser](https://github.com/evanpurkhiser) & [William Mak](http
 
 ## Talk with Sentry devs
 
-– Join Sentry's [Discord](https://discord.com/invite/sentry) community to talk shop with the team.
+– Join Sentrys [Discord](https://discord.com/invite/sentry) community to talk shop with the team.
 
 ---
 
