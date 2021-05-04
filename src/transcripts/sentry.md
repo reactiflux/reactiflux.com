@@ -15,7 +15,7 @@ people: '[Evan Purkhiser](https://github.com/evanpurkhiser) & [William Mak](http
 
 <a name="is-there-any-plans" href="#is-there-any-plans">#</a> **Q:** Is there any plans to redesign the UI of the Sentry dashboard in the near future? - @fruityoyo
 
-**A:** Hey I focus on the performance product so I can answer this one. Dashboards recently got an overhaul where you can create and edit dashboards however you like with discover queries. But we want to further improve the experience around managing dashboards since it can become hard to manage once you add more and more of them, so you can expect to see a new dashboard manager coming soon. (And even earlier if you go to your organization settings and enable early adopter). For those unfamiliar, you can see more of what dashboards in Sentry are here: https://docs.sentry.io/product/dashboards/. 
+**A:** Hey I focus on the performance product so I can answer this one. Dashboards recently got an overhaul where you can create and edit dashboards however you like with discover queries. But we want to further improve the experience around managing dashboards since it can become hard to manage once you add more and more of them, so you can expect to see a new dashboard manager coming soon. (And even earlier if you go to your organization settings and enable early adopter). For those unfamiliar, you can see more of what dashboards in Sentry are here: https://docs.sentry.io/product/dashboards/.
 
 – wmak
 
@@ -69,6 +69,7 @@ people: '[Evan Purkhiser](https://github.com/evanpurkhiser) & [William Mak](http
   dsn: "your dsn here"
 })
 ```
+
 and all unhandled exception and promise rejections will be captured. There's a LOT more you can do, though - both to control what the SDK captures and what data is sent along with your events. https://docs.sentry.io/platforms/javascript/
 
 – lobsterkatie
@@ -189,16 +190,16 @@ and all unhandled exception and promise rejections will be captured. There's a L
 
 <a name="we-have-been-using-sentry" href="we-have-been-using-sentry">#</a> **Q:** We have been using Sentry to monitor our react app, but the error stack is hard to read as it shows the compiled code. What's the right way to upload the map file so that the error messages can be readable? Any sample/example repositories/documentation would be helpful. - @JohnWick
 
-**A:** Source maps! There are some docs here: https://docs.sentry.io/platforms/javascript/guides/react/sourcemaps/. It's a slightly finicky process, but here are the keys: 
+**A:** Source maps! There are some docs here: https://docs.sentry.io/platforms/javascript/guides/react/sourcemaps/. It's a slightly finicky process, but here are the keys:
 
-- Get your bundler/transpiler to generate source maps. 
-- Use either our webpack plugin or sentry-cli to upload them 
-- They are matched with events based on release value, name, and `dist` value, so: 
-  - You have to set the release in your `Sentry.init` and mark it on the maps when you upload them 
-  - Same with `dist`, though this mostly only applies to mobile SDKs, so you can likely ignore this unless it comes up on its own. 
-  - As far as naming goes, you're looking to have the name of the files either be an _exact match_ to the URL of the erroring script, or _the URL with scheme and hostname (http://some.site.here/ <---- but nothing more than this!) replaced by ~._ (You can control the name of the uploaded files with webpack-plugin or sentry-cli). 
+- Get your bundler/transpiler to generate source maps.
+- Use either our webpack plugin or sentry-cli to upload them
+- They are matched with events based on release value, name, and `dist` value, so:
+  - You have to set the release in your `Sentry.init` and mark it on the maps when you upload them
+  - Same with `dist`, though this mostly only applies to mobile SDKs, so you can likely ignore this unless it comes up on its own.
+  - As far as naming goes, you're looking to have the name of the files either be an _exact match_ to the URL of the erroring script, or _the URL with scheme and hostname (http://some.site.here/ <---- but nothing more than this!) replaced by ~._ (You can control the name of the uploaded files with webpack-plugin or sentry-cli).
 
-CLI docs: https://docs.sentry.io/product/cli/releases/#managing-release-artifacts. 
+CLI docs: https://docs.sentry.io/product/cli/releases/#managing-release-artifacts.
 Webpack plugin docs: https://github.com/getsentry/sentry-webpack-plugin/blob/master/README.md
 
 – lobsterkatie
@@ -215,14 +216,14 @@ Webpack plugin docs: https://github.com/getsentry/sentry-webpack-plugin/blob/mas
 
 <a name="as-someone-just-starting-off" href="as-someone-just-starting-off">#</a> **Q:** As someone who is just starting off the journey of learning JavaScript, what are your favorite TypeScript resources? - @r_escribble
 
-**A:** I went through the course at https://www.executeprogram.com/ when I was first learning TS, and found it super effective, because it really forced me to think about every line of code. 
+**A:** I went through the course at https://www.executeprogram.com/ when I was first learning TS, and found it super effective, because it really forced me to think about every line of code.
 
-Now that I'm an everyday TS dev, I tend to rely on a combo of: 
+Now that I'm an everyday TS dev, I tend to rely on a combo of:
 
-- The TS docs, which are pretty well-written: https://www.typescriptlang.org/docs/ 
-- The TS playground: https://www.typescriptlang.org/play 
-- Code completion and linting in VSCode 
-- Google, which inevitably takes me to stack overflow 
+- The TS docs, which are pretty well-written: https://www.typescriptlang.org/docs/
+- The TS playground: https://www.typescriptlang.org/play
+- Code completion and linting in VSCode
+- Google, which inevitably takes me to stack overflow
 
 – lobsterkatie
 
@@ -246,7 +247,7 @@ Now that I'm an everyday TS dev, I tend to rely on a combo of:
 
 <a name="youve-linked-to" href="youve-linked-to">#</a> **Q:** You've linked https://github.com/getsentry/action-visual-snapshot. Any other useful things from you that aren't your main platform you think would be worth looking into? - @Misamoto
 
-**A:** This might be a bit more specific, but I just built this little service to generate charts on the backend via an API https://github.com/getsentry/chartcuterie. Unfurling Sentry links into charts in Slack is coming soon. Here's a tool we wrote to do releases better: https://github.com/getsentry/craft. Last one I'll share: great python library we wrote to mock `requests` responses - https://github.com/getsentry/responses. 
+**A:** This might be a bit more specific, but I just built this little service to generate charts on the backend via an API https://github.com/getsentry/chartcuterie. Unfurling Sentry links into charts in Slack is coming soon. Here's a tool we wrote to do releases better: https://github.com/getsentry/craft. Last one I'll share: great python library we wrote to mock `requests` responses - https://github.com/getsentry/responses.
 
 – Evan
 
