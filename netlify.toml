@@ -1,3 +1,7 @@
 [[redirects]]
   from = "/guidelines"
   to = "/conduct"
+
+[[redirects]]
+  from = "/contact"
+  to = "/conduct#moderation"
