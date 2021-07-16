@@ -46,5 +46,17 @@
     "typeface-poppins": "^0.0.72",
     "typeface-space-mono": "^0.0.71",
     "typeface-work-sans": "^0.0.72"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "printWidth": 80,
+    "proseWrap": "preserve",
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false
   }
 }
