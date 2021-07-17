@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { blue, pink } from '@utils/theme';
+import { blue, pink } from "@utils/theme";
 
 const P = styled.p`
   label {

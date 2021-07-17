@@ -3,7 +3,7 @@ title: Brent Erickson & David de Regt
 date: 2018-01-11
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Engineers @ Microsoft/Skype developing ReactXP (https://github.com/Microsoft/reactxp)'
+description: "Engineers @ Microsoft/Skype developing ReactXP (https://github.com/Microsoft/reactxp)"
 ---
 
 ## Engineers @ Microsoft/Skype developing ReactXP

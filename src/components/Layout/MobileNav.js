@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { Children, Toggle, Wrapper } from './MobileNavStyles';
+import { Children, Toggle, Wrapper } from "./MobileNavStyles";
 
 export const MobileNav = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -8,7 +8,7 @@ export const MobileNav = ({ children }) => {
 
   return (
     <Wrapper onClick={toggle}>
-      <Toggle>{isOpen ? 'Hide' : 'Show'} Menu</Toggle>
+      <Toggle>{isOpen ? "Hide" : "Show"} Menu</Toggle>
       <Children isOpen={isOpen}>
         {isOpen
           ? children

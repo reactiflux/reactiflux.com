@@ -3,8 +3,8 @@ title: Nicolas Gallagher
 date: 2017-12-07
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Engineer @ Twitter | Creator of [react-native-web](https://github.com/necolas/react-native-web)'
-people: '[@necolas](https://twitter.com/necolas)'
+description: "Engineer @ Twitter | Creator of [react-native-web](https://github.com/necolas/react-native-web)"
+people: "[@necolas](https://twitter.com/necolas)"
 ---
 
 ## Creator of react-native-web and ex-Twitter engineer

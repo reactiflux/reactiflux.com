@@ -3,8 +3,8 @@ title: Jordan Eldredge
 date: 2018-04-12
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Engineer @ Facebook working on [Nuclide](https://nuclide.io/) | Author of [Winamp2-js](https://github.com/captbaritone/winamp2-js)'
-people: '[@captbaritone](https://twitter.com/captbaritone)'
+description: "Engineer @ Facebook working on [Nuclide](https://nuclide.io/) | Author of [Winamp2-js](https://github.com/captbaritone/winamp2-js)"
+people: "[@captbaritone](https://twitter.com/captbaritone)"
 ---
 
 ## Working on Nuclide @ Facebook and author of the [Winamp2-js](https://www.npmjs.com/package/webamp) project.

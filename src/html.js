@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import smoothScrollToAnchor from '!raw-loader!./scripts/smoothScrollToAnchor.js';
+import smoothScrollToAnchor from "!raw-loader!./scripts/smoothScrollToAnchor.js";
 
 const smoothScrollScript = (
   <script

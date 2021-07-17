@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { background, pink } from '@utils/theme';
+import { background, pink } from "@utils/theme";
 
 export const Tag = styled.span`
   background: ${pink};

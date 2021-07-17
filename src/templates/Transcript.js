@@ -1,7 +1,7 @@
-import React from 'react';
-import { graphql, Link } from 'gatsby';
+import React from "react";
+import { graphql, Link } from "gatsby";
 
-import { FocusBoundary, Layout } from '@components';
+import { FocusBoundary, Layout } from "@components";
 
 export default function Transcript({ data }) {
   const { html, frontmatter } = data.markdownRemark;
@@ -24,7 +24,7 @@ export default function Transcript({ data }) {
                 {articles.map((article) => (
                   <li key={article.path}>
                     <Link
-                      to={'/transcripts/' + article.path}
+                      to={"/transcripts/" + article.path}
                       title={article.title}
                     >
                       {article.title}

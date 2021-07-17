@@ -1,20 +1,20 @@
-import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import React from "react";
+import { ThemeProvider } from "styled-components";
 
-import { useIsMobile } from '@hooks';
-import { getTheme } from '@utils/theme';
+import { useIsMobile } from "@hooks";
+import { getTheme } from "@utils/theme";
 
-import { Footer } from './Footer';
-import { Main, SidebarToggleButton, Wrapper } from './LayoutStyles';
-import { MainStyles } from './MainStyles';
-import { MarkdownStyles } from './MarkdownStyles';
-import { Menu } from './Menu';
-import { SEO } from './SEO';
+import { Footer } from "./Footer";
+import { Main, SidebarToggleButton, Wrapper } from "./LayoutStyles";
+import { MainStyles } from "./MainStyles";
+import { MarkdownStyles } from "./MarkdownStyles";
+import { Menu } from "./Menu";
+import { SEO } from "./SEO";
 
-import 'minireset.css';
-import 'typeface-poppins';
-import 'typeface-work-sans';
-import 'typeface-space-mono';
+import "minireset.css";
+import "typeface-poppins";
+import "typeface-work-sans";
+import "typeface-space-mono";
 
 export function Layout({
   as,
@@ -32,7 +32,7 @@ export function Layout({
       window.scrollTo({
         top: 0,
         left: 0,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   }, [isOpen]);
@@ -45,7 +45,7 @@ export function Layout({
         <Menu />
         <Main as={as} {...props} isOpen={isOpen} sidebar={sidebar}>
           <SEO title={title} description={description} />
-          {typeof children === 'function' ? children(setIsOpen) : children}
+          {typeof children === "function" ? children(setIsOpen) : children}
           {sidebar ? (
             <SidebarToggleButton isOpen={isOpen} onClick={toggleIsOpen} fixed />
           ) : null}
