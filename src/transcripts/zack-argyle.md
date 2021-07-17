@@ -3,8 +3,8 @@ title: Zack Argyle
 date: 2018-04-05
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Tech Lead @ Pinterest | [Pinterest PWA built w/ React - Performance Case Study](https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154)'
-people: '[@ZackArgyle](https://twitter.com/ZackArgyle)'
+description: "Tech Lead @ Pinterest | [Pinterest PWA built w/ React - Performance Case Study](https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154)"
+people: "[@ZackArgyle](https://twitter.com/ZackArgyle)"
 ---
 
 ## Tech Lead @ Pinterest

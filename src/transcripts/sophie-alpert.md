@@ -2,8 +2,8 @@
 title: Sophie Alpert (June 2016)
 date: 2016-06-09
 location: Q&A Channel Reactiflux
-description: 'Facebook React.js Core Team'
-people: '[@sophiebits](https://twitter.com/sophiebits)'
+description: "Facebook React.js Core Team"
+people: "[@sophiebits](https://twitter.com/sophiebits)"
 ---
 
 ## Facebook React Core Team Member
@@ -98,9 +98,9 @@ arguing about APIs is tiring but I think also important so we can try to make su
   }
   js = d.createElement(s);
   js.id = id;
-  js.src = '//connect.facebook.net/en_US/sdk.js';
+  js.src = "//connect.facebook.net/en_US/sdk.js";
   fjs.parentNode.insertBefore(js, fjs);
-})(document, 'script', 'facebook-jssdk');
+})(document, "script", "facebook-jssdk");
 ```
 
 _- jamestwiggle_

@@ -3,8 +3,8 @@ title: Clubhouse Team
 date: 2019-07-25
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Clubhouse is a project management platform for software development that brings everyone together to build better products. Clubhouse is built using tools like React Native, React, Relay, GraphQL, Gatsby and more.'
-people: '[@clubhouse](https://twitter.com/clubhouse) - [Eli Perkins](https://twitter.com/_eliperkins), [Jenel Myers](https://twitter.com/jenelmyers), [Nicolas Charpentier](https://twitter.com/charpeni_) from the mobile team @ Clubhouse.io.'
+description: "Clubhouse is a project management platform for software development that brings everyone together to build better products. Clubhouse is built using tools like React Native, React, Relay, GraphQL, Gatsby and more."
+people: "[@clubhouse](https://twitter.com/clubhouse) - [Eli Perkins](https://twitter.com/_eliperkins), [Jenel Myers](https://twitter.com/jenelmyers), [Nicolas Charpentier](https://twitter.com/charpeni_) from the mobile team @ Clubhouse.io."
 ---
 
 ## [Clubhouse][clubhouse]

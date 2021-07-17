@@ -1,12 +1,12 @@
-import React from 'react';
-import Headroom from 'react-headroom';
+import React from "react";
+import Headroom from "react-headroom";
 
-import { Reactiflux } from '@assets/logos';
-import { Link } from '@components';
-import { useIsMobile } from '@hooks';
+import { Reactiflux } from "@assets/logos";
+import { Link } from "@components";
+import { useIsMobile } from "@hooks";
 
-import { Logo, Space, Wrapper, Nav, BlackLivesMatter } from './MenuStyles';
-import { MobileNav } from './MobileNav';
+import { Logo, Space, Wrapper, Nav, BlackLivesMatter } from "./MenuStyles";
+import { MobileNav } from "./MobileNav";
 
 export function Menu() {
   const isMobile = useIsMobile();
@@ -18,7 +18,7 @@ export function Menu() {
     <HeadroomIfDesktop>
       <Wrapper>
         <BlackLivesMatter>
-          Black Lives Matter.{' '}
+          Black Lives Matter.{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"

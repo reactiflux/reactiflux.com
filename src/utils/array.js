@@ -10,7 +10,7 @@
 export const groupBy = (inputKey, xs) => {
   return xs.reduce((acc, x, ...rest) => {
     const key =
-      typeof inputKey === 'function' ? inputKey(x, ...rest) : x[inputKey];
+      typeof inputKey === "function" ? inputKey(x, ...rest) : x[inputKey];
     if (!acc[key]) {
       acc[key] = [];
     }

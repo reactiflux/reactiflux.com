@@ -3,8 +3,8 @@ title: Ryan Florence (April 2019)
 date: 2019-04-15
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'React Router Co-Author | [reacttraining.com](https://reacttraining.com/)'
-people: '[@ryanflorence](https://twitter.com/ryanflorence)'
+description: "React Router Co-Author | [reacttraining.com](https://reacttraining.com/)"
+people: "[@ryanflorence](https://twitter.com/ryanflorence)"
 ---
 
 ## Ryan Florence, [React Router](https://reacttraining.com/react-router/) Co-Author | [https://reacttraining.com/][react-training]
@@ -72,7 +72,7 @@ As for specific bootcamps, I dunno, I don't know much about them, I really just 
 **A:**
 
 ```jsx
-import React, { createContext, useReducer, useContext } from 'react';
+import React, { createContext, useReducer, useContext } from "react";
 
 const Context = createContext();
 
@@ -102,7 +102,7 @@ and then middle where is just useEffect
 
 ```js
 useEffect(() => {
-  localforage.setItem('state', state);
+  localforage.setItem("state", state);
 });
 ```
 
@@ -161,7 +161,7 @@ I miss that callback too for "transactional interactions" managing focus is usua
 But trying to access the the "new state" after setstate isn't ever necessary.
 
 ```js
-let newStuff = 'blah';
+let newStuff = "blah";
 setStuff(newStuff);
 doWhateverWithStuff(newStuff);
 ```

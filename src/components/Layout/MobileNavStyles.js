@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { background, boxShadow, mobilePadding, pink } from '@utils/theme';
+import { background, boxShadow, mobilePadding, pink } from "@utils/theme";
 
 export const Children = styled.div`
   background: white;
@@ -10,7 +10,7 @@ export const Children = styled.div`
   padding-bottom: ${mobilePadding};
   position: absolute;
   right: 0;
-  transform: translateY(${(props) => (props.isOpen ? '0' : '100%')});
+  transform: translateY(${(props) => (props.isOpen ? "0" : "100%")});
   transition: all 0.4s ease;
   z-index: -1;
 `;

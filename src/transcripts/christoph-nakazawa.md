@@ -3,8 +3,8 @@ title: Christoph Nakazawa
 date: 2017-07-13
 time: 10am-11:30am PDT
 location: Q&A Channel Reactiflux
-description: 'Engineer at Facebook London · Jest · Yarn · RNP'
-people: '[@cpojer](https://twitter.com/cpojer)'
+description: "Engineer at Facebook London · Jest · Yarn · RNP"
+people: "[@cpojer](https://twitter.com/cpojer)"
 ---
 
 ## Engineer at Facebook London · Jest · Yarn · RNP

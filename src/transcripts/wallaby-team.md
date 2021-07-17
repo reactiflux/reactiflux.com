@@ -2,9 +2,9 @@
 title: Wallaby Team
 date: 2021-01-19
 time: 1pm PT / 9PM GMT
-location: 'LIVE on YouTube + Q&A Channel on Reactiflux'
-description: 'The team that creates [Wallaby.js](https://wallabyjs.com/) and [Quokka.js](https://quokkajs.com/) will be on to answer questions about their products, JavaScript/TypeScript testing, and how they create software development tools.'
-people: '[Artem Govorov](https://twitter.com/ArtemGovorov) and [Simon McEnlly](https://twitter.com/smcenlly)'
+location: "LIVE on YouTube + Q&A Channel on Reactiflux"
+description: "The team that creates [Wallaby.js](https://wallabyjs.com/) and [Quokka.js](https://quokkajs.com/) will be on to answer questions about their products, JavaScript/TypeScript testing, and how they create software development tools."
+people: "[Artem Govorov](https://twitter.com/ArtemGovorov) and [Simon McEnlly](https://twitter.com/smcenlly)"
 ---
 
 <a name="does-the-debugger-work" href="#does-the-debugger-work">#</a> **Q:** Does the debugger work with asynchronous code or when fetching from APIs? – vansaltzman

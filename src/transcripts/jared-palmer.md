@@ -3,8 +3,8 @@ title: Jared Palmer
 date: 2018-05-03
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Engineering Lead @ [The Palmer Group](https://twitter.com/PalmerGroupHQ) | Author of [Formik](https://github.com/jaredpalmer/formik), [Razzle](https://github.com/jaredpalmer/razzle), [Backpack](https://github.com/jaredpalmer/backpack), [react-fns](https://github.com/jaredpalmer/react-fns), [After.js](https://github.com/jaredpalmer/after.js), etc.'
-people: '[@jaredpalmer](https://twitter.com/jaredpalmer)'
+description: "Engineering Lead @ [The Palmer Group](https://twitter.com/PalmerGroupHQ) | Author of [Formik](https://github.com/jaredpalmer/formik), [Razzle](https://github.com/jaredpalmer/razzle), [Backpack](https://github.com/jaredpalmer/backpack), [react-fns](https://github.com/jaredpalmer/react-fns), [After.js](https://github.com/jaredpalmer/after.js), etc."
+people: "[@jaredpalmer](https://twitter.com/jaredpalmer)"
 ---
 
 ## Engineering Lead @ The Palmer Group and prolific open source creator

@@ -3,7 +3,7 @@ title: React Native core team (May 2019)
 date: 2019-05-09
 time: 12:30-1:30pm PT / 7:30-8:30PM GMT
 location: Q&A Channel Reactiflux
-people: '[@reactnative](https://twitter.com/reactnative)'
+people: "[@reactnative](https://twitter.com/reactnative)"
 ---
 
 ## Follow the team

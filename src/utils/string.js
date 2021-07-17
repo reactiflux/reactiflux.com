@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const addLinks = (content) => {
   const regex = /((https?:\/\/)|(www\.))(\S+)(\w{2,4})(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-/]))?/g;
@@ -30,11 +30,11 @@ export const extractTags = (message) => {
   let content = message;
   // remove tags from content
   content = matches.reduce(
-    (content, match) => content.replace(match, ''),
+    (content, match) => content.replace(match, ""),
     content,
   );
   // remove leading whitespace and newlines
-  content = content.replace(/^\s+\n+/gi, '');
+  content = content.replace(/^\s+\n+/gi, "");
 
   return [tags, content];
 };

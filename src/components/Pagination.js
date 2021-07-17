@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { background, pink } from '@utils/theme';
+import { background, pink } from "@utils/theme";
 
 export const Pagination = styled.ol`
   display: flex;
@@ -14,7 +14,7 @@ export const Pagination = styled.ol`
     margin: 0 0.5rem;
     padding: 0 1rem;
 
-    &[aria-current='page'],
+    &[aria-current="page"],
     :hover,
     :focus {
       background: ${pink};

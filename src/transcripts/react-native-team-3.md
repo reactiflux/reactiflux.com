@@ -3,7 +3,7 @@ title: React Native core team (August 2019)
 date: 2019-08-08
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-people: '[@reactnative](https://twitter.com/reactnative)'
+people: "[@reactnative](https://twitter.com/reactnative)"
 ---
 
 ## Follow the team
@@ -146,7 +146,7 @@ Here you go: https://github.com/facebook/react-native/blob/5ec382d1be781ff941316
 – fkgozali
 
 ```typescript jsx
-import { useWindowDimensions } from 'react-native';
+import { useWindowDimensions } from "react-native";
 ```
 
 was added in this commit: https://github.com/facebook/react-native/commit/5ec382d1be781ff941316168a0657f163c1d2dac

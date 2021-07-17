@@ -3,8 +3,8 @@ title: Brian Vaughn
 date: 2017-05-11
 time: 1-2:30pm PT / 8-9:30PM GMT
 location: Q&A Channel Reactiflux
-description: 'React.js Core Team at Facebook. Creator of [react-virtualized](https://github.com/bvaughn/react-virtualized)'
-people: '[@brian_d_vaughn](https://twitter.com/brian_d_vaughn)'
+description: "React.js Core Team at Facebook. Creator of [react-virtualized](https://github.com/bvaughn/react-virtualized)"
+people: "[@brian_d_vaughn](https://twitter.com/brian_d_vaughn)"
 ---
 
 ## React.js Core Team at Facebook. Creator of [react-virtualized](https://github.com/bvaughn/react-virtualized)

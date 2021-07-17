@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { foreground } from '@utils/theme';
+import { foreground } from "@utils/theme";
 
-import { mainPadding } from './LayoutStyles';
+import { mainPadding } from "./LayoutStyles";
 
 export const Footer = styled.footer`
   ${mainPadding}

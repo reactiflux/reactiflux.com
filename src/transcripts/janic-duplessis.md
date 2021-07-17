@@ -3,8 +3,8 @@ title: Janic Duplessis
 date: 2019-05-16
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'React Native core contributor. Co-founder @ [th3rdwave](https://www.th3rdwave.coffee/).'
-people: '[@janicduplessis](https://twitter.com/janicduplessis)'
+description: "React Native core contributor. Co-founder @ [th3rdwave](https://www.th3rdwave.coffee/)."
+people: "[@janicduplessis](https://twitter.com/janicduplessis)"
 ---
 
 ## [Janic Duplessis](https://twitter.com/janicduplessis), React Native core contributor & Co-founder of [th3rdwave](https://www.th3rdwave.coffee/)

@@ -3,8 +3,8 @@ title: Sophie Alpert (August 2018)
 date: 2018-08-16
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Engineering Manager for React.js Team @ Facebook | The React Podcast – Episode #11 - [Inside React with Sophie Alpert](https://changelog.com/reactpodcast/11)'
-people: '[@sophiebits](https://twitter.com/sophiebits)'
+description: "Engineering Manager for React.js Team @ Facebook | The React Podcast – Episode #11 - [Inside React with Sophie Alpert](https://changelog.com/reactpodcast/11)"
+people: "[@sophiebits](https://twitter.com/sophiebits)"
 ---
 
 ## Engineering manager for the React.js Team @ Facebook

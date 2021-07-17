@@ -3,8 +3,8 @@ title: Jordan Walke
 date: 2017-01-26
 time: 12-1pm PT / 7-8PM GMT
 location: Q&A Channel Reactiflux
-description: 'React.js Creator'
-people: '[@jordwalke](https://twitter.com/jordwalke)'
+description: "React.js Creator"
+people: "[@jordwalke](https://twitter.com/jordwalke)"
 ---
 
 ## Facebook Engineer | Creator of [React.js](https://facebook.github.io/react/) & [Reason](https://facebook.github.io/reason/)

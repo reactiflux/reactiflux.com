@@ -3,8 +3,8 @@ title: Graphcool
 date: 2017-06-08
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Co-Founders of [Graphcool](https://www.graph.cool/). A Serverless GraphQL backend for frontend developers. Graphcool also created Learn Relay/Learn Apollo and organizes the [GraphQL-Europe](https://graphql-europe.org/) conference.'
-people: '[@sorenbs](https://twitter.com/sorenbs) & [@_schickling](https://twitter.com/_schickling)'
+description: "Co-Founders of [Graphcool](https://www.graph.cool/). A Serverless GraphQL backend for frontend developers. Graphcool also created Learn Relay/Learn Apollo and organizes the [GraphQL-Europe](https://graphql-europe.org/) conference."
+people: "[@sorenbs](https://twitter.com/sorenbs) & [@_schickling](https://twitter.com/_schickling)"
 ---
 
 ## Co-Founders of Graphcool, a serverless GraphQL backend for frontend developers.

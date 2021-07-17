@@ -3,8 +3,8 @@ title: Leland Richardson
 date: 2017-06-15
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Engineer at Airbnb heavily involved in React Native (Enzyme, React-Native Maps, Lottie, Animated etc.)'
-people: '[@intelligibabble](https://twitter.com/intelligibabble)'
+description: "Engineer at Airbnb heavily involved in React Native (Enzyme, React-Native Maps, Lottie, Animated etc.)"
+people: "[@intelligibabble](https://twitter.com/intelligibabble)"
 ---
 
 ## Engineer at Airbnb · React Native Maps · Enzyme · Lottie · Animated

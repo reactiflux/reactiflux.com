@@ -3,8 +3,8 @@ title: Vladimir Novick
 date: 2019-06-27
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Developer Relations @ [Hasura.io](http://hasura.io)'
-people: '[@VladimirNovick](https://twitter.com/VladimirNovick)'
+description: "Developer Relations @ [Hasura.io](http://hasura.io)"
+people: "[@VladimirNovick](https://twitter.com/VladimirNovick)"
 ---
 
 ## [Vladimir Novick](https://twitter.com/vladimirnovick), Developer Relations @ [Hasura.io][hasura]

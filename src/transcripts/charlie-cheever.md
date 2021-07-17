@@ -3,8 +3,8 @@ title: Charlie Cheever
 date: 2017-09-14
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Founder @ [Expo.io](https://expo.io) | Co-Founder Quora.com | More About [Charlie](https://betweenthewires.org/2017/05/31/charlie-cheever/)'
-people: '[@ccheever](https://twitter.com/ccheever)'
+description: "Founder @ [Expo.io](https://expo.io) | Co-Founder Quora.com | More About [Charlie](https://betweenthewires.org/2017/05/31/charlie-cheever/)"
+people: "[@ccheever](https://twitter.com/ccheever)"
 ---
 
 ## Founder of Expo, Cofounder of Quora

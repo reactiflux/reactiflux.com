@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import { Button } from '@components';
+import { Button } from "@components";
 
-import { Checkbox } from './Checkbox';
-import { Input, Textarea } from './Input';
-import { Select } from './Select';
+import { Checkbox } from "./Checkbox";
+import { Input, Textarea } from "./Input";
+import { Select } from "./Select";
 
-const NONE = 'NONE';
-const SUBMITTING = 'SUBMITTING';
-const SUCCESS = 'SUCCESS';
-const ERROR = 'ERROR';
+const NONE = "NONE";
+const SUBMITTING = "SUBMITTING";
+const SUCCESS = "SUCCESS";
+const ERROR = "ERROR";
 
 export const Form = React.forwardRef(function Form(
   {
@@ -29,7 +29,7 @@ export const Form = React.forwardRef(function Form(
   const [status, setStatus] = React.useState(NONE);
   const [fieldState, setFieldState] = React.useState(
     fields.reduce((acc, { defaultValue, name }) => {
-      acc[name] = typeof defaultValue !== 'undefined' ? defaultValue : '';
+      acc[name] = typeof defaultValue !== "undefined" ? defaultValue : "";
       return acc;
     }, {}),
   );
@@ -113,13 +113,13 @@ const renderForm = (fieldData, onSubmit, allowSubmit) => (
   <>
     {fieldData.map((field) => {
       switch (field.type) {
-        case 'checkbox':
+        case "checkbox":
           return <Checkbox key={field.name} {...field} />;
 
-        case 'select':
+        case "select":
           return <Select key={field.name} {...field} />;
 
-        case 'textarea':
+        case "textarea":
           return <Textarea key={field.name} {...field} />;
 
         default:

@@ -2,8 +2,8 @@
 title: Jonathan Carter & Geoffrey Goh
 date: 2016-07-07
 location: Q&A Channel Reactiflux
-description: 'Microsoft Visual Studio/CodePush Team | Topic is React Native continuous delivery with VSTS (Visual Studio Team Services), CodePush and HockeyApp.'
-people: '[@LostInTangent](https://twitter.com/LostInTangent)'
+description: "Microsoft Visual Studio/CodePush Team | Topic is React Native continuous delivery with VSTS (Visual Studio Team Services), CodePush and HockeyApp."
+people: "[@LostInTangent](https://twitter.com/LostInTangent)"
 ---
 
 ## Engineers @ Microsoft Working on CodePush

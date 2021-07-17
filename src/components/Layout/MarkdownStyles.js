@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
-import { foreground, pink } from '@utils/theme';
+import { foreground, pink } from "@utils/theme";
 
 export const MarkdownStyles = createGlobalStyle`
 .markdown {

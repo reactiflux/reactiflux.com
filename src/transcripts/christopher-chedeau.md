@@ -2,8 +2,8 @@
 title: Christopher Chedeau
 date: 2016-09-08
 location: Q&A Channel Reactiflux
-description: 'Facebook React Core Team'
-people: '[@Vjeux](https://twitter.com/Vjeux)'
+description: "Facebook React Core Team"
+people: "[@Vjeux](https://twitter.com/Vjeux)"
 ---
 
 ## Facebook React Core Team Member

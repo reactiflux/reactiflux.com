@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { background, pink } from '@utils/theme';
+import { background, pink } from "@utils/theme";
 
 const Checkmark = styled.span`
   align-items: center;
@@ -74,7 +74,7 @@ export const Checkbox = ({ label, ...props }) => {
           type="checkbox"
           {...props}
           onKeyUp={(e) => {
-            if (e.key === 'Enter') {
+            if (e.key === "Enter") {
               onChange(e);
             }
           }}

@@ -3,8 +3,8 @@ title: Jamon Holmgren
 date: 2019-02-07
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Co-Founder & CTO @ Infinite Red, React Native Core, Chain React: The React Native Conference Organizer'
-people: '[@jamonholmgren](https://twitter.com/jamonholmgren)'
+description: "Co-Founder & CTO @ Infinite Red, React Native Core, Chain React: The React Native Conference Organizer"
+people: "[@jamonholmgren](https://twitter.com/jamonholmgren)"
 ---
 
 <a name="balance-community-needs-infinte-reds" href="#balance-community-needs-infinte-reds">#</a> **Q:** How do you balance community needs and Infinte Red’s needs? — orta

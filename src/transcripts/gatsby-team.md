@@ -3,8 +3,8 @@ title: Gatsby Team
 date: 2018-12-13
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Founder of [Gatsby.js](https://www.gatsbyjs.org/)'
-people: '[@kylemathews](https://twitter.com/kylemathews)'
+description: "Founder of [Gatsby.js](https://www.gatsbyjs.org/)"
+people: "[@kylemathews](https://twitter.com/kylemathews)"
 ---
 
 <a name="see-future-browserappspwa-comparison-old2" href="#see-future-browserappspwa-comparison-old2">#</a> **Q:** How do you see the future of Browser-apps/PWA in comparison to "old2 executables" on windows? — spYro

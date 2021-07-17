@@ -3,8 +3,8 @@ title: Nader Dabit
 date: 2017-09-29
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Founder @ [React Native Training](http://reactnative.training/) | Host of [React Native Radio](https://devchat.tv/react-native-radio) | Author of [React Native in Action](https://www.manning.com/books/react-native-in-action)'
-people: '[@dabit3](https://twitter.com/dabit3)'
+description: "Founder @ [React Native Training](http://reactnative.training/) | Host of [React Native Radio](https://devchat.tv/react-native-radio) | Author of [React Native in Action](https://www.manning.com/books/react-native-in-action)"
+people: "[@dabit3](https://twitter.com/dabit3)"
 ---
 
 ## Founder of React Native Training and host of React Native Radio

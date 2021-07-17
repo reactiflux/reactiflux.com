@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 import {
   Button,
@@ -9,8 +9,8 @@ import {
   Link,
   Modal,
   Offer,
-} from '@components';
-import { toQueryString } from '@utils/toQueryString';
+} from "@components";
+import { toQueryString } from "@utils/toQueryString";
 
 const ResultsFooter = styled.div`
   margin: 8rem 2rem;
@@ -25,62 +25,62 @@ const ResultsFooter = styled.div`
   }
 `;
 
-const LOADING = 'LOADING';
-const SUCCESS = 'SUCCESS';
-const ERROR = 'ERROR';
+const LOADING = "LOADING";
+const SUCCESS = "SUCCESS";
+const ERROR = "ERROR";
 
 const fields = [
   {
-    name: 'type',
-    type: 'select',
-    defaultValue: 'hiring',
+    name: "type",
+    type: "select",
+    defaultValue: "hiring",
     options: [
-      { value: 'hiring', label: "I'm looking for a job" },
-      { value: 'for-hire', label: "I'm looking for an employee" },
+      { value: "hiring", label: "I'm looking for a job" },
+      { value: "for-hire", label: "I'm looking for an employee" },
     ],
   },
   {
-    name: 'range',
-    type: 'select',
-    defaultValue: '180',
+    name: "range",
+    type: "select",
+    defaultValue: "180",
     options: [
-      { value: '7', label: 'offers posted in last week' },
-      { value: '30', label: 'offers posted in last 30 days' },
-      { value: '90', label: 'offers posted in last 3 months' },
-      { value: '180', label: 'offers posted in last 6 months' },
-      { value: '365', label: 'offers posted in last year' },
+      { value: "7", label: "offers posted in last week" },
+      { value: "30", label: "offers posted in last 30 days" },
+      { value: "90", label: "offers posted in last 3 months" },
+      { value: "180", label: "offers posted in last 6 months" },
+      { value: "365", label: "offers posted in last year" },
     ],
   },
   {
-    name: 'limit',
-    type: 'select',
-    defaultValue: '50',
+    name: "limit",
+    type: "select",
+    defaultValue: "50",
     options: [
-      { value: '50', label: 'load 50 results at a time' },
-      { value: '100', label: 'load 100 results at a time' },
+      { value: "50", label: "load 50 results at a time" },
+      { value: "100", label: "load 100 results at a time" },
     ],
   },
   {
-    name: 'query',
-    type: 'text',
-    placeholder: 'Text search',
+    name: "query",
+    type: "text",
+    placeholder: "Text search",
   },
   {
-    label: 'Employer helps with visa',
-    name: 'provideVisa',
-    type: 'checkbox',
+    label: "Employer helps with visa",
+    name: "provideVisa",
+    type: "checkbox",
     defaultValue: false,
   },
   {
-    label: 'Accepts remote candidates',
-    name: 'allowRemote',
-    type: 'checkbox',
+    label: "Accepts remote candidates",
+    name: "allowRemote",
+    type: "checkbox",
     defaultValue: false,
   },
   {
-    label: 'Offer is an internship / no exp. required',
-    name: 'internship',
-    type: 'checkbox',
+    label: "Offer is an internship / no exp. required",
+    name: "internship",
+    type: "checkbox",
     defaultValue: false,
   },
 ];
@@ -190,7 +190,7 @@ const Jobs = () => {
             <p>
               If the job post does not contain a dedicated email, link, or phone
               number, you can click either the offer date to open the original
-              message in our{' '}
+              message in our{" "}
               <Link to="https://discord.gg/R942bNb">
                 <strong>#job-board</strong> channel
               </Link>
@@ -198,7 +198,7 @@ const Jobs = () => {
               contact the person by sending them a direct message.
             </p>
             <p>
-              If you don't already have one, you will need to create a (free!){' '}
+              If you don't already have one, you will need to create a (free!){" "}
               <Link to="https://discord.com/">Discord</Link> account.
             </p>
           </Modal>

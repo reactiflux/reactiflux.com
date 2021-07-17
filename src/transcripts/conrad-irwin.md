@@ -4,7 +4,7 @@ date: 2019-06-06
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
 description: Conrad is the co-founder & CTO @ Superhuman. Superhuman is an amazing email client built with React/Electron. It's basically VIM for email.
-people: '[@conradirwin](https://twitter.com/conradirwin) / [@superhuman](https://twitter.com/superhuman)'
+people: "[@conradirwin](https://twitter.com/conradirwin) / [@superhuman](https://twitter.com/superhuman)"
 ---
 
 ## Conrad Irwin, Co-founder & CTO of [Superhuman][superhuman], an Email Client Built with React/Electron

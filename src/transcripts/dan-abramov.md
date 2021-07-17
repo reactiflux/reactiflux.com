@@ -2,8 +2,8 @@
 title: Dan Abramov
 date: 2016-04-21
 location: Q&A Channel Reactiflux
-description: 'Facebook React.js Core Team'
-people: '[@dan_abramov](https://twitter.com/dan_abramov)'
+description: "Facebook React.js Core Team"
+people: "[@dan_abramov](https://twitter.com/dan_abramov)"
 ---
 
 ## Facebook React Core Team Member

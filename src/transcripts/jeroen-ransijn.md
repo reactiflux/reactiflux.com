@@ -4,7 +4,7 @@ date: 2018-11-15
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
 description: "Design Systems Lead @ Segment, spearheading the design, development and adoption of Segment's open-source design system, [Evergreen](https://evergreen.segment.com/)"
-people: '[@Jeroen_Ransijn](https://twitter.com/Jeroen_Ransijn)'
+people: "[@Jeroen_Ransijn](https://twitter.com/Jeroen_Ransijn)"
 ---
 
 ## Design Systems Lead @ Segment, leading development of [Evergreen](https://evergreen.segment.com/).

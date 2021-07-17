@@ -3,8 +3,8 @@ title: Cheng Lou
 date: 2017-01-12
 time: 11:30-1pm PT / 6:30-8PM GMT
 location: Q&A Channel Reactiflux
-description: 'Facebook Engineer focused on Reason & Messenger.com'
-people: '[@_chenglou](https://twitter.com/_chenglou)'
+description: "Facebook Engineer focused on Reason & Messenger.com"
+people: "[@_chenglou](https://twitter.com/_chenglou)"
 ---
 
 ## Facebook Engineer | [Reason](https://facebook.github.io/reason/) & [Messenger.com](https://www.messenger.com/)

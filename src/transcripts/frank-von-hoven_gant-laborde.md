@@ -3,8 +3,8 @@ title: Frank von Hoven & Gant Laborde
 date: 2019-09-05
 time: 1-2pm PT / 8-9pm GMT
 location: Q&A Channel Reactiflux
-description: 'Frank is a Senior Software Engineer at Infinite Red, Organizer at Chain React Conference, and Editor-in-Chief of The React Native Newsletter. Gant is CTS of Infinite Red, Organizer @ChainReactConf, Open Sourcerer ([Ignite](https://github.com/infinitered/ignite), Reactotron, etc).'
-people: '[@infinite_frank](https://twitter.com/infinite_frank) & [@GantLaborde](https://twitter.com/GantLaborde)'
+description: "Frank is a Senior Software Engineer at Infinite Red, Organizer at Chain React Conference, and Editor-in-Chief of The React Native Newsletter. Gant is CTS of Infinite Red, Organizer @ChainReactConf, Open Sourcerer ([Ignite](https://github.com/infinitered/ignite), Reactotron, etc)."
+people: "[@infinite_frank](https://twitter.com/infinite_frank) & [@GantLaborde](https://twitter.com/GantLaborde)"
 ---
 
 ## Frank von Hoven & Gant Laborde, Senior Software Engineer & CIO at Infinite Red, respectively
@@ -120,7 +120,7 @@ in your Reactotron-Config.js
 ```javascript
 ReactotronConfig = {
   clearOnLoad: true,
-  host: 'localhost',
+  host: "localhost",
   useAsyncStorage: true,
   state: {
     initial: true,

@@ -1,7 +1,7 @@
 ---
 title: The new code of conduct
 author: vcarl
-date: '2020-09-22'
+date: "2020-09-22"
 description: "Today we're announcing 3 changes: a new Reactiflux code of conduct, an anonymous reporting tool on our website, and a mandatory opt-in acceptance of that code of conduct before members may participate in the chat."
 ---
 

@@ -3,8 +3,8 @@ title: Peggy Rayzis & James Baxley
 date: 2018-05-10
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Open Source Engineers @ [Apollo](https://twitter.com/apollographql) | Building Apollo Client, Engine, Server, and other tools to help you incrementally adopt GraphQL.'
-people: '[@jbaxleyiii](https://twitter.com/jbaxleyiii) & [@peggyrayzis](https://twitter.com/peggyrayzis)'
+description: "Open Source Engineers @ [Apollo](https://twitter.com/apollographql) | Building Apollo Client, Engine, Server, and other tools to help you incrementally adopt GraphQL."
+people: "[@jbaxleyiii](https://twitter.com/jbaxleyiii) & [@peggyrayzis](https://twitter.com/peggyrayzis)"
 ---
 
 ## Open Source Engineers @ Apollo building Apollo Client, Engine, Server, and other tools to incrementally adopt GraphQL.

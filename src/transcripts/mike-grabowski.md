@@ -2,8 +2,8 @@
 title: Mike Grabowski
 date: 2016-06-23
 location: Q&A Channel Reactiflux
-description: 'React Native Core Contributor | RNPM Author | Topic is native modules, installing dependencies, tooling & native shipping'
-people: '[@grabbou](https://twitter.com/grabbou)'
+description: "React Native Core Contributor | RNPM Author | Topic is native modules, installing dependencies, tooling & native shipping"
+people: "[@grabbou](https://twitter.com/grabbou)"
 ---
 
 ## React Native Core Contributor

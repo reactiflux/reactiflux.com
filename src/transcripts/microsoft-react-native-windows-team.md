@@ -3,8 +3,8 @@ title: Microsoft React Native Windows Team
 date: 2019-10-17
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Eric, Harini, and Paul are engineers @ Microsoft. They will be on to discuss their work on [React Native for Windows](https://github.com/microsoft/react-native-windows)'
-people: '[@EricRozell](https://twitter.com/EricRozell) & [@Harini_Kannan](https://twitter.com/Harini_Kannan) & [@pag3rd](https://twitter.com/pag3rd)'
+description: "Eric, Harini, and Paul are engineers @ Microsoft. They will be on to discuss their work on [React Native for Windows](https://github.com/microsoft/react-native-windows)"
+people: "[@EricRozell](https://twitter.com/EricRozell) & [@Harini_Kannan](https://twitter.com/Harini_Kannan) & [@pag3rd](https://twitter.com/pag3rd)"
 ---
 
 ## Follow the team

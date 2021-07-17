@@ -3,8 +3,8 @@ title: Jared Palmer
 date: 2021-01-14
 time: 1pm PT / 9PM GMT
 location: Q&A Channel on Reactiflux
-description: 'Creator of [Formik](https://formik.org/), [Razzle](https://razzlejs.org/), [TSDX](https://tsdx.io/), and more. Founder of [Formium](https://twitter.com/FormiumHQ) and host of [The Undefined Podcast](https://twitter.com/theundefinedio)'
-people: '[Jared Palmer](https://twitter.com/jaredpalmer)'
+description: "Creator of [Formik](https://formik.org/), [Razzle](https://razzlejs.org/), [TSDX](https://tsdx.io/), and more. Founder of [Formium](https://twitter.com/FormiumHQ) and host of [The Undefined Podcast](https://twitter.com/theundefinedio)"
+people: "[Jared Palmer](https://twitter.com/jaredpalmer)"
 ---
 
 <a name="what-were-some-of-the" href="#what-were-some-of-the">#</a> **Q:** What were some of the biggest pain points you ran into while developing Formium? – JosNun

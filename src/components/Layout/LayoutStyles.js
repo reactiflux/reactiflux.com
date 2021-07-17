@@ -1,7 +1,7 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
+import React from "react";
+import styled, { css } from "styled-components";
 
-import { pink } from '@utils/theme';
+import { pink } from "@utils/theme";
 
 export const mainPadding = css`
   padding: 10px;
@@ -58,7 +58,7 @@ const standardLayout = css`
     display: grid;
     grid-template-columns: 60% 100%;
     transform: translateX(
-      ${(props) => (props.isOpen ? '0' : 'calc(10px - 60%)')}
+      ${(props) => (props.isOpen ? "0" : "calc(10px - 60%)")}
     );
     transition: 0.4s ease transform;
 
@@ -123,7 +123,7 @@ const standardLayout = css`
 
 const largeTitle = css`
   h1 {
-    font-family: 'Space Mono', monospace;
+    font-family: "Space Mono", monospace;
     font-size: ${title.responsive(18)};
     letter-spacing: ${title.responsive(-1.3)};
     line-height: 1;
@@ -131,7 +131,7 @@ const largeTitle = css`
 
     span {
       color: ${pink};
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       font-size: ${title.responsive(3.6)};
       font-weight: 600;
       left: ${title.responsive(69)};
@@ -161,7 +161,7 @@ export const Main = styled.main`
 
   ${mainPadding}
 
-  ${(props) => (props.homepage || props.largeTitle ? largeTitle : '')}
+  ${(props) => (props.homepage || props.largeTitle ? largeTitle : "")}
   ${(
     props,
   ) => (props.homepage ? homeLayout : standardLayout)}
@@ -204,7 +204,7 @@ export const SidebarButton = styled.button`
 export function SidebarToggleButton(props) {
   return (
     <SidebarButton {...props}>
-      {props.isOpen ? 'Hide' : 'Show'} Menu
+      {props.isOpen ? "Hide" : "Show"} Menu
     </SidebarButton>
   );
 }
@@ -215,7 +215,7 @@ export const Wrapper = styled.div`
   min-height: ${(props) =>
     props.theme.mobilePadding
       ? `calc(100vh - ${props.theme.mobilePadding})`
-      : '100vh'};
+      : "100vh"};
 
   .headroom-wrapper {
     position: relative;

@@ -3,7 +3,7 @@ title: React Native core team (January 2019)
 date: 2019-01-24
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-people: '[@reactnative](https://twitter.com/reactnative)'
+people: "[@reactnative](https://twitter.com/reactnative)"
 ---
 
 ## Follow the team

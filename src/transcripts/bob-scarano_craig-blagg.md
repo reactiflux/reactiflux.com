@@ -3,8 +3,8 @@ title: Bob Scarano & Craig Blagg
 date: 2019-08-15
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Bob is the team lead of the Mobile Content-Editing team at Squarespace. Craig is the team lead of the Design Platform team.'
-people: '[@scarano](https://twitter.com/scarano) & [@iwillreply](https://twitter.com/iwillreply)'
+description: "Bob is the team lead of the Mobile Content-Editing team at Squarespace. Craig is the team lead of the Design Platform team."
+people: "[@scarano](https://twitter.com/scarano) & [@iwillreply](https://twitter.com/iwillreply)"
 ---
 
 ## Bob Scarano & Craig Blagg, team leads at Squarespace

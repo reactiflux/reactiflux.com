@@ -1,7 +1,7 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import { ArticleLink, Layout, Link, Pagination } from '@components';
+import { ArticleLink, Layout, Link, Pagination } from "@components";
 
 export default function BlogIndex(props) {
   const { currentPage, pageCount } = props.pageContext;
@@ -20,7 +20,7 @@ export default function BlogIndex(props) {
               const page = i + 1;
               return (
                 <li key={page}>
-                  <Link to={`/blog/${page > 1 ? page : ''}`}>{page}</Link>
+                  <Link to={`/blog/${page > 1 ? page : ""}`}>{page}</Link>
                 </li>
               );
             })}
