@@ -31,7 +31,7 @@ Instead of asking, scan through the list of channels for any that seem like obvi
 
 ## Ping people only when needed
 
-Pings (@-mentions of other users) work well if it's unclear who a response is for, or if there's been some time between messages and you want to ensure they see it.
+Pings (@-mentions of other users), replies, and threads work well if it's unclear who a response is for, or if there's been some time between messages and you want to ensure they see it.
 
 It's very tempting to try to get more attention to your question by pinging a member of Reactiflux, but please don't. They may not actually be online, they may not be able to help, and they may be in a completely different timezone--nobody likes push notifications at 3am from an impatient stranger.
 
