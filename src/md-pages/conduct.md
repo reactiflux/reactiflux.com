@@ -10,7 +10,7 @@ This is not a legal document, members should follow the spirit of these guidelin
 
 ## Conduct
 
-1. **Don't be mean or rude.** Please be kind and courteous, friendly and professional.
+1. **Please be kind and courteous**, friendly and professional. There’s no need to be mean or rude.
 2. **Do not direct message someone unless they’ve granted permission in the server** _(or you need to discuss a moderation issue with staff)_. Reactiflux is a public community. Communicate in the open.
 3. **Please use gender neutral language _(Discord display names also work great!)_.** If somebody requests you use a pronoun, please respect their wishes.
    - We are committed to providing a friendly, safe and welcoming environment for all, regardless of level of experience, gender identity and expression, sexual orientation, disability, neurodivergence, personal appearance, body, race, ethnicity, age, religion, nationality, or other similar characteristic.
