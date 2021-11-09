@@ -2,13 +2,13 @@
 title: Self Promotion
 ---
 
-Reactiflux's members do lots of cool stuff, and we'd love for you to share what you've done!
+Reactiflux's members do lots of cool stuff, and we'd love for you to share what you've done! However Reactiflux is fundamentally a peer group, not an advertising channel or a free audience. Members who join only to promote something have what they share more aggressively moderated than members who participate in the community in other ways.
 
-We have 2 channels where self-promotion is expected, and some other relevant channels as well. We ask that you share it only once, unless there's a significant milestone or it's relevant to someone's question.
+We have several channels where self-promotion is expected, and some other relevant channels as well. We ask that you share it only once, unless there's a significant milestone or it's relevant to someone's question.
 
 ## [#i-made-this](https://discord.gg/GaCSDfm)
 
-New side projects, libraries, or other works you want to show off. This is predominantly meant as a showcase for individuals.
+New side projects, libraries, blog posts, or other works you want to show off. This is predominantly meant as a showcase for individuals.
 
 ## [#news-and-links](https://discord.gg/TEYnXKw)
 
@@ -20,7 +20,15 @@ Announcing an upcoming conference or discussing an ongoing conference are both e
 
 ## [#job-board](https://discord.gg/R942bNb)
 
-Our job board is our most strictly moderated channel. Please only post at most once a week (there's some wiggle room on posting multiple positions, but please don't dump multiple postings). Posts should follow the rules and recommendataions in the channel description so they can be properly displayed and searched on our [jobs page](/jobs/).
+Our job board is our most strictly moderated channel. Posts should follow the rules and recommendataions in the channel description so they can be properly displayed and searched on our [jobs page](/jobs/). Please post at most once a week. There's some wiggle room when posting multiple positions, but please don't flood the channel.
+
+Posts must start with `[FORHIRE]` or `[HIRING]`. Lead with the location of the position and include LOCAL, REMOTE, INTERN, VISA, etc. and keep the message reasonably formatted & a reasonable length. Provide a means for applicants to contact you.
+
+Jobs are full-time salaried positions, or part- or full-time contract roles. We don't allow small gigs "pay for help" schemes, equity-only compensation, [spec work](https://www.nospec.com/), or other types of uncompensated labor. We do not have a channel for finding project collaborators.
+
+### Surveys
+
+Reactiflux only allows surveys from private organizations if they're shared by an active member of the community. Surveys may be posted if the results will be public or used for academic purposes, and should only be shared once. Fair warning: most surveys get relatively low uptake, they just aren't of interest to many in the community.
 
 ### Self promotion vs advertising
 
