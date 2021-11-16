@@ -10,17 +10,17 @@ This is not a legal document, members should follow the spirit of these guidelin
 
 ## Conduct
 
-1. Please be kind and courteous, friendly and professional. There’s no need to be mean or rude.
-1. Communicate in the open. Reactiflux is a public community, please do not direct message someone unless they’ve granted permission in the server or you need to discuss a moderation issue with staff.
-1. We are committed to providing a friendly, safe and welcoming environment for all, regardless of level of experience, gender identity and expression, sexual orientation, disability, neurodivergence, personal appearance, body, race, ethnicity, age, religion, nationality, or other similar characteristic.
-   - If you don't know someone's pronouns, please use gender neutral language (Discord display names also work great!), and if somebody requests you use a pronoun, please respect their wishes.
-1. Respect that people have differences of opinion and that every design or implementation choice carries a trade-off and numerous costs. There is seldom a single right answer.
-1. When providing help, answer their question before making stylistic or tool suggestions. Please keep unstructured critique to a minimum.
-1. Please avoid using an alias (i.e. display name) that might detract from a friendly, safe and welcoming environment for all.
-1. We will exclude you from interaction if you insult, demean or harass anyone. That is not welcome behavior. We interpret the term “harassment” as including the definition in the [Citizen Code of Conduct](https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md#4-unacceptable-behavior). In particular, we don’t tolerate behavior that excludes people in socially marginalized groups.
-1. Likewise any destructive behavior is not welcome.
-1. Private harassment is also unacceptable. No matter who you are, if you feel you have been or are being harassed or made uncomfortable by a community member, please contact one of the staff, or [submit a report anonymously](/contact/). Whether you’re a regular contributor or a newcomer, we care about making this community a safe place for you and we’ve got your back.
-1. Follow our [Self Promotion](/promotion/) guidelines when promoting a link or opportunity.
+1. **Please be kind and courteous**, friendly and professional. There’s no need to be mean or rude.
+1. **Do not direct message someone unless they’ve granted permission in the server** _(or you need to discuss a moderation issue with staff)_. Reactiflux is a public community. Communicate in the open.
+1. **Please use gender neutral language _(Discord display names also work great!)_.** If somebody requests you use a pronoun, please respect their wishes.
+   - We are committed to providing a friendly, safe and welcoming environment for all, regardless of level of experience, gender identity and expression, sexual orientation, disability, neurodivergence, personal appearance, body, race, ethnicity, age, religion, nationality, or other similar characteristic.
+1. **Respect that people have differences of opinion.** Every design or implementation choice carries a trade-off and numerous costs. There is seldom a single right answer.
+1. **Keep unstructured critique to a minimum.** When providing help, answer their question before making stylistic or tool suggestions.
+1. **Avoid using an alias or display name that might be offensive.** Names that detract from a friendly, safe and welcoming environment for all will be addressed.
+1. **Any form of harassment will not be tolerated.** We will exclude you from interaction if you insult, demean or harass anyone. In particular, we don’t tolerate behavior that excludes people in socially marginalized groups. That is not welcome behavior. We interpret the term “harassment” as including the definition in the [Citizen Code of Conduct](https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md#4-unacceptable-behavior).
+1. Likewise any **destructive behavior is not welcome.**
+1. **Private harassment is also unacceptable.** No matter who you are, if you feel you have been or are being harassed or made uncomfortable by a community member, please contact one of the staff, or [submit a report anonymously](/contact/). Whether you’re a regular contributor or a newcomer, we care about making this community a safe place for you and we’ve got your back.
+1. **Follow our [Self Promotion Guidelines](/promotion/)** when promoting a link or opportunity.
 
 ## Moderation
 
