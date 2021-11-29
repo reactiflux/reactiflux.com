@@ -1,5 +1,4 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
 import { Layout, Link } from '@components';
@@ -135,31 +134,3 @@ const Event = ({
     </article>
   );
 };
-
-export const pageQuery = graphql`
-  query ScheduleTranscripts {
-    transcripts: allFile(
-      filter: { sourceInstanceName: { eq: "transcripts" } }
-      sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
-    ) {
-      nodes {
-        name
-        relativeDirectory
-        childMarkdownRemark {
-          html
-          frontmatter {
-            date
-            dateGroup: date(formatString: "MMMM YYYY")
-            dateString: date(formatString: "dddd MMMM Do, YYYY")
-            description
-            location
-            people
-            recording
-            time
-            title
-          }
-        }
-      }
-    }
-  }
-`;

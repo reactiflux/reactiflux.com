@@ -1,5 +1,4 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 
 import { FocusBoundary, Layout, Link } from '@components';
 import { getAnchor } from '@utils/anchor';
