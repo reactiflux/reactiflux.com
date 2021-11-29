@@ -19,7 +19,7 @@ export default function BlogIndex(props) {
               const page = i + 1;
               return (
                 <li key={page}>
-                  <Link to={`/blog/${page > 1 ? page : ''}`}>{page}</Link>
+                  <Link href={`/blog/${page > 1 ? page : ''}`}>{page}</Link>
                 </li>
               );
             })}

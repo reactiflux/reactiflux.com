@@ -20,7 +20,7 @@ export default function Transcript({ data }) {
                     .map(({ value }) => (
                       <li key={value}>
                         <Link
-                          to={getAnchor(value)}
+                          href={getAnchor(value)}
                           onClick={() => {
                             setSidebar(false);
                             document

@@ -63,7 +63,7 @@ export const Offer = ({
     <Wrapper last={last}>
       <p>
         {tags.map((tag) => (
-          <Tag>{tag}</Tag>
+          <Tag key={tag}>{tag}</Tag>
         ))}
       </p>
       {content.trim() ? (
@@ -75,11 +75,13 @@ export const Offer = ({
       <div>
         <p>
           Posted by{' '}
-          <Link to={getAuthorLink(author.id)}>
+          <Link href={getAuthorLink(author.id)}>
             <strong>{author.name}</strong>
           </Link>{' '}
           on{' '}
-          <Link to={getJobLink(id)}>{moment(date).format('MMMM Do YYYY')}</Link>
+          <Link href={getJobLink(id)}>
+            {moment(date).format('MMMM Do YYYY')}
+          </Link>
         </p>
         {onClickGetInTouch ? (
           <GetInTouch>

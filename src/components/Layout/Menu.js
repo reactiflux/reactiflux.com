@@ -28,18 +28,18 @@ export function Menu() {
           </a>
         </BlackLivesMatter>
         <Nav>
-          <Link to="/">
+          <Link href="/">
             <Logo src={Reactiflux} alt="Reactiflux" />
           </Link>
           <Space />
           <MobileNavIfMobile>
-            <Link to="/learning/">Learning</Link>
-            <Link to="/tips/">Tips</Link>
-            <Link to="/schedule/">Q&A Schedule</Link>
-            <Link to="/transcripts/">Transcripts</Link>
-            <Link to="/conduct/">Code of Conduct</Link>
-            <Link to="/jobs/">Jobs</Link>
-            <Link to="/contact/">Contact</Link>
+            <Link href="/learning/">Learning</Link>
+            <Link href="/tips/">Tips</Link>
+            <Link href="/schedule/">Q&A Schedule</Link>
+            <Link href="/transcripts/">Transcripts</Link>
+            <Link href="/conduct/">Code of Conduct</Link>
+            <Link href="/jobs/">Jobs</Link>
+            <Link href="/contact/">Contact</Link>
           </MobileNavIfMobile>
         </Nav>
       </Wrapper>

@@ -1,13 +1,14 @@
 import styled, { keyframes } from 'styled-components';
 
 import { background, blue, boxShadow, pink } from '@utils/theme';
+import Image from 'next/image';
 
 const spin = keyframes`
  from { transform: rotate(0); }
  to { transform: rotate(360deg); }
 `;
 
-export const Logo = styled.img`
+export const Logo = styled(Image)`
   padding: 6px;
   animation: ${spin} 3s linear infinite;
 `;

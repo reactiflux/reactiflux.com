@@ -35,15 +35,15 @@ export default function Schedule({ data }) {
           interesting developers in the React community. These Q&A’s usually
           take place on Thursdays from 1pm - 2pm PT. If you want to hear from
           someone specific in the community, let us know by contacting us via{' '}
-          <Link to="https://twitter.com/reactiflux">Twitter</Link> or ping an
+          <Link href="https://twitter.com/reactiflux">Twitter</Link> or ping an
           admin or moderator in the{' '}
-          <Link to="https://discord.gg/BkSU7Ju">#reactiflux-moderation</Link>{' '}
+          <Link href="https://discord.gg/BkSU7Ju">#reactiflux-moderation</Link>{' '}
           channel on discord.
         </p>
         {Object.keys(upcomingEvents).length > 0 && (
           <>
             <hr />
-            <h2>Upcoming Q&A's & Meetups</h2>
+            <h2>Upcoming Q&A’s & Meetups</h2>
             {Object.entries(upcomingEvents)
               .reverse()
               .map(([dateGroup, events]) => (
@@ -57,7 +57,7 @@ export default function Schedule({ data }) {
           </>
         )}
         <EventsDivider />
-        <h2>Past Q&A's & Meetups</h2>
+        <h2>Past Q&A’s & Meetups</h2>
         {Object.entries(pastEvents).map(([dateGroup, events]) => (
           <React.Fragment key={dateGroup}>
             <h2>
@@ -122,7 +122,7 @@ const Event = ({
         {html && !isUpcoming ? (
           <li>
             <Link
-              to={`/transcripts${
+              href={`/transcripts${
                 relativeDirectory ? `/${relativeDirectory}` : ''
               }/${name}`}
             >

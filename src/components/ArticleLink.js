@@ -28,7 +28,9 @@ export function ArticleLink({ childMarkdownRemark, relativeDirectory, name }) {
   const { title, description } = childMarkdownRemark.frontmatter;
 
   return (
-    <StyledLink to={`/blog/${relativeDirectory}/${name.replace('index', '')}`}>
+    <StyledLink
+      href={`/blog/${relativeDirectory}/${name.replace('index', '')}`}
+    >
       <article>
         <h2>{title}</h2>
         {description ? <p>{description}</p> : null}
