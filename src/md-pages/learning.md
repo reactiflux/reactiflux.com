@@ -168,6 +168,7 @@ These other listed tutorials are also excellent and may explain things in a diff
 - Understanding how React works conceptually / internally
   - [React as a UI Runtime](https://overreacted.io/react-as-a-ui-runtime/) (deep dive - not _required_ reading, but will definitely help you understand React better)
   - [Mark Erikson: A (Mostly) Complete Guide to React Rendering Behavior](https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/)
+  - [Build your own React](https://pomb.us/build-your-own-react/)
 - State and props
   - [A Visual Guide to State in React](https://daveceddia.com/visual-guide-to-state-in-react/)
 - Component lifecycles
