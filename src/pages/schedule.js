@@ -1,9 +1,9 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import styled from 'styled-components';
+import React from "react";
+import { graphql } from "gatsby";
+import styled from "styled-components";
 
-import { Layout, Link } from '@components';
-import { groupBy, partition } from '@utils/array';
+import { Layout, Link } from "@components";
+import { groupBy, partition } from "@utils/array";
 
 const EventsDivider = styled.hr`
   margin: 6rem 0;
@@ -24,8 +24,8 @@ export default function Schedule({ data }) {
     nodes.map(simplifyNode),
   );
 
-  const upcomingEvents = groupBy('dateGroup', upcomingEventNodes);
-  const pastEvents = groupBy('dateGroup', pastEventNodes);
+  const upcomingEvents = groupBy("dateGroup", upcomingEventNodes);
+  const pastEvents = groupBy("dateGroup", pastEventNodes);
 
   return (
     <Layout title="Q&A Schedule">
@@ -35,10 +35,10 @@ export default function Schedule({ data }) {
           We host one or two Q&A’s per month with Facebook Engineers and other
           interesting developers in the React community. These Q&A’s usually
           take place on Thursdays from 1pm - 2pm PT. If you want to hear from
-          someone specific in the community, let us know by contacting us via{' '}
+          someone specific in the community, let us know by contacting us via{" "}
           <Link to="https://twitter.com/reactiflux">Twitter</Link> or ping an
-          admin or moderator in the{' '}
-          <Link to="https://discord.gg/BkSU7Ju">#reactiflux-moderation</Link>{' '}
+          admin or moderator in the{" "}
+          <Link to="https://discord.gg/BkSU7Ju">#reactiflux-moderation</Link>{" "}
           channel on discord.
         </p>
         {Object.keys(upcomingEvents).length > 0 && (
@@ -124,7 +124,7 @@ const Event = ({
           <li>
             <Link
               to={`/transcripts${
-                relativeDirectory ? `/${relativeDirectory}` : ''
+                relativeDirectory ? `/${relativeDirectory}` : ""
               }/${name}`}
             >
               Transcript

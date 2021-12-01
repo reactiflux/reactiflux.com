@@ -3,8 +3,8 @@ title: Michael Shilman & Gert Hengeveld
 date: 2020-11-19
 time: 1PM - 2PM PT
 location: Q&A Channel Reactiflux
-description: 'Maintainers of [Storybook](https://storybook.js.org/)'
-people: '[@mshilman](https://twitter.com/mshilman/) & [@ghengeveld](https://twitter.com/ghengeveld)'
+description: "Maintainers of [Storybook](https://storybook.js.org/)"
+people: "[@mshilman](https://twitter.com/mshilman/) & [@ghengeveld](https://twitter.com/ghengeveld)"
 ---
 
 <a name="hey-been-a-huge" href="#hey-been-a-huge">#</a> **Q:** Hey! I have been a huge storybook fan for years and have seen it grow and change, especially in how easy it's become to write stories -- is there an idealized "final form" for storybook? in terms of ease to use, set-up, author, integrate, etc. – Mike Bars

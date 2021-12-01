@@ -1,6 +1,6 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
+import React from "react";
+import Helmet from "react-helmet";
+import { StaticQuery, graphql } from "gatsby";
 
 export function SEO({ description, image, lang, meta, keywords, title }) {
   return (

@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import { Layout, Link, Form } from '@components';
+import { Layout, Link, Form } from "@components";
 
 const fields = [
   {
-    label: 'Your Message',
-    name: 'message',
-    placeholder: 'Enter your message here...',
-    type: 'textarea',
+    label: "Your Message",
+    name: "message",
+    placeholder: "Enter your message here...",
+    type: "textarea",
   },
 ];
 
@@ -17,16 +17,16 @@ const encode = (data) =>
       ([key, value]) =>
         `${encodeURIComponent(key)}=${encodeURIComponent(value)}`,
     )
-    .join('&');
+    .join("&");
 
 const onSubmit = (fieldState) =>
-  fetch('/', {
-    method: 'POST',
+  fetch("/", {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
+      "Content-Type": "application/x-www-form-urlencoded",
     },
     body: encode({
-      'form-name': 'contact',
+      "form-name": "contact",
       ...Object.fromEntries(fieldState),
     }),
   });
@@ -45,13 +45,13 @@ const Index = () => {
         </p>
         <ul>
           <li>
-            The public{' '}
-            <a href="https://discord.gg/BkSU7Ju">#reactiflux-moderation</a>{' '}
+            The public{" "}
+            <a href="https://discord.gg/BkSU7Ju">#reactiflux-moderation</a>{" "}
             channel
           </li>
           <li>direct message to any staff member in Discord</li>
           <li>
-            mention or message{' '}
+            mention or message{" "}
             <Link to="https://twitter.com/reactiflux">@reactiflux</Link> on
             Twitter
           </li>
@@ -71,12 +71,12 @@ const Index = () => {
         <hr />
         <Form fields={fields} name="contact" onSubmit={onSubmit} />
         <p>
-          Please note:{' '}
+          Please note:{" "}
           <strong>
             we can not answer technical questions submitted via this form.
-          </strong>{' '}
+          </strong>{" "}
           It is anonymous, intended for submission of sensitive information like
-          harassment or other moderation problems.{' '}
+          harassment or other moderation problems.{" "}
           <strong>
             If you submit a technical question, you will not get a response.
           </strong>

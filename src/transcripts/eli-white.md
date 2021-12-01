@@ -3,8 +3,8 @@ title: Eli White
 date: 2017-11-09
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'React Native Core Team @ Facebook'
-people: '[@Eli_White](https://twitter.com/Eli_White)'
+description: "React Native Core Team @ Facebook"
+people: "[@Eli_White](https://twitter.com/Eli_White)"
 ---
 
 ## React Native Core Team @ Facebook

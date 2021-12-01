@@ -1,10 +1,10 @@
-import React from 'react';
-import { createPortal } from 'react-dom';
-import styled from 'styled-components';
-import { transparentize } from 'polished';
+import React from "react";
+import { createPortal } from "react-dom";
+import styled from "styled-components";
+import { transparentize } from "polished";
 
-import { FocusBoundary } from '@components';
-import { background, foreground, pink } from '@utils/theme';
+import { FocusBoundary } from "@components";
+import { background, foreground, pink } from "@utils/theme";
 
 const Backdrop = styled.div`
   background: ${(props) => transparentize(0.2, background(props))};
@@ -33,7 +33,7 @@ const CloseIcon = styled.button`
   width: 3rem;
 
   :after {
-    content: '×';
+    content: "×";
     font-size: 2rem;
   }
 
@@ -84,16 +84,16 @@ export const Modal = ({ children, close, isOpen }) => {
   React.useEffect(() => {
     if (isOpen) {
       const shortcutListener = (event) => {
-        if (event.key === 'Escape') {
+        if (event.key === "Escape") {
           event.preventDefault();
           close();
         }
       };
 
-      document.addEventListener('keyup', shortcutListener);
+      document.addEventListener("keyup", shortcutListener);
 
       return () => {
-        document.removeEventListener('keyup', shortcutListener);
+        document.removeEventListener("keyup", shortcutListener);
       };
     }
   }, [close, isOpen]);
@@ -114,5 +114,5 @@ export const Modal = ({ children, close, isOpen }) => {
     </ReturnFocusOnUnMount>
   );
 
-  return createPortal(content, document.getElementById('modals'));
+  return createPortal(content, document.getElementById("modals"));
 };

@@ -3,8 +3,8 @@ title: Sacha Greif
 date: 2018-03-08
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Sacha Greif is a designer/developer living in Japan. Author of [VulcanJS](https://github.com/vulcanjs/vulcan), the React + GraphQL framework. | [Vulcan Docs](http://docs.vulcanjs.org/) | [What is Vulcan?](https://www.youtube.com/watch?v=uU-cwLKcmnY) | [An app in 15 days with VulcanJS](https://hackernoon.com/the-vulcan-js-challenge-15-days-for-an-app-e3735d1e3d4c)'
-people: '[@SachaGreif](https://twitter.com/SachaGreif)'
+description: "Sacha Greif is a designer/developer living in Japan. Author of [VulcanJS](https://github.com/vulcanjs/vulcan), the React + GraphQL framework. | [Vulcan Docs](http://docs.vulcanjs.org/) | [What is Vulcan?](https://www.youtube.com/watch?v=uU-cwLKcmnY) | [An app in 15 days with VulcanJS](https://hackernoon.com/the-vulcan-js-challenge-15-days-for-an-app-e3735d1e3d4c)"
+people: "[@SachaGreif](https://twitter.com/SachaGreif)"
 ---
 
 <a name="vulcunjs-make-job-easier-developer" href="#vulcunjs-make-job-easier-developer">#</a> **Q:** How does VulcunJS make my job easier as a developer? – dardub

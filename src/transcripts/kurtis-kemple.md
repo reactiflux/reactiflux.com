@@ -3,8 +3,8 @@ title: Kurtis Kemple
 date: 2017-10-12
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Tech lead on the UI team [@Major League Soccer](https://twitter.com/MLS). Organizer of [@NYCGraphQL](https://twitter.com/NYCGraphQL).'
-people: '[@kurtiskemple](https://twitter.com/kurtiskemple)'
+description: "Tech lead on the UI team [@Major League Soccer](https://twitter.com/MLS). Organizer of [@NYCGraphQL](https://twitter.com/NYCGraphQL)."
+people: "[@kurtiskemple](https://twitter.com/kurtiskemple)"
 ---
 
 ## Tech lead on the UI team @Major League Soccer. Organizer of @NYCGraphQL.

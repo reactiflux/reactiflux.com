@@ -1,8 +1,8 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import { FocusBoundary, Layout, Link } from '@components';
-import { getAnchor } from '@utils/anchor';
+import { FocusBoundary, Layout, Link } from "@components";
+import { getAnchor } from "@utils/anchor";
 
 export default function Transcript({ data }) {
   const { html, frontmatter, headings } = data.markdownRemark;
@@ -25,8 +25,8 @@ export default function Transcript({ data }) {
                           onClick={() => {
                             setSidebar(false);
                             document
-                              .getElementById(getAnchor(value).replace('#', ''))
-                              .querySelector('a')
+                              .getElementById(getAnchor(value).replace("#", ""))
+                              .querySelector("a")
                               .focus();
                           }}
                         >
