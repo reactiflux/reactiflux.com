@@ -6,7 +6,7 @@ Reactiflux is the largest chat community of React developers. We make a delibera
 
 This is not a legal document, members should follow the spirit of these guidelines. Everybody makes mistakes, and Reactiflux wants to be a place where you can grow, but your second chance does not have priority over others’ comfort.
 
-“Staff” or “staff member” refers to both moderators and admins. MVPs are not responsible for moderating, but are held to the same higher expectations for behavior.
+“Staff” or “staff member” refers to both moderators and admins. MVPs are not responsible for moderating, but are held to the same higher expectations for behavior. Details of these expectations are on the [roles page](/roles).
 
 ## Conduct
 

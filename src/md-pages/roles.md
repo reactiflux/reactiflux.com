@@ -4,9 +4,9 @@ ol {
 }
 </style>
 
-## MVPs
+We have certain expectations for how members of the communities who have been distinguished with roles behave in the server. If you feel these expectations are not being met, we'd love if you could let us know by posting in #reactiflux-moderation, DMing an admin or moderator, or by using our [contact page](/contact).
 
-All of the above, and:
+## MVPs
 
 - Be consistently among the most helpful members of the server for an extended period of time.
   - We don’t collect metrics on this, but it should be obvious to any active member who deserves this recognition.
