@@ -217,12 +217,14 @@ The other tutorials are also excellent and may explain things in a different way
 - **Read** : **[Redux core docs](https://redux.js.org/)**
   - **["Redux Essentials" tutorial](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)**: explains "how to use Redux, the right way", using the latest recommended techniques and practices like Redux Toolkit and the React-Redux API, while building a real-world-ish example app.
   - **["Redux Fundamentals" tutorial](https://redux.js.org/tutorials/fundamentals/part-1-overview):** teaches "how Redux works, from the ground up". including core Redux data flow and why standard Redux patterns exist.
+- **Use**: **[Redux Toolkit](https://redux-toolkit.js.org/)** (an official Redux package to simplify common tasks, including store setup and writing reducers)
+  - **Read**: **[Redux Toolkit quick start](https://redux-toolkit.js.org/tutorials/quick-start)**
+  - Example project: [https://github.com/reduxjs/redux-essentials-example-app/tree/tutorial-steps](https://github.com/reduxjs/redux-essentials-example-app/tree/tutorial-steps)
 - **Read**: **[React-Redux docs](https://react-redux.js.org/)**
   - **[React-Redux hooks API reference](https://react-redux.js.org/api/hooks)**
-  - [`connect`() : Extracting Data with `mapStateToProps`](https://react-redux.js.org/using-react-redux/connect-mapstate)
-  - [`connect()` : Dispatching Actions with `mapDispatchToProps`](https://react-redux.js.org/using-react-redux/connect-mapdispatch)
-- **Use**: **[Redux Toolkit](https://redux-toolkit.js.org/)** (an official Redux package to simplify common tasks, including store setup and writing reducers)
-  - Example project: [https://github.com/reduxjs/redux-essentials-example-app/tree/tutorial-steps](https://github.com/reduxjs/redux-essentials-example-app/tree/tutorial-steps)
+  - These APIs are now considered outdated, but are widely used in existing Redux codebases
+    - [`connect()` : Extracting Data with `mapStateToProps`](https://react-redux.js.org/using-react-redux/connect-mapstate)
+    - [`connect()` : Dispatching Actions with `mapDispatchToProps`](https://react-redux.js.org/using-react-redux/connect-mapdispatch)
 - **Watch:** Dan Abramov's tutorial videos on Egghead
   - [Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)
   - [Building React Apps with Idiomatic Redux](https://egghead.io/courses/building-react-applications-with-idiomatic-redux)
@@ -280,17 +282,18 @@ The other tutorials are also excellent and may explain things in a different way
 
 ### Recommended Primary Resources (should read)
 
+- **Read**: [official TypeScript docs](https://www.typescriptlang.org/docs/home.html)
+- [Typescript Playground](https://www.typescriptlang.org/play) - an interactive playground for testing typescript behavior and reproducing issues - includes some built-in examples
 - **Read**: [Get Started with TypeScript in 2019](https://www.robertcooper.me/get-started-with-typescript-in-2019)
-- **Read**: **[TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/)** (a free complete online book that's considered the best available resource on TypeScript)
 - **Read:** [The Definitive TypeScript Guide](https://www.sitepen.com/blog/update-the-definitive-typescript-guide/)
   - [TypeScript Cheat Sheet](https://www.sitepen.com/blog/typescript-cheat-sheet)
-- **Read**: [TypeScript docs](https://www.typescriptlang.org/docs/home.html)
 - **Read:** [The TypeScript Guide](https://flaviocopes.com/typescript/)
 
 #### Specific Topics
 
 - `interface` vs `type`
   - [TypeScript Interface vs Type](https://pawelgrzybek.com/typescript-interface-vs-type/)
+    - [Interface vs Type sandbox example](https://www.typescriptlang.org/play?q=287#example/types-vs-interfaces)
 
 ### Additional Resources (read as needed)
 
