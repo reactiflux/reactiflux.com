@@ -1,10 +1,7 @@
-<svg width="28" height="42" viewBox="0 0 28 42" xmlns="http://www.w3.org/2000/svg">
-  <title>
-    react-native icon
-  </title>
-  <g transform="translate(1)" fill="none" fill-rule="evenodd">
-    <path d="M2 3.003C2 2.447 2.444 2 2.99 2h18.02c.543 0 .99.45.99 1.003v33.994c0 .556-.444 1.003-.99 1.003H2.99c-.543 0-.99-.45-.99-1.003V3.003zm-2 0v33.994C0 38.65 1.34 40 2.99 40h18.02c1.653 0 2.99-1.345 2.99-3.003V3.003C24 1.35 22.66 0 21.01 0H2.99C1.338 0 0 1.345 0 3.003z" fill="#52244F"/>
-    <circle fill="#02D8FF" cx="12" cy="35" r="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="42">
+  <g fill="none" fill-rule="evenodd" transform="translate(1)">
+    <path fill="#52244F" d="M2 3c0-.6.4-1 1-1h18c.6 0 1 .5 1 1v34c0 .6-.4 1-1 1H3a1 1 0 0 1-1-1V3zM0 3v34a3 3 0 0 0 3 3h18a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3a3 3 0 0 0-3 3z"/>
+    <circle cx="12" cy="35" r="2" fill="#02D8FF"/>
     <path fill="#52244F" d="M4 6h16v26H4z"/>
   </g>
 </svg>

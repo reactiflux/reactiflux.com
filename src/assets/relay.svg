@@ -1,11 +1,8 @@
-<svg width="45" height="42" viewBox="0 0 45 42" xmlns="http://www.w3.org/2000/svg">
-  <title>
-    relay logo
-  </title>
-  <g transform="translate(0 3)" fill="none" fill-rule="evenodd">
-    <path d="M3.005 6h25.99C31.757 6 34 8.243 34 11c0 2.766-2.233 5-5.005 5h-7.99v2h7.99C32.872 18 36 14.87 36 11c0-3.862-3.14-7-7.005-7H3.005v2z" fill="#52244F"/>
-    <circle fill="#02D8FF" cx="5" cy="5" r="5"/>
-    <path d="M23.995 16h-7.99C12.14 16 9 19.138 9 23c0 3.87 3.128 7 7.005 7h25.99v-2h-25.99C13.233 28 11 25.766 11 23c0-2.757 2.243-5 5.005-5h7.99v-2z" fill="#52244F"/>
-    <circle fill="#02D8FF" cx="40" cy="29" r="5"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="42">
+  <g fill="none" fill-rule="evenodd" transform="translate(0 3)">
+    <path fill="#52244F" d="M3 6h26a5 5 0 0 1 0 10h-8v2h8a7 7 0 1 0 0-14H3v2z"/>
+    <circle cx="5" cy="5" r="5" fill="#02D8FF"/>
+    <path fill="#52244F" d="M24 16h-8a7 7 0 0 0 0 14h26v-2H16a5 5 0 1 1 0-10h8v-2z"/>
+    <circle cx="40" cy="29" r="5" fill="#02D8FF"/>
   </g>
 </svg>
