@@ -136,11 +136,11 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
 
 #### General React
 
-Start with reading the official docs first. However, the React team is in the process of starting a major rewrite of the React docs site to focus on teaching function components and hooks first. That won't be published until mid-2021. Until then, a third party has made a fork of the React docs and converted the tutorials and examples to show function components instead of classes, so I'm going to link that here and suggest reading it.
+Start with reading the official docs first. The React team is in the process of starting a major rewrite of the React docs site to focus on teaching function components and hooks first, which is now available in beta. We've linked to that rather than the existing "main" documentation.
 
 These other listed tutorials are also excellent and may explain things in a different way.
 
-- **Read:** **[official React docs](https://reactjs.org/)**
+- **Read: [official React docs](https://beta.reactjs.org/)**
   - [Getting Started](https://reactjs.org/docs/getting-started.html) (docs overview and related resources)
   - [Main Concepts](https://reactjs.org/docs/hello-world.html) (read the whole series, but especially these two):
     - [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html)
@@ -216,7 +216,7 @@ The other tutorials are also excellent and may explain things in a different way
 - **Read: [Redux core docs](https://redux.js.org/)**
   - **["Redux Essentials" tutorial](https://redux.js.org/tutorials/essentials/part-1-overview-concepts):** explains "how to use Redux, the right way", using the latest recommended techniques and practices like Redux Toolkit and the React-Redux API, while building a real-world-ish example app.
   - **["Redux Fundamentals" tutorial](https://redux.js.org/tutorials/fundamentals/part-1-overview):** teaches "how Redux works, from the ground up". including core Redux data flow and why standard Redux patterns exist.
-  - **Read**: **[Redux Toolkit quick start](https://redux-toolkit.js.org/tutorials/quick-start)**
+  - ["Typescript quick start"](https://redux-toolkit.js.org/tutorials/typescript): explains how to configure Redux Toolkit with type safety from action creators through to selectors.
 - **Use: [Redux Toolkit](https://redux-toolkit.js.org/)** (an official Redux package to simplify common tasks, including store setup and writing reducers)
   - Example project: [https://github.com/reduxjs/redux-essentials-example-app/tree/tutorial-steps](https://github.com/reduxjs/redux-essentials-example-app/tree/tutorial-steps)
 - **Read: [React-Redux docs](https://react-redux.js.org/)**
@@ -261,10 +261,10 @@ The other tutorials are also excellent and may explain things in a different way
 ### Additional Resources (read as needed)
 
 - **Resource Collections**
+  - [**Redux FAQ**](https://redux.js.org/faq) (answers to many common questions about Redux)
   - [Mark Erikson's React-Redux links collection (many categories of links to articles)](https://github.com/markerikson/react-redux-links)
   - [Mark's suggested resources for learning Redux](https://blog.isquaredsoftware.com/2017/12/blogged-answers-learn-redux/)
   - [Redux Ecosystem Links](https://github.com/markerikson/redux-ecosystem-links) (a curated list of Redux-related addons and utilities)
-  - [**Redux FAQ**](https://redux.js.org/faq) (answers to many common questions about Redux)
 - **Books and Courses**
   - [Pure Redux course](https://daveceddia.com/pure-redux/) by Dave Ceddia
   - [Redux course](https://tylermcginnis.com/courses/redux/) by Tyler McGinnis
@@ -295,6 +295,7 @@ The other tutorials are also excellent and may explain things in a different way
 - `interface` vs `type`
   - [TypeScript Interface vs Type](https://pawelgrzybek.com/typescript-interface-vs-type/)
     - [Interface vs Type sandbox example](https://www.typescriptlang.org/play?q=287#example/types-vs-interfaces)
+- ["Typescript quick start"](https://redux-toolkit.js.org/tutorials/typescript): explains how to configure Redux Toolkit with type safety from action creators through to selectors.
 
 ### Additional Resources (read as needed)
 
