@@ -12,10 +12,10 @@ For a 10,000 foot view of the JS ecosystem, check out [the State of JS survey](h
 **You should learn these technologies in the following order:**
 
 1.  **"How Web Apps Work":** a series of posts that lays out the big picture of the core technologies, terms, and concepts used in client/server web apps
-2.  **JavaScript** . If you don't know JavaScript, nothing else will make sense
-3.  **React** . You can use React by itself, or with Redux and/or TypeScript. Learning it separately will minimize the number of new concepts and syntax you have to learn at once.
-4.  **Redux** . Redux can be used separately, but it's most commonly used with React.
-5.  **TypeScript** . Because it adds static types on top of JS, you need to understand JS first. Also, it's easiest to understand React and Redux first, _then_ learn how to use them with static types.
+2.  **JavaScript:** If you don't know JavaScript, nothing else will make sense
+3.  **React:** You can use React by itself, or with Redux and/or TypeScript. Learning it separately will minimize the number of new concepts and syntax you have to learn at once.
+4.  **Redux:** Redux can be used separately, but it's most commonly used with React.
+5.  **TypeScript:** Because it adds static types on top of JS, you need to understand JS first. Also, it's easiest to understand React and Redux first, _then_ learn how to use them with static types.
 
 The resources in this page are listed in that order.
 
@@ -44,8 +44,8 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
 - **Slides:** [Mark's "JavaScript for Java Developers" slides](https://blog.isquaredsoftware.com/2019/05/presentation-js-for-java-devs/)
 - **Read:** [MDN: A re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 - **Read:** [The Modern JavaScript Tutorial](https://javascript.info/)
-- **Read**: [Javascript Cheatsheet](https://javascript.pythoncheatsheet.org/)
-- **Exercises**: [CodeCademy - Introduction to JavaScript Tutorial](https://www.codecademy.com/learn/introduction-to-javascript)
+- **Read:** [Javascript Cheatsheet](https://javascript.pythoncheatsheet.org/)
+- **Exercises:** [CodeCademy - Introduction to JavaScript Tutorial](https://www.codecademy.com/learn/introduction-to-javascript)
 
 #### Specific Topics
 
@@ -146,21 +146,21 @@ These other listed tutorials are also excellent and may explain things in a diff
     - [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html)
     - [Thinking In React](https://reactjs.org/docs/thinking-in-react.html)
   - [React Hooks guide](https://reactjs.org/docs/hooks-intro.html) (lays out the motivation, teaches hooks, API reference, in-depth FAQ)
-- **Read**: **[React docs (converted to show hooks)](https://reactwithhooks.netlify.app/)**
+- **Read: [React docs (converted to show hooks)](https://reactwithhooks.netlify.app/)**
 
   - [Tutorial](https://reactwithhooks.netlify.app/tutorial/tutorial.html)
 
 - **Watch:** [React Tutorial for Beginners](https://egghead.io/courses/the-beginner-s-guide-to-react)
 - **Read:** [Intro to React, Redux, and TypeScript for 2020](https://blog.isquaredsoftware.com/2020/12/presentations-react-redux-ts-intro/) (Mark's presentation slides)
-- **Read**: [Build a CRUD App in React with Hooks](https://www.taniarascia.com/crud-app-in-react-with-hooks/)
-- **Read**: [A Comprehensive Guide to React in 2020](https://medium.freecodecamp.org/a-comprehensive-guide-to-react-js-in-2018-ba8bb6975597)
+- **Read:** [Build a CRUD App in React with Hooks](https://www.taniarascia.com/crud-app-in-react-with-hooks/)
+- **Read:** [A Comprehensive Guide to React in 2020](https://medium.freecodecamp.org/a-comprehensive-guide-to-react-js-in-2018-ba8bb6975597)
 - **Exercises:** [Learn React - Interactive Tutorials](https://scrimba.com/g/glearnreact)
 
 #### Project Setup
 
-- **Read**: [Simple React Development in 2019](https://hackernoon.com/simple-react-development-in-2017-113bd563691f) (a guide to setting up an app, development environment, and deployment)
+- **Read: [Simple React Development in 2019](https://hackernoon.com/simple-react-development-in-2017-113bd563691f)** (a guide to setting up an app, development environment, and deployment)
 - **Use: [CodeSandbox.io](https://codesandbox.io)** (an online IDE that uses VS Code's editor, and can let you develop and run your apps completely in the browser)
-- **Use**: **[Create-React-App](https://facebook.github.io/create-react-app/)** (the official CLI tool for creating a React app with one command. Sets up a project with good default build settings out of the box.)
+- **Use: [Create-React-App](https://facebook.github.io/create-react-app/)** (the official CLI tool for creating a React app with one command. Sets up a project with good default build settings out of the box.)
 
 #### Specific Topics
 
@@ -213,21 +213,21 @@ Start with reading the official docs first, and also watch Mark Erikson's "Redux
 
 The other tutorials are also excellent and may explain things in a different way.
 
-- **Read** : **[Redux core docs](https://redux.js.org/)**
-  - **["Redux Essentials" tutorial](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)**: explains "how to use Redux, the right way", using the latest recommended techniques and practices like Redux Toolkit and the React-Redux API, while building a real-world-ish example app.
+- **Read: [Redux core docs](https://redux.js.org/)**
+  - **["Redux Essentials" tutorial](https://redux.js.org/tutorials/essentials/part-1-overview-concepts):** explains "how to use Redux, the right way", using the latest recommended techniques and practices like Redux Toolkit and the React-Redux API, while building a real-world-ish example app.
   - **["Redux Fundamentals" tutorial](https://redux.js.org/tutorials/fundamentals/part-1-overview):** teaches "how Redux works, from the ground up". including core Redux data flow and why standard Redux patterns exist.
-- **Use**: **[Redux Toolkit](https://redux-toolkit.js.org/)** (an official Redux package to simplify common tasks, including store setup and writing reducers)
   - **Read**: **[Redux Toolkit quick start](https://redux-toolkit.js.org/tutorials/quick-start)**
+- **Use: [Redux Toolkit](https://redux-toolkit.js.org/)** (an official Redux package to simplify common tasks, including store setup and writing reducers)
   - Example project: [https://github.com/reduxjs/redux-essentials-example-app/tree/tutorial-steps](https://github.com/reduxjs/redux-essentials-example-app/tree/tutorial-steps)
-- **Read**: **[React-Redux docs](https://react-redux.js.org/)**
+- **Read: [React-Redux docs](https://react-redux.js.org/)**
   - **[React-Redux hooks API reference](https://react-redux.js.org/api/hooks)**
   - These APIs are now considered outdated, but are widely used in existing Redux codebases
-    - [`connect()` : Extracting Data with `mapStateToProps`](https://react-redux.js.org/using-react-redux/connect-mapstate)
-    - [`connect()` : Dispatching Actions with `mapDispatchToProps`](https://react-redux.js.org/using-react-redux/connect-mapdispatch)
+    - [`connect()`: Extracting Data with `mapStateToProps`](https://react-redux.js.org/using-react-redux/connect-mapstate)
+    - [`connect()`: Dispatching Actions with `mapDispatchToProps`](https://react-redux.js.org/using-react-redux/connect-mapdispatch)
 - **Watch:** Dan Abramov's tutorial videos on Egghead
   - [Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)
   - [Building React Apps with Idiomatic Redux](https://egghead.io/courses/building-react-applications-with-idiomatic-redux)
-- **Read**: [A Complete React-Redux Tutorial](https://daveceddia.com/redux-tutorial/)
+- **Read:** [A Complete React-Redux Tutorial](https://daveceddia.com/redux-tutorial/)
 - **Read:** [React Redux Tutorial for Beginners: The Definitive Guide](https://www.valentinog.com/blog/redux/)
 - **Read:** [Leveling Up with React: Redux](https://css-tricks.com/learning-react-redux/)
 
@@ -235,8 +235,8 @@ The other tutorials are also excellent and may explain things in a different way
 
 - **Read: ["Idiomatic Redux" concepts and opinion series](https://blog.isquaredsoftware.com/series/idiomatic-redux/)**. A series of blog posts that describes standard Redux development best practices, why they exist, and how Redux is meant to be used. (These are not required reading to get started, but highly recommended once you understand the basics.)
 - Legacy resources (do not cover "Modern Redux", but still informative)
-  - Read: [Redux Fundamentals Workshop slices](https://blog.isquaredsoftware.com/2018/06/redux-fundamentals-workshop-slides/)\*\* : a 2-day internal workshop that covers Redux from the ground up. Includes complete recordings of each section, slides, and an exercises repo. (Does not cover "Modern Redux", but
-  - Read: [**"Practical Redux" blog tutorial series**](https://blog.isquaredsoftware.com/series/practical-redux/). Covers multiple React and Redux concepts through building a larger example application
+  - **Read: [Redux Fundamentals Workshop slices](https://blog.isquaredsoftware.com/2018/06/redux-fundamentals-workshop-slides/)**: a 2-day internal workshop that covers Redux from the ground up. Includes complete recordings of each section, slides, and an exercises repo. (Does not cover "Modern Redux", but
+  - **Read: ["Practical Redux" blog tutorial series](https://blog.isquaredsoftware.com/series/practical-redux/)**. Covers multiple React and Redux concepts through building a larger example application
 
 #### Specific Topics
 
@@ -272,21 +272,23 @@ The other tutorials are also excellent and may explain things in a different way
   - [Redux in Action](https://www.manning.com/books/redux-in-action)
   - [The Complete Redux Book](https://leanpub.com/redux-book) (free)
   - [Taming the State in React](https://www.robinwieruch.de/learn-react-redux-mobx-state-management/)
-- **Specific Topics**
-  - How does Redux work?
-    - [Build Yourself a Redux](https://zapier.com/engineering/how-to-build-redux/)
-    - [Idiomatic Redux: The History and Implementation of React-Redux](https://blog.isquaredsoftware.com/2018/11/react-redux-history-implementation/)
+
+#### Specific Topics
+
+- How does Redux work?
+  - [Build Yourself a Redux](https://zapier.com/engineering/how-to-build-redux/)
+  - [Idiomatic Redux: The History and Implementation of React-Redux](https://blog.isquaredsoftware.com/2018/11/react-redux-history-implementation/)
 
 ## TypeScript
 
 ### Recommended Primary Resources (should read)
 
-- **Read**: [official TypeScript docs](https://www.typescriptlang.org/docs/home.html)
+- **Read: [official TypeScript docs](https://www.typescriptlang.org/docs/home.html)**
 - [Typescript Playground](https://www.typescriptlang.org/play) - an interactive playground for testing typescript behavior and reproducing issues - includes some built-in examples
-- **Read**: [Get Started with TypeScript in 2019](https://www.robertcooper.me/get-started-with-typescript-in-2019)
-- **Read:** [The Definitive TypeScript Guide](https://www.sitepen.com/blog/update-the-definitive-typescript-guide/)
+- **Read: [Get Started with TypeScript in 2019](https://www.robertcooper.me/get-started-with-typescript-in-2019)**
+- **Read: [The Definitive TypeScript Guide](https://www.sitepen.com/blog/update-the-definitive-typescript-guide/)**
   - [TypeScript Cheat Sheet](https://www.sitepen.com/blog/typescript-cheat-sheet)
-- **Read:** [The TypeScript Guide](https://flaviocopes.com/typescript/)
+- **Read: [The TypeScript Guide](https://flaviocopes.com/typescript/)**
 
 #### Specific Topics
 
