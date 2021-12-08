@@ -8,15 +8,15 @@ We have several channels where self-promotion is expected, and some other releva
 
 ## [#i-wrote-this](new channel)
 
-Here is best to share your own writing. Unless the content you’re posting is better suited to another channel, share it here. This is mainly intended to be a showcase for personal writing.
+Here is best to share your own writing. Unless the content you’re posting is better suited to another channel, share it here. This is mainly intended to be a showcase for personal writing, but livestreams may also be shared here. Streams may only be shared once every 2 weeks.
 
 ## [#i-built-this](https://discord.gg/GaCSDfm)
 
-New side projects, libraries, blog posts, or other works you want to show off. This is predominantly meant as a showcase for individuals.
+New side projects, libraries, or other works you want to show off. This is predominantly meant as a showcase for individuals.
 
-## [#tech-news](https://discord.gg/TEYnXKw)
+## [#tech-reads-and-news](https://discord.gg/TEYnXKw)
 
-If you want to share an announcement of a new blog post, product, feature, or other effort, then this is the most appropriate channel. Reactiflux is not a free audience for advertisements, however.
+If you want to share an announcement of something new in the Javascript ecosystem, then this is the most appropriate channel. Reactiflux is not a free audience for advertisements, however — see our ["self promotion vs advertising" section of the page](#self-promotion-vs-advertising). This is also a channel for sharing and discussing interesting articles, blog posts, and books about JS, software development, the tech industry, and other relevant longform writings.
 
 ## [#events](https://discord.gg/RYVBdtY)
 
