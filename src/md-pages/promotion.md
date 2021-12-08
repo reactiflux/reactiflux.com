@@ -34,16 +34,20 @@ Jobs are full-time salaried positions, or part- or full-time contract roles. We 
 
 Reactiflux only allows surveys from private organizations if they're shared by an active member of the community. Surveys may be posted if the results will be public or used for academic purposes, and should only be shared once. Fair warning: most surveys get relatively low uptake, they just aren't of interest to many in the community.
 
+### Outside communities
+
+Reactiflux generally does not allow external communities to be promoted. If another server would better serve someone asking a question (for example, asking a detailed python question in #general-tech), then members are welcome to share server invites. Announcements or promotions of communities must be of obvious interest to the majority of the Reactiflux community.
+
 ### Self promotion vs advertising
 
-The line here can be thin. Reactiflux is a community, not a marketing channel. If you have a body of content you'd like to promote, our recommended way of doing so is to be an active and positive member of the server. If someone has a question that you've created an external answer to, we'd love if you share it! Otherwise, we ask that you limit what you plug without prompting.
+The line here can be thin. Reactiflux is a community, not a free marketing audience. If you have a body of content you'd like to promote, our recommended way of doing so is to be an active and positive member of the server. If someone has a question that you've created an external answer to, we'd love if you share it! Otherwise, we ask that you limit what you plug without prompting.
 
 To help determine if what you want to share is an advertisement, here are some questions to help you decide.
 
 You should be able to answer "yes" to:
 
 - Did you make it yourself or help make it?
-- Does it use or discuss React?
+- Does it use or discuss React, frontend Javascript, or the web industry?
 
 And "no" to:
 
