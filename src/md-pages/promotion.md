@@ -6,17 +6,21 @@ Reactiflux's members do lots of cool stuff, and we'd love for you to share what 
 
 We have several channels where self-promotion is expected, and some other relevant channels as well. We ask that you share it only once, unless there's a significant milestone or it's relevant to someone's question.
 
-## [#i-made-this](https://discord.gg/GaCSDfm)
+## [#i-wrote-this](new channel)
+
+Here is best to share your own writing. Unless the content you’re posting is better suited to another channel, share it here. This is mainly intended to be a showcase for personal writing.
+
+## [#i-built-this](https://discord.gg/GaCSDfm)
 
 New side projects, libraries, blog posts, or other works you want to show off. This is predominantly meant as a showcase for individuals.
 
-## [#news-and-links](https://discord.gg/TEYnXKw)
+## [#tech-news](https://discord.gg/TEYnXKw)
 
-If you want to share an announcement of a new blog post, product, feature, or other effort, then this is the most appropriate channel. Reactiflux does not generally allow advertising, however.
+If you want to share an announcement of a new blog post, product, feature, or other effort, then this is the most appropriate channel. Reactiflux is not a free audience for advertisements, however.
 
-## [#conferences](https://discord.gg/RYVBdtY)
+## [#events](https://discord.gg/RYVBdtY)
 
-Announcing an upcoming conference or discussing an ongoing conference are both encouraged here. In general, we'd prefer conferences limit their announcments to 1 per major milestone. When it's announced, near registration deadlines, and when it's about to happen would be appropriate.
+Announcing an upcoming conference or discussing an ongoing conference are both encouraged here. In general, we'd prefer conferences limit their announcements to 1 per major milestone. When it's announced, near registration deadlines, and when it's about to happen would be appropriate.
 
 ## [#job-board](https://discord.gg/R942bNb)
 
