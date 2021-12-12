@@ -1,6 +1,7 @@
 import React from "react";
 
 import { FocusBoundary, Layout, Link } from "@components";
+import { getAllPages, getPostBySlug } from "../helpers/retrieveMdPages";
 
 export default function Transcripts({ data }) {
   const articles = data.transcripts.nodes
@@ -41,21 +42,15 @@ export default function Transcripts({ data }) {
   );
 }
 
-export const pageQuery = graphql`
-  query AllTranscripts {
-    transcripts: allFile(
-      filter: { sourceInstanceName: { eq: "transcripts" } }
-      sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
-    ) {
-      nodes {
-        name
-        childMarkdownRemark {
-          html
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
-  }
-`;
+// TODO: this is Next code but definitely broken
+export async function getStaticProps({ params }) {
+  const doc = getPostBySlug(params.slug);
+  const content = await markdownToHtml(doc.content || "");
+
+  return {
+    props: {
+      ...doc,
+      content,
+    },
+  };
+}

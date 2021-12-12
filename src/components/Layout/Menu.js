@@ -3,7 +3,7 @@ import Headroom from "react-headroom";
 
 import { Reactiflux } from "@assets/logos";
 import { Link } from "@components";
-import { useIsMobile } from "@hooks";
+import { useIsMobile } from "@helpers";
 
 import { Logo, Space, Wrapper, Nav, BlackLivesMatter } from "./MenuStyles";
 import { MobileNav } from "./MobileNav";

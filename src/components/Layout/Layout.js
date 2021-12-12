@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 
-import { useIsMobile } from "@hooks";
+import { useIsMobile } from "@helpers";
 import { getTheme } from "@utils/theme";
 
 import { Footer } from "./Footer";
@@ -21,7 +21,7 @@ export function Layout({
   children,
   description,
   title,
-  sidebar,
+  sidebar = false,
   ...props
 }) {
   const isMobile = useIsMobile();
