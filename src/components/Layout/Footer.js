@@ -1,10 +1,10 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
-import { Discord, Github, Twitter } from '@assets/logos';
-import { Link } from '@components';
+import { Discord, Github, Twitter } from "@assets/logos";
+import { Link } from "@components";
 
-import { Footer as FooterElement } from './FooterStyles';
+import { Footer as FooterElement } from "./FooterStyles";
 
 const year = new Date().getFullYear();
 
@@ -25,7 +25,7 @@ export function Footer() {
       <p>
         <span>
           Hosted on <Link href="https://www.netlify.com/">Netlify</Link>
-        </span>{' '}
+        </span>{" "}
         • <span>© {year} Reactiflux</span>
       </p>
     </FooterElement>

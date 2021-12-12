@@ -1,8 +1,8 @@
 ---
 title: The 2019 Reactiflux Census
 author: vcarl
-date: '2020-07-07'
-description: 'We recently ran a user survey with the aim of better understanding just who is using Reactiflux (or, at least, those who felt comfortable answering a voluntary survey with demographic questions). The results are in.'
+date: "2020-07-07"
+description: "We recently ran a user survey with the aim of better understanding just who is using Reactiflux (or, at least, those who felt comfortable answering a voluntary survey with demographic questions). The results are in."
 ---
 
 # Reactiflux census 2019

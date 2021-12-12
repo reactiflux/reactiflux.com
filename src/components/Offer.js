@@ -1,16 +1,16 @@
-import React from 'react';
-import moment from 'moment';
-import styled, { css } from 'styled-components';
-import { transparentize } from 'polished';
+import React from "react";
+import moment from "moment";
+import styled, { css } from "styled-components";
+import { transparentize } from "polished";
 
-import { Link, Tag } from '@components';
-import { addLinks, extractTags } from '@utils/string';
-import { pink } from '@utils/theme';
+import { Link, Tag } from "@components";
+import { addLinks, extractTags } from "@utils/string";
+import { pink } from "@utils/theme";
 
 const Wrapper = styled.div`
   ${(props) =>
     props.last
-      ? ''
+      ? ""
       : css`
           border-bottom: 2px solid ${pink};
           margin-bottom: 4rem;
@@ -74,13 +74,13 @@ export const Offer = ({
       ) : null}
       <div>
         <p>
-          Posted by{' '}
+          Posted by{" "}
           <Link href={getAuthorLink(author.id)}>
             <strong>{author.name}</strong>
-          </Link>{' '}
-          on{' '}
+          </Link>{" "}
+          on{" "}
           <Link href={getJobLink(id)}>
-            {moment(date).format('MMMM Do YYYY')}
+            {moment(date).format("MMMM Do YYYY")}
           </Link>
         </p>
         {onClickGetInTouch ? (

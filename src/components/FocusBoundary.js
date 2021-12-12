@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const FocusBoundary = ({ children, onChange, onEnter, onExit }) => {
   const [ref, setRef] = React.useState();
@@ -24,12 +24,12 @@ export const FocusBoundary = ({ children, onChange, onEnter, onExit }) => {
         }
       };
 
-      ref.addEventListener('focus', focusListener, true);
-      ref.addEventListener('blur', blurListener, true);
+      ref.addEventListener("focus", focusListener, true);
+      ref.addEventListener("blur", blurListener, true);
 
       return () => {
-        ref.removeEventListener('focus', focusListener);
-        ref.removeEventListener('blur', blurListener);
+        ref.removeEventListener("focus", focusListener);
+        ref.removeEventListener("blur", blurListener);
       };
     }
   }, [boundaryContainsFocus, onChange, onEnter, onExit, ref]);
@@ -37,13 +37,13 @@ export const FocusBoundary = ({ children, onChange, onEnter, onExit }) => {
   return React.Children.map(children, (child, i) => {
     if (i > 0) {
       throw new Error(
-        'Error: multiple children passed to FocusBoundary. Only one child allowed.',
+        "Error: multiple children passed to FocusBoundary. Only one child allowed.",
       );
     }
 
     if (child.type === React.Fragment) {
       throw new Error(
-        'Error: Fragment passed as child to FocusBoundary. Only valid elements allowed.',
+        "Error: Fragment passed as child to FocusBoundary. Only valid elements allowed.",
       );
     }
 

@@ -1,8 +1,8 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
-import { background, darkPink, pink } from '@utils/theme';
+import { background, darkPink, pink } from "@utils/theme";
 
-import { Link } from './Link';
+import { Link } from "./Link";
 
 const solid = css`
   background: ${pink};

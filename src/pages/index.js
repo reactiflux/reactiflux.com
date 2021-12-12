@@ -1,6 +1,6 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
-import Image from 'next/image';
+import React from "react";
+import styled, { css } from "styled-components";
+import Image from "next/image";
 
 import {
   Community,
@@ -12,9 +12,9 @@ import {
   ReactLogo,
   Redux,
   Relay,
-} from '@assets/logos';
-import { ButtonLink, Layout, Link } from '@components';
-import { isMobile } from '@utils/theme';
+} from "@assets/logos";
+import { ButtonLink, Layout, Link } from "@components";
+import { isMobile } from "@utils/theme";
 
 const P = styled.p`
   ${(props) =>
@@ -28,7 +28,7 @@ const P = styled.p`
             margin-right: 0;
           }
         `
-      : ''}
+      : ""}
 `;
 
 const Index = () => {
@@ -61,22 +61,22 @@ const Index = () => {
         , Relay&nbsp;
         <Link href="https://github.com/facebook/relay" title="Relay">
           <Image src={Relay} alt="Relay" />
-        </Link>{' '}
+        </Link>{" "}
         and GraphQL&nbsp;
         <Link href="https://github.com/facebook/graphql" title="GraphQL">
           <Image src={GraphQL} alt="GraphQL" />
-        </Link>{' '}
+        </Link>{" "}
         developers. We hold Q&amp;A&rsquo;s with Facebook Engineers&nbsp;
         <Link href="https://github.com/facebook" title="Facebook Organization">
           <Image src={Facebook} alt="Facebook Organization" />
-        </Link>{' '}
+        </Link>{" "}
         and other developers&nbsp;
         <Link
           href="https://github.com/reactiflux"
           title="Reactiflux Developers"
         >
           <Image src={Console} alt="Reactiflux Developers" />
-        </Link>{' '}
+        </Link>{" "}
         in the community&nbsp;
         <Link href="https://discord.gg/reactiflux" title="Reactiflux Discord">
           <Image src={Community} alt="Reactiflux Discord" />

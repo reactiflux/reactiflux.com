@@ -2,8 +2,8 @@
 title: Eric Vicenti
 date: 2016-03-10
 location: Q&A Channel Reactiflux
-description: 'Facebook Engineer'
-people: '[@EricVicenti](https://twitter.com/EricVicenti)'
+description: "Facebook Engineer"
+people: "[@EricVicenti](https://twitter.com/EricVicenti)"
 ---
 
 ## Engineer @ Facebook | Creator of Navigator Experimental

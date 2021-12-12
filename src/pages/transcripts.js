@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { FocusBoundary, Layout, Link } from '@components';
+import { FocusBoundary, Layout, Link } from "@components";
 
 export default function Transcripts({ data }) {
   const articles = data.transcripts.nodes
@@ -23,7 +23,7 @@ export default function Transcripts({ data }) {
               <ol>
                 {articles.map((article) => (
                   <li key={article.path}>
-                    <Link href={'/transcripts/' + article.path}>
+                    <Link href={"/transcripts/" + article.path}>
                       {article.title}
                     </Link>
                   </li>

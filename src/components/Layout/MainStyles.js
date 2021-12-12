@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
-import { background, blue, foreground, pink } from '@utils/theme';
+import { background, blue, foreground, pink } from "@utils/theme";
 
 export const MainStyles = createGlobalStyle`
 html {

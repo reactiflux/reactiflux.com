@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { FocusBoundary, Layout, Link } from '@components';
+import { FocusBoundary, Layout, Link } from "@components";
 
 export default function Transcript({ data }) {
   const { html, frontmatter } = data.markdownRemark;
@@ -23,7 +23,7 @@ export default function Transcript({ data }) {
                 {articles.map((article) => (
                   <li key={article.path}>
                     <Link
-                      href={'/transcripts/' + article.path}
+                      href={"/transcripts/" + article.path}
                       title={article.title}
                     >
                       {article.title}

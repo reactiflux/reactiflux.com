@@ -1,7 +1,7 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
-import { background, blue, boxShadow, pink } from '@utils/theme';
-import Image from 'next/image';
+import { background, blue, boxShadow, pink } from "@utils/theme";
+import Image from "next/image";
 
 const spin = keyframes`
  from { transform: rotate(0); }
@@ -49,20 +49,20 @@ export const Nav = styled.nav`
   a {
     &:after {
       background: ${blue};
-      content: '';
+      content: "";
       display: block;
       height: 0;
       position: absolute;
       transition: all 0.3s ease;
     }
 
-    &[aria-current='page']:after,
+    &[aria-current="page"]:after,
     &:focus:after,
     &:hover:after {
       height: 4px;
     }
 
-    &[aria-current='page']:after {
+    &[aria-current="page"]:after {
       background: ${pink};
     }
   }
@@ -72,7 +72,7 @@ export const Nav = styled.nav`
     font-size: 1.6rem;
     padding: 0 8px;
 
-    &[aria-current='page']:after,
+    &[aria-current="page"]:after,
     &:after {
       bottom: 32px;
       left: 8px;
@@ -86,7 +86,7 @@ export const Nav = styled.nav`
       margin-left: 16px;
       padding: 0 12px;
 
-      &[aria-current='page']:after,
+      &[aria-current="page"]:after,
       &:after {
         left: 12px;
         right: 12px;

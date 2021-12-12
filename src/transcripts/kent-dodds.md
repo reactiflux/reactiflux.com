@@ -3,8 +3,8 @@ title: Kent C Dodds
 date: 2019-03-28
 time: 1-2pm PT / 8-9PM GMT
 location: Q&A Channel Reactiflux
-description: 'Engineer @ Paypal, Teaching via Egghead & Frontendmasters, and Author of react-testing-library, downshift, glamorous, & an all around good dude.'
-people: '[@kentcdodds](https://twitter.com/kentcdodds)'
+description: "Engineer @ Paypal, Teaching via Egghead & Frontendmasters, and Author of react-testing-library, downshift, glamorous, & an all around good dude."
+people: "[@kentcdodds](https://twitter.com/kentcdodds)"
 ---
 
 ## Teaching via Egghead & Frontendmasters author of react-testing-library, downshift, glamorous, and an all around good dude.
