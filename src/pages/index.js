@@ -38,7 +38,7 @@ const Index = () => {
         Reactiflux
       </h1>
       <p>
-        We&rsquo;re a chat community of 147,000+ React&nbsp;JS&nbsp;
+        We&rsquo;re a chat community of 170,000+ React&nbsp;JS&nbsp;
         <Link to="https://github.com/facebook/react" title="React JS">
           <img src={ReactLogo} alt="React JS" />
         </Link>
