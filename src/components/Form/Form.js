@@ -93,6 +93,7 @@ export const Form = React.forwardRef(function Form(
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
           onSubmit={onSubmitCallback}
           ref={ref}
           {...props}
@@ -103,6 +104,7 @@ export const Form = React.forwardRef(function Form(
             label="If you're not a robot, leave this field blank!"
             name="bot-field"
           />
+          <div data-netlify-recaptcha="true" />
           {form(fieldData, onSubmitCallback, allowSubmit)}
         </form>
       );
