@@ -8,8 +8,8 @@ export const FocusBoundary = ({ children, onChange, onEnter, onExit }) => {
     if (ref) {
       const focusListener = (e) => {
         if (!boundaryContainsFocus.current) {
-          onChange && onChange(true);
-          onEnter && onEnter(e);
+          onChange?.(true);
+          onEnter?.(e);
           boundaryContainsFocus.current = true;
         }
       };
@@ -19,7 +19,7 @@ export const FocusBoundary = ({ children, onChange, onEnter, onExit }) => {
             e.relatedTarget && e.relatedTarget.focus({ preventScroll: true });
             onChange(false);
           }
-          onExit && onExit(e);
+          onExit?.(e);
           boundaryContainsFocus.current = null;
         }
       };
