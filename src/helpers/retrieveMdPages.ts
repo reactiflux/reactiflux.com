@@ -1,52 +1,60 @@
-import fs from 'fs';
-import { join } from 'path';
-import matter from 'gray-matter';
+import fs from "fs/promises";
+import { join } from "path";
+import { format } from "date-fns";
+import matter from "gray-matter";
+import remark from "remark";
+import remarkHtml from "remark-html";
 
-export function getPageSlugs(directory: string) {
+const loadMd = async (path: string) => {
+  const fullPath = join(process.cwd(), `${path}.md`);
+  const fileContents = await fs.readFile(fullPath, "utf8");
+  return matter(fileContents);
+};
+
+const stripSuffix = (filename: string, suffix: string) =>
+  filename.replace(new RegExp(`\.${suffix}`), "");
+
+const remarkHtmlProcessor = remark().use(remarkHtml);
+export const mdToHtml = (mdSource: string) =>
+  remarkHtmlProcessor.processSync(mdSource).toString();
+
+export const loadAllMd = async (directory: string) => {
   const postsDirectory = join(process.cwd(), directory);
-  return fs.readdirSync(postsDirectory);
+  const slugs = await fs
+    .readdir(postsDirectory)
+    .then((files) =>
+      files.filter((f) => f.endsWith(".md")).map((x) => stripSuffix(x, "md")),
+    );
+
+  return Promise.all(
+    slugs.map((slug) => loadMdBySlug("src/transcripts", slug)),
+  );
+};
+
+interface MdPage {
+  content: string;
+  slug: string;
+  date: string;
+  time: string;
+  title: string;
+  description: string;
+  people: string;
 }
-
-export function getPageBySlug(
-  directory: string,
-  slug: string,
-  fields: string[] = [],
-) {
-  const postsDirectory = join(process.cwd(), directory);
-
-  const realSlug = slug.replace(/\.md$/, '');
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
-  const { data, content } = matter(fileContents);
-
-  type Items = {
-    [key: string]: string;
-  };
-
-  const items: Items = {};
-
-  // Ensure only the minimal needed data is exposed
-  fields.forEach((field) => {
-    if (field === 'slug') {
-      items[field] = realSlug;
+export const loadMdBySlug = async (directory: string, slug: string) => {
+  const { data, content } = await loadMd(join(directory, slug));
+  const mapped = Object.entries(data).map((pair) => {
+    // Next doesn't like getting Date instances, so strip them to strings
+    // It's really annoying that the parser doesn't let us do this
+    if (pair[1] instanceof Date) {
+      return [pair[0], format(pair[1], "yyyy-MM-dd")];
     }
-    if (field === 'content') {
-      items[field] = content;
+    // Parse the description, since it's always pretty small
+    if (pair[0] === "description" || pair[0] === "people") {
+      return [pair[0], mdToHtml(pair[1])];
     }
-
-    if (typeof data[field] !== 'undefined') {
-      items[field] = data[field];
-    }
+    return pair;
   });
-
-  return items;
-}
-
-export function getAllPages(directory: string, fields: string[] = []) {
-  const slugs = getPageSlugs(directory);
-  const posts = slugs
-    .map((slug) => getPageBySlug(directory, slug, fields))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-  return posts;
-}
+  mapped.push(["slug", slug]);
+  mapped.push(["content", content]);
+  return Object.fromEntries(mapped) as MdPage;
+};
