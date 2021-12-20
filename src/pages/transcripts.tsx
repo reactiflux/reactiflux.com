@@ -1,5 +1,5 @@
 import React from "react";
-import { compareDesc, parseISO } from "date-fns";
+import { add, format, compareDesc, parseISO } from "date-fns";
 
 import { FocusBoundary, Layout, Link } from "@components";
 import { loadAllMd, mdToHtml, Transcript } from "@helpers/retrieveMdPages";
@@ -29,7 +29,12 @@ export default function Transcripts({
             </nav>
           </FocusBoundary>
           <div>
-            <time>Transcript from {latest.date}</time>
+            <p>
+              <em>
+                Transcript from{" "}
+                {format(add(parseISO(latest.date), { days: 1 }), "EEEE PPP")}
+              </em>
+            </p>
             <div dangerouslySetInnerHTML={{ __html: latest.html }} />
           </div>
         </>
