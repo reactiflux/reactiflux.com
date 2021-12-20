@@ -40,11 +40,13 @@ export default function Transcripts({
 
 export async function getStaticProps() {
   const transcripts = await loadAllMd<Transcript>("src/transcripts");
-  const all = transcripts.sort((a, b) =>
-    a.date && b.date ? compareDesc(parseISO(a.date), parseISO(b.date)) : 1,
-  );
+  const all = transcripts
+    .filter((x) => Boolean(x) && x.content !== "")
+    .sort((a, b) =>
+      a.date && b.date ? compareDesc(parseISO(a.date), parseISO(b.date)) : 1,
+    );
   // Find first (most recent) transcript with content and generate html
-  const latest = all.find((t) => t.content !== "");
+  const latest = all[0];
   if (!latest) {
     throw new Error("No transcripts found!");
   }
