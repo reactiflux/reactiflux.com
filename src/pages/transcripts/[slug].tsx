@@ -1,19 +1,17 @@
 import { add, format, compareDesc, parseISO } from "date-fns";
 import { FocusBoundary, Layout, Link } from "@components";
-import { getAnchor } from "@utils/anchor";
 import {
   loadAllMd,
   loadMdBySlug,
-  MdPage,
   mdToHtml,
   Transcript as TranscriptFrontmatter,
 } from "@helpers/retrieveMdPages";
+import { pick } from "@helpers/utils";
 
 export default function Transcript({
   all,
   title,
   date,
-  description,
   html,
 }: Awaited<ReturnType<typeof getStaticProps>>["props"]) {
   return (
@@ -72,6 +70,7 @@ export const getStaticProps = async ({
   const transcripts = await loadAllMd<TranscriptFrontmatter>("src/transcripts");
   const all = transcripts
     .filter((x) => Boolean(x) && x.content !== "")
+    .map((x) => pick(["slug", "date", "title"], x))
     .sort((a, b) =>
       a.date && b.date ? compareDesc(parseISO(a.date), parseISO(b.date)) : 1,
     );
@@ -79,7 +78,7 @@ export const getStaticProps = async ({
   return {
     props: {
       all,
-      ...doc,
+      ...pick(["title", "date"], doc),
       html: mdToHtml(doc.content),
     },
   };

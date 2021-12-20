@@ -50,21 +50,22 @@ export async function getStaticProps() {
     .sort((a, b) =>
       a.date && b.date ? compareDesc(parseISO(a.date), parseISO(b.date)) : 1,
     );
-  // Find first (most recent) transcript with content and generate html
   const latest = all[0];
   if (!latest) {
     throw new Error("No transcripts found!");
   }
   return {
     props: {
-      all: all.map(
-        ({ content, description, time, location, people, ...t }) => ({
-          ...t,
-          hasContent: Boolean(content),
-          path: `/transcripts/${t.slug}`,
-        }),
-      ),
-      latest: { ...latest, html: mdToHtml(latest.content) },
+      all: all.map((t) => ({
+        title: t.title,
+        hasContent: Boolean(t.content),
+        path: `/transcripts/${t.slug}`,
+      })),
+      latest: {
+        title: latest.title,
+        date: latest.date,
+        html: mdToHtml(latest.content),
+      },
     },
   };
 }
