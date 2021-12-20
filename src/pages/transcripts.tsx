@@ -40,15 +40,9 @@ export default function Transcripts({
 
 export async function getStaticProps() {
   const transcripts = await loadAllMd<Transcript>("src/transcripts");
-  const all = transcripts
-    .filter(Boolean)
-    .sort((a, b) =>
-      a.date && b.date ? compareDesc(parseISO(a.date), parseISO(b.date)) : 1,
-    )
-    .map((t) => ({
-      ...t,
-      path: `/transcripts/${t.slug}`,
-    }));
+  const all = transcripts.sort((a, b) =>
+    a.date && b.date ? compareDesc(parseISO(a.date), parseISO(b.date)) : 1,
+  );
   // Find first (most recent) transcript with content and generate html
   const latest = all.find((t) => t.content !== "");
   if (!latest) {
@@ -56,7 +50,13 @@ export async function getStaticProps() {
   }
   return {
     props: {
-      all,
+      all: all.map(
+        ({ content, description, time, location, people, ...t }) => ({
+          ...t,
+          hasContent: Boolean(content),
+          path: `/transcripts/${t.slug}`,
+        }),
+      ),
       latest: { ...latest, html: mdToHtml(latest.content) },
     },
   };
