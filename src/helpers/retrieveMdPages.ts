@@ -18,7 +18,7 @@ const remarkHtmlProcessor = remark().use(remarkHtml);
 export const mdToHtml = (mdSource: string) =>
   remarkHtmlProcessor.processSync(mdSource).toString();
 
-export const loadAllMd = async (directory: string) => {
+export const loadAllMd = async <Frontmatter>(directory: string) => {
   const postsDirectory = join(process.cwd(), directory);
   const slugs = await fs
     .readdir(postsDirectory)
@@ -27,11 +27,11 @@ export const loadAllMd = async (directory: string) => {
     );
 
   return Promise.all(
-    slugs.map((slug) => loadMdBySlug("src/transcripts", slug)),
+    slugs.map((slug) => loadMdBySlug<Frontmatter>("src/transcripts", slug)),
   );
 };
 
-interface MdPage {
+export interface Transcript {
   content: string;
   slug: string;
   date: string;
@@ -39,8 +39,18 @@ interface MdPage {
   title: string;
   description: string;
   people: string;
+  [k: string]: string | boolean | undefined;
 }
-export const loadMdBySlug = async (directory: string, slug: string) => {
+export interface MdPage {
+  content: string;
+  title: string;
+  sidebar?: boolean;
+  [k: string]: string | boolean | undefined;
+}
+export const loadMdBySlug = async <Frontmatter>(
+  directory: string,
+  slug: string,
+) => {
   const { data, content } = await loadMd(join(directory, slug));
   const mapped = Object.entries(data).map((pair) => {
     // Next doesn't like getting Date instances, so strip them to strings
@@ -56,5 +66,5 @@ export const loadMdBySlug = async (directory: string, slug: string) => {
   });
   mapped.push(["slug", slug]);
   mapped.push(["content", content]);
-  return Object.fromEntries(mapped) as MdPage;
+  return Object.fromEntries(mapped) as Frontmatter;
 };

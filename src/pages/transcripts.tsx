@@ -2,7 +2,7 @@ import React from "react";
 import { compareDesc, parseISO } from "date-fns";
 
 import { FocusBoundary, Layout, Link } from "@components";
-import { loadAllMd, mdToHtml } from "@helpers/retrieveMdPages";
+import { loadAllMd, mdToHtml, Transcript } from "@helpers/retrieveMdPages";
 
 export default function Transcripts({
   all,
@@ -39,7 +39,7 @@ export default function Transcripts({
 }
 
 export async function getStaticProps() {
-  const transcripts = await loadAllMd("src/transcripts");
+  const transcripts = await loadAllMd<Transcript>("src/transcripts");
   const all = transcripts
     .filter(Boolean)
     .sort((a, b) =>
