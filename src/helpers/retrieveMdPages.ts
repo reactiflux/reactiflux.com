@@ -38,6 +38,7 @@ export interface Transcript {
   time: string;
   title: string;
   description: string;
+  location: string;
   people: string;
   [k: string]: string | boolean | undefined;
 }
