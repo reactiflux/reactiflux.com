@@ -27,7 +27,7 @@ export const loadAllMd = async <Frontmatter>(directory: string) => {
     );
 
   return Promise.all(
-    slugs.map((slug) => loadMdBySlug<Frontmatter>("src/transcripts", slug)),
+    slugs.map((slug) => loadMdBySlug<Frontmatter>(directory, slug)),
   );
 };
 
