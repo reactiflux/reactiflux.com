@@ -4,7 +4,6 @@ import { format } from "date-fns";
 import matter from "gray-matter";
 import { unified } from "unified";
 import parse from "remark-parse";
-import stringify from "remark-stringify";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import rehypeSlug from "rehype-slug";
@@ -21,9 +20,8 @@ const stripSuffix = (filename: string, suffix: string) =>
 
 const remarkHtmlProcessor = unified()
   .use(parse)
-  .use(stringify)
-  .use(remarkRehype)
   .use(remarkHeadings)
+  .use(remarkRehype)
   .use(rehypeSlug)
   .use(rehypeStringify);
 
