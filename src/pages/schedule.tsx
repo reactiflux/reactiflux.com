@@ -12,8 +12,8 @@ import {
 
 import { Layout, Link } from "@components";
 import { groupBy, partition } from "@helpers/array";
-import { is, pick } from "@helpers/object";
-import { loadAllMd, mdToHtml, Transcript } from "@helpers/retrieveMdPages";
+import { pick } from "@helpers/object";
+import { loadAllMd, processMd, Transcript } from "@helpers/retrieveMdPages";
 
 const EventsDivider = styled.hr`
   margin: 6rem 0;
@@ -140,9 +140,9 @@ export async function getStaticProps() {
       ...pick(["slug", "title", "time"], x),
       dateGroup: format(parseISO(x.date), "MMMM yyyy"),
       date: format(add(parseISO(x.date), { days: 1 }), "PPPPP"),
-      people: mdToHtml(x.people),
-      location: mdToHtml(x.location),
-      description: mdToHtml(x.description),
+      people: processMd(x.people).html,
+      location: processMd(x.location).html,
+      description: processMd(x.description).html,
       hasTranscript: x.content !== "",
     }));
 

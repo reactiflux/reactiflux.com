@@ -3,10 +3,10 @@ import { FocusBoundary, Layout, Link } from "@components";
 import {
   loadAllMd,
   loadMdBySlug,
-  mdToHtml,
+  processMd,
   Transcript as TranscriptFrontmatter,
 } from "@helpers/retrieveMdPages";
-import { pick } from "@helpers/utils";
+import { pick } from "@helpers/object";
 
 export default function Transcript({
   all,
@@ -79,7 +79,7 @@ export const getStaticProps = async ({
     props: {
       all,
       ...pick(["title", "date"], doc),
-      html: mdToHtml(doc.content),
+      html: processMd(doc.content).html,
     },
   };
 };

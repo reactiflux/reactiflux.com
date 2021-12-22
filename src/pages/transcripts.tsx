@@ -2,7 +2,7 @@ import React from "react";
 import { add, format, compareDesc, parseISO } from "date-fns";
 
 import { FocusBoundary, Layout, Link } from "@components";
-import { loadAllMd, mdToHtml, Transcript } from "@helpers/retrieveMdPages";
+import { loadAllMd, processMd, Transcript } from "@helpers/retrieveMdPages";
 
 export default function Transcripts({
   all,
@@ -64,7 +64,7 @@ export async function getStaticProps() {
       latest: {
         title: latest.title,
         date: latest.date,
-        html: mdToHtml(latest.content),
+        html: processMd(latest.content).html,
       },
     },
   };
