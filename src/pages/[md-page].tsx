@@ -10,7 +10,7 @@ import {
 } from "@helpers/retrieveMdPages";
 import { pick } from "@helpers/object";
 
-export default function Transcript({
+export default function MarkdownPage({
   html,
   title,
   headings,
