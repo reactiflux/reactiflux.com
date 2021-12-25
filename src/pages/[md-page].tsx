@@ -38,18 +38,17 @@ export default function MarkdownPage({
                     .filter((heading) => heading.depth < 3)
                     .map(({ value }) => (
                       <li key={value}>
-                        <Link href={getAnchor(value)}>
-                          <a
-                            onClick={() => {
-                              setSidebar(false);
-                              const heading = document.getElementById(
-                                getAnchor(value).replace("#", ""),
-                              );
-                              heading?.querySelector("a")?.focus();
-                            }}
-                          >
-                            {value}
-                          </a>
+                        <Link
+                          href={getAnchor(value)}
+                          onClick={() => {
+                            setSidebar(false);
+                            const heading = document.getElementById(
+                              getAnchor(value).replace("#", ""),
+                            );
+                            heading?.querySelector("a")?.focus();
+                          }}
+                        >
+                          {value}
                         </Link>
                       </li>
                     ))}

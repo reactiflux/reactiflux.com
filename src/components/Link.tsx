@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import InternalLink, { LinkProps } from 'next/link';
+import InternalLink, { LinkProps } from "next/link";
+import { AnyStyledComponent } from "styled-components";
 
 interface Props extends LinkProps {
   newTab?: boolean;
   title?: string;
+  onClick?: () => void;
+  as?: AnyStyledComponent;
 }
 
 export function Link({
@@ -14,18 +17,18 @@ export function Link({
   ...props
 }: React.PropsWithChildren<Props>) {
   const href = origHref.toString();
-  const isInternal = href.startsWith('/');
-  const toNewTab = newTab && !href.startsWith('#');
+  const isInternal = href.startsWith("/");
+  const toNewTab = newTab && !href.startsWith("#");
 
   return isInternal ? (
-    <InternalLink {...props} href={href}>
-      <a>{children}</a>
+    <InternalLink href={href}>
+      <a {...props}>{children}</a>
     </InternalLink>
   ) : (
     <a
       href={href.toString()}
       {...(toNewTab
-        ? { target: '_blank', rel: 'noopener noreferrer' }
+        ? { target: "_blank", rel: "noopener noreferrer" }
         : undefined)}
       {...props}
     >
