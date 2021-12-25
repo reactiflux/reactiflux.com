@@ -33,7 +33,9 @@ export const processMd = (mdSource: string) => {
   return { html: vfile.toString(), headings: [] };
 };
 
-export const loadAllMd = async <Frontmatter>(directory: string) => {
+export const loadAllMd = async <DocType>(
+  directory: string,
+): Promise<DocType[]> => {
   const postsDirectory = join(process.cwd(), directory);
   const slugs = await fs
     .readdir(postsDirectory)
@@ -42,7 +44,7 @@ export const loadAllMd = async <Frontmatter>(directory: string) => {
     );
 
   return Promise.all(
-    slugs.map((slug) => loadMdBySlug<Frontmatter>(directory, slug)),
+    slugs.map((slug) => loadMdBySlug<DocType>(directory, slug)),
   );
 };
 
@@ -63,7 +65,15 @@ export interface MdPage {
   sidebar?: boolean;
   [k: string]: string | boolean | undefined;
 }
-export const loadMdBySlug = async <Frontmatter>(
+export interface BlogPost {
+  content: string;
+  slug: string;
+  title: string;
+  author: string;
+  date: string;
+  description: string;
+}
+export const loadMdBySlug = async <DocType>(
   directory: string,
   slug: string,
 ) => {
@@ -78,5 +88,5 @@ export const loadMdBySlug = async <Frontmatter>(
   });
   mapped.push(["slug", slug]);
   mapped.push(["content", content]);
-  return Object.fromEntries(mapped) as Frontmatter;
+  return Object.fromEntries(mapped) as DocType;
 };
