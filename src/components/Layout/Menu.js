@@ -29,7 +29,7 @@ export function Menu() {
         </BlackLivesMatter>
         <Nav>
           <Link href="/">
-            <Logo src={Reactiflux} alt="Reactiflux" />
+            <Logo {...Reactiflux} alt="Reactiflux" />
           </Link>
           <Space />
           <MobileNavIfMobile>

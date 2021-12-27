@@ -13,13 +13,13 @@ export function Footer() {
     <FooterElement>
       <p className="social">
         <Link href="https://github.com/reactiflux/reactiflux.com">
-          <Image src={Github} alt="Github" />
+          <Image {...Github} alt="Github" />
         </Link>
         <Link href="https://discord.gg/reactiflux">
-          <Image src={Discord} alt="Discord" />
+          <Image {...Discord} alt="Discord" />
         </Link>
         <Link href="https://twitter.com/reactiflux">
-          <Image src={Twitter} alt="Twitter" />
+          <Image {...Twitter} alt="Twitter" />
         </Link>
       </p>
       <p>

@@ -41,45 +41,45 @@ const Index = () => {
       <p>
         We’re a chat community of 147,000+ React&nbsp;JS&nbsp;
         <Link href="https://github.com/facebook/react" title="React JS">
-          <Image src={ReactLogo} alt="React JS" />
+          <Image {...ReactLogo} alt="React JS" />
         </Link>
         , React&nbsp;Native&nbsp;
         <Link
           href="https://github.com/facebook/react-native"
           title="React Native"
         >
-          <Image src={ReactNative} alt="React Native" />
+          <Image {...ReactNative} alt="React Native" />
         </Link>
         , Redux&nbsp;
         <Link href="https://github.com/reactjs/redux" title="Redux">
-          <Image src={Redux} alt="Redux" />
+          <Image {...Redux} alt="Redux" />
         </Link>
         , Jest&nbsp;
         <Link href="https://github.com/facebook/jest" title="Jest">
-          <Image src={Jest} alt="Jest" />
+          <Image {...Jest} alt="Jest" />
         </Link>
         , Relay&nbsp;
         <Link href="https://github.com/facebook/relay" title="Relay">
-          <Image src={Relay} alt="Relay" />
+          <Image {...Relay} alt="Relay" />
         </Link>{" "}
         and GraphQL&nbsp;
         <Link href="https://github.com/facebook/graphql" title="GraphQL">
-          <Image src={GraphQL} alt="GraphQL" />
+          <Image {...GraphQL} alt="GraphQL" />
         </Link>{" "}
         developers. We hold Q&amp;A&rsquo;s with Facebook Engineers&nbsp;
         <Link href="https://github.com/facebook" title="Facebook Organization">
-          <Image src={Facebook} alt="Facebook Organization" />
+          <Image {...Facebook} alt="Facebook Organization" />
         </Link>{" "}
         and other developers&nbsp;
         <Link
           href="https://github.com/reactiflux"
           title="Reactiflux Developers"
         >
-          <Image src={Console} alt="Reactiflux Developers" />
+          <Image {...Console} alt="Reactiflux Developers" />
         </Link>{" "}
         in the community&nbsp;
         <Link href="https://discord.gg/reactiflux" title="Reactiflux Discord">
-          <Image src={Community} alt="Reactiflux Discord" />
+          <Image {...Community} alt="Reactiflux Discord" />
         </Link>
         . Come chat about tech related to React & JavaScript or ask for help!
       </p>
