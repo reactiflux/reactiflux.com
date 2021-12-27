@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
 
+import Favicon from "assets/favicon.png";
+
 export function SEO({ description, image, lang, meta, keywords, title }) {
   return (
     <Head>
@@ -23,6 +25,9 @@ export function SEO({ description, image, lang, meta, keywords, title }) {
         .map((m, index) => (
           <meta key={index} {...m} />
         ))}
+      {[{ rel: "icon", href: Favicon.src, type: "image/png" }].map((x, i) => (
+        <link key={i} {...x} />
+      ))}
       <title>{title}</title>
     </Head>
   );
