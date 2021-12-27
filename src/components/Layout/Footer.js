@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "next/image";
 
 import { Discord, Github, Twitter } from "@assets/logos";
 import { Link } from "@components";
+import Image from "@components/Image";
 
 import { Footer as FooterElement } from "./FooterStyles";
 

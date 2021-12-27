@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
 import { background, blue, boxShadow, pink } from "@utils/theme";
-import Image from "next/image";
+import Image from "@components/Image";
 
 const spin = keyframes`
  from { transform: rotate(0); }
