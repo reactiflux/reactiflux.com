@@ -39,7 +39,7 @@ const Index = () => {
         Reactiflux
       </h1>
       <p>
-        We’re a chat community of 147,000+ React&nbsp;JS&nbsp;
+        We’re a chat community of 170,000+ React&nbsp;JS&nbsp;
         <Link href="https://github.com/facebook/react" title="React JS">
           <Image {...ReactLogo} alt="React JS" />
         </Link>

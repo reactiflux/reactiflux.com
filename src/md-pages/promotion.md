@@ -6,17 +6,21 @@ Reactiflux's members do lots of cool stuff, and we'd love for you to share what 
 
 We have several channels where self-promotion is expected, and some other relevant channels as well. We ask that you share it only once, unless there's a significant milestone or it's relevant to someone's question.
 
-## [#i-made-this](https://discord.gg/GaCSDfm)
+## [#i-wrote-this](new channel)
 
-New side projects, libraries, blog posts, or other works you want to show off. This is predominantly meant as a showcase for individuals.
+Here is best to share your own writing. Unless the content you’re posting is better suited to another channel, share it here. This is mainly intended to be a showcase for personal writing, but livestreams may also be shared here. Streams may only be shared once every 2 weeks.
 
-## [#news-and-links](https://discord.gg/TEYnXKw)
+## [#i-built-this](https://discord.gg/GaCSDfm)
 
-If you want to share an announcement of a new blog post, product, feature, or other effort, then this is the most appropriate channel. Reactiflux does not generally allow advertising, however.
+New side projects, libraries, or other works you want to show off. This is predominantly meant as a showcase for individuals.
 
-## [#conferences](https://discord.gg/RYVBdtY)
+## [#tech-reads-and-news](https://discord.gg/TEYnXKw)
 
-Announcing an upcoming conference or discussing an ongoing conference are both encouraged here. In general, we'd prefer conferences limit their announcments to 1 per major milestone. When it's announced, near registration deadlines, and when it's about to happen would be appropriate.
+If you want to share an announcement of something new in the Javascript ecosystem, then this is the most appropriate channel. Reactiflux is not a free audience for advertisements, however — see our ["self promotion vs advertising" section of the page](#self-promotion-vs-advertising). This is also a channel for sharing and discussing interesting articles, blog posts, and books about JS, software development, the tech industry, and other relevant longform writings.
+
+## [#events](https://discord.gg/RYVBdtY)
+
+Announcing an upcoming conference or discussing an ongoing conference are both encouraged here. In general, we'd prefer conferences limit their announcements to 1 per major milestone. When it's announced, near registration deadlines, and when it's about to happen would be appropriate.
 
 ## [#job-board](https://discord.gg/R942bNb)
 
@@ -30,16 +34,20 @@ Jobs are full-time salaried positions, or part- or full-time contract roles. We 
 
 Reactiflux only allows surveys from private organizations if they're shared by an active member of the community. Surveys may be posted if the results will be public or used for academic purposes, and should only be shared once. Fair warning: most surveys get relatively low uptake, they just aren't of interest to many in the community.
 
+### Outside communities
+
+Reactiflux generally does not allow external communities to be promoted. If another server would better serve someone asking a question (for example, asking a detailed python question in #general-tech), then members are welcome to share server invites. Announcements or promotions of communities must be of obvious interest to the majority of the Reactiflux community.
+
 ### Self promotion vs advertising
 
-The line here can be thin. Reactiflux is a community, not a marketing channel. If you have a body of content you'd like to promote, our recommended way of doing so is to be an active and positive member of the server. If someone has a question that you've created an external answer to, we'd love if you share it! Otherwise, we ask that you limit what you plug without prompting.
+The line here can be thin. Reactiflux is a community, not a free marketing audience. If you have a body of content you'd like to promote, our recommended way of doing so is to be an active and positive member of the server. If someone has a question that you've created an external answer to, we'd love if you share it! Otherwise, we ask that you limit what you plug without prompting.
 
 To help determine if what you want to share is an advertisement, here are some questions to help you decide.
 
 You should be able to answer "yes" to:
 
 - Did you make it yourself or help make it?
-- Does it use or discuss React?
+- Does it use or discuss React, frontend Javascript, or the web industry?
 
 And "no" to:
 
