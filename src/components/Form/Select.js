@@ -43,7 +43,9 @@ export const Select = ({ label, options, ...props }) => (
       {label}
       <SelectElement {...props}>
         {options.map(({ label, value }) => (
-          <option value={value}>{label || value}</option>
+          <option key={label} value={value}>
+            {label || value}
+          </option>
         ))}
       </SelectElement>
     </label>
