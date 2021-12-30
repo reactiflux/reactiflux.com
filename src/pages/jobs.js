@@ -176,11 +176,11 @@ const Jobs = () => {
               {status === ERROR ? (
                 <p>
                   Something went wrong - please try again! If this problem
-                  persists, please <Link to="/contact/">let us know</Link>.
+                  persists, please <Link href="/contact/">let us know</Link>.
                 </p>
               ) : status === SUCCESS && results.length === 0 ? (
                 <p>
-                  We couldn't find any results for your query - try something
+                  We couldn’t find any results for your query - try something
                   different!
                 </p>
               ) : null}
@@ -191,15 +191,15 @@ const Jobs = () => {
               If the job post does not contain a dedicated email, link, or phone
               number, you can click either the offer date to open the original
               message in our{" "}
-              <Link to="https://discord.gg/R942bNb">
+              <Link href="https://discord.gg/R942bNb">
                 <strong>#job-board</strong> channel
               </Link>
               , or the name of the user that posted the job. You can then
               contact the person by sending them a direct message.
             </p>
             <p>
-              If you don't already have one, you will need to create a (free!){" "}
-              <Link to="https://discord.com/">Discord</Link> account.
+              If you don’t already have one, you will need to create a (free!){" "}
+              <Link href="https://discord.com/">Discord</Link> account.
             </p>
           </Modal>
         </>

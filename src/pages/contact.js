@@ -52,19 +52,19 @@ const Index = () => {
           <li>direct message to any staff member in Discord</li>
           <li>
             mention or message{" "}
-            <Link to="https://twitter.com/reactiflux">@reactiflux</Link> on
+            <Link href="https://twitter.com/reactiflux">@reactiflux</Link> on
             Twitter
           </li>
           <li>our anonymous contact form below</li>
         </ul>
         <p>
           If you message us directly, we can talk things through with you and
-          make sure you're kept updated.
+          make sure you’re kept updated.
         </p>
         <p>
           If you choose to reach out anonymously, bear in mind that we may not
           reference your message publicly. However, we will read, discuss, and
-          act on any message received through this form. If you'd prefer to be
+          act on any message received through this form. If you’d prefer to be
           contacted on another platform, please include your information as part
           of your message.
         </p>

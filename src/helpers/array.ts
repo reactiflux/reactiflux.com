@@ -7,16 +7,19 @@
  * @argument {Array<any>} xs An array of arbitrary things to group.
  * @returns {object} An object with subsets of xs with the group names as keys.
  */
-export const groupBy = (inputKey, xs) => {
-  return xs.reduce((acc, x, ...rest) => {
+export const groupBy = <Data extends Record<string, any>>(
+  inputKey: string | ((d: Data, index: number) => string),
+  xs: Data[],
+) => {
+  return xs.reduce((acc, x, data) => {
     const key =
-      typeof inputKey === "function" ? inputKey(x, ...rest) : x[inputKey];
+      typeof inputKey === "function" ? inputKey(x, data) : x[inputKey];
     if (!acc[key]) {
       acc[key] = [];
     }
     acc[key].push(x);
     return acc;
-  }, {});
+  }, {} as Record<string, Data[]>);
 };
 
 /**
@@ -27,11 +30,11 @@ export const groupBy = (inputKey, xs) => {
  * returns the value to use as group name.
  * @returns {[Array<T>, Array<T>]>} Returns an tuple of each group
  */
-export const partition = (predicate, xs) =>
+export const partition = <Data>(predicate: (d: Data) => boolean, xs: Data[]) =>
   xs.reduce(
     (acc, cur) => {
       acc[predicate(cur) ? 1 : 0].push(cur);
       return acc;
     },
-    [[], []],
+    [[], []] as [Data[], Data[]],
   );

@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 import { foreground, pink } from "@utils/theme";
 
-import { Link } from "./Link";
-
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   border-left: 3px solid ${pink};
   display: block;
   margin: 2rem 0;
@@ -24,15 +23,13 @@ const StyledLink = styled(Link)`
   }
 `;
 
-export function ArticleLink({ childMarkdownRemark, relativeDirectory, name }) {
-  const { title, description } = childMarkdownRemark.frontmatter;
-
+export function ArticleLink({ title, description, slug }) {
   return (
-    <StyledLink to={`/blog/${relativeDirectory}/${name.replace("index", "")}`}>
-      <article>
+    <Link passHref href={`/blog/post/${slug}`}>
+      <StyledLink>
         <h2>{title}</h2>
         {description ? <p>{description}</p> : null}
-      </article>
-    </StyledLink>
+      </StyledLink>
+    </Link>
   );
 }

@@ -34,23 +34,23 @@ We received 545 responses, with the survey open for about 2 weeks. We announced 
 
 We had hoped to receive more recipients. Based on analytics, we know that we have just shy of 300 unique daily message senders, and just over 1000 weekly. At the time, Discord showed online member count peaking at just over 5000 at the busiest times (bottoming out at 2500 or 3000 at the slowest times). 545 survey responses is nothing to sneeze at, but seems to be a relatively narrow slice of those who use Reactiflux.
 
-![A horizontal bar chart showing racial makeup of Reactiflux members](./1-race-and-enthicity.png)
+![A horizontal bar chart showing racial makeup of Reactiflux members](/2019-census/1-race-and-enthicity.png)
 
-![A horizontal bar chart showing age breakdown of Reactiflux members](./2-age.png)
+![A horizontal bar chart showing age breakdown of Reactiflux members](/2019-census/2-age.png)
 
-![A horizontal bar chart showing gender identity of Reactiflux members](./3-gender-identity.png)
+![A horizontal bar chart showing gender identity of Reactiflux members](/2019-census/3-gender-identity.png)
 
-![A horizontal bar chart showing whether members of Reactiflux identify as transgender](./4-transgender.png)
+![A horizontal bar chart showing whether members of Reactiflux identify as transgender](/2019-census/4-transgender.png)
 
-![A horizontal bar chart showing the sexual orientation of Reactiflux members](./5-sexual-orientation.png)
+![A horizontal bar chart showing the sexual orientation of Reactiflux members](/2019-census/5-sexual-orientation.png)
 
-![A horizontal bar chart showing the proportion of Reactiflux members who live with a disability](./6-disability.png)
+![A horizontal bar chart showing the proportion of Reactiflux members who live with a disability](/2019-census/6-disability.png)
 
-![A horizontal bar chart showing what religion Reactiflux members identify with](./7-religion.png)
+![A horizontal bar chart showing what religion Reactiflux members identify with](/2019-census/7-religion.png)
 
-![A horizontal bar chart showing whether Reactiflux members feel their identity is represented within the community](./8-representation.png)
+![A horizontal bar chart showing whether Reactiflux members feel their identity is represented within the community](/2019-census/8-representation.png)
 
-![A horizontal bar chart showing the proportion of Reactiflux members who have felt marginalized or been harassed within the server](./9-bad-experiences.png)
+![A horizontal bar chart showing the proportion of Reactiflux members who have felt marginalized or been harassed within the server](/2019-census/9-bad-experiences.png)
 
 Reactiflux is predominently young (78% 18-34), white (57%), and male (89%).
 
