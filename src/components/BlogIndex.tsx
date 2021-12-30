@@ -28,7 +28,7 @@ export default function BlogIndex({ posts, page, pageCount }: Props) {
               return (
                 <li key={p}>
                   <Link
-                    aria-current={p === page ? "page" : "false"}
+                    aria-current={p === page ? "page" : undefined}
                     href={`/blog/${p > 1 ? p : ""}`}
                   >
                     {p}

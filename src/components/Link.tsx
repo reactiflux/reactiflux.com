@@ -2,6 +2,7 @@ import React from "react";
 
 import InternalLink, { LinkProps } from "next/link";
 import { AnyStyledComponent } from "styled-components";
+import { useRouter } from "next/dist/client/router";
 
 interface Props extends LinkProps {
   newTab?: boolean;
@@ -20,9 +21,13 @@ export function Link({
   const isInternal = href.startsWith("/");
   const toNewTab = newTab && !href.startsWith("#");
 
+  const { asPath } = useRouter();
+
   return isInternal ? (
     <InternalLink href={href}>
-      <a {...props}>{children}</a>
+      <a {...props} aria-current={asPath === href ? "page" : undefined}>
+        {children}
+      </a>
     </InternalLink>
   ) : (
     <a

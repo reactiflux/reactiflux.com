@@ -33,13 +33,13 @@ export function Menu() {
           </Link>
           <Space />
           <MobileNavIfMobile>
-            <Link href="/learning/">Learning</Link>
-            <Link href="/tips/">Tips</Link>
-            <Link href="/schedule/">Q&A Schedule</Link>
-            <Link href="/transcripts/">Transcripts</Link>
-            <Link href="/conduct/">Code of Conduct</Link>
-            <Link href="/jobs/">Jobs</Link>
-            <Link href="/contact/">Contact</Link>
+            <Link href="/learning">Learning</Link>
+            <Link href="/tips">Tips</Link>
+            <Link href="/schedule">Q&A Schedule</Link>
+            <Link href="/transcripts">Transcripts</Link>
+            <Link href="/conduct">Code of Conduct</Link>
+            <Link href="/jobs">Jobs</Link>
+            <Link href="/contact">Contact</Link>
           </MobileNavIfMobile>
         </Nav>
       </Wrapper>
