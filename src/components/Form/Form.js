@@ -75,7 +75,14 @@ export const Form = React.forwardRef(function Form(
           {error || (
             <>
               <h3>Something went wrong</h3>
-              <p>If this error keeps on happening, please let me know!</p>
+              <p>
+                If this error keeps on happening, please either{" "}
+                <a href="https://github.com/reactiflux/reactiflux.com/issues">
+                  open an issue
+                </a>{" "}
+                or report it{" "}
+                <a href="https://discord.gg/BkSU7Ju">in the server!</a>
+              </p>
             </>
           )}
           <p>
