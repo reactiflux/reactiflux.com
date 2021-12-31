@@ -13,10 +13,10 @@ const ERROR = "ERROR";
 
 export const Form = React.forwardRef(function Form(
   {
-    allowSubmit,
+    allowSubmit = true,
     error,
     fields,
-    form,
+    form = renderForm,
     name,
     onChange,
     onSubmit,
@@ -133,13 +133,3 @@ const renderForm = (fieldData, onSubmit, allowSubmit) => (
     ) : null}
   </>
 );
-
-Form.defaultProps = {
-  allowSubmit: true,
-  form: renderForm,
-};
-
-Form.Checkbox = Checkbox;
-Form.Input = Input;
-Form.Select = Select;
-Form.Textarea = Textarea;
