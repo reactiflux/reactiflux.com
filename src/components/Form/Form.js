@@ -15,7 +15,7 @@ export const Form = React.forwardRef(function Form(
   {
     allowSubmit = true,
     error,
-    fields,
+    fields: origFields,
     form = renderForm,
     name,
     onChange,
@@ -28,13 +28,13 @@ export const Form = React.forwardRef(function Form(
 ) {
   const [status, setStatus] = React.useState(NONE);
   const [fieldState, setFieldState] = React.useState(
-    fields.reduce((acc, { defaultValue, name }) => {
+    origFields.reduce((acc, { defaultValue, name }) => {
       acc[name] = typeof defaultValue !== "undefined" ? defaultValue : "";
       return acc;
     }, {}),
   );
 
-  const fieldData = fields.map((field) => ({
+  const fields = origFields.map((field) => ({
     ...field,
     onChange: (e) => {
       // have to pull the value from the synthetic event here, because react throws it away
@@ -57,7 +57,7 @@ export const Form = React.forwardRef(function Form(
 
   const onSubmitCallback = () => {
     setStatus(SUBMITTING);
-    onSubmit(fieldData.map((field) => [field.name, field.value]))
+    onSubmit(JSON.stringify(fieldState))
       .then(() => setStatus(SUCCESS))
       .catch(() => setStatus(ERROR));
   };
@@ -98,25 +98,17 @@ export const Form = React.forwardRef(function Form(
         <form
           name={name}
           method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
           onSubmit={onSubmitCallback}
           ref={ref}
           {...props}
         >
-          <Input type="hidden" name="form-name" value={name} />
-          <Input
-            hidden
-            label="If you're not a robot, leave this field blank!"
-            name="bot-field"
-          />
-          {form(fieldData, onSubmitCallback, allowSubmit)}
+          {form(fields, allowSubmit)}
         </form>
       );
   }
 });
 
-const renderForm = (fieldData, onSubmit, allowSubmit) => (
+const renderForm = (fieldData, allowSubmit) => (
   <>
     {fieldData.map((field) => {
       switch (field.type) {
