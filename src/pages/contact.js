@@ -2,6 +2,11 @@ import React from "react";
 
 import { Layout, Link, Form } from "@components";
 
+const ENV = {
+  prod: "https://formspree.io/f/mknygboe",
+  test: "https://formspree.io/f/mwkypbaz",
+};
+
 const fields = [
   {
     label: "Your Message",
@@ -11,24 +16,17 @@ const fields = [
   },
 ];
 
-const encode = (data) =>
-  Object.entries(data)
-    .map(
-      ([key, value]) =>
-        `${encodeURIComponent(key)}=${encodeURIComponent(value)}`,
-    )
-    .join("&");
-
-const onSubmit = (fieldState) =>
-  fetch("/", {
+const onSubmit = (body) =>
+  fetch(ENV.test, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
-    body: encode({
-      "form-name": "contact",
-      ...Object.fromEntries(fieldState),
-    }),
+    headers: { "Content-Type": "application/json" },
+    body,
+  }).then((res) => {
+    console.log({ res });
+    if (res.status >= 400) {
+      throw res;
+    }
+    return res;
   });
 
 const Index = () => {
