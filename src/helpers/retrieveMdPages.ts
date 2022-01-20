@@ -8,6 +8,7 @@ import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import rehypeSlug from "rehype-slug";
 import remarkHeadings, { hasHeadingsData } from "@vcarl/remark-headings";
+import { toString } from "mdast-util-to-string";
 
 const loadMd = async (path: string) => {
   const fullPath = join(process.cwd(), `${path}.md`);
@@ -18,12 +19,23 @@ const loadMd = async (path: string) => {
 const stripSuffix = (filename: string, suffix: string) =>
   filename.replace(new RegExp(`\.${suffix}`), "");
 
+const remarkTextProcessor = unified().use(parse).use(remarkHeadings);
+
+export const processMdPlaintext = (mdSource: string) => {
+  const vfile = remarkTextProcessor.parse(mdSource);
+  const html = toString(vfile).replaceAll(/<a.*> /g, "");
+  if (hasHeadingsData(vfile.data)) {
+    return { html: html, headings: vfile.data.headings };
+  }
+  return { html: html, headings: [] };
+};
+
 const remarkHtmlProcessor = unified()
   .use(parse)
   .use(remarkHeadings)
-  .use(remarkRehype)
+  .use(remarkRehype, { allowDangerousHtml: true })
   .use(rehypeSlug)
-  .use(rehypeStringify);
+  .use(rehypeStringify, { allowDangerousHtml: true });
 
 export const processMd = (mdSource: string) => {
   const vfile = remarkHtmlProcessor.processSync(mdSource);
@@ -62,6 +74,7 @@ export interface Transcript {
 export interface MdPage {
   content: string;
   title: string;
+  description?: string;
   sidebar?: boolean;
   [k: string]: string | boolean | undefined;
 }

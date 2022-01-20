@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  formatISO,
   compareDesc,
   format,
   parseISO,
   isAfter,
   add,
   sub,
+  parse,
 } from "date-fns";
 
 import { Layout, Link } from "@components";
@@ -30,7 +30,11 @@ export default function Schedule({
   pastEvents,
 }: Awaited<ReturnType<typeof getStaticProps>>["props"]) {
   return (
-    <Layout title="Transcripts" as={undefined} description={undefined}>
+    <Layout
+      title="Transcripts"
+      as={undefined}
+      description="Upcoming Q&A events in Reactiflux"
+    >
       <h1>Q&A Schedule</h1>
       <div>
         <p>
@@ -148,12 +152,12 @@ export async function getStaticProps() {
 
   // transcripts are displayed as "upcoming" until the day *after* they
   // happen, so we compare the node's date to yesterday's date
-  const today = formatISO(sub(new Date(), { days: 15 }));
-  // const today = formatISO(new Date());
-  const yesterday = sub(parseISO(today), { days: 1 });
+  const now = new Date();
+  const today = now;
+  const yesterday = sub(today, { days: 1 });
 
   const [past, upcoming] = partition(
-    (node) => isAfter(parseISO(node.date), yesterday),
+    (node) => isAfter(parse(node.date, "PPPP", now), yesterday),
     all,
   );
 

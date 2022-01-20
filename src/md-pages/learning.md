@@ -1,5 +1,6 @@
 ---
 title: Learning
+description: A selected list of tutorials, articles, and resources on Javascript, React, Redux, and related topics. Originally assembled by Mark Erikson.
 sidebar: true
 ---
 

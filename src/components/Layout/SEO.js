@@ -3,16 +3,21 @@ import Head from "next/head";
 
 import Favicon from "assets/favicon.png";
 
+// This will be broken on previews cuz fuck you it's easy
+const banner = "https://reactiflux.com/logo-banner.png";
+
 export function SEO({ description, image, lang, meta, keywords, title }) {
   return (
     <Head>
       {[
         { name: `description`, content: description },
         { property: `og:title`, content: title },
+        { property: `og:image`, content: banner },
         { property: `og:description`, content: description },
         { property: `og:type`, content: `website` },
         { name: `twitter:card`, content: `summary` },
         { name: `twitter:title`, content: title },
+        { name: `twitter:image`, content: banner },
         { name: `twitter:description`, content: description },
       ]
         .concat(

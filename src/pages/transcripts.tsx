@@ -8,8 +8,14 @@ export default function Transcripts({
   all,
   latest,
 }: Awaited<ReturnType<typeof getStaticProps>>["props"]) {
+  const date = format(add(parseISO(latest.date), { days: 1 }), "EEEE PPP");
   return (
-    <Layout title="Transcripts" sidebar as={undefined} description={undefined}>
+    <Layout
+      title="Transcripts"
+      sidebar
+      as={undefined}
+      description={`Read transcripts of our past text-based Q&A events, most recently with ${latest.title} on ${date}`}
+    >
       {(setSidebar: any) => (
         <>
           <h1>{latest.title}</h1>
@@ -30,10 +36,7 @@ export default function Transcripts({
           </FocusBoundary>
           <div>
             <p>
-              <em>
-                Transcript from{" "}
-                {format(add(parseISO(latest.date), { days: 1 }), "EEEE PPP")}
-              </em>
+              <em>Transcript from {date}</em>
             </p>
             <div dangerouslySetInnerHTML={{ __html: latest.html }} />
           </div>
@@ -63,6 +66,7 @@ export async function getStaticProps() {
       })),
       latest: {
         title: latest.title,
+        description: latest.description,
         date: latest.date,
         html: processMd(latest.content).html,
       },
