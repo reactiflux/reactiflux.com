@@ -21,9 +21,9 @@ const stripSuffix = (filename: string, suffix: string) =>
 const remarkHtmlProcessor = unified()
   .use(parse)
   .use(remarkHeadings)
-  .use(remarkRehype)
+  .use(remarkRehype, { allowDangerousHtml: true })
   .use(rehypeSlug)
-  .use(rehypeStringify);
+  .use(rehypeStringify, { allowDangerousHtml: true });
 
 export const processMd = (mdSource: string) => {
   const vfile = remarkHtmlProcessor.processSync(mdSource);
