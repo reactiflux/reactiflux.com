@@ -13,6 +13,7 @@ import { pick } from "@helpers/object";
 export default function MarkdownPage({
   html,
   title,
+  description,
   headings,
   sidebar,
 }: Awaited<ReturnType<typeof getStaticProps>>["props"]) {
@@ -21,7 +22,7 @@ export default function MarkdownPage({
       title={title}
       sidebar={sidebar}
       as={undefined}
-      description={undefined}
+      description={description}
     >
       {(setSidebar: any) => (
         <>
@@ -76,7 +77,7 @@ export const getStaticProps = async ({
 
   return {
     props: {
-      ...pick(["title", "sidebar"], doc),
+      ...pick(["title", "sidebar", "description"], doc),
       headings,
       html,
     },

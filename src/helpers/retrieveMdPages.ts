@@ -74,6 +74,7 @@ export interface Transcript {
 export interface MdPage {
   content: string;
   title: string;
+  description?: string;
   sidebar?: boolean;
   [k: string]: string | boolean | undefined;
 }

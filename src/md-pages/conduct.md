@@ -1,5 +1,6 @@
 ---
 title: Code of Conduct
+description: Expectations of behavior for Reactiflux members
 ---
 
 Reactiflux is the largest chat community of React developers. We make a deliberate effort to have a light touch when it comes to moderating, but we do have some expectations of how our members will behave.

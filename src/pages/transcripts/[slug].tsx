@@ -4,6 +4,7 @@ import {
   loadAllMd,
   loadMdBySlug,
   processMd,
+  processMdPlaintext,
   Transcript as TranscriptFrontmatter,
 } from "@helpers/retrieveMdPages";
 import { pick } from "@helpers/object";
@@ -11,11 +12,22 @@ import { pick } from "@helpers/object";
 export default function Transcript({
   all,
   title,
+  description,
   date,
   html,
 }: Awaited<ReturnType<typeof getStaticProps>>["props"]) {
+  // A ridiculous method to ignore timezones
+  const formattedDate = format(add(parseISO(date), { days: 1 }), "EEEE PPP");
+
   return (
-    <Layout title="Transcripts" sidebar as={undefined} description={undefined}>
+    <Layout
+      title={title}
+      sidebar
+      as={undefined}
+      description={`${title} | Q&A from ${date}
+
+${description}`}
+    >
       {(setSidebar: any) => (
         <>
           <h1>{title}</h1>
@@ -41,10 +53,7 @@ export default function Transcript({
           </FocusBoundary>
           <div>
             <p>
-              <em>
-                Transcript from{" "}
-                {format(add(parseISO(date), { days: 1 }), "EEEE PPP")}
-              </em>
+              <em>Transcript from {formattedDate}</em>
             </p>
             <div
               className="markdown"
@@ -80,6 +89,7 @@ export const getStaticProps = async ({
       all,
       ...pick(["title", "date"], doc),
       html: processMd(doc.content).html,
+      description: processMdPlaintext(doc.description).html,
     },
   };
 };
