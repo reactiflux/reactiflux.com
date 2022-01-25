@@ -206,7 +206,7 @@ That's why I want to found another startup! It's going to make me much happier, 
 
 <a href="#i-feel-that-my-projects" name="i-feel-that-my-projects">#</a> **Q:** I feel that my projects with styled-components are unorganized, what pattern would you recommend for me? Something like RSCSS or BEM for css – Edgar Marques
 
-[https://stackoverflow.com/a/42996969](https://stackoverflow.com/a/42996969) 🙂
+https://stackoverflow.com/a/42996969 🙂
 
 ---
 
@@ -216,7 +216,7 @@ It's an expensive hobby, I'll tell you that! 🤣
 
 More seriously, it's just a really fun way for me to following other entrepreneurs journeys. Being a fly on the wall as they figure out their own path is incredibly satisfying and fun. I try to only invest in startups that could benefit from my experience / audience / knowledge / etc so I can maybe even help them avoid a problem or two that I've already seen 🙂
 
-Will definitely have to dial back my investing now that I don't have a job anymore though 😬 (more context for those curious: [https://mxstbr.com/investing](https://mxstbr.com/investing))
+Will definitely have to dial back my investing now that I don't have a job anymore though 😬 (more context for those curious: https://mxstbr.com/investing)
 
 I have (un?)fortunately never had to do that, so I don't really have any tips or advice here!
 
@@ -250,7 +250,7 @@ Bedrock uses Next.js API routes for all the backend functionality, so it's basic
 
 <a href="#im-using-styled-components" name="im-using-styled-components">#</a> **Q:** I'm using styled components and making a styled component for a line of CSS here and there is getting pretty tiring. Is this the way it is meant to be used? – IndecisiveQi
 
-Nope! That's why support the css={} prop on any DOM element 🙂 [https://medium.com/styled-components/announcing-native-support-for-the-css-prop-in-styled-components-245ca5252feb](https://medium.com/styled-components/announcing-native-support-for-the-css-prop-in-styled-components-245ca5252feb)
+Nope! That's why support the css={} prop on any DOM element 🙂 https://medium.com/styled-components/announcing-native-support-for-the-css-prop-in-styled-components-245ca5252feb
 
 ---
 
@@ -302,7 +302,7 @@ Unlikely, just based on how they work: the compiler won't know what those variab
 
 <a href="#how-did-you-get-that" name="how-did-you-get-that">#</a> **Q:** How did you get that sharp jawline? – Deleted User
 
-Have my parents to thank for that! 😉 They're the best 💜 In case you haven't seen [https://www.youtube.com/watch?v=ifq3xhik8tE](https://www.youtube.com/watch?v=ifq3xhik8tE) yet, would highly recommend watching just to get to know my amazing parents.
+Have my parents to thank for that! 😉 They're the best 💜 In case you haven't seen https://www.youtube.com/watch?v=ifq3xhik8tE yet, would highly recommend watching just to get to know my amazing parents.
 
 ---
 
@@ -352,7 +352,7 @@ SEO is just a matter of that, optimizing for search engines. You're going to nee
 
 Here's the thing about raising money: it's only useful for a specific type of company, a startup.
 
-Startups === growth. If you're taking money from investors, you're essentially saying "I'm going to do everything I can to make this a huuuuuge company". That's a fine goal if that's what you want to do! However, if you don't then that's also perfectly fine! I've been enjoying watching indie hackers like Tobias & Timo Lins of [https://splitbee.io/](https://splitbee.io/) do their thing without any outside investment and without being forced into growth at all costs 🙂
+Startups === growth. If you're taking money from investors, you're essentially saying "I'm going to do everything I can to make this a huuuuuge company". That's a fine goal if that's what you want to do! However, if you don't then that's also perfectly fine! I've been enjoying watching indie hackers like Tobias & Timo Lins of https://splitbee.io/ do their thing without any outside investment and without being forced into growth at all costs 🙂
 
 Personally, I do want to try to build a huuuuge company in my life, so I'm definitely going to bring investors on board for my next company. However, that's just a personal choice I've made for myself, not something everybody needs to do 🙂
 

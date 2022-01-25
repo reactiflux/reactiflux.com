@@ -9,7 +9,7 @@ people: "[@MrAhmadAwais](https://twitter.com/MrAhmadAwais)"
 
 <a href="#hows-your-code-run-on-mars" name="hows-your-code-run-on-mars">#</a> **Q:** How's your code run on Mars? – Piyush
 
-Honestly, it's through open-source. I made a small teeny tiny PR in bootstrap core that went to mars — the kid in me was super excited about it. The bigger idea here is that when you help others, create open-source, it can do wonders. If you'd like to read more about this — I blogged about it here → [http://awais.dev/marsc](http://awais.dev/marsc)
+Honestly, it's through open-source. I made a small teeny tiny PR in bootstrap core that went to mars — the kid in me was super excited about it. The bigger idea here is that when you help others, create open-source, it can do wonders. If you'd like to read more about this — I blogged about it here → http://awais.dev/marsc
 
 <a href="#what-was-the-first-stack-you-mastered" name="what-was-the-first-stack-you-mastered">#</a> **Q:** What was the first stack you mastered/picked up? – parrottttt
 
@@ -19,9 +19,9 @@ Later on I started studying PHP because the idea of building forms that would al
 
 <a href="#how-can-we-access-local-json-file" name="how-can-we-access-local-json-file">#</a> **Q:** How can we access local json file in React? – ROFL
 
-You'd want to host that file somewhere. That's where Node.js can help — even on your local machine. In my [https://nodecli.com/](https://nodecli.com/) course I taught developers 20+ different ways to build projects with Node.js, and most of them were locally hosted as that's where they are most useful. Like a CLI.
+You'd want to host that file somewhere. That's where Node.js can help — even on your local machine. In my https://nodecli.com/ course I taught developers 20+ different ways to build projects with Node.js, and most of them were locally hosted as that's where they are most useful. Like a CLI.
 
-And of course, JSON is an excellent format for creating a database — so I recommended and personally use this project called lowdb which is a simple to use local JSON database (supports Node, Electron and the browser). Check it out [https://github.com/typicode/lowdb](https://github.com/typicode/lowdb)
+And of course, JSON is an excellent format for creating a database — so I recommended and personally use this project called lowdb which is a simple to use local JSON database (supports Node, Electron and the browser). Check it out https://github.com/typicode/lowdb
 
 <a href="#is-it-possible-to-generate-react-codes" name="is-it-possible-to-generate-react-codes">#</a> **Q:** Is it possible to generate React codes automatically by some site that will convert HTML to React? – KoddyDev
 
@@ -59,21 +59,21 @@ Here's a one liner description for all our products as of 2021:
 > RapidAPI Teams
 > Share and collaborate on internal/external APIs with your team.
 
-There's a lot more to this, and I'm always hiring — you can read about why I joined RapidAPI and what I'm doing here and who am I hiring for on this one blog post → [https://awais.dev/hiring](https://awais.dev/hiring)
+There's a lot more to this, and I'm always hiring — you can read about why I joined RapidAPI and what I'm doing here and who am I hiring for on this one blog post → https://awais.dev/hiring
 
 <a href="#whats-new-about-clis-i" name="whats-new-about-clis-i">#</a> **Q:** What's new about CLIs, I mean we have libraries like prompt. What are the difficulties that a normal dev would face when building a CLI tool – Piyush
 
 That's a great question. Here's the quick version ![two graphs under the quoted heading "I spend a lot of my time on this task. I should write a program automating it!" Both graphs chart work over time with annotations, the first is titled "theory", and the second titled "reality". "Theory" shows work decling to 0 over time, "Reality" shows a bumpy ride with work increasing over time](/q-and-a/automation.png)
 
-It generally takes a lot of time to build small automation tasks, that's why I created create-node-cli [https://github.com/ahmadawais/create-node-cli](https://github.com/ahmadawais/create-node-cli)— a CLI for creating CLIs. And obviously it takes a bit more to make something serious. Improving CLI UX is another thing. As users we seldom don't know what's the right UX but we can definitely appreciate a good user or developer experience. Knowing what's what and how's how — makes everything slow and hence we end up either not automating something basic or hate on whatever automation we build.
+It generally takes a lot of time to build small automation tasks, that's why I created create-node-cli https://github.com/ahmadawais/create-node-cli— a CLI for creating CLIs. And obviously it takes a bit more to make something serious. Improving CLI UX is another thing. As users we seldom don't know what's the right UX but we can definitely appreciate a good user or developer experience. Knowing what's what and how's how — makes everything slow and hence we end up either not automating something basic or hate on whatever automation we build.
 
-More often than not people don't realise that Node.js and JavaScript are actually somewhat different. Like the event loop is a lot if not completely different. I did a workshop on creating CLIs with Jason and a lot of people found that useful in helping translate this concept, when you have some time do check it out. [https://www.learnwithjason.dev/automating-tasks-with-node-clis](https://www.learnwithjason.dev/automating-tasks-with-node-clis)
+More often than not people don't realise that Node.js and JavaScript are actually somewhat different. Like the event loop is a lot if not completely different. I did a workshop on creating CLIs with Jason and a lot of people found that useful in helping translate this concept, when you have some time do check it out. https://www.learnwithjason.dev/automating-tasks-with-node-clis
 
 <a href="#aside-from-nodecli-what-other-courses" name="aside-from-nodecli-what-other-courses">#</a> **Q:** Aside from nodecli, what other courses did you make? – Deleted User
 
-tl;dr: You can find all of my courses/books at this link → [https://awais.dev/courses](https://awais.dev/courses_)
+tl;dr: You can find all of my courses/books at this link → https://awais.dev/courses
 
-I have a couple of courses and books, and I definitely want to create more — teaching is fun, it's a genetic bug in me (both grandparents and both parents are teachers). I created a course on teaching people my VSCode workflow [https://vscode.pro/](https://vscode.pro/) and going to create a course on Next.js soon at [https://nextjsbeginner.com/](https://nextjsbeginner.com/) — fingers crossed.
+I have a couple of courses and books, and I definitely want to create more — teaching is fun, it's a genetic bug in me (both grandparents and both parents are teachers). I created a course on teaching people my VSCode workflow https://vscode.pro/ and going to create a course on Next.js soon at https://nextjsbeginner.com/ — fingers crossed.
 
 <a href="#i-took-a-look-through-your-website" name="i-took-a-look-through-your-website">#</a> **Q:** I took a look through your website and noticed you contribute to WordPress. My question is how do you envision the future of WordPress and its cohesion with reactjs? – corey
 
@@ -99,10 +99,10 @@ One idea that I have been pushing a lot for a couple of years is that there need
 
 As a developer I love to go down the rabbit hole of fixing a small bug which takes hours but is totally worth fixing. It's been the same here at RapidAPI. Helping developers understand how APIs work and building a community closer to them was one of the challenges me and my team had to solve this year.
 
-We've built a community of API Developers on Twitter (that's where most of developers hang out, right?) — over the year over 9.3 Million developers have read/learned from our API content there — you can check it out here → [https://twitter.com/Rapid_API/](https://twitter.com/Rapid_API/)
+We've built a community of API Developers on Twitter (that's where most of developers hang out, right?) — over the year over 9.3 Million developers have read/learned from our API content there — you can check it out here → https://twitter.com/Rapid_API/
 
-Moveover, we have launched projects like [https://rapidapi.com/learn](https://rapidapi.com/learn) to help developers learn APIs.
+Moveover, we have launched projects like https://rapidapi.com/learn to help developers learn APIs.
 
-[https://rapidapi.com/courses](https://rapidapi.com/courses) — to help developers learn through videos by watching some of the best developers on YouTube.
+https://rapidapi.com/courses — to help developers learn through videos by watching some of the best developers on YouTube.
 
-[https://rapidapi.com/guides](https://rapidapi.com/guides) — for if you prefer written content with open-source code projects. And it's just getting started.
+https://rapidapi.com/guides — for if you prefer written content with open-source code projects. And it's just getting started.

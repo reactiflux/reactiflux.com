@@ -23,9 +23,9 @@ I almost always wrote open-source. A long time ago it was phpBB scripts for user
 
 We focus a lot on the developer experience and internal infrastructure, I think a bit more than the competition (but I'm not objective ;). I find it important to spend time making sure that others people can build on Yarn, almost more than writing Yarn myself. For instance, with Yarn 2+ the plugin system lets you use our API to write your own features, without having to wait for us to merge them. People have already used that for super interesting experiments! – arcanis
 
-We're planning to release Yarn 3.x quite soon (aka whenever we finish implementing the remaining breaking changes and features we've planned). You can see a list of breaking changes here ([https://github.com/yarnpkg/berry/issues/1406](https://github.com/yarnpkg/berry/issues/1406)). Other than that, we're working on supporting the "exports" field and the ESM resolution inside PnP and quite a few other feature requests in no particular order (many of them from the issue tracker).
+We're planning to release Yarn 3.x quite soon (aka whenever we finish implementing the remaining breaking changes and features we've planned). You can see a list of breaking changes here (https://github.com/yarnpkg/berry/issues/1406). Other than that, we're working on supporting the "exports" field and the ESM resolution inside PnP and quite a few other feature requests in no particular order (many of them from the issue tracker).
 
-We already have quite a lot of distinguishing features from npm (you can check the documentation for yourself and see them, particularly on the features page ([https://yarnpkg.com/features](https://yarnpkg.com/features)) and on the CLI page ([https://yarnpkg.com/cli](https://yarnpkg.com/cli))). We're constantly implementing new things that npm might not have or that it might do in different ways that we don't think would make sense for us. – Paul Soporan
+We already have quite a lot of distinguishing features from npm (you can check the documentation for yourself and see them, particularly on the features page (https://yarnpkg.com/features) and on the CLI page (https://yarnpkg.com/cli)). We're constantly implementing new things that npm might not have or that it might do in different ways that we don't think would make sense for us. – Paul Soporan
 
 ---
 
@@ -69,7 +69,7 @@ I don't think there's been a decision or anything. People had problems with one 
 
 <a href="#how-do-i-convince-my-team-that" name="how-do-i-convince-my-team-that">#</a> **Q:** How do I convince my team that npm is not the same as yarn? – jœl 🎲
 
-- show them this nice thread of tips @arcanis has compiled ([https://twitter.com/arcanis/status/1300442490265362432](https://twitter.com/arcanis/status/1300442490265362432))
+- show them this nice thread of tips @arcanis has compiled (https://twitter.com/arcanis/status/1300442490265362432)
 - show them the features page
 - show them differences in the commands each package manager supports
 
@@ -137,7 +137,7 @@ It can be difficult. Usually the best answer is to find an overlap between the p
 
 <a href="#is-the-package-registry-mirrored-from-npm" name="is-the-package-registry-mirrored-from-npm">#</a> **Q:** Is the package registry mirrored from npm or another or does it use the npm registry? – niwla23
 
-We use the Yarn registry which is a simple CNAME to the npm registry - [https://yarnpkg.com/getting-started/qa#why-registryyarnpkgcom-does-facebook-track-us](https://yarnpkg.com/getting-started/qa#why-registryyarnpkgcom-does-facebook-track-us) – Paul Soporan
+We use the Yarn registry which is a simple CNAME to the npm registry - https://yarnpkg.com/getting-started/qa#why-registryyarnpkgcom-does-facebook-track-us – Paul Soporan
 
 ---
 
@@ -175,4 +175,4 @@ We try to be really mindful of the code complexity. That's at least in part why 
 
 Plus, plugin systems also constrain us and make it very obvious when we're doing some unfathomable thing that will be a pain to maintain.
 
-And if you have any questions or want to know more about our progress, please feel free to join our little Discord community ([https://discord.gg/yarnpkg](https://discord.gg/yarnpkg)) or to follow me on Twitter ([https://twitter.com/arcanis](https://twitter.com/arcanis)) 😃 – arcanis
+And if you have any questions or want to know more about our progress, please feel free to join our little Discord community (https://discord.gg/yarnpkg) or to follow me on Twitter (https://twitter.com/arcanis) 😃 – arcanis
