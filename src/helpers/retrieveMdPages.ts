@@ -4,6 +4,7 @@ import { format } from "date-fns";
 import matter from "gray-matter";
 import { unified } from "unified";
 import parse from "remark-parse";
+import remarkGfm from "remark-gfm";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import rehypeSlug from "rehype-slug";
@@ -32,6 +33,7 @@ export const processMdPlaintext = (mdSource: string) => {
 
 const remarkHtmlProcessor = unified()
   .use(parse)
+  .use(remarkGfm)
   .use(remarkHeadings)
   .use(remarkRehype, { allowDangerousHtml: true })
   .use(rehypeSlug)
