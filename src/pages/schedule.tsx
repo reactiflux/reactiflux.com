@@ -31,7 +31,7 @@ export default function Schedule({
 }: Awaited<ReturnType<typeof getStaticProps>>["props"]) {
   return (
     <Layout
-      title="Q&amp;A Schedules"
+      title="Q&amp;A Schedule"
       as={undefined}
       description="Upcoming Q&A events in Reactiflux"
     >
