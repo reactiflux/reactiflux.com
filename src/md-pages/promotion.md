@@ -65,3 +65,7 @@ We want the majority of what's shared to be created by genuine members of Reacti
 ### Events, vlogs, and periodic content
 
 If you're hosting a conference, livestreamed event, Q&A session or similar, you're welcome to share. We have a #conferences channel, but many events are probably best to share in #news-and-links. If you're sharing episodic content, please refrain from promoting each new episode—we'd prefer that you share the show/channel/etc itself. For long-running shows we ask that you only promote it sporadically.
+
+### Paid help and tutoring
+
+Reactiflux is a community of developers helping each other out, but sometimes the amount of help someone is seeking may become a significant time investment for the person helping them. In circumstances like this, Reactiflux supports our members reaching out to discuss private tutoring. This is only something we allow for members who are active in the main purpose of the server; members with low or infrequent activity are not allowed to make offers like this. Members should post publicly to ask permission to DM about tutoring, but discussion of the specific arrangements (frequency, compensation, etc) should be done in private. Reactiflux staff are not able to mediate disputes that arise from arrangements like this, and members who participate in this way are subjected to increased moderator scrutiny.
