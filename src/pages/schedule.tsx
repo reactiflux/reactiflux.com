@@ -143,7 +143,8 @@ export async function getStaticProps() {
     .map((x) => ({
       ...pick(["slug", "title", "time"], x),
       dateGroup: format(parseISO(x.date), "MMMM yyyy"),
-      date: format(add(parseISO(x.date), { days: 1 }), "PPPPP"),
+      // These dates are fucking stupid and account for timezones. it's wrong locally and correct in production
+      date: format(parseISO(x.date), "PPPPP"),
       people: processMd(x.people).html,
       location: processMd(x.location).html,
       description: processMd(x.description).html,
