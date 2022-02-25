@@ -5,7 +5,7 @@ description: Promotional guidelines within the Reactiflux community.
 
 Reactiflux's members do lots of cool stuff, and we'd love for you to share what you've done! However Reactiflux is fundamentally a peer group, not an advertising channel or a free audience. Members who join only to promote something have what they share more aggressively moderated than members who participate in the community in other ways.
 
-We have several channels where self-promotion is expected, and some other relevant channels as well. We ask that you share it only once, unless there's a significant milestone or it's relevant to someone's question.
+We have several channels where self-promotion is expected, and some other relevant channels as well. We ask that you share it only once, unless there's a significant milestone or it's relevant to someone's question. Please post bare links with no link shorteners, and keep the post compact and text-based. Treat it as an email to peers, not a flashy poster for mass audiences.
 
 ## [#i-wrote-this](https://discord.gg/xtmDRsShgm)
 
