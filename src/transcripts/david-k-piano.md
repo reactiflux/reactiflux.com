@@ -146,13 +146,17 @@ Our big bet is on creating visual tooling for this - visualize the XState code y
 
 <a name="how-are-you-currently-funding" href="#how-are-you-currently-funding"># </a>**Q:** How are you currently funding Stately, or what is the business model behind the company? Is the company going to sell tools, consulting, services, etc? – Redacted
 
+We’ve (quietly) raised a small seed round for this to support our team. We’re improving our open-source libraries and tools, as well as creating apps & services, such as the visual editor (an "IDE" for app logic), registry, cloud-based workflow tools, etc. that will be free for basic use
+
 ---
 
 <a name="if-there-were-a-re" href="#if-there-were-a-re"># </a>**Q:** If there were a re-write of routers for an SPA, would XState be the ideal choice? – amaankulshreshtha
 
 It’d be an interesting choice! Routers are sort of like state machines, but you can go to any route at any time. But especially for multi-step forms, it’s useful to express routes as a state machine often.
-dilraj — Today at 4:42 PM
-[Q&Q] State machines are fantastic! Why haven’t they been embraced in the "backend" of things? We get a lot of crazy events responses in the backend and a lot of the time, all we can do is, handle events with if `else’s and retry "stuff". It’d be instrumental in having a LONG LIVED state machine in the server. To compare, we can have an FSM for dealing with an AJAX request in the front end. Maybe on success, we want to transition the page into another state, and then different events can communicate with THAT event. We typically have to rely on databases tables and columns, but it makes it hard to see the "overall" image of what’s going.
+
+---
+
+<a name="state-machines-are-fantastic" href="#state-machines-are-fantastic"># </a>**Q:** State machines are fantastic! Why haven’t they been embraced in the "backend" of things? We get a lot of crazy events responses in the backend and a lot of the time, all we can do is, handle events with if `else’s and retry "stuff". It’d be instrumental in having a LONG LIVED state machine in the server. To compare, we can have an FSM for dealing with an AJAX request in the front end. Maybe on success, we want to transition the page into another state, and then different events can communicate with THAT event. We typically have to rely on databases tables and columns, but it makes it hard to see the "overall" image of what’s going. – dilraj
 
 I love this question. They have been embraced, implicitly! Whenever you work with a workflow engine (many popular ones out there), they’re really basic state machines. There’s also BPMN which is like a higher-level, business-oriented state machine. With statecharts on the backend, I believe we can go further and express even more complex logic on the backend in a visually clear way.
 
@@ -200,13 +204,19 @@ then please please just use a state machine.
 <a name="i-think-a-lot-of" href="#i-think-a-lot-of"># </a>**Q:** I think a lot of more Jr. folks (myself included) have a hard time envisioning the journey from a blank slate to something like XState. What did your development journey look like? Any major roadblocks or difficulties? – DepartureAM
 
 Do you mean creating a library like XState, or using XState in an application?
-amaankulshreshtha — Today at 4:53 PM
-[Q&Q] I used XState do help me "prototype" what my system was going to look like. Suppose, I was happy with my machine and wanted to deploy it (the project got deported before I got there), is it possible to get a real diagram like this once it’s out there in production? If so… how exactly can one see this? Or is it just for prototyping purposes?
-https://cdn.discordapp.com/attachments/193117606629081089/951598768166404126/Screen_Shot_2022-03-10_at_4.51.01_PM.png
 
-## With the VS Code extension, and some of the future tools we have planned, our goal is to have your diagrams from state machines be ✨ living diagrams ✨ that stay up-to-date with your code. So yes, this is possible and we’ll be adding even
+---
 
-<a name="can-we-get-a-vscode" href="#can-we-get-a-vscode"># </a>**Q:** Can we get a vscode extension to visualize a state machine if we write the code for it ? – more features
+<a name="i-used-xstate-do-help-me" href="#i-used-xstate-do-help-me"># </a>I used XState to help me "prototype" what my system was going to look like. Suppose, I was happy with my machine and wanted to deploy it (the project got deported before I got there), is it possible to get a real diagram like this once it’s out there in production? If so… how exactly can one see this? Or is it just for prototyping purposes?
+
+![A state chart showing network states. Idle state, fetch action into loading state. From idle state, resolve action to success state. From idle state, reject action to failure state. From failure state, retry action (with internal text "do /assign retries") to loading state](/q-and-a/david-k-chart.png)
+
+– dilraj
+
+With the VS Code extension, and some of the future tools we have planned, our goal is to have your diagrams from state machines be ✨ living diagrams ✨ that stay up-to-date with your code. So yes, this is possible and we’ll be adding this is possible and we’ll be adding even more features to this area in the future.
+
+---
+
+<a name="can-we-get-a-vscode" href="#can-we-get-a-vscode"># </a>**Q:** Can we get a VS Code extension to visualize a state machine if we write the code for it ? – amaankulshreshtha
 
 Yes! And @dilraj this answers your question too: https://marketplace.visualstudio.com/items?itemName=statelyai.stately-vscode
-dilraj — Today at 4:53 PM
