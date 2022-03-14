@@ -207,7 +207,7 @@ Do you mean creating a library like XState, or using XState in an application?
 
 ---
 
-<a name="i-used-xstate-do-help-me" href="#i-used-xstate-do-help-me"># </a>I used XState to help me "prototype" what my system was going to look like. Suppose, I was happy with my machine and wanted to deploy it (the project got deported before I got there), is it possible to get a real diagram like this once it’s out there in production? If so… how exactly can one see this? Or is it just for prototyping purposes?
+<a name="i-used-xstate-do-help-me" href="#i-used-xstate-do-help-me"># </a>**Q:** I used XState to help me "prototype" what my system was going to look like. Suppose, I was happy with my machine and wanted to deploy it (the project got deported before I got there), is it possible to get a real diagram like this once it’s out there in production? If so… how exactly can one see this? Or is it just for prototyping purposes?
 
 ![A state chart showing network states. Idle state, fetch action into loading state. From idle state, resolve action to success state. From idle state, reject action to failure state. From failure state, retry action (with internal text "do /assign retries") to loading state](/q-and-a/david-k-chart.png)
 
