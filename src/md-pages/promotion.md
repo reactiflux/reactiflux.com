@@ -7,6 +7,8 @@ Reactiflux's members do lots of cool stuff, and we'd love for you to share what 
 
 We have several channels where self-promotion is expected, and some other relevant channels as well. We ask that you share it only once, unless there's a significant milestone or it's relevant to someone's question. Please post bare links with no link shorteners, and keep the post compact and text-based. Treat it as an email to peers, not a flashy poster for mass audiences.
 
+Interested in promoting something and aren’t sure? Reach out to the admins [by email](mailto:hello@reactiflux.com) or [on our contact page](/contact) to discuss.
+
 ## [#i-wrote-this](https://discord.gg/xtmDRsShgm)
 
 Here is best to share your own writing. Unless the content you’re posting is better suited to another channel, share it here. This is mainly intended to be a showcase for personal writing, but livestreams may also be shared here. Streams may only be shared once every 2 weeks.

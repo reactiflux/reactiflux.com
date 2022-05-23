@@ -53,6 +53,9 @@ const Index = () => {
             <Link href="https://twitter.com/reactiflux">@reactiflux</Link> on
             Twitter
           </li>
+          <li>
+            <a href="mailto:hello@reactiflux.com">email</a> the admin team
+          </li>
           <li>our anonymous contact form below</li>
         </ul>
         <p>
