@@ -190,6 +190,8 @@ These other listed tutorials are also excellent and may explain things in a diff
   - [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/) (very long article, but a must-read. Teaches how hooks use closures, defining when effects run, and much more.)
   - [What are React Hooks?](https://www.robinwieruch.de/react-hooks/)
   - [React Hooks: Not Magic, Just Arrays](https://medium.com/@ryardley/react-hooks-not-magic-just-arrays-cd4f1857236e) (looks under the hood to explain how hooks are implemented)
+  - [Getting Closure on React Hooks](https://www.swyx.io/hooks/) (diving into the language concepts used by hooks)
+    - [Egghead video followup: Concurrent React from Scratch](https://egghead.io/talks/react-egghead-talks-concurrent-react-from-scratch)
 
 ### Additional Resources (read as needed)
 
