@@ -8,8 +8,8 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "test": "next lint && prettier --check src/**/*.{js,md}'",
-    "prettier": "prettier --write 'src/**/*.{js,md}'",
+    "test": "next lint && prettier --check .",
+    "prettier": "prettier --write .",
     "install-if-package-changed": "git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD | grep --quiet yarn.lock && yarn install || exit 0"
   },
   "husky": {
