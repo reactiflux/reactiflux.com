@@ -8,4 +8,4 @@ Finally Reactiflux has a proper website! The admins/mods and would like to thank
 
 1. Clone github repo: `git clone https://github.com/reactiflux/reactiflux.com`
 2. Install dependecies with yarn: `yarn`
-3. Run gatsby develop mode: `yarn start`
+3. Run Next develop mode: `yarn dev`
