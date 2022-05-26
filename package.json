@@ -8,7 +8,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "test": "prettier --check 'src/**/*.{js,md}'",
+    "test": "next lint && prettier --check src/**/*.{js,md}'",
     "prettier": "prettier --write 'src/**/*.{js,md}'",
     "install-if-package-changed": "git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD | grep --quiet yarn.lock && yarn install || exit 0"
   },
