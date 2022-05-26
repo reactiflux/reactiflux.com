@@ -2,7 +2,7 @@ import "@styles/globals.css";
 import type { AppProps } from "next/app";
 import Script from "next/script";
 
-export const GA_TRACKING_ID = "UA-68559005-1";
+export const GA_TRACKING_ID = "G-HYLJ4BYC6Z";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
