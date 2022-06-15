@@ -46,7 +46,6 @@ const homeLayout = css`
 
 const standardLayout = css`
   > * {
-    position: relative;
     z-index: 2;
   }
 
@@ -232,6 +231,7 @@ export function SidebarToggleButton(props) {
 }
 
 export const Wrapper = styled.div`
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: ${(props) =>
