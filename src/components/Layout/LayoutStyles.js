@@ -56,6 +56,7 @@ const standardLayout = css`
 
   @media (max-width: 819px) {
     display: grid;
+    grid-template-rows: fit-content fit-content auto;
     grid-template-columns: 60% 100%;
     transform: translateX(
       ${(props) => (props.isOpen ? "0" : "calc(10px - 60%)")}
@@ -94,11 +95,12 @@ const standardLayout = css`
 
   @media (min-width: 820px) {
     display: grid;
+    grid-template-rows: fit-content fit-content auto;
     grid-template-columns: 1fr 2fr;
 
     > * {
       grid-column: 2;
-      grid-row: 2;
+      grid-row: 2 / span 2;
       min-width: calc(200% / 3);
     }
 
