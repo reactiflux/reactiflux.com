@@ -54,6 +54,26 @@ const standardLayout = css`
     z-index: 1;
   }
 
+  details {
+    margin-bottom: 1rem;
+
+    & summary {
+      cursor: pointer;
+    }
+
+    &:last-of-type {
+      margin-bottom: 2rem;
+    }
+  }
+
+  blockquote {
+    font-size: 0.75em;
+    max-width: 40em;
+    margin-left: 1rem;
+    padding-left: 0.75rem;
+    border-left: 0.2rem solid #0003;
+  }
+
   @media (max-width: 819px) {
     display: grid;
     grid-template-rows: fit-content fit-content auto;
