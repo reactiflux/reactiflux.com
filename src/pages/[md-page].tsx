@@ -39,7 +39,7 @@ export default function MarkdownPage({
                     .filter((heading) => heading.depth < 3)
                     .map(({ value, depth }) => (
                       <li key={value}>
-                        <p style={{ paddingLeft: `${depth}rem` }}>
+                        <p style={{ paddingLeft: `${depth - 1}rem` }}>
                           <Link
                             href={getAnchor(value)}
                             onClick={() => {
