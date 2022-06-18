@@ -37,20 +37,22 @@ export default function MarkdownPage({
                 <ol>
                   {headings
                     .filter((heading) => heading.depth < 3)
-                    .map(({ value }) => (
+                    .map(({ value, depth }) => (
                       <li key={value}>
-                        <Link
-                          href={getAnchor(value)}
-                          onClick={() => {
-                            setSidebar(false);
-                            const heading = document.getElementById(
-                              getAnchor(value).replace("#", ""),
-                            );
-                            heading?.querySelector("a")?.focus();
-                          }}
-                        >
-                          {value}
-                        </Link>
+                        <p style={{ paddingLeft: `${depth - 1}rem` }}>
+                          <Link
+                            href={getAnchor(value)}
+                            onClick={() => {
+                              setSidebar(false);
+                              const heading = document.getElementById(
+                                getAnchor(value).replace("#", ""),
+                              );
+                              heading?.querySelector("a")?.focus();
+                            }}
+                          >
+                            {value}
+                          </Link>
+                        </p>
                       </li>
                     ))}
                 </ol>

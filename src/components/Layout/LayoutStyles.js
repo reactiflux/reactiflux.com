@@ -46,7 +46,6 @@ const homeLayout = css`
 
 const standardLayout = css`
   > * {
-    position: relative;
     z-index: 2;
   }
 
@@ -54,8 +53,29 @@ const standardLayout = css`
     z-index: 1;
   }
 
+  details {
+    margin-bottom: 1rem;
+
+    & summary {
+      cursor: pointer;
+    }
+
+    &:last-of-type {
+      margin-bottom: 2rem;
+    }
+  }
+
+  blockquote {
+    font-size: 0.75em;
+    max-width: 40em;
+    margin-left: 1rem;
+    padding-left: 0.75rem;
+    border-left: 0.2rem solid #0003;
+  }
+
   @media (max-width: 819px) {
     display: grid;
+    grid-template-rows: fit-content fit-content auto;
     grid-template-columns: 60% 100%;
     transform: translateX(
       ${(props) => (props.isOpen ? "0" : "calc(10px - 60%)")}
@@ -94,11 +114,12 @@ const standardLayout = css`
 
   @media (min-width: 820px) {
     display: grid;
+    grid-template-rows: fit-content fit-content auto;
     grid-template-columns: 1fr 2fr;
 
     > * {
       grid-column: 2;
-      grid-row: 2;
+      grid-row: 2 / span 2;
       min-width: calc(200% / 3);
     }
 
@@ -210,6 +231,7 @@ export function SidebarToggleButton(props) {
 }
 
 export const Wrapper = styled.div`
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: ${(props) =>
