@@ -71,7 +71,11 @@ Posts must start with `[FORHIRE]` or `[HIRING]`. Lead with the location of the p
 </blockquote>
 </details>
 
-Jobs are full-time salaried positions, or part- or full-time contract roles. We don't allow small gigs "pay for help" schemes, equity-only compensation, [spec work](https://www.nospec.com/), or other types of uncompensated labor. We do not have a channel for finding project collaborators.
+Jobs are full-time salaried positions, or part- or full-time contract roles. We don't allow small gigs, "pay for help" schemes, equity-only compensation, [spec work](https://www.nospec.com/), or other types of uncompensated labor. We do not have a channel for finding project collaborators.
+
+### Small gigs
+
+We have a hard ban on work that too small to be considered contract work. A general rule of thumb here is whether the work would take less than a week to complete, could be completed in a single call, or could be compared to a single tutoring session. We do permit, but don't encourage, our members to arrange [paid tutoring relationships, within our guidelines](#paid-help-and-tutoring).
 
 ## [#events](https://discord.gg/RYVBdtY)
 
