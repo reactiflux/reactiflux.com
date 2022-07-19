@@ -28,14 +28,14 @@ export function Layout({
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleIsOpen = () => setIsOpen((prev) => !prev);
   React.useEffect(() => {
-    if (isOpen) {
+    if (isOpen && isMobile) {
       window.scrollTo({
         top: 0,
         left: 0,
         behavior: "smooth",
       });
     }
-  }, [isOpen]);
+  }, [isOpen, isMobile]);
 
   return (
     <ThemeProvider theme={getTheme({ isMobile })}>
