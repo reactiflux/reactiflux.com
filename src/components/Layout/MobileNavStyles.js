@@ -2,36 +2,6 @@ import styled from "styled-components";
 
 import { background, boxShadow, mobilePadding, pink } from "@utils/theme";
 
-export const Children = styled.div`
-  background: white;
-  bottom: 0;
-  box-shadow: ${boxShadow};
-  left: 0;
-  padding-bottom: ${mobilePadding};
-  position: absolute;
-  right: 0;
-  transform: translateY(${(props) => (props.isOpen ? "0" : "100%")});
-  transition: all 0.4s ease;
-  z-index: -1;
-`;
-
-export const Toggle = styled.button`
-  background: white;
-  border: none;
-  color: inherit;
-  cursor: pointer;
-  font-size: inherit;
-  height: ${mobilePadding};
-  outline: none;
-  width: 100%;
-
-  :focus,
-  :hover {
-    background: ${pink};
-    color: white;
-  }
-`;
-
 export const Wrapper = styled.div`
   background: ${background};
   bottom: 0;
@@ -44,6 +14,8 @@ export const Wrapper = styled.div`
   position: fixed;
   width: 100%;
   z-index: 999;
+  margin-right: 10px;
+  width: -webkit-fill-available;
 
   a {
     padding: 0 6px;
@@ -58,4 +30,33 @@ export const Wrapper = styled.div`
       right: 0;
     }
   }
+`;
+
+export const Toggle = styled.button`
+  background: ${pink};
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: inherit;
+  height: ${mobilePadding};
+  outline: none;
+  width: 100%;
+
+  :focus,
+  :hover {
+    background: #d6185e;
+    color: white;
+  }
+`;
+export const Children = styled.div`
+  background: white;
+  bottom: 0;
+  box-shadow: ${boxShadow};
+  left: 0;
+  padding-bottom: ${mobilePadding};
+  position: absolute;
+  right: 0;
+  transform: translateY(${(props) => (props.isOpen ? "0" : "100%")});
+  transition: all 0.4s ease;
+  z-index: -1;
 `;
