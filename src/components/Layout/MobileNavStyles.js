@@ -24,7 +24,6 @@ export const Toggle = styled.button`
   height: ${mobilePadding};
   outline: none;
   width: 100%;
-
   :focus,
   :hover {
     background: ${pink};
@@ -44,14 +43,13 @@ export const Wrapper = styled.div`
   position: fixed;
   width: 100%;
   z-index: 999;
-
+  margin-right: 10px;
+  width: -webkit-fill-available;
   a {
     padding: 0 6px;
-
     :nth-child(2n) {
       background: #fafafa;
     }
-
     &:after {
       bottom: 0;
       left: 0;
