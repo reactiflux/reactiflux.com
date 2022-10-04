@@ -2,7 +2,7 @@
 title: An Anniversary and a Milestone
 author: vcarl
 date: "2022-10-03"
-description: "We recently ran a user survey with the aim of better understanding just who is using Reactiflux (or, at least, those who felt comfortable answering a voluntary survey with demographic questions). The results are in."
+description: "We're celebrating two huge milestones this month: 200,000 members of the community, and 7 years on Discord."
 ---
 
 We're celebrating two huge milestones this month: 200,000 members of the community, and 7 years on Discord.
