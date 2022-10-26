@@ -114,5 +114,5 @@ export const Modal = ({ children, close, isOpen }) => {
     </ReturnFocusOnUnMount>
   );
 
-  return createPortal(content, document.getElementById("modals"));
+  return createPortal(content, document.body);
 };
