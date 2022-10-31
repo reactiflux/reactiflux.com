@@ -110,6 +110,7 @@ export const getStaticProps = async () => {
     const data = await r.json();
 
     return {
+      revalidate: 60,
       props: {
         userCount: data?.approximate_member_count || fallbackUserCount,
       },
