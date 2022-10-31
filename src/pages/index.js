@@ -40,8 +40,7 @@ const Index = ({ userCount }) => {
       </h1>
       <p>
         We’re a chat community of{" "}
-        {new Intl.NumberFormat("en-US").format(userCount)}{" "}
-        React&nbsp;JS&nbsp;
+        {new Intl.NumberFormat("en-US").format(userCount)} React&nbsp;JS&nbsp;
         <Link href="https://github.com/facebook/react" title="React JS">
           <Image {...ReactLogo} alt="React JS" />
         </Link>
