@@ -1,5 +1,5 @@
 [build]
-  command = "next build && next start"
+  command = "next build"
   publish = "out/"
 
 [[redirects]]
