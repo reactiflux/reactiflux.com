@@ -2,6 +2,10 @@ import "@styles/globals.css";
 import type { AppProps } from "next/app";
 import Script from "next/script";
 
+import "typeface-poppins";
+import "typeface-work-sans";
+import "typeface-space-mono";
+
 const GA_TRACKING_ID = "G-HYLJ4BYC6Z";
 
 function MyApp({ Component, pageProps }: AppProps) {
