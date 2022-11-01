@@ -1,5 +1,5 @@
 [build]
-  command = "next build"
+  command = "yarn build"
   publish = ".next/"
 
 [[redirects]]
