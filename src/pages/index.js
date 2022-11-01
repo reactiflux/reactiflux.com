@@ -100,7 +100,7 @@ const Index = ({ userCount }) => {
 };
 
 export const getStaticProps = async () => {
-  const fallbackUserCount = 200000;
+  const fallbackUserCount = 200_000;
 
   try {
     const r = await fetch(
