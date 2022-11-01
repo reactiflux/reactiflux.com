@@ -11,11 +11,6 @@ import { MarkdownStyles } from "./MarkdownStyles";
 import { Menu } from "./Menu";
 import { SEO } from "./SEO";
 
-import "minireset.css";
-import "typeface-poppins";
-import "typeface-work-sans";
-import "typeface-space-mono";
-
 export function Layout({
   as,
   children,
