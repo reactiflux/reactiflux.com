@@ -1,6 +1,6 @@
 [build]
   command = "next build"
-  publish = "out/"
+  publish = ".next/"
 
 [[redirects]]
   from = "/guidelines"
