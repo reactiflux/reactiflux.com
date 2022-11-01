@@ -5,3 +5,6 @@
 [[redirects]]
   from = "/guidelines"
   to = "/conduct"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
