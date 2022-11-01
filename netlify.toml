@@ -1,7 +1,10 @@
 [build]
   command = "yarn build"
-  publish = "out/"
+  publish = ".next/"
 
 [[redirects]]
   from = "/guidelines"
   to = "/conduct"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

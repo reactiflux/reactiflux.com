@@ -31,7 +31,7 @@ const P = styled.p`
       : ""}
 `;
 
-const Index = () => {
+const Index = ({ userCount }) => {
   return (
     <Layout title="Welcome" homepage>
       <h1>
@@ -39,7 +39,8 @@ const Index = () => {
         Reactiflux
       </h1>
       <p>
-        We’re a chat community of 200,000+ React&nbsp;JS&nbsp;
+        We’re a chat community of{" "}
+        {new Intl.NumberFormat("en-US").format(userCount)} React&nbsp;JS&nbsp;
         <Link href="https://github.com/facebook/react" title="React JS">
           <Image {...ReactLogo} alt="React JS" />
         </Link>
@@ -96,6 +97,32 @@ const Index = () => {
       </P>
     </Layout>
   );
+};
+
+export const getStaticProps = async () => {
+  const fallbackUserCount = 200_000;
+
+  try {
+    const r = await fetch(
+      `https://discord.com/api/v9/invites/reactiflux?with_counts=true&with_expiration=true`,
+      { method: "get" },
+    );
+    const data = await r.json();
+
+    return {
+      revalidate: 60,
+      props: {
+        userCount: data?.approximate_member_count || fallbackUserCount,
+      },
+    };
+  } catch {
+    return {
+      revalidate: 60,
+      props: {
+        userCount: fallbackUserCount,
+      },
+    };
+  }
 };
 
 export default Index;
