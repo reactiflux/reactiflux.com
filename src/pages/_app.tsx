@@ -2,6 +2,7 @@ import "@styles/globals.css";
 import type { AppProps } from "next/app";
 import Script from "next/script";
 
+import "minireset.css";
 import "typeface-poppins";
 import "typeface-work-sans";
 import "typeface-space-mono";

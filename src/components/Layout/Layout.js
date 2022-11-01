@@ -11,8 +11,6 @@ import { MarkdownStyles } from "./MarkdownStyles";
 import { Menu } from "./Menu";
 import { SEO } from "./SEO";
 
-import "minireset.css";
-
 export function Layout({
   as,
   children,
