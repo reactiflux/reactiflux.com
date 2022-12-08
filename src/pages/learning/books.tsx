@@ -145,7 +145,7 @@ export default function Books() {
         <Ul>
           <RawBook
             title="The Coding Career Handbook"
-            onlineLink="https://learninpublic.org/"
+            onlineLink="https://learninpublic.org/?c=REACTIFLUX30"
             cover={codingCareerHandbook}
           />
           <Book isbn="9781484260739" title="Letters to a New Developer" />
