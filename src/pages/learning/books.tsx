@@ -13,6 +13,7 @@ import managingHumans from "@assets/books/managing-humans.jpeg";
 import engineeringMgtRestUs from "@assets/books/engineering-mgt-rest-us.jpeg";
 import atomicHabits from "@assets/books/atomic-habits.jpg";
 import difficultConversations from "@assets/books/difficult-conversations.jpeg";
+import goodToGreat from "@assets/books/good-to-great.jpg";
 
 const P = styled.p``;
 const Figure = styled.figure`
@@ -221,6 +222,15 @@ export default function Books() {
         <h1>Design</h1>
         <Ul>
           <Book isbn="9780465050659" title="The Design of Everyday Things" />
+        </Ul>
+        <h1>Entrepreneurship</h1>
+        <Ul>
+          <Book
+            isbn="9780066620992"
+            title="Good to Great"
+            cover={goodToGreat}
+          />
+          <Book isbn="9781591848363" title="Traction" />
         </Ul>
       </div>
     </Layout>
