@@ -6,7 +6,7 @@ sidebar: true
 
 A selected list of tutorials, articles, and resources on Javascript, React, Redux, and related topics. Brought to you by [Mark Erikson](https://twitter.com/acemarke) (aka @acemarke). For additional articles on these and other topics, see [React/Redux Links](https://github.com/markerikson/react-redux-links).
 
-For a 10,000 foot view of the JS ecosystem, check out [the State of JS survey](https://2020.stateofjs.com/en-US/).
+For a 10,000 foot view of the JS ecosystem, check out [the State of JS survey](https://2020.stateofjs.com/en-US/). For a list of books available for purchase, check out [our recommended reading list](/learning/books).
 
 # Recommended Learning Path
 
