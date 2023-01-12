@@ -35,4 +35,4 @@ export const Button = styled.button`
   }
 `;
 
-export const ButtonLink = Button.withComponent(Link);
+export const ButtonLink = (props) => <Button as="a" {...props} />;
