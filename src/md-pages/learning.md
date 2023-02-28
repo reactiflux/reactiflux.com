@@ -163,6 +163,15 @@ These other listed tutorials are also excellent and may explain things in a diff
 - **Use: [CodeSandbox.io](https://codesandbox.io)** (an online IDE that uses VS Code's editor, and can let you develop and run your apps completely in the browser)
 - **Use: [Create-React-App](https://facebook.github.io/create-react-app/)** (the official CLI tool for creating a React app with one command. Sets up a project with good default build settings out of the box.)
 
+#### Animating in React
+
+- GreenSock Animation Platform
+  - [Getting Started With GreenSock and React](https://greensock.com/react)
+  - [Advanced Animation Techniques](https://greensock.com/react-advanced)
+  - [React Templates](https://stackblitz.com/@GreenSockLearning/collections/gsap-react-starters)
+  - [Next Templates](https://stackblitz.com/@GreenSockLearning/collections/gsap-nextjs-starters)
+  - [Page Transition Examples](https://stackblitz.com/@GreenSockLearning/collections/gsap-react-page-transitions)
+
 #### Specific Topics
 
 - Understanding how React works conceptually / internally
