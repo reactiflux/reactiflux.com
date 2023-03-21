@@ -151,6 +151,10 @@ export default function Books() {
           />
           <Book isbn="9781484260739" title="Letters to a New Developer" />
           <Book isbn="9780791861967" title="Unwritten Laws of Engineering" />
+          <Book
+            isbn="9780199729883"
+            title="Moral Mazes: The World of Corporate Managers"
+          />
           <Book isbn="9780787960759" title="The 5 Dysfunctions of a Team" />
           <Book isbn="9780062663078" title="Multipliers" />
           <RawBook
