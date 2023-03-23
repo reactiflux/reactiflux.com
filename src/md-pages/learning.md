@@ -117,7 +117,6 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
   - [GRID: A simple visual cheatsheet for CSS Grid Layout](http://grid.malven.co/)
 - Node / NPM
   - [Introduction to Node.js](https://nodejs.dev/en/learn)
-  - [The package.json guide](https://nodejs.dev/en/learn/the-package-json-guide)
 - Lodash
   - [Lodash documentation](https://lodash.com/docs/)
 - Build Tools
