@@ -74,8 +74,8 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
   - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
   - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - Node / NPM
-  - [How to install Node.js](https://nodejs.dev/learn/how-to-install-nodejs)
-  - [An introduction to the npm package manager](https://nodejs.dev/learn/an-introduction-to-the-npm-package-manager)
+  - [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs)
+  - [An introduction to the npm package manager](https://nodejs.dev/en/learn/an-introduction-to-the-npm-package-manager)
 - Build Tools
   - [The Many Jobs of JS Build Tools](https://www.swyx.io/jobs-of-js-build-tools/)
 - Debugging
@@ -116,8 +116,8 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
   - [A Practical CSS Cheat Sheet](https://www.toptal.com/css/css-cheat-sheet)
   - [GRID: A simple visual cheatsheet for CSS Grid Layout](http://grid.malven.co/)
 - Node / NPM
-  - [Introduction to Node.js](https://nodejs.dev/learn)
-  - [The package.json guide](https://nodejs.dev/learn/the-package-json-guide)
+  - [Introduction to Node.js](https://nodejs.dev/en/learn)
+  - [The package.json guide](https://nodejs.dev/en/learn/the-package-json-guide)
 - Lodash
   - [Lodash documentation](https://lodash.com/docs/)
 - Build Tools
