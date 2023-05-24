@@ -34,7 +34,7 @@ export const processMdPlaintext = (mdSource: string) => {
 const remarkHtmlProcessor = unified()
   .use(parse)
   .use(remarkGfm)
-  .use(remarkHeadings)
+  .use(remarkHeadings as ReturnType<ReturnType<typeof unified>["use"]>)
   .use(remarkRehype, { allowDangerousHtml: true })
   .use(rehypeSlug)
   .use(rehypeStringify, { allowDangerousHtml: true });
