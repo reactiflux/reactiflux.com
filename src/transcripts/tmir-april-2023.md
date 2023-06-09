@@ -4,7 +4,7 @@ date: 2023-03-29
 time: 10am PT / 5PM GMT
 location: Q&A Channel on Reactiflux
 description: "Join Carl Vitullo, Mark Erikson, and Matt Pocock as we break down This Month in React. A lot of news this month, with new library releases, TypeScript 5.1, and React server components. We'll break down what's new in an hour-long conversation."
-people: "[Carl Vitullo](https://twitter.com/vcarl_), [Mark Erikson](https://twitter.com/acemarke), and [Sebastien Lorber](https://twitter.com/sebastienlorber)"
+people: "[Carl Vitullo](https://twitter.com/vcarl_), [Mark Erikson](https://twitter.com/acemarke), and [Matt Pocock](https://twitter.com/mattpocockuk)"
 ---
 
 <iframe src="https://podcasters.spotify.com/pod/show/reactiflux/embed/episodes/This-Month-in-React--April-2023-e23rsht" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
