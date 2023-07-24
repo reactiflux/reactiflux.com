@@ -7,9 +7,9 @@ description: "Drawing on Jenny’s experience working at a highly-productive sta
 people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://twitter.com/jen_ayy_)"
 ---
 
+<iframe src="https://podcasters.spotify.com/pod/show/reactiflux/embed/episodes/Office-Hours--States-of-Burnout-with-Jenny-Truong-e27155i" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 
-
-[00:00:00] **Carl Vitullo:** Hello folks. Thank you for joining us for another Reactiflux Office Hours. I'm Carl Vitullo, the sort of community manager for Reactiflux, uh, here today with Jenny Truong talking about states of burnout. Uh, I met her at React Miami, she gave a talk called States of Burnout, and I just thought it was a really great subject to talk about. So, yeah, Jenny, really excited to have you on to talk a little more in depth. 
+[00:00:00] **Carl Vitullo:** Hello folks. Thank you for joining us for another Reactiflux Office Hours. I'm Carl Vitullo, the sort of community manager for Reactiflux, uh, here today with Jenny Truong talking about states of burnout. Uh, I met her at React Miami, she gave a talk called States of Burnout, and I just thought it was a really great subject to talk about. So, yeah, Jenny, really excited to have you on to talk a little more in depth.
 
 [00:00:25] So you are head of operations and developer relations at Stately. What is the head of operations and how does that have, what does that have to do with developer relations?
 
@@ -19,10 +19,9 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:01:07] **Jenny Truong:** Yeah essentially, yeah.
 
-
 ## [00:01:10] Why do you care about burnout?
 
-[00:01:10] **Carl Vitullo:** Sure. Very cool. Where does your passion for talking about burnout come from? I, your talk was so well researched and so I know it had, it had so many great concepts to talk about. You were clearly so passionate about it.
+[00:01:10] **Carl Vitullo:** Sure. Very cool. Where does your passion for talking about burnout come from? Your talk was so well researched and so I know it had, it had so many great concepts to talk about. You were clearly so passionate about it.
 
 [00:01:22] **Jenny Truong:** I really want to normalize the way we think about mental health and how like, We also approach it. I, I want to help people understand that like, we're all human. We all experience like this mental load of like, you know, the things that we keep in our head and how we don't express them is very unhealthy.
 
@@ -32,7 +31,7 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:02:21] **Jenny Truong:** Exactly.
 
-[00:02:23] **Carl Vitullo:** Okay. Very cool. Yeah, I, I, I love the, the backdrop of mental health and, and burnout. Those are definitely very closely related topics. Mental health's very close to me as well, I have some various diagnoses. I definitely have had a very personal relationship with burnout in my career too, so, yeah. Excited to get into it with you.
+[00:02:23] **Carl Vitullo:** Okay. Very cool. Yeah, I love the, the backdrop of mental health and, and burnout. Those are definitely very closely related topics. Mental health's very close to me as well, I have some various diagnoses. I definitely have had a very personal relationship with burnout in my career too, so, yeah. Excited to get into it with you.
 
 [00:02:42] **Jenny Truong:** Yeah. And then with burnout, people have this. Idea that if you work at a startup, you're always gonna be burnt out because they're gonna push you to your limits. But my personal experience with working at a startup that's only two years old, it's like you can define the workload that you're putting on yourself and your coworkers.
 
@@ -48,7 +47,6 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:04:53] **Carl Vitullo:** Yeah. Yeah. I, we, we can get deeper into it later, but I think even just the, that sentence &quot;seven different types of rest,&quot; to me that's very evocative of like, oh yeah, you know, like there are different ways you can become exhausted. You know, I think many people will intuitively understand like, okay, you can be socially drained or you can be, you've worked for 10 hours on a code project and get tapped out on that knowledge work.
 
-
 ## [00:05:16] Stress vs burnout
 
 [00:05:16] **Carl Vitullo:** So let's, let's start a little bit like, burnout versus stress. Like how, how would you distinguish between those.
@@ -63,10 +61,9 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:06:51] So stress is like, it's temporary. And if that temporary becomes like, Hours long of like constant stress and you start like not being able to see how to get to your end goal. It becomes burnout. Because burnout is like you're sacrificing all that time and all that energy and you're putting it into like all these work related tasks that, or you know, like it needs to be completed with a deadline, but you don't know how to get there.
 
-[00:07:18] **Carl Vitullo:** Yeah. And so earlier you, you mentioned stress as, sort of like, heightened senses, the cortisol, the physiological reaction. So, so maybe to contrast, stress with burnout is like acute versus chronic. Like stress is the moment where your body says, &quot;Ooh, I need a little extra oomph to get through this.&quot; and burnout is the accumulation of, you know, the damage of being on alert for an extended period of time? Does that sound right? 
+[00:07:18] **Carl Vitullo:** Yeah. And so earlier you, you mentioned stress as, sort of like, heightened senses, the cortisol, the physiological reaction. So, so maybe to contrast, stress with burnout is like acute versus chronic. Like stress is the moment where your body says, &quot;Ooh, I need a little extra oomph to get through this.&quot; and burnout is the accumulation of, you know, the damage of being on alert for an extended period of time? Does that sound right?
 
 [00:07:44] **Jenny Truong:** Yeah, that sounds great. That's pretty much what it is, but burnout is what you're giving up as well. Like it's what you're trading that all the things that you're trading out to focus on the work that you're doing.
-
 
 ## [00:07:58] Burnout vs depression
 
@@ -76,11 +73,11 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:09:07] And you're just pushing through and forcing yourself to like, okay, &quot;I just need to do this, I need to finish this by this deadline.&quot; And then it never gets done and you're always unsatisfied. Versus the depression of just like, &quot;Ugh, I don't wanna do anything today.&quot; You intentionally want to just distance yourself from the world.
 
-[00:09:27] **Carl Vitullo:** Yeah. I think maybe another way of saying, &quot;you become comfortable,&quot; is like sort of like that sort of stuck in a rut. So if you, you become comfortable with sort of the positive framing of it, of you form these new rhythms in your life around, in some ways it's like, mental health day, you take a day off, you take a day to just breathe, but then you take a second mental health day, and then you take a third. 
+[00:09:27] **Carl Vitullo:** Yeah. I think maybe another way of saying, &quot;you become comfortable,&quot; is like sort of like that sort of stuck in a rut. So if you, you become comfortable with sort of the positive framing of it, of you form these new rhythms in your life around, in some ways it's like, mental health day, you take a day off, you take a day to just breathe, but then you take a second mental health day, and then you take a third.
 
 [00:09:51] Then so that sort of, &quot;treat yourself,&quot; like do your, do yourself and your body well, kind of becomes a rut that it becomes difficult to break out of. So do you think it would be fair to say like, burnout can lead to depression?
 
-[00:10:05] **Jenny Truong:** Oh, absolutely. And same thing with stress. Stress can lead you to depression as well. It's just, so I want to preface this with, I'm not a medical doctor of any sorts. And I can't diagnose you, but there's a lot of research out there defining the difference between depression and burnout. And what we wanna focus on is, is like with burnout, it's, yes, it's what you're giving up and what you're feeling guilty for, but it's the fear as well. 
+[00:10:05] **Jenny Truong:** Oh, absolutely. And same thing with stress. Stress can lead you to depression as well. It's just, so I want to preface this with, I'm not a medical doctor of any sorts. And I can't diagnose you, but there's a lot of research out there defining the difference between depression and burnout. And what we wanna focus on is, is like with burnout, it's, yes, it's what you're giving up and what you're feeling guilty for, but it's the fear as well.
 
 [00:10:34] So it's your intention about trying to, to, let's say, finish up a task. Right? But it's the fear of like, okay, &quot;what if I don't finish this? Everyone at work is gonna think low of me.&quot; You know, you're basically, it's hard to explain, but.
 
@@ -88,14 +85,13 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:10:59] **Jenny Truong:** I think so essentially, but I mean, we all experience this differently. We all experience like different stages of depression and different stages of burnout, and depending on where we are and like how self-aware we are, that's where we can start making a difference. It's not as easy as like, &quot;oh, I noticed I'm depressed, I'm gonna like get out of it.&quot; No, it's like the self-awareness really helps guide you on like what your next intention is going to be.
 
-
 ## [00:11:25] Mindfulness and self awareness
 
-[00:11:25] **Carl Vitullo:** Yeah, let's dive into that a little more. So self-awareness, mindfulness, I've heard it called the somatic experience. Just sort of being in tune with what your body is telling you and understanding those messages. 
+[00:11:25] **Carl Vitullo:** Yeah, let's dive into that a little more. So self-awareness, mindfulness, I've heard it called the somatic experience. Just sort of being in tune with what your body is telling you and understanding those messages.
 
 [00:11:37] What are some things people can do, or what are some things you've done, I guess, to be more in tune with your body and pay attention to early warning indicators for burnout?
 
-[00:11:46] **Jenny Truong:** So I went through therapy and that's how I started learning these exercises. But how I've overcome situations where I feel overwhelmed and even notice if I'm in a burnout state is, you sit in that current emotion, or that current like situation, and you ask yourself, &quot;is this something that I should be upset about?&quot; and then you ask yourself, &quot;what kind of feelings am I feeling or emotions that I'm aware of?&quot; And then you ask yourself like, &quot;is this true?&quot; 
+[00:11:46] **Jenny Truong:** So I went through therapy and that's how I started learning these exercises. But how I've overcome situations where I feel overwhelmed and even notice if I'm in a burnout state is, you sit in that current emotion, or that current like situation, and you ask yourself, &quot;is this something that I should be upset about?&quot; and then you ask yourself, &quot;what kind of feelings am I feeling or emotions that I'm aware of?&quot; And then you ask yourself like, &quot;is this true?&quot;
 
 [00:12:17] These are really silly questions that I, when I first started asking myself, I thought I was really ridiculous, but once you start honestly answering them, you start realizing like, okay, it is true. Like I'm really angry right now because at myself, because I can't solve these issues and that's probably why it's taken me half the week to just do something as easy as writing a blog post. Right. But with sitting in that current state of mind and, and with working at Stately, I think of everything in, in different states.
 
@@ -119,7 +115,6 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:15:30] **Jenny Truong:** Yeah.
 
-
 ## [00:15:31] States of burnout
 
 [00:15:31] **Carl Vitullo:** So you, you mentioned thinking in states, so what are, what are, what are the states of burnout?
@@ -132,7 +127,7 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:16:49] Keep that momentum up for like ever, if that makes sense. You can only do it temporarily, and that's because your mind is like so shocked that this is something that you're finally able to do. You're content doing it, and that excitement is what leads you to the next state of burnout, which is this onset of stress that is like, &quot;okay, I took on all these things. I'm totally capable, but why is it taking me longer to do?&quot;
 
-[00:17:16] And then you start realizing like, okay, am I actually capable? Because like I used to be able to write two blog posts a week, and now I can barely get one done. 
+[00:17:16] And then you start realizing like, okay, am I actually capable? Because like I used to be able to write two blog posts a week, and now I can barely get one done.
 
 [00:17:26] So with this onset of stress, you start doubting yourself and you start thinking like, &quot;okay, I should extend my work hours. I should stay up until past 5:00 PM and sacrifice dinner and, and do all these different things to complete all the tasks in the backlog that I should have done last week,&quot; and so on.
 
@@ -140,15 +135,15 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:18:08] But this third state of burnout is like this huge onset of stress where there's an end goal that you have, like this deadline you have, but you have no idea how to get there. The self-doubt gets stronger. You become cynical towards people. You start thinking, man, my coworkers are like so much better than me because they're able to make these PRs multiple times a day or even a week, and I haven't even submit one yet.
 
-[00:18:34] Like you start getting jealous, negative views towards not just your coworkers, but people around you, whether it's family or friends. And then if you keep that up, then you'll reach this initial state of burnout. 
+[00:18:34] Like you start getting jealous, negative views towards not just your coworkers, but people around you, whether it's family or friends. And then if you keep that up, then you'll reach this initial state of burnout.
 
 [00:18:48] You might not be doing a physical workout, but you wake up like stiff and sore, and realizing, okay I don't wanna work right now and every day feels like a Monday. And you just wake up thinking, &quot;Ugh, not another day. Like, where did my week go?&quot;
 
-[00:19:03] **Carl Vitullo:** Yeah, and I, I just wanna connect back, &quot;waking up feeling like you've done a workout,&quot; back to what you said earlier about the physiological response to stress. It, it's not a muscle exhaustion. 
+[00:19:03] **Carl Vitullo:** Yeah, and I, I just wanna connect back, &quot;waking up feeling like you've done a workout,&quot; back to what you said earlier about the physiological response to stress. It, it's not a muscle exhaustion.
 
 [00:19:13] It's not, you know, you worked your muscles and did all that, but it is, you know, your, your body floods with cortisol and adrenaline and all of those chemicals, and it it, it heightens everything in your body. Everything in your body is ready to go. So it's does, it does physically drain you being in that heightened state of stress for, for too long.
 
-[00:19:32] **Jenny Truong:** It does. And same thing with like how I just mentioned earlier, oh, my shoulders are stiff because I'm a little anxious or nervous. It's the little things that if you don't recognize, later tonight or tomorrow, I'm gonna figure out like, oh man, I felt like I just lifted a whole sofa, because my shoulders are like constantly up towards my ears. Yeah. 
+[00:19:32] **Jenny Truong:** It does. And same thing with like how I just mentioned earlier, oh, my shoulders are stiff because I'm a little anxious or nervous. It's the little things that if you don't recognize, later tonight or tomorrow, I'm gonna figure out like, oh man, I felt like I just lifted a whole sofa, because my shoulders are like constantly up towards my ears. Yeah.
 
 [00:19:51] **Carl Vitullo:** Right.
 
@@ -178,10 +173,9 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:22:50] And he also mentions like people in the tech community very briefly, but to me, like I think the tech community and developers we're all in this helping profession because we're building tools that affect people more than just us.
 
-[00:23:04] **Carl Vitullo:** Sure. Yeah, that makes sense. You're, you're concerned for others' needs maybe in a very abstract and technical way, but Sure. Yeah. So just to, to restate the, those five stages of burnout. So there's the honeymoon period, the onset of stress, chronic stress. Then like initial burnout and chronic burnout. 
+[00:23:04] **Carl Vitullo:** Sure. Yeah, that makes sense. You're, you're concerned for others' needs maybe in a very abstract and technical way, but Sure. Yeah. So just to, to restate the, those five stages of burnout. So there's the honeymoon period, the onset of stress, chronic stress. Then like initial burnout and chronic burnout.
 
 [00:23:24] **Jenny Truong:** Mhm, yeah, those are the most common if you were to categorize all 12.
-
 
 ## [00:23:28] When to seek help
 
@@ -209,7 +203,6 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:26:26] And then consciously derailing that and saying, no, like, how can I be curious about this? What about instead of looking to dismiss or assign some kind of value or lack of value to, how can I be curious about this?
 
-
 ## [00:26:41] Using curiosity instead of judgement
 
 [00:26:41] **Jenny Truong:** In therapy, that's where I learned to ask the question, is this true? If it's true, is it an opinion or an emotion or a fact? Like what I mean by is it true? Is is this a fact? And if it's not a fact, then ask yourself why. And it doesn't have to be blaming like, oh, because I, this is what I was raised to think.
@@ -224,8 +217,7 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:28:09] **Jenny Truong:** It definitely encourages you to, one, be more self-aware, but two, just be more open-minded.
 
-[00:28:16] **Carl Vitullo:** Open-minded. Yeah, definitely. There was a, a, a comment in, in the chat that I, I think would be good to talk about. 
-
+[00:28:16] **Carl Vitullo:** Open-minded. Yeah, definitely. There was a, a, a comment in, in the chat that I, I think would be good to talk about.
 
 ## [00:28:23] What about the junior devs?
 
@@ -243,14 +235,13 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:30:35] That's my advice to you, to be that person, to start that movement essentially, and normalize the way we should respect each other in the workplace.
 
-
 ## [00:30:44] Contrasting burnout in tech vs other expert fields
 
 [00:30:44] **Carl Vitullo:** Yeah, for sure I can. Yeah, I can definitely empathize with that. I think it's, cuz it is a, it's a cultural thing on a team. It's a matter of, having healthy boundaries within work is definitely super important. I've thought a little bit about sort of like other career paths. Like, you know, people talk about doctors and burnout and lawyers and burnout.
 
 [00:31:05] You know, those are two industries that in a lot of ways have rigidly codified around, burning out new entrants into the, into the field. And I think tech is not quite so rigidly, you know, in that, you know, there's not like the, you know, you, you graduate medical school and you get your first, your internship and your residency.
 
-[00:31:28] And like I hear, I've talked with friends who've done that path and it's like, &quot; You do what? You worked for, how long straight, and you were responsible for people's health and lives?&quot; So yeah, I, I, I think tech does have more of an opportunity than some fields to set those boundaries. But at, you know, on the flip side, when you're scrambling for any opportunity, I guess it can be really hard to come into it with your own, it, it can be hard to set boundaries.
+[00:31:28] And like I hear, I've talked with friends who've done that path and it's like, &quot; You do what? You worked for, how long straight, and you were responsible for people's health and lives?&quot; So yeah, I think tech does have more of an opportunity than some fields to set those boundaries. But at, you know, on the flip side, when you're scrambling for any opportunity, I guess it can be really hard to come into it with your own, it, it can be hard to set boundaries.
 
 [00:31:56] **Jenny Truong:** It is hard, but that's where like, that's where you have to ask yourself, like, is this gonna be worth it for me to risk, let's say the next six months on being a pushover and being like, and I'm sorry if I said pushover as a strong word, but I consider myself a pushover when I start saying yes to people, to helping them.
 
@@ -270,14 +261,13 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:33:52] **Jenny Truong:** This also reminds me of like a practice that I started doing. Uh, so I've only a little bit of background on me. I've only been in tech for three and a half, if not four years, including an internship fresh out of a university. And what I started doing after I found out I was completely burned out the first two years of working in tech was that I don't voice.
 
-[00:34:14] What my limitations are and what my boundaries are. So when you, let's say you're in the honeymoon phase and you're so excited. You just got your first job and this is the first company that is willing to, you know, invest in you. 
+[00:34:14] What my limitations are and what my boundaries are. So when you, let's say you're in the honeymoon phase and you're so excited. You just got your first job and this is the first company that is willing to, you know, invest in you.
 
 [00:34:25] What you can practice is, is when people ask you to do these favors or these tasks that 4:59 PM is, you can tell them, &quot; I will do this task even though it's not technically part of my responsibilities. I'm happy to take it on and help you achieve it, but I'm not going to work on this until the following workday.&quot; Or you can say, I will work on this, but I hope that my lunch will be extended the following, workday and so on. So like, it's kind of like a trade off you.
 
 [00:34:56] You have them recognize that you're sacrificing something to help them out. And then in trade, like you trade for either more time to do things for yourself or eat lunch, or you just, you gotta put that boundary out there in the beginning so then they can also recognize, oh, you're right. Like I shouldn't be asking someone to do a task at 4:59 PM.
 
 [00:35:20] **Carl Vitullo:** Right. And so maybe that, that makes me think of boundaries as less like hard lines in the sand. Like, oh, I'm not gonna do anything after 5:00 PM on a Friday. But maybe more like, okay, that's a good boundary. I don't want to say not to do that, but thinking of boundaries as your available capacity, maybe.
-
 
 ## [00:35:40] Mental inventories
 
@@ -295,10 +285,9 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:37:25] **Jenny Truong:** Yes.
 
-
 ## [00:37:25] Personal boundaries and 7 types of rest
 
-[00:37:25] **Carl Vitullo:** ( nervous laughter) Yeah. I, and I guess I, I, I also wanna contrast, we've talked a little bit about, you know, sort of like time cutoffs and keeping like, working hours. I have always been a very erratic person, you know, like ADHD and whatever are among my diagnoses.
+[00:37:25] **Carl Vitullo:** ( nervous laughter) Yeah. I, and I guess I also wanna contrast, we've talked a little bit about, you know, sort of like time cutoffs and keeping like, working hours. I have always been a very erratic person, you know, like ADHD and whatever are among my diagnoses.
 
 [00:37:42] So the idea of like getting up at nine in the morning and like working until five with like lunch break has always been very, I don't know, it's grated against me a little bit. So I, I personally have found it very helpful to say, &quot;I will commit this time, this energy that I have to this project, to this company. But like, don't tell me when to do it.&quot; I kind of chased my inspiration personally, just for myself, over working 10, 15 years now. I have learned ways to sort of lean into those quirks of how my brain operates. Like, okay, I'm adhd. I struggle to. Do small rote things, but when I, when I get inspired, it's just best to lean into it.
 
@@ -356,7 +345,6 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:46:08] **Carl Vitullo:** Yeah. Right, right. As you were saying that, I was just thinking, yeah, that is emotional work that is being responsible for others' emotions is work. Taking a break from that is definitely important.
 
-
 ## [00:46:19] Body and mind influencing each other
 
 [00:46:19] **Carl Vitullo:** I also wanted to go back to what you were saying about like taking a rest, taking a bath with a candle and whatever that was, you know, close to 10 years ago now, I was working with a therapist for the first time, like seriously in my adult life.
@@ -365,7 +353,7 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:47:00] And so, you know, for me, at that time in my life, I was very stressed. I was very strained. And this therapist I was working with advised me to take a bath, come up with a little mantra that you repeat to yourself and then when you're feeling extremely stressed, when you're in this, you know, in that most acute point of stress, now you have a touch point.
 
-[00:47:21] Use that mantra to summon the feeling in that moment and just to take the edge off of that stress a little bit, and I, I, that really stuck with me as such a, it's such an easy and powerful thing to do.
+[00:47:21] Use that mantra to summon the feeling in that moment and just to take the edge off of that stress a little bit, and that really stuck with me as such a, it's such an easy and powerful thing to do.
 
 [00:47:32] **Jenny Truong:** But it's hard to also mentally like pause on what you're working on and like be able to relax and do that. Before I took baths. I would like not be okay. Like when I first started taking baths, it was really hard to like not think about all the different things in the backlog that I was supposed to complete, you know, so, It's practice.
 
@@ -379,16 +367,15 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 
 [00:49:15] **Jenny Truong:** Yeah, that's one way to put it.
 
-[00:49:17] **Carl Vitullo:** Yeah. Yeah. I, you know what, like, it's all connected. You influence one thing and it'll affect the other. Well, we're coming up on an hour here. I, I, I did want to, so I, I had looked up Dr. Sandra Dalton Smith and found she has a book called Sacred Rest.
+[00:49:17] **Carl Vitullo:** Yeah. Yeah. I, you know what, like, it's all connected. You influence one thing and it'll affect the other. Well, we're coming up on an hour here. I did want to, so I, I had looked up Dr. Sandra Dalton Smith and found she has a book called Sacred Rest.
 
 [00:49:32] Are you familiar with that?
 
 [00:49:34] **Jenny Truong:** I am, I actually haven't read the full book yet, but it goes into so many details on like what your human, human body is capable of, and the mind. So if you have the time, let's. Listen to the podcast or read it. There's also plenty of articles that she's written as well.
 
-[00:49:51] **Carl Vitullo:** Yeah. Okay. Yeah, I, I, I came prepared with a link to that, so yeah, definitely, like if you're feeling stressed, if you're feeling burned out, maybe that's a good resource to, uh, learn some tools to rest. Just good for everyone. Everyone gets stressed. Everyone needs rest. All right, Jenny, thank you so much for coming out.
+[00:49:51] **Carl Vitullo:** Yeah. Okay. Yeah, I came prepared with a link to that, so yeah, definitely, like if you're feeling stressed, if you're feeling burned out, maybe that's a good resource to, uh, learn some tools to rest. Just good for everyone. Everyone gets stressed. Everyone needs rest. All right, Jenny, thank you so much for coming out.
 
 [00:50:07] Before we close, anything else you, uh, you wanna close on?
-
 
 ## [00:50:10] Remember you're human
 
@@ -399,4 +386,3 @@ people: "[Carl Vitullo](https://twitter.com/vcarl_) and [Jenny Truong](https://t
 [00:50:35] **Carl Vitullo:** Yep. We are all human. Be intentional about experiencing life. Great. Great place to close. Awesome. Thanks so much, Jenny.
 
 [00:50:42] **Jenny Truong:** Thanks for having me.
-
