@@ -6,35 +6,22 @@ ol {
 
 We have certain expectations for how members of the communities who have been distinguished with roles behave in the server. If you feel these expectations are not being met, we'd love if you could let us know by posting in #reactiflux-moderation, DMing an admin or moderator, or by using our [contact page](/contact).
 
+## Star Helpers
+
+Every quarter, we review the participation in the server for our most active, most selfless members offering their knowledge to folks asking for help. These members are all outstanding developers who have earned a rare achievement; of the thousands of active posters in Reactiflux, we recognize between 15 and 30 Star Helpers per quarter, and only around 40 per year.
+
 ## MVPs
 
-- Be consistently among the most helpful members of the server for an extended period of time.
-  - We don’t collect metrics on this, but it should be obvious to any active member who deserves this recognition.
-- Be humble.
+MVPs are members who made an early impact in the server, without them the server would not be what it is.
 
-### Above and beyond
+### MVP Emeritus
 
-- Help the mods direct traffic through the server.
-- If a question isn't being answered and may be better suited for a different channel, direct them where to take it.
-- If a question has gone unacknowledged, ask for more information.
-- Refocus conversations when they get off track.
+These people were added to the MVP role before we formalized a process for how it would be applied.
 
 ## Moderators
 
-All of the above, and:
-
-- Enforce the Code of Conduct.
-- Participate in moderation discussions.
-
-### Above and beyond
-
-- Contribute to server administration conversations.
-- Build and maintain a new part of the community.
-- Help with day-to-day administration like the MVP selection schedule
+Our moderators are tasked with keeping the server on the right course. They're our trusted stewards of server culture, trusted to enforce the code of conduct and oversee server governance.
 
 ## Admins
 
-All of the above, and:
-
-- Take a proactive role in identifying limitations within the Reactiflux community.
-- Contribute to proposals and implementations of changes.
+Our staff, (moderators and admins) share responsibility for day-to-day operation of the server. Our admins are recognized as trusted members who have gone above and beyond keeping the community operating, completing a project that expanded what the community is.
