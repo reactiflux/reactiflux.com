@@ -24,4 +24,4 @@ Our moderators are tasked with keeping the server on the right course. They're o
 
 ## Admins
 
-Our staff, (moderators and admins) share responsibility for day-to-day operation of the server. Our admins are recognized as trusted members who have gone above and beyond keeping the community operating, completing a project that expanded what the community is.
+Our staff, (moderators and admins) share responsibility for day-to-day operation of the server, as members who have earned trust over years to safeguard Reactiflux. Our admins are those who have gone above and beyond keeping the community operating, completing a project that expanded what the community is.
