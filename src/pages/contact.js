@@ -11,7 +11,7 @@ const fields = [
   {
     label: "Your Message",
     name: "message",
-    placeholder: "Enter your message here...",
+    placeholder: "Enter your message here…",
     type: "textarea",
   },
 ];
@@ -37,31 +37,37 @@ const Index = () => {
     >
       <h1>Message the Staff</h1>
       <div>
-        <p>
-          When you have any questions or concerns which you would like to
-          discuss with Reactiflux staff, you can reach out via:
-        </p>
+        <p>Reactiflux staff can be reached several ways.</p>
         <ul>
           <li>
             The public{" "}
-            <a href="https://discord.gg/BkSU7Ju">#reactiflux-moderation</a>{" "}
-            channel
-          </li>
-          <li>direct message to any staff member in Discord</li>
-          <li>
-            mention or message{" "}
-            <Link href="https://twitter.com/reactiflux">@reactiflux</Link> on
-            Twitter
+            <a href="https://discord.com/channels/102860784329052160/106168778013822976">
+              #reactiflux-moderation
+            </a>{" "}
+            channel, if you’re a current member. This method is{" "}
+            <strong>PUBLIC</strong> to the rest of the server.
           </li>
           <li>
-            <a href="mailto:hello@reactiflux.com">email</a> the admin team
+            Our in-Discord ticketing system in{" "}
+            <a href="https://discord.com/channels/102860784329052160/1041014610532249792">
+              #moderation-reports
+            </a>
           </li>
-          <li>our anonymous contact form below</li>
+          <li>
+            direct message any staff member in Discord. The staff member will
+            share the correspondence or a summary with other staff for issues
+            requiring wider input.
+          </li>
+          <li>
+            Email <a href="mailto:hello@reactiflux.com">hello@reactiflux.com</a>
+            (if you’d like to propose a collaboration, business dealing, or be a
+            guest for a live event, do this one)
+          </li>
+          <li>
+            Our anonymous contact form below. All admins and moderators will
+            receive this, with no identifying information provided.
+          </li>
         </ul>
-        <p>
-          If you message us directly, we can talk things through with you and
-          make sure you’re kept updated.
-        </p>
         <p>
           If you choose to reach out anonymously, bear in mind that we may not
           reference your message publicly. However, we will read, discuss, and
@@ -70,6 +76,7 @@ const Index = () => {
           of your message.
         </p>
         <hr />
+        <p>If you submit a technical question, you will not get a response.</p>
         <Form fields={fields} name="contact" onSubmit={onSubmit} />
         <p>
           Please note:{" "}
@@ -77,10 +84,7 @@ const Index = () => {
             we can not answer technical questions submitted via this form.
           </strong>{" "}
           It is anonymous, intended for submission of sensitive information like
-          harassment or other moderation problems.{" "}
-          <strong>
-            If you submit a technical question, you will not get a response.
-          </strong>
+          harassment or other moderation problems.
         </p>
       </div>
     </Layout>
