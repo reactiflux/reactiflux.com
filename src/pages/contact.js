@@ -52,6 +52,7 @@ const Index = () => {
             <a href="https://discord.com/channels/102860784329052160/1041014610532249792">
               #moderation-reports
             </a>
+            .
           </li>
           <li>
             direct message any staff member in Discord. The staff member will
@@ -59,9 +60,9 @@ const Index = () => {
             requiring wider input.
           </li>
           <li>
-            Email <a href="mailto:hello@reactiflux.com">hello@reactiflux.com</a>
+            Email <a href="mailto:hello@reactiflux.com">hello@reactiflux.com</a>{" "}
             (if you’d like to propose a collaboration, business dealing, or be a
-            guest for a live event, do this one)
+            guest for a live event, do this one).
           </li>
           <li>
             Our anonymous contact form below. All admins and moderators will
