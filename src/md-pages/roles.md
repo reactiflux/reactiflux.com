@@ -4,7 +4,7 @@ ol {
 }
 </style>
 
-We have certain expectations for how members of the communities who have been distinguished with roles behave in the server. If you feel these expectations are not being met, we'd love if you could let us know by posting in #reactiflux-moderation, DMing an admin or moderator, or by using our [contact page](/contact).
+We have certain expectations for how members of the communities who have been distinguished with roles behave in the server. If you feel these expectations are not being met, Reactiflux staff would appreciate you reaching out. You can find information about how to do so on our [contact page](/contact).
 
 ## Star Helpers
 
