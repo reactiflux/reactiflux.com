@@ -77,6 +77,7 @@ const Index = () => {
             receive this, with no identifying information provided.
           </li>
         </ul>
+        <hr />
         <p>
           If you choose to reach out anonymously, bear in mind that we may not
           reference your message publicly. However, we will read, discuss, and
@@ -84,14 +85,16 @@ const Index = () => {
           contacted on another platform, please include your information as part
           of your message.
         </p>
-        <hr />
-        <p>If you submit a technical question, you will not get a response.</p>
+        <p>
+          This form is <em>anonymous</em> and gives{" "}
+          <em>no identifying information or means to communicate back</em> to
+          the staff members who receive it. Any inquiry that desires a response
+          must include contact information.
+        </p>
         <Form fields={fields} name="contact" onSubmit={onSubmit} />
         <p>
-          Please note:{" "}
-          <strong>
-            we can not answer technical questions submitted via this form.
-          </strong>{" "}
+          Again,{" "}
+          <strong>we can not answer questions submitted via this form.</strong>{" "}
           It is anonymous, intended for submission of sensitive information like
           harassment or other moderation problems.
         </p>
