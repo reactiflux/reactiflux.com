@@ -94,15 +94,3 @@ export const Nav = styled.nav`
     }
   }
 `;
-
-export const BlackLivesMatter = styled.header`
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 20px;
-  text-align: center;
-
-  a {
-    color: white;
-    text-decoration: underline;
-  }
-`;
