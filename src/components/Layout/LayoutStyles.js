@@ -142,23 +142,15 @@ const standardLayout = css`
   }
 `;
 
-const largeTitle = css`
+const homeTitle = css`
   h1 {
-    font-family: "Space Mono", monospace;
     font-size: ${title.responsive(18)};
     letter-spacing: ${title.responsive(-1.3)};
-    line-height: 1;
-    position: relative;
 
     span {
-      color: ${pink};
-      font-family: "Poppins", sans-serif;
-      font-size: ${title.responsive(3.6)};
-      font-weight: 600;
-      left: ${title.responsive(69)};
-      letter-spacing: 0;
       position: absolute;
-      text-transform: uppercase;
+      font-size: ${title.responsive(3.6)};
+      left: ${title.responsive(69)};
       top: ${title.responsive(3)};
     }
   }
@@ -169,10 +161,28 @@ const largeTitle = css`
       letter-spacing: ${title.static(-1.3)};
 
       span {
+        position: absolute;
         font-size: ${title.static(3.6)};
         left: ${title.static(69)};
         top: ${title.static(3)};
       }
+    }
+  }
+`;
+
+const largeTitle = css`
+  h1 {
+    font-family: "Space Mono", monospace;
+    font-size: ${title.responsive(5)};
+    letter-spacing: ${title.responsive(-0.4)};
+    line-height: 1;
+    position: relative;
+  }
+
+  @media (min-width: 1300px) {
+    h1 {
+      font-size: ${title.static(5)};
+      letter-spacing: ${title.static(-0.4)};
     }
   }
 `;
@@ -182,10 +192,9 @@ export const Main = styled.main`
 
   ${mainPadding}
 
-  ${(props) => (props.homepage || props.largeTitle ? largeTitle : "")}
-  ${(
-    props,
-  ) => (props.homepage ? homeLayout : standardLayout)}
+  ${(props) => (!props.homepage && props.largeTitle ? largeTitle : "")}
+  ${(props) => (props.homepage ? homeTitle : "")}
+  ${(props) => (props.homepage ? homeLayout : standardLayout)}
 `;
 
 const fixedSidebarButton = css`

@@ -10,10 +10,9 @@
 
 # next.js
 /.next/
-/out/
-
-# production
-/build
+# next sitemap
+sitemap*
+robots.txt
 
 # misc
 .DS_Store

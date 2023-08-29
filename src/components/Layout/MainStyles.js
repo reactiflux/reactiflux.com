@@ -71,6 +71,15 @@ html body {
     font-family: 'Space Mono', monospace;
     font-size: 7.6rem;
     letter-spacing: -0.4rem;
+    position: relative;
+
+    span {
+      color: ${pink};
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
   }
 
   h2 {

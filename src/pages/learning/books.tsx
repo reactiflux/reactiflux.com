@@ -14,6 +14,7 @@ import engineeringMgtRestUs from "@assets/books/engineering-mgt-rest-us.jpeg";
 import atomicHabits from "@assets/books/atomic-habits.jpg";
 import difficultConversations from "@assets/books/difficult-conversations.jpeg";
 import goodToGreat from "@assets/books/good-to-great.jpg";
+import { StaticImageData } from "next/image";
 
 const P = styled.p``;
 const Figure = styled.figure`

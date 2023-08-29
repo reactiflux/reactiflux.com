@@ -5,7 +5,7 @@ import { Reactiflux } from "@assets/logos";
 import { Link } from "@components";
 import { useIsMobile } from "@helpers";
 
-import { Logo, Space, Wrapper, Nav, BlackLivesMatter } from "./MenuStyles";
+import { Logo, Space, Wrapper, Nav } from "./MenuStyles";
 import { MobileNav } from "./MobileNav";
 
 export function Menu() {
@@ -17,16 +17,6 @@ export function Menu() {
   return (
     <HeadroomIfDesktop>
       <Wrapper>
-        <BlackLivesMatter>
-          Black Lives Matter.{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://support.eji.org/give/153413/#!/donation/checkout"
-          >
-            Support&nbsp;the&nbsp;Equal&nbsp;Justice&nbsp;Initiative.
-          </a>
-        </BlackLivesMatter>
         <Nav>
           <Link href="/">
             <Logo {...Reactiflux} alt="Reactiflux" />

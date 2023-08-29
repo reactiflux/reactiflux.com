@@ -38,7 +38,7 @@ export function Layout({
         <MainStyles />
         <MarkdownStyles />
         <Menu />
-        <Main as={as} {...props} isOpen={isOpen} sidebar={sidebar}>
+        <Main largeTitle as={as} {...props} isOpen={isOpen} sidebar={sidebar}>
           <SEO title={title} description={description} />
           {typeof children === "function" ? children(setIsOpen) : children}
           {sidebar ? (
