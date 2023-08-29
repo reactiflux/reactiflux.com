@@ -183,9 +183,7 @@ export const Main = styled.main`
   ${mainPadding}
 
   ${(props) => (props.homepage || props.largeTitle ? largeTitle : "")}
-  ${(
-    props,
-  ) => (props.homepage ? homeLayout : standardLayout)}
+  ${(props) => (props.homepage ? homeLayout : standardLayout)}
 `;
 
 const fixedSidebarButton = css`

@@ -1,7 +1,8 @@
 import React from "react";
 
 export const addLinks = (content) => {
-  const regex = /((https?:\/\/)|(www\.))(\S+)(\w{2,4})(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-/]))?/g;
+  const regex =
+    /((https?:\/\/)|(www\.))(\S+)(\w{2,4})(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-/]))?/g;
   const result = [];
   let match;
   let startIndex = 0;
