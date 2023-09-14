@@ -21,7 +21,7 @@
     }
   },
   "dependencies": {
-    "@types/node": "16.11.10",
+    "@types/node": "20.6.0",
     "@types/react": "17.0.37",
     "@types/styled-components": "^5.1.15",
     "@vcarl/remark-headings": "^0.0.1",
