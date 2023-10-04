@@ -11,6 +11,8 @@ import { MarkdownStyles } from "./MarkdownStyles";
 import { Menu } from "./Menu";
 import { SEO } from "./SEO";
 
+let loaded = false;
+
 export function Layout({
   as,
   children,
@@ -19,6 +21,20 @@ export function Layout({
   sidebar = false,
   ...props
 }) {
+  // Font correction. This should run exactly once on each page, to fix CLS
+  // (cumulative layout shift) SEO issues
+  const [hasFonts, setHasFonts] = React.useState(loaded);
+  React.useLayoutEffect(() => {
+    const handler = () => {
+      setHasFonts(true);
+      loaded = true;
+    };
+    if (!loaded) {
+      document.fonts.addEventListener("loadingdone", handler);
+      return () => document.fonts.removeEventListener("loadingdone", handler);
+    }
+  }, [hasFonts]);
+
   const isMobile = useIsMobile();
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleIsOpen = () => setIsOpen((prev) => !prev);
@@ -34,7 +50,7 @@ export function Layout({
 
   return (
     <ThemeProvider theme={getTheme({ isMobile })}>
-      <Wrapper>
+      <Wrapper className={hasFonts ? "fonts-loaded" : "fonts-fallback"}>
         <MainStyles />
         <MarkdownStyles />
         <Menu />
