@@ -29,6 +29,9 @@ const homeLayout = css`
     letter-spacing: -1px;
     line-height: 1.5;
   }
+  .fonts-fallback p {
+    letter-spacing: 0.1rem !important;
+  }
 
   a {
     display: inline-block;
@@ -154,6 +157,9 @@ const homeTitle = css`
       top: ${title.responsive(3)};
     }
   }
+  .fonts-fallback h1 {
+    letter-spacing: ${title.responsive(-1.5)};
+  }
 
   @media (min-width: 1300px) {
     h1 {
@@ -178,11 +184,16 @@ const largeTitle = css`
     line-height: 1;
     position: relative;
   }
+  .fonts-fallback h1 {
+    letter-spacing: ${title.responsive(-0.48)};
+  }
 
   @media (min-width: 1300px) {
     h1 {
       font-size: ${title.static(5)};
-      letter-spacing: ${title.static(-0.4)};
+    }
+    .fonts-fallback h1 {
+      letter-spacing: ${title.static(-0.48)};
     }
   }
 `;

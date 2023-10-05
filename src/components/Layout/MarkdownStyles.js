@@ -3,6 +3,14 @@ import { createGlobalStyle } from "styled-components";
 import { foreground, pink } from "@utils/theme";
 
 export const MarkdownStyles = createGlobalStyle`
+.fonts-fallback .markdown h1 {
+  letter-spacing: -0.3rem;
+}
+.fonts-fallback .markdown {
+  letter-spacing: 0.1rem;
+  line-height: 1.175;
+  // word-spacing: 0.0625rem;
+}
 .markdown {
   h1 {
     color: ${foreground};

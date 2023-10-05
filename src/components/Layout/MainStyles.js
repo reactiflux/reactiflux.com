@@ -12,10 +12,25 @@ html {
   overflow-y: scroll;
 }
 
+.fonts-fallback {
+  font-family: Arial !important;
+    letter-spacing: 0.125rem;
+    word-spacing: -0.1875rem;
+    line-height: 1.175;
+}
+.fonts-fallback strong {
+  letter-spacing: 0rem;
+}
+.fonts-fallback h1 {
+  font-family: monospace !important;
+  letter-spacing: -0.25rem;
+  word-spacing: 0px;
+}
+
 html body {
   background: ${background};
   color: ${foreground};
-  font-family: Work Sans, sans-serif;
+  font-family: Work Sans, Arial, sans-serif;
   font-feature-settings: "kern", "liga", "clig", "calt";
   font-size: 1.9rem;
 
