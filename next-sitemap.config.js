@@ -10,8 +10,6 @@ module.exports = {
   priority: 1,
   autoLastmod: false,
   transform: async (config, url) => {
-    // console.log(url);
-
     if (url.includes("/blog/post/")) {
       return await transformBlogPost(url);
     }
@@ -57,8 +55,6 @@ const transformBlogPost = async (url) => {
 const transformTranscript = async (url) => {
   const filename = url.split("/transcripts/").pop();
   const date = await fetchLastModified(`./src/transcripts/${filename}.md`);
-
-  console.log({ date, filename });
 
   return {
     loc: url,
