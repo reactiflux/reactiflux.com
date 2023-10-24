@@ -1,3 +1,59 @@
+---
+title: This Month in React (August 2023)
+date: 2023-08-30
+time: 10am PT / 5PM GMT
+location: Main Stage on Reactiflux
+description: "Join Carl Vitullo, Mark Erikson, and Sebastien Lorber as we break down This Month in React. We'll break down what's new in an hour-long conversation."
+people: "[Carl Vitullo](https://twitter.com/vcarl_), [Mark Erikson](https://twitter.com/acemarke), and [Sebastien Lorber](https://twitter.com/sebastienlorber)"
+---
+
+Concurrent Mode, Remix DevTools, included SourceMaps, new Expo features
+
+- [Spotify](https://open.spotify.com/episode/2ScNpUkv8QRYXaniMnfpWT?si=yF2SwwsRTGmvAFcl_Wsq_w)
+- [Apple Podcasts](https://podcasts.apple.com/us/podcast/this-month-in-react-august-2023/id1661733526?i=1000626488343)
+- [RSS](https://anchor.fm/s/a1f8a59c/podcast/rss)
+- [Or anywhere you prefer](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--August-2023-e28qasn/a-aaaa1f1)
+
+<iframe src="https://podcasters.spotify.com/pod/show/reactiflux/embed/episodes/This-Month-in-React--August-2023-e28qasn/a-aaaa1f1" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+
+- Gatsby's growth and development seems to be stagnating as Jamstack has fallen out of favor compared to Next.js.
+- React's stubborn incompatibility with Web Components is frustrating but may be more of an indictment of Web Components' limitations.
+- CSS-in-JS causes fragmentation across environments like client vs server rendering, so the React ecosystem is moving away from it. Differences in tradeoffs between browser and mobile environments make it a difficult problem.
+- New devtools have been released for React Server Components and Remix that help inspect behavior on client and server. Good devtools are a huge force multiplier.
+- Publishing libraries with proper ESModules support is still very challenging and undocumented. Deno may help smooth the process.
+- React production builds now have sourcemaps thanks to impressive work by Mark Erikson! This will massively help debugging libraries like React in production.
+- Official React + TypeScript documentation has finally landed. Orta did a great job with it.
+- Try out new versions of Redux Toolkit and React-Redux in beta. Provide feedback!
+- Expo had a big release week with improvements to builds, updates, SQLite, CLI plugins, and more as React Native marches forward.
+
+Links used:
+
+- [Is Gatsby Dead?](https://twitter.com/sebastienlorber/status/1694392101281190224)
+- [https://thenewstack.io/is-jamstack-toast-some-developers-say-yes-netlify-says-no/](https://thenewstack.io/is-jamstack-toast-some-developers-say-yes-netlify-says-no/)
+- [https://www.spicyweb.dev/farewell-jamstack/](https://www.spicyweb.dev/farewell-jamstack/)
+- [Things you forgot (or never knew) because of React](https://joshcollinsworth.com/blog/antiquated-react)
+- RSC Devtools
+  - [RSC Devtools - Chrome Extension](https://chrome.google.com/webstore/detail/rsc-devtools/jcejahepddjnppkhomnidalpnnnemomn)
+  - [Devtools for React Server Components](https://www.alvar.dev/blog/creating-devtools-for-react-server-components)
+- [My Experience Modernizing Packages to ESM](https://blog.isquaredsoftware.com/2023/08/esm-modernization-lessons/)
+- [Remix Dev Tools v2.0 - New settings tab](https://github.com/Code-Forge-Net/Remix-Dev-Tools/releases/tag/v2.0.0)
+- [Everything I wish I knew before moving 50,000 lines of code to React Server](https://www.mux.com/blog/what-are-react-server-components)
+- Expo
+  - [Expo Preview - Fully customizable builds on EAS Build](https://expo.dev/changelog/2023/08-10-custom-builds)
+  - [Expo Proof of concept - expo-sqlite integration with CR-SQLite](https://expo.dev/changelog/2023/08-10-cr-sqlite)
+  - [Expo Proof of concept - Expo CLI Dev Tools Plugins](https://expo.dev/changelog/2023/08-10-dev-tools-plugins)
+- [Feature Preview: Single Sign-On (SSO)](https://blog.expo.dev/feature-preview-single-sign-on-sso-9c1a7d50c1a9)
+- [Feature Preview: Rollouts for EAS Update](https://blog.expo.dev/feature-preview-rollouts-for-eas-update-4eac28596470)
+- [useUpdates() API for expo-updates](https://expo.dev/changelog/2023/08-08-use-updates-api)
+- [Expo Orbit: Download and launch builds](https://expo.dev/changelog/2023/08-09-orbit)[Components](https://www.mux.com/blog/what-are-react-server-components)
+- ⚡Lightning⚡
+  - [React prod sourcemaps](https://github.com/markerikson/react-prod-sourcemaps)
+  - [PR to React](https://github.com/facebook/react/pull/26446)
+  - [React.dev - Using TypeScript](https://react.dev/learn/typescript)
+  - [RTK 2.0 beta](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.0.0-beta.0), and [React-Redux 9.0 alpha](https://github.com/reduxjs/react-redux/releases/tag/v9.0.0-alpha.0)
+  - [The underlying mechanisms of React’s concurrent mode](https://andreigatej.dev/blog/the-underlying-mechanisms-of-reacts-concurrent-mode/)
+  - [React Jam - Summer 2023 Winners](https://reactjam.com/summer-2023-winners)
+
 [00:00:00] **Carl Vitullo:** Hello, everyone. Thank you for joining us again for This Month in React, where we digest and discuss the latest developments in the ever evolving React and web ecosystem. Right now I've got myself the community manager of sorts for Reactiflux, and Mark Erikson. Mark, you want to introduce yourself?
 
 [00:00:20] **Mark Erikson:** My day job is working at Replay.io where we're building a true time traveling debugger for JavaScript. If you haven't seen it, please check it out. And in my copious amounts of free time, I work on various Redux related projects.

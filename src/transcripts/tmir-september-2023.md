@@ -1,15 +1,38 @@
 ---
-title: This Month in React (June 2023)
-date: 2023-06-28
+title: This Month in React (September 2023)
+date: 2023-09-27
 time: 10am PT / 5PM GMT
 location: Main Stage on Reactiflux
-description: "Join Carl Vitullo, Mark Erikson, and Sebastien Lorber as we break down This Month in React. We'll break down what's new in an hour-long conversation."
-people: "[Carl Vitullo](https://twitter.com/vcarl_), [Mark Erikson](https://twitter.com/acemarke), and [Sebastien Lorber](https://twitter.com/sebastienlorber)"
+description: "Join Carl Vitullo, Jacob Paris, and Sebastien Lorber as we break down This Month in React. We'll break down what's new in an hour-long conversation."
+people: "[Carl Vitullo](https://twitter.com/vcarl_), [Jacob Paris](https://twitter.com/jacobmparis), and [Sebastien Lorber](https://twitter.com/sebastienlorber)"
 ---
 
-Remix v2, Docusaurus v3, Node 20.6, Bun 1.0. So much news this month!
+Remix v2, Docusaurus v3, Node 20.6, Bun 1.0
+
+- [Spotify](https://open.spotify.com/episode/54ClLvCFL82IG93a4g7vXZ?si=j7G_aMnNSwOid70QPsJcBQ)
+- [Apple Podcasts](https://podcasts.apple.com/us/podcast/this-month-in-react-september-2023/id1661733526?i=1000629732098)
+- [RSS](https://anchor.fm/s/a1f8a59c/podcast/rss)
+- [Or anywhere you prefer](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--September-2023-e29vb6o/a-aadsk3b)
 
 <iframe src="https://podcasters.spotify.com/pod/show/reactiflux/embed/episodes/This-Month-in-React--September-2023-e29vb6o" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+
+This episode covers major updates across the React ecosystem, including:
+
+- Node 20.6 adding built-in .env support
+- Remix v2 using extensive feature flagging
+- Docusaurus v3 introducing visual regression testing
+- Astro 3.0
+- understanding React Server Components. Server components enable powerful capabilities like data fetching at the component level, but also introduce complexities around data serialization and scoping.
+- Bun 1.0 as a faster Node.js alternative, aiming to replace many common Node.js tools and improve performance. There was discussion around adoption challenges due to non-standard features.
+- Next.js adding server actions for forms
+- Expo moving towards full stack capabilities, which expands capabilities for mobile apps and could position Expo as a compelling full stack solution.
+- and Dan Abramov joining Bluesky
+
+Key themes were leveraging Rust and other languages for server-side rendering, moving away from CSS-in-JS, and enabling easier major version upgrades through techniques like feature flags.
+
+Sebastien discussed using React Server Components in static site generators like Docusaurus to simplify data fetching without GraphQL. There was also discussion around using languages like Rust and OCaml for improved server-side rendering performance.
+
+Links used:
 
 - [Node 20.6 - Built-in .env file support](https://nodejs.org/en/blog/release/v20.6.0)
   - [Node.js 16 End-of-Life](https://nodejs.org/en/blog/announcements/nodejs16-eol)
