@@ -4,6 +4,8 @@ description: Promotional guidelines within the Reactiflux community.
 sidebar: true
 ---
 
+_(Adapted from the [Rands Leadership Slack code of conduct](https://github.com/randsleadershipslack/documents-and-resources/blob/main/code-of-conduct.md#not-for-profit-mostly))_
+
 This is a community, not a free audience. This is not a place for prominent commercial activities such as recruiting, lead generation, marketing, market research, or other solicitation, except in channels dedicated to that purpose. **If you join this community to take value rather than contribute, the community will quickly react as though you are an intruder.** As this community grows, our tolerance for unsolicited commercial behavior decreases.
 
 If you have a body of content you'd like to promote, our recommended way of doing so is to be an active and positive member of the server. If someone has a question that you've created an external answer to, we'd love if you share it! While apparent commercial behavior is easy to identify, non-obvious commercial behavior is a grey area. In general, if you are wondering if a post is commercially appropriate, our guidelines are that you:
