@@ -4,32 +4,31 @@ description: Promotional guidelines within the Reactiflux community.
 sidebar: true
 ---
 
-Reactiflux's members do lots of cool stuff, and we'd love for you to share what you've done! However Reactiflux is fundamentally a peer group, not an advertising channel or a free audience. Members who join only to promote something have what they share more aggressively moderated than members who participate in the community in other ways.
+_(Adapted from the [Rands Leadership Slack code of conduct](https://github.com/randsleadershipslack/documents-and-resources/blob/main/code-of-conduct.md#not-for-profit-mostly))_
 
-We have several channels where self-promotion is expected, and some other relevant channels as well. We ask that you share it only once, unless there's a significant milestone or it's relevant to someone's question. Please post bare links with no link shorteners, and keep the post compact and text-based. Treat it as an email to peers, not a flashy poster for mass audiences.
+This is a community, not a free audience. This is not a place for prominent commercial activities such as recruiting, lead generation, marketing, market research, or other solicitation, except in channels dedicated to that purpose. **If you join this community to take value rather than contribute, the community will quickly react as though you are an intruder.** As this community grows, our tolerance for unsolicited commercial behavior decreases.
 
-Interested in promoting something and aren’t sure? Reach out to the admins [by email](mailto:hello@reactiflux.com) or [on our contact page](/contact) to discuss.
+If you have a body of content you'd like to promote, our recommended way of doing so is to be an active and positive member of the server. If someone has a question that you've created an external answer to, we'd love if you share it! While apparent commercial behavior is easy to identify, non-obvious commercial behavior is a grey area. In general, if you are wondering if a post is commercially appropriate, our guidelines are that you:
 
-# Self promotion vs advertising
+- Ask permission from the channel before posting a message that might be considered commercial, stating clear intent for the post, and,
+- Listen to the response of your peers in the channel and act accordingly.
 
-The line between self promotion and advertising can be thin. Reactiflux is a community, not a free marketing audience. If you have a body of content you'd like to promote, our recommended way of doing so is to be an active and positive member of the server. If someone has a question that you've created an external answer to, we'd love if you share it! Otherwise, we ask that you limit what you plug without prompting.
-
-To help determine if what you want to share is an advertisement, here are some questions to help you decide.
+If, after engaging with the community, you are still wondering if a specific message is commercial or not, please ask in one of the channels dedicated to helping find their way in this community, such as contacting the admins [by email](mailto:hello@reactiflux.com) or [on our contact page](/contact). To help determine if what you want to share is an advertisement, here are some questions to help inform your decision:
 
 You should be able to answer "yes" to:
 
-- Did you make it yourself or help make it?
-- Does it use or discuss React, frontend Javascript, or the web industry?
+- Did you make it yourself, or contribute to its creation?
+- Is it relevant to our members?
+- Can people benefit without paying?
 
 And "no" to:
 
 - Are you announcing an announcement?
 - Are you soliciting [spec work](https://www.nospec.com/)?
-- Are you running a giveaway or contest?
+- Are you running a giveaway, airdrop, or other contest?
 - Are you directly asking people to subscribe for updates?
-- Do people need to pay to benefit from what you're sharing?
 
-We grant more leeway to members who have been active participants in the community, as well. If you're unsure, reach out to the admins [by email](mailto:hello@reactiflux.com) or [on our contact page](/contact) to discuss.
+We grant more leeway to members who have been active participants in the community, as well. If you're unsure, reach out to discuss.
 
 We want the majority of what's shared to be created by genuine members of Reactiflux. Active members ask questions, share knowledge, or simply follow along with the chat (make sure to drop a note in #introductions!).
 
@@ -81,9 +80,25 @@ We have a hard ban on work that too small to be considered contract work. A gene
 
 Announcing an upcoming conference or discussing an ongoing conference are both encouraged here. In general, we'd prefer conferences limit their announcements to 1 per major milestone. When it's announced, near registration deadlines, and when it's about to happen would be appropriate.
 
+### Events, vlogs, and periodic content
+
+If you're hosting a conference, livestreamed event, Q&A session or similar, you're welcome to share in #events.
+
 ## [#i-wrote-this](https://discord.gg/xtmDRsShgm)
 
 Share your own writing here. This is mainly intended to be a showcase for personal writing and content produced by individuals, livestreams and other educational content may also be shared here. Episodic content may only be shared once every 2 weeks.
+
+### Paid content
+
+Books, courses, and other bodies of work behind a pay wall should not be shared, except in response to another member. We encourage recommending materials that will help members advance, but strongly prefer it resemble networking rather than advertising.
+
+### Surveys
+
+Reactiflux only allows surveys from private organizations if they're shared by an active member of the community. Surveys may be posted if the results will be public or used for academic purposes, and should only be shared once. Fair warning: most surveys get relatively low uptake, they just aren't of interest to many in the community.
+
+### Vlogs, streams, and other serialized content
+
+If you're sharing episodic content like a video series, livestream, or podcast, please refrain from promoting each new episode — we'd prefer that you share the show/channel/etc itself. For long-running shows we ask that you only promote it every 2 weeks at most.
 
 ## [#i-built-this](https://discord.gg/GaCSDfm)
 
@@ -91,21 +106,9 @@ New side projects, libraries, or other works you want to show off. This is predo
 
 # Specific types of promotion
 
-## Paid content
-
-Books, courses, and other bodies of work behind a pay wall should not be shared, except in response to another member. We encourage recommending materials that will help members advance, but strongly prefer it resemble networking rather than advertising.
-
-## Surveys
-
-Reactiflux only allows surveys from private organizations if they're shared by an active member of the community. Surveys may be posted if the results will be public or used for academic purposes, and should only be shared once. Fair warning: most surveys get relatively low uptake, they just aren't of interest to many in the community.
-
 ## Outside communities
 
 Reactiflux generally does not allow external communities to be promoted. If another server would better serve someone asking a question (for example, asking a detailed python question in #general-tech), then members are welcome to share server invites. Announcements or promotions of communities must be of obvious interest to the majority of the Reactiflux community.
-
-## Events, vlogs, and periodic content
-
-If you're hosting a conference, livestreamed event, Q&A session or similar, you're welcome to share in #events. If you're sharing episodic content like a video series, livestream, or podcast, please refrain from promoting each new episode — we'd prefer that you share the show/channel/etc itself. For long-running shows we ask that you only promote it every 2 weeks at most.
 
 ## Paid help and tutoring
 
