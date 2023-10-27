@@ -29,7 +29,7 @@ And "no" to:
 - Are you directly asking people to subscribe for updates?
 - Do people need to pay to benefit from what you're sharing?
 
-We grant more leeway to members who have been active participants in the community, as well. If you're unsure, reach out to to discuss.
+We grant more leeway to members who have been active participants in the community, as well. If you're unsure, reach out to discuss.
 
 We want the majority of what's shared to be created by genuine members of Reactiflux. Active members ask questions, share knowledge, or simply follow along with the chat (make sure to drop a note in #introductions!).
 
