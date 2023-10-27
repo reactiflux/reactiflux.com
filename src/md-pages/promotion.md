@@ -27,7 +27,6 @@ And "no" to:
 - Are you soliciting [spec work](https://www.nospec.com/)?
 - Are you running a giveaway, airdrop, or other contest?
 - Are you directly asking people to subscribe for updates?
-- Do people need to pay to benefit from what you're sharing?
 
 We grant more leeway to members who have been active participants in the community, as well. If you're unsure, reach out to discuss.
 
