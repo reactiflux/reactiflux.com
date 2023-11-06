@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Discord, Github, Twitter } from "@assets/logos";
+import { Discord, Github, X } from "@assets/logos";
 import { Link } from "@components";
 import Image from "@components/Image";
 
@@ -19,7 +19,7 @@ export function Footer() {
           <Image {...Discord} alt="Discord" />
         </Link>
         <Link href="https://twitter.com/reactiflux">
-          <Image {...Twitter} alt="X" />
+          <Image {...X} alt="X" />
         </Link>
       </p>
       <p>
