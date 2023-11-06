@@ -19,7 +19,7 @@ export function Footer() {
           <Image {...Discord} alt="Discord" />
         </Link>
         <Link href="https://twitter.com/reactiflux">
-          <Image {...Twitter} alt="Twitter" />
+          <Image {...Twitter} alt="X" />
         </Link>
       </p>
       <p>
