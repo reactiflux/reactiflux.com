@@ -45,8 +45,8 @@ export default function Schedule({
         <p>
           If you want to hear from someone specific in the community, let us
           know by contacting us via{" "}
-          <Link href="https://twitter.com/reactiflux">Twitter</Link> or ping an
-          admin or moderator in the{" "}
+          <Link href="https://twitter.com/reactiflux">X</Link> or ping an admin
+          or moderator in the{" "}
           <Link href="https://discord.gg/BkSU7Ju">#reactiflux-moderation</Link>{" "}
           channel on discord.
         </p>
