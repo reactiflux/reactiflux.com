@@ -7,7 +7,7 @@ description: "Founder & Tech Lead @ [hasura.io](https://hasura.io/) - Postgres-b
 people: "[@tanmaigo](https://twitter.com/tanmaigo) [@motleydev](https://twitter.com/motleydev) [@praveenweb](https://twitter.com/praveenweb)"
 ---
 
-<a href="#what-are-your-thoughts" name="what-are-your-thoughts">#</a> **Q:** What are your thoughts on upcoming Haskell alternatives such as Purescript and Idris? Do you think Purescript is a viable replacement for GHCJS for web development, and Idris might be for other purposes? What other alternatives do you have your eye on? – milse113
+<a href="#what-are-your-thoughts" name="what-are-your-thoughts">#</a> **Q:** What are your thoughts on upcoming Haskell alternatives such as Purescript and Idris? Do you think Purescript is a viable replacement for GHCJS for web development, and Idris might be for other purposes? What other alternatives do you have your eye on? – anonymous
 
 Purescript is probably the most mature option for web dev imho, in this set of alternatives. Idris is not yet very mainstream and still a little bit of a research language. Elm is also something I keep any eye on and another really good option in this space. – tanmaig
 
