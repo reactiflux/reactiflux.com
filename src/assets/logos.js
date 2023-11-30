@@ -8,7 +8,7 @@ export { default as ReactLogo } from "./react.svg";
 export { default as Reactiflux } from "./reactiflux.svg";
 export { default as Redux } from "./redux.svg";
 export { default as Relay } from "./relay.svg";
-export { default as Twitter } from "./twitter.svg";
+export { default as X } from "./x.svg";
 export { default as MenuIcon } from "./menu.svg";
 export { default as Github } from "./github.svg";
 export { default as Jest } from "./jest.svg";
