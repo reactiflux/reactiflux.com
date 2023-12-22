@@ -21,6 +21,7 @@
     }
   },
   "dependencies": {
+    "@next/third-parties": "14.0.5-canary.8",
     "@types/node": "20.6.0",
     "@types/react": "17.0.37",
     "@types/styled-components": "^5.1.15",
