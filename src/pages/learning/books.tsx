@@ -232,6 +232,7 @@ export default function Books() {
             cover={goodToGreat}
           />
           <Book isbn="9781591848363" title="Traction" />
+          <Book isbn="9780062884657" title="The Right It" />
         </Ul>
       </div>
     </Layout>
