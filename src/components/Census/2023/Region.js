@@ -49,7 +49,7 @@ const getSubregions = (region) => {
 };
 
 export const Region = ({ form }) => {
-  const { control, watch, setValue } = form;
+  const { register, watch, setValue } = form;
   const region = watch("region");
   // Reset the dependent `subregion` input whenever `region` changes
   React.useEffect(() => {
@@ -63,14 +63,7 @@ export const Region = ({ form }) => {
         <>
           <div key={r}>
             <label>
-              <Controller
-                name="region"
-                control={control}
-                render={({ field }) => (
-                  <input {...field} type="radio" value={r} />
-                )}
-              />{" "}
-              {r}
+              <input {...register("region")} type="radio" value={r} /> {r}
             </label>
           </div>
 
@@ -79,12 +72,10 @@ export const Region = ({ form }) => {
               {getSubregions(region).map((subregion) => (
                 <div key={subregion}>
                   <label>
-                    <Controller
-                      name="subregion"
-                      control={control}
-                      render={({ field }) => (
-                        <input {...field} type="radio" value={subregion} />
-                      )}
+                    <input
+                      {...register("subregion")}
+                      type="radio"
+                      value={subregion}
                     />{" "}
                     {subregion}
                   </label>
