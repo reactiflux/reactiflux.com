@@ -7,7 +7,7 @@ import { CensusItem, Question } from "@components/Census/2023/Styles";
 import { Employment } from "@components/Census/2023/Employment";
 
 export const Professional = ({ onSubmit }) => {
-  const form = useForm();
+  const form = useForm({ defaultValues: { "other-discords": [] } });
   const { handleSubmit, register, watch, formState } = form;
   const { isSubmitting } = formState;
   const discords = watch("other-discords");
