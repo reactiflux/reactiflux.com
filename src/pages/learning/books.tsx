@@ -51,7 +51,6 @@ interface RawBookProps {
   title?: string;
   alt?: string;
   onlineLink?: string;
-  localLink?: string;
 }
 
 const ratio = 166 / 250;
@@ -65,7 +64,6 @@ const RawBook = ({
   title = "",
   alt = "",
   onlineLink = "",
-  localLink = "",
 }: RawBookProps) => (
   <Li>
     <Figure>
@@ -87,7 +85,6 @@ const RawBook = ({
       <Caption>
         {title}
         {onlineLink && <BuyLink href={onlineLink}>Buy online</BuyLink>}
-        {localLink && <BuyLink href={localLink}>Buy locally</BuyLink>}
       </Caption>
     </Figure>
   </Li>
@@ -118,7 +115,6 @@ const Book = ({
     cover={cover || `https://covers.openlibrary.org/b/isbn/${isbn}.jpg`}
     title={title}
     onlineLink={`https://bookshop.org/a/88607/${isbn}`}
-    localLink={`https://www.indiebound.org/book/${isbn}?aff=reactiflux`}
   />
 );
 
@@ -236,6 +232,7 @@ export default function Books() {
             cover={goodToGreat}
           />
           <Book isbn="9781591848363" title="Traction" />
+          <Book isbn="9780062884657" title="The Right It" />
         </Ul>
       </div>
     </Layout>
