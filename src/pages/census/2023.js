@@ -22,10 +22,16 @@ const generateUniqueId = () => {
 };
 
 export const Census2023 = () => {
-  const id = React.useMemo(() => generateUniqueId(), []);
+  const [id, setId] = React.useState();
   const [submissionStep, setSubmissionStep] = React.useState(0);
   const next = () => setSubmissionStep((i) => i + 1);
   React.useEffect(() => {
+    const savedId = localStorage.getItem("2023-census-id");
+    if (!savedId) {
+      const newId = generateUniqueId();
+      setId(newId);
+      localStorage.setItem("2023-census-id", newId);
+    }
     setSubmissionStep(Number(localStorage.getItem("2023-census-key")));
   }, []);
   React.useEffect(() => {
@@ -89,9 +95,9 @@ export const Census2023 = () => {
         {(() => {
           switch (submissionStep) {
             case 0:
-              return <Professional submissionId={id} onSubmit={onSubmit} />;
+              return <Professional onSubmit={onSubmit} />;
             case 1:
-              return <Demographics submissionId={id} onSubmit={onSubmit} />;
+              return <Demographics onSubmit={onSubmit} />;
             default:
               return "Thank you!";
           }
