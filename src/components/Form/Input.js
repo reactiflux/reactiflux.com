@@ -50,3 +50,25 @@ export const Textarea = ({ hidden, label, ...props }) => (
     </label>
   </P>
 );
+
+export const TextareaInner = styled.textarea`
+  background: transparent;
+  border: none;
+  box-shadow: inset 0 -2px 0 0 ${pink};
+  color: ${pink};
+  font-size: inherit;
+  outline: none;
+  padding: 1rem 0;
+  resize: vertical;
+  width: 100%;
+
+  ::placeholder {
+    color: ${pink};
+    opacity: 0.5;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 -4px 0 0 ${pink};
+  }
+`;
