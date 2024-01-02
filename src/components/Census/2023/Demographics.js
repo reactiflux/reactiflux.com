@@ -245,7 +245,12 @@ export const Demographics = ({ onSubmit }) => {
         </label>
       </CensusItem>
 
-      <Button disabled={isSubmitting} as="input" type="submit" value="Submit" />
+      <Button
+        disabled={isSubmitting}
+        as="input"
+        type="submit"
+        value={isSubmitting ? "…" : "Submit"}
+      />
     </form>
   );
 };

@@ -146,7 +146,7 @@ export const Professional = ({ onSubmit }) => {
         disabled={isSubmitting}
         as="input"
         type="submit"
-        value="Submit, next page"
+        value={isSubmitting ? "…" : "Submit, next page"}
       />
     </form>
   );
