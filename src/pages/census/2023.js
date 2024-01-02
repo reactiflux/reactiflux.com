@@ -1,60 +1,80 @@
 import React from "react";
-import { useForm, Controller } from "react-hook-form";
 import styled from "styled-components";
 
-import { Layout, Button } from "@components";
+import { Layout } from "@components";
+import { TextareaInner } from "@components/Form/Input";
 
-import { Employment } from "@components/Census/2023/Employment";
-import { OrgSize } from "@components/Census/2023/OrgSize";
-import { OtherDiscords } from "@components/Census/2023/OtherDiscords";
-import { ProExperience } from "@components/Census/2023/ProExperience";
-import { ReactExperience } from "@components/Census/2023/ReactExperience";
-import { VisitFrequency } from "@components/Census/2023/VisitFrequency";
+import { Professional } from "../../components/Census/2023/Professional";
+import { Demographics } from "../../components/Census/2023/Demographics";
 
-const Demographics = ({ onSubmit: afterSubmit }) => {
-  const form = useForm();
-  const { handleSubmit } = form;
+const TextareaEl = styled(TextareaInner)`
+  font-size: 0.8em;
+`;
 
-  return (
-    <form
-      onSubmit={handleSubmit(async (data) => {
-        // Submit to google sheet, TODO
-        afterSubmit();
-      })}
-    >
-      {/* <Region form={form} /> */}
+const AIRTABLE_BASE = "apppkyY9esBtJgdM7";
+const AIRTABLE_TABLE = "2023";
 
-      {/* What is your current educational/employment status? */}
-    </form>
-  );
-};
-
-const Professional = ({ submissionId, onSubmit: afterSubmit }) => {
-  const form = useForm();
-  const { handleSubmit } = form;
-
-  return (
-    <form
-      onSubmit={handleSubmit(async (data) => {
-        console.log({ data });
-        afterSubmit();
-      })}
-    >
-      <Employment form={form} />
-      <OrgSize form={form} />
-      <OtherDiscords form={form} />
-      <ProExperience form={form} />
-      <ReactExperience form={form} />
-      <VisitFrequency form={form} />
-      <Button as="input" type="submit" value="Submit, next page" />
-    </form>
-  );
+const generateUniqueId = () => {
+  const timestamp = new Date().getTime().toString(36);
+  const randomString = Math.random().toString(36).substring(2, 15);
+  const uniqueId = timestamp + randomString;
+  return uniqueId;
 };
 
 export const Census2023 = () => {
+  const id = React.useMemo(() => generateUniqueId(), []);
   const [submissionStep, setSubmissionStep] = React.useState(0);
-  const next = () => setSubmissionStep((i) => i + 0);
-  const back = () => setSubmissionStep((i) => i - 0);
+  const next = () => setSubmissionStep((i) => i + 1);
+  React.useEffect(() => {
+    setSubmissionStep(Number(localStorage.getItem("2023-census-key")));
+  }, []);
+  React.useEffect(() => {
+    localStorage.setItem("2023-census-key", submissionStep.toString());
+  }, [submissionStep]);
+
+  const onSubmit = async (data) => {
+    // Snag all possible inputs, filter out false-y values, put it together.
+    // This is a cheap way to make updates easier, we can just post everything we
+    // get both times and trust that nothing will get overwritten.
+    const finalData = Object.fromEntries(
+      Object.entries({
+        id,
+        employment: data["employment"],
+        "org-size": data["org-size"],
+        "other-discords": data["other-discords"]?.join(","),
+        "pro-experience": data["pro-experience"],
+        "react-experience": data["react-experience"],
+        "visit-frequency": data["visit-frequency"],
+        "other-discords-custom": data["other-discords-custom"],
+        age: data["age"],
+        disability: data["disability"],
+        "free-response": data["free-response"],
+        gender: data["gender"],
+        marginalized: data["marginalized"],
+        "marginalized-free-response": data["marginalized-free-response"],
+        region: data["region"],
+        religion: data["religion"],
+        represented: data["represented"],
+        "sexual-orientation": data["sexual-orientation"],
+        subregion: data["subregion"],
+        trans: data["trans"],
+      }).filter((pair) => pair[1]),
+    );
+
+    try {
+      await fetch("/.netlify/functions/airtable", {
+        method: "POST",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify({
+          meta: { base: AIRTABLE_BASE, table: AIRTABLE_TABLE },
+          data: finalData,
+        }),
+      });
+      next();
+    } catch (error) {
+      console.error("Error posting data:", error);
+    }
+  };
 
   const title = "Reactiflux 2023 Census";
   return (
@@ -69,11 +89,9 @@ export const Census2023 = () => {
         {(() => {
           switch (submissionStep) {
             case 0:
-              return <Professional submissionId="0" onSubmit={next} />;
+              return <Professional submissionId={id} onSubmit={onSubmit} />;
             case 1:
-              return (
-                <Demographics submissionId="0" onBack={back} onSubmit={next} />
-              );
+              return <Demographics submissionId={id} onSubmit={onSubmit} />;
             default:
               return "Thank you!";
           }

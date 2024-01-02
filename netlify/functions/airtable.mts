@@ -11,29 +11,37 @@ const handler = async (request: Request, context: Context) => {
   } = await request.json();
   const { base, table } = meta;
 
-  console.log({ data, url: `https://api.airtable.com/v0/${base}/${table}` });
-
-  // // Make the request using fetch
-  fetch(`https://api.airtable.com/v0/${base}/${table}`, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${process.env.AIRTABLE_RECORD}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      fields: {
-        id,
-        ...data,
+  try {
+    // // Make the request using fetch
+    const response = await fetch(
+      `https://api.airtable.com/v0/${base}/${table}`,
+      {
+        method: "PATCH",
+        headers: {
+          Authorization: `Bearer ${process.env.AIRTABLE_RECORD}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          performUpsert: {
+            fieldsToMergeOn: ["id"],
+          },
+          records: [
+            {
+              fields: {
+                id,
+                ...data,
+              },
+            },
+          ],
+        }),
       },
-    }),
-  })
-    .then((response) => response.json()) // Convert the response to JSON
-    .then((data) => {
-      // Handle the data from the response
-      console.log(data);
-    });
-  // ..
-  return new Response("ok");
+    );
+    const output = await response.json();
+    console.log(output);
+    return new Response("ok");
+  } catch (e) {
+    return new Response(JSON.stringify(e), { status: 400 });
+  }
 };
 
 export default handler;
