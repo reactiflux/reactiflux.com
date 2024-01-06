@@ -1,6 +1,6 @@
 {
   "name": "reactiflux.com",
-  "version": "π",
+  "version": "0.3.14",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -21,11 +21,13 @@
     }
   },
   "dependencies": {
+    "@netlify/functions": "^2.4.1",
     "@next/third-parties": "14.0.5-canary.8",
     "@types/node": "20.6.0",
     "@types/react": "17.0.37",
     "@types/styled-components": "^5.1.15",
     "@vcarl/remark-headings": "^0.0.1",
+    "airtable": "^0.12.2",
     "date-fns": "^2.27.0",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
@@ -34,6 +36,7 @@
     "mdast-util-to-string": "^3.1.0",
     "minireset.css": "^0.0.6",
     "moment": "^2.27.0",
+    "netlify-cli": "^17.10.2",
     "next": "^12.3.4",
     "next-sitemap": "^4.2.2",
     "polished": "^3.6.5",
@@ -43,6 +46,7 @@
     "react-dom": "17.0.2",
     "react-headroom": "^2.1.2",
     "react-helmet": "^5.2.1",
+    "react-hook-form": "^7.49.2",
     "rehype-slug": "^5.0.0",
     "rehype-stringify": "^9.0.2",
     "remark-gfm": "^3.0.1",
