@@ -1056,10 +1056,10 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.3.4.tgz#d28ea15a72cdcf96201c60a43e9630cd7fda168f"
   integrity sha512-DQ20JEfTBZAgF8QCjYfJhv2/279M6onxFjdG/+5B0Cyj00/EdBxiWb2eGGFgQhrBbNv/lsvzFbbi0Ptf8Vw/bg==
 
-"@next/third-parties@^14.0.5-canary.8":
-  version "14.0.5-canary.8"
-  resolved "https://registry.yarnpkg.com/@next/third-parties/-/third-parties-14.0.5-canary.8.tgz#ec32c00d444e1a3eddf9f22e725e72d514eb7334"
-  integrity sha512-9nAFu7mNEVhRmzq9C/C2F9o7ym36yxYGh5f5qpJHFfIgI754AC4wUKXaKVALxlj6AAwvzmBn51GQXSt+ogeSGg==
+"@next/third-parties@^14.1.0":
+  version "14.1.0"
+  resolved "https://registry.yarnpkg.com/@next/third-parties/-/third-parties-14.1.0.tgz#d9604fff8880e05d3804d2cf7ab42eb5430aec69"
+  integrity sha512-f55SdvQ1WWxi4mb5QqtYQh5wRzbm1XaeP7s39DPn4ks3re+n9VlFccbMxBRHqkE62zAyIKmvkUB2cByT/gugGA==
   dependencies:
     third-party-capital "1.0.20"
 
