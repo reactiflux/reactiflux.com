@@ -37,7 +37,7 @@ const handler = async (request: Request, context: Context) => {
       },
     );
     const output = await response.json();
-    console.log(output);
+    console.log(response.status, output);
     return new Response("ok");
   } catch (e) {
     return new Response(JSON.stringify(e), { status: 400 });
