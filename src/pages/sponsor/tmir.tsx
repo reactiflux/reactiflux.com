@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useForm } from "react-hook-form";
 
 import { Button, Layout } from "@components";
-import { Input, Textarea } from "@components/Form/Input";
+import { Input, InputEl, Textarea } from "@components/Form/Input";
 import { CensusItem } from "@components/Census/2023/Styles";
 import { CheckboxLabel } from "@components/Form/Checkbox";
 import { SalesRadio } from "@components/Form/SalesRadio";
@@ -11,6 +11,7 @@ import { SalesRadio } from "@components/Form/SalesRadio";
 import demographics from "@assets/subs-demo.png";
 import countries from "@assets/subs-countries.png";
 import Image from "@components/Image";
+import { formatISO } from "date-fns";
 
 const AIRTABLE_BASE = "appvFRWYvAVl3LCN8";
 const AIRTABLE_TABLE = "Sponsor interest";
@@ -24,8 +25,17 @@ const generateUniqueId = () => {
 
 const Ul = styled.ul`
   margin: 0;
+  &:last-of-type {
+    margin-bottom: 1rem;
+  }
+
+  & ul:last-of-type {
+    margin-bottom: 0;
+  }
+
   ul li {
     list-style: none;
+    margin: 0;
   }
 `;
 const Li = styled.li`
@@ -45,10 +55,9 @@ const Img = styled(Image)`
 `;
 
 export const TmirSponsor = () => {
-  const [id, setId] = React.useState(generateUniqueId());
   const form = useForm({
     defaultValues: {
-      created: new Date(),
+      id: generateUniqueId(),
       email: "",
       url: "",
       "company-size": "",
@@ -58,7 +67,7 @@ export const TmirSponsor = () => {
     },
   });
   const { handleSubmit, register, watch, formState } = form;
-  const { isSubmitting } = formState;
+  const { isSubmitting, submitCount } = formState;
 
   const title = "This Month in React sponsor interest";
   return (
@@ -70,28 +79,30 @@ export const TmirSponsor = () => {
     >
       <h1>{title}</h1>
       <main>
-        <p>
-          Thanks for your interest in sponsoring This Month in React, how the
-          professional web developers of Reactiflux stay up-to-date on the
-          ever-evolving React and web ecosytem.
-        </p>
-        <p>
-          We’re still developing an audience, and will be offering discounted
-          rates until we have a larger subscribership. As of January 2024, our
-          stats show 328 subscribers. Live attendance ranges from 120-250, with
-          recordings typically listened to by 150-300 people. Early sponsorship
-          dollars will be used to develop our subscriber base.
-        </p>
-        <p>
-          Subscriber demographics:
-          <ImgWrapper>
-            <Img {...demographics} />
-            <Img {...countries} />
-          </ImgWrapper>
-        </p>
-        <p>
-          We’ll reach out as inventory is available. The show follows this
-          format:
+        <article>
+          <p>
+            Thanks for your interest in sponsoring This Month in React, how the
+            professional web developers of Reactiflux stay up-to-date on the
+            ever-evolving React and web ecosytem.
+          </p>
+          <p>
+            We’re still developing an audience, and will be offering discounted
+            rates until we have a larger subscribership. As of January 2024, our
+            stats show 328 subscribers. Live attendance ranges from 120-250,
+            with recordings typically listened to by 150-300 people. Early
+            sponsorship dollars will be used to develop our subscriber base.
+          </p>
+          <p>
+            Subscriber demographics:
+            <ImgWrapper>
+              <Img {...demographics} />
+              <Img {...countries} />
+            </ImgWrapper>
+          </p>
+          <p>
+            We’ll reach out as inventory is available. The show follows this
+            format:
+          </p>
           <Ul>
             <Li>Introductions</Li>
             <Ul>
@@ -111,7 +122,7 @@ export const TmirSponsor = () => {
             </Ul>
             <Li>Outro</Li>
           </Ul>
-        </p>
+        </article>
         <form
           onSubmit={handleSubmit(async (data) => {
             try {
@@ -120,7 +131,10 @@ export const TmirSponsor = () => {
                 headers: { "Content-Type": "text/plain" },
                 body: JSON.stringify({
                   meta: { base: AIRTABLE_BASE, table: AIRTABLE_TABLE },
-                  data,
+                  data: {
+                    ...data,
+                    placements: data.placements.join(","),
+                  },
                 }),
               });
             } catch (error) {
@@ -129,16 +143,17 @@ export const TmirSponsor = () => {
           })}
         >
           <Input
+            label="Email"
             {...register("email")}
             required
-            label="Email"
             hidden={false}
             type="text"
           />
+
           <Input
+            label="Company website"
             {...register("url")}
             required
-            label="Company website"
             hidden={false}
             type="text"
           />
@@ -148,48 +163,48 @@ export const TmirSponsor = () => {
               What placements are you interested in?
             </CheckboxLabel>
             <SalesRadio
-              type="checkbox"
-              {...register("placements")}
-              value="supporter"
+              input={{
+                type: "checkbox",
+                ...register("placements"),
+                value: "supporter",
+              }}
             >
               <h4>Supporter</h4>
               <p>$150/episode before 500 subscribers.</p>
-              <p>
-                <Ul>
-                  <Li>15s ad read.</Li>
-                </Ul>
-              </p>
+              <Ul>
+                <Li>15s ad read.</Li>
+              </Ul>
               <p>Discounts for 6+ episodes.</p>
             </SalesRadio>
             <SalesRadio
-              type="checkbox"
-              {...register("placements")}
-              value="sustainer"
+              input={{
+                type: "checkbox",
+                value: "sustainer",
+                ...register("placements"),
+              }}
             >
               <h4>Sustainer</h4>
               <p>$250/episode before 500 subscribers.</p>
-              <p>
-                <Ul>
-                  <Li>30s ad read.</Li>
-                </Ul>
-              </p>
+              <Ul>
+                <Li>30s ad read.</Li>
+              </Ul>
               <p>Discounts for 6+ episodes.</p>
             </SalesRadio>
             <SalesRadio
               highlight
-              type="checkbox"
-              {...register("placements")}
-              value="headliner"
+              input={{
+                type: "checkbox",
+                value: "headliner",
+                ...register("placements"),
+              }}
             >
               <h4>Headliner</h4>
               <p>$750/episode before 500 subscribers.</p>
-              <p>
-                <Ul>
-                  <Li>45s ad read.</Li>
-                  <Li>Live shoutout during recording.</Li>
-                  <Li>Your name and logo on the transcript page.</Li>
-                </Ul>
-              </p>
+              <Ul>
+                <Li>45s ad read.</Li>
+                <Li>Live shoutout during recording.</Li>
+                <Li>Your name and logo on the transcript page.</Li>
+              </Ul>
               <p>Discounts for 3+ episodes.</p>
             </SalesRadio>
           </CensusItem>
@@ -231,6 +246,7 @@ export const TmirSponsor = () => {
             type="Submit"
             value={isSubmitting ? "Submitting…" : "Submit"}
           />
+          {submitCount > 0 && <p>Thank you for submitting!</p>}
         </form>
       </main>
     </Layout>
