@@ -10,6 +10,7 @@ const handler = async (request: Request, context: Context) => {
     data: { id, ...data },
   } = await request.json();
   const { base, table } = meta;
+  console.log({ meta, data: { ...data, id } });
 
   try {
     // // Make the request using fetch
