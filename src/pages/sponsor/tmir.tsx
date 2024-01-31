@@ -11,7 +11,6 @@ import { SalesRadio } from "@components/Form/SalesRadio";
 import demographics from "@assets/subs-demo.png";
 import countries from "@assets/subs-countries.png";
 import Image from "@components/Image";
-import { formatISO } from "date-fns";
 
 const AIRTABLE_BASE = "appvFRWYvAVl3LCN8";
 const AIRTABLE_TABLE = "Sponsor interest";
@@ -87,10 +86,14 @@ export const TmirSponsor = () => {
           </p>
           <p>
             We’re still developing an audience, and will be offering discounted
-            rates until we have a larger subscribership. As of January 2024, our
-            stats show 328 subscribers. Live attendance ranges from 120-250,
-            with recordings typically listened to by 150-300 people. Early
-            sponsorship dollars will be used to develop our subscriber base.
+            rates until we have a larger subscribership. Early sponsorship
+            dollars will be used to develop our subscriber base.
+          </p>
+          <p>
+            As of January 2024, our stats show 328 subscribers. Live attendance
+            ranges from 120-250, with recordings typically listened to by
+            150-300 people, for a total listenership of ~250–500. Reactiflux is
+            a highly global community of experienced professionals.
           </p>
           <p>
             Subscriber demographics:
@@ -117,9 +120,6 @@ export const TmirSponsor = () => {
               <Li>Supporter 15s ad read (2x max)</Li>
             </Ul>
             <Li>Lightning round (3-6 links without discussion)</Li>
-            <Ul>
-              <Li>Headliner lightning link</Li>
-            </Ul>
             <Li>Outro</Li>
           </Ul>
         </article>
