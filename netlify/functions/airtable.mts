@@ -10,6 +10,7 @@ const handler = async (request: Request, context: Context) => {
     data: { id, ...data },
   } = await request.json();
   const { base, table } = meta;
+  console.log({ meta, data: { ...data, id } });
 
   try {
     // // Make the request using fetch
@@ -37,7 +38,7 @@ const handler = async (request: Request, context: Context) => {
       },
     );
     const output = await response.json();
-    console.log(output);
+    console.log(response.status, output);
     return new Response("ok");
   } catch (e) {
     return new Response(JSON.stringify(e), { status: 400 });

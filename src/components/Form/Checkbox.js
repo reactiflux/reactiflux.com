@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { background, pink } from "@utils/theme";
+import { background, blue, pink } from "@utils/theme";
 
 const Checkmark = styled.span`
   align-items: center;
@@ -70,7 +70,7 @@ export const Checkbox = ({ label, ...props }) => {
         <Checkmark hidden={!props.value}>✔</Checkmark>
         <input
           checked={props.value}
-          id={props.name}
+          id={`${props.name}-${props.value}`}
           type="checkbox"
           {...props}
           onKeyUp={(e) => {
@@ -85,3 +85,8 @@ export const Checkbox = ({ label, ...props }) => {
     </p>
   );
 };
+
+export const CheckboxLabel = styled.p`
+  color: ${blue};
+  font-weight: bold;
+`;
