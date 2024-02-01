@@ -21,6 +21,8 @@ const generateUniqueId = () => {
   return uniqueId;
 };
 
+const closed = true;
+
 export const Census2023 = () => {
   const [id, setId] = React.useState();
   const [submissionStep, setSubmissionStep] = React.useState(0);
@@ -93,6 +95,9 @@ export const Census2023 = () => {
       <h1>{title}</h1>
       <main>
         {(() => {
+          if (closed) {
+            return "Submissions are closed";
+          }
           switch (submissionStep) {
             case 0:
               return <Professional onSubmit={onSubmit} />;
