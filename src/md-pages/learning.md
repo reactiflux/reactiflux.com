@@ -75,7 +75,7 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
   - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - Node / NPM
   - [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs)
-  - [An introduction to the npm package manager](https://nodejs.dev/en/learn/an-introduction-to-the-npm-package-manager)
+  - [An introduction to the npm package manager](https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager)
 - Build Tools
   - [The Many Jobs of JS Build Tools](https://www.swyx.io/jobs-of-js-build-tools/)
 - Debugging
