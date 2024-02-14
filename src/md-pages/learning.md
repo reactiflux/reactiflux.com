@@ -45,7 +45,7 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
 - **Slides:** [Mark's "JavaScript for Java Developers" slides](https://blog.isquaredsoftware.com/2019/05/presentation-js-for-java-devs/)
 - **Read:** [MDN: A re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 - **Read:** [The Modern JavaScript Tutorial](https://javascript.info/)
-- **Read:** [Javascript Cheatsheet](https://javascript.pythoncheatsheet.org/)
+- **Read:** [Javascript Cheatsheet](https://github.com/wilfredinni/javascript-cheatsheet)
 - **Exercises:** [CodeCademy - Introduction to JavaScript Tutorial](https://www.codecademy.com/learn/introduction-to-javascript)
 
 #### Specific Topics
@@ -91,7 +91,7 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
   - [The Modern JavaScript Tutorial](https://javascript.info/)
   - [Online book: JavaScript for Impatient Programmers](http://exploringjs.com/impatient-js/toc.html)
 - **Syntax Overviews:**
-  - [Javascript Cheatsheet](https://javascript.pythoncheatsheet.org/)
+  - [Javascript Cheatsheet](https://github.com/wilfredinni/javascript-cheatsheet)
   - [ES6 Overview in 350 Bullet Points](https://ponyfoo.com/articles/es6)
   - [ES6 Feature Examples](http://es6-features.org)
 - **Additional Books / References:**
