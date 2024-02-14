@@ -70,7 +70,7 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
   - [CSS: From Zero to Hero](https://dev.to/aspittel/css-from-zero-to-hero-3o16)
   - [MDN - Visual Formatting Model](https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model)
   - [MDN - Introduction to the CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-  - [HTML and CSS is Hard (but it doesn't have to be)](https://internetingishard.com/html-and-css/)
+  - [HTML and CSS is Hard (but it doesn't have to be)](https://internetingishard.netlify.app/html-and-css/)
   - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
   - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - Node / NPM
