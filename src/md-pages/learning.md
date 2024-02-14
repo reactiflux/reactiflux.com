@@ -153,7 +153,6 @@ These other listed tutorials are also excellent and may explain things in a diff
 - **Watch:** [React Tutorial for Beginners](https://egghead.io/courses/the-beginner-s-guide-to-react)
 - **Read:** [Intro to React, Redux, and TypeScript for 2020](https://blog.isquaredsoftware.com/2020/12/presentations-react-redux-ts-intro/) (Mark's presentation slides)
 - **Read:** [Build a CRUD App in React with Hooks](https://www.taniarascia.com/crud-app-in-react-with-hooks/)
-- **Read:** [A Comprehensive Guide to React in 2020](https://medium.freecodecamp.org/a-comprehensive-guide-to-react-js-in-2018-ba8bb6975597)
 - **Exercises:** [Learn React - Interactive Tutorials](https://scrimba.com/g/glearnreact)
 
 #### Project Setup
