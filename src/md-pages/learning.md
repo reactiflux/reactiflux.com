@@ -45,7 +45,7 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
 - **Slides:** [Mark's "JavaScript for Java Developers" slides](https://blog.isquaredsoftware.com/2019/05/presentation-js-for-java-devs/)
 - **Read:** [MDN: A re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 - **Read:** [The Modern JavaScript Tutorial](https://javascript.info/)
-- **Read:** [Javascript Cheatsheet](https://javascript.pythoncheatsheet.org/)
+- **Read:** [Javascript Cheatsheet](https://github.com/wilfredinni/javascript-cheatsheet)
 - **Exercises:** [CodeCademy - Introduction to JavaScript Tutorial](https://www.codecademy.com/learn/introduction-to-javascript)
 
 #### Specific Topics
@@ -70,12 +70,12 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
   - [CSS: From Zero to Hero](https://dev.to/aspittel/css-from-zero-to-hero-3o16)
   - [MDN - Visual Formatting Model](https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model)
   - [MDN - Introduction to the CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-  - [HTML and CSS is Hard (but it doesn't have to be)](https://internetingishard.com/html-and-css/)
+  - [HTML and CSS is Hard (but it doesn't have to be)](https://internetingishard.netlify.app/html-and-css/)
   - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
   - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - Node / NPM
-  - [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs)
-  - [An introduction to the npm package manager](https://nodejs.dev/en/learn/an-introduction-to-the-npm-package-manager)
+  - [How to install Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)
+  - [An introduction to the npm package manager](https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager)
 - Build Tools
   - [The Many Jobs of JS Build Tools](https://www.swyx.io/jobs-of-js-build-tools/)
 - Debugging
@@ -91,7 +91,7 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
   - [The Modern JavaScript Tutorial](https://javascript.info/)
   - [Online book: JavaScript for Impatient Programmers](http://exploringjs.com/impatient-js/toc.html)
 - **Syntax Overviews:**
-  - [Javascript Cheatsheet](https://javascript.pythoncheatsheet.org/)
+  - [Javascript Cheatsheet](https://github.com/wilfredinni/javascript-cheatsheet)
   - [ES6 Overview in 350 Bullet Points](https://ponyfoo.com/articles/es6)
   - [ES6 Feature Examples](http://es6-features.org)
 - **Additional Books / References:**
@@ -105,12 +105,12 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
 
 - Array/object methods / immutability
   - [Does It Mutate?](https://doesitmutate.xyz/)
-  - [Array Explorer](https://sdras.github.io/array-explorer/) and [Object Explorer](https://sdras.github.io/object-explorer/)
+  - [Array Explorer](https://sdras.github.io/array-explorer/) and [Object Explorer](https://objectexplorer.netlify.com/)
 - JS Event Loop
   - [The JavaScript Event Loop](https://flaviocopes.com/javascript-event-loop/)
 - Regular Expressions
   - [A Guide to JavaScript Regular Expressions](https://flaviocopes.com/javascript-regular-expressions/)
-  - [A Beginner's Guide to Regular Expressions in JavaScript](https://blog.bitsrc.io/a-beginners-guide-to-regular-expressions-regex-in-javascript-9c58feb27eb4)
+  - [A Beginner's Guide to Regular Expressions in JavaScript](https://builtin.com/software-engineering-perspectives/javascript-regex)
 - CSS
   - [Online Interactive CSS Cheat Sheet](https://htmlcheatsheet.com/css/)
   - [A Practical CSS Cheat Sheet](https://www.toptal.com/css/css-cheat-sheet)
@@ -153,7 +153,6 @@ These other listed tutorials are also excellent and may explain things in a diff
 - **Watch:** [React Tutorial for Beginners](https://egghead.io/courses/the-beginner-s-guide-to-react)
 - **Read:** [Intro to React, Redux, and TypeScript for 2020](https://blog.isquaredsoftware.com/2020/12/presentations-react-redux-ts-intro/) (Mark's presentation slides)
 - **Read:** [Build a CRUD App in React with Hooks](https://www.taniarascia.com/crud-app-in-react-with-hooks/)
-- **Read:** [A Comprehensive Guide to React in 2020](https://medium.freecodecamp.org/a-comprehensive-guide-to-react-js-in-2018-ba8bb6975597)
 - **Exercises:** [Learn React - Interactive Tutorials](https://scrimba.com/g/glearnreact)
 
 #### Project Setup
@@ -166,7 +165,7 @@ These other listed tutorials are also excellent and may explain things in a diff
 
 - GreenSock Animation Platform
   - [Getting Started With GreenSock and React](https://greensock.com/react)
-  - [Advanced Animation Techniques](https://greensock.com/react-advanced)
+  - [Advanced Animation Techniques](https://gsap.com/resources/react-advanced/)
   - [React Templates](https://stackblitz.com/@GreenSockLearning/collections/gsap-react-starters)
   - [Next Templates](https://stackblitz.com/@GreenSockLearning/collections/gsap-nextjs-starters)
   - [Page Transition Examples](https://stackblitz.com/@GreenSockLearning/collections/gsap-react-page-transitions)
@@ -264,7 +263,7 @@ The other tutorials are also excellent and may explain things in a different way
   - [Stack Overflow: Why do we need middleware for async flow?](https://stackoverflow.com/questions/34570758/why-do-we-need-middleware-for-async-flow-in-redux/34599594#34599594)
   - [What the heck is a "thunk"?](https://daveceddia.com/what-is-a-thunk/)
   - [What is the right way to do asynchronous operations in Redux?](https://decembersoft.com/posts/what-is-the-right-way-to-do-asynchronous-operations-in-redux/) (side-by-side comparison of multiple side effects approaches)
-  - [Redux Power Tools: Redux-Saga](https://formidable.com/blog/category/redux-saga/)
+  - [Redux Power Tools: Redux-Saga](https://commerce.nearform.com/blog/2017/javascript-power-tools-redux-saga/)
 - Normalizing data
   - [Redux docs - Normalizing State Shape](https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape)
   - [Normalizing Redux Stores for Maximum Code Reuse](https://medium.com/@adamrackis/normalizing-redux-stores-for-maximum-code-reuse-ae6e3844ae95)
