@@ -105,7 +105,7 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
 
 - Array/object methods / immutability
   - [Does It Mutate?](https://doesitmutate.xyz/)
-  - [Array Explorer](https://sdras.github.io/array-explorer/) and [Object Explorer](https://sdras.github.io/object-explorer/)
+  - [Array Explorer](https://sdras.github.io/array-explorer/) and [Object Explorer](https://objectexplorer.netlify.com/)
 - JS Event Loop
   - [The JavaScript Event Loop](https://flaviocopes.com/javascript-event-loop/)
 - Regular Expressions
