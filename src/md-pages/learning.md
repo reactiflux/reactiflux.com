@@ -264,7 +264,7 @@ The other tutorials are also excellent and may explain things in a different way
   - [Stack Overflow: Why do we need middleware for async flow?](https://stackoverflow.com/questions/34570758/why-do-we-need-middleware-for-async-flow-in-redux/34599594#34599594)
   - [What the heck is a "thunk"?](https://daveceddia.com/what-is-a-thunk/)
   - [What is the right way to do asynchronous operations in Redux?](https://decembersoft.com/posts/what-is-the-right-way-to-do-asynchronous-operations-in-redux/) (side-by-side comparison of multiple side effects approaches)
-  - [Redux Power Tools: Redux-Saga](https://formidable.com/blog/category/redux-saga/)
+  - [Redux Power Tools: Redux-Saga](https://commerce.nearform.com/blog/2017/javascript-power-tools-redux-saga/)
 - Normalizing data
   - [Redux docs - Normalizing State Shape](https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape)
   - [Normalizing Redux Stores for Maximum Code Reuse](https://medium.com/@adamrackis/normalizing-redux-stores-for-maximum-code-reuse-ae6e3844ae95)
