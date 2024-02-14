@@ -165,7 +165,7 @@ These other listed tutorials are also excellent and may explain things in a diff
 
 - GreenSock Animation Platform
   - [Getting Started With GreenSock and React](https://greensock.com/react)
-  - [Advanced Animation Techniques](https://greensock.com/react-advanced)
+  - [Advanced Animation Techniques](https://gsap.com/resources/react-advanced/)
   - [React Templates](https://stackblitz.com/@GreenSockLearning/collections/gsap-react-starters)
   - [Next Templates](https://stackblitz.com/@GreenSockLearning/collections/gsap-nextjs-starters)
   - [Page Transition Examples](https://stackblitz.com/@GreenSockLearning/collections/gsap-react-page-transitions)
