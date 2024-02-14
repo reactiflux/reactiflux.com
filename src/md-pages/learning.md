@@ -110,7 +110,7 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
   - [The JavaScript Event Loop](https://flaviocopes.com/javascript-event-loop/)
 - Regular Expressions
   - [A Guide to JavaScript Regular Expressions](https://flaviocopes.com/javascript-regular-expressions/)
-  - [A Beginner's Guide to Regular Expressions in JavaScript](https://blog.bitsrc.io/a-beginners-guide-to-regular-expressions-regex-in-javascript-9c58feb27eb4)
+  - [A Beginner's Guide to Regular Expressions in JavaScript](https://builtin.com/software-engineering-perspectives/javascript-regex)
 - CSS
   - [Online Interactive CSS Cheat Sheet](https://htmlcheatsheet.com/css/)
   - [A Practical CSS Cheat Sheet](https://www.toptal.com/css/css-cheat-sheet)
