@@ -90,10 +90,12 @@ export const TmirSponsor = () => {
             dollars will be used to develop our subscriber base.
           </p>
           <p>
-            As of February 2024, our stats show 349 subscribers (328 in January). Live attendance
-            ranges from 120-250, with recordings typically listened to by
-            150-300 people, for a total listenership of ~250–500. Reactiflux is
-            a highly global community of experienced professionals, .
+            As of February 2024, our stats show 349 subscribers (328 in
+            January). Live attendance ranges from 120-250, with recordings
+            typically listened to by 150-300 people, for a total listenership of
+            ~250–500. Reactiflux is a highly global community of experienced
+            professionals, with about 1 in 3 having more than 6 years
+            experience.
           </p>
           <p>
             Subscriber demographics:
@@ -117,7 +119,7 @@ export const TmirSponsor = () => {
             </Ul>
             <Li>News discussion (3-6 links discussed)</Li>
             <Ul>
-              <Li>Supporter 15s ad read (2x max)</Li>
+              <Li>Supporter 15s ad read (2x)</Li>
             </Ul>
             <Li>Lightning round (3-6 links without discussion)</Li>
             <Li>Outro</Li>
@@ -203,8 +205,10 @@ export const TmirSponsor = () => {
               <Ul>
                 <Li>45s ad read.</Li>
                 <Li>Live shoutout during recording (~125 reached).</Li>
-                <Li>Your name and logo on the transcript page (~1500 reached).</Li>
-                <Li>A blurb in the announcement ping (reaches 7.5-12k).</Li>
+                <Li>
+                  Your name and logo on the transcript page (~1500 reached).
+                </Li>
+                <Li>A blurb in the announcement ping (7.5-12k reached).</Li>
               </Ul>
               <p>Discounts for 3+ episodes.</p>
             </SalesRadio>
