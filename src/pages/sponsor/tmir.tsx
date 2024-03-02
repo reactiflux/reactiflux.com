@@ -172,7 +172,7 @@ export const TmirSponsor = () => {
               }}
             >
               <h4>Supporter</h4>
-              <p>$150/episode before 500 subscribers.</p>
+              <p>$75/episode before 500 subscribers.</p>
               <Ul>
                 <Li>15s ad read.</Li>
               </Ul>
@@ -186,7 +186,7 @@ export const TmirSponsor = () => {
               }}
             >
               <h4>Sustainer</h4>
-              <p>$250/episode before 500 subscribers.</p>
+              <p>$150/episode before 500 subscribers.</p>
               <Ul>
                 <Li>30s ad read.</Li>
               </Ul>
@@ -201,7 +201,7 @@ export const TmirSponsor = () => {
               }}
             >
               <h4>Headliner</h4>
-              <p>$750/episode before 500 subscribers.</p>
+              <p>$500/episode before 500 subscribers.</p>
               <Ul>
                 <Li>45s ad read.</Li>
                 <Li>Live shoutout during recording (~125 reached).</Li>
