@@ -90,10 +90,10 @@ export const TmirSponsor = () => {
             dollars will be used to develop our subscriber base.
           </p>
           <p>
-            As of March 2024, our stats show 371 subscribers (349 in
-            February). Live attendance ranges from 120-250, with recordings
-            typically listened to by 150-300 people, for a total listenership of
-            ~250–500. Reactiflux is a highly global community of experienced
+            As of March 2024, our stats show 371 subscribers (349 in February).
+            Live attendance ranges from 120-250, with recordings typically
+            listened to by 150-300 people, for a total listenership of ~250–500.
+            Reactiflux is a highly global community of experienced
             professionals, with about 1 in 3 having more than 6 years
             experience.
           </p>
