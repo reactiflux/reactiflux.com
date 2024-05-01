@@ -13,12 +13,12 @@ const DiscordCB = () => {
       },
     })
       .then(async (res) => {
-        const user = await res.json();
-        if (!user.email || !user.verified) {
+        const identity = await res.json();
+        if (!identity.user.email || !identity.user.verified) {
           localStorage.setItem(
             "doa",
             JSON.stringify({
-              state: "err",
+              state: "needsVerify",
               message: "This account does not have a verified email address",
             }),
           );
