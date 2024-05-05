@@ -8,7 +8,8 @@ export const discordOAuth = new ClientOAuth2({
   accessTokenUri: "https://discord.com/api/oauth2/token",
   authorizationUri: "https://discord.com/oauth2/authorize",
   redirectUri: `${
-    process.env.NETLIFY ? "https://www.reactiflux.com" : "http://localhost:8888"
+    //  process.env.NETLIFY ? "https://www.reactiflux.com" : "http://localhost:8888"
+    "https://www.reactiflux.com"
   }/auth/discordcb`,
   scopes: ["email", "guilds", "identify"],
 });
