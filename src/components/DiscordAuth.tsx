@@ -45,7 +45,7 @@ const checkAuth = async (
     headers: { "x-auth": stored.token },
   });
   const loadedUser = (await res.json()) as DiscordIdentity;
-  if (!loadedUser.user.email || !loadedUser.user.verified) {
+  if (!loadedUser?.user.verified) {
     return "needsVerify";
   }
   if (!loadedUser.isMember) {
