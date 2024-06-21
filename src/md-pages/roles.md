@@ -1,9 +1,3 @@
-<style>
-ol {
-  list-style-type: lower-alpha;
-}
-</style>
-
 # Experience roles
 
 We have self-selectable roles indicating experience, intended to help our members better understand who they're speaking with. Please don't use these for jokes.
@@ -26,7 +20,7 @@ Our staff, (moderators and admins) share responsibility for day-to-day operation
 
 ## <span style="color: #e67e22">█ Moderators</span>
 
-Our moderators are tasked with keeping the server on the right course. They're our trusted stewards of server culture, trusted to enforce the code of conduct and oversee server governance. We select these from Star Helpers who have demonstrated a consistently even keel and a history of defusing unhealthy conflicts.
+Our moderators are tasked with keeping the server on the right course. They're our trusted stewards of server culture who enforce the code of conduct and oversee server governance. We select these from Star Helpers who have demonstrated a consistently even keel and a history of defusing unhealthy conflicts.
 
 ## <span style="color: #f1c40f">█ Star Helpers</span>
 
