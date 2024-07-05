@@ -1,5 +1,9 @@
 # Recruitment in Reactiflux
 
+<!--
+Source URL for drawing. Make sure to optimize with svgo if you modify.
+https://excalidraw.com/#json=NndCcsNyJ1cpHqOgpi_dd,2kURTZPxVhFySpcLyUXctg
+-->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560">
   <defs>
     <style>
@@ -10,7 +14,7 @@
     <path fill="#a5d8ff" stroke-width="0" d="M55 50h130c17 0 25 8 25 25v50c0 17-8 25-25 25H55c-17 0-25-8-25-25V75c0-17 8-25 25-25"/>
     <path fill="none" stroke="#1e1e1e" stroke-width="2" d="M55 50h130M55 50h130m0 0c17 0 25 8 25 25m-25-25c17 0 25 8 25 25m0 0v50m0-50v50m0 0c0 17-8 25-25 25m25-25c0 17-8 25-25 25m0 0H55m130 0H55m0 0c-17 0-25-8-25-25m25 25c-17 0-25-8-25-25m0 0V75m0 50V75m0 0c0-17 8-25 25-25M30 75c0-17 8-25 25-25"/>
   </g>
-  <text x="55" y="18" fill="#1e1e1e" dominant-baseline="alphabetic" font-family="Virgil, Segoe UI Emoji" font-size="20" style="white-space:pre" text-anchor="middle" transform="translate(65 75)">I&apos;d like to </text>
+  <text x="55" y="18" fill="#1e1e1e" dominant-baseline="alphabetic" font-family="Virgil, Segoe UI Emoji" font-size="20" style="white-space:pre" text-anchor="middle" transform="translate(65 75)">I’d like to </text>
   <text x="55" y="43" fill="#1e1e1e" dominant-baseline="alphabetic" font-family="Virgil, Segoe UI Emoji" font-size="20" style="white-space:pre" text-anchor="middle" transform="translate(65 75)">post a job</text>
   <path fill="none" stroke="#1e1e1e" stroke-linecap="round" stroke-width="2" d="M35 190h150m-150 0h150m0 0c17 0 25 8 25 25m-25-25c17 0 25 8 25 25m0 0v50m0-50v50m0 0c0 17-8 25-25 25m25-25c0 17-8 25-25 25m0 0H35m150 0H35m0 0c-17 0-25-8-25-25m25 25c-17 0-25-8-25-25m0 0v-50m0 50v-50m0 0c0-17 8-25 25-25m-25 25c0-17 8-25 25-25"/>
   <text x="77" y="18" fill="#1e1e1e" dominant-baseline="alphabetic" font-family="Virgil, Segoe UI Emoji" font-size="20" style="white-space:pre" text-anchor="middle" transform="translate(33 203)">Is it paid with </text>
@@ -25,10 +29,10 @@
   <text x="71" y="18" fill="#1e1e1e" dominant-baseline="alphabetic" font-family="Virgil, Segoe UI Emoji" font-size="20" style="white-space:pre" text-anchor="middle" transform="translate(310 75)">Not until </text>
   <text x="71" y="43" fill="#1e1e1e" dominant-baseline="alphabetic" font-family="Virgil, Segoe UI Emoji" font-size="20" style="white-space:pre" text-anchor="middle" transform="translate(310 75)">we get funding</text>
   <path fill="none" stroke="#1e1e1e" stroke-linecap="round" stroke-width="2" d="M305 150h150m-150 0h150m0 0c10 0 15 5 15 15m-15-15c10 0 15 5 15 15m0 0v30m0-30v30m0 0c0 10-5 15-15 15m15-15c0 10-5 15-15 15m0 0H305m150 0H305m0 0c-10 0-15-5-15-15m15 15c-10 0-15-5-15-15m0 0v-30m0 30v-30m0 0c0-10 5-15 15-15m-15 15c0-10 5-15 15-15"/>
-  <text x="57" y="18" fill="#1e1e1e" dominant-baseline="alphabetic" font-family="Virgil, Segoe UI Emoji" font-size="20" style="white-space:pre" text-anchor="middle" transform="translate(323 155)">No, it&apos;s </text>
+  <text x="57" y="18" fill="#1e1e1e" dominant-baseline="alphabetic" font-family="Virgil, Segoe UI Emoji" font-size="20" style="white-space:pre" text-anchor="middle" transform="translate(323 155)">No, it’s </text>
   <text x="57" y="43" fill="#1e1e1e" dominant-baseline="alphabetic" font-family="Virgil, Segoe UI Emoji" font-size="20" style="white-space:pre" text-anchor="middle" transform="translate(323 155)">open source</text>
   <path fill="none" stroke="#1e1e1e" stroke-linecap="round" stroke-width="2" d="M305 230h150m-150 0h150m0 0c10 0 15 5 15 15m-15-15c10 0 15 5 15 15m0 0v30m0-30v30m0 0c0 10-5 15-15 15m15-15c0 10-5 15-15 15m0 0H305m150 0H305m0 0c-10 0-15-5-15-15m15 15c-10 0-15-5-15-15m0 0v-30m0 30v-30m0 0c0-10 5-15 15-15m-15 15c0-10 5-15 15-15"/>
-  <text x="77" y="18" fill="#1e1e1e" dominant-baseline="alphabetic" font-family="Virgil, Segoe UI Emoji" font-size="20" style="white-space:pre" text-anchor="middle" transform="translate(303 235)">No, I&apos;m seeking </text>
+  <text x="77" y="18" fill="#1e1e1e" dominant-baseline="alphabetic" font-family="Virgil, Segoe UI Emoji" font-size="20" style="white-space:pre" text-anchor="middle" transform="translate(303 235)">No, I’m seeking </text>
   <text x="77" y="43" fill="#1e1e1e" dominant-baseline="alphabetic" font-family="Virgil, Segoe UI Emoji" font-size="20" style="white-space:pre" text-anchor="middle" transform="translate(303 235)">collaborators</text>
   <path fill="none" stroke="#e03131" stroke-linecap="round" stroke-width="2" d="M250 30v220m0-220v220m1-220h38m-38 0h38m-18 7 18-7m-18 7 18-7m-18-7 18 7m-18-7 18 7m-39 60h39m-39 0h39m-18 7 18-7m-18 7 18-7m-18-7 18 7m-18-7 18 7m-39 80h39m-39 0h39m-18 7 18-7m-18 7 18-7m-18-7 18 7m-18-7 18 7m-39 80h40m-40 0h40m-19 7 19-7m-19 7 19-7m-19-7 19 7m-19-7 19 7"/>
   <path fill="none" stroke="#2f9e44" stroke-linecap="round" stroke-width="2" d="M110 291v38m0-38v38m-6-18 6 18m-6-18 6 18m7-18-7 18m7-18-7 18"/>
