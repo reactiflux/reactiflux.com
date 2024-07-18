@@ -17,7 +17,7 @@ interface StoredTokenError {
 }
 interface DiscordIdentity {
   isMember: boolean;
-  user: {
+  user?: {
     email: string;
     verified: boolean;
   };
@@ -45,7 +45,7 @@ const checkAuth = async (
     headers: { "x-auth": stored.token },
   });
   const loadedUser = (await res.json()) as DiscordIdentity;
-  if (!loadedUser?.user.verified) {
+  if (!loadedUser?.user?.verified) {
     return "needsVerify";
   }
   if (!loadedUser.isMember) {
