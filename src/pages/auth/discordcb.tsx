@@ -14,7 +14,7 @@ const DiscordCB = () => {
     })
       .then(async (res) => {
         const identity = await res.json();
-        if (!identity.user.email || !identity.user.verified) {
+        if (!identity?.user?.email || !identity?.user?.verified) {
           localStorage.setItem(
             "doa",
             JSON.stringify({
