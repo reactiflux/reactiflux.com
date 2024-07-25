@@ -136,7 +136,7 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
 
 #### General React
 
-Start by reading the official docs. The React team has put out a major rewrite of the React docs site, now focusing on teaching function components and hooks first. The updated and improved documentation is an excellent choice to start learning React.
+Start by reading the official docs. The React team has put out a major rewrite of the React docs site, now focusing on teaching functional components and hooks first. The updated and improved documentation is an excellent choice to start learning React.
 
 Along with the official react docs, these other listed tutorials are also excellent and may explain things in a different way.
 
