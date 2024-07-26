@@ -136,16 +136,21 @@ Mark's post series that describes the key terms, concepts, technologies, syntax,
 
 #### General React
 
-Start with reading the official docs first. The React team is in the process of starting a major rewrite of the React docs site to focus on teaching function components and hooks first, which is now available in beta. We've linked to that rather than the existing "main" documentation.
+Start by reading the official docs. The React team has put out a major rewrite of the React docs site, now focusing on teaching functional components and hooks first. The updated and improved documentation is an excellent choice to start learning React.
 
-These other listed tutorials are also excellent and may explain things in a different way.
+Along with the official react docs, these other listed tutorials are also excellent and may explain things in a different way.
 
-- **Read: [official React docs](https://beta.reactjs.org/)**
-  - [Getting Started](https://reactjs.org/docs/getting-started.html) (docs overview and related resources)
-  - [Main Concepts](https://reactjs.org/docs/hello-world.html) (read the whole series, but especially these two):
-    - [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html)
-    - [Thinking In React](https://reactjs.org/docs/thinking-in-react.html)
+- **Read: [Official React docs](https://react.dev/)**
+
+  - [Quick Start](https://react.dev/blog/2023/03/16/introducing-react-dev) (docs overview and related resources)
+  - [Main Concepts](https://react.dev/learn) (read the whole series, but especially these two):
+
+    - [Thinking In React](https://react.dev/learn/thinking-in-react)
+    - [Sharing State Between Components](https://react.dev/learn/sharing-state-between-components)
+
+  - [Tutorial: Tic Tac Toe](https://react.dev/learn/tutorial-tic-tac-toe) (learn React by making a tic-tac-toe game)
   - [React Hooks guide](https://reactjs.org/docs/hooks-intro.html) (lays out the motivation, teaches hooks, API reference, in-depth FAQ)
+
 - **Read: [React docs (converted to show hooks)](https://reactwithhooks.netlify.app/)**
 
   - [Tutorial](https://reactwithhooks.netlify.app/tutorial/tutorial.html)
