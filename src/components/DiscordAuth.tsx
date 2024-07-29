@@ -28,6 +28,9 @@ const retrieveStoredToken = (): StoredToken | StoredTokenError | undefined => {
   if (auth) return JSON.parse(auth);
   return undefined;
 };
+const purgeToken = () => {
+  localStorage.removeItem("doa");
+};
 
 type State =
   | "uninit"
@@ -40,22 +43,46 @@ type State =
 const checkAuth = async (
   stored?: StoredToken | StoredTokenError,
 ): Promise<State> => {
-  if (!stored || stored.state !== "ok") return "needsAuth";
+  if (!stored || stored.state !== "ok") return stored?.state ?? "uninit";
   const res = await fetch("/.netlify/functions/discordIdentity", {
     headers: { "x-auth": stored.token },
   });
-  const loadedUser = (await res.json()) as DiscordIdentity;
-  if (!loadedUser?.user?.verified) {
-    return "needsVerify";
+  try {
+    if (res.status === 401) {
+      purgeToken();
+      return "needsAuth";
+    }
+    if (res.status !== 200) {
+      return "err";
+    }
+
+    const loadedUser = (await res.json()) as DiscordIdentity;
+
+    if (!loadedUser?.user?.verified) {
+      return "needsVerify";
+    }
+    if (!loadedUser.isMember) {
+      return "notMember";
+    }
+    return "ok";
+  } catch (e) {
+    console.error("error: ", e);
+    return "err";
   }
-  if (!loadedUser.isMember) {
-    return "notMember";
-  }
-  return "ok";
 };
 
 export const DiscordAuth = ({ children }: Props) => {
   const [state, setState] = React.useState<State>("uninit");
+
+  React.useEffect(() => {
+    const onEvent = async (e: StorageEvent) => {
+      if (e.key !== "doa") return;
+      const token = retrieveStoredToken();
+      setState(await checkAuth(token));
+    };
+    window.addEventListener("storage", onEvent);
+    return () => window.removeEventListener("storage", onEvent);
+  }, []);
 
   React.useEffect(() => {
     const storedToken = retrieveStoredToken();
@@ -63,20 +90,36 @@ export const DiscordAuth = ({ children }: Props) => {
       checkAuth(storedToken).then(setState);
       return;
     }
-
-    const onEvent = async (e: StorageEvent) => {
-      if (e.key !== "doa") return;
-      setState(await checkAuth(retrieveStoredToken()));
-    };
-    window.addEventListener("storage", onEvent);
     setState("needsAuth");
-    return () => window.removeEventListener("storage", onEvent);
   }, []);
 
   return (
     <>
       {(() => {
         switch (state) {
+          case "err":
+            return (
+              <div>
+                <p>
+                  Sorry! Something went wrong. Please consider{" "}
+                  <a href="https://github.com/reactiflux/reactiflux.com/issues/new">
+                    opening an issue
+                  </a>{" "}
+                  on GitHub.
+                </p>
+                <p>
+                  <code>{localStorage.getItem("doa")}</code>
+                </p>
+                <Button
+                  onClick={() => {
+                    localStorage.removeItem("doa");
+                    document.location.reload();
+                  }}
+                >
+                  Reset and try again
+                </Button>
+              </div>
+            );
           case "ok":
             return children;
           case "uninit":

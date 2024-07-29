@@ -13,6 +13,16 @@ const DiscordCB = () => {
       },
     })
       .then(async (res) => {
+        if (res.status !== 200) {
+          localStorage.setItem(
+            "doa",
+            JSON.stringify({
+              state: "err",
+              message: "Something went wrong with the request",
+              raw: new Error(await res.text()),
+            }),
+          );
+        }
         const identity = await res.json();
         if (!identity?.user?.email || !identity?.user?.verified) {
           localStorage.setItem(
