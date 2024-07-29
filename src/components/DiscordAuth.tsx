@@ -77,6 +77,29 @@ export const DiscordAuth = ({ children }: Props) => {
     <>
       {(() => {
         switch (state) {
+          case "err":
+            return (
+              <div>
+                <p>
+                  Sorry! Something went wrong. Please consider{" "}
+                  <a href="https://github.com/reactiflux/reactiflux.com/issues/new">
+                    opening an issue
+                  </a>{" "}
+                  on GitHub.
+                </p>
+                <p>
+                  <code>{localStorage.getItem("doa")}</code>
+                </p>
+                <Button
+                  onClick={() => {
+                    localStorage.removeItem("doa");
+                    document.location.reload();
+                  }}
+                >
+                  Reset and try again
+                </Button>
+              </div>
+            );
           case "ok":
             return children;
           case "uninit":
