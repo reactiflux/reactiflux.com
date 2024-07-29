@@ -11,7 +11,7 @@ export const discordOAuth = new ClientOAuth2({
     //  process.env.NETLIFY ? "https://www.reactiflux.com" : "http://localhost:8888"
     "https://www.reactiflux.com"
   }/auth/discordcb`,
-  scopes: ["email", "guilds", "identify"],
+  scopes: ["email", "guilds.members.read", "identify"],
 });
 
 const handler = async (request: Request, context: Context) => {

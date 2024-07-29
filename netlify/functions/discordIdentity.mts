@@ -5,22 +5,20 @@ const handler = async (request: Request, context: Context) => {
   // header is present on an incoming request. So, hack
   const Authorization = request.headers.get("x-auth")!;
   try {
-    const [userRes, guildsRes] = await Promise.all([
+    const [userRes, memberRes] = await Promise.all([
       fetch("https://discord.com/api/users/@me", {
         headers: { Authorization },
       }),
-      fetch("https://discord.com/api/users/@me/guilds", {
-        headers: { Authorization },
-      }),
+      fetch(
+        "https://discord.com/api/users/@me/guilds/102860784329052160/member",
+        { headers: { Authorization } },
+      ),
     ]);
-    const [user, guilds] = await Promise.all([
-      userRes.json(),
-      guildsRes.json(),
-    ]);
+    const [user] = await Promise.all([userRes.json()]);
     return new Response(
       JSON.stringify({
         user,
-        isMember: guilds.some((g) => g.id === "102860784329052160"),
+        isMember: memberRes.ok,
       }),
       {
         headers: { "Content-Type": "application/json" },
