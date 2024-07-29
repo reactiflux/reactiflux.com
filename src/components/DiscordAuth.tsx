@@ -40,7 +40,7 @@ type State =
 const checkAuth = async (
   stored?: StoredToken | StoredTokenError,
 ): Promise<State> => {
-  if (!stored || stored.state !== "ok") return "needsAuth";
+  if (!stored || stored.state !== "ok") return stored?.state ?? "uninit";
   const res = await fetch("/.netlify/functions/discordIdentity", {
     headers: { "x-auth": stored.token },
   });
