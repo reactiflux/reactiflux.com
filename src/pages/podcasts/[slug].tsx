@@ -116,7 +116,7 @@ export default function PodPage() {
         behavior: "smooth",
         block: "center",
         inline: "center",
-      });
+      }); //
     }
   }, [currentIndex]);
 
