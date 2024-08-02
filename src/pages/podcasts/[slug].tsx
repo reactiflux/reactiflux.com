@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { z } from "zod";
 import { type RootTranscript } from "@utils/transcript-types";
 
+// TODO For this page, make it possible to use the [slug] to grab a m4a file, and a transcript file for it to work with other podcasts.
+
 const getTranscript = (slug: Slug) => {
   return fetch("/podcastassets/2024-06.json").then((response) =>
     response.json(),
