@@ -129,7 +129,22 @@ export default function PodPage() {
   };
 
   if (loading || typeof entire_transcript === "undefined") {
-    return <div>Loading...</div>;
+    return (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100vh",
+          fontFamily: "'Roboto', sans-serif",
+          fontSize: "24px",
+          color: "#555",
+          textAlign: "center",
+        }}
+      >
+        Loading...
+      </div>
+    );
   }
 
   let wordCounter = 0;
