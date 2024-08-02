@@ -128,6 +128,24 @@ export default function PodPage() {
     }
   };
 
+  useEffect(() => {
+    const handleSpacebarPress = (event: KeyboardEvent) => {
+      if (event.code === "Space" && audioRef.current) {
+        event.preventDefault();
+        if (audioRef.current.paused) {
+          audioRef.current.play();
+        } else {
+          audioRef.current.pause();
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleSpacebarPress);
+    return () => {
+      window.removeEventListener("keydown", handleSpacebarPress);
+    };
+  }, []);
+
   if (loading || typeof entire_transcript === "undefined") {
     return (
       <div
