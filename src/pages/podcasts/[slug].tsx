@@ -31,6 +31,9 @@ export default function PodPage() {
   const [speakers, setSpeakers] = useState<{
     [key: string]: { name: string; color: string };
   }>({});
+  const [markers, setMarkers] = useState<
+    { id: string; location: number; text: string }[]
+  >([]);
 
   const paragraphRefs = useRef<(HTMLParagraphElement | null)[]>([]);
   const wordRefs = useRef<(HTMLSpanElement | null)[]>([]);
@@ -94,6 +97,16 @@ export default function PodPage() {
         );
         setSpeakers(speakerData);
 
+        const markerData =
+          transcriptData.compositions[0].timeline.noAudioTrack.components
+            .filter((component) => component.type === "markerComponent")
+            .map((marker) => ({
+              id: marker.id,
+              location: marker.tauAnchor.location,
+              text: marker.text,
+            }));
+        setMarkers(markerData);
+
         const audioBlob = audioFetch.value;
         const audioUrl = URL.createObjectURL(audioBlob);
         setAudioSrc(audioUrl);
@@ -108,15 +121,13 @@ export default function PodPage() {
     ?.timeline?.superTau?.taus?.at(0)?.text?.string;
 
   useEffect(() => {
-    const paragraphIndex = paragraphRefs.current.findIndex(
-      (ref) => ref && ref.contains(wordRefs.current[currentIndex]),
-    );
-    if (paragraphIndex !== -1 && paragraphRefs.current[paragraphIndex]) {
-      paragraphRefs.current[paragraphIndex]?.scrollIntoView({
+    const currentWordRef = wordRefs.current[currentIndex];
+    if (currentWordRef) {
+      currentWordRef.scrollIntoView({
         behavior: "smooth",
         block: "center",
         inline: "center",
-      }); //
+      });
     }
   }, [currentIndex]);
 
@@ -175,6 +186,46 @@ export default function PodPage() {
     }
     const currentSpeakerId = alignment[wordCounter]?.speaker?.speakerId || "";
 
+    const paragraphElements = [];
+
+    // Add speaker name if it changes
+    if (currentSpeakerId && currentSpeakerId !== lastSpeakerId) {
+      paragraphElements.push(
+        <div
+          key={`speaker-${lineIndex}`}
+          style={{
+            fontWeight: "bold",
+            marginTop: "2rem",
+            color: speakers[currentSpeakerId]?.color,
+          }}
+        >
+          {speakers[currentSpeakerId]?.name}
+        </div>,
+      );
+      lastSpeakerId = currentSpeakerId;
+    }
+
+    // Add markers before the paragraph if there are any
+    markers.forEach((marker) => {
+      if (marker.location <= wordCounter) {
+        paragraphElements.push(
+          <div
+            key={`marker-${marker.id}`}
+            style={{
+              marginTop: "1rem",
+              marginBottom: "1rem",
+              backgroundColor: "#FFD700", // Marker color
+              padding: "0.5rem",
+              borderRadius: "5px",
+            }}
+          >
+            {marker.text}
+          </div>,
+        );
+        markers.splice(markers.indexOf(marker), 1); // Remove the marker after adding it
+      }
+    });
+
     const paragraphContent = (
       <p
         key={lineIndex}
@@ -189,6 +240,7 @@ export default function PodPage() {
           const isCurrentWord =
             currentIndex === currentWordIndex &&
             alignment[currentIndex]?.word.toLowerCase() === word.toLowerCase();
+
           return (
             <span
               key={currentWordIndex}
@@ -211,31 +263,13 @@ export default function PodPage() {
       </p>
     );
 
-    const paragraph = (
-      <div key={`paragraph-${lineIndex}`}>
-        {currentSpeakerId && currentSpeakerId !== lastSpeakerId && (
-          <div
-            key={`speaker-${lineIndex}`}
-            style={{
-              fontWeight: "bold",
-              marginTop: "2rem",
-              color: speakers[currentSpeakerId]?.color,
-            }}
-          >
-            {speakers[currentSpeakerId]?.name}
-          </div>
-        )}
-        {paragraphContent}
-      </div>
-    );
-
-    lastSpeakerId = currentSpeakerId;
+    paragraphElements.push(paragraphContent);
 
     if (lineIndex < entire_transcript.split("\n").length - 1) {
       wordCounter++;
     }
 
-    return paragraph;
+    return <div key={`paragraph-${lineIndex}`}>{paragraphElements}</div>;
   });
 
   const checkblob = z.string().safeParse(audioSrc);
