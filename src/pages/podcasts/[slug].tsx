@@ -211,15 +211,59 @@ export default function PodPage() {
   }
 
   return (
-    <div style={{ display: "flex", margin: "auto", width: "100vw" }}>
-      <div style={{ position: "fixed", left: "150px", top: "50px" }}>
-        <audio ref={audioRef} controls src={audioSrc as string}></audio>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        margin: "auto",
+        padding: "20px",
+        backgroundColor: "#f9f9f9",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "800px",
+          width: "100%",
+          backgroundColor: "#fff",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+          borderRadius: "8px",
+          padding: "20px",
+          lineHeight: "1.6",
+          fontFamily: "'Roboto', sans-serif",
+          color: "#333",
+          marginBottom: "100px", // Adjusted for the audio player height and spacing
+        }}
+      >
+        {paragraphs}
       </div>
 
       <div
-        style={{ maxWidth: "800px", marginLeft: "auto", marginRight: "auto" }}
+        style={{
+          position: "fixed",
+          bottom: "20px",
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: "90%",
+          maxWidth: "600px",
+          backgroundColor: "#fff",
+          boxShadow: "0 4px 16px rgba(0, 0, 0, 0.2)",
+          borderRadius: "16px",
+          padding: "10px 20px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: 1000,
+          border: "2px solid #ececec",
+        }}
       >
-        {paragraphs}
+        <audio
+          ref={audioRef}
+          controls
+          src={audioSrc as string}
+          style={{ width: "100%" }}
+        ></audio>
       </div>
     </div>
   );
