@@ -70,7 +70,7 @@ export default function PodPage() {
         setCurrentIndex(newIndex - 1);
       }
     }
-  }, [currentTime, alignment]);
+  }, [currentTime, alignment, currentIndex]);
 
   useEffect(() => {
     (async () => {
