@@ -4,6 +4,16 @@ import { type RootTranscript } from "@utils/transcript-types";
 import { useRouter } from "next/router";
 import { Layout } from "@components";
 
+const getNestedProperty = <T extends any>(
+  obj: any,
+  path: Array<string | number>,
+): T | null => {
+  return path.reduce(
+    (acc, key) => (acc && acc[key] !== undefined ? acc[key] : null),
+    obj,
+  ) as T | null;
+};
+
 // TODO: Fix the links to actually point to the real place
 const getTranscript = async (slug: Slug) => {
   // const resp = await fetch(`https://something.com/${slug}.json`);
@@ -145,9 +155,20 @@ export default function PodPage({ slug }: { slug: Slug }) {
     })();
   }, [router, slug]);
 
-  const entire_transcript = transcript?.transcripts
-    ?.at(0)
-    ?.timeline?.superTau?.taus?.at(0)?.text?.string;
+  const transcriptPath = [
+    "transcripts",
+    0,
+    "timeline",
+    "superTau",
+    "taus",
+    0,
+    "text",
+    "string",
+  ];
+  const entire_transcript = getNestedProperty(
+    transcript,
+    transcriptPath,
+  ) as RootTranscript;
 
   useEffect(() => {
     const currentWordRef = wordRefs.current[currentIndex];
