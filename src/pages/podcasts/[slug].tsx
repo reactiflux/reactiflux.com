@@ -143,7 +143,7 @@ export default function PodPage({ slug }: { slug: Slug }) {
         setLoading(false);
       }
     })();
-  }, []);
+  }, [router, slug]);
 
   const entire_transcript = transcript?.transcripts
     ?.at(0)
