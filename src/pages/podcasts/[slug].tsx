@@ -168,7 +168,7 @@ export default function PodPage({ slug }: { slug: Slug }) {
   const entire_transcript = getNestedProperty(
     transcript,
     transcriptPath,
-  ) as RootTranscript;
+  ) as string;
 
   useEffect(() => {
     const currentWordRef = wordRefs.current[currentIndex];
