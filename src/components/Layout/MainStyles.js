@@ -65,7 +65,10 @@ html body {
     padding-left: 3rem;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    li:first-of-type {
+      margin-top: 0.5rem;
     }
   }
 
@@ -111,6 +114,10 @@ html body {
 
   h1, h2, h3, h4, h5, h6, p, ul, ol {
     margin-bottom: 2rem;
+  }
+
+  ul,ol ul,ol {
+    margin-bottom: 0rem;
   }
 
   hr {
