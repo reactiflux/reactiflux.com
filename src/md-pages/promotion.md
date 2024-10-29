@@ -39,42 +39,9 @@ We want the majority of what's shared to be created by genuine members of Reacti
 Reactiflux sometimes hosts conversations with prominent members of the community, and those working on interesting projects in the web development industry. If you're interested in participating, contact the moderators at [hello@reactiflux.com](mailto:hello@reactiflux.com).
 
 ## [#job-board](https://discord.gg/R942bNb)
+## Recruiting
 
-Our job board is our most strictly moderated channel. Posts should follow the rules and recommendataions in the channel description so they can be properly displayed and searched on our [jobs page](/jobs/). If you're acting as a third-party recruiter, please [contact the moderators before posting](/contact).
-
-Posts must start with `[FORHIRE]` or `[HIRING]`. Lead with the location of the position and include `LOCAL`, `REMOTE`, `INTERN`, `VISA`, and keep the message reasonably formatted & a reasonable length — 1-2 paragraphs, please. Provide a means for applicants to contact you. e.g.:
-
-<details open>
-<summary>Global remote position</summary>
-<blockquote>
-<p>[HIRING]</p>
-
-<p>Senior React Engineer - [REMOTE]: $min - $max</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>More details & apply: https://example.com/apply</p>
-</blockquote>
-</details>
-
-<details>
-<summary>Local position with visa support</summary>
-<blockquote>
-<p>[HIRING]</p>
-
-<p>Senior React Engineer - NYC [LOCAL][visa]: $min - $max</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>More details & apply: https://example.com/apply</p>
-</blockquote>
-</details>
-
-Jobs are full-time salaried positions, or part- or full-time contract roles. We don't allow small gigs, "pay for help" schemes, equity-only compensation, [spec work](https://www.nospec.com/), or other types of uncompensated labor. We do not have a channel for finding project collaborators.
-
-### Small gigs
-
-We have a hard ban on work that too small to be considered contract work. A general rule of thumb here is whether the work would take less than a week to complete, could be completed in a single call, or could be compared to a single tutoring session. We do permit, but don't encourage, our members to arrange [paid tutoring relationships, within our guidelines](#paid-help-and-tutoring).
+tl;dr: We only allow active recruiting for paid roles in [#job-board](https://discord.gg/R942bNb). We only allow unpaid recruiting for non-commercial projects in our #looking-for-group channel. Please see [our recruiting page](/recruiting) for more information about how to use our job board.
 
 ## [#events](https://discord.gg/RYVBdtY)
 
