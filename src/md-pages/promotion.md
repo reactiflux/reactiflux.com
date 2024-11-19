@@ -39,6 +39,7 @@ We want the majority of what's shared to be created by genuine members of Reacti
 Reactiflux sometimes hosts conversations with prominent members of the community, and those working on interesting projects in the web development industry. If you're interested in participating, contact the moderators at [hello@reactiflux.com](mailto:hello@reactiflux.com).
 
 ## [#job-board](https://discord.gg/R942bNb)
+
 ## Recruiting
 
 tl;dr: We only allow active recruiting for paid roles in [#job-board](https://discord.gg/R942bNb). We only allow unpaid recruiting for non-commercial projects in our #looking-for-group channel. Please see [our recruiting page](/recruiting) for more information about how to use our job board.
