@@ -58,9 +58,6 @@ const checkAuth = async (
 
     const loadedUser = (await res.json()) as DiscordIdentity;
 
-    if (!loadedUser?.user?.verified) {
-      return "needsVerify";
-    }
     if (!loadedUser.isMember) {
       return "notMember";
     }
@@ -132,16 +129,16 @@ export const DiscordAuth = ({ children }: Props) => {
                 💁
               </div>
             );
-          case "needsVerify":
-            return (
-              <div>
-                You don’t have a verified email associated with it. Please{" "}
-                <a href="https://support.discord.com/hc/en-us/articles/213219267-Resending-Verification-Email">
-                  verify your email
-                </a>{" "}
-                and try again.
-              </div>
-            );
+          // case "needsVerify":
+          //   return (
+          //     <div>
+          //       You don’t have a verified email associated with it. Please{" "}
+          //       <a href="https://support.discord.com/hc/en-us/articles/213219267-Resending-Verification-Email">
+          //         verify your email
+          //       </a>{" "}
+          //       and try again.
+          //     </div>
+          //   );
           case "needsAuth":
           default:
             return (
