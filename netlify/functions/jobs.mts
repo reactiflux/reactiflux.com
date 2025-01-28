@@ -2,14 +2,12 @@ import type { Config, Context } from "@netlify/functions";
 
 const handler = async (request: Request, context: Context) => {
   const { type } = context.params;
-
   const { searchParams } = new URL(request.url);
 
-  const limit = searchParams.get("limit");
-  const page = searchParams.get("page");
+  console.log(searchParams.toString());
 
   return fetch(
-    `https://api.reactiflux.com/jobs/${type}?limit=${limit}&page=${page}`,
+    `https://api.reactiflux.com/jobs/${type}?${searchParams.toString()}`,
     { headers: { "api-key": process.env.REACTIBOT_API_KEY || "" } },
   );
 };
