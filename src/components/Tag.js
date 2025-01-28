@@ -9,8 +9,13 @@ export const Tag = styled.span`
   display: inline-block;
   font-size: 1.4rem;
   line-height: 2;
-  margin-bottom: 0.5rem;
   margin-right: 0.5rem;
   padding: 0 1rem;
   text-transform: uppercase;
+`;
+export const Reaction = styled(Tag)`
+  background: ${background};
+  color: ${pink};
+  border: 2px solid ${pink};
+  line-height: 1.75;
 `;
