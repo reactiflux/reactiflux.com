@@ -37,6 +37,7 @@ type State =
   | "needsAuth"
   | "needsVerify"
   | "notMember"
+  | "rateLimit"
   | "ok"
   | "err";
 
@@ -51,6 +52,9 @@ const checkAuth = async (
     if (res.status === 401) {
       purgeToken();
       return "needsAuth";
+    }
+    if (res.status === 429) {
+      return "rateLimit";
     }
     if (res.status !== 200) {
       return "err";
@@ -94,6 +98,16 @@ export const DiscordAuth = ({ children }: Props) => {
     <>
       {(() => {
         switch (state) {
+          case "rateLimit":
+            return (
+              <div>
+                <p>
+                  Oops! You got rate limited by Discord. Please try again in a
+                  minute or two.
+                </p>
+              </div>
+            );
+
           case "err":
             return (
               <div>
