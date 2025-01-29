@@ -141,7 +141,6 @@ const JobSearch = ({
         },
         "requiredTags",
       );
-      console.log({ type, requiredTags });
       const url = `/api/jobs/${type}?${toQueryString({
         limit,
         page: pageParam,
@@ -151,7 +150,6 @@ const JobSearch = ({
     },
   });
   const onChangeQuery = React.useCallback((query) => {
-    console.log({ query });
     setState((_state) => ({
       ..._state,
       ...query,
