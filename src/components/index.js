@@ -7,4 +7,4 @@ export { Link } from "./Link";
 export { Modal } from "./Modal";
 export { Offer } from "./Offer";
 export { Pagination } from "./Pagination";
-export { Tag } from "./Tag";
+export { Tag, Reaction } from "./Tag";

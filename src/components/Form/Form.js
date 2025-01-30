@@ -28,8 +28,9 @@ export const Form = React.forwardRef(function Form(
 ) {
   const [status, setStatus] = React.useState(NONE);
   const [fieldState, setFieldState] = React.useState(
-    origFields.reduce((acc, { defaultValue, name }) => {
-      acc[name] = typeof defaultValue !== "undefined" ? defaultValue : "";
+    origFields.reduce((acc, { defaultValue, value, name }) => {
+      acc[name] =
+        typeof defaultValue !== "undefined" ? defaultValue : value || "";
       return acc;
     }, {}),
   );
@@ -40,10 +41,14 @@ export const Form = React.forwardRef(function Form(
       // have to pull the value from the synthetic event here, because react throws it away
       const value = e.target.value;
       if (value !== fieldState[field.name]) {
-        setFieldState((prev) => ({
-          ...prev,
-          [field.name]: value,
-        }));
+        setFieldState((prev) => {
+          const newState = {
+            ...prev,
+            [field.name]: value,
+          };
+          onChange(newState);
+          return newState;
+        });
       }
     },
     value: fieldState[field.name],

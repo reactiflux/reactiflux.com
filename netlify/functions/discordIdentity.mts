@@ -15,6 +15,16 @@ const handler = async (request: Request, context: Context) => {
       ),
     ]);
     const [user] = await Promise.all([userRes.json()]);
+    if (!memberRes.ok) {
+      if (memberRes.status === 429) {
+        return new Response(
+          JSON.stringify({
+            message: memberRes.statusText,
+          }),
+          { status: memberRes.status },
+        );
+      }
+    }
     return new Response(
       JSON.stringify({
         user,

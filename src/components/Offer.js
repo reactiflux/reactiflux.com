@@ -3,92 +3,117 @@ import moment from "moment";
 import styled, { css } from "styled-components";
 import { transparentize } from "polished";
 
-import { Link, Tag } from "@components";
-import { addLinks, extractTags } from "@utils/string";
-import { pink } from "@utils/theme";
+import { Link, Tag, Reaction } from "@components";
+import { darkPink, pink } from "@utils/theme";
+import { ShowMore } from "./ShowMore";
 
-const Wrapper = styled.div`
-  ${(props) =>
-    props.last
-      ? ""
-      : css`
-          border-bottom: 2px solid ${pink};
-          margin-bottom: 4rem;
-          padding-bottom: 2rem;
-        `}
+const Wrapper = styled.article`
+  border-top: 2px solid ${pink};
+  margin-top: 2.5rem;
 
-  div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  &:last-of-type {
+    border-bottom: 2px solid ${pink};
+    margin-bottom: 2.5rem;
+  }
+  p {
+    margin-bottom: 0;
   }
 `;
+const PostBody = styled.div`
+  padding-bottom: 1.75rem;
+`;
+const Tags = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+`;
+const Reactions = styled(Tags)``;
 
-const Pre = styled.pre`
-  font-family: inherit;
-  white-space: pre-wrap;
+const GetInTouch = styled.button`
+  background: none;
+  border: 2px solid ${pink};
+  color: ${pink};
+  margin-left: 1rem;
+  border-radius: 100%;
+  padding: 0 0.35rem;
+  cursor: pointer;
 `;
 
-const GetInTouch = styled.p`
-  flex-grow: 1;
-  margin-bottom: 0;
-  padding-left: 1rem;
-  text-align: right;
-
-  button {
-    background: none;
-    border: none;
-    color: ${(props) => transparentize(0.5, pink(props))};
-    cursor: pointer;
-    font-size: inherit;
-    font-family: inherit;
-    padding: 0;
-  }
+const PostAuthor = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const AuthorInfo = styled.div`
+  display: inline-block;
+  padding: 0.75rem 0;
+`;
+const Avatar = styled.img`
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.25rem;
+  border-radius: 100%;
 `;
 
-const getJobLink = (id) =>
-  `https://discord.com/channels/102860784329052160/103882387330457600/${id}`;
 const getAuthorLink = (id) => `https://discord.com/users/${id}`;
+
+const Author = ({
+  authorHref,
+  messageHref,
+  name,
+  authorImageSrc,
+  postTime,
+  onInfoClick,
+}) => (
+  <PostAuthor>
+    <Avatar src={authorImageSrc} />
+    <AuthorInfo>
+      <Link href={authorHref}>
+        <strong>{name}</strong>
+      </Link>{" "}
+      on{" "}
+      <Link href={messageHref}>{moment(postTime).format("MMMM Do YYYY")}</Link>
+    </AuthorInfo>
+    <GetInTouch onClick={onInfoClick}>ℹ</GetInTouch>
+  </PostAuthor>
+);
 
 export const Offer = ({
   author,
-  date,
-  id,
-  last,
-  message,
+  messageLink,
+  createdAt,
+  reactions,
+  tags,
+  description,
   onClickGetInTouch,
 }) => {
-  const [tags, content] = extractTags(message);
   return (
-    <Wrapper last={last}>
-      <p>
-        {tags.map((tag) => (
-          <Tag key={tag}>{tag}</Tag>
-        ))}
-      </p>
-      {content.trim() ? (
-        <>
-          <Pre>{addLinks(content)}</Pre>
-          <hr />
-        </>
-      ) : null}
-      <div>
-        <p>
-          Posted by{" "}
-          <Link href={getAuthorLink(author.id)}>
-            <strong>{author.name}</strong>
-          </Link>{" "}
-          on{" "}
-          <Link href={getJobLink(id)}>
-            {moment(date).format("MMMM Do YYYY")}
-          </Link>
-        </p>
-        {onClickGetInTouch ? (
-          <GetInTouch>
-            <button onClick={onClickGetInTouch}>How can I get in touch?</button>
-          </GetInTouch>
-        ) : null}
-      </div>
+    <Wrapper>
+      <ShowMore>
+        <Author
+          authorHref={getAuthorLink(author.id)}
+          name={author.displayName}
+          messageHref={messageLink}
+          authorImageSrc={author.avatar}
+          postTime={createdAt}
+          onInfoClick={onClickGetInTouch}
+        />
+        <Tags>
+          {tags.map((tag) => (
+            <Tag key={tag}>{tag}</Tag>
+          ))}
+        </Tags>
+        {reactions.length > 0 && (
+          <Reactions>
+            {reactions.map(([e, c]) => (
+              <Reaction key={e}>
+                {e} {c}
+              </Reaction>
+            ))}
+          </Reactions>
+        )}
+        <PostBody dangerouslySetInnerHTML={{ __html: description }} />
+      </ShowMore>
     </Wrapper>
   );
 };

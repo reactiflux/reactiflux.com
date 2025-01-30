@@ -66,7 +66,7 @@ export const Checkbox = ({ label, ...props }) => {
   const onChange = createChangeHandler(props);
   return (
     <p>
-      <Label htmlFor={props.name}>
+      <Label htmlFor={props.name} onClick={onChange}>
         <Checkmark hidden={!props.value}>✔</Checkmark>
         <input
           checked={props.value}
