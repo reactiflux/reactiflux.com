@@ -5,9 +5,13 @@ import { transparentize } from "polished";
 
 import { Link, Tag, Reaction } from "@components";
 import { darkPink, pink } from "@utils/theme";
+import { ShowMore } from "./ShowMore";
 
 const Wrapper = styled.article`
-  &:not(:last-of-type) {
+  border-top: 2px solid ${pink};
+  margin-top: 2.5rem;
+
+  &:last-of-type {
     border-bottom: 2px solid ${pink};
     margin-bottom: 2.5rem;
   }
@@ -16,16 +20,14 @@ const Wrapper = styled.article`
   }
 `;
 const PostBody = styled.div`
-  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
 `;
 const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0.5rem;
 `;
-const Reactions = styled(Tags)`
-  padding-bottom: 2rem;
-`;
+const Reactions = styled(Tags)``;
 
 const GetInTouch = styled.button`
   background: none;
@@ -87,29 +89,31 @@ export const Offer = ({
 }) => {
   return (
     <Wrapper>
-      <Author
-        authorHref={getAuthorLink(author.id)}
-        name={author.displayName}
-        messageHref={messageLink}
-        authorImageSrc={author.avatar}
-        postTime={createdAt}
-        onInfoClick={onClickGetInTouch}
-      />
-      <Tags>
-        {tags.map((tag) => (
-          <Tag key={tag}>{tag}</Tag>
-        ))}
-      </Tags>
-      <PostBody dangerouslySetInnerHTML={{ __html: description }} />
-      {reactions.length > 0 && (
-        <Reactions>
-          {reactions.map(([e, c]) => (
-            <Reaction key={e}>
-              {e} {c}
-            </Reaction>
+      <ShowMore>
+        <Author
+          authorHref={getAuthorLink(author.id)}
+          name={author.displayName}
+          messageHref={messageLink}
+          authorImageSrc={author.avatar}
+          postTime={createdAt}
+          onInfoClick={onClickGetInTouch}
+        />
+        <Tags>
+          {tags.map((tag) => (
+            <Tag key={tag}>{tag}</Tag>
           ))}
-        </Reactions>
-      )}
+        </Tags>
+        {reactions.length > 0 && (
+          <Reactions>
+            {reactions.map(([e, c]) => (
+              <Reaction key={e}>
+                {e} {c}
+              </Reaction>
+            ))}
+          </Reactions>
+        )}
+        <PostBody dangerouslySetInnerHTML={{ __html: description }} />
+      </ShowMore>
     </Wrapper>
   );
 };
