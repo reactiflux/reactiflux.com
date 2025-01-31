@@ -14,7 +14,15 @@ const handler = async (request: Request, context: Context) => {
         { headers: { Authorization } },
       ),
     ]);
-    const [user] = await Promise.all([userRes.json()]);
+    console.log(
+      `user: ${userRes.status} ${userRes.statusText}. member: ${memberRes.status} ${memberRes.statusText}`,
+    );
+    const [user, member] = await Promise.all([
+      userRes.json(),
+      memberRes.json(),
+    ]);
+    console.log("user object:", user);
+    console.log("member object:", member);
     if (!memberRes.ok) {
       if (memberRes.status === 429) {
         return new Response(
