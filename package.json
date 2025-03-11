@@ -11,7 +11,8 @@
     "lint": "next lint",
     "test": "next lint && prettier --check .",
     "prettier": "prettier --write .",
-    "install-if-package-changed": "git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD | grep --quiet yarn.lock && yarn install || exit 0"
+    "install-if-package-changed": "git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD | grep --quiet yarn.lock && yarn install || exit 0",
+    "process-tmir": "node --experimental-strip-types scripts/process-tmir.ts"
   },
   "husky": {
     "hooks": {
