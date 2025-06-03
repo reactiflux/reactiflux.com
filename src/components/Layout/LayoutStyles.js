@@ -251,7 +251,6 @@ export function SidebarToggleButton(props) {
 }
 
 export const Wrapper = styled.div`
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: ${(props) =>
