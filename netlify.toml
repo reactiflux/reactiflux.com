@@ -6,5 +6,11 @@
   from = "/guidelines"
   to = "/conduct"
 
+[[redirects]]
+  from = "/tmir"
+  to = "https://creators.spotify.com/pod/profile/reactiflux/"
+  status = 302
+  force = true
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"
