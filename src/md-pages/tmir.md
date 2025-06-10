@@ -3,6 +3,9 @@ title: This Month in React
 description: "How busy professionals stay on top of the React ecosystem. We give you a 1 hour recap of the latest news and nuance in the React sphere. New episodes the first week of every month, with live recordings on the last Wednesday of every month in the Reactiflux stage.
 
 Hosted by friends and veterans of the community, Mark Erikson, Carl Vitullo, and Mo Khazali. They've been driving forces in the Reactiflux Discord since 2015. Mark brings his many years maintaining Redux, Carl his experience at a half-dozen startups, and Mo his depth with React Native from Theodo UK."
+
+
+# This page has been redirected to Spotify Creators in netlify.toml
 ---
 
 How busy professionals stay on top of the React ecosystem. We give you a 1 hour recap of the latest news and nuance in the React sphere. New episodes the first week of every month, with live recordings on the last Wednesday of every month in the Reactiflux stage.
