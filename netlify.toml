@@ -8,7 +8,7 @@
 
 [[redirects]]
   from = "/tmir"
-  to = "https://creators.spotify.com/pod/profile/reactiflux/"
+  to = "https://tmir.transistor.fm/"
   status = 302
   force = true
 
