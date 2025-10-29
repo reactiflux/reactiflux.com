@@ -40,18 +40,6 @@ const Index = () => {
         <p>Reactiflux staff can be reached several ways.</p>
         <ul>
           <li>
-            The public{" "}
-            <a href="discord://discord.com/channels/102860784329052160/106168778013822976">
-              #reactiflux-moderation
-            </a>{" "}
-            channel (
-            <a href="https://discord.com/channels/102860784329052160/106168778013822976">
-              web link
-            </a>
-            ), if you’re a current member. This method is{" "}
-            <strong>PUBLIC</strong> to the rest of the server.
-          </li>
-          <li>
             Our in-Discord ticketing system in{" "}
             <a href="discord://discord.com/channels/102860784329052160/1041014610532249792">
               #moderation-reports
