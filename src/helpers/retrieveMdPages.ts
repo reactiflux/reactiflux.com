@@ -10,6 +10,7 @@ import rehypeStringify from "rehype-stringify";
 import rehypeSlug from "rehype-slug";
 import remarkHeadings, { hasHeadingsData } from "@vcarl/remark-headings";
 import { toString } from "mdast-util-to-string";
+import rehypeWrapFirstList from "./rehypeWrapFirstList";
 
 const loadMd = async (path: string) => {
   const fullPath = join(process.cwd(), `${path}.md`);
@@ -39,8 +40,26 @@ const remarkHtmlProcessor = unified()
   .use(rehypeSlug)
   .use(rehypeStringify, { allowDangerousHtml: true });
 
-export const processMd = (mdSource: string) => {
-  const vfile = remarkHtmlProcessor.processSync(mdSource);
+export interface ProcessMdOptions {
+  wrapFirstList?: boolean;
+}
+
+export const processMd = (mdSource: string, options?: ProcessMdOptions) => {
+  let processor = remarkHtmlProcessor;
+
+  // If wrapFirstList is enabled, add the rehype plugin
+  if (options?.wrapFirstList) {
+    processor = unified()
+      .use(parse)
+      .use(remarkGfm)
+      .use(remarkHeadings as ReturnType<ReturnType<typeof unified>["use"]>)
+      .use(remarkRehype, { allowDangerousHtml: true })
+      .use(rehypeSlug)
+      .use(rehypeWrapFirstList)
+      .use(rehypeStringify, { allowDangerousHtml: true });
+  }
+
+  const vfile = processor.processSync(mdSource);
   if (hasHeadingsData(vfile.data)) {
     return { html: vfile.toString(), headings: vfile.data.headings };
   }

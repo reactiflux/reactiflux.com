@@ -34,5 +34,32 @@ export const MarkdownStyles = createGlobalStyle`
     word-break: break-word;
     word-wrap: break-word;
   }
+  li > details {
+    display: block;
+  }
+  summary {
+    cursor: pointer;
+    user-select: none;
+    list-style: none;
+    display: inline;
+    &::marker,
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &::before {
+      content: '▶ ';
+      display: inline;
+      font-size: 0.75em;
+      transition: transform 0.15s ease;
+      display: inline-block;
+      width: 1em;
+    }
+  }
+  details[open] > summary::before {
+    transform: rotate(90deg);
+  }
+  details > ul {
+    margin-top: 0.5rem;
+  }
 }
 `;
