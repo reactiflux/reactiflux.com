@@ -41,7 +41,7 @@ export const MarkdownStyles = createGlobalStyle`
     cursor: pointer;
     user-select: none;
     list-style: none;
-    display: inline;
+    display: block;
     &::marker,
     &::-webkit-details-marker {
       display: none;
