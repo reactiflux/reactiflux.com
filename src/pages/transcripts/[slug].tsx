@@ -88,7 +88,7 @@ export const getStaticProps = async ({
     props: {
       all,
       ...pick(["title", "date"], doc),
-      html: processMd(doc.content).html,
+      html: processMd(doc.content, { wrapFirstList: true }).html,
       description: processMdPlaintext(doc.description).html,
     },
   };
