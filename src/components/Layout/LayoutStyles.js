@@ -57,14 +57,8 @@ const standardLayout = css`
   }
 
   details {
-    margin-bottom: 1rem;
-
     & summary {
       cursor: pointer;
-    }
-
-    &:last-of-type {
-      margin-bottom: 2rem;
     }
   }
 

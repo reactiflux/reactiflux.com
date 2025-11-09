@@ -29,6 +29,9 @@ export const MarkdownStyles = createGlobalStyle`
       text-decoration: underline;
     }
   }
+  code {
+    font-size: 80%;
+  }
   a, code, strong {
     white-space: pre-wrap;
     word-break: break-word;
@@ -57,9 +60,6 @@ export const MarkdownStyles = createGlobalStyle`
   }
   details[open] > summary::before {
     transform: rotate(90deg);
-  }
-  details > ul {
-    margin-top: 0.5rem;
   }
 }
 `;

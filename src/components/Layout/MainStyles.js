@@ -62,13 +62,10 @@ html body {
   }
 
   ul, ol {
-    padding-left: 3rem;
-
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
     li {
       margin-bottom: 0.5rem;
-    }
-    li:first-of-type {
-      margin-top: 0.5rem;
     }
   }
 
@@ -135,6 +132,10 @@ html body {
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  summary::before {
+    margin-right: 0.5rem;
   }
 }
 `;
