@@ -38,7 +38,10 @@ export default function Transcripts({
             <p>
               <em>Transcript from {date}</em>
             </p>
-            <div dangerouslySetInnerHTML={{ __html: latest.html }} />
+            <div
+              className="markdown"
+              dangerouslySetInnerHTML={{ __html: latest.html }}
+            />
           </div>
         </>
       )}
@@ -68,7 +71,7 @@ export async function getStaticProps() {
         title: latest.title,
         description: latest.description,
         date: latest.date,
-        html: processMd(latest.content).html,
+        html: processMd(latest.content, { wrapFirstList: true }).html,
       },
     },
   };
