@@ -6,8 +6,8 @@ import type { Root, Element, Text, ElementContent } from "hast";
  * Looks for list items that start with `[<timecode link>]` pattern
  * and wraps them in <code> tags for styling.
  *
- * Input:  <li>[<a href="#intro">00:00:00</a>] Intro</li>
- * Output: <li><code>[<a href="#intro">00:00:00</a>]</code> Intro</li>
+ * Input:  <li>[<a href="#intro">00:00</a>] Intro</li>
+ * Output: <li><code>[<a href="#intro">00:00</a>]</code> Intro</li>
  */
 export default function rehypeWrapTimecodes() {
   return (tree: Root) => {
