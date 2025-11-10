@@ -11,6 +11,7 @@ import rehypeSlug from "rehype-slug";
 import remarkHeadings, { hasHeadingsData } from "@vcarl/remark-headings";
 import { toString } from "mdast-util-to-string";
 import rehypeWrapFirstList from "./rehypeWrapFirstList";
+import rehypeWrapTimecodes from "./rehypeWrapTimecodes";
 
 const loadMd = async (path: string) => {
   const fullPath = join(process.cwd(), `${path}.md`);
@@ -55,6 +56,7 @@ export const processMd = (mdSource: string, options?: ProcessMdOptions) => {
       .use(remarkHeadings as ReturnType<ReturnType<typeof unified>["use"]>)
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeSlug)
+      .use(rehypeWrapTimecodes)
       .use(rehypeWrapFirstList)
       .use(rehypeStringify, { allowDangerousHtml: true });
   }

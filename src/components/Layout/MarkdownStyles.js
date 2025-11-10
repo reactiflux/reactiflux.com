@@ -37,13 +37,16 @@ export const MarkdownStyles = createGlobalStyle`
     word-break: break-word;
     word-wrap: break-word;
   }
+  ul {
+    list-style: none;
+  }
   li > details {
     display: block;
   }
   summary {
     cursor: pointer;
+    margin-left: -2rem;
     user-select: none;
-    list-style: none;
     display: block;
     &::marker,
     &::-webkit-details-marker {
