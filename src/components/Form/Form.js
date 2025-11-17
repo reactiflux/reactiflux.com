@@ -46,7 +46,7 @@ export const Form = React.forwardRef(function Form(
             ...prev,
             [field.name]: value,
           };
-          onChange(newState);
+          onChange?.(newState);
           return newState;
         });
       }
