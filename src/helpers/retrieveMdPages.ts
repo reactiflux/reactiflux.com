@@ -126,3 +126,9 @@ export const loadMdBySlug = async <DocType>(
   mapped.push(["content", content]);
   return Object.fromEntries(mapped) as DocType;
 };
+
+export const loadRoadmap = async <T>(directory: string, slug: string) => {
+  const out = await loadMdBySlug(directory, slug);
+  // …
+  return out as T;
+};
