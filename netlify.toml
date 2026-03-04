@@ -1,6 +1,6 @@
 [build]
-  command = "yarn build"
-  publish = ".next/"
+  command = "pnpm build"
+  publish = "dist/"
 
 [[redirects]]
   from = "/guidelines"
@@ -11,6 +11,3 @@
   to = "https://tmir.transistor.fm/"
   status = 302
   force = true
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"

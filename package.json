@@ -16,7 +16,7 @@
     }
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.6.12",
+    "@astrojs/netlify": "^6.6.4",
     "@netlify/functions": "^3.0.0",
     "@next/third-parties": "^14.1.0",
     "@tailwindcss/vite": "^4.2.1",
