@@ -8,12 +8,11 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "process-tmir": "node --experimental-strip-types scripts/process-tmir.ts"
+    "process-tmir": "node --experimental-strip-types scripts/process-tmir.ts",
+    "prepare": "husky"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "@astrojs/netlify": "^6.6.4",
@@ -33,7 +32,6 @@
     "eslint": "7",
     "eslint-config-next": "12.0.4",
     "gray-matter": "^4.0.3",
-    "husky": "^4.2.5",
     "mdast-util-to-string": "^3.1.0",
     "minireset.css": "^0.0.6",
     "moment": "^2.27.0",
@@ -41,8 +39,6 @@
     "next": "^12.3.4",
     "next-sitemap": "^4.2.2",
     "polished": "^3.6.5",
-    "prettier": "^2.1.0",
-    "pretty-quick": "^3.0.0",
     "react": "~18",
     "react-dom": "~18",
     "react-headroom": "^2.1.2",
@@ -76,5 +72,10 @@
       "unix-dgram",
       "workerd"
     ]
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.2",
+    "prettier": "^2.8.8"
   }
 }
