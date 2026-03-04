@@ -2,34 +2,32 @@
   "name": "reactiflux.com",
   "version": "0.3.14",
   "private": true,
+  "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && yarn build:sitemap",
-    "build:sitemap": "next-sitemap",
-    "start": "next start",
-    "lint": "next lint",
-    "test": "next lint && prettier --check .",
-    "prettier": "prettier --write .",
-    "install-if-package-changed": "git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD | grep --quiet yarn.lock && yarn install || exit 0",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
     "process-tmir": "node --experimental-strip-types scripts/process-tmir.ts"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "post-merge": "yarn install-if-package-changed",
-      "post-checkout": "yarn install-if-package-changed"
+      "pre-commit": "pretty-quick --staged"
     }
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^12.6.12",
     "@netlify/functions": "^3.0.0",
     "@next/third-parties": "^14.1.0",
+    "@tailwindcss/vite": "^4.2.1",
     "@tanstack/react-query": "^5.65.0",
+    "@types/hast": "^3.0.4",
     "@types/node": "20.6.0",
     "@types/react": "17.0.37",
     "@types/styled-components": "^5.1.15",
     "@vcarl/remark-headings": "^0.0.1",
     "airtable": "^0.12.2",
+    "astro": "^5.18.0",
     "client-oauth2": "^4.3.3",
     "date-fns": "^2.27.0",
     "eslint": "7",
@@ -50,20 +48,33 @@
     "react-headroom": "^2.1.2",
     "react-helmet": "^5.2.1",
     "react-hook-form": "^7.49.2",
-    "rehype-slug": "^5.0.0",
+    "rehype-slug": "^6.0.0",
     "rehype-stringify": "^9.0.2",
-    "remark-gfm": "^3.0.1",
+    "remark-gfm": "^4.0.1",
     "remark-parse": "^10.0.1",
     "remark-rehype": "^10.1.0",
     "styled-components": "^5.3.3",
+    "tailwindcss": "^4.2.1",
     "typeface-poppins": "^0.0.72",
     "typeface-space-mono": "^0.0.71",
     "typeface-work-sans": "^0.0.72",
     "typescript": "4.5.2",
     "unified": "^10.1.1",
+    "unist-util-visit": "^5.1.0",
     "zod": "^3.23.8"
   },
   "prettier": {
     "trailingComma": "all"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "husky",
+      "netlify-cli",
+      "sharp",
+      "unix-dgram",
+      "workerd"
+    ]
   }
 }

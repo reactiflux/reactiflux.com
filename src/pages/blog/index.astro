@@ -1,0 +1,24 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+---
+
+<BaseLayout title="Blog">
+  <h1 class="font-heading text-3xl font-bold mb-4">Blog</h1>
+  <ul class="list-disc pl-6">
+    {posts.map((post) => (
+      <li>
+        <a href={`/blog/${post.id}`} class="text-dark-pink underline hover:text-pink">
+          {post.data.title}
+        </a>
+        <span class="text-gray-500 text-sm ml-2">
+          {post.data.date.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
+        </span>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

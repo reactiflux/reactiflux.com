@@ -1,0 +1,24 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const transcripts = (await getCollection("transcripts")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+---
+
+<BaseLayout title="Transcripts">
+  <h1 class="font-heading text-3xl font-bold mb-4">Transcripts</h1>
+  <ul class="list-disc pl-6">
+    {transcripts.map((t) => (
+      <li>
+        <a href={`/transcripts/${t.id}`} class="text-dark-pink underline hover:text-pink">
+          {t.data.title}
+        </a>
+        <span class="text-gray-500 text-sm ml-2">
+          {t.data.date.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
+        </span>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
