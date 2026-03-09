@@ -1,0 +1,62 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const transcripts = (await getCollection("transcripts")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+const blogPosts = (await getCollection("blog")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+const mdPages = await getCollection("md-pages");
+---
+
+<BaseLayout title="Home">
+  <h1 class="font-heading text-3xl font-bold mb-4">Reactiflux</h1>
+  <p class="mb-8">The largest chat community of React developers.</p>
+
+  <section class="mb-8">
+    <h2 class="font-heading text-xl font-bold mb-3">Pages</h2>
+    <ul class="list-disc pl-6">
+      {mdPages.map((page) => (
+        <li>
+          <a href={`/${page.id}`} class="text-dark-pink underline hover:text-pink">
+            {page.data.title ?? page.id.charAt(0).toUpperCase() + page.id.slice(1)}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="font-heading text-xl font-bold mb-3">Blog</h2>
+    <ul class="list-disc pl-6">
+      {blogPosts.map((post) => (
+        <li>
+          <a href={`/blog/${post.id}`} class="text-dark-pink underline hover:text-pink">
+            {post.data.title}
+          </a>
+          <span class="text-gray-500 text-sm ml-2">
+            {post.data.date.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
+          </span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="font-heading text-xl font-bold mb-3">Transcripts</h2>
+    <ul class="list-disc pl-6">
+      {transcripts.map((t) => (
+        <li>
+          <a href={`/transcripts/${t.id}`} class="text-dark-pink underline hover:text-pink">
+            {t.data.title}
+          </a>
+          <span class="text-gray-500 text-sm ml-2">
+            {t.data.date.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
+          </span>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>

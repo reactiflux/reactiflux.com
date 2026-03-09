@@ -2,18 +2,10 @@
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
-pnpm-lock.yaml
 
-# testing
-/coverage
-
-# next.js
-/.next/
-# next sitemap
-sitemap*
-robots.txt
+# astro
+dist/
+.astro/
 
 # misc
 .DS_Store
@@ -21,20 +13,17 @@ robots.txt
 
 # debug
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # local env files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-
-# vercel
-.vercel
+.env
 
 .netlify
-.env
 
 # typescript
 *.tsbuildinfo
+
+tmp.md

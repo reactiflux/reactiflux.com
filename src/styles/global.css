@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue: #05d7ff;
+  --color-green: #44b892;
+  --color-pink: #dc1d64;
+  --color-yellow: #e6a735;
+  --color-dark-pink: #b3124d;
+  --color-foreground: #51234f;
+  --color-background: white;
+
+  --font-heading: "Space Mono", monospace;
+  --font-body: "Work Sans", sans-serif;
+  --font-accent: "Poppins", sans-serif;
+}
