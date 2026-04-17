@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^6.6.4",
+    "@astrojs/sitemap": "^3.7.2",
     "@netlify/functions": "^3.0.0",
     "@tailwindcss/vite": "^4.2.1",
     "@tanstack/react-query": "^5.65.0",

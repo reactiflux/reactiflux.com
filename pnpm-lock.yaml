@@ -10,6 +10,9 @@ importers:
       "@astrojs/netlify":
         specifier: ^6.6.4
         version: 6.6.4(@types/node@20.6.0)(astro@5.18.0(@netlify/blobs@8.1.0)(@types/node@20.6.0)(jiti@2.6.1)(lightningcss@1.31.1)(rollup@4.59.0)(typescript@4.5.2)(yaml@2.8.2))(jiti@2.6.1)(lightningcss@1.31.1)(rollup@4.59.0)(yaml@2.8.2)
+      "@astrojs/sitemap":
+        specifier: ^3.7.2
+        version: 3.7.2
       "@netlify/functions":
         specifier: ^3.0.0
         version: 3.0.0
@@ -138,6 +141,12 @@ packages:
         integrity: sha512-q8VwfU/fDZNoDOf+r7jUnMC2//H2l0TuQ6FkGJL8vD8nw/q5KiL3DS1KKBI3QhI9UQhpJ5dc7AtqfbXWuOgLCQ==,
       }
     engines: { node: 18.20.8 || ^20.3.0 || >=22.0.0 }
+
+  "@astrojs/sitemap@3.7.2":
+    resolution:
+      {
+        integrity: sha512-PqkzkcZTb5ICiyIR8VoKbIAP/laNRXi5tw616N1Ckk+40oNB8Can1AzVV56lrbC5GKSZFCyJYUVYqVivMisvpA==,
+      }
 
   "@astrojs/telemetry@3.3.0":
     resolution:
@@ -3301,6 +3310,12 @@ packages:
         integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==,
       }
 
+  "@types/node@24.12.2":
+    resolution:
+      {
+        integrity: sha512-A1sre26ke7HDIuY/M23nd9gfB+nrmhtYyMINbjI1zHJxYteKR6qSMX56FsmjMcDb3SMcjJg5BiRRgOCC/yBD0g==,
+      }
+
   "@types/normalize-package-data@2.4.4":
     resolution:
       {
@@ -3335,6 +3350,12 @@ packages:
     resolution:
       {
         integrity: sha512-XISRgDJ2Tc5q4TRqvgJtzsRkFYNJzZrhTdtMoGVBttwzzQJkPnS3WWTFc7kuDRoPtPakl+T+OfdEUjYJj7Jbow==,
+      }
+
+  "@types/sax@1.2.7":
+    resolution:
+      {
+        integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==,
       }
 
   "@types/tough-cookie@4.0.5":
@@ -3896,6 +3917,12 @@ packages:
     resolution:
       {
         integrity: sha512-58S9QDqG0Xx27YwPSt9fJxivjYl432YCwfDMfZ+71RAqUrZef7LrKQZ3LHLOwCS4FLNBplP533Zx895SeOCHvA==,
+      }
+
+  arg@5.0.2:
+    resolution:
+      {
+        integrity: sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg==,
       }
 
   argparse@1.0.10:
@@ -10374,6 +10401,14 @@ packages:
         integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==,
       }
 
+  sitemap@9.0.1:
+    resolution:
+      {
+        integrity: sha512-S6hzjGJSG3d6if0YoF5kTyeRJvia6FSTBroE5fQ0bu1QNxyJqhhinfUsXi9fH3MgtXODWvwo2BDyQSnhPQ88uQ==,
+      }
+    engines: { node: ">=20.19.5", npm: ">=10.8.2" }
+    hasBin: true
+
   slash@3.0.0:
     resolution:
       {
@@ -10555,6 +10590,12 @@ packages:
         integrity: sha512-UhDfHmA92YAlNnCfhmq0VeNL5bDbiZGg7sZ2IvPsXubGkiNa9EC+tUTsjBRsYUAz87btI6/1wf4XoVvQ3uRnmQ==,
       }
     engines: { node: ">=18" }
+
+  stream-replace-string@2.0.0:
+    resolution:
+      {
+        integrity: sha512-TlnjJ1C0QrmxRNrON00JvaFFlNh5TTG00APw23j74ET7gkQpTASi6/L2fuiav8pzK715HXtUeClpBTw2NPSn6w==,
+      }
 
   streamx@2.15.0:
     resolution:
@@ -11242,6 +11283,12 @@ packages:
     resolution:
       {
         integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==,
+      }
+
+  undici-types@7.16.0:
+    resolution:
+      {
+        integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==,
       }
 
   unenv@1.10.0:
@@ -12168,6 +12215,12 @@ snapshots:
   "@astrojs/prism@3.3.0":
     dependencies:
       prismjs: 1.30.0
+
+  "@astrojs/sitemap@3.7.2":
+    dependencies:
+      sitemap: 9.0.1
+      stream-replace-string: 2.0.0
+      zod: 4.3.6
 
   "@astrojs/telemetry@3.3.0":
     dependencies:
@@ -14032,6 +14085,10 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
+  "@types/node@24.12.2":
+    dependencies:
+      undici-types: 7.16.0
+
   "@types/normalize-package-data@2.4.4": {}
 
   "@types/parse5@6.0.3": {}
@@ -14046,6 +14103,10 @@ snapshots:
   "@types/retry@0.12.1": {}
 
   "@types/retry@0.12.2": {}
+
+  "@types/sax@1.2.7":
+    dependencies:
+      "@types/node": 20.6.0
 
   "@types/tough-cookie@4.0.5": {}
 
@@ -14460,6 +14521,8 @@ snapshots:
       readable-stream: 3.6.2
 
   arg@4.1.3: {}
+
+  arg@5.0.2: {}
 
   argparse@1.0.10:
     dependencies:
@@ -18957,6 +19020,13 @@ snapshots:
 
   sisteransi@1.0.5: {}
 
+  sitemap@9.0.1:
+    dependencies:
+      "@types/node": 24.12.2
+      "@types/sax": 1.2.7
+      arg: 5.0.2
+      sax: 1.5.0
+
   slash@3.0.0: {}
 
   slash@4.0.0: {}
@@ -19037,6 +19107,8 @@ snapshots:
   std-env@3.8.0: {}
 
   stdin-discarder@0.2.2: {}
+
+  stream-replace-string@2.0.0: {}
 
   streamx@2.15.0:
     dependencies:
@@ -19423,6 +19495,8 @@ snapshots:
   uncrypto@0.1.3: {}
 
   undici-types@5.26.5: {}
+
+  undici-types@7.16.0: {}
 
   unenv@1.10.0:
     dependencies:
