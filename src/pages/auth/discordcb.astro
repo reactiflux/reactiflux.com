@@ -1,0 +1,53 @@
+---
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Signing in&hellip;</title>
+  </head>
+  <body>
+    <p>Signing in&hellip; you can close this window.</p>
+    <script is:inline>
+      (function () {
+        const hash = location.hash.replace(/^#/, "");
+        const params = new URLSearchParams(hash);
+        const accessToken = params.get("access_token");
+        const tokenType = params.get("token_type");
+        try {
+          if (accessToken && tokenType) {
+            localStorage.setItem(
+              "doa",
+              JSON.stringify({
+                state: "ok",
+                token: tokenType + " " + accessToken,
+                raw: hash,
+              }),
+            );
+          } else {
+            localStorage.setItem(
+              "doa",
+              JSON.stringify({
+                state: "err",
+                message:
+                  params.get("error_description") ||
+                  params.get("error") ||
+                  "Discord did not return an access token",
+                raw: hash,
+              }),
+            );
+          }
+        } catch (_) {
+          /* localStorage unavailable (e.g. private mode) */
+        }
+        try {
+          window.close();
+        } catch (_) {
+          /* non-popup window */
+        }
+      })();
+    </script>
+  </body>
+</html>

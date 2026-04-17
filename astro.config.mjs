@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import netlify from "@astrojs/netlify";
 import sitemap from "@astrojs/sitemap";
+import react from "@astrojs/react";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import rehypeWrapTimecodes from "./src/plugins/rehype-wrap-timecodes.ts";
@@ -13,6 +14,7 @@ export default defineConfig({
   output: "static",
   adapter: netlify(),
   integrations: [
+    react(),
     sitemap({
       serialize(item) {
         try {

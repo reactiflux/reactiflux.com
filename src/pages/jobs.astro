@@ -1,0 +1,9 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import DiscordAuthGate from "@/components/jobs/DiscordAuthGate";
+---
+
+<BaseLayout title="Jobs">
+  <h1 class="font-heading text-3xl font-bold mb-6">Jobs</h1>
+  <DiscordAuthGate client:only="react" />
+</BaseLayout>

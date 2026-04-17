@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^6.6.4",
+    "@astrojs/react": "^5.0.3",
     "@astrojs/sitemap": "^3.7.2",
     "@netlify/functions": "^3.0.0",
     "@tailwindcss/vite": "^4.2.1",
@@ -61,8 +62,10 @@
     ]
   },
   "devDependencies": {
+    "@playwright/test": "^1.59.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.3.2",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "serve": "^14.2.6"
   }
 }
