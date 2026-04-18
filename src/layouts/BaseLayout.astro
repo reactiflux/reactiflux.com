@@ -5,9 +5,15 @@ import "@/styles/markdown.css";
 interface Props {
   title: string;
   description?: string;
+  wide?: boolean;
 }
 
-const { title, description = "The largest chat community of React developers." } = Astro.props;
+const {
+  title,
+  description = "The largest chat community of React developers.",
+  wide = false,
+} = Astro.props;
+const containerClass = wide ? "max-w-5xl" : "max-w-4xl";
 ---
 
 <html lang="en">
@@ -30,18 +36,18 @@ const { title, description = "The largest chat community of React developers." }
   </head>
   <body class="font-body text-foreground bg-background">
     <nav class="border-b border-gray-200 px-6 py-4">
-      <div class="max-w-4xl mx-auto flex items-center gap-6">
+      <div class={`${containerClass} mx-auto flex items-center gap-6`}>
         <a href="/" class="font-heading font-bold text-lg">Reactiflux</a>
         <a href="/transcripts" class="hover:text-dark-pink">Transcripts</a>
         <a href="/blog" class="hover:text-dark-pink">Blog</a>
         <a href="/conduct" class="hover:text-dark-pink">Conduct</a>
       </div>
     </nav>
-    <main class="max-w-4xl mx-auto px-6 py-8">
+    <main class={`${containerClass} mx-auto px-6 py-8`}>
       <slot />
     </main>
     <footer class="border-t border-gray-200 px-6 py-6 mt-12">
-      <div class="max-w-4xl mx-auto text-sm text-gray-500">
+      <div class={`${containerClass} mx-auto text-sm text-gray-500`}>
         &copy; {new Date().getFullYear()} Reactiflux
       </div>
     </footer>

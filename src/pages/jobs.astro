@@ -3,7 +3,10 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import DiscordAuthGate from "@/components/jobs/DiscordAuthGate";
 ---
 
-<BaseLayout title="Jobs">
-  <h1 class="font-heading text-3xl font-bold mb-6">Jobs</h1>
+<BaseLayout title="Jobs" wide>
+  <h1 class="mb-8 flex flex-wrap items-baseline gap-x-4 font-accent font-bold leading-none">
+    <span class="text-blue text-5xl sm:text-6xl">Reactiflux</span>
+    <span class="text-pink text-6xl sm:text-7xl tracking-tight">JOBS</span>
+  </h1>
   <DiscordAuthGate client:only="react" />
 </BaseLayout>
