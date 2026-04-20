@@ -24,7 +24,7 @@ You should be able to answer "yes" to:
 And "no" to:
 
 - Are you announcing an announcement?
-- Are you soliciting [spec work](https://www.nospec.com/)?
+- Are you soliciting [spec work](https://www.aiga.org/resources/aiga-position-on-spec-work)?
 - Are you running a giveaway, airdrop, or other contest?
 - Are you directly asking people to subscribe for updates?
 
