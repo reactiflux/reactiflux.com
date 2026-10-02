@@ -15,6 +15,21 @@ import {
 } from "@assets/logos";
 import { ButtonLink, Layout, Link } from "@components";
 import { isMobile } from "@utils/theme";
+import { SITE_DESCRIPTION, SITE_URL } from "@components/Layout/SEO";
+
+const ORGANIZATION = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Reactiflux",
+  url: `${SITE_URL}/`,
+  logo: `${SITE_URL}/logo-banner.png`,
+  description: SITE_DESCRIPTION,
+  sameAs: [
+    "https://discord.gg/reactiflux",
+    "https://github.com/reactiflux",
+    "https://twitter.com/reactiflux",
+  ],
+};
 
 const P = styled.p`
   ${(props) =>
@@ -33,7 +48,12 @@ const P = styled.p`
 
 const Index = ({ userCount }) => {
   return (
-    <Layout title="Welcome" homepage>
+    <Layout
+      title="Reactiflux: the React & JavaScript community on Discord"
+      description={SITE_DESCRIPTION}
+      structuredData={ORGANIZATION}
+      homepage
+    >
       <h1>
         <span>Welcome to</span>
         Reactiflux
@@ -91,7 +111,7 @@ const Index = ({ userCount }) => {
         >
           Join Reactiflux
         </ButtonLink>
-        <ButtonLink href="/schedule/" title="Q&A Schedule" secondary>
+        <ButtonLink href="/schedule" title="Q&A Schedule" secondary>
           Q&A Schedule
         </ButtonLink>
       </P>

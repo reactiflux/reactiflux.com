@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { z } from "zod";
 import { type RootTranscript } from "@utils/transcript-types";
 import { useRouter } from "next/router";
+import Head from "next/head";
 import { Layout } from "@components";
 
 const getNestedProperty = <T extends any>(
@@ -46,7 +47,20 @@ export const getStaticProps = (t: { params: { slug: Slug } }) => {
   };
 };
 
+// An unfinished experiment with a hardcoded slug. noindex goes on every render
+// path, including the loading state that is all the prerendered HTML holds.
 export default function PodPage({ slug }: { slug: Slug }) {
+  return (
+    <>
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
+      <PodPlayer slug={slug} />
+    </>
+  );
+}
+
+function PodPlayer({ slug }: { slug: Slug }) {
   console.log(slug);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);

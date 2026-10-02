@@ -1,5 +1,6 @@
 ---
 title: Get Better Help
+description: "How to ask questions in Reactiflux that get good answers: etiquette, sharing code, and getting the most out of a large developer chat community."
 sidebar: true
 ---
 

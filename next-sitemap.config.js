@@ -9,6 +9,9 @@ module.exports = {
   generateRobotsTxt: true, // (optional)
   priority: 1,
   autoLastmod: false,
+  // The OAuth callback and the unfinished podcast player carry noindex. They
+  // stay crawlable in robots.txt: Google has to fetch a page to see noindex.
+  exclude: ["/auth/*", "/podcasts/*", "/404", "/blog/1"],
   transform: async (config, url) => {
     if (url.includes("/blog/post/")) {
       return await transformBlogPost(url);

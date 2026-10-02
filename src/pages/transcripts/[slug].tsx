@@ -17,16 +17,17 @@ export default function Transcript({
   html,
 }: Awaited<ReturnType<typeof getStaticProps>>["props"]) {
   // A ridiculous method to ignore timezones
-  const formattedDate = format(add(parseISO(date), { days: 1 }), "EEEE PPP");
+  const day = add(parseISO(date), { days: 1 });
+  const formattedDate = format(day, "EEEE PPP");
 
   return (
     <Layout
-      title={title}
+      // The month keeps repeat guests (two Jared Palmer Q&As, two React
+      // Confs) from sharing a title, and says how current the answers are.
+      title={`${title}: Q&A transcript (${format(day, "MMMM yyyy")})`}
       sidebar
       as={undefined}
-      description={`${title} | Q&A from ${date}
-
-${description}`}
+      description={metaDescription(title, format(day, "PPP"), description)}
     >
       {(setSidebar: any) => (
         <>
@@ -66,6 +67,15 @@ ${description}`}
   );
 }
 
+/** One line for search results: who, when, then as much of the blurb as fits. */
+function metaDescription(title: string, date: string, blurb: string) {
+  const lead = `Transcript of the Reactiflux Q&A with ${title}, ${date}.`;
+  const rest = blurb.replace(/\s+/g, " ").trim();
+  if (!rest) return lead;
+  const full = `${lead} ${rest}`;
+  return full.length <= 200 ? full : `${full.slice(0, 197).trimEnd()}…`;
+}
+
 export const getStaticProps = async ({
   params,
 }: {
@@ -89,7 +99,7 @@ export const getStaticProps = async ({
       all,
       ...pick(["title", "date"], doc),
       html: processMd(doc.content, { wrapFirstList: true }).html,
-      description: processMdPlaintext(doc.description).html,
+      description: processMdPlaintext(doc.description ?? "").html,
     },
   };
 };

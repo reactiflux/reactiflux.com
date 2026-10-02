@@ -1,1 +1,48 @@
-/transcripts/tmir-204-08 /transcripts/tmir-2024-08
+# This Month in React transcripts moved to tmir.reactiflux.com. Each old
+# transcript URL redirects permanently to its episode page there; the
+# heading anchors are generated with the same slug rule, so #fragments
+# still land on the same section.
+/transcripts/tmir-2024-01         https://tmir.reactiflux.com/episodes/2024-01  301!
+/transcripts/tmir-2024-02         https://tmir.reactiflux.com/episodes/2024-02  301!
+/transcripts/tmir-2024-03         https://tmir.reactiflux.com/episodes/2024-03  301!
+/transcripts/tmir-2024-04         https://tmir.reactiflux.com/episodes/2024-04  301!
+/transcripts/tmir-2024-05         https://tmir.reactiflux.com/episodes/2024-05  301!
+/transcripts/tmir-2024-06         https://tmir.reactiflux.com/episodes/2024-06  301!
+/transcripts/tmir-2024-07         https://tmir.reactiflux.com/episodes/2024-07  301!
+/transcripts/tmir-2024-08         https://tmir.reactiflux.com/episodes/2024-08  301!
+/transcripts/tmir-2024-09         https://tmir.reactiflux.com/episodes/2024-09  301!
+/transcripts/tmir-2024-10         https://tmir.reactiflux.com/episodes/2024-10  301!
+/transcripts/tmir-2024-11         https://tmir.reactiflux.com/episodes/2024-11  301!
+/transcripts/tmir-2024-12         https://tmir.reactiflux.com/episodes/2024-12  301!
+/transcripts/tmir-2025-01         https://tmir.reactiflux.com/episodes/2025-01  301!
+/transcripts/tmir-2025-02         https://tmir.reactiflux.com/episodes/2025-02  301!
+/transcripts/tmir-2025-03         https://tmir.reactiflux.com/episodes/2025-03  301!
+/transcripts/tmir-2025-04         https://tmir.reactiflux.com/episodes/2025-04  301!
+/transcripts/tmir-2025-05         https://tmir.reactiflux.com/episodes/2025-05  301!
+/transcripts/tmir-2025-06         https://tmir.reactiflux.com/episodes/2025-06  301!
+/transcripts/tmir-2025-07         https://tmir.reactiflux.com/episodes/2025-07  301!
+/transcripts/tmir-2025-08         https://tmir.reactiflux.com/episodes/2025-08  301!
+/transcripts/tmir-2025-09         https://tmir.reactiflux.com/episodes/2025-09  301!
+/transcripts/tmir-2025-10         https://tmir.reactiflux.com/episodes/2025-10  301!
+/transcripts/tmir-2025-11         https://tmir.reactiflux.com/episodes/2025-11  301!
+/transcripts/tmir-2025-12         https://tmir.reactiflux.com/episodes/2025-12  301!
+/transcripts/tmir-2026-01         https://tmir.reactiflux.com/episodes/2026-01  301!
+/transcripts/tmir-2026-02         https://tmir.reactiflux.com/episodes/2026-02  301!
+/transcripts/tmir-2026-04         https://tmir.reactiflux.com/episodes/2026-04  301!
+/transcripts/tmir-2026-05         https://tmir.reactiflux.com/episodes/2026-05  301!
+/transcripts/tmir-2026-06         https://tmir.reactiflux.com/episodes/2026-06  301!
+/transcripts/tmir-2026-07         https://tmir.reactiflux.com/episodes/2026-07  301!
+/transcripts/tmir-2026-08         https://tmir.reactiflux.com/episodes/2026-08  301!
+/transcripts/tmir-april-2023      https://tmir.reactiflux.com/episodes/2023-04  301!
+/transcripts/tmir-august-2023     https://tmir.reactiflux.com/episodes/2023-08  301!
+/transcripts/tmir-dec-2023        https://tmir.reactiflux.com/episodes/2023-12  301!
+/transcripts/tmir-june-2023       https://tmir.reactiflux.com/episodes/2023-06  301!
+/transcripts/tmir-march-2023      https://tmir.reactiflux.com/episodes/2023-03  301!
+/transcripts/tmir-may-2023        https://tmir.reactiflux.com/episodes/2023-05  301!
+/transcripts/tmir-nov-2023        https://tmir.reactiflux.com/episodes/2023-11  301!
+/transcripts/tmir-october-2023    https://tmir.reactiflux.com/episodes/2023-10  301!
+/transcripts/tmir-september-2023  https://tmir.reactiflux.com/episodes/2023-09  301!
+/transcripts/tmir-204-08          https://tmir.reactiflux.com/episodes/2024-08  301!
+
+# Page 1 of the blog index is /blog; /blog/1 is built too but never linked.
+/blog/1  /blog  301!
