@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 
 const DiscordCB = () => {
   React.useEffect(() => {
@@ -58,7 +59,12 @@ const DiscordCB = () => {
         window.close();
       });
   });
-  return null;
+  // An OAuth popup callback, not a page anyone should land on from search.
+  return (
+    <Head>
+      <meta name="robots" content="noindex" />
+    </Head>
+  );
 };
 
 export default DiscordCB;

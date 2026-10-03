@@ -15,13 +15,14 @@ export default function MarkdownPage({
   title,
   headings,
   sidebar,
+  description,
 }: Awaited<ReturnType<typeof getStaticProps>>["props"]) {
   return (
     <Layout
       title={title}
       sidebar={sidebar}
       as={undefined}
-      description={undefined}
+      description={description}
     >
       {(setSidebar: any) => (
         <>
@@ -77,6 +78,7 @@ export const getStaticProps = async ({
   return {
     props: {
       ...pick(["title", "sidebar"], doc),
+      description: doc.description ?? null,
       headings,
       html,
     },

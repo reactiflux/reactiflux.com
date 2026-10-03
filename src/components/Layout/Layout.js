@@ -18,6 +18,8 @@ export function Layout({
   children,
   description,
   title,
+  noindex = false,
+  structuredData = undefined,
   sidebar = false,
   ...props
 }) {
@@ -55,7 +57,12 @@ export function Layout({
         <MarkdownStyles />
         <Menu />
         <Main largeTitle as={as} {...props} isOpen={isOpen} sidebar={sidebar}>
-          <SEO title={title} description={description} />
+          <SEO
+            title={title}
+            description={description}
+            noindex={noindex}
+            structuredData={structuredData}
+          />
           {typeof children === "function" ? children(setIsOpen) : children}
           {sidebar ? (
             <SidebarToggleButton isOpen={isOpen} onClick={toggleIsOpen} fixed />

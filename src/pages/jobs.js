@@ -14,7 +14,12 @@ const Jobs = () => {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Layout title="Jobs" largeTitle sidebar>
+      <Layout
+        title="Jobs"
+        description="React and JavaScript jobs posted by members of the Reactiflux community."
+        largeTitle
+        sidebar
+      >
         {(setSidebar) => (
           <>
             <h1>

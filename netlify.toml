@@ -9,7 +9,7 @@
 [[redirects]]
   from = "/tmir"
   to = "https://tmir.reactiflux.com/"
-  status = 302
+  status = 301
   force = true
 
 [[plugins]]
