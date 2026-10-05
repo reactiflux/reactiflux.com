@@ -204,6 +204,7 @@ Along with the official react docs, these other listed tutorials are also excell
   - [React Hooks: Not Magic, Just Arrays](https://medium.com/@ryardley/react-hooks-not-magic-just-arrays-cd4f1857236e) (looks under the hood to explain how hooks are implemented)
   - [Getting Closure on React Hooks](https://www.swyx.io/hooks/) (diving into the language concepts used by hooks)
     - [Egghead video followup: Concurrent React from Scratch](https://egghead.io/talks/react-egghead-talks-concurrent-react-from-scratch)
+  - [React stale-closure clinic](https://frontendatlas.com/react/trivia/react-stale-state-closures) (six interactive code-review cases covering timers, effects, subscriptions, async responses, and event handlers)
 
 ### Additional Resources (read as needed)
 
