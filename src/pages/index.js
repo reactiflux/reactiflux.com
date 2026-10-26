@@ -111,8 +111,12 @@ const Index = ({ userCount }) => {
         >
           Join Reactiflux
         </ButtonLink>
-        <ButtonLink href="/schedule" title="Q&A Schedule" secondary>
-          Q&A Schedule
+        <ButtonLink
+          href="https://tmir.reactiflux.com"
+          title="This Month In React"
+          secondary
+        >
+          Listen to This Month In React
         </ButtonLink>
       </P>
     </Layout>
