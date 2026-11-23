@@ -36,6 +36,11 @@ export default function Transcripts({
           >
             <nav>
               <ol>
+                <li>
+                  <Link href="https://tmir.reactiflux.com/">
+                    This Month in React
+                  </Link>
+                </li>
                 {all.map((transcript) => (
                   <li key={transcript.path}>
                     <Link href={transcript.path}>{transcript.title}</Link>
